@@ -1,0 +1,11 @@
+symbol,space_id,name,network,token_symbol,followers,proposals_total,voting_type,voting_quorum,voting_period_sec,strategies
+UNI,uniswapgovernance.eth,Uniswap,1,UNI,125179,191,,10000000.0,432000.0,uni
+COMP,comp-vote.eth,Compound,1,COMP,7315,33,,,,comp-like-votes
+CRV,curve.eth,Curve Finance,1,CRV,32964,203,,,,erc20-balance-of
+GRT,graphprotocol.eth,The Graph,1,GRT,10955,4,,,,the-graph-balance; the-graph-delegation; the-graph-indexing
+LDO,lido-snapshot.eth,Lido,1,LDO,32602,395,,,,erc20-balance-of-delegation; erc20-balance-of
+DIMO,dimo.eth,DIMO,137,DIMO,179,27,,35000000.0,604800.0,erc20-votes-with-override; erc20-votes-with-override
+IOTX,iotex.eth,IoTeX Network,4689,IOTX,1898,17,,,,iotex-staked-balance
+WXM,weatherxm.eth,WeatherXM Network,1,WXM,13,4,basic,150000.0,,erc20-balance-of; erc20-balance-of; contract-call
+OP,opcollective.eth,Optimism Collective,10,OP,204007,93,approval,,518400.0,erc20-votes
+ARB,arbitrumfoundation.eth,Arbitrum DAO,42161,ARB,323487,403,,,604800.0,erc20-votes

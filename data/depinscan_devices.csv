@@ -1,0 +1,13 @@
+protocol,active_devices,total_devices,daily_earn_usd,device_cost_usd,service_type,source,breakeven_days,notes
+Helium,164171,385000,0.04,350,IoT_LoRaWAN_Mobile_WiFi,messari_state_helium_q4_2025,8750.0,IoT post-migration Solana 43033 + Mobile Wi-Fi 121138; legacy pre-migration IoT ~342K not counted as active
+GEODNET,21135,23000,1.3,600,GNSS_RTK,depinscan_messari_q1_2025_verified,462.0,Previously verified correct
+DIMO,184183,210000,0.06,120,vehicle_telemetry,depinscan_2026,2000.0,Previously verified correct
+WeatherXM,9813,11500,0.35,400,weather_data,wxm_explorer_2026_corrected,1143.0,Previously verified correct
+IoTeX,9300,14000,0.02,80,IoT_data,iotex_iotube_2026,4000.0,IoT devices on network (not validator count); original figure retained pending clarification
+Grass,3000000,5000000,0.01,0,bandwidth,nansen_research_2025_verified,,Previously verified correct
+Render,1140,5600,8.5,1500,GPU_compute,stats_renderfoundation_com_q1_2026,525.0,Quarterly active GPU nodes; 5600 ever onboarded; 1900 peak weekly active Q1 2024
+Livepeer,100,100,12.0,5000,video_transcoding,livepeer_explorer_protocol_cap,417.0,Protocol cap 100 active orchestrators (Streamflow upgrade Jan 2020); original 6 was truncated API result
+Filecoin,3000,4200,45.0,15000,storage,messari_fil_q3_2025,333.0,Active SPs with storage power ~2500-3200 (Q3 2025); original 3600 was approximately correct but trend declining
+Pokt Network,14000,22000,0.25,1000,RPC,messari_pokt_q2_2024,4000.0,Q2 2024 last confirmed; peaked 49K June 2023; declined after tokenomics change; Shannon-era estimate
+Anyone Protocol,6000,8000,0.05,0,privacy_bandwidth,anyone_io_july_2025,0.0,6000+ relays as of July 2025; original 2800 was mid-2024 snapshot; current likely 6000-8000
+Morpheus AI,120,145,3.5,3000,AI_inference,mor_dashboard_2026,857.0,Early mainnet estimate; no indexed public statistics confirmed; unverifiable

@@ -1,0 +1,36 @@
+protocol,token,category,chain,measurement_type,launch_year,governance_model,distribution_type,hhi,gini,top1_pct,top5_pct,top10_pct,n_holders,total_balance_top1000,source,query_id,notes
+Compound,COMP,DeFi,ethereum,governance_token,2020,delegate,mining,0.027491,0.8634,14.06,25.45,32.36,1000,8808740.05,Dune,,
+MakerDAO,MKR,DeFi,ethereum,governance_token,2017,delegate,team_vc,0.045041,0.8982,11.37,41.71,56.16,1000,1165907.99,Dune,,
+Aave,AAVE,DeFi,ethereum,governance_token,2020,delegate,team_vc,0.020202,0.8803,21.67,38.54,47.65,1000,13867869.15,Dune,,; HHI revised after exclusion of protocol-controlled address
+Uniswap,UNI,DeFi,ethereum,governance_token,2020,delegate,airdrop,0.032200,0.8869,29.1,46.21,52.12,1000,909454169.17,Dune,,; HHI revised after exclusion of protocol-controlled address
+Curve,CRV,DeFi,ethereum,governance_token,2020,token_weighted,mining,0.170599,0.8943,40.53,53.08,60.66,1000,2114945509.87,Dune,,veCRV caveat: voting power != raw holdings; Convex controls ~47% of veCRV
+Rocket Pool,RPL,DeFi,ethereum,governance_token,2017,token_weighted,team_vc,0.03915,0.8748,11.52,37.68,52.71,999,10480720.49,Dune,,
+Jupiter,JUP,DeFi,solana,governance_token,2024,token_weighted,airdrop,0.116602,0.9797,25.07,60.28,75.04,1000,411959837.4,Dune,,SPL token
+Maple Finance,MPL_SYRUP,DeFi,ethereum,governance_token,2021,token_weighted,team_vc,0.024243,0.8843,8.47,28.75,40.64,998,9131406.19,Dune,,Merged: MPL (0x333...) + SYRUP (0x643...). MPL migrated to SYRUP Apr 2025 (1 MPL = 100 SYRUP). Collect both; normalize SYRUP by /100 to MPL-equivalent; merge holder lists by address.
+GMX,GMX,DeFi,arbitrum,governance_token,2021,token_weighted,team_vc,0.056379,0.9307,17.49,43.63,60.21,999,3996470.76,Dune,,esGMX excluded; GMX only
+Drift,DRIFT,DeFi,solana,governance_token,2024,token_weighted,airdrop,0.101134,0.9392,27.01,53.26,61.68,1000,994987358.08,Dune,,SPL token; governance via Realms
+Ether.Fi,ETHFI,DeFi,ethereum,governance_token,2024,token_weighted,airdrop,0.066775,0.9459,19.02,48.29,59.88,1000,910421483.1,Dune,,
+The Graph,GRT,L1_L2_Infra,ethereum,governance_token,2020,delegate,team_vc,0.035600,0.917,28.61,51.81,59.66,1000,10163352931.07,Dune,,; HHI revised after exclusion of protocol-controlled address
+Optimism,OP,L1_L2_Infra,optimism,governance_token,2022,delegate,airdrop,0.041800,0.8904,31.82,54.01,60.76,1000,4066927389.76,Dune,,"Token is on Optimism L2, not Ethereum mainnet; HHI revised after exclusion of protocol-controlled address"
+Polygon,POL,L1_L2_Infra,ethereum,governance_token,2020,delegate,team_vc,0.03475,0.9195,12.06,31.44,49.5,998,3305557698.96,Dune,,POL replaced MATIC Sept 2024
+Arbitrum,ARB,L1_L2_Infra,ethereum,governance_token,2023,delegate,airdrop,0.012300,0.8289,30.17,41.65,47.19,1000,8805901369.57,Dune,,; HHI revised after exclusion of protocol-controlled address
+ENS,ENS,L1_L2_Infra,ethereum,governance_token,2021,delegate,airdrop,0.134531,0.9393,26.73,70.19,75.55,999,46530834.96,Dune,,
+DIMO,DIMO,DePIN,polygon,governance_token,2022,token_weighted,team_vc,0.037903,0.8709,13.94,30.31,45.0,999,278269117.36,Dune,,
+IoTeX,IOTX,DePIN,ethereum,governance_token,2018,token_weighted,team_vc,0.106455,0.987,19.75,59.93,90.57,1000,9955279775.81,Dune,,Ethereum-side ERC-20 representation; bridge caveat
+WeatherXM,WXM,DePIN,arbitrum,governance_token,2024,token_weighted,team_vc,0.147854,0.8946,34.98,60.98,77.92,999,14286845.94,Dune,,
+Anyone Protocol,ANYONE,DePIN,ethereum,governance_token,2024,token_weighted,airdrop,0.04036,0.7942,13.29,36.8,47.51,1000,85299840.87,Dune,,
+Grass,GRASS,DePIN,solana,governance_token,2024,token_weighted,airdrop,0.035201,0.7603,16.01,30.67,38.17,1000,6066697989.88,Dune,,SPL token
+Livepeer,LPT,DePIN,arbitrum,governance_token,2018,delegate,mining,0.198868,0.9416,42.87,63.11,73.71,998,1325973.36,Dune,,Previously excluded; retry
+Helium,HNT,DePIN,solana,governance_token,2019,token_weighted,mining,0.102405,0.9825,24.48,58.1,79.42,1000,29428632.94,Dune,,SPL token; governance via HIPs
+GEODNET,GEOD,DePIN,polygon,governance_token,2023,token_weighted,team_vc,0.132502,0.9604,24.95,69.04,81.85,1000,981817380.93,Dune,,Polygon-side governance; Wormhole NTT bridge aggregates Solana holders
+Filecoin,FIL,DePIN,filecoin_native,governance_token,2020,token_weighted,mining,0.047273,0.7878,18.01,36.14,45.57,1000,849402133.21,API,,ERC-20 representation (eFIL) has only ~155 holders; MUST use Filfox rich list API
+Render,RENDER,DePIN,solana,governance_token,2017,token_weighted,team_vc,0.032305,0.8944,10.41,31.79,47.01,1000,141828661.15,Dune,,Merged: Solana RENDER (rndriz...) + Ethereum RNDR (0x6De...). Both are 1:1 same token. Collect both chains; merge holder lists by unique address. Primary distribution on Solana.
+Pokt Network,POKT,DePIN,pokt_native,governance_token,2020,token_weighted,mining,0.159159,0.962,34.78,64.8,77.23,1000,2012630469.82,API,,Primary: POKTscan API for native POKT holders. Secondary: wPOKT on Ethereum (0x67F...). Use POKTscan as primary source.
+LayerZero,ZRO,L1_L2_Infra,ethereum,governance_token,2024,token_weighted,airdrop,0.009561,0.446,3.3,14.55,24.69,98,649980206.0,Dune,,Dune query 6928670
+Wormhole,W,L1_L2_Infra,solana,governance_token,2024,token_weighted,airdrop,0.014927,0.8716,7.04,18.53,23.78,1000,8104009865.51,Dune,,SPL token; Dune query 6928673
+Morpheus AI,MOR,DePIN,arbitrum,governance_token,2024,token_weighted,mining,0.013252,0.6677,7.33,21.37,29.34,96,1453551.54,Dune,,AI compute DePIN; Dune query 6928672
+Axelar,AXL,L1_L2_Infra,ethereum,governance_token,2022,token_weighted,team_vc,0.003761,0.6346,3.25,11.07,15.75,97,81297305.77,Dune,,axlAXL bridge token on Ethereum; primary governance on Axelar Cosmos chain via staking. Dune query 6928671
+MetaDAO,META,DeFi,solana,governance_token,2023,futarchy,team_vc,0.048249,0.898,19.61,33.98,41.44,1000,22336.69,Dune,,Futarchy governance; ~558k total supply in top-58 holders. Conditional vault excluded (rank 1). Dune query 6928851
+Lido,LDO,DeFi,ethereum,governance_token,2020,token_weighted,team_vc,0.018498,0.5186,9.89,19.81,27.71,189,407996259.0,Dune,,Lido DAO governance token. Dune query 6928798
+Gitcoin,GTC,Social_Dead,ethereum,governance_token,2021,delegate,airdrop,0.076552,0.9406,17.58,55.35,64.32,1000,71160492.78,Dune,,
+Token Engineering Commons,TEC,Social_Dead,gnosis,governance_token,2021,token_weighted,team_vc,0.027769,0.9067,9.22,29.62,44.21,742,1546092.31,Dune,,Wound down; survivorship bias control; ~732 holders

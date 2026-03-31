@@ -1,0 +1,197 @@
+{
+  "Curve": {
+    "slug": "curve-dex",
+    "fees_30d": 4048507,
+    "fees_annual": 48582084,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Jupiter": {
+    "slug": "jupiter-lend",
+    "fees_30d": 2020287,
+    "fees_annual": 24243444,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Drift": {
+    "slug": "drift-trade",
+    "fees_30d": 646662,
+    "fees_annual": 7759944,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Ether.Fi": {
+    "slug": "ether.fi-stake",
+    "not_found": true
+  },
+  "Lido": {
+    "slug": "lido",
+    "fees_30d": 43692496,
+    "fees_annual": 524309952,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "ENS": {
+    "slug": "ens",
+    "fees_30d": 135293,
+    "fees_annual": 1623516,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Livepeer": {
+    "slug": "livepeer",
+    "fees_30d": 78548,
+    "fees_annual": 942576,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Helium": {
+    "slug": "helium",
+    "not_found": true
+  },
+  "GEODNET": {
+    "slug": "geodnet",
+    "fees_30d": 766218,
+    "fees_annual": 9194616,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Filecoin": {
+    "slug": "filecoin",
+    "fees_30d": 274367,
+    "fees_annual": 3292404,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Pokt Network": {
+    "slug": "thunderpokt",
+    "not_found": true
+  },
+  "LayerZero": {
+    "slug": "layerzero",
+    "fees_30d": 294181,
+    "fees_annual": 3530172,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Axelar": {
+    "slug": "axelar",
+    "fees_30d": 2776,
+    "fees_annual": 33312,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Gitcoin": {
+    "slug": "gitcoin",
+    "not_found": true
+  },
+  "GMX": {
+    "slug": "gmx-v2-perps",
+    "fees_30d": 3409984,
+    "fees_annual": 40919808,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Maple Finance": {
+    "slug": "maple",
+    "fees_30d": 7779333,
+    "fees_annual": 93351996,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Compound": {
+    "slug": "compound-v3",
+    "fees_30d": 1425116,
+    "fees_annual": 17101392,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Aave": {
+    "slug": "aave-v3",
+    "fees_30d": 45882716,
+    "fees_annual": 550592592,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Uniswap": {
+    "slug": "uniswap-v3",
+    "fees_30d": 24116328,
+    "fees_annual": 289395936,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "MakerDAO": {
+    "slug": "maker",
+    "not_found": true
+  },
+  "Optimism": {
+    "slug": "optimism",
+    "not_found": true
+  },
+  "Polygon": {
+    "slug": "polygon",
+    "fees_30d": 2746216,
+    "fees_annual": 32954592,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Arbitrum": {
+    "slug": "arbitrum",
+    "fees_30d": 431136,
+    "fees_annual": 5173632,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Morpheus AI": {
+    "slug": "morpheusai",
+    "fees_30d": 83093,
+    "fees_annual": 997116,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Grass": {
+    "slug": "grass",
+    "not_found": true
+  },
+  "MetaDAO": {
+    "slug": "metadao-treasuries",
+    "fees_30d": 15174,
+    "fees_annual": 182088,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Render": {
+    "slug": "render-network",
+    "not_found": true
+  },
+  "Wormhole": {
+    "slug": "wormhole",
+    "fees_30d": 21498,
+    "fees_annual": 257976,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "Rocket Pool": {
+    "slug": "rocket-pool",
+    "fees_30d": 3104060,
+    "fees_annual": 37248720,
+    "revenue_30d": 0,
+    "revenue_annual": 0
+  },
+  "The Graph": {
+    "slug": "the-graph",
+    "error": "HTTPSConnectionPool(host='api.llama.fi', port=443): Read timed out. (read timeout=15)"
+  },
+  "Anyone Protocol": {
+    "slug": "anyone-protocol",
+    "not_found": true
+  },
+  "DIMO": {
+    "slug": "dimo",
+    "not_found": true
+  },
+  "WeatherXM": {
+    "slug": "weatherxm",
+    "not_found": true
+  }
+}
