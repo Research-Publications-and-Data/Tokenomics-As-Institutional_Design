@@ -6,8 +6,8 @@ DIMO,7723600.0,2556947.0,0.33,Dune DIMO burns/mints,Apr2025-Mar2026
 GEODNET,3164701.0,8348951.0,2.64,Dune burns + S2R=0.379 estimate,Apr2025-Mar2026
 Filecoin,2550000.0,55193597.0,21.6,TT + Filfox cross-validated,Apr2025-Mar2026
 Render,2435334.0,18591300.0,7.63,Dune (excl 4 vesting spike months),Apr2025-Mar2026
-POKT,22151.0,169152.0,7.64,TT + POKTscan,Apr2025-Mar2026
-Anyone,0.0,,,Pre-revenue; treasury dist,Apr2025-Mar2026
+POKT,22151.0,169152.0,,UNRELIABLE: TT broke post-Shannon (Jun 2025). Pre-Shannon ~80x (Messari). Exclude from regression.,Apr2025-Mar2026
+Anyone,0.0,274000.0,,Pre-revenue; treasury distributions ~$274K/yr from pre-allocated pool,Apr2025-Mar2026
 Grass,0.0,0.0,,Pre-revenue; airdrop only,Apr2025-Mar2026
 WeatherXM,,,,Pre-minted; no on-chain data,Apr2025-Mar2026
-IoTeX,,,,Own L1; not on Dune,Apr2025-Mar2026
+IoTeX,135000.0,3750000.0,27.8,Token Terminal (IoTeX L1 native chain),Apr2025-Mar2026
