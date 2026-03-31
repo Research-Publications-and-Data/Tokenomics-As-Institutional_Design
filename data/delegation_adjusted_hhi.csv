@@ -1,0 +1,6 @@
+protocol,symbol,raw_hhi,delegated_hhi,hhi_change_pct,raw_gini,delegated_gini,raw_nakamoto,delegated_nakamoto,n_delegates,top1_delegate_share,source
+Aave,AAVE,0.020202,0.075545,274.0,0.8803,0.7238,12,6,100,21.91,tally
+Compound,COMP,0.027491,0.038656,40.6,0.8634,0.6388,30,13,100,11.8,tally
+Uniswap,UNI,0.0322,0.027137,-15.7,0.8869,0.5816,8,13,100,6.8,tally
+Arbitrum,ARB,0.0123,0.0355,188.6,0.8289,0.6945,14,12,100,10.4,tally
+Optimism,OP,0.0418,0.03297,-21.1,0.8904,0.5962,4,14,100,10.03,tally
