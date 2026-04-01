@@ -32,6 +32,10 @@ PROTOCOL_EXCLUSIONS = {
     "ENS": [
         "0xd7a029db2585553978190db5e85ec724aa4df23f",  # TokenLock — vesting contract
     ],
+    # GRT: no exclusions applied. 0x6fc78dcc8a949d1530035bd577dcb21e9787100e (Graph Foundation
+    # GnosisSafe, rank 634, 0.0037% share) verified as contract but immaterial (HHI rel. delta
+    # 0.007%); not excluded per materiality threshold.
+    "GRT": [],
     "LDO": [
         "0xf977814e90da44bfa03b6295a0616a897441acec",  # Binance 8 — exchange custodian
         "0x3e40d73eb977dc6a537af587d48316fee66e9c8c",  # Lido DAO Aragon Agent — protocol treasury (AppProxyUpgradeable → Agent)
@@ -49,7 +53,7 @@ PROTOCOL_EXCLUSIONS = {
         "0x93f1a412050bab0c317844361e4cc801ed5aca72",  # Unverified Arbitrum contract, likely WXM treasury/vesting
     ],
     "DIMO": [
-        "0xc97bf974d6d4bab6e0f7641b7b37ec5b70922ce5",  # Unverified Polygon contract, likely DIMO Foundation
+        "0xc97bf974d6d4bab6e0f7641b7b37ec5b70922ce5",  # GnosisSafeL2 multisig (impl: 0x3E5c63644E683549055b9Be8653de26E0B4CD36E) — Blockscout-confirmed contract; consistent with DIMO Foundation treasury (52% of supply; HHI delta 643% if included)
     ],
     "POL": [
         "0x5e3ef299fddf15eaa0432e6e66473ace8c13d908",  # Polygon StakeManagerProxy — PoS validator staking contract
@@ -78,9 +82,26 @@ PROTOCOL_EXCLUSIONS = {
         "7S7r1mnB9LsEywHnWK9WnLDP9tnmo69JT4TW3kHPoznq",  # Wormhole Foundation/DAO treasury — holds 49% of top-1000 W (unverified, likely vesting)
         "8X6MEdM5Rf2zZLjAbE3bwspNAn9aaQaodJ28mT14QR8b",  # Wormhole vesting/treasury — holds only W tokens (22%), consistent with lockup account
     ],
+    "BAL": [
+        "0xba12222222228d8ba445958a75a0704d566bf2c8",  # Balancer V2 Vault — central liquidity aggregation contract
+        "0x0efccbb9e2c09ea29551879bd9da32362b32fc89",  # Balancer Treasury Safe (GnosisSafe, Treasury Council)
+        "0xb129f73f1afd3a49c701241f374db17ae63b20eb",  # Balancer: Future Fundraise multisig (Balancer Labs)
+        "0xcdcebf1f28678eb4a1478403ba7f34c94f7ddbc5",  # Balancer: Team / Contributors Incentives multisig
+        "0xe8d4d93d9728bd673b0197673a230f62255c7846",  # Protocol-affiliated Safe (veBAL-active; shares deployer with Treasury Safe)
+        "0xa3a7b6f88361f48403514059f1f16c8e78d60eec",  # Arbitrum One: L1 ERC20 Gateway — bridge lock
+        "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",  # Polygon PoS ERC20 Predicate — bridge lock
+        "0xc128a9954e6c874ea3d62ce62b468ba073093f25",  # veBAL Voting Escrow — staking/lock contract
+    ],
     # RENDER: Wormhole bridge exclusion is handled upstream in merge_multichain.py
     "META": [
         "CUPoiqkK4hxyCiJcLC4yE9AtJP1MoV1vFV2vx3jqwWeS",  # Futarchy conditional vault — holds META in escrow during live proposal (confirmed via tx analysis 2026-03-30)
+    ],
+    "HYPE": [
+        "0xfefefefefefefefefefefefefefefefefefefefe",  # Assistance Fund — system address (Hyperliquid docs)
+        "0x2222222222222222222222222222222222222222",  # Burn address — standard burn pattern
+        "0x43e9abea1910387c4292bca4b94de81462f8a251",  # Community rewards treasury — allocation math
+        "0xd57ecca444a9acb7208d286be439de12dd09de5d",  # Hyper Foundation treasury — allocation math
+        "0x393d0b87ed38fc779fd9611144ae649ba6082109",  # Staking manager — Hypurrscan label (system address)
     ],
 }
 
