@@ -1,6 +1,6 @@
 protocol,revenue_usd_annual,emissions_usd_annual,subsidy_ratio,source,measurement_window
-Livepeer,23846411.0,74189877.0,3.11,Dune LPT burns/mints,Apr2025-Mar2026
-Helium,14676551.0,31549268.0,2.15,Dune HNT DC burns/mints,Apr2025-Mar2026
+Livepeer,838701.0,74200000.0,88.5,Messari ETH fees + Dune LPT mints,Apr2025-Mar2026
+Helium,17560000.0,18490000.0,1.05,Dune HNT DC burns/mints,Apr2025-Mar2026
 Morpheus,9588583.0,14740443.0,1.54,Dune MOR burns/mints,Apr2025-Mar2026
 DIMO,7723600.0,2556947.0,0.33,Dune DIMO burns/mints,Apr2025-Mar2026
 GEODNET,3164701.0,8348951.0,2.64,Dune burns + S2R=0.379 estimate,Apr2025-Mar2026
@@ -11,3 +11,6 @@ Anyone,0.0,274000.0,,Pre-revenue; treasury distributions ~$274K/yr from pre-allo
 Grass,0.0,0.0,,Pre-revenue; airdrop only,Apr2025-Mar2026
 WeatherXM,,,,Pre-minted; no on-chain data,Apr2025-Mar2026
 IoTeX,135000.0,3750000.0,27.8,Token Terminal (IoTeX L1 native chain),Apr2025-Mar2026
+Aethir,166000000.0,24900000.0,0.15,Messari + Dune,Apr2025-Mar2026
+Hivemapper,18000000.0,98400000.0,5.46,Messari + Dune,Apr2025-Mar2026
+io.net,30000000.0,16800000.0,0.56,Messari + Dune,Apr2025-Mar2026

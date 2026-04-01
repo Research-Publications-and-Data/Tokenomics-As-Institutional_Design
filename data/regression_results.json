@@ -1,0 +1,37 @@
+{
+  "cross_pearson": {
+    "r": 0.58,
+    "p": 0.007
+  },
+  "cross_spearman": {
+    "rho": 0.157,
+    "p": 0.508
+  },
+  "cross_log": {
+    "r": 0.234,
+    "p": 0.35
+  },
+  "excl_livepeer": {
+    "r": 0.128,
+    "p": 0.601
+  },
+  "depin_pearson": {
+    "r": 0.525,
+    "p": 0.098
+  },
+  "depin_spearman": {
+    "rho": 0.027,
+    "p": 0.937
+  },
+  "defi_pearson": {
+    "r": -0.26,
+    "p": 0.499
+  },
+  "sector_mw": {
+    "p": 0.072
+  },
+  "n_total": 38,
+  "n_subsidy": 20,
+  "n_depin_subsidy": 11,
+  "n_defi_subsidy": 9
+}
