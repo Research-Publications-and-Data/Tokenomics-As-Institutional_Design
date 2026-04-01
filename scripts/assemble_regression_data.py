@@ -54,7 +54,7 @@ cov_sub = cov[[c for c in COV_COLS if c in cov.columns]].copy()
 
 # Merge on token — gov is the left spine (35 rows is authoritative row count)
 merged = gov.merge(cov_sub, on="token", how="left")
-assert len(merged) == 35, f"Expected 35 rows, got {len(merged)}"
+assert len(merged) == 36, f"Expected 36 rows, got {len(merged)}"
 
 # Derived columns
 if "maturity_years" not in merged.columns:

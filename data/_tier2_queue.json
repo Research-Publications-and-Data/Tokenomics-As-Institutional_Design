@@ -1,0 +1,1212 @@
+[
+  {
+    "address": "0xa700b4eb416be35b2911fd5dee80678ff64ff6c9",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x494aa25fa055d370424ed9db3839e76ee3e9e945",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7915f9373ae32d1fcaf0cdf17a532a3d8046d759",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x25f2226b597e8f9514b3f68f00f494cf4f286491",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x317625234562b1526ea2fac4030ea499c5291de4",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x5a801a9418d036fd453078c3adcb761fdc5ae695",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x45292a0eafa4d1625c06902f359c5ee819afb026",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x73af3bcf944a6559933396c1577b257e2054d935",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x22740deba78d5a0c24c58c740e3715ec29de1bfa",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0d9a1ca7bc756ae009672db626cde3c9bef583ef",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x9642b23ed1e01df1092b92641051881a322f5d4e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6d6cc65e2060d0a280fcd47b6c22ec5636797fec",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc593fe9193b745447e86b45ea0bf62565ee030cc",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x1ef7a8dc436253b28167153aec7a1562bf73551c",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x50e6d8485b448de44cd9d9c979d5d8ed36bd82cb",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xd19eab591fc1840c237488a180ced4aad9faecf8",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xeed86b90448c371eab47b7f16e294297c27e4f51",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xe8fdfb7b89519ed7c4999a912abf315e6aa52b6f",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x446b86a33e2a438f569b15855189e3da28d027ba",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf7f468b184a48f6ca37eeffe12733ee1c16b6e26",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x07455344be8db742627ae4514c1071e43a154ddb",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x1190cea3e2c8727218768bfb990c3228aa06dfa9",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xee5b5b923ffce93a870b3104b7ca09c3db80047a",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x361ad597f6a0cf86f8ab14234ca17a5739a67458",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x43684d03d81d3a4c70da68febdd61029d426f042",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf5acf47847963bd0ae2b8e080729bf508b2482df",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3964128e13e05d4a672b4b45a1a96a2d56c27efb",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xd2ff2d432a0078672cf4f9e2e97858a33cbdeebc",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x54d1774631980b22c85f13bfaf2f45291b22cbf9",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x377b8ce04761754e8ac153b47805a9cf6b190873",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf42aac93ab142090db9fdc0bc86aab73cb36f173",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xfcac185644e5c6cd73c309a60d2758ae56cf78b3",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xd1669ac6044269b59fa12c5822439f609ca54f41",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3de3a257f0e50af9bf48aea633e06085695d9c1b",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc80afd311c9626528de66d86814770361fe92416",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x05e9c5bcc805aefefebbec13742cec01c6fac42e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0431e3b8bd78ef3aa3527d2d8bbcf089012f0cdf",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x841ed663f2636863d40be4ee76243377dff13a34",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3bbd4947df4e1bd80d130ddcfa9b54f1b03a1a8d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x4290cd12f6ff4cdea0638916cbfb229b9d2c8806",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7e9955e7f0c1c88d76d13720b5dd122cc3f6d8f6",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc78e14e378b035b53561fa79445069d379b1f868",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6522b7f9d481eceb96557f44753a4b893f837e90",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3e0f52239518b540a06f81d51ac4ea7ffdece329",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7c01aa3783577e15fd7e272443d44b92d5b21056",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x72402ce4d16619e88ceff669634997c360b0f0ad",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xbe7be7023902f09cc28f0101a3e6e313bf2bc626",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x77fb357f55bef5a70d30663955f8c9f35794df0e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x8fa129f87b8a11ee1ca35abd46674f8b66984d4a",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x5dc61282cdcf58a27f7a5c9612aea3d2330964be",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x00235af3dda000ba0e0ec440793b414d976a9e62",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xccfa7c808f5b77822e4935a7230f46681c99f4bc",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x354698f0e93c6830196e81250074733d8a792ff2",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x3ace81a93ff91f7ce42da8d1c18d2de6b470070c",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x62b98e019e0d3e4a1ad8c786202e09017bd995e1",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x0daf060795df02c59fb15f20b41e1bf24d6b31d8",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x7b3d491d7ad5d14166369b8fe53c51cb16d0a296",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xc20d25fb4cafd5b7d3cd99ec4df6349f6aa61b58",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xced3c922200559128930180d3f0bffd4d9f4f123",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x597a1df671a3b32801e7687ef469541a91562ca4",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x245445940b317e509002eb682e03f4429184059d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xfe89cc7abb2c4183683ab71653c4cdc9b02d44b7",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x690f0581ececcf8389c223170778cd9d029606f2",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x2cd5bb500066b913d320fc9ac52a72422915c422",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x498697892fd0e5e3a16bd40d7bf2644f33cbbbd4",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xa0b49ee43b256ee817d0e466fb88a3a25bf76277",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x073f564419b625a45d8aea3bb0de4d5647113ad7",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6a496c6076a1f3ca554b6f4eef81e4885a433cfe",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x187c9fbf5bd0f266883c03f320260c407c7b4100",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x801960b082d48f822395b03df7b1908899ab03aa",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7a6a41f353b3002751d94118aa7f4935da39bb53",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x95bf94e06d5be1000c23cd99968eff414aa4995e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x86b5780b606940eb59a062aa85a07959518c0161",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf10873355b209b401262cadc753d654e2b7e41ac",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf619ab1f33cdc8a0123e093de92ea4d7399de39f",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6630ff17cf5357c5f9c3d2a21ac98d2ff1070739",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7a93190d436436bbb79fa2c0d24ca93afb59b3fb",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7d4bbe471369a066186c18baf33622796a08d5cd",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xca3e874bc4e830796d822f529c29df30302324b2",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x2006b44684b2a579466fc04fabc5a535946bc7ab",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xfa5fed5cc2b6dd8f370651d17242c52ed711b14f",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x3a6906e4239f9860c81035c54198df58d892653b",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x47c8ebecfa390a59b0e127c9178e936a4ada907d",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xcdd8dcfc406d0487d09b8332cf1bafa2a21a9f47",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x000000000000000000000000000000000000dead",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x3783f34cad40f4bcb5eaff3594458da1f5ea041f",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0xcdfd8ec577217df0a577cc64a64eca71bb28d954",
+    "chain": "polygon",
+    "chain_id": "137"
+  },
+  {
+    "address": "0x02984c3bb35f0e61cfc690f221a5ebcc5389f86b",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x0755d33e45ed2b874c9ebf5b279023c8bd1e5e93",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x80a9ae39310abf666a87c743d6ebbd0e8c42158e",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xafee421482faea92292ed3ffe29371742542ad72",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x68863dde14303bced249ca8ec6af85d4694dea6a",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x199070ddfd1cfb69173aa2f7e20906f26b363004",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x823fd1a44a37a4be35c3b0c8b11463cc4f27396c",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xfcb40a54be132a26c87f6bb7d2f74354ce13d96d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x5b0a3c6d28b9b11770b0b838f3ff48062805b4e1",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x5eb529e12eb1de6b3c467d54b2861d3b56f63911",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xeb8ee0503e0301720eb7616e0897f8ecdf751fc3",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x8e1aff4fe98129edbe423aca6a3af51b4de2af09",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x57a8865cfb1ecef7253c27da6b4bc3daee5be518",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x74be0cf1c9972c00ed4ef290e0e5bcfd18873f13",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x4da8853217d0d5b59e8fcde36d1bebb0a1932a14",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x14d7cee42d4643f0c767a1d504d9ca24c890f86c",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6eede31a2a15340342b4bcb3039447d457ac7c4b",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x74d3d473a44bc6b2b806861be511d52e2ce530af",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xed95d629c4db80060c59432e81254d256aec97e2",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3896ab65f7191a446f5ba550a92f9fbe5dd658af",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6a5843919f17cc9003424008cfa953c989046904",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x87c9dbff0016af23f5b1ab9b8e072124ab729193",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000004",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000006",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000001",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000002",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000005",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000003",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0000000000000000000000000000000000000007",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x4761571eeec2fee2fb9f8d5c08ef7c7606a9f659",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x58bc01f516c8d6986bc0fd67944f2718c2a94348",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x39df74d611dca188f2f182a27c79f34a5ad4821e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xed3d9bac1b26610a6f8c42f4fd2c741a16647056",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x88a1493366d48225fc3cefbdae9ebb23e323ade3",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x008756e24b06267b9d2488e5bf50091fc26c8e8d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x109b9744397acf987a1abb5bb4eef7362ab9ff66",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x54b68cc7132666eba5aa1d26dad735226e8faa7d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xdb1aabe42f48f4b6b40cded8eeefaea3ebab2766",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc012e9eaebc44ba0236c50d97a94f633a14c15ca",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf82c1ff415f1fcf582554fdba790e27019c8e8c4",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x96daa0b8a5499ea9323421ed0cda06b345caab73",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x730363304acce48bd7aeb348462e074b0a7f3268",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x99c675e33d41c10f0fa1ebdd9c1b30b85c7711e2",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x2d93af57d375cba66058f5593e786ebf2866d6c4",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x176f3dab24a159341c0509bb36b833e7fdd0a132",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x2be5a5ce6555162d67c16b35ece3160c6f509e0a",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x077031fd82feaba89ae214599c59fe265e6570c2",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x473d777f608c3c24b441ab6bd4bbca6b7f9af90b",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xf65475e74c1ed6d004d5240b06e3088724dfda5d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xbe8e3e3618f7474f8cb1d074a26affef007e98fb",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x2cba76638bf0c7d965fc8f2253a91ead40cb83c8",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x959bfcaee050515296fc3d8aafafeaabf5c44f1d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x93e9ba7a00856c3c1efa9b927d40b275602839ed",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7d6149ad9a573a6e2ca6ebf7d4897c1b766841b4",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc4269cc7acdedc3794b221aa4d9205f564e27f0d",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x04b688725ed55f60ffc0f63b14ebe9a826a98598",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc0ed68f163d44b6e9985f0041fdf6f67c6bcff3f",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xe5cf22ee4988d54141b77050967e1052bd9c7f7a",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xbd5d3a6d2ced315dbded2a434164a268b122694a",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x1206b182d26da31c01c7110c2672ea479f8b7daf",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x51d25291a5fe3281c65e46f1c2cb1738f3db12da",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x858da48232ea6731f22573dc711c0cc415c334c5",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xc794ba3d6462be04d250976c4bbf9b4ac7b60710",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xca31c9ef59a6ab45343f60968148c0ed07c39c59",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x517ce9b6d1fcffd29805c3e19b295247fcd94aef",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x58be00490d6a5d298d61f24226d2397983ee39a1",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xfd4587cc7eed80ff09c483d3d85704859f20311b",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x92915365e5fefbb85eee632dbc2e22da6037d706",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x13a682e0def0ff00b901b13458f3b2d9eb96f4b1",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x310f087d117330cabe5b82e873ec5950071ebb03",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x2711a1ef82587ee46b0a42f76eac3b70161daf30",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x7700a1a2025dfa4520c811a492e976ae8f147772",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x89860fbeab8d59858c57c920f39f5d7ba48d0722",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x641f7b308fc59e0fadaa859ce37d08ae4c35ec6e",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0xae56aaa3f1d511225d740eda7eb70907626556be",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0x7336abff06bbaf79b4093df1e16c1aa87fb27efd",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0xe94ffce5c34b14a434363002b5ef9843d664887b",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0xb7206fa64287f6dc5070de25bbf9b85bf40df1ed",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0xb18fe4b95b7d633c83689b5ed3ac4ad0a857a2a7",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0x85782468bd25d2a7d92581b3448cd11617d72b52",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0x0a5952a41da1b16d61532a9e019b79855f5afce2",
+    "chain": "optimism",
+    "chain_id": "10"
+  },
+  {
+    "address": "0x29e7df7b6a1b2b07b731457f499e1696c60e2c4e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x57f1ad8d95ebd0ab51e7ab131d2fab89a15de3b1",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x4c569c1e541a19132ac893748e0ad54c7c989ff4",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x8be2b97333ebcc6af2441e4018961ff39d63e883",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x0ba98b0067778ed0da2093c1f1600d4d17ccbf01",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x84faec6529a98b72cad63254211f3f0399f38367",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x796ce52e96000a76e926c35d8e6284a544456168",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x58a3cabac2d8a807b73a44d26526b1ea7b7b6938",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xa5946a2c7a6c4232224b89a696ae51879bf5aed1",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x3f43b56004cb9a8927f11b78949a2624a455868b",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x57757e3d981446d585af0d9ae4d7df6d64647806",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xd33526068d116ce69f19a9ee46f0bd304f21a51f",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6cebc3509489af12904f92478cfca3ebb5f15a40",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x07a98956df1b3a555f8f8408e280d6342451daaa",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xfce77eb807bc9d293899d20ecae2e3b473b24a96",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xd2a4848a6644749e652c1d9398b5aa317f57395b",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x296c4a564bdda1138488f918326a759bb0ea6f64",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xb76cf92076adbf1d9c39294fa8e7a67579fde357",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x32d47da20c59cfb2af20c5cdbb0609ce0a107815",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x91b4556d4ccaaae59e37c4a57ddef8903f644621",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x5584e380c5ba129ccb5c1ce89c2e9d66881f4800",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0x5b7575494b1e28974efe6ea71ec569b34958f72e",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0x839395e20bbb182fa440d08f850e6c7a8f6f0780",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0xdf290293c4a4d6ebe38fd7085d7721041f927e0a",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0xe7ee4a5821ba12a31d3ca97c53e7bd75efb4ee61",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0xaa01dec5307cf17f20881a3286dcaa062578cea7",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0x5acbeb30fde4049a8fc928f562d9ce5fdad59d32",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0x7221b104fba7701084759fd25faca19ac6300855",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0x01d9c9ca040e90feb47c7513d9a3574f6e1317bd",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0xcb59b745668aa7f6d6da1c92641d6d60d8f5c4be",
+    "chain": "gnosis",
+    "chain_id": "100"
+  },
+  {
+    "address": "0x61cb39bece033c5bda281747db1c15cced2096eb",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x5069a64bc6616dec1584ee0500b7813a9b680f7e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x090d4613473dee047c3f2706764f49e0821d256e",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6d278351f4a973d1349ef1e54ed37daed0799e19",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x19d373d0f95f00d368a8d57605af746c4ea9b1d0",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x030d6830dc8ff125850390da620fa3e12decd437",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x177df24addc9a216f927d2a894ab0b6eec59eb09",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x2cdba04dcfd3999ef3fda00121b23c693af4041b",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xf20168e846498969f0621d696e97ff13b5b926f3",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x28cc933fecf280e720299b1258e8680355d8841f",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xb99401dbbc3576738b6cd28f62ac35e4ca2bd03d",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x00000000d64bbf35def9cdf1ea28d861957588dd",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x0b2402144bb366a632d14b83f244d2e0e21bd39c",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xff1ad9961b9d28db7981cfb19e91ac0cf84ed326",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0xe09471ab9b3f8c45d7ebada73ec51f22776afca3",
+    "chain": "arbitrum",
+    "chain_id": "42161"
+  },
+  {
+    "address": "0x8f6449530606a9efddac42e05612427ddeba449c",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x744dbc48d11415ec5cb2f78609dea5e1e738da24",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xc2f31575b97df563a3bba2a94e3a0b317ba2d412",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x1f903473376fbe98cc763f1bc459c8fdb6ac3909",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x637ca60dfb4d3acbd2ba65aaed9c6ca564bbf7bf",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0xda8b6eb4e31a387577c0e20c00c8f7e31cbc18bc",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x6e0e32684df6e3ae415ab1146a305bfd03e42427",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x53326cfb6ec33f18ccb0e23828a133bc6805390c",
+    "chain": "ethereum",
+    "chain_id": "1"
+  },
+  {
+    "address": "0x72afaa442b98f71b8bba9937f95be764ab9f97d1",
+    "chain": "ethereum",
+    "chain_id": "1"
+  }
+]

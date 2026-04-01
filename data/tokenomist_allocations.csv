@@ -1,36 +1,37 @@
 protocol,team_pct,investor_pct,community_pct,treasury_pct,other_pct,insider_pct,source_url,confidence
-Compound,26.00,24.00,42.00,8.00,0.00,50.00,https://compound.finance/governance,high
-MakerDAO,84.50,15.50,0.00,0.00,0.00,100.00,https://iq.wiki/wiki/mkr,medium
-Aave,0.00,0.00,81.25,18.75,0.00,0.00,https://docs.aave.com/aavenomics/ecosystem-overview,high
-Uniswap,21.27,18.04,60.00,0.00,0.69,39.31,https://blog.uniswap.org/uni,high
-Curve,3.00,27.00,62.00,5.00,3.00,30.00,https://resources.curve.finance/crv-token/supply-distribution/,high
-Rocket Pool,9.00,51.00,31.00,6.00,3.00,60.00,https://tokenomist.ai/rocket-pool,medium
-Jupiter,20.00,0.00,50.57,19.04,10.39,20.00,https://blockworks.co/news/jupiter-airdrop-tokenomics,high
-Maple Finance,25.00,26.00,30.00,14.00,5.00,51.00,https://docs.maple.finance/maple-for-token-holders/syrup-tokenomics,high
-GMX,1.89,7.55,60.37,0.00,30.19,9.44,https://gmxio.gitbook.io/gmx/tokenomics,high
-Drift,25.00,22.00,53.00,0.00,0.00,47.00,https://www.drift.trade/updates/update-to-drift-tokenomics-november-2025,high
-Ether.Fi,23.26,32.50,11.00,27.24,6.00,55.76,https://etherfi.medium.com/announcing-ethfi-the-ether-fi-governance-token-8cae7327763a,high
+Compound,26.0,24.0,42.0,8.0,0.0,50.0,https://compound.finance/governance,high
+MakerDAO,40.0,17.5,42.5,0.0,0.0,57.5,https://makerdao.com/en/whitepaper/ | a16z/Polychain 2017 + a16z 2018 + Paradigm/Dragonfly 2019 rounds; Foundation dev fund ~40% declining,medium
+Aave,0.0,0.0,81.25,18.75,0.0,0.0,https://docs.aave.com/aavenomics/ecosystem-overview,high
+Uniswap,21.27,18.04,60.0,0.0,0.69,39.31,https://blog.uniswap.org/uni,high
+Curve,3.0,27.0,62.0,5.0,3.0,30.0,https://resources.curve.finance/crv-token/supply-distribution/,high
+Rocket Pool,9.0,32.4,46.6,12.0,0.0,41.4,https://medium.com/rocket-pool/rocket-pool-token-sale-terms-updated-42b41fd3437b; pre-sale=32.4% investor; public crowdsale+node operators=46.6% community; team=9%; treasury/audits=12%,medium
+Jupiter,20.0,0.0,50.57,19.04,10.39,20.0,https://blockworks.co/news/jupiter-airdrop-tokenomics,high
+Maple Finance,25.0,26.0,30.0,14.0,5.0,51.0,https://docs.maple.finance/maple-for-token-holders/syrup-tokenomics,high
+GMX,1.89,7.55,60.37,0.0,30.19,9.44,https://gmxio.gitbook.io/gmx/tokenomics,high
+Drift,25.0,22.0,53.0,0.0,0.0,47.0,https://www.drift.trade/updates/update-to-drift-tokenomics-november-2025,high
+Ether.Fi,23.26,32.5,11.0,27.24,6.0,55.76,https://etherfi.medium.com/announcing-ethfi-the-ether-fi-governance-token-8cae7327763a,high
 MetaDAO,,,,,,,https://docs.metadao.fi/token/details,unverifiable
-Lido,35.00,22.18,0.00,36.32,6.50,57.18,https://blog.lido.fi/introducing-ldo/,high
-DIMO,22.40,7.60,44.95,25.00,0.05,30.00,https://docs.dimo.org/overview/earning-dimo-tokens,high
-IoTeX,15.00,24.00,6.00,25.00,30.00,39.00,https://community.iotex.io/t/official-iotex-tokenomics-thread/537,high
-WeatherXM,0.00,30.00,55.00,10.00,5.00,30.00,https://docs.weatherxm.com/tokenomics,medium
-Anyone Protocol,10.00,0.00,10.00,25.00,55.00,10.00,https://docs.anyone.io/tokenomics,medium
-Grass,22.00,25.20,30.00,22.80,0.00,47.20,https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-tokenomics,high
-Livepeer,12.00,64.00,19.00,5.00,0.00,76.00,https://tokenomist.ai/livepeer,medium
-Helium,12.50,21.50,66.00,0.00,0.00,34.00,https://github.com/helium/HIP/blob/main/0001-longfi-and-network-incentives.md,medium
-GEODNET,25.00,25.00,35.00,0.00,15.00,50.00,https://www.gate.com/learn/articles/what-is-geodnet-all-you-need-to-know-about-geod/5932,medium
-Filecoin,15.00,7.50,55.00,5.00,17.50,22.50,https://spec.filecoin.io/systems/filecoin_token/token_allocation/,high
-Render,23.30,18.29,16.67,0.00,41.74,41.59,https://know.rendernetwork.com/basics/token-metrics-summary,medium
-Pokt Network,27.67,27.03,1.70,13.90,29.70,54.70,https://tokenomist.ai/pocket-network,medium
-Morpheus AI,0.00,0.00,48.00,4.00,48.00,0.00,https://gitbook.mor.org/tokenomics,high
-The Graph,22.25,32.90,13.47,19.64,11.74,55.15,https://thegraph.com/blog/the-graph-grt-token-economics/,high
-Optimism,19.00,17.00,64.00,0.00,0.00,36.00,https://community.optimism.io/op-token/op-token-overview,high
-Polygon,16.00,26.80,23.33,21.86,12.01,42.80,https://polygon.technology/blog/polygon-2-0-tokenomics,high
-Arbitrum,26.94,17.53,12.75,42.78,0.00,44.47,https://docs.arbitrum.foundation/airdrop-eligibility-distribution,high
-ENS,25.00,0.00,25.00,50.00,0.00,25.00,https://ens.mirror.xyz/-eaqMv7XPikvXhvjbjzzPNLS4wzcQ8vdOgi9eNXeUuY,high
-LayerZero,25.50,32.20,42.30,0.00,0.00,57.70,https://info.layerzero.foundation/introducing-zro-d39df554a9b7,high
-Wormhole,12.00,11.60,17.00,23.30,36.10,23.60,https://wormhole.com/blog/wormhole-w-tokenomics,high
-Axelar,17.00,29.50,41.00,12.50,0.00,46.50,https://www.figment.io/insights/axelar-tokenomics/,high
-Gitcoin,17.50,17.50,15.00,50.00,0.00,35.00,https://www.gitcoin.co/gtc/empowering-governance,medium
+Lido,35.0,22.18,0.0,36.32,6.5,57.18,https://blog.lido.fi/introducing-ldo/,high
+DIMO,22.4,7.6,44.95,25.0,0.05,30.0,https://docs.dimo.org/overview/earning-dimo-tokens,high
+IoTeX,15.0,24.0,6.0,25.0,30.0,39.0,https://community.iotex.io/t/official-iotex-tokenomics-thread/537,high
+WeatherXM,0.0,30.0,55.0,10.0,5.0,30.0,https://docs.weatherxm.com/tokenomics,medium
+Anyone Protocol,10.0,0.0,10.0,25.0,55.0,10.0,https://docs.anyone.io/tokenomics,medium
+Grass,22.0,25.2,30.0,22.8,0.0,47.2,https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-tokenomics,high
+Livepeer,12.35,19.0,63.44,5.0,0.21,31.35,https://github.com/livepeer/wiki/blob/master/WHITEPAPER.md; Merklemine 63% community; pre-sale 19% investor; founders+team 12.35%; dev fund 5%; grants 0.21%. Prior CSV conflated Merklemine community with investor.,high
+Helium,,,,,,,https://blog.helium.com/helium-community-update-july-2019/; NO genesis pre-mine — first HNT emitted July 29 2019. Prior CSV figures represent ongoing emission allocation (Helium Inc+investors ~31% of emissions) not a genesis distribution. Exclude insider_pct from regression.,emission_based
+GEODNET,25.0,25.0,35.0,0.0,15.0,50.0,https://www.gate.com/learn/articles/what-is-geodnet-all-you-need-to-know-about-geod/5932,medium
+Filecoin,15.0,7.5,55.0,5.0,17.5,22.5,https://spec.filecoin.io/systems/filecoin_token/token_allocation/,high
+Render,23.3,18.29,16.67,0.0,41.74,41.59,https://know.rendernetwork.com/basics/token-metrics-summary,medium
+Pokt Network,46.85,34.83,2.2,16.1,0.0,81.68,https://docs.pokt.network/pokt-network/economics/token-economics; founders 23.08%+team 14.03%+team2 3.65%+advisors 6.09%=46.85% team; pre-seed 11.69%+seed 5.13%+direct 12.31%+private 5.70%=34.83% investor; testnet+MVP 2.20% community; DAO+foundations 16.10% treasury,high
+Morpheus AI,0.0,0.0,48.0,4.0,48.0,0.0,https://gitbook.mor.org/tokenomics,high
+The Graph,22.25,32.9,13.47,19.64,11.74,55.15,https://thegraph.com/blog/the-graph-grt-token-economics/,high
+Optimism,19.0,17.0,64.0,0.0,0.0,36.0,https://community.optimism.io/op-token/op-token-overview,high
+Polygon,16.0,26.8,23.33,21.86,12.01,42.8,https://polygon.technology/blog/polygon-2-0-tokenomics,high
+Arbitrum,26.94,17.53,12.75,42.78,0.0,44.47,https://docs.arbitrum.foundation/airdrop-eligibility-distribution,high
+ENS,25.0,0.0,25.0,50.0,0.0,25.0,https://ens.mirror.xyz/-eaqMv7XPikvXhvjbjzzPNLS4wzcQ8vdOgi9eNXeUuY,high
+LayerZero,25.5,32.2,42.3,0.0,0.0,57.7,https://info.layerzero.foundation/introducing-zro-d39df554a9b7,high
+Wormhole,12.0,11.6,17.0,23.3,36.1,23.6,https://wormhole.com/blog/wormhole-w-tokenomics,high
+Axelar,17.0,29.5,41.0,12.5,0.0,46.5,https://www.figment.io/insights/axelar-tokenomics/,high
+Gitcoin,17.5,17.5,15.0,50.0,0.0,35.0,https://www.gitcoin.co/gtc/empowering-governance,medium
 Token Engineering Commons,,,,,,,https://token-engineering-commons.gitbook.io/tec-handbook,unverifiable
+Balancer,20.0,5.0,65.0,5.0,5.0,25.0,"https://medium.com/balancer-protocol/bal-is-live-104ba56e1945; https://docs.balancer.fi/concepts/governance/bal-token.html; 25% insider is high-confidence; team/investor sub-split estimated (seed $3M at ~$0.60=5M tokens=5% investor, ~20% team/advisors/options)",medium

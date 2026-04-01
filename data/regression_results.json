@@ -30,8 +30,11 @@
   "sector_mw": {
     "p": 0.072
   },
-  "n_total": 38,
-  "n_subsidy": 20,
-  "n_depin_subsidy": 11,
-  "n_defi_subsidy": 9
+  "n_total": 40,
+  "n_subsidy": 19,
+  "n_depin_subsidy": 6,
+  "n_defi_subsidy": 9,
+  "_note": "Counts updated 2026-04-01: 39 conc + BAL (regression-only). Expansion protocols (ATH/HONEY/IO) added with subsidy data. Coefficients not recomputed.",
+  "n_regression_ready": 38,
+  "n_infra_subsidy": 4
 }
