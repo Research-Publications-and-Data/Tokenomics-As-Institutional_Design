@@ -31,10 +31,11 @@
     "p": 0.072
   },
   "n_total": 40,
-  "n_subsidy": 19,
-  "n_depin_subsidy": 6,
+  "n_subsidy": 20,
+  "n_depin_subsidy": 11,
   "n_defi_subsidy": 9,
-  "_note": "Counts updated 2026-04-01: 39 conc + BAL (regression-only). Expansion protocols (ATH/HONEY/IO) added with subsidy data. Coefficients not recomputed.",
+  "_note": "Updated 2026-04-01. subsidy_ratio_onchain is the authoritative column (N=20). subsidy_ratio is a legacy column with different DeFi/infra values \u2014 do not use for paper. n_total=40 includes BAL (regression-only, not in concentration file). Concentration universe = 39 (includes HYPE which lacks revenue data). Regression coefficients not recomputed after expansion.",
   "n_regression_ready": 38,
-  "n_infra_subsidy": 4
+  "n_infra_subsidy": 0,
+  "subsidy_col": "subsidy_ratio_onchain"
 }
