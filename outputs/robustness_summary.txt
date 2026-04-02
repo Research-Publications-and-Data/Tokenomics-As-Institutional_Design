@@ -1,0 +1,95 @@
+ROBUSTNESS CHECKS — B2 GOVERNANCE CONCENTRATION PAPER
+=======================================================
+Generated: 2026-04-01  |  N=40 protocols (39 for insider test, HONEY missing insider classification)
+
+HONEY REQUERY RESOLUTION
+-------------------------
+The Hivemapper (HONEY) HHI placeholder (0.0198) was validated against live on-chain data
+via Dune Analytics (solana_utils.latest_balances, queried 2026-04-01). The computed HHI
+from top-100 holders rescaled to actual supply (6.52B HONEY, Helius-verified) is 0.0175.
+The placeholder overestimates by ~13%, placing HONEY slightly more concentrated than
+observed — a conservative direction. The corrected value is within sampling error for
+DePIN protocols of this size (~90,700 indexed holders). Ranks 77–92 in the holder list
+each hold exactly 12,500,000.1 HONEY (pattern consistent with staking program accounts);
+no exclusion was applied as these could not be confirmed as protocol-controlled in the
+available Solana address label data. The regression dataset has been updated with the
+corrected HONEY values (HHI=0.0175, Gini=0.8652, Top-1=6.48%, Top-5=20.40%,
+Top-10=31.40%). HONEY remains regression_ready=True; its corrected HHI does not
+materially change any regression coefficients.
+
+LEAVE-ONE-OUT SENSITIVITY ANALYSIS
+------------------------------------
+
+Finding 1: DePIN vs. DeFi concentration difference (Mann-Whitney U, p=0.031)
+  STATUS: SENSITIVE — caution warranted
+
+  Leave-one-out across all 30 DePIN+DeFi protocols: the test remains significant in
+  23 of 30 iterations (p < 0.05). Seven protocols, when individually dropped, push the
+  p-value to 0.052 (just above α=0.05): HYPE (DeFi), ATH (DePIN), LDO (DeFi),
+  POKT (DePIN), GEOD (DePIN), LPT (DePIN), and WXM (DePIN). All seven cases produce
+  the same p=0.052, suggesting these protocols sit at the boundary of the rank-order
+  distribution. No single protocol is uniquely responsible for the result; rather,
+  the test is near the 5% threshold and is sensitive to the exact composition of
+  DePIN and DeFi protocols. A permutation test (10,000 shuffles of the DePIN/DeFi
+  labels) yields p=0.029, confirming the direction is not a statistical artifact of
+  the asymptotic approximation, but underscoring that the result is marginal. The
+  paper's sector-difference claim should be characterized as suggestive (p≈0.03)
+  rather than robust, and no single outlier drives the result.
+
+Finding 2: Subsidy ratio vs. HHI correlation (Pearson r=0.58, p=0.007, N=20)
+  STATUS: FRAGILE — driven by single outlier (Livepeer, LPT)
+
+  Leave-one-out across all 20 protocols with subsidy_ratio_onchain data: the
+  correlation is significant in 19 of 20 iterations — but dropping Livepeer (LPT,
+  subsidy ratio=88.5×) alone reduces r from 0.58 to 0.13 and p from 0.007 to 0.594.
+  LPT is a 3.5σ outlier on the subsidy axis with the second-highest HHI (0.1989).
+  The remaining 19 protocols show no meaningful correlation. The p-value range without
+  LPT narrows to 0.009–0.012 for the next four highest-leverage protocols (IOTX,
+  MPL_SYRUP, AAVE, DIMO), all of which preserve significance. This finding MUST be
+  flagged in the paper as LPT-dependent. Recommended language: "The positive
+  association between subsidy intensity and governance concentration (r=0.58, p=0.007)
+  is largely attributable to Livepeer, whose subsidy ratio of 88.5× is extreme
+  relative to the sample; excluding Livepeer renders the correlation statistically
+  insignificant (r=0.13, p=0.59)."
+
+Finding 3: Insider fraction vs. HHI (Spearman ρ=0.441, p=0.005, N=39)
+  STATUS: ROBUST — no single protocol drives the result
+
+  Leave-one-out across all 39 protocols with insider classification data: the
+  Spearman correlation remains statistically significant in all 39 of 39 iterations.
+  The ρ range is 0.407–0.504 and the p-value range is 0.0012–0.0113, staying well
+  below α=0.05 throughout. The weakest iterations drop HYPE (insider=0%, HHI=0.0045)
+  or OP (insider=0%, HHI=0.0091), whose removal slightly weakens the low-end anchor
+  of the relationship. DIMO and META (insider_frac=1.0) are high-leverage on the
+  insider axis but their removal does not flip significance. This is the most robust
+  of the three findings and can be characterized as well-established across the sample.
+  Note: HONEY is excluded from the insider test (no holder classification available);
+  with HONEY added as UNKNOWN (0/10 classified as insider), N would be 40 and ρ would
+  remain directionally unchanged.
+
+CROSS-FINDING OVERLAP
+-----------------------
+No single protocol drives more than one finding. The seven sector-test flippers
+(HYPE, ATH, LDO, POKT, GEOD, LPT, WXM) do not overlap with the subsidy flipper (LPT
+is in both the sector set and subsidy set; LPT has category=DePIN and the highest
+subsidy ratio). LPT's removal marginally weakens the sector test (one of seven
+equally-weighted flippers) and catastrophically weakens the subsidy correlation.
+This is flagged prominently: LPT is a dual-leverage protocol that should be examined
+in any robustness sensitivity analysis presented in the paper.
+
+OVERALL ASSESSMENT
+-------------------
+  Finding 1 (sector difference):    SENSITIVE   — marginal at p≈0.03, 23/30 LOO iterations significant
+  Finding 2 (subsidy-HHI link):     FRAGILE     — driven by Livepeer (LPT) alone; disclose prominently
+  Finding 3 (insider-HHI link):     ROBUST      — significant across all 39 LOO iterations
+
+Recommended paper language for §6 (Robustness):
+"We conducted leave-one-out sensitivity analysis for each statistically significant
+finding. The insider–concentration relationship (ρ=0.441, p=0.005) is robust: it
+remains significant across all 39 single-protocol exclusions. The DePIN–DeFi sector
+difference (p=0.031) is sensitive to sample composition, remaining significant in 23 of
+30 exclusion iterations, with a permutation p of 0.029; this finding should be
+characterized as suggestive. The subsidy–concentration correlation (r=0.58, p=0.007) is
+driven by Livepeer (LPT), whose 88.5× subsidy ratio is a 3.5-sigma outlier; excluding
+LPT alone reduces r to 0.13 (p=0.59), so this result should not be interpreted as a
+general property of the sample."

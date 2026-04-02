@@ -1,0 +1,62 @@
+{
+  "sector_mw": {
+    "test": "Mann-Whitney U (DePIN vs DeFi HHI)",
+    "n_depin": 15,
+    "n_defi": 15,
+    "full_U": 165.0,
+    "full_p": 0.031,
+    "loo_p_range": [
+      0.0121,
+      0.0521
+    ],
+    "loo_significant_count": "23/30",
+    "flippers": [
+      "HYPE",
+      "ATH",
+      "LDO",
+      "POKT",
+      "GEOD",
+      "LPT",
+      "WXM"
+    ],
+    "permutation_p": 0.0294,
+    "robust": false
+  },
+  "subsidy_pearson": {
+    "test": "Pearson r (subsidy_ratio_onchain vs HHI)",
+    "n": 20,
+    "full_r": 0.581,
+    "full_p": 0.0072,
+    "loo_r_range": [
+      0.13,
+      0.699
+    ],
+    "loo_p_range": [
+      0.0009,
+      0.5944
+    ],
+    "loo_significant_count": "19/20",
+    "flippers": [
+      "LPT"
+    ],
+    "robust": false,
+    "livepeer_note": "LPT (subsidy=88.5x) is highest leverage point \u2014 see flippers list"
+  },
+  "insider_spearman_v1": {
+    "test": "Spearman rho (insider_count_frac vs HHI)",
+    "n": 39,
+    "full_rho": 0.441,
+    "full_p": 0.0049,
+    "loo_rho_range": [
+      0.407,
+      0.504
+    ],
+    "loo_p_range": [
+      0.0012,
+      0.0113
+    ],
+    "loo_significant_count": "39/39",
+    "flippers": [],
+    "robust": true
+  }
+}

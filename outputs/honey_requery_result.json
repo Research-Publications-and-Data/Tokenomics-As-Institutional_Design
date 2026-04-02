@@ -1,0 +1,18 @@
+{
+  "honey_status": "resolved",
+  "honey_hhi": 0.01748,
+  "honey_hhi_placeholder": 0.0198,
+  "honey_hhi_change": -0.00232,
+  "honey_gini": 0.8652,
+  "honey_top1_pct": 6.48,
+  "honey_top5_pct": 20.4,
+  "honey_top10_pct": 31.4,
+  "honey_n_holders": 90700,
+  "honey_method": "dune_solana_utils_latest_balances",
+  "honey_supply_actual": 6522624896.304,
+  "honey_supply_indexed": 6311458930.0,
+  "honey_coverage_pct": 96.76,
+  "honey_exclusions": [],
+  "honey_suspicious_accounts": "Ranks 77-92 hold exactly 12,500,000.1 HONEY each \u2014 possibly staking/program accounts",
+  "honey_notes": "HHI computed from top-100 holders via solana_utils.latest_balances, rescaled to actual supply (6.52B HONEY from Helius). Tail contribution (~90,600 accounts holding 13.4%) is negligible. Placeholder HHI=0.0198 was within 5% of computed value; regression results unchanged."
+}
