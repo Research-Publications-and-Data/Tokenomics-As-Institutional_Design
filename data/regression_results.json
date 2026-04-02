@@ -1,41 +1,54 @@
 {
-  "cross_pearson": {
-    "r": 0.58,
-    "p": 0.007
-  },
-  "cross_spearman": {
-    "rho": 0.157,
-    "p": 0.508
-  },
-  "cross_log": {
-    "r": 0.234,
-    "p": 0.35
-  },
-  "excl_livepeer": {
-    "r": 0.128,
-    "p": 0.601
-  },
-  "depin_pearson": {
-    "r": 0.525,
-    "p": 0.098
-  },
-  "depin_spearman": {
-    "rho": 0.027,
-    "p": 0.937
-  },
-  "defi_pearson": {
-    "r": -0.26,
-    "p": 0.499
-  },
-  "sector_mw": {
-    "p": 0.072
-  },
+  "n_concentration": 40,
   "n_total": 40,
+  "n_regression_ready": 38,
   "n_subsidy": 20,
   "n_depin_subsidy": 11,
   "n_defi_subsidy": 9,
-  "_note": "Updated 2026-04-01. subsidy_ratio_onchain is the authoritative column (N=20). subsidy_ratio is a legacy column with different DeFi/infra values \u2014 do not use for paper. n_total=40 includes BAL (regression-only, not in concentration file). Concentration universe = 39 (includes HYPE which lacks revenue data). Regression coefficients not recomputed after expansion.",
-  "n_regression_ready": 38,
   "n_infra_subsidy": 0,
-  "subsidy_col": "subsidy_ratio_onchain"
+  "subsidy_col": "subsidy_ratio_onchain",
+  "full_mean_hhi": 0.0587,
+  "full_median_hhi": 0.0366,
+  "full_std_hhi": 0.0521,
+  "depin_mean_hhi": 0.0902,
+  "defi_mean_hhi": 0.0427,
+  "sector_welch_t": 2.6566,
+  "sector_welch_p": 0.0148,
+  "sector_mw_U": 165.0,
+  "sector_mw_p": 0.031,
+  "sector_cohens_d": 1.004,
+  "insider_pearson_r": 0.1937,
+  "insider_pearson_p": 0.2506,
+  "insider_spearman_rho": 0.0689,
+  "insider_spearman_p": 0.6852,
+  "insider_n": 37,
+  "cross_pearson_r": 0.5811,
+  "cross_pearson_p": 0.0072,
+  "cross_spearman_rho": 0.1783,
+  "cross_spearman_p": 0.4521,
+  "cross_log_r": 0.2697,
+  "cross_log_p": 0.2792,
+  "excl_livepeer_r": 0.1305,
+  "excl_livepeer_p": 0.5944,
+  "depin_pearson_r": 0.5255,
+  "depin_pearson_p": 0.0969,
+  "depin_spearman_rho": 0.0818,
+  "depin_spearman_p": 0.811,
+  "defi_pearson_r": -0.2601,
+  "defi_pearson_p": 0.4991,
+  "defi_spearman_rho": -0.2092,
+  "defi_spearman_p": 0.589,
+  "hhi_gini_r": 0.5423,
+  "hhi_gini_p": 0.0005,
+  "bal_in_concentration": true,
+  "bal_vetoken_caveat": "veBAL; raw token HHI reported, not voting power",
+  "crv_vetoken_caveat": "veCRV; raw token HHI reported, not voting power",
+  "exclusion_pending": [
+    "ATH",
+    "HONEY",
+    "IO"
+  ],
+  "_note": "Clean recomputation 2026-04-01. All 40 protocols in concentration universe. BAL included (was regression-only, now fixed). subsidy_ratio_onchain is authoritative. Protocol team/investor wallets excluded per exclusion registry. ATH/HONEY/IO exclusion verification deferred to next session.",
+  "_replaces": "regression_results.json from prior session (stale, coefficients not recomputed after expansion)",
+  "_timestamp": "2026-04-01"
 }

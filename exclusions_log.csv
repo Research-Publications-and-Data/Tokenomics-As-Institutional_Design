@@ -60,3 +60,11 @@ HYPE,0x2222222222222222222222222222222222222222,Burn address,CONFIRMED_PATTERN,H
 HYPE,0x43e9abea1910387c4292bca4b94de81462f8a251,Community rewards treasury,HIGH_ALLOCATION_MATH,Hyperliquid L1,0.215176,0.004526,Allocation math verification
 HYPE,0xd57ecca444a9acb7208d286be439de12dd09de5d,Hyper Foundation treasury,HIGH_ALLOCATION_MATH,Hyperliquid L1,0.215176,0.004526,Allocation math verification
 HYPE,0x393d0b87ed38fc779fd9611144ae649ba6082109,Staking manager (system address),CONFIRMED_LABEL,Hyperliquid L1,0.215176,0.004526,Hypurrscan label
+BAL,0xba12222222228d8ba445958a75a0704d566bf2c8,Balancer V2 Vault,Central liquidity aggregation contract,Ethereum,0.214216,0.027673,Blockscout verified contract
+BAL,0x0efccbb9e2c09ea29551879bd9da32362b32fc89,Balancer Treasury Safe (GnosisSafe),Protocol treasury — Treasury Council multisig,Ethereum,0.214216,0.027673,Blockscout verified contract
+BAL,0xb129f73f1afd3a49c701241f374db17ae63b20eb,Balancer Future Fundraise multisig,Balancer Labs fundraise reserve,Ethereum,0.214216,0.027673,Blockscout verified contract
+BAL,0xcdcebf1f28678eb4a1478403ba7f34c94f7ddbc5,Balancer Team/Contributors multisig,Team and contributor incentives reserve,Ethereum,0.214216,0.027673,Blockscout verified contract
+BAL,0xe8d4d93d9728bd673b0197673a230f62255c7846,Protocol-affiliated Safe (veBAL-active),Shares deployer with Treasury Safe,Ethereum,0.214216,0.027673,Deployer analysis
+BAL,0xa3a7b6f88361f48403514059f1f16c8e78d60eec,Arbitrum One L1 ERC20 Gateway,Bridge lock contract,Ethereum,0.214216,0.027673,Blockscout verified contract
+BAL,0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf,Polygon PoS ERC20 Predicate,Bridge lock contract,Ethereum,0.214216,0.027673,Blockscout verified contract
+BAL,0xc128a9954e6c874ea3d62ce62b468ba073093f25,veBAL Voting Escrow,Staking/lock contract for vote-escrowed BAL,Ethereum,0.214216,0.027673,Blockscout verified contract
