@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:53Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Filecoin",
+    "symbol": "FIL",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 2000000000,
+    "lastUpdatedDate": "2025-02-13T07:46:02Z",
+    "totalUnlockedAmount": 929841583.2799944,
+    "totalLockedAmount": 769831410.2279922,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 300000000,
+    "allocations": [
+      {
+        "allocationName": "Baseline Minting",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 210182067.0773379,
+        "allocationLockedAmount": 559817932.9226621,
+        "allocationAmount": 770000000,
+        "trackedAllocationPercentage": 38.5
+      },
+      {
+        "allocationName": "Simple Minting",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 155624828.8452798,
+        "allocationLockedAmount": 174375171.1547202,
+        "allocationAmount": 330000000,
+        "trackedAllocationPercentage": 16.5
+      },
+      {
+        "allocationName": "Mining Reserve",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 300000000,
+        "allocationAmount": 300000000,
+        "trackedAllocationPercentage": 15
+      },
+      {
+        "allocationName": "Protocol Labs",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 191118210.8626227,
+        "allocationLockedAmount": 18881789.137377292,
+        "allocationAmount": 210000000,
+        "trackedAllocationPercentage": 10.5
+      },
+      {
+        "allocationName": "Fundraising 36 months",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 116000000.00000124,
+        "allocationLockedAmount": -1.2367963790893555e-06,
+        "allocationAmount": 116000000,
+        "trackedAllocationPercentage": 5.800000000000001
+      },
+      {
+        "allocationName": "Filecoin Foundation",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 91008671.83934274,
+        "allocationLockedAmount": 8991328.160657257,
+        "allocationAmount": 100000000,
+        "trackedAllocationPercentage": 5
+      },
+      {
+        "allocationName": "Protocol Labs Team and Contributors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 81907804.65540971,
+        "allocationLockedAmount": 8092195.344590291,
+        "allocationAmount": 90000000,
+        "trackedAllocationPercentage": 4.5
+      },
+      {
+        "allocationName": "Fundraising 6 months",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 44000000.00000006,
+        "allocationLockedAmount": -5.960464477539063e-08,
+        "allocationAmount": 44000000,
+        "trackedAllocationPercentage": 2.1999999999999997
+      },
+      {
+        "allocationName": "Fundraising 12 months",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 30000000.000000224,
+        "allocationLockedAmount": -2.2351741790771484e-07,
+        "allocationAmount": 30000000,
+        "trackedAllocationPercentage": 1.5
+      },
+      {
+        "allocationName": "Fundraising 24 months",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 10000000.000000084,
+        "allocationLockedAmount": -8.381903171539307e-08,
+        "allocationAmount": 10000000,
+        "trackedAllocationPercentage": 0.5
+      }
+    ]
+  }
+}

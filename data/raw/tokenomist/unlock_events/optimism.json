@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:36:17Z"
+  },
+  "status": true,
+  "data": [
+    {
+      "unlockDate": "2025-04-11T03:30:00Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 4473924,
+        "cliffValue": 2858770.32714,
+        "valueToMarketCap": 1.2228702949894654,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-04-11T03:30:00Z",
+            "allocationName": "Seed Fund",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 4473924,
+            "cliffValue": 2858770.32714,
+            "referencePrice": 0.638985,
+            "referencePriceUpdatedTime": "2025-04-11T00:00:00Z",
+            "unlockPrecision": "second"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-04-30T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653.1,
+        "cliffValue": 23720710.7571633,
+        "valueToMarketCap": 10.146793635567045,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-04-30T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 12519263.991804,
+            "referencePrice": 0.756843,
+            "referencePriceUpdatedTime": "2025-04-30T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-04-30T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225.1,
+            "cliffValue": 11201446.765359301,
+            "referencePrice": 0.756843,
+            "referencePriceUpdatedTime": "2025-04-30T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-05-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 19499554.172133,
+        "valueToMarketCap": 8.341147708250848,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-05-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 9208122.786225,
+            "referencePrice": 0.622161,
+            "referencePriceUpdatedTime": "2025-05-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-05-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 10291431.385908,
+            "referencePrice": 0.622161,
+            "referencePriceUpdatedTime": "2025-05-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-06-30T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 19091830.608256,
+        "valueToMarketCap": 8.166739491508503,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-06-30T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 10076243.949056,
+            "referencePrice": 0.609152,
+            "referencePriceUpdatedTime": "2025-06-30T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-06-30T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 9015586.6592,
+            "referencePrice": 0.609152,
+            "referencePriceUpdatedTime": "2025-06-30T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-07-11T11:00:00Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 4473924,
+        "cliffValue": 2943340.912512,
+        "valueToMarketCap": 1.2590462884575215,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-07-11T11:00:00Z",
+            "allocationName": "Seed Fund",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 4473924,
+            "cliffValue": 2943340.912512,
+            "referencePrice": 0.657888,
+            "referencePriceUpdatedTime": "2025-07-11T00:00:00Z",
+            "unlockPrecision": "second"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-07-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341654,
+        "cliffValue": 22108935.539718,
+        "valueToMarketCap": 9.457339146375572,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-07-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 11668604.515476,
+            "referencePrice": 0.705417,
+            "referencePriceUpdatedTime": "2025-07-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-07-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800226,
+            "cliffValue": 10440331.024241999,
+            "referencePrice": 0.705417,
+            "referencePriceUpdatedTime": "2025-07-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-08-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 22152468.390318003,
+        "valueToMarketCap": 9.4759607996611,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-08-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 11691580.558968,
+            "referencePrice": 0.706806,
+            "referencePriceUpdatedTime": "2025-08-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-08-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 10460887.83135,
+            "referencePrice": 0.706806,
+            "referencePriceUpdatedTime": "2025-08-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-09-21T00:00:00Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 116000000,
+        "cliffValue": 93865112,
+        "valueToMarketCap": 40.15182895629585,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-09-21T00:00:00Z",
+            "allocationName": "Unallocated Ecosystem Fund",
+            "standardAllocationName": "Reserve",
+            "cliffAmount": 116000000,
+            "cliffValue": 93865112,
+            "referencePrice": 0.809182,
+            "referencePriceUpdatedTime": "2025-09-21T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-09-30T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 21143235.822065,
+        "valueToMarketCap": 9.044250523135593,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-09-30T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 11158930.03594,
+            "referencePrice": 0.674605,
+            "referencePriceUpdatedTime": "2025-09-30T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-09-30T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 9984305.786125,
+            "referencePrice": 0.674605,
+            "referencePriceUpdatedTime": "2025-09-30T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-10-10T18:30:00Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 4473924,
+        "cliffValue": 3165238.5950639998,
+        "valueToMarketCap": 1.3539654507084153,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-10-10T18:30:00Z",
+            "allocationName": "Seed Fund",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 4473924,
+            "cliffValue": 3165238.5950639998,
+            "referencePrice": 0.707486,
+            "referencePriceUpdatedTime": "2025-10-10T00:00:00Z",
+            "unlockPrecision": "second"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-10-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 12523842.463923,
+        "valueToMarketCap": 5.357210680013156,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-10-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 6609805.755948,
+            "referencePrice": 0.399591,
+            "referencePriceUpdatedTime": "2025-10-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-10-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 5914036.707974999,
+            "referencePrice": 0.399591,
+            "referencePriceUpdatedTime": "2025-10-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-11-30T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 10262040.733525,
+        "valueToMarketCap": 4.389700235749323,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-11-30T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 5416077.0629,
+            "referencePrice": 0.327425,
+            "referencePriceUpdatedTime": "2025-11-30T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-11-30T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 4845963.670625,
+            "referencePrice": 0.327425,
+            "referencePriceUpdatedTime": "2025-11-30T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2025-12-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341654,
+        "cliffValue": 8516624.34969,
+        "valueToMarketCap": 3.6430792750109036,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-12-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541429,
+            "cliffValue": 4494885.209315,
+            "referencePrice": 0.271735,
+            "referencePriceUpdatedTime": "2025-12-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2025-12-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 4021739.140375,
+            "referencePrice": 0.271735,
+            "referencePriceUpdatedTime": "2025-12-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2026-01-10T02:00:00Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 4473924,
+        "cliffValue": 1407979.674192,
+        "valueToMarketCap": 0.6022787151428354,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-01-10T02:00:00Z",
+            "allocationName": "Seed Fund",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 4473924,
+            "cliffValue": 1407979.674192,
+            "referencePrice": 0.314708,
+            "referencePriceUpdatedTime": "2026-01-10T00:00:00Z",
+            "unlockPrecision": "second"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2026-01-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 8214615.909647001,
+        "valueToMarketCap": 3.5138918594782376,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-01-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 4335491.737372001,
+            "referencePrice": 0.262099,
+            "referencePriceUpdatedTime": "2026-01-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2026-01-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 3879124.1722750003,
+            "referencePrice": 0.262099,
+            "referencePriceUpdatedTime": "2026-01-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2026-02-28T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341653,
+        "cliffValue": 3754980.7626239997,
+        "valueToMarketCap": 1.6062341172624413,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-02-28T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800225,
+            "cliffValue": 1773185.3568,
+            "referencePrice": 0.119808,
+            "referencePriceUpdatedTime": "2026-02-28T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2026-02-28T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 1981795.405824,
+            "referencePrice": 0.119808,
+            "referencePriceUpdatedTime": "2026-02-28T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2026-03-07T00:00:00Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 19500000,
+        "cliffValue": 2351368.5,
+        "valueToMarketCap": 1.0058236102165619,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-03-07T00:00:00Z",
+            "allocationName": "Unallocated Ecosystem Fund",
+            "standardAllocationName": "Reserve",
+            "cliffAmount": 19500000,
+            "cliffValue": 2351368.5,
+            "referencePrice": 0.120583,
+            "referencePriceUpdatedTime": "2026-03-07T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    },
+    {
+      "unlockDate": "2026-03-31T00:00:01Z",
+      "tokenName": "Optimism",
+      "tokenSymbol": "OP",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 31341654,
+        "cliffValue": 3318517.008828,
+        "valueToMarketCap": 1.4195319697378126,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-03-31T00:00:01Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 16541428,
+            "cliffValue": 1751439.479496,
+            "referencePrice": 0.105882,
+            "referencePriceUpdatedTime": "2026-03-31T00:00:00Z",
+            "unlockPrecision": "month"
+          },
+          {
+            "unlockDate": "2026-03-31T00:00:01Z",
+            "allocationName": "Investors",
+            "standardAllocationName": "Private Investors",
+            "cliffAmount": 14800226,
+            "cliffValue": 1567077.529332,
+            "referencePrice": 0.105882,
+            "referencePriceUpdatedTime": "2026-03-31T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-06-11T10:36:43Z"
+    }
+  ]
+}

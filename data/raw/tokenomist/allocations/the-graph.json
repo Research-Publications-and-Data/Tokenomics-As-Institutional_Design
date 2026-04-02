@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:45Z"
+  },
+  "status": true,
+  "data": {
+    "name": "The Graph",
+    "symbol": "GRT",
+    "listedMethod": "INTERNAL",
+    "maxSupply": null,
+    "lastUpdatedDate": "2025-09-24T09:20:10Z",
+    "totalUnlockedAmount": 9661156167.883202,
+    "totalLockedAmount": 0,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 0,
+    "allocations": [
+      {
+        "allocationName": "Early Team & Advisors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 2300000000.000044,
+        "allocationLockedAmount": -4.38690185546875e-05,
+        "allocationAmount": 2300000000,
+        "trackedAllocationPercentage": 22.254475084663763
+      },
+      {
+        "allocationName": "Graph Foundation",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 1464659817.5181825,
+        "allocationLockedAmount": 565340182.4818175,
+        "allocationAmount": 2030000000,
+        "trackedAllocationPercentage": 19.641993226898887
+      },
+      {
+        "allocationName": "Backers",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 1699999999.9999979,
+        "allocationLockedAmount": 2.1457672119140625e-06,
+        "allocationAmount": 1700000000,
+        "trackedAllocationPercentage": 16.44895984518626
+      },
+      {
+        "allocationName": "Early Backers",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 1700000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 1700000000,
+        "trackedAllocationPercentage": 16.44895984518626
+      },
+      {
+        "allocationName": "Edge & Node",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 800000000.000015,
+        "allocationLockedAmount": -1.5020370483398438e-05,
+        "allocationAmount": 800000000,
+        "trackedAllocationPercentage": 7.740686985970005
+      },
+      {
+        "allocationName": "Public GRT Sale",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Public Investors",
+        "allocationUnlockedAmount": 420000000.0000024,
+        "allocationLockedAmount": -2.384185791015625e-06,
+        "allocationAmount": 420000000,
+        "trackedAllocationPercentage": 4.063860667634253
+      },
+      {
+        "allocationName": "Curator Program Grants",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 314999999.99999607,
+        "allocationLockedAmount": 3.933906555175781e-06,
+        "allocationAmount": 315000000,
+        "trackedAllocationPercentage": 3.0478955007256894
+      },
+      {
+        "allocationName": "Testnet Indexer Rewards",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 314999999.99999917,
+        "allocationLockedAmount": 8.344650268554688e-07,
+        "allocationAmount": 315000000,
+        "trackedAllocationPercentage": 3.0478955007256894
+      },
+      {
+        "allocationName": "New Issuance",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 191496350.36496207,
+        "allocationLockedAmount": 108503649.63503793,
+        "allocationAmount": 300000000,
+        "trackedAllocationPercentage": 2.9027576197387517
+      },
+      {
+        "allocationName": "Educational Programs",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 210000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 210000000,
+        "trackedAllocationPercentage": 2.0319303338171264
+      },
+      {
+        "allocationName": "Strategic GRT Sale",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 210000000.0000012,
+        "allocationLockedAmount": -1.1920928955078125e-06,
+        "allocationAmount": 210000000,
+        "trackedAllocationPercentage": 2.0319303338171264
+      },
+      {
+        "allocationName": "Bug Bounties",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 35000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 35000000,
+        "trackedAllocationPercentage": 0.3386550556361877
+      }
+    ]
+  }
+}

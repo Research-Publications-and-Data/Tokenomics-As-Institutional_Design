@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:41Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Arbitrum",
+    "symbol": "ARB",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 10000000000,
+    "lastUpdatedDate": "2025-06-11T10:31:15Z",
+    "totalUnlockedAmount": 5301725109.153274,
+    "totalLockedAmount": 1294097140.7450113,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 3403750000,
+    "allocations": [
+      {
+        "allocationName": "Arbitrum DAO Treasury",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 3403750000,
+        "allocationAmount": 3403750000,
+        "trackedAllocationPercentage": 34.0375
+      },
+      {
+        "allocationName": "Team, Future Team + Advisors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 2020500000,
+        "allocationLockedAmount": 673500000,
+        "allocationAmount": 2694000000,
+        "trackedAllocationPercentage": 26.939999999999998
+      },
+      {
+        "allocationName": "Investors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 1314750000.2999997,
+        "allocationLockedAmount": 438249999.7000003,
+        "allocationAmount": 1753000000,
+        "trackedAllocationPercentage": 17.53
+      },
+      {
+        "allocationName": "Individual Wallets",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 1162000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 1162000000,
+        "trackedAllocationPercentage": 11.62
+      },
+      {
+        "allocationName": "Arbitrum DAO Treasury",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 691475108.8532746,
+        "allocationLockedAmount": 182774891.14672542,
+        "allocationAmount": 874250000,
+        "trackedAllocationPercentage": 8.7425
+      },
+      {
+        "allocationName": "Daos in Arbitrum Ecosystem",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 113000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 113000000,
+        "trackedAllocationPercentage": 1.13
+      }
+    ]
+  }
+}

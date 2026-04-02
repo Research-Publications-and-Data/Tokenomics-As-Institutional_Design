@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:36:40Z"
+  },
+  "status": true,
+  "data": [
+    {
+      "unlockDate": "2025-11-29T07:30:00Z",
+      "tokenName": "Hyperliquid",
+      "tokenSymbol": "HYPE",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 9916667,
+        "cliffValue": 345893344.96000004,
+        "valueToMarketCap": 3.965660358150193,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2025-11-29T07:30:00Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 9916667,
+            "cliffValue": 345893344.96000004,
+            "referencePrice": 34.88,
+            "referencePriceUpdatedTime": "2025-11-29T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-12-29T09:29:31Z"
+    },
+    {
+      "unlockDate": "2026-01-06T00:00:00Z",
+      "tokenName": "Hyperliquid",
+      "tokenSymbol": "HYPE",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 12457813,
+        "cliffValue": 331253247.67,
+        "valueToMarketCap": 3.7978119323034076,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-01-06T00:00:00Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 12457813,
+            "cliffValue": 331253247.67,
+            "referencePrice": 26.59,
+            "referencePriceUpdatedTime": "2026-01-06T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-12-29T09:29:31Z"
+    },
+    {
+      "unlockDate": "2026-02-06T00:00:00Z",
+      "tokenName": "Hyperliquid",
+      "tokenSymbol": "HYPE",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 9916667,
+        "cliffValue": 327448344.34000003,
+        "valueToMarketCap": 3.75418879088645,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-02-06T00:00:00Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 9916667,
+            "cliffValue": 327448344.34000003,
+            "referencePrice": 33.02,
+            "referencePriceUpdatedTime": "2026-02-06T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-12-29T09:29:31Z"
+    },
+    {
+      "unlockDate": "2026-03-06T00:00:00Z",
+      "tokenName": "Hyperliquid",
+      "tokenSymbol": "HYPE",
+      "listedMethod": "INTERNAL",
+      "dataSource": "Whitepaper",
+      "cliffUnlocks": {
+        "cliffAmount": 9916667,
+        "cliffValue": 303450010.2,
+        "valueToMarketCap": 3.4790483646615793,
+        "allocationBreakdown": [
+          {
+            "unlockDate": "2026-03-06T00:00:00Z",
+            "allocationName": "Core Contributors",
+            "standardAllocationName": "Founder / Team",
+            "cliffAmount": 9916667,
+            "cliffValue": 303450010.2,
+            "referencePrice": 30.6,
+            "referencePriceUpdatedTime": "2026-03-06T00:00:00Z",
+            "unlockPrecision": "month"
+          }
+        ]
+      },
+      "latestUpdateDate": "2025-12-29T09:29:31Z"
+    }
+  ]
+}

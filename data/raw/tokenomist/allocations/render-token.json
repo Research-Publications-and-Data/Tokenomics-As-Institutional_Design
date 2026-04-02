@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:58Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Render",
+    "symbol": "RENDER",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 644245094,
+    "lastUpdatedDate": "2025-12-16T10:30:11Z",
+    "totalUnlockedAmount": 317603021.286,
+    "totalLockedAmount": 5.960464477539063e-08,
+    "totalUntrackedAmount": 91614399.71399993,
+    "totalTBDLockedAmount": 235027673,
+    "allocations": [
+      {
+        "allocationName": "Escrow for partners",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 171400000.28599998,
+        "allocationLockedAmount": -0.28599998354911804,
+        "allocationAmount": 171400000,
+        "trackedAllocationPercentage": 26.60478156470059
+      },
+      {
+        "allocationName": "OTOY Treasury",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 150127163,
+        "allocationAmount": 150127163,
+        "trackedAllocationPercentage": 23.302802675281217
+      },
+      {
+        "allocationName": "Public & Private Sale",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 117843239,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 117843239,
+        "trackedAllocationPercentage": 18.29167813577483
+      },
+      {
+        "allocationName": "Inflation",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 15759782,
+        "allocationLockedAmount": 91614400,
+        "allocationAmount": 107374182,
+        "trackedAllocationPercentage": 16.666666614926523
+      },
+      {
+        "allocationName": "RNDR Reserve",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 55500510,
+        "allocationAmount": 55500510,
+        "trackedAllocationPercentage": 8.614812982960798
+      },
+      {
+        "allocationName": "Escrow for subsequent distribution",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 29400000,
+        "allocationAmount": 29400000,
+        "trackedAllocationPercentage": 4.563480618449226
+      },
+      {
+        "allocationName": "Escrow for subsequent distribution",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 12600000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 12600000,
+        "trackedAllocationPercentage": 1.9557774079068113
+      }
+    ]
+  }
+}

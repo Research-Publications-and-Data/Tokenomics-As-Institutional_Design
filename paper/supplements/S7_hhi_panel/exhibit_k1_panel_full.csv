@@ -1,0 +1,29 @@
+protocol,quarter,months_post_tge,gov_hhi,pattern,exception_mechanism
+UNI,Q1,3,0.054,Decay,
+UNI,Q8,24,0.011,Decay,
+AAVE,Q1,3,0.191,Decay,
+AAVE,Q8,24,0.05,Decay,
+LDO,Q1,3,0.047,Decay,
+LDO,Q8,24,0.031,Decay,
+MKR (MCD),Q1,3,0.077,Decay,
+MKR (MCD),Q8,24,0.068,Decay,
+MKR (TGE),Q1,3,0.244,Decay,
+MKR (TGE),Q8,24,0.034,Decay,
+RPL,Q1,3,0.486,Decay,
+RPL,Q8,24,0.107,Decay,
+ARB,Q1,3,0.016,Decay,
+ARB,Q8,24,0.008,Decay,
+GRT,Q1,3,0.083,Decay,
+GRT,Q8,24,0.048,Decay,
+OP,Q1,3,0.041,Decay,
+OP,Q8,24,0.023,Decay,
+DIMO,Q1,3,0.529,Decay,
+DIMO,Q8,24,0.015,Decay,
+BAL,Q1,3,0.212,Decay,
+BAL,Q8,24,0.02,Decay,
+CRV,Q1,3,0.556,Structural,vote-escrow lock
+CRV,Q8,24,0.249,Structural,vote-escrow lock
+COMP,Q1,3,0.033,Exception,Reservoir drip
+COMP,Q8,24,0.049,Exception,Reservoir drip
+ENS,Q1,3,0.007,Exception,claim window
+ENS,Q8,24,0.025,Exception,claim window

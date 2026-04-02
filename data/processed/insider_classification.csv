@@ -1,0 +1,391 @@
+token,chain,address,balance,share,post_exclusion_rank,tier1_label,tier2_label,tier3_label,final_classification,classification_source,confidence,vesting_status,notes
+AAVE,ethereum,0xa700b4eb416be35b2911fd5dee80678ff64ff6c9,810555.5223061945,0.0584484547226541,1,,Aave v3 AAVE,,contract,tier2_blockscout,high,,impl: ATokenWithDelegationInstance
+AAVE,ethereum,0x494aa25fa055d370424ed9db3839e76ee3e9e945,790365.8431237276,0.056992594492125,2,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+AAVE,ethereum,0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503,399999.99999999994,0.0288436525884649,3,,,Binance Cold Wallet,exchange,phase1_blockscout,high,,Blockscout: Binance Cold Wallet
+AAVE,ethereum,0x7915f9373ae32d1fcaf0cdf17a532a3d8046d759,338005.24843139003,0.024373264897082,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+AAVE,ethereum,0x25f2226b597e8f9514b3f68f00f494cf4f286491,320181.649480382,0.0230880206570345,5,,InitializableAdminUpgradeabilityProxy,,contract,tier2_blockscout,high,,impl: AaveEcosystemReserveV2
+AAVE,ethereum,0x317625234562b1526ea2fac4030ea499c5291de4,302498.23420879804,0.0218128849403567,6,,InitializableAdminUpgradeabilityProxy,,contract,tier2_blockscout,high,,impl: LendToAaveMigrator
+AAVE,ethereum,0x5a801a9418d036fd453078c3adcb761fdc5ae695,222582.7297384201,0.0160502473219179,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+AAVE,ethereum,0x45292a0eafa4d1625c06902f359c5ee819afb026,216292.17884713,0.0155966411606718,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+AAVE,ethereum,0x73af3bcf944a6559933396c1577b257e2054d935,202061.06563090833,0.0145704479467823,9,,,Robinhood 6,exchange,phase1_blockscout,high,,Blockscout: Robinhood 6
+AAVE,ethereum,0x22740deba78d5a0c24c58c740e3715ec29de1bfa,191565.37519091016,0.0138136128249638,10,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+ANYONE,ethereum,0x0d9a1ca7bc756ae009672db626cde3c9bef583ef,11334481.643703844,0.1328781100628105,1,,ERC1967Proxy,,contract,tier2_blockscout,high,,impl: HodlerV5
+ANYONE,ethereum,0x9642b23ed1e01df1092b92641051881a322f5d4e,9748275.049605116,0.1142824529327743,2,,,MEXC 21,exchange,phase1_blockscout,high,,Blockscout: MEXC 21
+ANYONE,ethereum,0x6d6cc65e2060d0a280fcd47b6c22ec5636797fec,5037368.881240494,0.0590548450003683,3,,ERC1967Proxy,,contract,tier2_blockscout,high,,impl: Vault
+ANYONE,ethereum,0xc593fe9193b745447e86b45ea0bf62565ee030cc,2766918.8740638345,0.0324375619671106,4,,UniswapV3Pool,,contract,tier2_blockscout,high,,
+ANYONE,ethereum,0x1ef7a8dc436253b28167153aec7a1562bf73551c,2500000.0,0.029308378239031,5,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ANYONE,ethereum,0x50e6d8485b448de44cd9d9c979d5d8ed36bd82cb,2500000.0,0.029308378239031,6,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ANYONE,ethereum,0xd19eab591fc1840c237488a180ced4aad9faecf8,2500000.0,0.029308378239031,7,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ANYONE,ethereum,0xeed86b90448c371eab47b7f16e294297c27e4f51,1556481.2358586448,0.0182471763129998,8,,,CoinSpot Hot Wallet,exchange,phase1_blockscout,high,,Blockscout: CoinSpot Hot Wallet
+ANYONE,ethereum,0xe8fdfb7b89519ed7c4999a912abf315e6aa52b6f,1300000.0,0.0152403566842961,9,,Vesting,,insider,tier2_blockscout,high,,
+ANYONE,ethereum,0x446b86a33e2a438f569b15855189e3da28d027ba,1279647.23,0.0150017540117473,10,,ERC1967Proxy,,contract,tier2_blockscout,high,,impl: Vault
+ARB,ethereum,0xf7f468b184a48f6ca37eeffe12733ee1c16b6e26,462556783.992131,0.0525280450665376,1,,,,exchange,phase4b_l2_blockscout,medium,,464M ARB on Arbitrum; spam token pattern; exchange hot wallet
+ARB,ethereum,0x07455344be8db742627ae4514c1071e43a154ddb,117025933.79466476,0.0132894895006542,2,,,,exchange,phase4b_l2_blockscout,medium,,117M ARB; spam tokens; exchange cold wallet rotation
+ARB,ethereum,0x1190cea3e2c8727218768bfb990c3228aa06dfa9,112906773.01572338,0.012821716741675,3,,,,exchange,phase4b_l2_blockscout,medium,,113M ARB; spam tokens; exchange cluster
+ARB,ethereum,0xee5b5b923ffce93a870b3104b7ca09c3db80047a,88000006.0,0.0099932990737462,4,,,Bybit Hot Wallet 4,exchange,phase1_blockscout,high,,Blockscout: Bybit Hot Wallet 4
+ARB,ethereum,0x76ec5a0d3632b2133d9f1980903305b62678fbd3,83604112.03734064,0.0094941004365855,5,,,BtcTurk 14,exchange,phase1_blockscout,high,,Blockscout: BtcTurk 14
+ARB,ethereum,0x361ad597f6a0cf86f8ab14234ca17a5739a67458,71369074.18799356,0.0081046869812372,6,,,Bithumb 356,exchange,phase1_blockscout,high,,Blockscout: Bithumb 356
+ARB,ethereum,0x43684d03d81d3a4c70da68febdd61029d426f042,68942427.5562045,0.0078291164825515,7,,,Binance 113,exchange,phase1_blockscout,high,,Blockscout: Binance 113
+ARB,ethereum,0xf5acf47847963bd0ae2b8e080729bf508b2482df,68292134.99279955,0.0077552691231372,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ARB,ethereum,0x3964128e13e05d4a672b4b45a1a96a2d56c27efb,67894913.8404879,0.0077101606060597,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ARB,ethereum,0x73af3bcf944a6559933396c1577b257e2054d935,65603898.57702699,0.0074499924339089,10,,,Robinhood 6,exchange,phase1_blockscout,high,,Blockscout: Robinhood 6
+AXL,ethereum,0xd2ff2d432a0078672cf4f9e2e97858a33cbdeebc,113133137.39239945,0.4334804098643276,1,,,,insider,phase4_web_research,medium,,Likely Axelar/Interop Labs operations wallet; 43.3% of AXL; created 2023-05
+AXL,ethereum,0x54d1774631980b22c85f13bfaf2f45291b22cbf9,38171390.12499894,0.1462573231668136,2,,,Bithumb 148,exchange,phase1_blockscout,high,,Blockscout: Bithumb 148
+AXL,ethereum,0x377b8ce04761754e8ac153b47805a9cf6b190873,11314769.227231996,0.0433536178275413,3,,,Upbit 59,exchange,phase1_blockscout,high,,Blockscout: Upbit 59
+AXL,ethereum,0xf42aac93ab142090db9fdc0bc86aab73cb36f173,8495278.775746763,0.032550471157267,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+AXL,ethereum,0xfcac185644e5c6cd73c309a60d2758ae56cf78b3,7736941.596711978,0.0296448299034301,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+AXL,ethereum,0xd1669ac6044269b59fa12c5822439f609ca54f41,5671286.544276,0.0217300754874669,6,,,,contract,tier2_blockscout,medium,,
+AXL,ethereum,0x3de3a257f0e50af9bf48aea633e06085695d9c1b,3606881.7695649937,0.0138201116298949,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+AXL,ethereum,0xc80afd311c9626528de66d86814770361fe92416,3396329.1748859994,0.0130133592747218,8,,,,unknown,unresolved_eoa,low,,"EOA, ~1818 ETH"
+AXL,ethereum,0x05e9c5bcc805aefefebbec13742cec01c6fac42e,2888528.0651910007,0.0110676708740133,9,,TokenManagerProxy,,contract,tier2_blockscout,high,,impl: TokenManager
+AXL,ethereum,0x0431e3b8bd78ef3aa3527d2d8bbcf089012f0cdf,2528071.9919069996,0.0096865490383898,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0x73af3bcf944a6559933396c1577b257e2054d935,1238812.7748360736,0.140634502502886,1,,,Robinhood 6,exchange,phase1_blockscout,high,,Blockscout: Robinhood 6
+COMP,ethereum,0x841ed663f2636863d40be4ee76243377dff13a34,241472.70846650517,0.0274128543981999,2,,,Robinhood 5,exchange,phase1_blockscout,high,,Blockscout: Robinhood 5
+COMP,ethereum,0x3bbd4947df4e1bd80d130ddcfa9b54f1b03a1a8d,228704.28890891,0.0259633372728473,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0x4290cd12f6ff4cdea0638916cbfb229b9d2c8806,179221.85481052543,0.0203459125550735,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0x7e9955e7f0c1c88d76d13720b5dd122cc3f6d8f6,152047.02971562,0.0172609282172822,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241,133597.9201,0.0151665186300407,6,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+COMP,ethereum,0xc78e14e378b035b53561fa79445069d379b1f868,115513.34055481805,0.0131134918135817,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0x6522b7f9d481eceb96557f44753a4b893f837e90,106518.30859868648,0.0120923432834371,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0x3e0f52239518b540a06f81d51ac4ea7ffdece329,101000.0,0.0114658849515585,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+COMP,ethereum,0x7c01aa3783577e15fd7e272443d44b92d5b21056,100772.25,0.0114400299486108,10,,SablierLockup,,contract,tier2_blockscout,high,,
+CRV,ethereum,0x5a52e96bacdabb82fd05763e25335261b270efcb,71000000.0,0.033570604854194,1,Binance Hot,,,exchange,tier1_known_exchange,high,,
+CRV,ethereum,0x72402ce4d16619e88ceff669634997c360b0f0ad,64786992.2785331,0.030632936865836,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+CRV,ethereum,0xbe7be7023902f09cc28f0101a3e6e313bf2bc626,43248793.48083222,0.0204491289628966,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+CRV,ethereum,0x611f7bf868a6212f871e89f7e44684045ddfb09d,32366473.26927671,0.0153036913330524,4,,,OKX Cold Wallet,exchange,phase1_blockscout,high,,Blockscout: OKX Cold Wallet
+CRV,ethereum,0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597,32207104.985893607,0.0152283379574504,5,,,,contract,tier2_blockscout,medium,,
+CRV,ethereum,0xd2dd7b597fd2435b6db61ddf48544fd931e6869f,26608520.976089016,0.0125811851189129,6,,,Kraken 246,exchange,phase1_blockscout,high,,Blockscout: Kraken 246
+CRV,ethereum,0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83,25948418.846837025,0.0122690720520885,7,,,Kraken 245,exchange,phase1_blockscout,high,,Blockscout: Kraken 245
+CRV,ethereum,0x77fb357f55bef5a70d30663955f8c9f35794df0e,23501003.81233772,0.0111118720093084,8,,,eToro 4,exchange,phase1_blockscout,high,,Blockscout: eToro 4
+CRV,ethereum,0x8fa129f87b8a11ee1ca35abd46674f8b66984d4a,21297103.891359743,0.0100698121024726,9,,,,exchange,cross_token_dedup,high,,Cross-token: exchange in LDO (50+ tokens)
+CRV,ethereum,0x5dc61282cdcf58a27f7a5c9612aea3d2330964be,20864162.2635,0.0098651062952358,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+DIMO,polygon,0x00235af3dda000ba0e0ec440793b414d976a9e62,38786976.247949,0.0665519294894555,1,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+DIMO,polygon,0xccfa7c808f5b77822e4935a7230f46681c99f4bc,14026591.556739926,0.0240672726405402,2,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2022-06-06 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+DIMO,polygon,0x354698f0e93c6830196e81250074733d8a792ff2,13117998.28772648,0.0225082793643584,3,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2023-07-25 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+DIMO,polygon,0x3ace81a93ff91f7ce42da8d1c18d2de6b470070c,9237143.91850662,0.0158493858046207,4,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2022-08-29 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+DIMO,polygon,0x62b98e019e0d3e4a1ad8c786202e09017bd995e1,9175132.483417116,0.0157429846087854,5,,GnosisSafeL2 proxy,,insider,tier2_blockscout,medium,,impl: GnosisSafeL2 multisig
+DIMO,polygon,0x0daf060795df02c59fb15f20b41e1bf24d6b31d8,8602602.56369247,0.01476061953334,6,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2022-08-29 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+DIMO,polygon,0x7b3d491d7ad5d14166369b8fe53c51cb16d0a296,8595911.20879617,0.0147491382934413,7,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2022-08-29 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+DIMO,polygon,0xc20d25fb4cafd5b7d3cd99ec4df6349f6aa61b58,8000281.49948183,0.0137271378631239,8,,,Gnosis Safe (Dune),insider,phase2_dune_labels,high,,Dune labels: Gnosis Safe custody
+DIMO,polygon,0xced3c922200559128930180d3f0bffd4d9f4f123,7975918.450382233,0.0136853349673411,9,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2022-10-03 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+DIMO,polygon,0x597a1df671a3b32801e7687ef469541a91562ca4,7691078.44997552,0.0131965974204475,10,,,Gnosis Safe (Dune),insider,phase2_dune_labels,high,,Dune labels: Gnosis Safe custody
+DRIFT,solana,9wiiyvy8zzbzmjwxevi5chzks2vszw7fvjjjrixvila6,268724873.000009,0.2700786807169945,1,,,insider,insider,phase3_helius,high,,DRIFT+USDC; team pattern
+DRIFT,solana,fh9ilv5z8euedmnw6czupkpdhwjcshqj5n4w23njnsuo,140182536.190718,0.1408887611008385,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+DRIFT,solana,gu6nuuglpora979utwwvcykhimrngfzkapwqcrbfaijq,54632891.73,0.0549081265067424,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+DRIFT,solana,7lcwgh3tta7v9jvpou3zhhrucgd2xncdawqsjbpdzfq6,39846001.0,0.0400467409726068,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+DRIFT,solana,eppctwzpp7le61xkpbb9ixfxmfd8ffaxewe7dtk6dg1m,26565533.413104,0.0266993677833243,5,,,,insider,phase3_helius,high,,1 token only; vesting pattern
+DRIFT,solana,demtrm4sqblxmywg9xst9tmyrmxfwnh6ccfiu4xb47kr,22257547.9,0.0223696790911763,6,,,,insider,phase3_helius,medium,,DRIFT+USDC; team pattern
+DRIFT,solana,jcncmfxo5m5qwupg2utu1u6ywp3mbygxqbsbexxjfrw,19353121.160888,0.0194506201548697,7,,,,exchange,phase3_helius,high,,827 tokens; multi-protocol; exchange
+DRIFT,solana,3vykr2swa8pmdbkwhwtrwznesqsajhryddenyy8rb2mk,15000000.0,0.0150755684262795,8,,,,insider,phase3_helius,high,,1 token only; team allocation
+DRIFT,solana,hpjku5hur1diprb6uihqxtr5hkrajxfeetgjkvyemour,14417083.149955,0.0144897149023005,9,,,,insider,phase3_helius,medium,,DRIFT+509K USDC; team
+DRIFT,solana,jcncmfxo5m5qwupg2utu1u6ywp3mbygxqbsbexxjfrw,12705132.775954,0.0127691399019241,10,,,,exchange,phase3_helius,high,,827 tokens; multi-protocol; exchange
+ENS,ethereum,0x245445940b317e509002eb682e03f4429184059d,12438699.26891651,0.1329056616534678,1,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ENS,ethereum,0xfe89cc7abb2c4183683ab71653c4cdc9b02d44b7,9701035.59664602,0.1036541302930295,2,,TimelockController,,contract,tier2_blockscout,high,,ENS: wallet.ensdao.eth
+ENS,ethereum,0x690f0581ececcf8389c223170778cd9d029606f2,4859346.462859098,0.051921398121074,3,,GnosisSafeProxy,,insider,tier2_blockscout,high,,ENS: coldwallet.ens.eth
+ENS,ethereum,0x2cd5bb500066b913d320fc9ac52a72422915c422,3289837.747886149,0.0351514296762517,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ENS,ethereum,0x498697892fd0e5e3a16bd40d7bf2644f33cbbbd4,2370079.2516858075,0.0253239462026077,5,,,Bithumb 104,exchange,phase1_blockscout,high,,Blockscout: Bithumb 104
+ENS,ethereum,0xa0b49ee43b256ee817d0e466fb88a3a25bf76277,739784.2000000001,0.0079044847420244,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ENS,ethereum,0x073f564419b625a45d8aea3bb0de4d5647113ad7,697720.4999999998,0.0074550403299336,7,,,OKX 219,exchange,phase1_blockscout,high,,Blockscout: OKX 219
+ENS,ethereum,0x6a496c6076a1f3ca554b6f4eef81e4885a433cfe,410342.46176763775,0.0043844485027485,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ENS,ethereum,0x187c9fbf5bd0f266883c03f320260c407c7b4100,340485.6824975442,0.0036380391500381,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ENS,ethereum,0x801960b082d48f822395b03df7b1908899ab03aa,304539.56,0.0032539601485985,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ETHFI,ethereum,0x7a6a41f353b3002751d94118aa7f4935da39bb53,173200599.82999992,0.1902422153317041,1,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ETHFI,ethereum,0x95bf94e06d5be1000c23cd99968eff414aa4995e,101547168.4,0.111538633792488,2,,,,insider,phase4_web_research,medium,,Likely vesting recipient; 33.7% investor + 21.5% team allocations
+ETHFI,ethereum,0x86b5780b606940eb59a062aa85a07959518c0161,88154059.06276844,0.096827744840628,3,,Staked ETHFI,,contract,tier2_blockscout,high,,
+ETHFI,ethereum,0xf10873355b209b401262cadc753d654e2b7e41ac,40899781.95999999,0.0449240079670113,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ETHFI,ethereum,0xf619ab1f33cdc8a0123e093de92ea4d7399de39f,35877781.84,0.0394078814110836,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ETHFI,ethereum,0x6630ff17cf5357c5f9c3d2a21ac98d2ff1070739,29013477.41,0.0318681818791179,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ETHFI,ethereum,0x7a93190d436436bbb79fa2c0d24ca93afb59b3fb,27633149.92,0.0303520407119476,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ETHFI,ethereum,0x43684d03d81d3a4c70da68febdd61029d426f042,17595172.817203004,0.0193264033679696,8,,,Binance 113,exchange,phase1_blockscout,high,,Blockscout: Binance 113
+ETHFI,ethereum,0x7d4bbe471369a066186c18baf33622796a08d5cd,15883024.42,0.0174457926519546,9,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ETHFI,ethereum,0x5a52e96bacdabb82fd05763e25335261b270efcb,15312597.0,0.016819239532778,10,Binance Hot,,,exchange,tier1_known_exchange,high,,
+FIL,filecoin_native,f1m2swr32yrlouzs7ijui3jttwgc6lxa5n5sookhi,152951749.93779546,0.180069891466242,1,,,,insider,phase4_web_research,medium,,Created Nov 2020 (launch); 152.9M FIL; 204 msgs; likely PL/FF vesting
+FIL,filecoin_native,f1mfxobliwdamau2x25t4mcegzhfln5rwng4aemqi,64627170.92998877,0.0760854822508811,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f1neiyfto7ozo4xaamg35jig7xbbrdpl6s7u6uy4i,54511294.04004079,0.0641760738629443,3,,,,exchange,phase4_web_research,medium,,Created Dec 2022; 54.6M FIL; 16K+ msgs; high-activity exchange pattern
+FIL,filecoin_native,f0121,17548730.01,0.0206600964654293,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f1d7mq36vf6osdhcd32i6k3wyb223mdjlxnafnala,17369492.974836342,0.0204490809426793,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f1nzasvvzledaucnnjn6i4wsvydqu37nnhypdlnfq,17291515.344328333,0.0203572779821504,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f1qnjkzbkv422eqnqle4idexfvvcpkzme6dqba5ea,16867794.310676333,0.0198584317736388,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f1l4vacwfq5euj22tr5ys7xd4ixqw3bfjknd4arcq,16571052.81165888,0.0195090784021126,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f1fjpfpmn6ycjc7bnacoftsh3fxvfgldz5jbdpstq,15002999.999916714,0.0176630119155338,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+FIL,filecoin_native,f02086492,14313821.93643329,0.016851643499397,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GEOD,polygon,0xca3e874bc4e830796d822f529c29df30302324b2,245000000.0,0.24953724059045,1,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2023-01-18 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+GEOD,polygon,0x2006b44684b2a579466fc04fabc5a535946bc7ab,205336874.8302058,0.2091395801493722,2,,ERC1967Proxy,,contract,tier2_blockscout,high,,Wormhole NTT bridge manager proxy
+GEOD,polygon,0xfa5fed5cc2b6dd8f370651d17242c52ed711b14f,126999999.99999994,0.1293519573672944,3,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2023-01-11 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+GEOD,polygon,0x3a6906e4239f9860c81035c54198df58d892653b,60512654.0,0.0616333089794476,4,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2023-01-18 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+GEOD,polygon,0x47c8ebecfa390a59b0e127c9178e936a4ada907d,40000010.0,0.0407407841591445,5,,,,unknown,unresolved_eoa,low,,"EOA, no Blockscout labels"
+GEOD,polygon,0xcdd8dcfc406d0487d09b8332cf1bafa2a21a9f47,36833292.793656856,0.0375154214105683,6,,,,unknown,unresolved_eoa,low,,"EOA, first tx 2025-09-03"
+GEOD,polygon,0x000000000000000000000000000000000000dead,31908432.381899025,0.0324993557883512,7,,Null/Burn address,,contract,tier2_blockscout,medium,,Burn address (0x...dead)
+GEOD,polygon,0x3783f34cad40f4bcb5eaff3594458da1f5ea041f,20000001.0,0.0203703880054948,8,,,,unknown,unresolved_eoa,low,,"EOA, no Blockscout labels"
+GEOD,polygon,0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f,20000000.0,0.0203703869869755,9,,GnosisSafeProxy,,insider,tier2_blockscout,high,,GnosisSafe multisig; deployed 2023-01-18 by Safe factory 0xa6b71e26c5e0845f74c812102ca7114b6a896ab2; Blockscout 500 error but confirmed via Dune polygon.creation_traces
+GEOD,polygon,0xcdfd8ec577217df0a577cc64a64eca71bb28d954,17000000.0,0.0173148289389291,10,,,Gnosis Safe (Dune),insider,phase2_dune_labels,high,,Dune labels: Gnosis Safe custody
+GMX,arbitrum,0x02984c3bb35f0e61cfc690f221a5ebcc5389f86b,699127.0244620978,0.0669992696995808,1,,,GMX_LockboxAdapter,contract,phase1_blockscout,high,,Verified: lockbox/bridge adapter
+GMX,arbitrum,0x0755d33e45ed2b874c9ebf5b279023c8bd1e5e93,285094.5799525101,0.0273213993792089,2,,,RewardTracker (sbeGMX),contract,phase1_blockscout,high,,Verified: staking reward tracker
+GMX,arbitrum,0x80a9ae39310abf666a87c743d6ebbd0e8c42158e,278568.94206074625,0.0266960295139709,3,,,UniswapV3Pool,contract,phase1_blockscout,high,,Verified: DEX pool
+GMX,arbitrum,0x5a52e96bacdabb82fd05763e25335261b270efcb,243330.5,0.0233190324865173,4,Binance Hot,,,exchange,tier1_known_exchange,high,,
+GMX,arbitrum,0xf977814e90da44bfa03b6295a0616a897441acec,237712.0359155042,0.0227805995875972,5,Excluded elsewhere: Binance 8 (exchange),,,exchange,tier1_exclusion_crossref,high,,
+GMX,arbitrum,0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e,148415.30172150387,0.0142230474286619,6,,,,contract,tier2_blockscout,medium,,"Unverified contract, created by 0x4e1DCf7AD4e460CfD30791CCC4F9c8a4f820ec67"
+GMX,arbitrum,0xafee421482faea92292ed3ffe29371742542ad72,143616.15541515173,0.0137631320106384,7,,,OKX (Dune),exchange,phase2_dune_labels,high,,Dune labels: OKX CEX
+GMX,arbitrum,0x68863dde14303bced249ca8ec6af85d4694dea6a,142672.43929731927,0.0136726930939806,8,,,GmxTimelock,contract,phase1_blockscout,high,,Verified: governance timelock
+GMX,arbitrum,0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2,128965.38521560408,0.0123591083217224,9,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+GMX,arbitrum,0x199070ddfd1cfb69173aa2f7e20906f26b363004,98799.7821081886,0.0094682554330085,10,,,Vester (vGMX),insider,phase1_blockscout,high,,Verified: vesting contract
+GRASS,solana,5q544fkrfoe6tsebd7s8emxgtjyakttvhaw5q5pge4j1,971553045.4697486,0.1601452795392452,1,,,GRASS,insider,phase3_helius,medium,,Top holder; concentrated position
+GRASS,solana,u6pj8dtqupfnfmwhbgfulq4u4egjdiyykjvesynxq2w,400686926.0533088,0.0660469544918183,2,,,Exchange (5122 tokens),exchange,phase3_helius,high,,5122 tokens; exchange hot wallet
+GRASS,solana,5pahqiydlbd6svdjzbqdxuaefyddf5exnpqfcscnprj5,191897642.18419564,0.0316313161631347,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRASS,solana,4gxs8oc2yewdtpkdyo6v8zixhetczvu8jicreudat8th,161029302.25672582,0.026543154534032,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRASS,solana,astyfsima4lladdgofgkgqokowg1lzfdr9faqrg7iajz,135607080.58996207,0.0223527000711322,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRASS,solana,cafeq2wwakoks8wklhk8kfhvsddsqut5jynwpcea9zad,117008951.1081546,0.0192870901606295,6,,,,contract,phase3_helius,medium,,Protocol address (Cafe prefix)
+GRASS,solana,1hqp5qdvi9l2ptueramwxba8ri65wciotvfgpg6xezv,103921146.04411335,0.0171297707941686,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRASS,solana,7rmkmnqerkaviornmqzshm5gm8f3gngqg8umlnok97q4,82083996.89700517,0.0135302592998549,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRASS,solana,d5jx4wmxupz18hqmgpcmlgvq3uskscafcp5xjve1nw8p,76306113.52320638,0.012577865858903,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRASS,solana,5oxvntyzjpobcn7getbpfe8ydpabczc8u64kh2hzmhzt,75389148.63322777,0.012426718580514,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRT,ethereum,0x823fd1a44a37a4be35c3b0c8b11463cc4f27396c,807434484.3001966,0.0794456799617232,1,,,,contract,phase4b_l2_blockscout,medium,,810M GRT; single-asset; dedicated staking/delegation address
+GRT,ethereum,0xfcb40a54be132a26c87f6bb7d2f74354ce13d96d,559234837.4813025,0.0550246401235789,2,,,,contract,phase4b_l2_blockscout,medium,,559M GRT; single-asset; dedicated delegation
+GRT,ethereum,0x5b0a3c6d28b9b11770b0b838f3ff48062805b4e1,242442346.4274316,0.0238545633583342,3,,,,contract,phase4b_l2_blockscout,medium,,242M GRT; single-asset; dedicated delegation
+GRT,ethereum,0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597,159263633.59118396,0.0156703830587475,4,,,,contract,tier2_blockscout,medium,,
+GRT,ethereum,0x5eb529e12eb1de6b3c467d54b2861d3b56f63911,158654714.38395193,0.0156104698380455,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GRT,ethereum,0x76ec5a0d3632b2133d9f1980903305b62678fbd3,130636099.89403024,0.0128536419801587,6,,,BtcTurk 14,exchange,phase1_blockscout,high,,Blockscout: BtcTurk 14
+GRT,ethereum,0xeb8ee0503e0301720eb7616e0897f8ecdf751fc3,119546950.69825494,0.0117625503619714,7,,,Bithumb 68,exchange,phase1_blockscout,high,,Blockscout: Bithumb 68
+GRT,ethereum,0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83,102641416.87887733,0.0100991688053112,8,,,Kraken 245,exchange,phase1_blockscout,high,,Blockscout: Kraken 245
+GRT,ethereum,0x5a52e96bacdabb82fd05763e25335261b270efcb,100000000.0,0.009839272598145,9,Binance Hot,,,exchange,tier1_known_exchange,high,,
+GRT,ethereum,0x8e1aff4fe98129edbe423aca6a3af51b4de2af09,97000000.0,0.0095440944202007,10,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+GTC,ethereum,0x57a8865cfb1ecef7253c27da6b4bc3daee5be518,12508498.095757104,0.1757786885209057,1,,Timelock,,contract,tier2_blockscout,high,,
+GTC,ethereum,0x74be0cf1c9972c00ed4ef290e0e5bcfd18873f13,9943904.682004564,0.1397391205881508,2,,,Bithumb 453,exchange,phase1_blockscout,high,,Blockscout: Bithumb 453
+GTC,ethereum,0x4da8853217d0d5b59e8fcde36d1bebb0a1932a14,8242309.664360119,0.1158270459085612,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GTC,ethereum,0x14d7cee42d4643f0c767a1d504d9ca24c890f86c,6261851.41525919,0.087996178362964,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+GTC,ethereum,0x6eede31a2a15340342b4bcb3039447d457ac7c4b,2430000.0,0.034148161500755,5,,Gitcoin O80,,contract,tier2_blockscout,high,,impl: Escrow
+GTC,ethereum,0x74d3d473a44bc6b2b806861be511d52e2ce530af,1692137.9300000002,0.023779176672919,6,,,,insider,tier2_blockscout,medium,,impl: Safe
+GTC,ethereum,0xed95d629c4db80060c59432e81254d256aec97e2,1618326.000000001,0.0227419167114695,7,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+GTC,ethereum,0x3896ab65f7191a446f5ba550a92f9fbe5dd658af,1105370.5046298583,0.0155334858066961,8,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+GTC,ethereum,0x6a5843919f17cc9003424008cfa953c989046904,1000001.0,0.0140527554110767,9,,,,insider,tier2_blockscout,medium,,impl: Safe
+GTC,ethereum,0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351,968796.89746,0.0136142522287631,10,,Hedgeys,,contract,tier2_blockscout,high,,
+HNT,solana,agutdjmw5skhept9qsksj29seqivksjchsap6kma9i98,7204778.80957614,0.244822,1,,,HNT Foundation,insider,phase3_helius,medium,,13 tokens; 7.2M HNT; Helium foundation
+HNT,solana,5lzkatrlwhycqj2yuvbjjgsdzzbk6yfl4pfqrjmtbot2,3659338.89315294,0.124346,2,,,Exchange (39 tokens),exchange,phase3_helius,high,,39 tokens; HNT+W+DRIFT; exchange
+HNT,solana,4uit93tycivchetditvh15wqwxyrhcopwzqikdqyf7uo,2577327.77491199,0.087579,3,,,HNT Ecosystem,insider,phase3_helius,medium,,HNT+IOT+MOBILE; Helium ecosystem insider
+HNT,solana,2adzqmgikamwahujrb27pgabqyf6iyq8auuyyddwrrg6,1900151.64675763,0.064568,4,,,,insider,phase3_helius,medium,,HNT+IOT+MOBILE; Helium team
+HNT,solana,u6pj8dtqupfnfmwhbgfulq4u4egjdiyykjvesynxq2w,1757558.9960618,0.059723,5,,,Exchange (5122 tokens),exchange,phase3_helius,high,,5122 tokens; exchange hot wallet
+HNT,solana,6fevkh17p9y8q9ackddpcmdjvj7svxrtetayem8f51jy,1543138.72595651,0.052437,6,,,,exchange,phase3_helius,high,,"1596 tokens, 509K SOL; exchange"
+HNT,solana,22wnk8pwywzv7bfkzgjekt9jggdtvu7xy6exerh7zkba,1505924.41443501,0.051172,7,,,,exchange,phase3_helius,high,,"1648 tokens, 856K SOL; exchange"
+HNT,solana,73zsmmqcxjvhhhnsib26y8p3jyih3uuuykv71rjdnctw,1136178.59461887,0.038608,8,,,,insider,phase3_helius,high,,2 tokens only; vesting
+HNT,solana,53unsggwqewancpyrf35b2bgf8bkszutccckixwgglyr,1123948.81843443,0.038192,9,,,,exchange,phase3_helius,high,,"489 tokens, 88K SOL; exchange"
+HNT,solana,efe3j1pcsp1pauza86zw7989zjsfp2j7ginyuqo4ewqr,963096.273228,0.032727,10,,,,insider,phase3_helius,high,,2 tokens only; vesting
+IOTX,ethereum,0x87c9dbff0016af23f5b1ab9b8e072124ab729193,1966208637.798387,0.1975041065722131,1,,Staking,,contract,tier2_blockscout,high,,
+IOTX,ethereum,0x0000000000000000000000000000000000000004,1000000000.0,0.1004492111240867,2,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (identity); artifact
+IOTX,ethereum,0x0000000000000000000000000000000000000006,1000000000.0,0.1004492111240867,3,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (bn256Add); artifact
+IOTX,ethereum,0x0000000000000000000000000000000000000001,1000000000.0,0.1004492111240867,4,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (ecRecover); artifact
+IOTX,ethereum,0x0000000000000000000000000000000000000002,1000000000.0,0.1004492111240867,5,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (SHA-256); artifact
+IOTX,ethereum,0x0000000000000000000000000000000000000005,1000000000.0,0.1004492111240867,6,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (modexp); artifact
+IOTX,ethereum,0x0000000000000000000000000000000000000003,1000000000.0,0.1004492111240867,7,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (ripemd160); artifact
+IOTX,ethereum,0x0000000000000000000000000000000000000007,748218695.9351915,0.0751579777549829,8,,EVM precompile,,contract,tier2_blockscout,high,,EVM precompile (bn256ScalarMul); artifact
+IOTX,ethereum,0x4761571eeec2fee2fb9f8d5c08ef7c7606a9f659,152506266.5188013,0.0153191341632933,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+IOTX,ethereum,0x58bc01f516c8d6986bc0fd67944f2718c2a94348,149474668.69174397,0.0150146125531199,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+JUP,solana,6tzt9aucqn4ihmh79yzexsy55kdlq4vba3pmtflvnsfx,103297561.092698,0.250747,1,,,Exchange (390 tokens),exchange,phase3_helius,high,,"390 tokens, 76K SOL; exchange"
+JUP,solana,27b4prn7k37rptywq65t29rjunfqkypxzujkbthc5vvz,80127396.468181,0.194503,2,,,JUP,insider,phase3_helius,medium,,JUP-focused; large holding
+JUP,solana,43dbavkxhxh1osxkjsqgosnw3hpbnmswiak6tb5wpecn,30770089.031336,0.074692,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+JUP,solana,gem2vaypsg7ai7vjdkpttqfahpoqwkfgvkyzx3rpotka,17893775.910653,0.043436,4,,,,exchange,phase3_helius,medium,,Large token portfolio
+JUP,solana,6ly1jzafvzsp2a2xkrtu6znqmq5h4i7tocwdgrkzzkzf,16254761.443792,0.039457,5,,,,exchange,phase3_helius,high,,"3730 tokens, 1.58M SOL; major exchange"
+JUP,solana,5tzfkikscxhk5zxcgbxzxdw7gtjjd1mbwuofbhuvuai9,15658126.121936,0.038009,6,,,,exchange,phase3_helius,high,,Multi-protocol; 149K SOL; exchange
+JUP,solana,7s1da8dduubfqgra5bjbjpnvl5e9mgzcumk1qkh4or2z,15561238.906857,0.037774,7,,,,insider,phase3_helius,high,,2 tokens; team/vesting
+JUP,solana,6qqvvibpcqpju2qcqr7pdd4dzfkdaedrcfafcscfmcy6,10906599.084754,0.026475,8,,,,insider,phase3_helius,high,,JUP-focused; team
+JUP,solana,u6pj8dtqupfnfmwhbgfulq4u4egjdiyykjvesynxq2w,9656311.171629,0.02344,9,,,Exchange (5122 tokens),exchange,phase3_helius,high,,5122 tokens; exchange hot wallet
+JUP,solana,2h56lbcjdc9pajyjwsvmxp4vbhrwzad9nmuqiz9ttgbd,8994749.532,0.021834,10,,,,insider,phase3_helius,high,,1 token only; team/vesting
+LDO,ethereum,0x8fa129f87b8a11ee1ca35abd46674f8b66984d4a,40350926.589720264,0.0989002367053134,1,,,,exchange,phase4b_l2_blockscout,high,,"39.1M LDO + 50+ tokens incl UNI,CRV,SKY; exchange hot wallet"
+LDO,ethereum,0x39df74d611dca188f2f182a27c79f34a5ad4821e,13468492.478497954,0.0330113136615437,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LDO,ethereum,0xed3d9bac1b26610a6f8c42f4fd2c741a16647056,10000000.0,0.0245100286570641,3,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+LDO,ethereum,0x88a1493366d48225fc3cefbdae9ebb23e323ade3,9000002.0,0.0220590306933634,4,,,Bybit 2,exchange,phase1_blockscout,high,,Blockscout: Bybit 2
+LDO,ethereum,0x008756e24b06267b9d2488e5bf50091fc26c8e8d,8000000.0,0.0196080229256512,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LDO,ethereum,0x109b9744397acf987a1abb5bb4eef7362ab9ff66,7151384.257999999,0.0175280633101257,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LDO,ethereum,0x54b68cc7132666eba5aa1d26dad735226e8faa7d,7151000.0,0.0175271214926665,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LDO,ethereum,0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54,6055729.070236209,0.0148426093050905,8,,,Bitget 35,exchange,phase1_blockscout,high,,Blockscout: Bitget 35
+LDO,ethereum,0xdb1aabe42f48f4b6b40cded8eeefaea3ebab2766,6036383.724570688,0.0147951938074263,9,,,,unknown,unresolved_eoa,low,,"EOA, beacon chain validator/staker"
+LDO,ethereum,0xc012e9eaebc44ba0236c50d97a94f633a14c15ca,5833365.0,0.0142975943317114,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LPT,arbitrum,0xf82c1ff415f1fcf582554fdba790e27019c8e8c4,568438.4501162104,0.0179097092465886,1,,,Treasury,insider,phase1_blockscout,high,,Verified: LPT Treasury
+LPT,arbitrum,0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085,112727.9382548742,0.0035517030871142,2,,,ManagerProxy (L2 Migrator),contract,phase1_blockscout,high,,Verified: Livepeer migrator
+LPT,arbitrum,0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546,62514.45142927579,0.001969633913011,3,,,UniswapV3Pool,contract,phase1_blockscout,high,,Verified: DEX pool
+LPT,arbitrum,0x96daa0b8a5499ea9323421ed0cda06b345caab73,48333.01112131463,0.001522821294052,4,,,StrategyExecutor,contract,phase1_blockscout,medium,,Unverified contract
+LPT,arbitrum,0x730363304acce48bd7aeb348462e074b0a7f3268,44853.102,0.001413180293246,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LPT,arbitrum,0x99c675e33d41c10f0fa1ebdd9c1b30b85c7711e2,34710.0,0.0010936030239017,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LPT,arbitrum,0x2d93af57d375cba66058f5593e786ebf2866d6c4,33000.0,0.0010397262975729,7,,,SafeL2 (GnosisSafe),insider,phase1_blockscout,high,,Safe multisig proxy
+LPT,arbitrum,0x176f3dab24a159341c0509bb36b833e7fdd0a132,31174.27329936251,0.0009822033865779,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+LPT,arbitrum,0x2be5a5ce6555162d67c16b35ece3160c6f509e0a,23483.159999999916,0.0007398805758215,9,,,GnosisSafeProxy,insider,phase1_blockscout,high,,Safe multisig proxy
+LPT,arbitrum,0x077031fd82feaba89ae214599c59fe265e6570c2,18203.824384015265,0.0005735453008624,10,,,,unknown,unresolved_eoa,low,,"EOA, beacon chain validator, ~27 ETH"
+META,solana,4viadayxnrphyw2g2nezjlwgggltqk2qbmnijjqxwpxn,4379.391320687,0.1960626661834313,1,,,META/Metaplex,insider,phase3_helius,medium,,Concentrated META position; team
+META,solana,7swcjg3ti1f8fsydvppwo3efcgctserfcrfbliv3beuv,1115.778022257,0.0499526984216303,2,,,META/Metaplex,insider,phase3_helius,medium,,META holder; team pattern
+META,solana,7qruke5b663fvymij1latph51jvyzwwavtrqwmad2g24,923.740976647,0.0413553175503591,3,,,META/Metaplex,insider,phase3_helius,medium,,META holder; team pattern
+META,solana,3fkdkt85rxfwt3a1bhjcxz27ykb1vyutxozek7h2reve,600.0,0.0268616323812791,4,,,,insider,phase3_helius,medium,,Metaplex team
+META,solana,4j19aecdwhtazrnodc4epnpmel1jppvumeg7rmq72qkb,571.132870602,0.0255692686849593,5,,,,insider,phase3_helius,medium,,Metaplex team
+META,solana,2vqx84hj2bzoznmwxsuyunc8ylm3kelvtewsedl5cmv1,524.428825385,0.0234783571960631,6,,,,insider,phase3_helius,medium,,Metaplex team
+META,solana,dxdzqadpiw3ofvsqmrjtsbquh9gxipnqkbg5b1sefwnf,303.560601866,0.0135902221546072,7,,,,insider,phase3_helius,medium,,Metaplex team
+META,solana,csbbko8rkprp4qdsyusrxrl8tidcb3kkdhjzjunvmmlp,290.698,0.0130143713499551,8,,,,insider,phase3_helius,medium,,Metaplex team
+META,solana,qodhtms2ojncztjxbe4dnypzzanthd5tmlgmskgqrzb,281.499722001,0.0126025700797052,9,,,,insider,phase3_helius,medium,,Metaplex team
+META,solana,gyl9jz4pffgd1lix7tcwvjtaothh4xmpenbyu2ouzqbv,265.37262006,0.0118805696068476,10,,,,insider,phase3_helius,medium,,Metaplex team
+MKR,ethereum,0x473d777f608c3c24b441ab6bd4bbca6b7f9af90b,132515.47476581793,0.1136586045399363,1,,LockstakeMigrator,,contract,tier2_blockscout,high,,
+MKR,ethereum,0xf65475e74c1ed6d004d5240b06e3088724dfda5d,131883.60877510486,0.1131166526895007,2,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+MKR,ethereum,0xbe8e3e3618f7474f8cb1d074a26affef007e98fb,86024.46753037418,0.073783238924149,3,,DSPauseProxy,,contract,tier2_blockscout,high,,
+MKR,ethereum,0x2cba76638bf0c7d965fc8f2253a91ead40cb83c8,85132.98839186151,0.0730186167165248,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MKR,ethereum,0x959bfcaee050515296fc3d8aafafeaabf5c44f1d,50770.33889505001,0.0435457510228799,5,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+MKR,ethereum,0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0,48010.89802060359,0.0411789768808086,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MKR,ethereum,0x93e9ba7a00856c3c1efa9b927d40b275602839ed,40000.0,0.0343080247015058,7,,,,contract,tier2_blockscout,medium,,
+MKR,ethereum,0x7d6149ad9a573a6e2ca6ebf7d4897c1b766841b4,28158.526772783807,0.024151585801967,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MKR,ethereum,0xc4269cc7acdedc3794b221aa4d9205f564e27f0d,27974.14640939849,0.0239934426504296,9,,Flapper,,contract,tier2_blockscout,high,,
+MKR,ethereum,0x04b688725ed55f60ffc0f63b14ebe9a826a98598,24251.04134730714,0.0208001331395163,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MOR,arbitrum,0xc0ed68f163d44b6e9985f0041fdf6f67c6bcff3f,432194.3143126508,0.1495419639124659,1,,,BuildersV4 (MOR distribution),contract,phase1_blockscout,high,,Morpheus distribution contract
+MOR,arbitrum,0xe5cf22ee4988d54141b77050967e1052bd9c7f7a,340947.53922124906,0.1179700031162017,2,,,UniswapV3Pool,contract,phase1_blockscout,high,,Verified: DEX pool
+MOR,arbitrum,0x000000000000000000000000000000000000dead,249053.92067893973,0.0861742303983335,3,,Null/Burn address,,contract,tier2_blockscout,medium,,Burn address (0x...dead)
+MOR,arbitrum,0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a,249053.92066794392,0.0861742303945289,4,,,GnosisSafeProxy,insider,phase1_blockscout,high,,Safe multisig proxy
+MOR,arbitrum,0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169,211752.3225105434,0.0732676417125315,5,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+MOR,arbitrum,0xbd5d3a6d2ced315dbded2a434164a268b122694a,166704.67706111493,0.0576808717179897,6,,,SafeL2 (GnosisSafe),insider,phase1_blockscout,high,,Safe multisig proxy
+MOR,arbitrum,0x1206b182d26da31c01c7110c2672ea479f8b7daf,84623.52316639909,0.0292802737759777,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MOR,arbitrum,0x51d25291a5fe3281c65e46f1c2cb1738f3db12da,82670.94973922243,0.028604671031301,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MOR,arbitrum,0x858da48232ea6731f22573dc711c0cc415c334c5,71869.88337760638,0.0248674338151341,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MOR,arbitrum,0xc794ba3d6462be04d250976c4bbf9b4ac7b60710,59010.48486424822,0.0204180006672712,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0xca31c9ef59a6ab45343f60968148c0ed07c39c59,773589.6648337472,0.0372955290991666,1,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x517ce9b6d1fcffd29805c3e19b295247fcd94aef,570209.4798907442,0.0274903675897172,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x58be00490d6a5d298d61f24226d2397983ee39a1,486249.8758573937,0.0234425913619243,3,,,,insider,tier2_blockscout,medium,,impl: Safe
+MPL_SYRUP,ethereum,0xfd4587cc7eed80ff09c483d3d85704859f20311b,480692.9521129471,0.0231746865273149,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x92915365e5fefbb85eee632dbc2e22da6037d706,314573.4442464,0.0151658994128858,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x13a682e0def0ff00b901b13458f3b2d9eb96f4b1,243689.00284173235,0.0117484898128569,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x310f087d117330cabe5b82e873ec5950071ebb03,239397.98877372924,0.0115416157460058,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x2711a1ef82587ee46b0a42f76eac3b70161daf30,215852.70765121977,0.0104064742657466,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x7700a1a2025dfa4520c811a492e976ae8f147772,200962.8946,0.0096886215316977,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+MPL_SYRUP,ethereum,0x89860fbeab8d59858c57c920f39f5d7ba48d0722,185452.8182124537,0.0089408652837308,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+OP,optimism,0xf977814e90da44bfa03b6295a0616a897441acec,249999999.99999988,0.0614714687626856,1,Excluded elsewhere: Binance 8 (exchange),,,exchange,tier1_exclusion_crossref,high,,
+OP,optimism,0x641f7b308fc59e0fadaa859ce37d08ae4c35ec6e,104153329.79343164,0.0256098326357065,2,,,,exchange,phase4b_l2_blockscout,medium,,104M OP on Optimism; spam tokens; exchange
+OP,optimism,0x611f7bf868a6212f871e89f7e44684045ddfb09d,57503249.69111171,0.0141392368685603,3,,,OKX Cold Wallet,exchange,phase1_blockscout,high,,Blockscout: OKX Cold Wallet
+OP,optimism,0xae56aaa3f1d511225d740eda7eb70907626556be,42368259.69889043,0.0104177566104387,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+OP,optimism,0x7336abff06bbaf79b4093df1e16c1aa87fb27efd,38111194.39228057,0.0093710043823748,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+OP,optimism,0xe94ffce5c34b14a434363002b5ef9843d664887b,30687398.000000004,0.0075455977102604,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+OP,optimism,0xb7206fa64287f6dc5070de25bbf9b85bf40df1ed,26996335.232241005,0.0066380175117427,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+OP,optimism,0xb18fe4b95b7d633c83689b5ed3ac4ad0a857a2a7,21143140.511032224,0.0051987996058759,8,,,Bithumb (Dune),exchange,phase2_dune_labels,high,,Dune labels: Bithumb CEX
+OP,optimism,0x85782468bd25d2a7d92581b3448cd11617d72b52,20005775.099149913,0.0049191375163228,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+OP,optimism,0x0a5952a41da1b16d61532a9e019b79855f5afce2,20000000.0,0.0049177175010148,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt132y5nzs4xahqy6cmzankn8mn4ec897j50wuzhr,699892925.882898,0.3477503378676381,1,,,,insider,phase4_web_research,medium,,34.8% share; likely DAO treasury or PNF wallet
+POKT,pokt_native,pokt1j40dzzmn6cn9kxku7a5tjnud6hv37vesr5ccaa,336764105.916134,0.1673253540408305,2,,,,insider,phase4_web_research,medium,,16.7% share; likely foundation or team wallet
+POKT,pokt_native,pokt1fllgk6yffd8hvxggxr9s72wt074wr0dgawelta,94689145.109752,0.0470474568131631,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt14q8l4hlsdf2fqws7n6q6ck3xg5yt2qvgyynnll,87155497.283018,0.0433042719912596,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt155svs6sgxe55rnvs6ghprtqu0mh69keh74seum,85704935.641885,0.0425835427451888,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3gakm90,80738227.843933,0.0401157733893994,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt18wpvqfu9g0n8x3ysu72fcdtwz025tvg7yx0gzy,66955114.205581,0.0332674652448948,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt1dr5jtqaaz4wk8wevl33e7vkxsjlphljnjhyq2l,45902620.716261,0.0228072770459185,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt1wyraydmwdus0myveh26qz5jx7m7sfh4c4ukd4s,32969778.184621,0.0163814364728146,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POKT,pokt_native,pokt1qzwg2puh99mtu7r56msl6e78205kfckz7vd76g,23646697.677752,0.0117491501953943,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x29e7df7b6a1b2b07b731457f499e1696c60e2c4e,398673261.5651283,0.0404268624030396,1,,TransparentUpgradeableProxy,,contract,tier2_blockscout,high,,impl: PolygonMigration
+POL,ethereum,0x57f1ad8d95ebd0ab51e7ab131d2fab89a15de3b1,214119454.56869492,0.0217124612111676,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x4c569c1e541a19132ac893748e0ad54c7c989ff4,160872132.95405996,0.0163129966576774,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x8be2b97333ebcc6af2441e4018961ff39d63e883,134854809.89212972,0.0136747491479475,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x0ba98b0067778ed0da2093c1f1600d4d17ccbf01,130590776.31162132,0.013242361236693,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x84faec6529a98b72cad63254211f3f0399f38367,130590776.31162132,0.013242361236693,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x796ce52e96000a76e926c35d8e6284a544456168,130433802.5631294,0.0132264435498478,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0x58a3cabac2d8a807b73a44d26526b1ea7b7b6938,130029246.49019076,0.0131854201498063,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+POL,ethereum,0xa5946a2c7a6c4232224b89a696ae51879bf5aed1,121439037.23536935,0.0123143429017495,9,Excluded elsewhere: GraphTokenLockManager,,,contract,tier2_blockscout,medium,,
+POL,ethereum,0x3f43b56004cb9a8927f11b78949a2624a455868b,84767937.33343941,0.0085957651770148,10,,,,insider,tier2_blockscout,medium,,impl: Safe
+RENDER,solana,0xb6e39e540e3472e927001bbbf77ffb5ab357b0e0,14760173.28,0.1040704548770982,1,,,,insider,phase4_web_research,high,,Render Network treasury/escrow; 30.5% of RNDR supply; Etherscan confirmed
+RENDER,solana,51pzfssvorgdswlopzvsqz4zt1chnzhfsl9kajtbqzk1,12546073.86379149,0.0884593689489839,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RENDER,solana,0xf97deb1c0bb4536ff16617d29e5f4b340fe231df,6524752.374562567,0.0460044699137267,3,,,,insider,phase4_web_research,medium,,Likely Render Network treasury wallet
+RENDER,solana,6fevkh17p9y8q9ackddpcmdjvj7svxrtetayem8f51jy,6137325.72055464,0.0432728171513062,4,,,,exchange,phase3_helius,high,,1596 tokens; exchange
+RENDER,solana,5cqj8rluu2or1agnmufs5lpwcaijp7w7h5gcwjfnrfkx,5112354.38034506,0.0360459891467775,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RENDER,solana,7twnq4weycwqwbcwkeex2q9xqvtthpgkb7adnvueuvuh,4843496.990732529,0.0341503399356698,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RENDER,solana,6ly1jzafvzsp2a2xkrtu6znqmq5h4i7tocwdgrkzzkzf,4821025.73182782,0.0339919004586046,7,,,,exchange,phase3_helius,high,,3730 tokens; major exchange
+RENDER,solana,0x2ed60539c655a9e74f3a7c24633da18dbf4bb221,4204466.130000001,0.0296446860320635,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RENDER,solana,aym4knn6sw1f52eq42ujq2ez5xb7ibjeviprfca7adcy,4182515.2384946705,0.0294899155411904,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RENDER,solana,j8k11p1e2fkfyhvxgnkkt9xwuz7npwqx1rpqvgcfo56h,3540584.74402143,0.0249638170129412,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RPL,ethereum,0x57757e3d981446d585af0d9ae4d7df6d64647806,1207900.4272951004,0.0584493674866091,1,,patricioworthalter.eth,,unknown,phase4b_l2_blockscout,high,,"patricioworthalter.eth (Patricio Worthalter, POAP founder); individual whale; 23K ETH"
+RPL,ethereum,0xd33526068d116ce69f19a9ee46f0bd304f21a51f,899298.8481335416,0.0435163757434452,2,,RocketTokenRPL,,contract,tier2_blockscout,high,,
+RPL,ethereum,0x6cebc3509489af12904f92478cfca3ebb5f15a40,821890.1408717696,0.0397706282669429,3,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RPL,ethereum,0x07a98956df1b3a555f8f8408e280d6342451daaa,510956.8096528249,0.0247248048450992,4,,,Bithumb 368,exchange,phase1_blockscout,high,,Blockscout: Bithumb 368
+RPL,ethereum,0xfce77eb807bc9d293899d20ecae2e3b473b24a96,509541.0,0.0246562949109862,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RPL,ethereum,0xd2a4848a6644749e652c1d9398b5aa317f57395b,438827.03035206377,0.0212345006099073,6,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+RPL,ethereum,0x296c4a564bdda1138488f918326a759bb0ea6f64,345623.1965277168,0.016724439174993,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RPL,ethereum,0xb76cf92076adbf1d9c39294fa8e7a67579fde357,308388.6059266804,0.0149226861330416,8,,Aave v3 RPL,,contract,tier2_blockscout,high,,impl: ATokenInstance
+RPL,ethereum,0x32d47da20c59cfb2af20c5cdbb0609ce0a107815,252216.1203580028,0.0122045430001741,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+RPL,ethereum,0x91b4556d4ccaaae59e37c4a57ddef8903f644621,229877.68638365157,0.0111236034567002,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+TEC,gnosis,0x5584e380c5ba129ccb5c1ce89c2e9d66881f4800,142565.7077536967,0.0922103466361152,1,,gideonro.eth,,unknown,phase4_community_ens,medium,,ENS: gideonro.eth; TEC community member
+TEC,gnosis,0x5b7575494b1e28974efe6ea71ec569b34958f72e,106053.2719061831,0.06859439845982,2,,,,unknown,phase4_community_ens,medium,,TEC community member; first tx 2020-09
+TEC,gnosis,0x839395e20bbb182fa440d08f850e6c7a8f6f0780,79309.83250491705,0.051296958168687,3,,griff.eth,griff.eth (Griff Green),insider,phase1_blockscout,medium,,TEC co-founder per ENS griff.eth
+TEC,gnosis,0xdf290293c4a4d6ebe38fd7085d7721041f927e0a,69337.51323315765,0.044846942724555,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+TEC,gnosis,0xe7ee4a5821ba12a31d3ca97c53e7bd75efb4ee61,60734.81242718925,0.0392827854259738,5,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafeL2
+TEC,gnosis,0xaa01dec5307cf17f20881a3286dcaa062578cea7,54749.61269485759,0.0354116066502322,6,,philh.eth,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+TEC,gnosis,0x5acbeb30fde4049a8fc928f562d9ce5fdad59d32,52247.66552079205,0.0337933674549805,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+TEC,gnosis,0x7221b104fba7701084759fd25faca19ac6300855,51337.0,0.0332043563620263,8,,paller.eth,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+TEC,gnosis,0x01d9c9ca040e90feb47c7513d9a3574f6e1317bd,39170.50690000001,0.0253351670333056,9,,,,contract,tier2_blockscout,medium,,impl: Agent
+TEC,gnosis,0xcb59b745668aa7f6d6da1c92641d6d60d8f5c4be,28041.46204999843,0.018136990841311,10,,,,contract,tier2_blockscout,medium,,impl: EIP7702StatelessDeleGator
+UNI,ethereum,0x000000000000000000000000000000000000dead,102459579.96336968,0.1126605203828954,1,,Null/Burn address,,contract,tier2_blockscout,medium,,Burn address (0x...dead)
+UNI,ethereum,0x61cb39bece033c5bda281747db1c15cced2096eb,23047480.513298523,0.0253421022130985,2,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+UNI,ethereum,0x611f7bf868a6212f871e89f7e44684045ddfb09d,15266994.880200002,0.0167869865219166,3,,,OKX Cold Wallet,exchange,phase1_blockscout,high,,Blockscout: OKX Cold Wallet
+UNI,ethereum,0x5069a64bc6616dec1584ee0500b7813a9b680f7e,14880124.55756361,0.0163615991458948,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+UNI,ethereum,0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a,12611331.35576091,0.0138669234616138,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+UNI,ethereum,0x090d4613473dee047c3f2706764f49e0821d256e,12566821.82871887,0.0138179825379799,6,,MerkleDistributor,,insider,tier2_blockscout,high,,
+UNI,ethereum,0x6d278351f4a973d1349ef1e54ed37daed0799e19,10286054.26409608,0.0113101403157621,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+UNI,ethereum,0x19d373d0f95f00d368a8d57605af746c4ea9b1d0,9295469.0339692,0.0102209317951962,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+UNI,ethereum,0x030d6830dc8ff125850390da620fa3e12decd437,9000000.0001,0.0098960456779133,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+UNI,ethereum,0x177df24addc9a216f927d2a894ab0b6eec59eb09,9000000.0001,0.0098960456779133,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+W,solana,9wzdxwbbmkg8ztbnmquxvqrayrzzdsgydlvl9zytawwm,570879805.304,0.0704441152932845,1,,,W/Wormhole,insider,phase3_helius,medium,,Top holder; Wormhole foundation
+W,solana,8ndfpaprbk7hfcs4tprg187s2onm1urhm3tvqrswzdrn,527920810.812111,0.0651431599384902,2,,,W/Wormhole,insider,phase3_helius,medium,,Top-2 holder; Wormhole foundation
+W,solana,dpfz8bdbmfcsxvsyi468yqzctnbjxa4kqq3a82dlugvo,149999999.996192,0.0185093555518181,3,,,W/Wormhole,insider,phase3_helius,medium,,Top-3 holder; Wormhole foundation
+W,solana,5lzkatrlwhycqj2yuvbjjgsdzzbk6yfl4pfqrjmtbot2,149935052.522986,0.0185013413126594,4,,,Exchange (39 tokens),exchange,phase3_helius,high,,39 tokens; HNT+W+DRIFT; exchange
+W,solana,apw5cfhw7qcqomvot3yrilj6s28j27acj1kfn8qakz4e,102629864.378647,0.0126640843337831,5,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+W,solana,5tzfkikscxhk5zxcgbxzxdw7gtjjd1mbwuofbhuvuai9,90345651.928368,0.0111482652943027,6,,,,exchange,phase3_helius,high,,Multi-protocol; 149K SOL; exchange
+W,solana,hh29xjugjyh81gum9bju12x9hkwqrh3yj2pj77bs92ec,89216576.0,0.0110089421756114,7,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+W,solana,8mm46csqxiyaputdup2cxhg41he3bfyntembdwzrmzqh,88517845.701478,0.0109227218587414,8,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+W,solana,ftxths8qzc2qp96reansfcc61qo63escnrwtwif1uvb1,79683831.670884,0.0098326424811003,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+W,solana,cceevqlhugrail1x3di4ov98cqa71tjvdrwupwja7rxu,78335701.630884,0.0096662890261598,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+WXM,arbitrum,0x2cdba04dcfd3999ef3fda00121b23c693af4041b,4997562.487158293,0.088053043596292,1,,,RewardPool (WXM staking),contract,phase1_blockscout,high,,WXM staking/rewards pool
+WXM,arbitrum,0x0d0707963952f2fba59dd06f2b425ace40b492fe,1409083.5946806706,0.0248269230273872,2,Gate.io,,,exchange,tier1_known_exchange,high,,
+WXM,arbitrum,0xf20168e846498969f0621d696e97ff13b5b926f3,801682.7821242451,0.0141250077705225,3,,,Safe-created contract,insider,phase1_blockscout,medium,,Unverified; created by Safe factory
+WXM,arbitrum,0x28cc933fecf280e720299b1258e8680355d8841f,754152.453,0.0132875614848027,4,,,,unknown,unresolved_eoa,low,,"EOA, ~56,740 ETH balance on Arbitrum — whale/institutional"
+WXM,arbitrum,0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260,750010.5460000001,0.0132145844047602,5,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+WXM,arbitrum,0xb99401dbbc3576738b6cd28f62ac35e4ca2bd03d,678468.631038852,0.0119540732309183,6,,,GnosisSafeProxy,insider,phase1_blockscout,high,,Safe multisig proxy
+WXM,arbitrum,0x00000000d64bbf35def9cdf1ea28d861957588dd,593886.1944405045,0.0104637985227155,7,,,,unknown,unresolved_eoa,low,,"Vanity address (leading zeros), has token transfers"
+WXM,arbitrum,0x0b2402144bb366a632d14b83f244d2e0e21bd39c,593695.9370139483,0.0104604463394225,8,,,TokenBridge (Wormhole),contract,phase1_blockscout,high,,Wormhole bridge contract
+WXM,arbitrum,0xff1ad9961b9d28db7981cfb19e91ac0cf84ed326,300005.99999999994,0.0052858651522674,9,,SafeProxy,,insider,tier2_blockscout,high,,impl: Safe
+WXM,arbitrum,0xe09471ab9b3f8c45d7ebada73ec51f22776afca3,254249.0,0.0044796635037261,10,,,Safe-created contract,insider,phase1_blockscout,medium,,Unverified; created by Safe factory
+ZRO,ethereum,0x8f6449530606a9efddac42e05612427ddeba449c,105935088.37202644,0.1135306957639275,1,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ZRO,ethereum,0x744dbc48d11415ec5cb2f78609dea5e1e738da24,69549761.89995801,0.0745365202414159,2,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ZRO,ethereum,0xc2f31575b97df563a3bba2a94e3a0b317ba2d412,30750000.000000007,0.0329547928678807,3,,,,contract,tier2_blockscout,medium,,impl: WalletSimple
+ZRO,ethereum,0x1f903473376fbe98cc763f1bc459c8fdb6ac3909,30000000.0,0.0321510174320787,4,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ZRO,ethereum,0x637ca60dfb4d3acbd2ba65aaed9c6ca564bbf7bf,27118092.48723376,0.0290624754760592,5,,,,contract,tier2_blockscout,medium,,impl: WalletSimple
+ZRO,ethereum,0xda8b6eb4e31a387577c0e20c00c8f7e31cbc18bc,25354223.63,0.0271721361968317,6,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ZRO,ethereum,0x6e0e32684df6e3ae415ab1146a305bfd03e42427,22500000.0,0.024113263074059,7,,,,contract,tier2_blockscout,medium,,impl: WalletSimple
+ZRO,ethereum,0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431,22500000.0,0.024113263074059,8,,GnosisSafeProxy,,insider,tier2_blockscout,high,,impl: GnosisSafe
+ZRO,ethereum,0x53326cfb6ec33f18ccb0e23828a133bc6805390c,20524733.15,0.0219963684431471,9,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+ZRO,ethereum,0x72afaa442b98f71b8bba9937f95be764ab9f97d1,19729000.0,0.021143580763916,10,,,,unknown,unresolved_eoa,low,,Unlabeled EOA; no public identity found
+HYPE,hyperliquid_l1,0xa20fcfa0507fe762011962cc581b95bbbc3bbdba,3084324.27728111,0.005523852894338,1,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x488d2a9b70cc18ef66057a48ab3d59da1c59fe08,3038768.24314743,0.0054422645759963,2,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0xe44bd27c9f10fa2f89fdb3ab4b4f0e460da29ea8,2709892.09716305,0.0048532657264732,3,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x05cafe987297448f21a3c7ae0ae815fddecac655,2346858.39784291,0.0042030926024917,4,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x85530f0ff6496c72a619f37a60f3c1a59077737f,1882105.28297507,0.0033707456739845,5,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x90b38c5728f184c87ef46479cf7b402d7b98b98a,1881470.20366173,0.0033696082823266,6,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x4e14fc11f58b64740e66e4b1aa188a4b007c0eab,1495955.82387139,0.0026791735124486,7,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x493db0ed7514c975e9abcc110bd40c473b6763e3,1332573.70514751,0.0023865652429343,8,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x75c1e71165f7a0be552cb38bdca42a07f6ee85a6,1328112.09216329,0.0023785747427208,9,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+HYPE,hyperliquid_l1,0x716bd8d3337972db99995dda5c4b34d954a61d95,1308133.32,0.0023427938751731,10,,,,unknown,phase4_hype_community,medium,,Individual trader; HYPE has no VC allocation; 31% community airdrop; top holder only 0.55%
+ATH,ethereum,0xd5c3ee151560e1e5d423410b064bfb6ed3db9c5d,2728819037.04,0.23273534554990746,1,,,,unknown,tier1_eoa,medium,,"EOA, no label"
+ATH,ethereum,0x3e7e6c3d084879837310d26b30e52d4b56a8c2f4,2305862144.59,0.1966622248405759,2,,SafeProxy,,insider,tier2_blockscout,high,,"SafeProxy (impl:Safe, creator:0x4e1DCf7) — Aethir team/foundation multisig"
+ATH,ethereum,0xaf8dcd50fdc14e413e5ef4468d4d21a961a7dcfd,2231500165.98,0.19032004510910275,3,,,,unknown,tier1_eoa,medium,,"EOA, no label"
+ATH,ethereum,0x33548d42afa567dba29e0da665d295e232166a43,1607500000.0,0.13710035839433798,4,,,,unknown,tier1_eoa,medium,,"EOA, no label"
+ATH,ethereum,0xfc7825a20f5beee34506698f7843278156e0bea1,1018003661.04,0.08682343189756277,5,,SafeProxy,,insider,tier2_blockscout,high,,"SafeProxy (impl:Safe, creator:0x4e1DCf7) — Aethir team/foundation multisig"
+ATH,ethereum,0x612407de56644e561b8e6bb797782a02f44ae4a6,518895242.22,0.04425550462051559,6,,SafeProxy,,insider,tier2_blockscout,high,,"GnosisSafeProxy (impl:GnosisSafe, creator:0xa6B71E) — Aethir team/investor multisig"
+ATH,ethereum,0x651641299c7ec0aa44ad7ed9b7e12702fed2022f,499231138.87,0.042578393816914785,7,,,,unknown,tier1_eoa,medium,,"EOA, no label"
+ATH,ethereum,0x8714909ac67adb799df8901b1825234215c96e19,370418575.87,0.03159223608565927,8,,,,unknown,tier1_eoa,medium,,"EOA, no label"
+ATH,ethereum,0x4320d08ff059cd11803d3ef1fc5c241ab38d18f8,243274467.13,0.02074837737587222,9,,,,unknown,tier1_eoa,medium,,"EOA, no label"
+ATH,ethereum,0xdcba55e25b40af721a717f13f0b523739fbdfbcb,201483151.73,0.01718408230955134,10,,,,unknown,tier1_eoa,medium,,"EOA, zero ETH balance"
+BAL,ethereum,0xc80afd311c9626528de66d86814770361fe92416,3575611.5509705395,0.3267124379757424,1,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0x4e9a9483bdfc66b83ff248754ef2f7035c78aef7,1831909.6943956169,0.16738610273393215,2,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0x2f28cac69f61841d6fe1a01d5bd80ac352ea6d2b,1658882.0768627813,0.15157614296748526,3,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0xff052381092420b7f24cc97fded9c0c17b2cbbb9,1347308.9732160117,0.12310694074878387,4,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0xa0b3da7383b969008ebbab1d2567c93a143f472a,552676.4600494797,0.05049940998919663,5,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0x91b9e59614995e13a32e36440ac524825f7ae39e,409092.9459021415,0.03737983050146724,6,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0xda6b2a5e0c56542984d84a710f90eefd94ca1991,405139.3964257616,0.03701858494398066,7,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0xd519d5704b41511951c8cf9f65fee9ab9bef2611,397270.4143391972,0.036299576660994474,8,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0xbb19053e031d9b2b364351b21a8ed3568b21399b,388074.6347820378,0.0354593356237958,9,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+BAL,ethereum,0xe08a8b19e5722a201eaf20a6bc595ef655397bd5,378250.0363289525,0.03456163785462148,10,,,,unknown,tier1_eoa,medium,,"EOA, no label in Blockscout"
+IO,solana,3EpUYHv8NzoD5EzqB74JTYUtva2c1wj3Wq3oR5gaLfGt,236669075.95,0.48564965562004714,1,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM,82220212.27,0.16871751247454292,2,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,28SqbTKJmqpRzqHmCqWHP6rHXMnLs5SVwWiTqzUZFWTm,49916455.0,0.10242955943109804,3,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,Gm9t9T9mb9QjdGvY9huq99oTaTqubpyHgvDbAE7feNZv,25223519.39,0.051759163955442326,4,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,Fo7DTEWgW8PYLcTuSAvz3Hf9f1qQW4ngJXm4J2EKJSRK,23896546.74,0.04903618965935866,5,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,76dtfyccwDZpgeowKQL5diLQFgVLtS9jsDjkFB2Vhezu,16203961.15,0.033250850879396956,6,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,7oemYfuh96vjwui49wXo3XUp4kw67jTCrKoLgzsYkCuz,15226620.85,0.031245329126234456,7,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,BB6toFFMQTvSYw5AZvVhWQGrs7oGnxhzjVQCie2rDsVt,14583333.39,0.029925290451305514,8,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,DZ2hv4ZEBBmoXJ5o3v1f5bPYtifK1kEDYLeNbUTMaZkg,11718750.0,0.02404710830493031,9,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.
+IO,solana,8nxaFYPgshDx9sYhQYK1BmCtczXJsMbrojEiY9eCBQnz,11666231.89,0.023939340097643678,10,,,,unknown,tier1_eoa,low,,Solana wallet; no exchange/contract label found in Dune/Helius. Latest known balance from solana_utils.daily_balances.

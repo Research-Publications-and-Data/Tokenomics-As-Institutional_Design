@@ -1,0 +1,11 @@
+tokenId,name,symbol,maxSupply,insider_pct,community_pct,reserve_pct,public_pct,other_pct,locked_pct,unlocked_pct,tbd_pct,insider_amt,community_amt,reserve_amt,pct_source
+uniswap,Uniswap,UNI,1000000000,40.0,17.0,43.0,0.0,0.0,-0.0,100.0,0.0,400000000.0,170000000.0,430000000.0,maxSupply
+aave,Aave,AAVE,16000000,0.0,0.0,100.0,0.0,0.0,4.0349,95.9583,0.0,0.0,0.0,16000000.0,maxSupply
+lido-dao,Lido DAO,LDO,1000000000,74.6517,0.0,25.3483,0.0,0.0,0.0,100.0,0.0,746517315.0,0.0,253482685.0,maxSupply
+optimism,Optimism,OP,4294967296,41.4,44.4,14.2,0.0,0.0,3.6475,47.6975,48.655,1778116460.0,1906965479.0,609885356.0,maxSupply
+arbitrum,Arbitrum,ARB,10000000000,44.47,12.75,42.78,0.0,0.0,12.941,53.0173,34.0375,4447000000.0,1275000000.0,4278000000.0,maxSupply
+the-graph,The Graph,GRT,null,64.925,9.3372,21.6739,4.0639,0.0,,,,null,null,null,trackedAllocationPercentage
+polygon-ecosystem-token,POL (ex-MATIC),POL,null,0.0,91.0174,8.9826,0.0,0.0,,,,null,null,null,trackedAllocationPercentage
+filecoin,Filecoin,FIL,2000000000,25.0,55.0,20.0,0.0,0.0,38.4916,46.4921,15.0,500000000.0,1100000000.0,400000000.0,maxSupply
+render-token,Render,RENDER,644245094,18.2917,16.6667,65.0417,0.0,0.0,0.0,49.2985,36.4811,117843239.0,107374182.0,419027673.0,maxSupply
+hyperliquid,Hyperliquid,HYPE,1000000000,23.8,70.188,6.012,0.0,0.0,19.5792,41.5328,38.888,238000000.0,701880000.0,60120000.0,maxSupply

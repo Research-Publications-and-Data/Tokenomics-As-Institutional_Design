@@ -1,4 +1,0 @@
-variable,N,pearson_r,pearson_p,spearman_rho,spearman_p,log_pearson_r,log_pearson_p
-V1: Circ/Total (crude),31,0.0333,0.8587,0.0772,0.6799,0.0164,0.9316
-V2: MCap/FDV,30,0.0105,0.9561,0.1226,0.5187,0.0168,0.9296
-V3: Exclusion-adjusted,30,-0.0032,0.9868,0.0563,0.7676,0.251,0.2067

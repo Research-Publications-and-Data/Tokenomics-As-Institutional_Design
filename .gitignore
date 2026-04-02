@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .env
+.env.*
 .DS_Store
 ._*
 __MACOSX/
@@ -8,3 +9,15 @@ __MACOSX/
 *.bak
 .vscode/
 .idea/
+
+# Working directories from docx editing
+unpacked_*/
+v*_unpacked/
+
+# Session state / internal queue files
+progress.json
+_tier2_queue.json
+tier2_results.json
+
+# Large binaries (use Git LFS if needed)
+# *.csv files intentionally included (all <5MB)

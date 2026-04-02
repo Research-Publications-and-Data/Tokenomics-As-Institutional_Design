@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:48Z"
+  },
+  "status": true,
+  "data": {
+    "name": "POL (ex-MATIC)",
+    "symbol": "POL",
+    "listedMethod": "INTERNAL",
+    "maxSupply": null,
+    "lastUpdatedDate": "2025-02-17T03:37:54Z",
+    "totalUnlockedAmount": 10494072986.301369,
+    "totalLockedAmount": 0,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 0,
+    "allocations": [
+      {
+        "allocationName": "MATIC Migration",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 10000000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 10000000000,
+        "trackedAllocationPercentage": 82.0348299871627
+      },
+      {
+        "allocationName": "Community treasury",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 247036493.15068406,
+        "allocationLockedAmount": 847935606.8493159,
+        "allocationAmount": 1094972100,
+        "trackedAllocationPercentage": 8.98258500641865
+      },
+      {
+        "allocationName": "Validator incentives",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 247036493.15068406,
+        "allocationLockedAmount": 847935606.8493159,
+        "allocationAmount": 1094972100,
+        "trackedAllocationPercentage": 8.98258500641865
+      }
+    ]
+  }
+}

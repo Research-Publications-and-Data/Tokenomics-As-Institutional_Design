@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:28:02Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Hyperliquid",
+    "symbol": "HYPE",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 1000000000,
+    "lastUpdatedDate": "2025-12-29T09:29:31Z",
+    "totalUnlockedAmount": 415327814,
+    "totalLockedAmount": 195792187,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 388880000,
+    "allocations": [
+      {
+        "allocationName": "Future Emissions and Community Rewards",
+        "allocationType": "TBD",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 388880000,
+        "allocationAmount": 388880000,
+        "trackedAllocationPercentage": 38.888
+      },
+      {
+        "allocationName": "Genesis Distribution",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 310000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 310000000,
+        "trackedAllocationPercentage": 31
+      },
+      {
+        "allocationName": "Core Contributors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 42207814,
+        "allocationLockedAmount": 195792186,
+        "allocationAmount": 238000000,
+        "trackedAllocationPercentage": 23.799999999999997
+      },
+      {
+        "allocationName": "Hyper Foundation Budget",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 60000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 60000000,
+        "trackedAllocationPercentage": 6
+      },
+      {
+        "allocationName": "Community Grants",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 3000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 3000000,
+        "trackedAllocationPercentage": 0.3
+      },
+      {
+        "allocationName": "HIP-2: Hyperliquidity",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 120000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 120000,
+        "trackedAllocationPercentage": 0.012
+      }
+    ]
+  }
+}

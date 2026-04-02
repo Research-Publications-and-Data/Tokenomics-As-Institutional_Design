@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:28Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Aave",
+    "symbol": "AAVE",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 16000000,
+    "lastUpdatedDate": "2025-02-17T02:50:55Z",
+    "totalUnlockedAmount": 15353325.813131453,
+    "totalLockedAmount": 645580.638486933,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 0,
+    "allocations": [
+      {
+        "allocationName": "LEND to AAVE Migrator",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 13000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 13000000,
+        "trackedAllocationPercentage": 81.25
+      },
+      {
+        "allocationName": "AAVE Ecosystem Reserve",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 2353325.813131453,
+        "allocationLockedAmount": 646674.186868547,
+        "allocationAmount": 3000000,
+        "trackedAllocationPercentage": 18.75
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:20Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 1000000000,
+    "lastUpdatedDate": "2025-02-04T10:18:33Z",
+    "totalUnlockedAmount": 1000000000.0000048,
+    "totalLockedAmount": 0,
+    "totalUntrackedAmount": 0,
+    "totalTBDLockedAmount": 0,
+    "allocations": [
+      {
+        "allocationName": "Community Treasury",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 430000000.0000005,
+        "allocationLockedAmount": -4.76837158203125e-07,
+        "allocationAmount": 430000000,
+        "trackedAllocationPercentage": 43
+      },
+      {
+        "allocationName": "Team / Investors / Advisors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 400000000.00000435,
+        "allocationLockedAmount": -4.351139068603516e-06,
+        "allocationAmount": 400000000,
+        "trackedAllocationPercentage": 40
+      },
+      {
+        "allocationName": "Early Airdrop",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 150000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 150000000,
+        "trackedAllocationPercentage": 15
+      },
+      {
+        "allocationName": "LP Staking Reward",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 20000000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 20000000,
+        "trackedAllocationPercentage": 2
+      }
+    ]
+  }
+}

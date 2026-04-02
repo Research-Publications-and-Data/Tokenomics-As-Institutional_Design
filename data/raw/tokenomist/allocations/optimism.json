@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:38Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Optimism",
+    "symbol": "OP",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 4294967296,
+    "lastUpdatedDate": "2025-06-11T10:36:43Z",
+    "totalUnlockedAmount": 2048590833.2000003,
+    "totalLockedAmount": 156659895,
+    "totalUntrackedAmount": 0.8000006675720215,
+    "totalTBDLockedAmount": 2089716567,
+    "allocations": [
+      {
+        "allocationName": "Core Contributors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 766419502,
+        "allocationLockedAmount": 49624284,
+        "allocationAmount": 816043786,
+        "trackedAllocationPercentage": 18.999999998835847
+      },
+      {
+        "allocationName": "Retroactive Public Goods Funding",
+        "allocationType": "TBD",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 799993459,
+        "allocationAmount": 799993459,
+        "trackedAllocationPercentage": 18.62629920212233
+      },
+      {
+        "allocationName": "Investors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 685743765.2000002,
+        "allocationLockedAmount": 44400674.79999983,
+        "allocationAmount": 730144440,
+        "trackedAllocationPercentage": 16.99999999650754
+      },
+      {
+        "allocationName": "User Airdrops",
+        "allocationType": "TBD",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 559798073,
+        "allocationAmount": 559798073,
+        "trackedAllocationPercentage": 13.033814568313263
+      },
+      {
+        "allocationName": "User Airdrops",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 256245713,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 256245713,
+        "trackedAllocationPercentage": 5.966185430522586
+      },
+      {
+        "allocationName": "Unallocated Ecosystem Fund",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 242457122,
+        "allocationAmount": 242457122,
+        "trackedAllocationPercentage": 5.645144778686842
+      },
+      {
+        "allocationName": "Partner Fund",
+        "allocationType": "TBD",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 230216234,
+        "allocationAmount": 230216234,
+        "trackedAllocationPercentage": 5.360139395426991
+      },
+      {
+        "allocationName": "Governance Fund",
+        "allocationType": "TBD",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 143435040,
+        "allocationAmount": 143435040,
+        "trackedAllocationPercentage": 3.3396072693494165
+      },
+      {
+        "allocationName": "Unallocated Ecosystem Fund",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 135500000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 135500000,
+        "trackedAllocationPercentage": 3.1548552222444806
+      },
+      {
+        "allocationName": "Seed Fund",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 55476659,
+        "allocationLockedAmount": 62634936,
+        "allocationAmount": 118111595,
+        "trackedAllocationPercentage": 2.7499998693238012
+      },
+      {
+        "allocationName": "Seed Fund",
+        "allocationType": "TBD",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 0,
+        "allocationLockedAmount": 113816639,
+        "allocationAmount": 113816639,
+        "trackedAllocationPercentage": 2.650000132306013
+      },
+      {
+        "allocationName": "Governance Fund",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 88493194,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 88493194,
+        "trackedAllocationPercentage": 2.060392732280398
+      },
+      {
+        "allocationName": "Retroactive Public Goods Funding",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Community",
+        "allocationUnlockedAmount": 59000000.000000075,
+        "allocationLockedAmount": -7.450580596923828e-08,
+        "allocationAmount": 59000000,
+        "trackedAllocationPercentage": 1.3737007978776705
+      },
+      {
+        "allocationName": "Partner Fund",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 1712000,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 1712000,
+        "trackedAllocationPercentage": 0.03986060620282325
+      }
+    ]
+  }
+}

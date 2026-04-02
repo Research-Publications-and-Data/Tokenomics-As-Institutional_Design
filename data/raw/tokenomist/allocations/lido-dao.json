@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "queryDate": "2026-04-01T21:27:32Z"
+  },
+  "status": true,
+  "data": {
+    "name": "Lido DAO",
+    "symbol": "LDO",
+    "listedMethod": "INTERNAL",
+    "maxSupply": 1000000000,
+    "lastUpdatedDate": "2025-09-24T09:52:47Z",
+    "totalUnlockedAmount": 999999999.8100023,
+    "totalLockedAmount": 1.1920928955078125e-07,
+    "totalUntrackedAmount": 0.18999993801116943,
+    "totalTBDLockedAmount": 0,
+    "allocations": [
+      {
+        "allocationName": "Team and Validators",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Founder / Team",
+        "allocationUnlockedAmount": 400399999.9999993,
+        "allocationLockedAmount": 7.152557373046875e-07,
+        "allocationAmount": 400400000,
+        "trackedAllocationPercentage": 40.04
+      },
+      {
+        "allocationName": "Investors",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Private Investors",
+        "allocationUnlockedAmount": 346117314.8100031,
+        "allocationLockedAmount": 0.1899968981742859,
+        "allocationAmount": 346117315,
+        "trackedAllocationPercentage": 34.6117315
+      },
+      {
+        "allocationName": "DAO Treasury",
+        "allocationType": "Scheduled",
+        "standardAllocationName": "Reserve",
+        "allocationUnlockedAmount": 253482685,
+        "allocationLockedAmount": 0,
+        "allocationAmount": 253482685,
+        "trackedAllocationPercentage": 25.3482685
+      }
+    ]
+  }
+}
