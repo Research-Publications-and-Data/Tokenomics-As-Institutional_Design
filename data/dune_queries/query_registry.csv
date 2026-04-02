@@ -1,0 +1,44 @@
+token,query_id,chain,method,snapshot_date,notes
+AAVE,6929860,ethereum,erc20_evt_transfer,2026-04-01,
+ARB,6929861,arbitrum,erc20_evt_transfer,2026-04-01,erc20_arbitrum.evt_transfer corrected
+ATH,6929891,ethereum,erc20_evt_transfer,2026-04-01,
+AXL,6929892,ethereum,erc20_evt_transfer,2026-04-01,
+ANYONE,6929889,ethereum,erc20_evt_transfer,2026-04-01,
+BAL,6929862,ethereum,erc20_evt_transfer,2026-04-01,raw BAL token only (not veBAL)
+COMP,6929863,ethereum,erc20_evt_transfer,2026-04-01,
+CRV,6929864,ethereum,erc20_evt_transfer,2026-04-01,raw CRV (not veCRV)
+DIMO,6929865,polygon,erc20_evt_transfer,2026-04-01,
+DRIFT,6929890,solana,helius_das,2026-04-01,Helius DAS API
+ENS,6929866,ethereum,erc20_evt_transfer,2026-04-01,
+ETHFI,6929867,ethereum,erc20_evt_transfer,2026-04-01,
+FIL,,filecoin,filfox_richlist,2026-04-01,see analysis/utils/filfox_richlist.py
+GEOD,6929868,polygon,erc20_evt_transfer,2026-04-01,
+GMX,6929869,arbitrum,erc20_evt_transfer,2026-04-01,
+GRASS,6929870,solana,helius_das,2026-04-01,Helius DAS API
+GRT,6929871,ethereum,erc20_evt_transfer,2026-04-01,
+GTC,6929872,ethereum,erc20_evt_transfer,2026-04-01,
+HNT,,solana,solana_utils_latest_balances,2026-04-01,
+HONEY,,solana,solana_utils_latest_balances,2026-04-01,top-100 only; see outputs/honey_requery_result.json
+HYPE,,hyperliquid,hypurrscan_richlist,2026-04-01,Hyperliquid L1 native explorer
+IOTX,6929873,ethereum,erc20_evt_transfer,2026-04-01,ERC-20 representation (not IoTeX L1)
+JUP,6929874,solana,solana_utils_latest_balances,2026-04-01,
+LDO,6929875,ethereum,erc20_evt_transfer,2026-04-01,
+LPT,6929876,ethereum,erc20_evt_transfer,2026-04-01,
+META,6929877,solana,helius_das,2026-04-01,Helius DAS API
+MKR,6929878,ethereum,erc20_evt_transfer,2026-04-01,
+MOR,6929879,ethereum,erc20_evt_transfer,2026-04-01,
+MPL,6929880,ethereum,erc20_evt_transfer,2026-04-01,
+OP,6929881,optimism,erc20_evt_transfer,2026-04-01,
+POKT,,pocket,poktscan_api,2026-04-01,see analysis/utils/poktscan_richlist.py
+POL,6929882,polygon,erc20_evt_transfer,2026-04-01,
+RENDER,6929883,solana+ethereum,helius_das+erc20,2026-04-01,merged multi-chain (see merge_multichain.py)
+RPL,6929884,ethereum,erc20_evt_transfer,2026-04-01,
+SYRUP,6929893,ethereum,erc20_evt_transfer,2026-04-01,
+TEC,6929885,gnosis,erc20_evt_transfer,2026-04-01,
+UNI,6929886,ethereum,erc20_evt_transfer,2026-04-01,
+W,6938147,solana,helius_das,2026-04-01,Helius DAS API
+WXM,6929887,polygon,erc20_evt_transfer,2026-04-01,
+ZRO,6929888,ethereum,erc20_evt_transfer,2026-04-01,
+_GEODNET_BURNS,6917159,solana,spl_transfer_to_null,2024-09 to 2026-04,monthly burn transactions
+_GEODNET_EMISSIONS,6923474,solana,spl_mint,2024-09 to 2026-04,monthly emissions
+_GEODNET_BURN_CONC,6917162,solana,spl_transfer_signer_hhi,2024-09 to 2026-04,burn signer concentration
