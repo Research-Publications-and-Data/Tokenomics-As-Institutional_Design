@@ -1,6 +1,6 @@
 # S3: Scoring Tables
 
-Protocol-by-criterion scores for all 11 scored protocols. 220 scored cells with evidence notes. Scores assigned by a single coder (ZZ); inter-rater reliability testing specified as future work. Evidence gathered from governance documentation, on-chain data, and forum activity as of March 2026.
+Protocol-by-criterion scores for all 12 scored protocols. 220 scored cells with evidence notes (plus 8 abbreviated philosophical-lens scores for Wayru). Scores assigned by a single coder (ZZ); inter-rater reliability testing specified as future work. Evidence gathered from governance documentation, on-chain data, and forum activity as of March 2026.
 
 Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for full criterion definitions.
 
@@ -19,6 +19,7 @@ Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for f
 | Optimism | Infra | 0.042 | 2.25 | 1.75 | 2.25 | 2.00 | 1.25 | 1.90 |
 | Arbitrum | Infra | 0.012 | 2.00 | 1.50 | 2.00 | 1.75 | 1.25 | 1.70 |
 | ENS | Infra | 0.135 | 1.75 | 1.00 | 1.75 | 1.25 | 1.00 | 1.35 |
+| Wayru | DePIN | N/A | 1.00 | 1.00 | 0.00 | 0.00 | 1.00 | 0.62 |
 
 ---
 
@@ -170,7 +171,7 @@ Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for f
 | FAIR-3 Distribution fairness | 1 | Mining distributes to operators; but early/dense locations accumulated disproportionately |
 | FAIR-4 Governance accessibility | 1 | veHNT delegation available; HIP voting requires staked HNT; delegation mechanics complex |
 | NDOM-1 Contestability | 2 | HIP rejection demonstrated; HIP-147 community override (operators accepted reward cuts through legitimate process) |
-| NDOM-2 Concentration limit | 2 | HHI 0.102 (moderate-high); burn HHI 0.22 (top-5 burners = 90%); concentrated usage |
+| NDOM-2 Concentration limit | 2 | HHI 0.102 (moderate-high); burn HHI 0.27 (top-5 burners ≈ 90%; top-2 = 70%); concentrated usage |
 | NDOM-3 Emergency powers | 2 | Foundation operational authority; Helium Council provides checks; no unilateral override |
 | NDOM-4 Exit rights | 2 | Liquid HNT; hotspot resale market; hardware transferable; no governance lock-in |
 | POLY-1 Decision centers | 2 | SubDAO structure (IoT, Mobile) with independent treasuries and emission schedules |
@@ -340,3 +341,26 @@ Note: Anyone scores uniformly at 1 due to early-stage maturity, not poor design 
 8. **Optimism highest Synergy (1.90).** Driven by two-chamber governance (only protocol with 3 on any criterion: NDOM-1 and PUB-1), compensated delegation, RetroPGF, and constitutional structure. Also the only protocol where delegation distributes rather than concentrates power (0.79x ratio).
 
 9. **Post-exclusion HHI shifts.** AAVE (0.059 to 0.020), UNI (0.101 to 0.032), ARB (0.097 to 0.012) shifted substantially after excluding stkAAVE, Timelock, and FixedDelegateWallet respectively. NDOM-2 scores reflect post-exclusion values; the exclusions themselves are documented in S1.
+
+10. **Wayru abbreviated scoring.** Wayru (DePIN, mesh WiFi) was scored using the 8-criterion philosophical-lens rubric rather than the full 20-criterion criterion-set used for the other 11 protocols. The abbreviated scheme assigns one score per lens (Kantian, Rawlsian, Pettitian, Ostromian, Hayekian, Nussbaum, Floridi, Appiah) rather than 4 per lens. Synergy Index = 0.62 (mean of 8 scores). Holding HHI was not computable for Wayru as it was not included in the primary regression dataset (N/A in Table 4).
+
+---
+
+## 12. Wayru (DePIN, HHI N/A)
+
+*Scored using abbreviated 8-lens philosophical rubric (one score per lens). Protocol is a mesh WiFi DePIN network. HHI not computed (not in primary regression sample).*
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Kantian Publicity | 1 | Basic governance documentation; rules partially transparent but not fully on-chain |
+| Rawlsian Fairness | 1 | Node operator access minimal but non-zero; hardware cost accessible; no floor protection |
+| Pettit Non-Domination | 0 | No formal contestation mechanism; governance centralized at team/foundation level |
+| Ostrom Polycentricity | 0 | Single governance body; no subDAOs, no local adaptation by geography |
+| Hayek Knowledge | 1 | Bandwidth and coverage pricing as implicit demand signal; not structured into governance |
+| Nussbaum Capability | 0 | No minimum capability thresholds; governance inaccessible to small operators |
+| Floridi Integrity | 0 | Limited data integrity verification; network quality measurement nascent |
+| Appiah Cosmopolitan | 2 | Explicit global mission (internet access for underserved communities); cross-border deployment design |
+
+**Synergy Index:** 5/8 = **0.62**
+
+Note: Wayru scores reflect early-stage maturity (network launch 2022–2023), not poor design intent. The Appiah Cosmopolitan score of 2 is the highest single-lens score and reflects the protocol's stated mission. The zero scores on Non-Domination and Polycentricity are consistent with early-stage DePIN protocols (cf. Anyone Protocol).

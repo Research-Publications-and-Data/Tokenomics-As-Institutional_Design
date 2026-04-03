@@ -17,26 +17,23 @@
 
 ## DeFi Protocol Subsidy Ratios (B2 Baseline)
 
-Subsidy ratio is the strongest concentration predictor in the regression (r = 0.37). These
-DeFi values establish the baseline against which DePIN protocols are compared.
+Subsidy ratio correlates with concentration in the primary on-chain specification (r = 0.58, p = 0.007, N = 20), though this result is driven by Livepeer (see §5.7 and Supplementary File S8). These DeFi values establish the baseline against which DePIN protocols are compared.
 
 | Protocol | Revenue (35mo) | Token Incentives (35mo) | Subsidy Ratio | Holding HHI |
 |----------|---------------|------------------------|---------------|-------------|
 | MakerDAO | $790.4M | $0.0M | **0.00x** | 0.045 |
-| Aave | $254.1M | $149.1M | **0.59x** | 0.020 |
+| Aave | $135.4M | $50.2M | **0.37x** | 0.020 |
 | Compound | $23.0M | $36.5M | **1.59x** | 0.027 |
 | Curve | $92.7M | $277.7M | **3.00x** | 0.171 |
 | Uniswap | ~$3.0M | $36.5M | **N/A** | 0.032 |
 
-**Formula change (v12):** Prior versions used `incentives / (revenue + incentives)`,
-producing percentages that cap at 100%. The paper body uses `incentives / revenue`
-(DEC-023 convention), which allows values > 1.0x for subsidy-dominant protocols
-(e.g., Livepeer 88.5x). The table above now uses the body convention. Note: the
-paper body references Aave at "0.37x," which corresponds to the old formula (37.0%);
-under the current formula Aave is 0.59x. This discrepancy should be reconciled in the
-body text during the next revision pass.
+**Formula:** All values use `incentives / revenue` (DEC-023 convention), allowing values > 1.0x
+for subsidy-dominant protocols (e.g., Livepeer 88.5x). Aave values sourced from regression_data_april2026.csv
+(Token Terminal live pull, April 2026: revenue=$135.4M, incentives=$50.2M → ratio=0.37x). An earlier
+35-month TT aggregate ($254.1M / $149.1M) was used in v13 and produced 0.59x; v14 reverts to the
+regression-period values for internal consistency.
 
-Source: Token Terminal daily data, February 2023 to January 2026 (1,096 observations per metric).
+Source: Token Terminal daily data, regression measurement period (Token Terminal live, April 2026 pull).
 
 **Uniswap note:** The fee switch has never been permanently activated. Protocol revenue is
 near-zero because all trading fees accrue to liquidity providers. The subsidy ratio is
@@ -90,4 +87,7 @@ df.loc[df["token"] == "UNI", "subsidy_ratio"] = float("nan")
 
 For DePIN protocols without Token Terminal coverage, `subsidy_ratio` is derived from
 on-chain emission and burn data (Dune Analytics). See `CODEBOOK.md` for per-protocol
-data source documentation.
+data source documentation. Subsidy-to-Revenue ratios for DePIN protocols were computed
+from protocol-native burn and emission events using the `compute_s2r.py` script in the
+replication package; input files include `helium_s2r_cleaned.csv` (34 months),
+`geodnet_monthly_burns.csv`, and `geodnet_monthly_emissions.csv`.

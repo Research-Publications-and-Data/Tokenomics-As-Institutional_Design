@@ -2,7 +2,7 @@
 
 ## Overview
 
-The data collection pipeline produces governance concentration metrics for 35 protocols across 8 blockchains using 10 data sources. The pipeline is designed for single-snapshot cross-sectional analysis (March 2026) with reproducibility as a first-class requirement.
+The data collection pipeline produces governance concentration metrics for 40 protocols across 8 blockchains using 10 data sources. The pipeline is designed for single-snapshot cross-sectional analysis (March 2026) with reproducibility as a first-class requirement.
 
 ## Pipeline Architecture
 
@@ -216,8 +216,8 @@ python scripts/defillama_fallback.py        # DeFiLlama → defillama_fees_raw.j
 python scripts/assemble_regression_data.py
 # Merges: governance_concentration + coingecko_market + tokenterminal
 #         + tokenomist_allocations + depinscan_devices + deepdao_treasury
-# Output: regression_data_april2026.csv (35 × 34)
-#         covariates_merged.csv (35 × 46)
+# Output: regression_data_april2026.csv (40 × 34)
+#         covariates_merged.csv (40 × 46)
 ```
 
 ### Step 6: Collect Voting Data
@@ -234,20 +234,20 @@ python scripts/collect_governance.py
 ```bash
 python scripts/generate_figure3.py
 # Output: figures/figure3_governance_hhi_34protocol.png
-# Horizontal bar chart, 35 protocols, colored by category
+# Horizontal bar chart, 40 protocols, colored by category
 ```
 
 ## Verification Checklist
 
 After running the pipeline, verify:
 
-1. `governance_concentration_april2026.csv` has 35 rows
+1. `governance_concentration_april2026.csv` has 40 rows
 2. All HHI values are between 0 and 1
 3. No protocol has N < 50 holders (minimum for inclusion)
 4. Exclusions applied: check that excluded addresses do not appear in top-10 for affected tokens
 5. Multi-chain merge: RENDER total holders > max(ETH holders, SOL holders)
 6. Helius correction: META, DRIFT, GRASS, W have >1000 holders
-7. Regression dataset: `regression_ready` column is True for 31/35 protocols
+7. Regression dataset: `regression_ready` column is True for 31/40 protocols
 8. Insider correlation: `pearsonr(insider_pct, hhi)` returns r near +0.08, p near 0.64
 
 ## Refresh Cadence

@@ -1,0 +1,335 @@
+RESCUED DATA CROSS-VALIDATION REPORT
+Date: 2026-04-02
+Auditor: automated cross-validation (read-only)
+Reference: B2_Final_v13.docx; regression_data_april2026.csv (40 protocols)
+
+════════════════════════════════════════════════════════════════════════
+
+CHECK 1: Scoring Sheet (data/processed/scoring_sheet.csv)
+──────────────────────────────────────────────────────────
+  Rows: 112 (14 protocols × 8 lenses)
+  Unique protocols in file: 14
+    anyone, cudis, dimo, filecoin, geodnet, grass, helium, hivemapper,
+    iotex, livepeer, render, uprock, wayru, weatherxm
+  Match paper claim (§4.5.3 Table 2 says 11 scored): NO — file has 14
+
+  Protocols in scoring sheet but NOT in regression dataset (3):
+    wayru   — scored, no regression row
+    cudis   — scored, no regression row
+    uprock  — scored, no regression row
+
+  Lenses in scoring_sheet.csv: 8
+    kantian_publicity, rawlsian_fairness, pettit_contestation,
+    ostrom_polycentricity, hayek_knowledge, nussbaum_capability,
+    floridi_integrity, appiah_cosmopolitan
+  Scoring rubric (paper/supplements/scoring_rubric.csv): also 8 lenses
+    → Task description says "rubric says 4" — this is wrong; actual
+      file has 8 lens definitions. Paper's "5 lenses" claim (Kant,
+      Rawls, Pettit, Ostrom, Hayek) likely reflects the 5 reported in
+      the main text; Nussbaum, Floridi, and Appiah are scored but
+      treated as supplementary.
+
+  Score=0 prevalence (possible missing/unscored data):
+    geodnet: 4 zeros of 8 lenses (governance, contestation, polycentricity,
+             capability, integrity)
+    cudis:   8 zeros of 8 lenses (all zeros — likely unscored placeholder)
+    uprock:  8 zeros of 8 lenses (all zeros — likely unscored placeholder)
+    → cudis and uprock appear to be unscored; their inclusion inflates
+      the protocol count to 14.
+
+  STATUS: ⚠ MISMATCH — paper says 11, file has 14. If paper counts only
+          fully-scored protocols (≥1 non-zero score per lens), effective
+          count is 12 (excluding cudis and uprock). Still doesn't match 11.
+
+════════════════════════════════════════════════════════════════════════
+
+CHECK 2: Protocol Codebook vs Regression Data
+(data/processed/protocol_codebook.csv vs data/processed/regression_data_april2026.csv)
+──────────────────────────────────────────────────────────────────────
+  Codebook protocols: 14
+  Regression protocols: 40
+  In codebook but not regression (3): wayru, cudis, uprock (same as Check 1)
+  In regression but not codebook (26): all DeFi, L1/L2, and later-added
+    DePIN protocols (Aethir, Hivemapper HHI-only row, io.net, Hyperliquid,
+    Pokt, Morpheus, Axelar, MetaDAO, Lido, Gitcoin, TEC, Balancer, etc.)
+
+  CONCENTRATION VALUE DISCREPANCIES (5 protocols with codebook HHI data):
+
+    Protocol    CB HHI   Reg HHI   Ratio   CB Gini  Reg Gini  CB Top1%  Reg Top1%
+    weatherxm   0.5930   0.1479    4.0×    0.970    0.8946    76.4%     35.0%
+    dimo        0.3050   0.0379    8.0×    0.940    0.8709    54.8%     13.9%
+    grass       0.1190   0.0352    3.4×    0.960    0.7603    31.2%     16.0%
+    iotex       0.3880   0.1065    3.6×    0.980    0.9870    61.3%     19.8%
+    anyone      0.0340   0.0404    0.8×    0.790    0.7942    11.9%     13.3%
+
+    → Codebook HHI values are 3–8× higher than regression for 4 of 5
+      protocols. The codebook snapshot_date field says 2026-02 for these,
+      same as the regression. Most likely cause: codebook was populated
+      from an earlier/smaller sample (n≈100 vs n=1000), or before
+      protocol-controlled address exclusions were applied.
+    → "anyone" is the only approximately consistent value (within 20%).
+    → Regression values are authoritative (from Dune query 01_governance_hhi).
+      Codebook HHI column should be treated as stale/preliminary.
+
+  ALLOCATION DISCREPANCIES (codebook vs regression):
+
+    WeatherXM:
+      Codebook:   team=20%, investor=15%, community=50%, treasury=15%
+      Regression: team=0%,  investor=30%, community=55%, treasury=10%
+      → team 20% vs 0% and investor 15% vs 30% are significant reversals.
+        Likely reflects different tokenomics source docs or reclassification.
+
+    DIMO:
+      Codebook:   team=25%, investor=20%, community=40%, treasury=15%
+      Regression: team=22.4%, investor=7.6%, community=44.95%, treasury=25%
+      → investor 20% vs 7.6% (2.6×); treasury 15% vs 25% — regression
+        values are from the updated DIMO docs; codebook is stale.
+
+  STATUS: ⚠ SIGNIFICANT — codebook HHI/Gini/Top1 data is materially
+          different from regression for 4/5 protocols. Do not use codebook
+          concentration values in any paper analysis. Allocation values also
+          diverge for WXM and DIMO.
+
+════════════════════════════════════════════════════════════════════════
+
+CHECK 3: Helium S2R Time Series (data/raw/helium_s2r_cleaned.csv)
+──────────────────────────────────────────────────────────────────
+  Time series length: 34 months ✓ (May 2023 – Feb 2026)
+  Column used: s2r_clean (migration-excluded, spike-flagged)
+  Spike flags: 4 months flagged
+    2024-11 (0.1371), 2025-02 (0.0991), 2025-03 (0.1068), 2025-06 (0.3764)
+
+  PAPER CLAIM: "IoT era ~0.007" (§3.4, H3.4 motivating evidence)
+    Closest match in dataset: Aug 2024 s2r_clean = 0.0067 ≈ 0.007 ✓
+    Note: dataset starts May 2023 (post-Solana migration). If the paper
+    intends pre-migration IoT-era S2R, it predates this CSV entirely.
+    Aug 2024 is the only month that rounds to 0.007; it represents a
+    post-migration nadir, not the literal IoT era. The citation should
+    specify whether it references Aug 2024 or pre-2023 historical data.
+    STATUS: AMBIGUOUS — value is present in dataset but context is unclear.
+
+  PAPER CLAIM: "Q3 2025 post-5G pivot ~0.18" (§3.4)
+    Jul 2025 s2r_3m_rolling = 0.1761 ≈ 0.18 ✓
+    Jul 2025 s2r_clean = 0.0737 (spot, not rolling)
+    → The "0.18" matches the 3-month rolling average at Jul 2025, not
+      the spot value. As long as the paper is citing the rolling average,
+      this is consistent.
+    STATUS: CONFIRMED (3m rolling average interpretation)
+
+  PAPER CLAIM: "Feb 2026 fiscal parity ~1.84" (§6.1, B3 cite)
+    Feb 2026 s2r_clean = 2.0597
+    Feb 2026 s2r_3m_rolling = 1.5025
+    Feb 2026 s2r_median_5m = 1.5517
+    Paper says: 1.84
+    DISCREPANCY: Data shows 2.060, paper cites 1.84 (data is 11.9% higher)
+    → No smoothing method in the file yields 1.84. The spot value (2.06),
+      3m rolling (1.50), and 5m median (1.55) all differ from 1.84.
+    → Possible explanations: (a) paper was drafted before Feb 2026 data
+      was final and used Jan 2026 projection; (b) S2R was computed with
+      a different burns definition (e.g., excluding large-signer burns).
+    Jan 2026 s2r_clean = 1.1027 (too low). Oct 2025 = 1.5696, Nov = 0.8773,
+      Dec = 1.5517. None match 1.84 cleanly.
+    STATUS: ⚠ DISCREPANCY — paper cites 1.84, data shows 2.060 for Feb 2026.
+            Paper should be updated to 2.06 or the exact computation
+            method used to derive 1.84 identified and documented.
+
+════════════════════════════════════════════════════════════════════════
+
+CHECK 4: GEODNET Burns/Emissions
+(data/raw/geodnet_monthly_burns.csv + geodnet_monthly_emissions.csv)
+──────────────────────────────────────────────────────────────────────
+  Burns file:     19 months (Sep 2024 – Mar 2026)
+  Emissions file: 19 months (Sep 2024 – Mar 2026) ✓ aligned
+
+  PAPER CLAIM: "GEODNET S2R = 0.379" (§3.4, H3.3)
+    Overall S2R (total burns / total emissions, all 19 months): 0.0690
+    → The aggregate is dominated by Sep–Oct 2025 emission spikes:
+        Sep 2025: 34.9M emitted, only 10 burned (S2R ≈ 0)
+        Oct 2025: 101.1M emitted, 176K burned (S2R = 0.002)
+      These two months account for 62% of total emissions.
+
+    Monthly S2R values for window closest to 0.379:
+      Dec 2024–Jun 2025 average: 0.3718 ≈ 0.379 ✓ (7-month window)
+      Oct 2024–Aug 2025 average: 0.2748 (11-month window, farther)
+    → The 0.379 claim is approximately valid for the Dec 2024–Jun 2025
+      window (mean 0.372, vs cited 0.379; delta = −0.007).
+    → However: the paper does not specify this window. The post-Jun 2025
+      collapse (Sep 2025 near-zero S2R) renders the 0.379 figure
+      misleading if presented as current or representative.
+    STATUS: ⚠ WINDOW-DEPENDENT — S2R = 0.379 is approximately supported
+            for Dec 2024–Jun 2025 only. Paper must specify this window
+            explicitly. The full-dataset S2R is 0.069.
+
+  PAPER CLAIM: "burns absorbing 36% of monthly emissions" (§3.4)
+    Feb 2026 burn/emission ratio: 1,336,932 / 3,695,433 = 36.2% ✓
+    → This claim precisely matches the Feb 2026 data point.
+    → Note: Mar 2026 drops to 0.5%, showing high volatility.
+    STATUS: CONFIRMED for Feb 2026 specifically.
+
+  REGRESSION DATA NOTE:
+    regression_data_april2026.csv lists GEODNET subsidy_ratio_onchain = 2.64.
+    This differs from both the paper's 0.379 and the computed 0.069.
+    The 2.64 figure uses a different denominator (likely revenue_usd, not
+    token-denominated emissions). The metrics are not directly comparable.
+    Revenue_annual_usd for GEODNET in regression = $9,194,616 (defillama_fees_proxy).
+
+════════════════════════════════════════════════════════════════════════
+
+CHECK 5: Unused Covariates in Codebook
+──────────────────────────────────────
+  Codebook columns not present in regression_data_april2026.csv (all 14
+  DePIN-specific protocols only):
+
+  DePIN Hardware / Deployment (high analytical value):
+    hardware_cost_usd          — ranges: $0 (app) to $50,000 (storage server)
+    operator_type              — individual / institutional / mixed
+    deployment_unit            — hotspot, dashcam, weather station, etc.
+    coverage_verification_method — proof-of-coverage, AI scoring, satellite
+    reward_basis               — service, coverage, usage, task_completion
+    geodata_required           — boolean
+    location_verification_method — GPS, RTK GNSS, IP geolocation, etc.
+
+  Token Mechanics (partially overlapping with regression but not identical):
+    emission_model             — decaying / algorithmic / fixed
+    max_supply                 — absolute cap
+    inflation_rate_annual_pct
+    decay_rule                 — e.g., "halving every 2 years"
+    halving_schedule
+    vesting_months
+    unlock_schedule_description
+    airdrop_method
+    sybil_defense_method
+
+  Governance Detail (not in regression):
+    governance_type            — token_vote / foundation / hybrid
+    on_chain_voting            — boolean
+    delegation_enabled         — boolean
+    proposal_threshold
+    quorum_pct
+    timelock_hours
+    veto_mechanism
+    bicameral
+
+  Token Economics:
+    fee_switch                 — on / off / partial
+    burn_mechanism             — DC_burn, gas_burn, license_burn, none
+    buyback_mechanism
+    sink_type_primary
+    staking_enabled
+    lockup_mechanism
+    unbonding_period_days
+    slashing_enabled
+    slashing_conditions
+
+  These 23+ columns cover hardware cost, operator type, governance
+  structure, and token sink mechanics for the 14 codebook protocols.
+  None were used as regression covariates in the April 2026 dataset.
+  Future work: hardware_cost_usd and governance_type could serve as
+  DePIN-specific controls or heterogeneity dimensions.
+
+════════════════════════════════════════════════════════════════════════
+
+CHECK 6: Dune Query Registry
+──────────────────────────────────────────────────────────────────────
+  SQL files in data/dune_queries/: 11
+  Registry entries (query_registry.csv): 40 token entries + 3 GEODNET entries = 43
+
+  Registry status for each SQL file:
+    ✓ 06_geodnet_burns.sql              → _GEODNET_BURNS    Dune 6917159
+    ✓ 07_geodnet_emissions.sql          → _GEODNET_EMISSIONS Dune 6923474
+    ✓ 08_geodnet_burn_concentration.sql → _GEODNET_BURN_CONC Dune 6917162
+    ⚠ 01_governance_hhi.sql            → no standalone entry; referenced
+                                          in codebook dune_query_id column
+                                          and in 5 token rows (WXM, DIMO,
+                                          ANYONE, GRASS, IOTX) but no Dune
+                                          query ID recorded in registry
+    ⚠ 02_helium_s2r.sql                → no registry entry
+    ⚠ 03_dimo_s2r.sql                  → no registry entry
+    ⚠ 04_helium_who_burns.sql          → no registry entry
+    ⚠ 05_defi_benchmarks.sql           → no registry entry
+    ⚠ evm_concentration.sql            → no registry entry (template)
+    ⚠ evm_holder_list.sql              → no registry entry (template)
+    ⚠ solana_concentration.sql         → no registry entry (template)
+
+  Registered: 3 of 11 (27%)
+  Missing from registry: 8 of 11
+
+  Note: evm_concentration, evm_holder_list, solana_concentration are
+  likely query templates used to generate the 40 token-level queries
+  (which ARE registered with Dune IDs 6929860–6929893). Their absence
+  from the registry as standalone entries is a documentation gap but not
+  a data integrity issue. Queries 02–05 appear to be analysis queries
+  whose Dune IDs were never recorded.
+
+════════════════════════════════════════════════════════════════════════
+
+ACTION ITEMS
+──────────────────────────────────────────────────────────────────────
+
+CRITICAL — affects paper claims:
+
+  [A1] §4.5.3 Table 2: Paper says 11 protocols scored. Scoring sheet has 14.
+       Likely explanation: wayru and cudis were scored but excluded from
+       the paper; uprock appears unscored (all zeros). Clarify which 11
+       appear in Table 2 and add a footnote that 3 additional protocols
+       were collected but excluded (e.g., "insufficient governance
+       documentation"). Alternatively verify whether the "11" count
+       reflects an earlier version of the scoring that predates the 3
+       additions.
+
+  [A2] §6.1 / B3: Helium Feb 2026 S2R cited as 1.84, but
+       helium_s2r_cleaned.csv row for 2026-02 shows s2r_clean = 2.060.
+       Discrepancy = +11.9%. Update citation to 2.06 or identify what
+       computation yields 1.84 and document it. No smoothing method in
+       the file (3m rolling = 1.50; 5m median = 1.55) reproduces 1.84.
+
+  [A3] §3.4 H3.3: GEODNET S2R = 0.379 is only valid for the Dec 2024 –
+       Jun 2025 window (computed: 0.372). The post-Jun 2025 emission
+       spike reduces the 19-month aggregate to 0.069. Add explicit
+       window specification: "S2R averaged 0.38 over Dec 2024–Jun 2025,
+       before a subsequent emission schedule reset."
+
+MODERATE — affects supplementary material / reproducibility:
+
+  [A4] Codebook HHI values are 3–8× higher than regression for WXM,
+       DIMO, GRASS, IOTX. Codebook likely reflects a smaller-sample
+       preliminary run. The codebook should be updated to match the
+       final regression values (from Dune queries 6929860–6929893) OR
+       the stale fields should be flagged as deprecated. Do not cite
+       codebook HHI values anywhere in the paper.
+
+  [A5] Allocation splits differ between codebook and regression for
+       WeatherXM (team 20% vs 0%) and DIMO (investor 20% vs 7.6%).
+       These fields are used in the insider_pct variable. Verify which
+       source is correct for the regression.
+
+  [A6] 8/11 SQL files lack query_registry.csv entries:
+       01_governance_hhi.sql — add Dune query ID (currently unnamed)
+       02_helium_s2r.sql     — add Dune query ID
+       03_dimo_s2r.sql       — add Dune query ID
+       04_helium_who_burns.sql — add Dune query ID
+       05_defi_benchmarks.sql  — add Dune query ID
+       (Template files evm_concentration, evm_holder_list,
+        solana_concentration can remain unregistered with a note.)
+
+MINOR — housekeeping / future work:
+
+  [A7] Scoring rubric has 8 lenses; paper reports 5. Add a supplement
+       footnote clarifying that Nussbaum, Floridi, and Appiah lenses
+       were scored but not included in the main governance index.
+
+  [A8] wayru, cudis, uprock are in the scoring sheet but have no
+       regression rows. Document this gap in the codebook or add a
+       "scored_not_regressed" flag to these protocols.
+
+  [A9] Codebook has 23+ DePIN-specific columns (hardware_cost_usd,
+       operator_type, coverage_verification_method, etc.) absent from
+       the regression dataset. Flag for future DePIN-specific analysis.
+
+  [A10] §3.4 H3.4 "IoT era ~0.007" — the dataset's minimum is 0.007
+        (Aug 2024, s2r_clean = 0.0067), but that is post-migration.
+        If the paper intends pre-migration IoT-era data, the source
+        predates this CSV and should be cited separately.
+
+════════════════════════════════════════════════════════════════════════
+END OF REPORT

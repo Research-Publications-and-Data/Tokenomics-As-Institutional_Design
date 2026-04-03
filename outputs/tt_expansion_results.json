@@ -1,0 +1,65 @@
+{
+  "source": "Token Terminal expansion + on-chain DePIN (Livepeer and Render excluded)",
+  "date": "2026-04-02",
+  "exclusions": {
+    "Livepeer": "subsidy_ratio_onchain=88.5x, 3.5-sigma outlier (primary result driver)",
+    "Render": "subsidy_ratio_onchain=7.63x, cross-chain measurement complexity (Solana+Ethereum merge)"
+  },
+  "full_cross_sector": {
+    "r": 0.095,
+    "p": 0.674,
+    "n": 22
+  },
+  "full_spearman": {
+    "rho": 0.115,
+    "p": 0.61
+  },
+  "defi_only": {
+    "r": 0.336,
+    "p": 0.377,
+    "n": 9
+  },
+  "infra_only": {
+    "r": 0.954,
+    "p": 0.046,
+    "n": 4
+  },
+  "depin_only": {
+    "r": -0.074,
+    "p": 0.85,
+    "n": 9
+  },
+  "aethir_revenue_discrepancy": {
+    "paper_body_section_7_1": 111000000,
+    "tt_expansion_value": 155800000,
+    "note": "TT data appears more recent; body text unchanged since regression_data was used for primary analysis"
+  },
+  "protocol_list": {
+    "tt_defi_infra": [
+      "makerdao",
+      "maple",
+      "lido",
+      "gmx",
+      "aave",
+      "compound",
+      "curve",
+      "etherfi",
+      "optimism",
+      "polygon",
+      "thegraph",
+      "jupiter",
+      "arbitrum"
+    ],
+    "depin_onchain": [
+      "DIMO",
+      "IoTeX",
+      "Helium",
+      "GEODNET",
+      "Filecoin",
+      "Morpheus AI",
+      "Aethir",
+      "Hivemapper",
+      "io.net"
+    ]
+  }
+}

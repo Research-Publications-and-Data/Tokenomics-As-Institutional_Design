@@ -1,44 +1,16 @@
-token,query_id,chain,method,snapshot_date,notes
-AAVE,6929860,ethereum,erc20_evt_transfer,2026-04-01,
-ARB,6929861,arbitrum,erc20_evt_transfer,2026-04-01,erc20_arbitrum.evt_transfer corrected
-ATH,6929891,ethereum,erc20_evt_transfer,2026-04-01,
-AXL,6929892,ethereum,erc20_evt_transfer,2026-04-01,
-ANYONE,6929889,ethereum,erc20_evt_transfer,2026-04-01,
-BAL,6929862,ethereum,erc20_evt_transfer,2026-04-01,raw BAL token only (not veBAL)
-COMP,6929863,ethereum,erc20_evt_transfer,2026-04-01,
-CRV,6929864,ethereum,erc20_evt_transfer,2026-04-01,raw CRV (not veCRV)
-DIMO,6929865,polygon,erc20_evt_transfer,2026-04-01,
-DRIFT,6929890,solana,helius_das,2026-04-01,Helius DAS API
-ENS,6929866,ethereum,erc20_evt_transfer,2026-04-01,
-ETHFI,6929867,ethereum,erc20_evt_transfer,2026-04-01,
-FIL,,filecoin,filfox_richlist,2026-04-01,see analysis/utils/filfox_richlist.py
-GEOD,6929868,polygon,erc20_evt_transfer,2026-04-01,
-GMX,6929869,arbitrum,erc20_evt_transfer,2026-04-01,
-GRASS,6929870,solana,helius_das,2026-04-01,Helius DAS API
-GRT,6929871,ethereum,erc20_evt_transfer,2026-04-01,
-GTC,6929872,ethereum,erc20_evt_transfer,2026-04-01,
-HNT,,solana,solana_utils_latest_balances,2026-04-01,
-HONEY,,solana,solana_utils_latest_balances,2026-04-01,top-100 only; see outputs/honey_requery_result.json
-HYPE,,hyperliquid,hypurrscan_richlist,2026-04-01,Hyperliquid L1 native explorer
-IOTX,6929873,ethereum,erc20_evt_transfer,2026-04-01,ERC-20 representation (not IoTeX L1)
-JUP,6929874,solana,solana_utils_latest_balances,2026-04-01,
-LDO,6929875,ethereum,erc20_evt_transfer,2026-04-01,
-LPT,6929876,ethereum,erc20_evt_transfer,2026-04-01,
-META,6929877,solana,helius_das,2026-04-01,Helius DAS API
-MKR,6929878,ethereum,erc20_evt_transfer,2026-04-01,
-MOR,6929879,ethereum,erc20_evt_transfer,2026-04-01,
-MPL,6929880,ethereum,erc20_evt_transfer,2026-04-01,
-OP,6929881,optimism,erc20_evt_transfer,2026-04-01,
-POKT,,pocket,poktscan_api,2026-04-01,see analysis/utils/poktscan_richlist.py
-POL,6929882,polygon,erc20_evt_transfer,2026-04-01,
-RENDER,6929883,solana+ethereum,helius_das+erc20,2026-04-01,merged multi-chain (see merge_multichain.py)
-RPL,6929884,ethereum,erc20_evt_transfer,2026-04-01,
-SYRUP,6929893,ethereum,erc20_evt_transfer,2026-04-01,
-TEC,6929885,gnosis,erc20_evt_transfer,2026-04-01,
-UNI,6929886,ethereum,erc20_evt_transfer,2026-04-01,
-W,6938147,solana,helius_das,2026-04-01,Helius DAS API
-WXM,6929887,polygon,erc20_evt_transfer,2026-04-01,
-ZRO,6929888,ethereum,erc20_evt_transfer,2026-04-01,
-_GEODNET_BURNS,6917159,solana,spl_transfer_to_null,2024-09 to 2026-04,monthly burn transactions
-_GEODNET_EMISSIONS,6923474,solana,spl_mint,2024-09 to 2026-04,monthly emissions
-_GEODNET_BURN_CONC,6917162,solana,spl_transfer_signer_hhi,2024-09 to 2026-04,burn signer concentration
+filename,dune_id,description
+01_governance_hhi.sql,UNKNOWN,============================================================
+02_helium_s2r.sql,UNKNOWN,============================================================
+03_dimo_s2r.sql,UNKNOWN,============================================================
+04_helium_who_burns.sql,6942710,Helium DC Burn Concentration — top-20 signer HHI (spl_token_call_burn) | HHI=0.2702 top-5=89.6% top-2=70.1% May2023-Feb2026
+05_defi_benchmarks.sql,UNKNOWN,============================================================
+06_geodnet_burns.sql,6917159,Dune Query 6917159: GEODNET Monthly Burns (Solana)
+07_geodnet_emissions.sql,6923474,Dune Query 6923474: GEODNET Monthly Emissions (Solana)
+08_geodnet_burn_concentration.sql,6917162,Dune Query 6917162: GEODNET Burn Signer Concentration (Solana)
+evm_concentration.sql,UNKNOWN,EVM ERC-20 Governance Token Concentration Query
+evm_holder_list.sql,UNKNOWN,EVM ERC-20 Top 1000 Holder List Export
+solana_concentration.sql,UNKNOWN,Solana SPL Token Concentration Query
+demand_01_helium_burn_concentration.sql,6942532,Helium DC Burn Concentration — demand HHI (tx_signer) | HHI=0.2704 top-2=70.1% N=83767
+demand_02_dimo_burn_concentration.sql,6942570,DIMO Token Burn Concentration — demand HHI (DIMO→DCX burns) | HHI=0.0629 top-5=47.8% N=100
+demand_03_hivemapper_honey_concentration.sql,6942583,Hivemapper HONEY Burn Concentration — demand HHI | HHI=0.9257 NOT MEASURED (proxy contract)
+demand_04_livepeer_fee_concentration.sql,6942646,Livepeer Broadcaster Fee Concentration — demand HHI (ETH fees) | HHI=0.3059 top-2=75.5% N=28
