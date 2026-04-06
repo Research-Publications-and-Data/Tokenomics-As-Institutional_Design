@@ -8,12 +8,12 @@ Two-paper research program on governance and demand concentration in token econo
 
 **Allocation Is Uninformative.** A 40-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (r = 0.19, p = 0.25, N = 37). DePIN protocols exhibit higher concentration than DeFi (Mann-Whitney p = 0.031, Cohen's d = 0.96), though the result is sensitive to sample composition. On-chain subsidy correlates with concentration only through a single outlier (Livepeer); an expanded 22-protocol sample confirms the null.
 
-- Manuscript: `paper/B2_Final_v17.docx` (15,205 words, 8 figures)
+- Manuscript: `paper/B2_Final_v20.docx` (15,205 words, 8 figures)
 - SSRN: [Pending upload]
 
 ### B3: Who Burns the Tokens?
 
-**Demand concentration is an independent failure mode.** A 34-month longitudinal analysis of Helium documents the first empirical observation of burn-to-mint equilibrium threshold crossing (S2R = 2.06). Subscription-based burn models (GEODNET HHI = 0.055, DIMO HHI = 0.063) produce four to five times less demand concentration than carrier-contract models (Helium HHI = 0.27, Livepeer HHI = 0.31). Resource Dependence Theory grounds this finding: if the top two burn addresses ceased purchasing, Helium's S2R would fall from 2.06 to 0.62 within one month.
+**Demand concentration is an independent failure mode.** A 34-month longitudinal analysis of Helium documents the first empirical observation of burn-to-mint equilibrium threshold crossing (S2R = 1.84). Subscription-based burn models (GEODNET HHI = 0.055, DIMO HHI = 0.063) produce four to five times less demand concentration than carrier-contract models (Helium HHI = 0.27, Livepeer HHI = 0.31). Resource Dependence Theory grounds this finding: if the top two burn addresses ceased purchasing, Helium's S2R would fall from 1.84 to approximately 0.62 within one month.
 
 - Manuscript: `b3/paper/B3_GeoDePIN_PostSurgery.docx` (11,797 words, refs [1]-[44], 3 figures)
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6483619
@@ -22,7 +22,7 @@ Two-paper research program on governance and demand concentration in token econo
 
 ```
 ├── paper/                          # B2 manuscript
-│   └── B2_Final_v17.docx
+│   └── B2_Final_v20.docx
 ├── b3/                             # B3 manuscript + data
 │   └── paper/
 │       └── B3_GeoDePIN_PostSurgery.docx
@@ -63,7 +63,7 @@ Two-paper research program on governance and demand concentration in token econo
 | Allocation null | r = 0.19, p = 0.25, N = 37 | — |
 | Sector gap | MW p = 0.031, d = 0.96 | Cited from B2 |
 | Insider retention | rho = 0.54, p = 0.001 | — |
-| Helium S2R | — | 2.06 (Feb 2026) |
+| Helium S2R | — | 1.84 (Feb 2026) |
 | Demand concentration gap | — | Subscription 4-5x lower than carrier |
 | Governance vs demand independence | Conceptual (§6.1) | Empirical (§5.1.2) |
 

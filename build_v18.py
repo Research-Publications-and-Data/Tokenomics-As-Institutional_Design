@@ -451,7 +451,7 @@ checks = {
     'B2 Ballandies cited':      'Ballandies' in b2_text,
     'B2 images ≥ 8':            b2_images >= 8,
     # B3 core content
-    'B3 S2R 2.06':              '2.06' in b3_text,
+    'B3 S2R 1.84':              '1.84' in b3_text,
     'B3 Resource Dependence':   'Resource Dependence' in b3_text,
     'B3 title Who Burns':       'Who Burns' in b3_text,
     'B3 images ≥ 4':            b3_images >= 4,
