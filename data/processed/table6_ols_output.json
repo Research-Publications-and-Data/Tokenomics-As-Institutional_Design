@@ -1,0 +1,86 @@
+{
+  "model_1": {
+    "coefs": {
+      "const": 0.042465,
+      "is_depin": 0.047543,
+      "is_infra": -0.01106,
+      "is_social": 0.034087
+    },
+    "se": {
+      "const": 0.009099,
+      "is_depin": 0.018821,
+      "is_infra": 0.01868,
+      "is_social": 0.063159
+    },
+    "pvalues": {
+      "const": 3e-06,
+      "is_depin": 0.011536,
+      "is_infra": 0.553778,
+      "is_social": 0.589399
+    },
+    "n": 38,
+    "r2": 0.2348,
+    "adj_r2": 0.1673
+  },
+  "model_2": {
+    "coefs": {
+      "const": 0.068843,
+      "is_depin": 0.049977,
+      "is_infra": -0.009898,
+      "is_social": 0.02916,
+      "maturity_years": 0.000292,
+      "log_fdv": -0.001446
+    },
+    "se": {
+      "const": 0.089911,
+      "is_depin": 0.022551,
+      "is_infra": 0.021633,
+      "is_social": 0.074837,
+      "maturity_years": 0.004564,
+      "log_fdv": 0.004296
+    },
+    "pvalues": {
+      "const": 0.443865,
+      "is_depin": 0.026677,
+      "is_infra": 0.647279,
+      "is_social": 0.696799,
+      "maturity_years": 0.949047,
+      "log_fdv": 0.736443
+    },
+    "n": 36,
+    "r2": 0.2628,
+    "adj_r2": 0.1399
+  },
+  "model_3": {
+    "coefs": {
+      "const": 0.053065,
+      "is_depin": 0.048107,
+      "is_infra": -0.013943,
+      "is_social": 0.029473,
+      "maturity_years": -0.000618,
+      "log_fdv": -0.001637,
+      "insider_pct": 0.000658
+    },
+    "se": {
+      "const": 0.093333,
+      "is_depin": 0.024575,
+      "is_infra": 0.025096,
+      "is_social": 0.095464,
+      "maturity_years": 0.004866,
+      "log_fdv": 0.004333,
+      "insider_pct": 0.000544
+    },
+    "pvalues": {
+      "const": 0.569656,
+      "is_depin": 0.050278,
+      "is_infra": 0.57849,
+      "is_social": 0.757519,
+      "maturity_years": 0.898899,
+      "log_fdv": 0.705561,
+      "insider_pct": 0.225975
+    },
+    "n": 35,
+    "r2": 0.296,
+    "adj_r2": 0.1451
+  }
+}
