@@ -6,6 +6,7 @@ __pycache__/
 ._*
 __MACOSX/
 *.zip
+!B2_Replication_Package.zip
 *.bak
 .vscode/
 .idea/

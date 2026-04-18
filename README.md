@@ -1,6 +1,6 @@
-# Tokenomics as Institutional Design: Replication Materials
+# Governance Concentration Beyond Token Allocation: Replication Materials
 
-**Paper:** "Tokenomics as Institutional Design: A Normative Framework and Governance Concentration Analysis"
+**Paper:** "Governance Concentration Beyond Token Allocation: An Institutional Design Analysis of DePIN and DeFi"
 
 **Author:** Zach Zukowski, Tokenization Systems
 
@@ -8,11 +8,25 @@
 
 **Status:** Submitted to *Frontiers in Blockchain* — Blockchain Economics (April 2026)
 
+**SSRN:** [update with URL after assignment]
+
 ---
 
-**Allocation Is Uninformative.** A 40-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (r = 0.19, p = 0.25, N = 37). DePIN protocols exhibit higher concentration than DeFi (Mann-Whitney p = 0.031, Cohen's d = 0.96), though the result is sensitive to sample composition. On-chain subsidy correlates with concentration only through a single outlier (Livepeer); an expanded 22-protocol sample confirms the null.
+## Summary
 
-### Companion paper: Who Burns the Tokens? (B3)
+A 40-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (r = 0.19, p = 0.25, N = 37). Protocols with generous community distributions show concentration comparable to those with heavy insider allocations.
+
+**Supporting findings:**
+
+- **Sector contrast.** DePIN protocols are more concentrated than DeFi protocols (Mann-Whitney p = 0.031, Cohen's d = 0.96); the effect survives multivariate adjustment for protocol age, valuation, and insider allocation (adjusted R² 0.14 to 0.17).
+- **Insider retention.** Protocols with more insider wallets in their top-holder sets exhibit higher concentration among non-insider holders (Spearman rho = 0.54, p = 0.001, N = 34), indicating insider-heavy protocols develop concentrated governance ecosystems, not merely concentrated insider positions.
+- **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.58, p = 0.008, N = 20) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation is not significant (r = 0.12, p = 0.63).
+- **Delegation amplification.** Voting-power HHI reaches 3 to 6 times holding HHI in DePIN, while infrastructure protocols show heterogeneous outcomes (Optimism 0.79x, Arbitrum 4.3x).
+- **Inequality versus concentration.** Token inequality is severe in every protocol (Gini 0.73 to 0.98) while governance concentration varies across two orders of magnitude (HHI 0.004 to 0.199); the moderate correlation between them (r = 0.54) indicates inequality metrics cannot substitute for direct concentration measurement.
+
+**Methodology contribution.** The exclusion methodology identifies 69 addresses controlled by protocols themselves (staking contracts, exchange custodians, vesting locks, and treasuries) that appear on holder lists but cannot vote. Correcting for these changes affected protocols' HHI by up to 5x. Prior studies computing token HHI without this correction measured protocol architecture, not governance concentration.
+
+## Companion paper: Who Burns the Tokens? (B3)
 
 **Demand concentration is an independent failure mode.** A 34-month longitudinal analysis of Helium documents the first empirical observation of burn-to-mint equilibrium threshold crossing (S2R = 1.84). Subscription-based burn models (GEODNET HHI = 0.055, DIMO HHI = 0.063) produce four to five times less demand concentration than carrier-contract models (Helium HHI = 0.27, Livepeer HHI = 0.31).
 
@@ -22,11 +36,13 @@
 ## Repository Structure
 
 ```
-├── paper/                          # B2 manuscript
-│   └── B2_Final_v20.docx
+├── b2/                             # B2 manuscript + supplements
+│   └── paper/
+│       ├── B2_Governance_Concentration_Frontiers_Submission.docx
+│       └── supplements/                    # Supplementary Files S1-S8
 ├── b3/                             # B3 manuscript + data
 │   └── paper/
-│       └── B3_GeoDePIN_PostSurgery.docx
+│       └── B3_GeoDePIN_Final_v8.docx
 ├── data/
 │   ├── processed/                  # Master datasets
 │   │   ├── regression_data_april2026.csv    # 40 protocols, 39 variables
@@ -48,8 +64,6 @@
 │   ├── oaxaca.R                             # Oaxaca-Blinder decomposition
 │   └── [numbered Python pipeline scripts]
 ├── outputs/                        # Computed results (JSON)
-├── paper/supplements/              # Supplementary Files S1-S8
-│   └── S7_hhi_panel/                        # Quarterly HHI panel (14 protocols)
 └── CODEBOOK.md                     # Variable definitions
 ```
 
@@ -66,14 +80,16 @@
 
 ## Key Statistics
 
-| Finding | B2 | B3 |
-|---------|----|----|
-| Allocation null | r = 0.19, p = 0.25, N = 37 | — |
-| Sector gap | MW p = 0.031, d = 0.96 | Cited from B2 |
-| Insider retention | rho = 0.54, p = 0.001 | — |
-| Helium S2R | — | 1.84 (Feb 2026) |
-| Demand concentration gap | — | Subscription 4-5x lower than carrier |
-| Governance vs demand independence | Conceptual (§6.1) | Empirical (§5.1.2) |
+| Finding | Statistic | Sample |
+|---|---|---|
+| Allocation null | r = 0.19, p = 0.25 | N = 37 |
+| DePIN-DeFi sector gap | Mann-Whitney p = 0.031, Cohen's d = 0.96 | DePIN = 11, DeFi = 19 |
+| Insider retention (non-insider HHI correlation) | Spearman rho = 0.54, p = 0.001 | N = 34 |
+| Subsidy correlation (Livepeer-driven) | r = 0.58, p = 0.008 (full) / r = 0.12, p = 0.63 (ex-Livepeer) | N = 20 / N = 19 |
+| Gini inequality range | 0.73 to 0.98 | N = 40 |
+| HHI concentration range | 0.004 to 0.199 | N = 40 |
+| Delegation amplification in DePIN | 3x to 6x holding HHI | N = 4 |
+| Helium S2R (companion B3) | 1.84 (Feb 2026) | 34-month trajectory |
 
 ## Reproduction
 
@@ -89,19 +105,20 @@
 2. **OLS regression (Table 6):** Run `analysis/full_regression.R`. Pre-computed output: `data/processed/table6_ols_output.json`.
 3. **Python pipeline:** Run scripts in `analysis/` (numbered order). Key output: `outputs/regression_results.json`.
 4. **Dune queries:** Templates in `data/dune_queries/`. See `saved_query_ids.md` for pre-saved query IDs.
-5. **Supplementary materials:** S1-S8 in `paper/supplements/`.
+5. **Supplementary materials:** S1-S8 in `b2/paper/supplements/`.
 
 See `CODEBOOK.md` for variable definitions.
 
 ## Citation
 
 ```bibtex
-@article{zukowski2026tokenomics,
-  title={Tokenomics as Institutional Design: A Normative Framework and
-         Governance Concentration Analysis},
+@article{zukowski2026governance,
+  title={Governance Concentration Beyond Token Allocation: An Institutional
+         Design Analysis of DePIN and DeFi},
   author={Zukowski, Zach},
   year={2026},
-  institution={Tokenization Systems}
+  institution={Tokenization Systems},
+  note={Submitted to Frontiers in Blockchain}
 }
 
 @article{zukowski2026geodnet,
