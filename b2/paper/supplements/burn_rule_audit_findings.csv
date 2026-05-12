@@ -1,0 +1,4 @@
+token,address,balance,share_pct,kind,reason,already_in_exclusions_log
+HYPE,0x2222222222222222222222222222222222222222,55306879.69506403,9.90515393373924,CHAIN_PATTERN,Hyperliquid system burn (HYPE; CONFIRMED_PATTERN already in exclusions_log),True
+HYPE,0xfefefefefefefefefefefefefefefefefefefefe,42833740.70255512,7.671284251722948,REPEATING_PATTERN_FLAG,Repeating-character address with material balance; manual confirm needed,True
+UNI,0x000000000000000000000000000000000000dead,102459579.96336967,11.266052038289546,CANONICAL_BURN,Canonical dead address,False
