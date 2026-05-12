@@ -10,15 +10,16 @@ authors:
     affiliation: "Tokenization Systems"
 abstract: >-
   A 40-protocol cross-section documents that initial token allocation design
-  does not predict post-distribution governance concentration (r = 0.19,
-  p = 0.25, N = 37). Protocols with generous community distributions exhibit
+  does not predict post-distribution governance concentration (r = 0.18,
+  p = 0.28, N = 37). Protocols with generous community distributions exhibit
   concentration patterns similar to those with heavy insider allocations.
   Sector membership predicts concentration (DePIN more concentrated than
-  DeFi, Mann-Whitney p = 0.024, Cohen's d = 0.99) after adjusting for
-  protocol age, valuation, and insider allocation. The exclusion methodology
+  DeFi, Mann-Whitney p = 0.014, Cohen's d = 1.03; robust across all 30
+  leave-one-out iterations) after adjusting for protocol age, log fully
+  diluted valuation, and insider allocation. The exclusion methodology
   identifies 69 addresses controlled by protocols themselves that appear
   on holder lists but cannot vote; correcting for these changes affected
-  protocols' HHI by up to 5x.
+  protocols' HHI by up to 7x.
 keywords:
   - tokenomics
   - institutional design
