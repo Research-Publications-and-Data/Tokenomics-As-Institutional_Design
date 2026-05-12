@@ -62,6 +62,19 @@ Round 1 revision response to Frontiers in Blockchain peer review.
 
 Pre-computed regression outputs in `outputs/` reflect pre-revision pipeline state. Post-revision values are reflected in `data/processed/regression_data_april2026.csv` and `data/processed/governance_concentration_april2026.csv` (manual revisions; see notes columns). The current manuscript is authoritative for reported statistics.
 
+### F1 cycle polish (2026-05-12 sub-cycles)
+
+After the F1 cascade landed, four sub-cycles refined the manuscript and aligned the public-repo paper-and-data state:
+
+- **F1.6 narrative coherence.** Resolved §3.7 internal contradiction ("robust to most but not all exclusions" was inconsistent with "robust to individual observations" earlier in the same section); recalibrated to consistent "robust to single-protocol exclusion (significant across all 30 of 30 leave-one-out iterations)" framing. Updated §4.6 "suggestively higher concentration" to "significantly higher concentration" (post-F1 LOO 30/30 makes the hedge unnecessary). Tightened subsidy correlation precision (r = 0.58 to 0.57; r = 0.12 to 0.11, p = 0.63 to 0.65; 7 surfaces affected including Table 5 row cells).
+- **F1.7 final cleanup.** Aethir HHI 0.171 to 0.168 (pre-existing manuscript typo; CSV authoritative at 0.1678; 2 body surfaces). §3.7 insider-concentration relationship Spearman rho recomputed from 0.44 (pre-F1) to 0.48 (post-F1); 5 surfaces updated including LOO range update (0.41-0.50 to 0.45-0.55). §4.7 Contributions Models 1-3 framing tightened to mirror abstract precision (sector coefficient p < 0.05 in Models 1 and 2, borderline at p = 0.050 in Model 3 with the full control set).
+- **Abstract polish + 42-word tightening.** Model 1/2/3 expanded inline ("three nested specifications adding protocol age, log fully diluted valuation, and initial insider allocation as successive controls"); Herfindahl-Hirschman Index defined at first body use; insider Pearson r 0.19/0.25 to 0.18/0.28; Gini range 0.73-0.98 to 0.52-0.99 (Lido as new minimum after F1 holder-list correction); HHI-Gini r 0.54 to 0.51. Subsequent 42-word reduction (392 to 350 words) preserved all numerical findings + first-use definitions + four-finding structure.
+- **Metadata polish.** JEL O33 (Technological Change: Choices and Consequences) added (10 codes total); keyword swap "political philosophy of institutions" became "burn-rule exclusion" (10 keywords; sharper F1-aligned signal). Both DOCXs + CITATION.cff updated.
+
+Cross-clone state: workflow clone commits `0351562c` through `0d6fe8d7` correspond to the above sub-cycles; public-repo clone commits `d8b26ca` through `1425b16` refresh paper files + CITATION.cff. Tracked-changes DOCX includes paired `<w:ins>`/`<w:del>` revision markers for the abstract redline (ids 2001-2009; author "Zach Zukowski (F1 final precision)"; date 2026-05-12T00:00:00Z) so reviewers see the post-F1 cleanup as visible diff in Word Review pane.
+
+`insider_classification.csv` regenerated against post-F1 holder lists (`data/processed/insider_classification.csv` commit `3864cd2`); 391-row to 381-row net delta as F1 top-1000 re-pull shifted post-exclusion top-10 holder sets for MOR/AXL/ZRO/LDO. Now consistent with `regression_data_april2026.csv` post-F1 values.
+
 ## [1.0.0-frontiers-submission] — 2026-04-17
 
 Initial submission to Frontiers in Blockchain — Blockchain Economics section.
