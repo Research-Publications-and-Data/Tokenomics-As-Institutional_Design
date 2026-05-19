@@ -21,9 +21,12 @@ abstract: >-
   of ten protocols in the voting-layer subsample (range 1.2x to 11.4x;
   mean 5.3x), with one structural exception (ENS at 0.39x); magnitude
   varies by institutional design within sector. The exclusion methodology
-  identifies 126 addresses controlled by protocols themselves that appear
-  on holder lists but cannot vote; correcting for these changes affected
-  protocols' HHI by up to 7x.
+  identifies 133 address exclusions across 38 protocols (125 unique
+  addresses; five recur across multiple protocols) controlled by
+  protocols themselves that appear on holder lists but cannot vote;
+  correcting for these changes affected protocols' HHI by up to 18x
+  (RENDER at 17.9x; median 2.3x across 32 protocols with complete
+  pre-exclusion and post-exclusion HHI logged).
 keywords:
   - tokenomics
   - institutional design

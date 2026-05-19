@@ -91,3 +91,48 @@ data source documentation. Subsidy-to-Revenue ratios for DePIN protocols were co
 from protocol-native burn and emission events using the `compute_s2r.py` script in the
 replication package; input files include `helium_s2r_cleaned.csv` (34 months),
 `geodnet_monthly_burns.csv`, and `geodnet_monthly_emissions.csv`.
+
+## Subsidy field selection convention (2026-05-19 source-mismatch harmonization)
+
+The regression dataset (`regression_data_april2026.csv`) carries two subsidy fields:
+
+- `subsidy_ratio` (sub_TT): Token Terminal-sourced where available; the TT
+  methodology aggregates incentives / revenue with TT-defined revenue scope.
+- `subsidy_ratio_onchain` (sub_OC): raw on-chain emit_OC / rev_OC computed
+  directly from `emissions_onchain_usd` / `revenue_onchain_usd` fields.
+
+The subsidy multivariate analysis (Section 3.4 / 3.7) uses sub_TT first; falls
+back to sub_OC for protocols without TT coverage. All 23 protocols in the
+subsidy sample have non-null sub_TT and use the TT value. The sub_OC field is
+metadata (replicable from raw on-chain fields) and not used by the regression
+when TT is available.
+
+**Convention shift, 2026-05-19.** Prior to this date, the sub_OC field for
+Aethir and io.net was set to the TT value rather than computed from raw on-chain
+fields (a documentation choice consistent with the regression's TT preference
+but inconsistent with the field's name). Per the source-mismatch audit
+(`source_mismatch_audit_2026-05-19.md`), sub_OC is now computed from
+`emissions_onchain_usd / revenue_onchain_usd` for all protocols where both
+fields are populated:
+
+| Protocol | sub_OC (prior; TT-inherited) | sub_OC (current; raw OC) |
+|---|---:|---:|
+| Aethir | 0.355 | 0.150 |
+| io.net | 0.400 | 0.560 |
+| Hivemapper | 5.46 | 5.467 (negligible) |
+
+Substantive impact on regression: none. The subsidy multivariate uses sub_TT
+for these protocols (TT is non-null), and the analysis is unchanged. The field
+correction restores semantic consistency between the field name and its values.
+
+**Cross-source divergence (Category A from the audit).** IoTeX has sub_TT =
+39.05 and sub_OC = 27.80; both are internally consistent within their respective
+pipelines (TT: $3.4M incentives / $88K revenue; OC: $3.8M emissions / $135K
+revenue). IoTeX's sub_OC field is preserved as the raw-OC computation (27.80);
+the regression uses sub_TT (39.05) per the script convention. IoTeX is
+net-inflationary under both pipelines (subsidy ratio greater than one).
+
+**Burn-active subset classification** (Section 3.7) is preserved under both
+conventions for all affected protocols. The headline subsidy multivariate Spec
+4 result (subsidy beta = 0.000067, p = 0.88; DePIN dummy beta = 0.038, p = 0.004
+under N = 22 without Livepeer) is unchanged by this convention restoration.

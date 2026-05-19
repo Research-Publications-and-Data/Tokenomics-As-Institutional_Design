@@ -2,7 +2,22 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
-## [1.2.0-frontiers-r2-revision] — 2026-05-17 (initial) / 2026-05-18 (calibration + methodology fix + Lido recompute) / 2026-05-19 (Table 7 cascade + Table-4-prose cascade)
+## [1.2.0-frontiers-r2-revision] — 2026-05-17 (initial) / 2026-05-18 (calibration + methodology fix + Lido recompute) / 2026-05-19 (Table 7 cascade + Table-4-prose cascade + HHI inflation factor recompute)
+
+### HHI inflation factor recompute (2026-05-19, GC-2 closure)
+
+The "up to 7x" headline inflation factor was preserved in the prior 2026-05-19 Table 7 cascade entry pending separate recompute (see entry below). This cycle closes that recompute by computing pre-PCA vs post-PCA HHI ratios per protocol from `data/processed/exclusions_log.csv`. Across the 32 protocols with complete `hhi_before` and `hhi_after` pairs logged, the maximum inflation factor is **17.88x for RENDER** (where Wormhole Token Bridge custody dominated naive top-1000 holdings); median is 2.33x. The headline anchor is updated to "up to 18x" with median-context qualification.
+
+Six protocols (LDO, CRV, COMP, BAL, HYPE, IO) have exclusion log entries but empty `hhi_before`/`hhi_after` columns; their inflation factors could be reconstructed from raw holder files in a future cycle but are deferred. The 32-protocol sample is sufficient to establish the empirical anchor.
+
+**Surfaces updated:**
+- PAPER.md abstract-area methodology summary (line 178 region) and contributions section (line 3768 region)
+- `CITATION.cff` abstract block
+- `README.md` methodology contribution paragraph (line 27)
+
+**New supplement:** `b2/paper/supplements/hhi_inflation_factors_2026-05-19.csv` and `.md` (per-protocol pre/post/ratio table; methodology notes; coverage caveat).
+
+The methodology contribution claim is now empirically grounded rather than conservatively bounded.
 
 ### Table 7 cascade + Table-4-prose cascade (2026-05-19, post-deep-audit)
 

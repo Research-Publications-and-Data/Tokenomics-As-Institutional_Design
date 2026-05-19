@@ -21,7 +21,7 @@ HONEY,0.002,123491,0,HIGH,true_burn,62M HONEY/yr burned (data/raw/hivemapper_bur
 HYPE,48.08,500000000,0,HIGH,true_burn,Assistance Fund 97% of $780M fees x ~64% effective burn ratio = ~$500M/yr; $9.22M/week recent rate confirms
 IOTX,0.00433,100000,0,LOW,true_burn,IoTeX Burn-Drop active; ioID device-registration burns; estimated ~$100K/yr at current device count
 JUP,0.196,0,0,LOW,none,Jupiter buyback proposed; not consistently active
-ZRO,1.33,5000000,0,MEDIUM,true_burn,ZRO fee switch active Feb 2026; Stargate $1.2M early acquired; ramping toward $100M target
+ZRO,1.33,15613038,0,MEDIUM,true_burn,"ZRO empirical cumulative burns 2024-06-14 to 2026-05-19 (Dune erc20_ethereum.evt_Transfer to canonical burn addresses; per-date pricing via prices.usd). All-historical inclusive: $329.1M (91.84M ZRO total); 95.3% from 2024-06-20 genesis burn (84.96M ZRO @ $3.69 = $313.5M; from 0x7120a4a5... deployer to 0x0; one-time initial-supply burn, not recurring fee burn). Recurring fee burns ex-genesis (used here): $15.6M cumulative (6.88M ZRO weighted by burn-date price). Methodology: per-date pricing; no annualization (per author directive 2026-05-19). Fee switch active Feb 2026 contributes most of post-genesis volume."
 LDO,0.352,0,0,MEDIUM,future,$10M/yr Lido buyback PROPOSED Q1 2026 with conditional activation (ETH>$3K + revenue>$40M); not yet active
 MKR,1607.21,365000000,0,HIGH,true_burn,Sky buyback $1M USDS/day = $365M/yr (Feb 2025 onwards); 75M USDS by Aug 2025 confirms
 META,,0,0,HIGH,none,"MetaDAO futarchy execution fees, no burns"
