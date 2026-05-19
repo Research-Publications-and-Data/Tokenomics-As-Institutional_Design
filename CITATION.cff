@@ -18,10 +18,10 @@ abstract: >-
   leave-one-out iterations; permutation p = 0.003) after adjusting for
   protocol age, log fully diluted valuation, and insider allocation.
   Delegation universally amplifies governance concentration across nine
-  of ten protocols in the voting-layer subsample (range 1.4x to 6.0x;
-  mean 3.3x), with one structural exception (ENS at 0.21x); magnitude
+  of ten protocols in the voting-layer subsample (range 1.2x to 11.4x;
+  mean 5.3x), with one structural exception (ENS at 0.39x); magnitude
   varies by institutional design within sector. The exclusion methodology
-  identifies 69 addresses controlled by protocols themselves that appear
+  identifies 126 addresses controlled by protocols themselves that appear
   on holder lists but cannot vote; correcting for these changes affected
   protocols' HHI by up to 7x.
 keywords:

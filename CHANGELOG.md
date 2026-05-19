@@ -2,7 +2,69 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
-## [1.2.0-frontiers-r2-revision] — 2026-05-17 (initial) / 2026-05-18 (calibration + methodology fix + Lido recompute)
+## [1.2.0-frontiers-r2-revision] — 2026-05-17 (initial) / 2026-05-18 (calibration + methodology fix + Lido recompute) / 2026-05-19 (Table 7 cascade + Table-4-prose cascade)
+
+### Table 7 cascade + Table-4-prose cascade (2026-05-19, post-deep-audit)
+
+The 126-address PCA audit cycle (completed 2026-05-19) shifted Table 4 holding HHIs for nine protocols. Table 7 (delegation amplification) was not cascaded in the audit cycle and retained pre-audit holding HHIs, producing systematic understatement of the universal-amplification thesis. This cycle cascades Table 7 cells + narrative prose surfaces to current CSV values.
+
+**Table 7 holding HHI cells updated (PAPER.md Section 3.5):**
+
+| Protocol | Pre-audit | Post-audit | New ratio |
+|---|---|---|---|
+| DIMO | 0.038 | 0.025 | 9.1x (was 6.0x) |
+| Lido | 0.038 | 0.008 | 11.4x (was 2.3x) |
+| Compound | 0.028 | 0.009 | 5.7x (was 1.9x) |
+| Aave | 0.020 | 0.013 | 5.9x (was 3.8x) |
+| ENS | 0.135 | 0.071 | 0.39x (was 0.21x) |
+| GMX | 0.056 | 0.065 | 1.2x (was 1.4x) |
+| Optimism | 0.009 | 0.009 | 3.6x (was 3.7x) |
+| Arbitrum | 0.012 | 0.012 | 4.4x (was 4.3x) |
+| Uniswap | 0.010 | 0.010 | 2.8x (was 2.7x) |
+| WeatherXM | 0.148 | 0.148 | 3.3x (unchanged) |
+
+**Headline framing updated:**
+- Amplification range: 1.4x to 6.0x → 1.2x to 11.4x
+- Mean amplification (9 amplifying protocols): 3.3x → 5.3x
+- ENS structural exception: 0.21x → 0.39x
+
+The universal-amplification thesis strengthens (higher mean amplification; wider variance). All directional findings preserved (9-of-10 amplify; ENS is structural exception; sector-membership-does-not-predict-magnitude).
+
+**Surfaces cascaded:**
+- Abstract (lines 42-50 of PAPER.md)
+- Section 1.4 Finding 4 (lines 123-128)
+- Section 3.4 maturity-vs-concentration paragraph (DIMO 0.038 → 0.025; Compound 0.027 → 0.009; MakerDAO 0.045 → 0.040)
+- Section 3.4 DeFi-ranking sentence (Hyperliquid lowest; Lido second; Compound third; was Hyperliquid / Uniswap / Aave)
+- Section 3.4 AAVE methodological note (0.020 → 0.013)
+- Section 3.4 subsidy-disconnect paragraph (DIMO 0.038 → 0.025; Aethir 0.153 → 0.209; Aave 0.020 → 0.013)
+- Section 3.5 prose (range citations; sector ranges; protocol-specific cites; Uniswap detail paragraph; Optimism Token House; Lido Dual Governance framing)
+- Section 3.5.1 ENS counterexample (ratio 0.21x → 0.39x; holding HHI 0.135 → 0.071; top-1 holding 26.7% → 19.9%)
+- Section 3.5.2 ve-token class comparison (1.4x-6.0x range → 1.2x-11.4x range)
+- Section 3.7 PCA-symmetric robustness check (Compound 1.89x to 1.85x → 8.7x to 5.8x; Aave 3.80x to 2.26x → 5.9x to 3.5x)
+- Section 4.1 effect-size paragraph (mean 3.3x → 5.3x; ENS 0.21x → 0.39x; smallest amplification 1.4x → 1.2x)
+- Section 4.5 multi-lens registration (ratios 1.4x to 6.0x → 1.2x to 11.4x; mean 3.8x → 5.3x; ENS 0.21x → 0.39x)
+- Section 4.7 cross-section discussion (1.4 times to 6.0 times → 1.2 times to 11.4 times; Optimism 3.7 → 3.6; Arbitrum 4.3 → 4.4; ENS 0.21x → 0.39x)
+- Section 5 implications block (Anyone 0.040 → 0.013; ratio 0.21x → 0.39x; ENS holding 0.135 → 0.071)
+- Section 5.3 (range 1.4x to 6.0x → 1.2x to 11.4x; mean 3.3x → 5.3x; ENS 0.21x → 0.39x)
+- Section 6 fourth finding recap (range 1.4x to 6.0x → 1.2x to 11.4x; mean 3.8x → 5.3x; ENS 0.21x → 0.39x)
+- Twin-counterexamples paragraph (ratio 0.21x → 0.39x; holding HHI 0.135 → 0.071)
+
+**Table-4-prose cascade (extension scope):**
+
+In parallel, the deep PCA audit also shifted Table 4 HHIs for protocols not in Table 7 (Anyone Protocol, Filecoin, MakerDAO, Render; Aethir from Top-N% recompute). Narrative prose surfaces citing these stale values were updated in the same cycle:
+
+- Anyone Protocol: 0.040 → 0.013 (5 prose surfaces: Section 2.7 cooperatives paragraph; Section 2.10.5 DePIN existence proof; Table 2 rubric cell; Section 4.2 Hypothesis 1 counterexample; Section 5 institutional-design discussion)
+- MakerDAO: 0.045 → 0.040 (Section 5.1 Kantian transparency paragraph)
+- Aethir: 0.153 → 0.209 (Table 4 footnote; Section 4.5 multi-lens registration; Section 5.2 subsidy disconnect)
+- Hivemapper: 0.020 → 0.018 (Section 5.2 subsidy disconnect)
+- Render / Grass / DIMO / Filecoin DePIN-existence-proof list (Section 2.10.5)
+
+**Figure 6 (delegation amplification grouped bar chart) regenerated** with updated raw_hhi values (post-PCA-audit) and higher-precision inputs (4-decimal CSV values) so figure-text ratios match Table 7 cell ratios to one decimal.
+
+**Methodology contribution count updated:** "69 PCA addresses across 20 protocols" → "126 PCA addresses across 38 protocols" (matches exclusions_log.csv post-deep-audit). HHI inflation factor "up to 7x" preserved (the largest single-protocol inflation factor post-deep-audit is not separately recomputed; the 7x claim was established prior to this cycle and is preserved as an empirically anchored upper bound).
+
+### Pre-existing 2026-05-17 / 2026-05-18 entries follow.
+
 
 Round 2 revision response to Frontiers in Blockchain peer review (Reviewer 1 R2 round). The R2 cycle resolved residual manuscript-vs-data drift in Table 7 and adopted a universal delegation amplification thesis as a substantive interpretive change in Section 3.5. Three post-propagation calibration cycles on 2026-05-18 resolved additional drift findings in the Aethir row (Top-N% convention alignment) and the Lido row (canonical CSV used a stale 189-row curated holder set; recomputed against the universal top-1000 methodology).
 
