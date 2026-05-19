@@ -360,7 +360,7 @@ This file extends `S3_scoring_tables.md` with full per-criterion (20-cell) scori
 
 ---
 
-## IoTeX (DePIN, HHI 0.189)
+## IoTeX (DePIN, HHI 0.081)
 
 **Verification sources:** docs.iotex.io/participate/governance/iotex-improvement-proposals; github.com/iotexproject/iips
 
@@ -375,7 +375,7 @@ This file extends `S3_scoring_tables.md` with full per-criterion (20-cell) scori
 | FAIR-3 (Distribution fairness) | 1 | Community allocation moderate; insider allocation significant |
 | FAIR-4 (Governance accessibility) | 0 | Only Delegates can create proposals (significant restriction); IOTX stakers can vote but not propose |
 | NDOM-1 (Contestability) | 1 | Delegate-only proposal creation; basic voting |
-| NDOM-2 (Concentration limit) | 1 | Post-exclusion HHI 0.189 in 0.15 to 0.25 range (high concentration) |
+| NDOM-2 (Concentration limit) | 1 | Post-exclusion HHI 0.081 in 0.05 to 0.15 range (7-precompile + staking exclusion) |
 | NDOM-3 (Emergency powers) | 1 | Foundation retains protocol-upgrade authority; informal constraints |
 | NDOM-4 (Exit rights) | 1 | IOTX staking has cooldown; transfer permissionless |
 | POLY-1 (Decision centers) | 2 | Delegate-DAO + foundation + IoTeX Hub (April 2026 unified interface) |

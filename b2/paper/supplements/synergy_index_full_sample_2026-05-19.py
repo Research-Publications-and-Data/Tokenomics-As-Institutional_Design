@@ -34,7 +34,7 @@ PROTOCOLS = [
     ("Anyone Protocol", "DePIN", 0.013, [1.00, 1.00, 1.00, 1.00, 1.00], "Original S3 anchor"),
     ("Optimism", "L1_L2_Infra", 0.009, [2.25, 1.75, 2.25, 2.00, 1.25], "Original S3 anchor"),
     ("Arbitrum", "L1_L2_Infra", 0.012, [2.00, 1.50, 2.00, 1.75, 1.25], "Original S3 anchor"),
-    ("ENS", "L1_L2_Infra", 0.071, [1.75, 1.00, 1.75, 1.25, 1.00], "Original S3 anchor"),
+    ("ENS", "L1_L2_Infra", 0.049, [1.75, 1.00, 1.75, 1.25, 1.00], "Original S3 anchor"),
     ("GEODNET", "DePIN", 0.060, [2.00, 1.00, 1.00, 1.00, 2.00], "Original S3 anchor (Table 2)"),
     # 28 protocols added 2026-05-19; lens means recomputed from per-criterion 20-cell scoring
     # (see generate_28_protocol_20cell_scoring.py + S3_scoring_tables_20cell_extension_2026-05-19.md)
@@ -61,7 +61,7 @@ PROTOCOLS = [
      "HIPs at hyperliquid.gitbook.io; Q1 2026 validator vote on $1B Assistance Fund sideline; Assistance Fund auto-burns 99% of fees"),
     ("Balancer", "DeFi", 0.029, [2.00, 1.00, 1.50, 1.50, 2.00],
      "BIPs at forum.balancer.fi (BIP-163 governance process); Balancer Maxis multisig; veBAL (80/20 BAL/WETH lock max 1yr); gauge votes weekly"),
-    ("IoTeX", "DePIN", 0.189, [1.75, 0.75, 1.00, 1.50, 1.50],
+    ("IoTeX", "DePIN", 0.081, [1.75, 0.75, 1.00, 1.50, 1.50],
      "IIPs at github.com/iotexproject/iips; only Delegates can create proposals (restriction); IoTeX Hub unified interface April 2026"),
     ("WeatherXM", "DePIN", 0.148, [1.50, 1.00, 1.25, 1.25, 2.00],
      "WIPs at github.com/orgs/weatherxm-network/discussions; WIP-004 SPV multiplier (Feb 2026); Association General Assembly governs"),

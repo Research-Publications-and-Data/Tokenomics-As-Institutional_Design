@@ -9,7 +9,7 @@ DIMO,DePIN,0.0250,1.50,1.25,1.75,1.50,1.50,1.5000,1.4916,Original S3 anchor
 Anyone Protocol,DePIN,0.0130,1.00,1.00,1.00,1.00,1.00,1.0000,1.0000,Original S3 anchor
 Optimism,L1_L2_Infra,0.0090,2.25,1.75,2.25,2.00,1.25,1.9000,1.8581,Original S3 anchor
 Arbitrum,L1_L2_Infra,0.0120,2.00,1.50,2.00,1.75,1.25,1.7000,1.6735,Original S3 anchor
-ENS,L1_L2_Infra,0.0710,1.75,1.00,1.75,1.25,1.00,1.3500,1.3080,Original S3 anchor
+ENS,L1_L2_Infra,0.0490,1.75,1.00,1.75,1.25,1.00,1.3500,1.3080,Original S3 anchor
 GEODNET,DePIN,0.0600,2.00,1.00,1.00,1.00,2.00,1.4000,1.3195,Original S3 anchor (Table 2)
 Curve,DeFi,0.0140,2.00,0.75,1.25,1.50,2.00,1.5000,1.4126,veCRV governance at resources.curve.finance; 2500 veCRV proposal threshold; gauge-vote weekly emissions (Hayek); ve-locking structurally privileges long-lockers (Rawls deficit)
 Rocket Pool,DeFi,0.0390,2.50,1.50,1.75,2.00,1.00,1.7500,1.6735,RPIPs at rpips.rocketpool.net; pDAO + oDAO + GMC tri-body; monthly treasury reports; LEB8 minipool floor mechanism
@@ -22,7 +22,7 @@ The Graph,L1_L2_Infra,0.0330,2.25,1.50,1.75,2.00,1.50,1.8000,1.7770,GIP process 
 Polygon,L1_L2_Infra,0.0350,2.25,1.25,1.75,1.50,1.00,1.5500,1.4916,PIPs at github.com/maticnetwork/Polygon-Improvement-Proposals; 13-member Protocol Council multisig (PIP-77 refreshed); Q1 2026 most proposal-intensive quarter (9 proposals)
 Hyperliquid,DeFi,0.0050,2.00,1.00,1.50,0.00,2.00,1.3000,0.5697,HIPs at hyperliquid.gitbook.io; Q1 2026 validator vote on $1B Assistance Fund sideline; Assistance Fund auto-burns 99% of fees
 Balancer,DeFi,0.0290,2.00,1.00,1.50,1.50,2.00,1.6000,1.5518,BIPs at forum.balancer.fi (BIP-163 governance process); Balancer Maxis multisig; veBAL (80/20 BAL/WETH lock max 1yr); gauge votes weekly
-IoTeX,DePIN,0.1890,1.75,0.75,1.00,1.50,1.50,1.3000,1.2418,IIPs at github.com/iotexproject/iips; only Delegates can create proposals (restriction); IoTeX Hub unified interface April 2026
+IoTeX,DePIN,0.0810,1.75,0.75,1.00,1.50,1.50,1.3000,1.2418,IIPs at github.com/iotexproject/iips; only Delegates can create proposals (restriction); IoTeX Hub unified interface April 2026
 WeatherXM,DePIN,0.1480,1.50,1.00,1.25,1.25,2.00,1.4000,1.3620,WIPs at github.com/orgs/weatherxm-network/discussions; WIP-004 SPV multiplier (Feb 2026); Association General Assembly governs
 Grass,DePIN,0.0350,1.50,1.00,1.25,0.50,1.50,1.1500,1.0706,Basic governance forum; decentralized validator committee roadmap H1 2026; bandwidth-quality signals
 Livepeer,DePIN,0.1990,1.50,1.00,1.00,1.00,2.00,1.3000,1.2457,LIPs at github.com/livepeer/LIPs; LIP-Meeting governance archive; Q1 2026 Base rollup migration
