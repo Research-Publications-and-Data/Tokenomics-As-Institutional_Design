@@ -89,7 +89,7 @@ PROTOCOLS = [
      "GIPs + Stewards + 4 named workstreams (Public Goods Funding, Sybil Defenders, Progressive Decentralization, Public Goods Prototyping); GG21 fully community-led ($933K, 11 rounds)"),
     ("Token Engineering Commons", "Social_Dead", 0.028, [2.00, 1.50, 1.50, 1.50, 1.50],
      "Disputable Conviction Voting + Celeste dispute resolution + Tao Voting (technical) + Snapshot (cultural) + Gravity Working Group; TEC Polycentric Governance Framework"),
-    ("Aethir", "DePIN", 0.087, [1.50, 0.50, 1.25, 1.00, 1.50],
+    ("Aethir", "DePIN", 0.095, [1.50, 0.50, 1.25, 1.00, 1.50],
      "Bicameral Council + Foundation Board governance per Aethir Foundation Bylaws; 4-stage proposal pipeline (Temperature Check + Debate + Implementation Prep + on-chain Decision); 62% team/investor allocation"),
     ("Hivemapper", "DePIN", 0.018, [1.50, 1.50, 1.25, 1.00, 2.50],
      "MIPs at docs.hivemapper.com/welcome/network-governance; MIP-15 (April 2024) 25% burn-reissue + 500K HONEY weekly cap; AI Trainer quality signals"),

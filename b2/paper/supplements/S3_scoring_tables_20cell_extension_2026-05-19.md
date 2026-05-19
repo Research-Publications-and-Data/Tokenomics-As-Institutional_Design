@@ -808,7 +808,7 @@ This file extends `S3_scoring_tables.md` with full per-criterion (20-cell) scori
 
 ---
 
-## Aethir (DePIN, HHI 0.087)
+## Aethir (DePIN, HHI 0.095)
 
 **Verification sources:** docs.aethir.com/aethir-governance/aethir-foundation-bylaws; blog.aethir.com
 
@@ -823,7 +823,7 @@ This file extends `S3_scoring_tables.md` with full per-criterion (20-cell) scori
 | FAIR-3 (Distribution fairness) | 0 | Heavy team / investor allocation (62%); minimal community floor |
 | FAIR-4 (Governance accessibility) | 1 | veATH staking required for governance; lock duration weighted; proposal pipeline accessible |
 | NDOM-1 (Contestability) | 2 | Council + Foundation Board bicameral governance + 4-stage proposal pipeline + on-chain final vote |
-| NDOM-2 (Concentration limit) | 2 | Post-exclusion HHI 0.087 in 0.05 to 0.15 range |
+| NDOM-2 (Concentration limit) | 2 | Post-exclusion HHI 0.095 in 0.05 to 0.15 range (8-PCA exclusion) |
 | NDOM-3 (Emergency powers) | 1 | Foundation Board retains major-initiative oversight; Council day-to-day operational authority |
 | NDOM-4 (Exit rights) | 0 | GPU staking lock with no formal exit mechanism documented |
 | POLY-1 (Decision centers) | 2 | Council + Foundation Board bicameral structure with consultative role between stakeholder classes |
