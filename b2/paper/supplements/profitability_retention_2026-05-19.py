@@ -1,20 +1,30 @@
 """
-Profitability-vs-insider-retention cross-sectional analysis.
+Profitability-vs-insider-retention cross-sectional analysis (N-expanded).
 
-Tests whether protocol profitability (revenue, revenue/FDV, revenue/market-cap,
-net-profit-per-emission) correlates with insider position retention (count
-and balance fractions of insider-classified wallets remaining in the current
-top-10 holder set).
+Tests whether protocol profitability or size correlates with insider position
+retention in the current top-10 holder set.
 
 Inputs:
-- data/processed/regression_data_april2026.csv: revenue, FDV, market-cap,
-  subsidy ratio, initial insider allocation %
+- data/processed/regression_data_april2026.csv: revenue (Token Terminal +
+  on-chain fallback), FDV, market-cap, subsidy ratio (TT + on-chain
+  fallback), treasury, initial insider allocation %
 - data/processed/insider_analysis_results_v3.csv: insider_count_frac and
   insider_balance_frac in current top-10
 
+Sample-expansion strategy (2026-05-19 update):
+- Revenue: prefer Token Terminal value; fall back to on-chain revenue when
+  TT is missing or zero. Expands revenue sample from N=30 to N=31
+  (adds Livepeer).
+- Subsidy ratio: prefer Token Terminal value; fall back to on-chain
+  subsidy_ratio when TT is missing. Expands subsidy sample from N=15
+  to N=22 (adds 7 DePIN protocols).
+- Size-only proxies (FDV, market cap, treasury) reported separately as
+  they measure size rather than profitability per se; they reach maximum-N
+  specifications (36 for FDV, 33 for market cap, 24 for treasury).
+
 Output:
-- profitability_retention_2026-05-19.csv: per-protocol joined data + summary
-  statistics
+- profitability_retention_2026-05-19.csv: per-protocol joined data
+- profitability_retention_summary_2026-05-19.csv: full specification table
 """
 
 import csv
@@ -28,17 +38,25 @@ CSV_PATH = REPO_ROOT / "data" / "processed" / "regression_data_april2026.csv"
 INSIDER_PATH = REPO_ROOT / "data" / "processed" / "insider_analysis_results_v3.csv"
 
 
+def _f(x):
+    try:
+        v = float(x or "nan")
+        return v if v == v else float("nan")  # handle nan
+    except (ValueError, TypeError):
+        return float("nan")
+
+
 def load_insider():
     out = {}
     with INSIDER_PATH.open() as f:
         for r in csv.DictReader(f):
-            try:
+            v_c = _f(r.get("insider_count_frac"))
+            v_b = _f(r.get("insider_balance_frac"))
+            if not np.isnan(v_c) and not np.isnan(v_b):
                 out[r["token"]] = {
-                    "insider_count_frac": float(r["insider_count_frac"]),
-                    "insider_balance_frac": float(r["insider_balance_frac"]),
+                    "insider_count_frac": v_c,
+                    "insider_balance_frac": v_b,
                 }
-            except (ValueError, KeyError):
-                pass
     return out
 
 
@@ -47,41 +65,64 @@ def main():
     records = []
     with CSV_PATH.open() as f:
         for r in csv.DictReader(f):
-            try:
-                rev = float(r.get("revenue_annual_usd", "") or "nan")
-                fdv = float(r.get("fdv_usd", "") or "nan")
-                mcap = float(r.get("market_cap_usd", "") or "nan")
-                sub = float(r.get("subsidy_ratio", "") or "nan")
-                insider_pct = float(r.get("insider_pct", "") or "nan")
-            except (ValueError, KeyError):
-                continue
-            if np.isnan(rev) or rev == 0:
-                continue
             tok = r["token"]
             ins = insider.get(tok)
             if ins is None:
                 continue
-            rev_per_fdv = rev / fdv if not np.isnan(fdv) and fdv > 0 else float("nan")
-            rev_per_mcap = rev / mcap if not np.isnan(mcap) and mcap > 0 else float("nan")
+            rev_tt = _f(r.get("revenue_annual_usd"))
+            rev_oc = _f(r.get("revenue_onchain_usd"))
+            # Combined revenue: prefer TT, fall back to on-chain
+            if not np.isnan(rev_tt) and rev_tt > 0:
+                rev = rev_tt
+                rev_source = "TT"
+            elif not np.isnan(rev_oc) and rev_oc > 0:
+                rev = rev_oc
+                rev_source = "on-chain"
+            else:
+                rev = float("nan")
+                rev_source = "none"
+            sub_tt = _f(r.get("subsidy_ratio"))
+            sub_oc = _f(r.get("subsidy_ratio_onchain"))
+            if not np.isnan(sub_tt) and sub_tt > 0:
+                sub = sub_tt
+                sub_source = "TT"
+            elif not np.isnan(sub_oc) and sub_oc > 0:
+                sub = sub_oc
+                sub_source = "on-chain"
+            else:
+                sub = float("nan")
+                sub_source = "none"
+            fdv = _f(r.get("fdv_usd"))
+            mcap = _f(r.get("market_cap_usd"))
+            treasury = _f(r.get("treasury_usd"))
+            insider_pct = _f(r.get("insider_pct"))
+            rev_per_fdv = rev / fdv if not np.isnan(rev) and not np.isnan(fdv) and fdv > 0 else float("nan")
+            rev_per_mcap = rev / mcap if not np.isnan(rev) and not np.isnan(mcap) and mcap > 0 else float("nan")
             inv_sub = 1 / sub if not np.isnan(sub) and sub > 0 else float("nan")
             records.append({
                 "protocol": r["protocol"],
                 "token": tok,
                 "category": r["category"],
                 "revenue": rev,
-                "log_revenue": np.log(rev),
+                "revenue_source": rev_source,
+                "log_revenue": np.log(rev) if not np.isnan(rev) and rev > 0 else float("nan"),
                 "fdv": fdv,
+                "log_fdv": np.log(fdv) if not np.isnan(fdv) and fdv > 0 else float("nan"),
                 "market_cap": mcap,
+                "log_market_cap": np.log(mcap) if not np.isnan(mcap) and mcap > 0 else float("nan"),
+                "treasury": treasury,
+                "log_treasury": np.log(treasury) if not np.isnan(treasury) and treasury > 0 else float("nan"),
                 "rev_per_fdv": rev_per_fdv,
                 "rev_per_mcap": rev_per_mcap,
                 "subsidy_ratio": sub,
+                "subsidy_source": sub_source,
                 "inv_subsidy_ratio": inv_sub,
                 "insider_pct_initial": insider_pct,
                 "insider_count_frac_top10": ins["insider_count_frac"],
                 "insider_balance_frac_top10": ins["insider_balance_frac"],
             })
 
-    print(f"Joined sample (profitability + insider retention): N = {len(records)}")
+    print(f"Joined sample with insider classification: N = {len(records)}")
 
     def corr(x, y, label):
         valid = [(a, b) for a, b in zip(x, y) if not (np.isnan(a) or np.isnan(b))]
@@ -101,54 +142,79 @@ def main():
         }
 
     summary = []
-    profitability = {
-        "log(revenue)": [r["log_revenue"] for r in records],
+    profitability_proxies = {
+        "log(revenue, TT-pref-onchain-fallback)": [r["log_revenue"] for r in records],
         "revenue / FDV": [r["rev_per_fdv"] for r in records],
         "revenue / market_cap": [r["rev_per_mcap"] for r in records],
-        "1 / subsidy_ratio (net-profit-per-emission)": [r["inv_subsidy_ratio"] for r in records],
+        "1 / subsidy_ratio (TT-pref-onchain-fallback)": [r["inv_subsidy_ratio"] for r in records],
     }
-    retention = {
+    size_proxies = {
+        "log(FDV)": [r["log_fdv"] for r in records],
+        "log(market_cap)": [r["log_market_cap"] for r in records],
+        "log(treasury)": [r["log_treasury"] for r in records],
+    }
+    retention_proxies = {
         "insider_count_frac_top10": [r["insider_count_frac_top10"] for r in records],
         "insider_balance_frac_top10": [r["insider_balance_frac_top10"] for r in records],
     }
 
-    print()
-    for p_name, p_vals in profitability.items():
-        for r_name, r_vals in retention.items():
+    print("\n=== Profitability proxies vs insider retention ===")
+    for p_name, p_vals in profitability_proxies.items():
+        for r_name, r_vals in retention_proxies.items():
             res = corr(p_vals, r_vals, f"{p_name} vs {r_name}")
             if res:
                 summary.append(res)
-                sig = "*" if res["pearson_p"] < 0.05 else ("." if res["pearson_p"] < 0.10 else " ")
+                sig_p = "*" if res["pearson_p"] < 0.05 else ("." if res["pearson_p"] < 0.10 else " ")
                 sig_s = "*" if res["spearman_p"] < 0.05 else ("." if res["spearman_p"] < 0.10 else " ")
-                print(f"  {res['test']}: N={res['N']}")
-                print(f"    Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig}")
-                print(f"    Spearman rho = {res['spearman_rho']:+.3f} (p = {res['spearman_p']:.4f}) {sig_s}")
+                print(f"  {res['test']}:")
+                print(f"    N={res['N']}, Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig_p}; Spearman rho = {res['spearman_rho']:+.3f} (p = {res['spearman_p']:.4f}) {sig_s}")
 
-    # Initial insider_pct vs profitability (auxiliary)
-    print("\n  Initial insider_pct vs profitability:")
+    print("\n=== Size proxies vs insider retention ===")
+    for p_name, p_vals in size_proxies.items():
+        for r_name, r_vals in retention_proxies.items():
+            res = corr(p_vals, r_vals, f"{p_name} vs {r_name}")
+            if res:
+                summary.append(res)
+                sig_p = "*" if res["pearson_p"] < 0.05 else ("." if res["pearson_p"] < 0.10 else " ")
+                sig_s = "*" if res["spearman_p"] < 0.05 else ("." if res["spearman_p"] < 0.10 else " ")
+                print(f"  {res['test']}:")
+                print(f"    N={res['N']}, Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig_p}; Spearman rho = {res['spearman_rho']:+.3f} (p = {res['spearman_p']:.4f}) {sig_s}")
+
+    print("\n=== Initial insider_pct vs profitability/size proxies ===")
     initial = [r["insider_pct_initial"] for r in records]
-    for p_name, p_vals in profitability.items():
+    for p_name, p_vals in {**profitability_proxies, **size_proxies}.items():
         res = corr(initial, p_vals, f"insider_pct_initial vs {p_name}")
         if res:
-            sig = "*" if res["pearson_p"] < 0.05 else ("." if res["pearson_p"] < 0.10 else " ")
-            print(f"    {p_name}: N={res['N']}, Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig}")
+            summary.append(res)
+            sig_p = "*" if res["pearson_p"] < 0.05 else ("." if res["pearson_p"] < 0.10 else " ")
+            print(f"  {p_name}: N={res['N']}, Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig_p}")
 
     # Write per-protocol CSV
     out_path = Path(__file__).parent / "profitability_retention_2026-05-19.csv"
     fieldnames = [
-        "protocol", "token", "category", "revenue", "log_revenue", "fdv", "market_cap",
-        "rev_per_fdv", "rev_per_mcap", "subsidy_ratio", "inv_subsidy_ratio",
-        "insider_pct_initial", "insider_count_frac_top10", "insider_balance_frac_top10",
+        "protocol", "token", "category",
+        "revenue", "revenue_source", "log_revenue",
+        "fdv", "log_fdv", "market_cap", "log_market_cap",
+        "treasury", "log_treasury",
+        "rev_per_fdv", "rev_per_mcap",
+        "subsidy_ratio", "subsidy_source", "inv_subsidy_ratio",
+        "insider_pct_initial",
+        "insider_count_frac_top10", "insider_balance_frac_top10",
     ]
     with out_path.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         for r in records:
-            row = {k: ("" if isinstance(r.get(k), float) and np.isnan(r.get(k)) else r.get(k)) for k in fieldnames}
+            row = {}
+            for k in fieldnames:
+                v = r.get(k)
+                if isinstance(v, float) and np.isnan(v):
+                    row[k] = ""
+                else:
+                    row[k] = v
             w.writerow(row)
     print(f"\nWrote: {out_path}")
 
-    # Write summary statistics CSV
     summary_path = Path(__file__).parent / "profitability_retention_summary_2026-05-19.csv"
     with summary_path.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["test", "N", "pearson_r", "pearson_p", "spearman_rho", "spearman_p"])
