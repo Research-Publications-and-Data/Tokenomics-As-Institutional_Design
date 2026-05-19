@@ -151,6 +151,64 @@ The R2 cycle also includes substantive philosophical-methodological strengthenin
 
 ---
 
+## Revision-cycle audit trail (artifacts removed from clean-publication manuscript)
+
+The clean-publication version of the manuscript (B2_Frontiers_R2_clean.docx / .pdf) reads as a finished paper rather than a revision document. Several revision-cycle process references that appeared in earlier R2 drafts have been removed from PAPER.md prose. This section preserves those references as audit trail so the reviewer can trace which substantive content corresponds to which R1-round comment.
+
+### A. R1 / R2 / F1 cycle labels removed from manuscript prose
+
+The following revision-cycle labels appeared in earlier R2 drafts and were removed for the final clean version. The substantive content remains; only the cycle labels are stripped.
+
+1. **Section 1.4 Finding 4 (line 131; abstract).** Removed phrase "The two protocols previously cited as showing dispersion (Uniswap, Optimism)". Replacement: "Two further protocols (Uniswap, Optimism) would appear to show dispersion if holding HHI were measured without excluding addresses that cannot vote (burn wallets, foundation treasuries); under the consistent exclusion methodology applied throughout this paper, both protocols join the amplification pattern." Rationale: "previously cited" implied a prior version of this paper; the substantive Uniswap / Optimism counterexample-flip argument remains.
+
+2. **Section 2.10.3 Snapshot date discipline (line 1166).** Removed phrase "during the R2 revision cycle (May 2026)". Replacement: "Replication Tally and Snapshot API queries in May 2026 confirmed that". Rationale: the May 2026 date anchor is methodologically necessary; the "R2 revision cycle" label is internal to our workflow.
+
+3. **Table 4 Aethir footnote (lines 1696-1705).** Removed multi-sentence narrative: "appear as full Table 4 rows above following supplementary holder-list collection in the R2 cycle"; "All three were footnote-only in the R1 submission because the original Dune holder-list extraction did not include them"; "The Aethir HHI (0.209) reported here reflects the R2 recomputation from the May 2026 Dune top-1000 pull (holders_ATH_2026-05-17.csv); the R1 footnote value of 0.168 was based on the March 2026 cascade snapshot. The R2 value (0.209) supersedes earlier interim estimates (including 0.153 cited in earlier R2 drafts) per the universal ATH Top-N% convention codified in Section 2.10.3." Replacement: condensed to "Hivemapper (HONEY), io.net (IO), and Aethir (ATH) appear as full Table 4 rows following supplementary holder-list collection: Hivemapper and io.net via Helius DAS API (90,680 HONEY holders; 84,861 IO holders); Aethir via Dune erc20_ethereum.evt_transfer net-balance aggregation (top-1,000 holders). The Aethir HHI (0.209) reflects the May 2026 Dune top-1000 pull under the universal ATH Top-N% convention codified in Section 2.10.3." Audit trail of the Aethir transition for the reviewer: R1 footnote 0.171 (March 2026 cascade snapshot) → R2 mid-cycle 0.168 (Dune re-pull) → 2026-05-18 0.153 (Variant B Top-N% interim) → R2 final 0.209 (ATH Top-N% convention).
+
+4. **Section 3.5 opening paragraph (line 2138).** Removed phrase "in the Tier B1 expansion". Replacement: "with Tally additions for GMX and ENS, yielding 10 protocols with sufficient governance activity". Rationale: "Tier B1" is internal R2 cycle phasing.
+
+5. **Table 7 footnote (line 2319).** Removed phrase "GMX and ENS added in R2 from paginated Tally top-100 delegate pulls". Replacement: "GMX and ENS values from paginated Tally top-100 delegate pulls (May 2026)". Rationale: "in R2" is internal cycle label.
+
+6. **Section 3.5.2 veCRV computation (line 2364).** Removed phrase "per the Phase 0 Tier C1 analysis". Replacement: "per the direct cumulative-deposit computation". Rationale: "Phase 0 Tier C1" is internal R2 cycle phasing.
+
+7. **Section 3.5.3 Compound Foundation paragraph (line 2399).** Removed phrase "per Phase 0 Tier C1 fact-check". Replacement: "in the May 2026 Tally pull" (date anchor already present in surrounding context). Rationale: "Phase 0 Tier C1" is internal label.
+
+8. **Section 3.7 leave-one-out paragraph (line 2468).** Removed phrase "after the F1 holder-list correction". Replacement: simply state "30 of 30 leave-one-out iterations" as the current robustness state. Rationale: the F1 correction is part of the manuscript's methodology now; mentioning "after F1" implies the paper has a "before F1" state, which contradicts the manuscript reading as a final document.
+
+9. **Section 3.7 insider concentration paragraph (line 2472).** Removed phrase "N = 37 after the F1 holder-list correction". Replacement: "N = 37". Same rationale as item 8.
+
+10. **Section 3.7 PCA-symmetric paragraph (line 2555).** Removed phrase "the R1 Snapshot-based voting HHI for Compound (0.053)". Replacement: "the Snapshot-based voting HHI for Compound (0.053)". Rationale: the Snapshot-based methodology IS the current choice; the "R1" prefix incorrectly implies it was a deprecated approach.
+
+11. **Section 3.7 Theil/Atkinson paragraph (line 2564).** Removed phrase "and the F1 cycle refinements". Replacement: just "per exclusions_log.csv". Rationale: F1 refinements are part of the canonical exclusion methodology; the label is redundant.
+
+12. **Section 3.7 Top-N cutoff sensitivity paragraph (lines 2643-2658).** Substantive rewrite removing "R1 F1 cycle" framing while preserving the methodological lesson. Original: "Top-N holder-list cutoff sensitivity. The R1 F1 cycle surfaced a methodological lesson with broad applicability... MOR 0.013 to 0.031 (post-F1); AXL 0.004 to 0.028 (post-F1); ZRO 0.010 to 0.015 (post-F1)." Replacement frames the same content as a present-tense methodological discussion of cutoff sensitivity. Also: the after-correction Cohen's d value was updated from 1.10 (R2 mid-cycle, pre-deep-PCA-audit) to 1.03 (current final state). The MOR / AXL / ZRO HHI shifts and the F1-correction effect on cross-sector test statistics remain substantively in the manuscript; only the F1 label is stripped.
+
+13. **Section 4.9 falsifiable forward claims (line 3485).** Removed phrase "delegate-program after R2 submission". Replacement: "delegate-program after the snapshot dates used in this analysis". Rationale: "R2 submission" is internal cycle reference; the substantive prediction is about post-snapshot-date observations.
+
+14. **Section 4.9 reproducibility paragraph (line 3501).** Removed phrase "the R2 Table 4 expansion". Replacement: "the Table 4 supplementary collection". Rationale: "R2" is internal cycle label; the substantive supplementary collection (Hivemapper / io.net / Aethir) is documented in Section 2 methodology.
+
+### B. Dated supplementary filenames in prose (preserved with shortened forms)
+
+15. **Section 3.5.2 (line 2365).** Original: "supplementary file veCRV_voting_concentration_2026-05-17.csv". Final-manuscript form: "supplementary file veCRV_voting_concentration". Rationale: the dated filename is a workflow-internal artifact; the replication-repo supplementary file is canonically the latest version of the named file.
+
+### C. Methodology disclosure preserved
+
+The following date-stamps and methodology references are PRESERVED in the manuscript as legitimate methodological disclosure:
+
+- "March 2026 snapshot" (10 occurrences across the manuscript): fundamental data-collection-time anchor for Tally and Snapshot governance data.
+- "May 2026 snapshot" / "May 2026 Dune pull" / "May 2026 Tally pull" (multiple occurrences): comparison snapshot for drift analysis (Section 2.10.3); GMX and ENS Tally pull date (Section 3.5; Table 7 footnote); Compound Foundation Tally fact-check date (Section 3.5.3).
+- Section 2.10.3 Snapshot date discipline paragraph: documents Tally / Snapshot drift as methodological concern; needed to explain why Table 7 uses March 2026 values.
+- Section 3.7 PCA-symmetric robustness check: substantive robustness reporting (Compound 8.7x to 5.8x; Aave 5.9x to 3.5x post-symmetric exclusion).
+- Section 3.5 Uniswap burn-address paragraph (lines 2154-2166): substantive case for why 0x000...000dead exclusion produces the 0.84x to 2.8x flip. The "earlier analyses" framing is necessary for the substantive argument; this is methodological argument not cycle artifact.
+- Section 3.5 Lido Dual Governance paragraph (lines 2197-2215): documents historical Dual Governance reform context; the "preceded the recomputation" framing is necessary to explain why Dual Governance was justified at the time of design.
+- All Supplementary File (S1-S9) GitHub URLs.
+
+### D. Reviewer-quoted blockquotes (preserved verbatim)
+
+The R1-round verbatim reviewer quotes throughout this response document remain unchanged; they are the reviewer's words at submission time and are preserved for source-fidelity.
+
+---
+
 ## Acknowledgments
 
 We thank Reviewer 1 for the comprehensive cross-surface audit that surfaced the drift class, and Reviewer 2 for the endorsement of publication. The R2 manuscript's universal-amplification finding (Section 3.5; abstract finding 4) is a direct product of Reviewer 1's R2 framing: applying consistent post-exclusion methodology across Table 4 and Table 7 produces a substantive interpretive change that strengthens the paper's main thesis about institutional design at the operator and router level governing governance outcomes. The R2 cycle's philosophical-credibility strengthening (Section 2.10.1 two-layer framing; Section 2.9.6 inter-lens relationships; Section 4.5 comparative methodology) addresses internal coherence questions adjacent to the reviewer's concerns; these enhancements also extend from the cross-surface audit discipline the reviewer's framing recommended.
