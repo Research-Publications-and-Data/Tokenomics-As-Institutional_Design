@@ -6,7 +6,7 @@
 
 **Contact:** zach@tokenization.systems | ORCID: [0009-0006-3642-2450](https://orcid.org/0009-0006-3642-2450)
 
-**Status:** Under review at *Frontiers in Blockchain* — Blockchain Economics (R1 revision submitted May 2026)
+**Status:** Under review at *Frontiers in Blockchain* — Blockchain Economics (R2 revision submitted May 2026)
 
 **SSRN:** [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6599278](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6599278)
 
@@ -88,7 +88,7 @@ A 40-protocol cross-section documents that initial token allocation design does 
 | Subsidy correlation (Livepeer-driven) | r = 0.57, p = 0.008 (full) / r = 0.11, p = 0.65 (ex-Livepeer) | N = 20 / N = 19 |
 | Gini inequality range | 0.52 to 0.99 | N = 40 |
 | HHI concentration range | 0.005 to 0.199 | N = 40 |
-| Delegation amplification in DePIN | 3x to 6x holding HHI | N = 4 |
+| Delegation amplification (universal) | 1.9x to 6.8x; mean 4.1x | N = 8 |
 | Helium S2R (companion B3) | 1.84 (Feb 2026) | 34-month trajectory |
 
 ## Reproduction
@@ -118,6 +118,18 @@ Four methodological refinements landed in response to Reviewer 1 and Reviewer 2 
 - **stkAAVE pass-through delegation acknowledgment.** AAVE's stkAAVE staking contract is excluded from the holding HHI per the protocol-controlled-address rule, but stakers retain pass-through voting power. A methodological note added at the manuscript's Section 3.4 acknowledges that the reported AAVE holding HHI (0.020) therefore understates effective governance concentration; reconstructing the staker distribution is deferred to follow-up work.
 
 **Note on `outputs/` directory.** Pre-computed regression outputs in `outputs/` reflect pre-revision pipeline state. The post-revision values are reflected in `data/processed/regression_data_april2026.csv` and `data/processed/governance_concentration_april2026.csv` (manual revisions; see notes columns). The current manuscript is authoritative for reported statistics.
+
+## Round 2 revision (May 2026): scope and substantive changes
+
+The R2 cycle responded to Reviewer 1's R2 round (Reviewer 2 endorsed publication after R1). Five substantive changes landed:
+
+- **Universal delegation amplification thesis (Section 3.5; abstract finding 4).** With post-exclusion holding HHIs applied consistently across Table 4 and Table 7, all 8 protocols in the voting-layer subsample amplify holding concentration in their voting layer (range 1.9x to 6.8x; mean 4.1x). Replaces the R1 framing where UNI (0.84x) and OP (0.79x) appeared as delegation-mediated dispersion cases. The flip is driven by methodology consistency: applying the canonical exclusion list (including 0x000...000dead for UNI, the regression-dataset post-exclusion baseline for OP) brings Table 7's holding-side denominators in line with Table 4 and the regression CSV.
+- **Manuscript-vs-data drift remediation (Reviewer 1 Issue 1).** Table 7 holding HHIs recomputed: UNI 0.032 to 0.010; OP 0.042 to 0.009; LDO 0.018 to 0.013. Aethir holding HHI 0.171 to 0.168 in Table 4 footnote (CSV authoritative at 0.1678).
+- **PCA-symmetric robustness check (Section 3.7).** Applying protocol-controlled-address exclusion symmetrically at the voting layer confirms universal amplification across all 5 Tally-sourced protocols: Compound 1.85x, Aave 2.26x, Uniswap 2.72x, Optimism 4.06x, Arbitrum 3.01x. The Compound number is load-bearing: the top COMP Tally delegate (~21.5% of delegated voting power) is Compound Foundation itself, and excluding it shifts voting HHI from 0.078 to 0.052.
+- **Table 4 expansion to 40 protocols.** Hivemapper, io.net, and Aethir added as full rows (R1 had 37; R2 has 40 with full statistics).
+- **Table 5 N corrections and multiple-comparisons note.** HHI-Gini correlation N corrected to 40; TT-expanded subsidy N corrected from 22 to 19 with Pearson r = 0.097. Benjamini-Hochberg FDR correction at q = 0.05 applied to the 14 tests reported in Table 5; three of four significant findings survive.
+
+Three Phase 0 findings surfaced during R2 data collection and are deferred to a follow-up cycle (Compound Foundation as PCA at voting layer; ENS delegation-dispersion at 0.46x ratio; Balancer veBAL extreme amplification at 20.9x ratio).
 
 See `CODEBOOK.md` for variable definitions.
 

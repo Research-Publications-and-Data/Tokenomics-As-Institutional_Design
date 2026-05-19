@@ -16,7 +16,10 @@ abstract: >-
   Sector membership predicts concentration (DePIN more concentrated than
   DeFi, Mann-Whitney p = 0.014, Cohen's d = 1.03; robust across all 30
   leave-one-out iterations) after adjusting for protocol age, log fully
-  diluted valuation, and insider allocation. The exclusion methodology
+  diluted valuation, and insider allocation. Delegation universally
+  amplifies governance concentration across all 8 protocols in the
+  voting-layer subsample (range 1.9x to 6.8x; mean 4.1x); magnitude varies
+  by institutional design within sector. The exclusion methodology
   identifies 69 addresses controlled by protocols themselves that appear
   on holder lists but cannot vote; correcting for these changes affected
   protocols' HHI by up to 7x.
@@ -35,5 +38,5 @@ license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 repository-code: "https://github.com/Research-Publications-and-Data/Tokenomics-As-Institutional_Design"
 url: "https://tokenization.systems"
-date-released: "2026-05-12"
-version: "1.1.0-frontiers-r1-revision"
+date-released: "2026-05-17"
+version: "1.2.0-frontiers-r2-revision"

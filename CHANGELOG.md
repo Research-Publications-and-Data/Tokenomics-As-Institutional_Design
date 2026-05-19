@@ -2,6 +2,69 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.2.0-frontiers-r2-revision] — 2026-05-17
+
+Round 2 revision response to Frontiers in Blockchain peer review (Reviewer 1 R2 round). The R2 cycle resolved residual manuscript-vs-data drift in Table 7 and adopted a universal delegation amplification thesis as a substantive interpretive change in Section 3.5.
+
+### Manuscript
+
+- `b2/paper/B2_Frontiers_R2_clean.docx` and `.pdf` added (R2 final state)
+- `b2/paper/B2_Frontiers_R2_tracked_changes.docx` and `.pdf` added (R1-to-R2 delta)
+- R1 baseline files (`B2_Governance_Concentration_Frontiers_Submission.docx/.pdf`; `B2_Frontiers_R1_tracked_changes.docx/.pdf`) retained as historical-of-record
+
+### Reviewer responses
+
+- `b2/paper/responses/2026-05-17_R2_responses_master.md`, `.docx`, `.pdf` added (Reviewer 1 R2 issue-by-issue responses; .docx and .pdf rendered via pandoc + LibreOffice for archive parity with R1)
+- `b2/paper/responses/2026-05-17_R2_cover_letter.md` added (Frontiers cover letter)
+- `b2/paper/responses/2026-05-10_R1_responses_master.md`, `.docx`, `.pdf` added (R1 responses backfilled from workflow clone per R2 propagation cycle)
+
+### Methodology updates (R1 round 2 feedback)
+
+- **Manuscript-vs-data drift remediation (Reviewer 1 Issue 1).** Table 7 holding HHIs recomputed against post-exclusion baselines consistent with Table 4 and the regression dataset: UNI 0.032 to 0.010; OP 0.042 to 0.009; LDO 0.018 to 0.013. Table 7 delegation amplification ratios recomputed: UNI 2.7x, OP 4.06x, LDO 6.8x. Aethir holding HHI 0.171 to 0.168 in Table 4 footnote (consistency fix; CSV authoritative at 0.1678).
+- **Universal delegation amplification thesis (Section 3.5; abstract finding 4).** Substantive interpretive change: all 8 Table 7 protocols amplify holding concentration in their voting layer (range 1.9x to 6.8x; mean 4.1x). Replaces the R1 framing where UNI (0.84x) and OP (0.79x) appeared as delegation-mediated dispersion cases. Magnitude (not direction) varies by institutional design within sector. Section 3.5 paragraphs 1 through 5 rewritten; Section 1.4 finding 4 rewritten; Section 4.1 design-hypotheses synthesis updated.
+- **PCA-symmetric robustness check (Section 3.7).** Applying protocol-controlled-address exclusion symmetrically at the voting layer (consistent with the holding-side methodology) confirms universal amplification across all 5 Tally-sourced protocols even when foundation and aggregation-contract delegates are excluded: Compound 1.85x, Aave 2.26x, Uniswap 2.72x, Optimism 4.06x, Arbitrum 3.01x.
+- **CRV disambiguation strategy.** Section 3.2 distribution descriptions use raw CRV holding HHI 0.017; Section 4 ve-locking discussion uses 0.171 with explicit veCRV labeling.
+- **OP L1-vs-L2 framing correction (EC-2026-05-17-B2-OP-L1-L2-Side-Misframing).** Per workflow clone error-correction entry: the R1 author memo defended 0.042 as canonical Ethereum-side measurement with 0.009 as a separate L2-side measurement; the data CSV explicitly states OP token is on Optimism L2 (not Ethereum), so 0.042 IS the L2-side measurement. R2 adopts 0.009 as canonical post-exclusion measurement matching the regression dataset's Table 5/6 usage.
+- **Table 5 N corrections (Reviewer 1 Issue 3).** HHI-Gini correlation row N updated to 40 (all-protocol Gini coverage); TT-expanded subsidy row N corrected from 22 to 19 with Pearson r = 0.097 (qualitative null-cross-sector conclusion confirmed; closely matches the previously-reported r = 0.095).
+- **Table 4 expansion (Reviewer 1 Issue 3).** Sample expanded from 37 to 40 protocols with Hivemapper, io.net, and Aethir added as full rows.
+- **Multiple-comparisons correction note (Section 3.7).** Benjamini-Hochberg FDR correction at q = 0.05 applied to the 14 tests reported in Table 5; three of four significant findings survive (the subsidy-with-Livepeer result is fragile under both multiple-comparisons correction and the Livepeer-outlier sensitivity already noted in F1).
+- **Tally data drift methodology note (Section 2.10.3).** Documents the March 2026 to May 2026 delegate-pool drift; the R2 manuscript uses the March 2026 snapshot consistent with the rest of the dataset, with May 2026 results reported as supplementary robustness check.
+
+### Philosophical-framework strengthening (R1 round 2 framing extension)
+
+- **Section 2.10.1 two-layer framing.** Explicit separation of the empirical layer (concentration measurement) from the normative layer (institutional design evaluation).
+- **Section 2.9.6 inter-lens relationships.** Maps Kantian publicity, Pettit non-domination, Rawlsian fairness, Ostromian polycentricity, and Hayekian knowledge-use lenses against each other so readers see where they overlap and where they diverge.
+- **Section 4.1 systematic empirical-philosophical mapping.** For each major empirical finding, philosophical implications stated across applicable lenses. The universal delegation amplification finding registers across all five lenses.
+- **Section 4.5 comparative methodology.** Frames the institutional design analysis approach against political-economy and computational-political-science alternatives.
+
+### New supplementary files (`b2/paper/supplements/`)
+
+- `phase0_data_collection_results_2026-05-17.md`: R2 Phase 0 data collection summary (Tier A1 Gini computation; Tier B1 voting HHI methodology findings; Tier C1 veCRV proxy; Tier C3 Theil and Atkinson indices)
+- `holders_ATH_2026-05-17.csv`: Aethir token holder list (Ethereum top-1000)
+- `veCRV_voting_concentration_2026-05-17.csv`: veCRV-weighted concentration via Convex contract analysis (Tier C1)
+- `theil_atkinson_2026-05-17.csv`: Theil and Atkinson concentration indices for the 37 regression-ready protocols (Tier C3 robustness supplementary)
+
+### New figures (`b2/paper/figures/`)
+
+Regenerated from R2-canonical data (Phase 4 fix for visual-vs-caption-vs-text drift per Reviewer 1 Issue 4):
+- `fig3_hhi_bar_40protocols`, `fig4_sector_boxplot`, `fig5_allocation_scatter`, `fig6_delegation_grouped`, `fig7_subsidy_scatter`, `fig8_participation` (each as `.png` and `.pdf`)
+- `regenerate_b2_figures.py`: plotting script archived for replication; consumes the canonical `data/processed/regression_data_april2026.csv` (May 2026 F1 cycle state)
+
+### Substantive findings surfaced during Phase 0 (deferred to follow-up cycle)
+
+R2 Phase 0 data collection surfaced three findings that warrant methodology resolution before broader Table 7 expansion:
+
+1. **Compound Foundation as PCA at voting layer.** Top COMP Tally delegate (~21.5% of delegated voting power) is Compound Foundation itself. If PCA exclusion is applied at the voting layer (consistent with the holding-side methodology), Compound's voting HHI drops to ~0.025. This is the PCA-symmetric robustness analysis added to Section 3.7 in this R2 cycle; further Tier B1 expansion is deferred.
+2. **ENS delegation-dispersion.** Fresh Tally data shows 20 active ENS delegates with voting HHI 0.062 versus holding HHI 0.1345 (ratio 0.46x). ENS would be a delegation-dispersion outlier in an expanded sample.
+3. **Balancer veBAL extreme amplification.** Snapshot HHI 0.626 versus holding HHI 0.030 (ratio 20.9x; highest in any sample). veBAL would be a delegation-amplification outlier.
+
+The R2 manuscript retains Table 7 at 8 protocols with a Section 3.5 methodology footnote acknowledging these findings; comprehensive Tier B1 expansion to 12-15 protocols is deferred to a follow-up cycle that can resolve the methodology questions across the larger sample.
+
+### Documentation
+
+- `README.md`: status updated to "R2 revision submitted May 2026"; Key Statistics table refreshed with universal delegation amplification finding (1.9x to 6.8x; mean 4.1x; N = 8); new section "Round 2 revision (May 2026): scope and substantive changes" added
+- `CITATION.cff`: version bumped from `1.1.0-frontiers-r1-revision` to `1.2.0-frontiers-r2-revision`; `date-released` updated to 2026-05-17; abstract updated to include universal delegation amplification finding
+
 ## [1.1.0-frontiers-r1-revision] — 2026-05-12
 
 Round 1 revision response to Frontiers in Blockchain peer review.
