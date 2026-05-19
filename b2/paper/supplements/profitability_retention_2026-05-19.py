@@ -180,6 +180,32 @@ def main():
                 print(f"  {res['test']}:")
                 print(f"    N={res['N']}, Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig_p}; Spearman rho = {res['spearman_rho']:+.3f} (p = {res['spearman_p']:.4f}) {sig_s}")
 
+    # Burn-active vs subsidizing subset analysis (subsidy_ratio < 1 vs >= 1)
+    burn_active = [r for r in records if not np.isnan(r["subsidy_ratio"]) and 0 < r["subsidy_ratio"] < 1]
+    subsidizing = [r for r in records if not np.isnan(r["subsidy_ratio"]) and r["subsidy_ratio"] >= 1]
+    print(f"\n=== Burn-active vs subsidizing subset (Mann-Whitney) ===")
+    print(f"Net deflationary (subsidy_ratio < 1): N = {len(burn_active)}")
+    for r in sorted(burn_active, key=lambda x: x["subsidy_ratio"]):
+        print(f"  {r['protocol']:25s} subsidy={r['subsidy_ratio']:.3f}")
+    print(f"Net inflationary (subsidy_ratio >= 1): N = {len(subsidizing)}")
+    for retention_field, label in [("insider_count_frac_top10", "insider_count"), ("insider_balance_frac_top10", "insider_balance")]:
+        ba = [r[retention_field] for r in burn_active]
+        sb = [r[retention_field] for r in subsidizing]
+        if len(ba) >= 3 and len(sb) >= 3:
+            mw = sps.mannwhitneyu(ba, sb, alternative="two-sided")
+            psd = np.sqrt(((len(ba)-1)*np.var(ba, ddof=1) + (len(sb)-1)*np.var(sb, ddof=1)) / (len(ba)+len(sb)-2))
+            d = (np.mean(ba) - np.mean(sb)) / psd if psd > 0 else float("nan")
+            print(f"  {label}: burn-active mean = {np.mean(ba):.3f} (N={len(ba)}); subsidizing mean = {np.mean(sb):.3f} (N={len(sb)})")
+            print(f"    MW U = {mw.statistic:.0f}, p = {mw.pvalue:.4f}, Cohen's d = {d:+.3f}")
+            summary.append({
+                "test": f"burn-active vs subsidizing on {label} (Mann-Whitney)",
+                "N": len(ba) + len(sb),
+                "pearson_r": float("nan"),
+                "pearson_p": float("nan"),
+                "spearman_rho": float(d),  # repurpose for Cohen's d
+                "spearman_p": float(mw.pvalue),
+            })
+
     print("\n=== Initial insider_pct vs profitability/size proxies ===")
     initial = [r["insider_pct_initial"] for r in records]
     for p_name, p_vals in {**profitability_proxies, **size_proxies}.items():
