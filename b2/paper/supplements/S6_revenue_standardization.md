@@ -232,3 +232,57 @@ The 19-of-19 target methodology scaffolding is complete this cycle arc (DeFi + L
 - **FIL TT-vs-Messari convergence cycle** (Category D 21.6 vs TT-derived 19.18 reconciliation; methodology decision pending).
 - **HNT + MOR + GEOD on-chain re-derivation** (currently TT-cross-walked or back-computed; full Dune extraction defers to follow-on per-protocol cycles).
 - **9 DeFi-batch protocols full-Dune extraction** (per cycle 1 deferred list; COMP + LDO have POC SQL templates as starting points).
+
+## Per-protocol full-Dune-extraction cycle 3 results (2026-05-19)
+
+Priority 5 per-protocol extraction executed this cycle per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` Task #13 multi-cycle workstream. 5 Dune queries executed (~144 credits) + Render Foundation dashboard mined via Claude browser extension + Filfox + POKTscan API attempts.
+
+### Cycle 3 results table
+
+| Protocol | rev_OC (cycle 3) | emit_OC (cycle 3) | sub_OC (cycle 3) | sub_OC pre-cycle | Cycle 3 source |
+|---|---:|---:|---:|---:|---|
+| DIMO | $7,667,598 | $2,570,643 | 0.335 | 0.33 (canonical) | Dune query 7541442 (TTM Q1 2026; full reconstruction) |
+| MOR | $8,815,669 | $14,361,440 | 1.63 | 1.54 (pre-cycle) | Dune query 7541457 (TTM Q1 2026; validates canonical) |
+| RENDER | $3,000,000 | $29,500,000 | 9.83 | 7.63 (canonical) | Foundation dashboard mined 2026-05-19 (BME emissions excluding bridge mints) |
+| HNT | $14,638,522 | $31,525,538 | 2.15 | 1.05 (34-month average) | Dune query 7541454 (TTM Q1 2026; MATERIAL CHANGE; different time window vs pre-cycle 34-month average) |
+| GEOD | $3,128,869 | $14,803,332 (back-computed) | 1.61 (canonical preserved) | 1.61 (canonical) | Dune query 7541498 v2 (TTM Q1 2026 burns; mint detection failed - Mining Machine reward distributor required) |
+| POKT | (unchanged TT values) | (unchanged TT values) | 7.64 (TT-UNRELIABLE retained) | 7.64 | POKTscan HALT-C confirmed: data sync issues prevent extraction |
+| FIL | (unchanged TT values) | (unchanged TT values) | 21.6 (Messari Cat D retained) | 21.6 | Filfox 24h cross-check shows 23M FIL/yr emissions (sub ~3.3 estimate); preserves Category D pending convergence cycle |
+
+### Critical methodology insights from cycle 3
+
+1. **RENDER Foundation-canonical vs naive-Dune divergence (4x).** Initial Dune query on `tokens_solana.transfers` with `action='mint'` returned emit_OC = $126.7M because Solana mint flow INCLUDES RNDR-to-RENDER bridge mints (11/10/2025 single bridge mint of 20M RENDER ~= $100M USD). Per Foundation BME methodology, bridge mints are 1:1 conversions of pre-existing supply, NOT new emissions. True BME emissions extracted from Foundation dashboard: 5.9M RENDER/year ~= $29.5M. The 4x naive-Dune-vs-Foundation discrepancy is a generalizable lesson: token-spell `action='mint'` filters cannot distinguish protocol-new-emissions from cross-chain bridge conversions.
+
+2. **HNT TTM-vs-34-month-average divergence (2x).** Pre-cycle canonical sub_OC = 1.05 derived from 34-month average (May 2023 - Feb 2026; heavily influenced by early-state low-burn months post-Solana migration). Cycle 3 Dune TTM Q1 2026 extraction yields sub_OC = 2.15 (current network state with higher emissions relative to burns). For B2's TTM regression, the 2.15 value is more methodologically aligned with the TTM Q1 2026 panel convention.
+
+3. **GEOD Mining-Machine emit detection gap.** Standard `from = null address` mint detection failed for GEOD (returned $0) because GEODNET uses a Mining Machine reward distributor contract for emissions (the `geod_polygon.miningmachine_*` decoded namespace) rather than standard transfer-from-null. Burn-side extraction worked (rev_OC = $3.13M; 19.86M GEOD burned). Generalizable lesson: Mining-Machine and similar custom reward distributors require per-protocol decoded-contract queries.
+
+4. **Correct contract addresses matter for protocol with similar-looking addresses.** Initial GEOD probe used `0xAC0F66379A6d2bD79b89eDB23E0eE07f0238F8e7` (NULL results); correct address per docs.geodnet.com is `0xac0f66379a6d7801d7726d5a943356a172549adb` (differs in last 18 hex chars). Verify contract addresses against project documentation before query execution.
+
+5. **MOR price-weighted asymmetry between burn and mint flow.** Total MOR burned (5.45M tokens) exceeds total MOR minted (4.73M tokens), but USD-valued emit_OC ($14.36M) exceeds USD-valued rev_OC ($8.82M) because mint flow concentrated in higher-price periods. Average burn price $1.62/MOR; average mint price $3.03/MOR. Price-weighting matters for cross-protocol comparability.
+
+### Cycle 3 multivariate HALT-B verification
+
+Post-cycle-3 regression results:
+- **TT Spec 4** (no Livepeer): subsidy p = 0.9159 (was 0.8832 pre-cycle); DePIN dummy p = 0.0043; Adj R² = 0.260
+- **OC Spec 4** (no Livepeer): subsidy p = 0.9300 (was 0.9591 pre-cycle); DePIN dummy p = 0.0064; Adj R² = 0.260
+
+HALT-B not triggered. Headline finding ("sector absorbs subsidy after Livepeer exclusion") preserved under all cycle 3 updates including HNT material change (1.05 to 2.15) and RENDER substantive shift (7.63 to 9.83). Sector absorption mechanism is robust to within-DePIN-sector sub_OC heterogeneity.
+
+### Cycle 3 KU candidates (4 surfaced)
+
+- **KU-2026-05-19-B2-Bridge-Mint-Detection-Class** (Significant). Solana token `action='mint'` filter cannot distinguish bridge mints from protocol emissions. Generalizable methodology gap for all DePIN protocols with cross-chain bridging.
+- **KU-2026-05-19-B2-Time-Window-Methodology-Convention** (Significant). HNT canonical 1.05 (34-month average) vs TTM Q1 2026 cycle 3 (2.15) reflects time-window difference. Canonical methodology decision: do panel values use TTM Q1 2026 (cycle 3 default) or multi-year-rolling-average?
+- **KU-2026-05-19-B2-Custom-Reward-Distributor-Detection-Class** (Significant). GEODNET Mining Machine reward distributor (geod_polygon.miningmachine_*) requires per-protocol decoded-contract emit detection. Generalizable to other DePIN/L1 protocols.
+- **KU-2026-05-19-B2-DefiLlama-Proxy-vs-On-Chain-Burn-Divergence** (Significant). GEOD pre-cycle DefiLlama-fees-proxy rev = $9.19M; cycle 3 on-chain-burn rev = $3.13M (3x divergence). DefiLlama may include subscription + service fees not captured by pure burn-to-dead. Generalizable methodology decision: which "revenue" definition is canonical for B2's burn-active-subset framing?
+
+### Cycle 3 Dune credit cost: 144 credits actual (vs 31-81 estimated)
+
+- DIMO query 7541442: 12.2 credits (small tier)
+- HNT query 7541454: 52.9 credits (medium tier; small tier timed out)
+- RENDER query 7541449: 55.5 credits (medium tier; small tier timed out)
+- MOR query 7541457: 11.9 credits (small tier)
+- GEOD query 7541498 v2: 12.3 credits (small tier)
+- Total Dune credits: ~144.8 (within 4x of low-end estimate; medium-tier promotion for Solana queries drove overrun)
+
+Remaining Dune quota post-cycle-3: ~358 credits (4000 quota - 3497 prior usage - 145 cycle 3 = ~358; ~7 days left in billing cycle ending 2026-05-27).
