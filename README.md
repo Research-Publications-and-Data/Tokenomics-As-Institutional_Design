@@ -18,7 +18,7 @@ A 40-protocol cross-section documents that initial token allocation design does 
 
 **Supporting findings:**
 
-- **Sector contrast.** DePIN protocols are more concentrated than DeFi protocols (Mann-Whitney p = 0.018, Cohen's d = 0.98; robust across all 30 leave-one-out iterations; permutation p = 0.003); the effect survives multivariate adjustment for protocol age, log fully diluted valuation, and insider allocation across three nested OLS specifications (adjusted R² 0.14 to 0.17).
+- **Sector contrast.** DePIN protocols are more concentrated than DeFi protocols (Mann-Whitney p = 0.020, Cohen's d = 0.94; robust across all 30 leave-one-out iterations; permutation p = 0.012); the effect survives multivariate adjustment for protocol age, log fully diluted valuation, and insider allocation across three nested OLS specifications (adjusted R² 0.14 to 0.17).
 - **Insider retention.** Protocols with more insider wallets in their top-holder sets exhibit higher concentration among non-insider holders (Spearman rho = 0.54, p = 0.001, N = 34), indicating insider-heavy protocols develop concentrated governance ecosystems, not merely concentrated insider positions.
 - **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.69, p = 0.001, N = 20) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation weakens to borderline significance (r = 0.45, p = 0.052).
 - **Delegation amplification.** Voting-power HHI exceeds holding HHI by factors of 1.2x to 11.4x across nine of ten protocols sampled (mean 5.3x), with one structural exception (ENS at 0.39x, reflecting a mature delegate program where holders systematically delegate to a broad community-delegate set). Two vote-escrowed protocols (Curve, Balancer) form a distinct class showing extreme amplification (15x and 21x) under ve-token lock-duration weighting.
@@ -83,7 +83,7 @@ A 40-protocol cross-section documents that initial token allocation design does 
 | Finding | Statistic | Sample |
 |---|---|---|
 | Allocation null | r = 0.17, p = 0.32 | N = 37 |
-| DePIN-DeFi sector gap | Mann-Whitney p = 0.018, Cohen's d = 0.98; 30/30 LOO robust; permutation p = 0.003 | DePIN = 15, DeFi = 15 |
+| DePIN-DeFi sector gap | Mann-Whitney p = 0.020, Cohen's d = 0.94; 30/30 LOO robust; permutation p = 0.012 | DePIN = 15, DeFi = 15 |
 | Insider retention (non-insider HHI correlation) | Spearman rho = 0.54, p = 0.001 | N = 34 |
 | Subsidy correlation (Livepeer-driven) | r = 0.69, p = 0.001 (full) / r = 0.45, p = 0.052 (ex-Livepeer; borderline) | N = 20 / N = 19 |
 | Gini inequality range | 0.73 to 0.99 | N = 40 |
