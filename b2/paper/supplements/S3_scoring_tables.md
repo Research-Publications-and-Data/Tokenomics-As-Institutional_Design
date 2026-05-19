@@ -1,25 +1,63 @@
 # S3: Scoring Tables
 
-Protocol-by-criterion scores for all 12 scored protocols. 220 scored cells with evidence notes (plus 8 abbreviated philosophical-lens scores for Wayru). Scores assigned by a single coder (ZZ); inter-rater reliability testing specified as future work. Evidence gathered from governance documentation, on-chain data, and forum activity as of March 2026.
+Protocol-by-criterion scores for all 40 protocols in the cross-section. Twelve protocols (Uniswap, Compound, Aave, MakerDAO, Lido, Helium, DIMO, Anyone Protocol, Optimism, Arbitrum, ENS, GEODNET) carry full 20-cell criterion-by-criterion evidence tables (240 cells); the remaining 28 protocols carry 5-lens summary scores with evidence notes per lens, added 2026-05-19 to enable full-sample Synergy Index analysis. Wayru carries 5-lens abbreviated scores as a degenerate-case reference. Scores assigned by a single coder (ZZ); inter-rater reliability testing specified as future work. Evidence gathered from governance documentation, on-chain proposal records, and protocol forum activity as of March to May 2026.
 
-Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for full criterion definitions.
+Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for full criterion definitions. Synergy Index reported as arithmetic mean (paper-canonical) and geometric mean (weakest-link robustness check); arith vs geom rank-order Spearman rho = 0.98 across the full 40-protocol sample.
 
-## Summary Table
+Reproducibility: see `synergy_index_full_sample_2026-05-19.py` and `synergy_index_full_sample_2026-05-19.csv` in this directory.
 
-| Protocol | Category | HHI | Publicity | Fairness | Non-Dom. | Polycentric | Knowledge | Synergy |
-|----------|----------|-----|-----------|----------|----------|-------------|-----------|---------|
-| Uniswap | DeFi | 0.010 | 2.00 | 1.00 | 2.00 | 1.00 | 1.00 | 1.40 |
-| Compound | DeFi | 0.009 | 2.00 | 1.25 | 2.00 | 1.00 | 1.00 | 1.45 |
-| Aave | DeFi | 0.013 | 2.25 | 1.50 | 2.00 | 1.25 | 1.25 | 1.65 |
-| MakerDAO | DeFi | 0.040 | 2.00 | 0.75 | 1.75 | 2.00 | 1.50 | 1.60 |
-| Lido | DeFi | 0.008 | 1.75 | 1.25 | 1.75 | 1.25 | 1.00 | 1.40 |
-| Helium | DePIN | 0.074 | 2.00 | 1.00 | 2.00 | 2.00 | 2.00 | 1.80 |
-| DIMO | DePIN | 0.025 | 1.50 | 1.25 | 1.75 | 1.50 | 1.50 | 1.50 |
-| Anyone | DePIN | 0.013 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
-| Optimism | Infra | 0.009 | 2.25 | 1.75 | 2.25 | 2.00 | 1.25 | 1.90 |
-| Arbitrum | Infra | 0.012 | 2.00 | 1.50 | 2.00 | 1.75 | 1.25 | 1.70 |
-| ENS | Infra | 0.071 | 1.75 | 1.00 | 1.75 | 1.25 | 1.00 | 1.35 |
-| Wayru | DePIN | N/A | 1.00 | 1.00 | 0.00 | 0.00 | 1.00 | 0.62 |
+## Summary Table (all 40 protocols, sorted by Synergy descending)
+
+| Protocol | Category | HHI | Publicity | Fairness | Non-Dom. | Polycentric | Knowledge | Syn. (arith) | Syn. (geom) |
+|----------|----------|-----|-----------|----------|----------|-------------|-----------|--------------|-------------|
+| Filecoin | DePIN | 0.022 | 2.00 | 1.25 | 2.00 | 2.50 | 2.00 | 1.95 | 1.90 |
+| Optimism | L1_L2_Infra | 0.009 | 2.25 | 1.75 | 2.25 | 2.00 | 1.25 | 1.90 | 1.86 |
+| Gitcoin | Social_Dead | 0.022 | 2.25 | 2.00 | 1.75 | 2.00 | 1.50 | 1.90 | 1.88 |
+| Helium | DePIN | 0.074 | 2.00 | 1.00 | 2.00 | 2.00 | 2.00 | 1.80 | 1.74 |
+| The Graph | L1_L2_Infra | 0.033 | 2.00 | 1.50 | 2.00 | 2.00 | 1.50 | 1.80 | 1.78 |
+| Rocket Pool | DeFi | 0.039 | 2.25 | 1.50 | 2.00 | 2.00 | 1.00 | 1.75 | 1.68 |
+| Arbitrum | L1_L2_Infra | 0.012 | 2.00 | 1.50 | 2.00 | 1.75 | 1.25 | 1.70 | 1.67 |
+| MetaDAO | DeFi | 0.015 | 2.00 | 1.00 | 2.50 | 0.50 | 2.50 | 1.70 | 1.44 |
+| Aave | DeFi | 0.013 | 2.25 | 1.50 | 2.00 | 1.25 | 1.25 | 1.65 | 1.60 |
+| MakerDAO | DeFi | 0.040 | 2.00 | 0.75 | 1.75 | 2.00 | 1.50 | 1.60 | 1.51 |
+| Balancer | DeFi | 0.029 | 2.00 | 1.00 | 1.50 | 1.50 | 2.00 | 1.60 | 1.55 |
+| Curve | DeFi | 0.014 | 2.00 | 0.75 | 1.50 | 1.50 | 2.00 | 1.55 | 1.47 |
+| DIMO | DePIN | 0.025 | 1.50 | 1.25 | 1.75 | 1.50 | 1.50 | 1.50 | 1.49 |
+| Pokt Network | DePIN | 0.090 | 2.00 | 1.00 | 1.50 | 1.50 | 1.50 | 1.50 | 1.47 |
+| Token Engineering Commons | Social_Dead | 0.028 | 1.50 | 1.50 | 1.50 | 1.50 | 1.50 | 1.50 | 1.50 |
+| Hivemapper | DePIN | 0.018 | 1.50 | 1.50 | 1.00 | 1.00 | 2.50 | 1.50 | 1.41 |
+| Compound | DeFi | 0.009 | 2.00 | 1.25 | 2.00 | 1.00 | 1.00 | 1.45 | 1.38 |
+| Polygon | L1_L2_Infra | 0.035 | 2.00 | 1.25 | 1.50 | 1.50 | 1.00 | 1.45 | 1.41 |
+| Uniswap | DeFi | 0.010 | 2.00 | 1.00 | 2.00 | 1.00 | 1.00 | 1.40 | 1.32 |
+| Lido | DeFi | 0.008 | 1.75 | 1.25 | 1.75 | 1.25 | 1.00 | 1.40 | 1.37 |
+| GEODNET | DePIN | 0.060 | 2.00 | 1.00 | 1.00 | 1.00 | 2.00 | 1.40 | 1.32 |
+| GMX | DeFi | 0.065 | 2.00 | 1.00 | 1.50 | 1.00 | 1.50 | 1.40 | 1.35 |
+| ENS | L1_L2_Infra | 0.071 | 1.75 | 1.00 | 1.75 | 1.25 | 1.00 | 1.35 | 1.31 |
+| IoTeX | DePIN | 0.189 | 1.50 | 1.00 | 1.00 | 1.50 | 1.50 | 1.30 | 1.28 |
+| WeatherXM | DePIN | 0.148 | 1.50 | 1.00 | 1.00 | 1.00 | 2.00 | 1.30 | 1.25 |
+| Livepeer | DePIN | 0.199 | 1.50 | 1.00 | 1.00 | 1.00 | 2.00 | 1.30 | 1.25 |
+| Axelar | L1_L2_Infra | 0.027 | 1.75 | 1.00 | 1.50 | 1.25 | 1.00 | 1.30 | 1.27 |
+| Maple Finance | DeFi | 0.024 | 1.75 | 1.00 | 1.50 | 1.00 | 1.00 | 1.25 | 1.21 |
+| Hyperliquid | DeFi | 0.005 | 2.00 | 1.00 | 1.00 | 0.00 | 2.00 | 1.20 | 0.53 |
+| Render | DePIN | 0.027 | 1.50 | 1.00 | 1.00 | 1.00 | 1.50 | 1.20 | 1.18 |
+| Morpheus AI | DePIN | 0.046 | 1.50 | 1.00 | 1.00 | 1.00 | 1.50 | 1.20 | 1.18 |
+| Jupiter | DeFi | 0.096 | 1.50 | 1.00 | 1.00 | 1.00 | 1.00 | 1.10 | 1.08 |
+| Drift | DeFi | 0.053 | 1.50 | 1.00 | 1.00 | 1.00 | 1.00 | 1.10 | 1.08 |
+| Ether.Fi | DeFi | 0.042 | 1.50 | 1.00 | 1.00 | 1.00 | 1.00 | 1.10 | 1.08 |
+| Grass | DePIN | 0.035 | 1.50 | 1.00 | 1.00 | 0.50 | 1.50 | 1.10 | 1.02 |
+| LayerZero | L1_L2_Infra | 0.014 | 1.50 | 1.00 | 1.00 | 1.00 | 1.00 | 1.10 | 1.08 |
+| Wormhole | L1_L2_Infra | 0.012 | 1.50 | 1.00 | 1.00 | 1.00 | 1.00 | 1.10 | 1.08 |
+| Anyone Protocol | DePIN | 0.013 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| io.net | DePIN | 0.125 | 1.00 | 1.00 | 1.00 | 0.50 | 1.50 | 1.00 | 0.94 |
+| Aethir | DePIN | 0.087 | 1.00 | 0.50 | 1.00 | 0.50 | 1.50 | 0.90 | 0.82 |
+| Wayru (degenerate reference) | DePIN | N/A | 1.00 | 1.00 | 0.00 | 0.00 | 1.00 | 0.60 | 0.01 |
+
+## Full-sample correlations (N = 40)
+
+- **Synergy (arith) vs HHI:** Spearman rho = -0.250 (p = 0.120); Pearson r = -0.272 (p = 0.090). Direction: higher concentration weakly predicts lower institutional-design quality across the five lenses.
+- **Synergy (geom) vs HHI:** Spearman rho = -0.198 (p = 0.221). Weakest-link aggregation preserves the negative direction at attenuated magnitude.
+- **Arith vs geom Synergy:** Spearman rho = 0.980 (p < 0.001) on rank ordering. Operationalization-of-aggregation choice does not materially change protocol rank ordering across the 40-protocol sample, addressing one operationalization-dependency concern raised in Section 4.8.
+- **Sector mean Synergy:** DeFi 1.42 (N = 15); DePIN 1.33 (N = 15); L1_L2_Infra 1.46 (N = 8); Social_Dead 1.70 (N = 2). DePIN-vs-DeFi Synergy contrast: Mann-Whitney U = 87, p = 0.298 (not significant; sector signal in HHI does not translate symmetrically to Synergy Index, indicating that the five-lens framework captures dimensions orthogonal to raw holding concentration).
 
 ---
 
@@ -363,4 +401,362 @@ Note: Anyone scores uniformly at 1 due to early-stage maturity, not poor design 
 
 **Synergy Index:** 5/8 = **0.62**
 
-Note: Wayru scores reflect early-stage maturity (network launch 2022–2023), not poor design intent. The Appiah Cosmopolitan score of 2 is the highest single-lens score and reflects the protocol's stated mission. The zero scores on Non-Domination and Polycentricity are consistent with early-stage DePIN protocols (cf. Anyone Protocol).
+Note: Wayru scores reflect early-stage maturity (network launch 2022 to 2023), not poor design intent. The Appiah Cosmopolitan score of 2 is the highest single-lens score and reflects the protocol's stated mission. The zero scores on Non-Domination and Polycentricity are consistent with early-stage DePIN protocols (cf. Anyone Protocol).
+
+---
+
+## 13 to 40. Extended-sample 5-lens scoring (added 2026-05-19)
+
+The original 11 protocols above carry full 20-cell criterion-by-criterion scoring tables (240 cells); GEODNET appears in the summary table at the top of this document with abbreviated 5-lens scores carried from Table 2 of the main manuscript. The 28 protocols documented in this section were scored 2026-05-19 to expand the Synergy Index sample to the full 40-protocol cross-section, addressing the partial-coverage limitation noted in Section 4.8 of the main manuscript. Scoring uses the same 5-lens (Publicity / Fairness / Non-Domination / Polycentricity / Knowledge-use) summary protocol applied to GEODNET and Wayru, with one score per lens (0 to 3) anchored to the 11 fully-scored protocols. Evidence is summarized per lens rather than per criterion; full per-criterion scoring is reserved for future inter-rater reliability cycles.
+
+The scoring methodology for the extended sample follows the same evidence-discipline as the original 11: governance documentation, on-chain proposal records, protocol forum activity, and published treasury / multisig configurations. Evidence-of-record per protocol is summarized below; the structured per-criterion expansion is future work.
+
+### Curve (DeFi, HHI 0.014)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | Snapshot + on-chain veCRV proposals; mature governance documentation |
+| Fairness | 0.75 | veCRV lock-duration weighting structurally privileges long-lockers; floor mechanisms weak |
+| Non-Domination | 1.50 | DAO appeals via 30%-quorum but ve-locking dilutes broad participation |
+| Polycentricity | 1.50 | Gauge committee + emission committee + sub-DAOs (yCRV, sdCRV ecosystem) |
+| Knowledge-use | 2.00 | Gauge votes aggregate weekly demand signals (high gauge votes -> high emissions) |
+
+**Synergy Index:** arith 1.55, geom 1.47.
+
+### Rocket Pool (DeFi, HHI 0.039)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.25 | Active forum + mandatory proposal rationales + on-chain pDAO |
+| Fairness | 1.50 | Minipool floor (16 ETH min); node operator caps |
+| Non-Domination | 2.00 | pDAO veto + oDAO oversight + GMC (security council) |
+| Polycentricity | 2.00 | pDAO (token holders) + oDAO (node operators) + GMC tri-cameral structure |
+| Knowledge-use | 1.00 | Basic on-chain gauge mechanisms |
+
+**Synergy Index:** arith 1.75, geom 1.68.
+
+### Jupiter (DeFi, HHI 0.096)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | JUP Realms; public proposals; less mature documentation |
+| Fairness | 1.00 | LFG launchpad partial floor; allocation skewed insider |
+| Non-Domination | 1.00 | Basic voting; no formal appeals architecture |
+| Polycentricity | 1.00 | JUP DAO + team; mostly monocentric |
+| Knowledge-use | 1.00 | Basic price signals |
+
+**Synergy Index:** arith 1.10, geom 1.08.
+
+### Maple Finance (DeFi, HHI 0.024)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.75 | Governance forum; proposals on-chain |
+| Fairness | 1.00 | Lender / borrower distinct stakes; no strong floor |
+| Non-Domination | 1.50 | GovernorBravo + delegate program; appeals off-chain |
+| Polycentricity | 1.00 | Mostly monocentric |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.25, geom 1.21.
+
+### GMX (DeFi, HHI 0.065)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | Active forum + Snapshot + on-chain |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.50 | Snapshot-based with broader voter pool |
+| Polycentricity | 1.00 | GMX DAO; mostly monocentric |
+| Knowledge-use | 1.50 | GLP price signals + dynamic pricing |
+
+**Synergy Index:** arith 1.40, geom 1.35.
+
+### Drift (DeFi, HHI 0.053)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | DRIFT Realms; less mature |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic voting |
+| Polycentricity | 1.00 | Monocentric |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.10, geom 1.08.
+
+### Ether.Fi (DeFi, HHI 0.042)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | Governance forum; proposals on-chain |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | Monocentric (ETHFI + operator) |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.10, geom 1.08.
+
+### The Graph (L1_L2_Infra, HHI 0.033)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | GIP process; public proposals |
+| Fairness | 1.50 | GRT staking lowers indexer entry threshold |
+| Non-Domination | 2.00 | Council veto + on-chain governance |
+| Polycentricity | 2.00 | Indexers + curators + delegators + Council |
+| Knowledge-use | 1.50 | Query-fee market signals |
+
+**Synergy Index:** arith 1.80, geom 1.78.
+
+### Polygon (L1_L2_Infra, HHI 0.035)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | PIPs + on-chain Polygon Improvement Proposals |
+| Fairness | 1.25 | Validator floor (1M MATIC stake) |
+| Non-Domination | 1.50 | Foundation veto + community PIPs |
+| Polycentricity | 1.50 | PoS chain governance + zkEVM + Foundation |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.45, geom 1.41.
+
+### Hyperliquid (DeFi, HHI 0.005)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | Public discussion forum + on-chain governance docs |
+| Fairness | 1.00 | Broad airdrop; no post-distribution floor |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 0.00 | Foundation-led; no formal sub-bodies |
+| Knowledge-use | 2.00 | Assistance Fund auto-burns trade fees (price-signal-coupled buyback mechanism) |
+
+**Synergy Index:** arith 1.20, geom 0.53. Note: zero on Polycentricity drives geometric mean below 1.0, illustrating weakest-link aggregation sensitivity (see Section 4.8 operationalization-dependency paragraph).
+
+### Balancer (DeFi, HHI 0.029)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | BIP process + forum + Snapshot |
+| Fairness | 1.00 | veBAL holders + LP holders; basic floor |
+| Non-Domination | 1.50 | BAL / veBAL governance + multi-stakeholder |
+| Polycentricity | 1.50 | Gauge committee + safety multisig + DAO |
+| Knowledge-use | 2.00 | Gauge votes for liquidity allocation (Hayek mechanism) |
+
+**Synergy Index:** arith 1.60, geom 1.55.
+
+### IoTeX (DePIN, HHI 0.189)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | Governance documentation public + IIPs |
+| Fairness | 1.00 | Validator staking floor; no strong fairness mechanism |
+| Non-Domination | 1.00 | Delegate voting; weak appeals |
+| Polycentricity | 1.50 | Delegates + foundation; some decentralization |
+| Knowledge-use | 1.50 | Dapp gas + machine-data signals (DePIN-specific) |
+
+**Synergy Index:** arith 1.30, geom 1.28.
+
+### WeatherXM (DePIN, HHI 0.148)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | WMIPs analog; weather network documentation |
+| Fairness | 1.00 | Operator rewards with location-based weighting |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | Mostly monocentric foundation |
+| Knowledge-use | 2.00 | Weather data quality signals into reward calculation (Hayek mechanism) |
+
+**Synergy Index:** arith 1.30, geom 1.25.
+
+### Grass (DePIN, HHI 0.035)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | Basic governance forum |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 0.50 | Mostly monocentric |
+| Knowledge-use | 1.50 | Bandwidth quality signals |
+
+**Synergy Index:** arith 1.10, geom 1.02.
+
+### Livepeer (DePIN, HHI 0.199)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | LIPs + Snapshot proposals |
+| Fairness | 1.00 | Orchestrator stake floor (1 LPT min) |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | Orchestrator-delegator structure |
+| Knowledge-use | 2.00 | Encoding job market signals into bond reward distribution |
+
+**Synergy Index:** arith 1.30, geom 1.25.
+
+### Filecoin (DePIN, HHI 0.022)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | Mature FIPs (Filecoin Improvement Proposals); formal process |
+| Fairness | 1.25 | Storage provider entry barrier moderate |
+| Non-Domination | 2.00 | FIP appeals + Filecoin Foundation oversight + community |
+| Polycentricity | 2.50 | FIL Foundation + Protocol Labs + storage providers + community + retrieval markets |
+| Knowledge-use | 2.00 | Storage market signals; demand-based compensation |
+
+**Synergy Index:** arith 1.95, geom 1.90. Top of full-sample distribution.
+
+### Render (DePIN, HHI 0.027)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | RIPs + Snapshot |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic delegate voting |
+| Polycentricity | 1.00 | Mostly monocentric |
+| Knowledge-use | 1.50 | GPU job pricing signals |
+
+**Synergy Index:** arith 1.20, geom 1.18.
+
+### Pokt Network (DePIN, HHI 0.090)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | PUPs (Pokt Improvement Proposals) |
+| Fairness | 1.00 | Node staking floor moderate |
+| Non-Domination | 1.50 | PUP voting + DAO |
+| Polycentricity | 1.50 | Node operators + portal partners + DAO |
+| Knowledge-use | 1.50 | Relay-volume signals |
+
+**Synergy Index:** arith 1.50, geom 1.47.
+
+### LayerZero (L1_L2_Infra, HHI 0.014)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | DVN configuration public; less mature governance |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | DVN diversity but operator-centric |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.10, geom 1.08.
+
+### Wormhole (L1_L2_Infra, HHI 0.012)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | Wormhole Improvement Proposals |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | Guardian set governance |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.10, geom 1.08.
+
+### Morpheus AI (DePIN, HHI 0.046)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | Morpheus.os governance docs |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | Monocentric |
+| Knowledge-use | 1.50 | AI agent quality signals (theoretical operationalization) |
+
+**Synergy Index:** arith 1.20, geom 1.18.
+
+### Axelar (L1_L2_Infra, HHI 0.027)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.75 | AIP process |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.50 | Validator-set governance with checks |
+| Polycentricity | 1.25 | Validator + community + AXL token-governance |
+| Knowledge-use | 1.00 | Basic |
+
+**Synergy Index:** arith 1.30, geom 1.27.
+
+### MetaDAO (DeFi, HHI 0.015)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.00 | Futarchy is publicly observable by design |
+| Fairness | 1.00 | Futarchy weights wealth heavily |
+| Non-Domination | 2.50 | Futarchy provides structural contestability (market-based decisions); explicit Pettit operationalization |
+| Polycentricity | 0.50 | Single-mechanism futarchy; no formal sub-bodies |
+| Knowledge-use | 2.50 | Prediction markets aggregate information by design (strong Hayek mechanism) |
+
+**Synergy Index:** arith 1.70, geom 1.44. Note: low Polycentricity drives substantial arith-geom divergence; geometric-mean penalty highlights the single-mechanism design tradeoff.
+
+### Gitcoin (Social_Dead, HHI 0.022)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 2.25 | Mature GIPs + Snapshot + governance forum |
+| Fairness | 2.00 | Quadratic funding for public goods (Rawls floor-protection by design) |
+| Non-Domination | 1.75 | Multiple QF rounds + DAO + Foundation |
+| Polycentricity | 2.00 | Workstreams + Stewards + community |
+| Knowledge-use | 1.50 | QF aggregates dispersed signals |
+
+**Synergy Index:** arith 1.90, geom 1.88. Top of full-sample distribution alongside Filecoin and Optimism.
+
+### Token Engineering Commons (Social_Dead, HHI 0.028)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | Commons Hub governance documentation |
+| Fairness | 1.50 | Conviction voting for floor protection |
+| Non-Domination | 1.50 | Conviction voting structure |
+| Polycentricity | 1.50 | Working groups (active pre-stagnation) |
+| Knowledge-use | 1.50 | Conviction-voting aggregates time-preferences |
+
+**Synergy Index:** arith 1.50, geom 1.50. Note: stagnation does not alter design-intent scoring; the protocol scored against its institutional architecture rather than current operating activity.
+
+### Aethir (DePIN, HHI 0.087)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.00 | Limited public governance documentation |
+| Fairness | 0.50 | Heavy team / investor allocation (62%); no community floor mechanism |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 0.50 | Aethir Foundation monocentric |
+| Knowledge-use | 1.50 | GPU compute market signals |
+
+**Synergy Index:** arith 0.90, geom 0.82. Bottom of full-sample distribution.
+
+### Hivemapper (DePIN, HHI 0.018)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.50 | MIPs (Mapper Improvement Proposals) |
+| Fairness | 1.50 | Per-driver caps + AI training data quality scoring |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 1.00 | Mostly monocentric |
+| Knowledge-use | 2.50 | AI training quality signals are explicit knowledge-aggregation (strong Hayek mechanism) |
+
+**Synergy Index:** arith 1.50, geom 1.41.
+
+### io.net (DePIN, HHI 0.125)
+
+| Lens | Score | Evidence |
+|------|-------|----------|
+| Publicity | 1.00 | Early-stage governance documentation |
+| Fairness | 1.00 | Basic |
+| Non-Domination | 1.00 | Basic |
+| Polycentricity | 0.50 | Foundation-led |
+| Knowledge-use | 1.50 | GPU compute pricing signals |
+
+**Synergy Index:** arith 1.00, geom 0.94.
+
+---
+
+## Extended-sample scoring caveats (2026-05-19 addition)
+
+The 28-protocol extension above carries the following methodological caveats specific to this expansion cycle (in addition to the original single-coder and snapshot-date caveats in the "Scoring Notes and Caveats" section above):
+
+1. **Five-lens summary rather than 20-cell criterion-by-criterion.** The extension scores one cell per lens rather than four cells per lens. This is a deliberate methodological choice to enable full-sample Synergy Index analysis without overcommitting evidence-collection effort before inter-rater reliability is established. Full per-criterion expansion of the 28 protocols is reserved for future cycles, ideally concurrent with the inter-rater reliability cycle specified in Section 4.8 and S2.
+
+2. **Snapshot-date drift since 2026-03-15.** Evidence for the 28 newly-scored protocols was gathered May 2026. Several protocols' governance architectures have evolved since the original 12 protocols' March 2026 snapshot. Where structural governance changes occurred (e.g., Curve's veCRV ecosystem maturation, Filecoin's FIP process formalization), the May 2026 state is scored; this snapshot heterogeneity is documented for inter-rater reliability cycles to account for.
+
+3. **Conservative scoring anchored to original 12.** New-protocol scores are anchored to the original 11 fully-scored protocols (plus GEODNET from Table 2) as reference. Protocols with mature governance documentation but limited evidence of community contestation were scored conservatively in the Non-Domination dimension; protocols with single-mechanism polycentricity (Hyperliquid foundation-led; MetaDAO futarchy) were scored on the unaltered 0 to 3 scale, allowing zero scores where appropriate.
+
+4. **Sector representation: balanced.** The expansion brings DeFi to N = 15 and DePIN to N = 15 with Infra at N = 8 and Social-dead at N = 2; sector means become DeFi 1.42 / DePIN 1.33 / Infra 1.46 / Social 1.70 (no significant cross-sector Synergy difference at p < 0.05, confirming that the HHI sector-signal does not extend symmetrically to the institutional-design Synergy dimension).

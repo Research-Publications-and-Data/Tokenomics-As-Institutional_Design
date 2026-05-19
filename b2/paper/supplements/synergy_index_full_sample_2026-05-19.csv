@@ -1,0 +1,41 @@
+Protocol,Category,HHI,Publicity,Fairness,NonDomination,Polycentricity,KnowledgeUse,Synergy_arith,Synergy_geom,Evidence
+Uniswap,DeFi,0.0100,2.00,1.00,2.00,1.00,1.00,1.4000,1.3195,Original S3 anchor
+Compound,DeFi,0.0090,2.00,1.25,2.00,1.00,1.00,1.4500,1.3797,Original S3 anchor
+Aave,DeFi,0.0130,2.25,1.50,2.00,1.25,1.25,1.6500,1.6019,Original S3 anchor
+MakerDAO,DeFi,0.0400,2.00,0.75,1.75,2.00,1.50,1.6000,1.5110,Original S3 anchor
+Lido,DeFi,0.0080,1.75,1.25,1.75,1.25,1.00,1.4000,1.3677,Original S3 anchor
+Helium,DePIN,0.0740,2.00,1.00,2.00,2.00,2.00,1.8000,1.7411,Original S3 anchor
+DIMO,DePIN,0.0250,1.50,1.25,1.75,1.50,1.50,1.5000,1.4916,Original S3 anchor
+Anyone Protocol,DePIN,0.0130,1.00,1.00,1.00,1.00,1.00,1.0000,1.0000,Original S3 anchor
+Optimism,L1_L2_Infra,0.0090,2.25,1.75,2.25,2.00,1.25,1.9000,1.8581,Original S3 anchor
+Arbitrum,L1_L2_Infra,0.0120,2.00,1.50,2.00,1.75,1.25,1.7000,1.6735,Original S3 anchor
+ENS,L1_L2_Infra,0.0710,1.75,1.00,1.75,1.25,1.00,1.3500,1.3080,Original S3 anchor
+GEODNET,DePIN,0.0600,2.00,1.00,1.00,1.00,2.00,1.4000,1.3195,Original S3 anchor (Table 2)
+Curve,DeFi,0.0140,2.00,0.75,1.50,1.50,2.00,1.5500,1.4651,Snapshot + on-chain veCRV proposals; gauge committee aggregates weekly demand signals (Hayek); lock-duration weighting structurally privileges long-lockers (Rawls deficit)
+Rocket Pool,DeFi,0.0390,2.25,1.50,2.00,2.00,1.00,1.7500,1.6829,Mature pDAO + oDAO + GMC tri-cameral structure (Ostrom strength); node-operator + minipool floor mechanism
+Jupiter,DeFi,0.0960,1.50,1.00,1.00,1.00,1.00,1.1000,1.0845,JUP Realms governance; LFG launchpad partial floor; less mature contestation infrastructure
+Maple Finance,DeFi,0.0240,1.75,1.00,1.50,1.00,1.00,1.2500,1.2129,Governance forum + on-chain proposals; lender / borrower stake structure
+GMX,DeFi,0.0650,2.00,1.00,1.50,1.00,1.50,1.4000,1.3510,Active Snapshot governance; GLP price-signal mechanism (partial Hayek); broader voter pool
+Drift,DeFi,0.0530,1.50,1.00,1.00,1.00,1.00,1.1000,1.0845,DRIFT Realms; early-stage governance documentation
+Ether.Fi,DeFi,0.0420,1.50,1.00,1.00,1.00,1.00,1.1000,1.0845,Governance forum + on-chain proposals; basic structure
+The Graph,L1_L2_Infra,0.0330,2.00,1.50,2.00,2.00,1.50,1.8000,1.7826,GIP process; indexers + curators + delegators + Council polycentric structure (Ostrom strength); query-fee market signals
+Polygon,L1_L2_Infra,0.0350,2.00,1.25,1.50,1.50,1.00,1.4500,1.4126,PIPs; multi-chain Foundation veto; validator-stake floor
+Hyperliquid,DeFi,0.0050,2.00,1.00,1.00,0.00,2.00,1.2000,0.5253,Foundation-led; Assistance Fund auto-burns trade fees (strong Hayek price-signal coupling); monocentric polycentricity floor
+Balancer,DeFi,0.0290,2.00,1.00,1.50,1.50,2.00,1.6000,1.5518,BIP process; gauge committee + safety multisig + veBAL; gauge votes for liquidity allocation (Hayek mechanism)
+IoTeX,DePIN,0.1890,1.50,1.00,1.00,1.50,1.50,1.3000,1.2754,IIPs; delegate voting; DePIN-specific machine-data signals into reward calculation
+WeatherXM,DePIN,0.1480,1.50,1.00,1.00,1.00,2.00,1.3000,1.2457,WMIPs analog; location-based reward weighting; weather data quality signals (Hayek mechanism)
+Grass,DePIN,0.0350,1.50,1.00,1.00,0.50,1.50,1.1000,1.0238,Basic governance forum; bandwidth quality signals; foundation-led polycentricity floor
+Livepeer,DePIN,0.1990,1.50,1.00,1.00,1.00,2.00,1.3000,1.2457,LIPs + Snapshot; orchestrator-delegator structure; encoding job market signals
+Filecoin,DePIN,0.0220,2.00,1.25,2.00,2.50,2.00,1.9500,1.9037,Mature FIP process; FIL Foundation + Protocol Labs + storage providers + retrieval markets polycentric; storage market price signals (strong Hayek mechanism)
+Render,DePIN,0.0270,1.50,1.00,1.00,1.00,1.50,1.2000,1.1761,RIPs + Snapshot; GPU job pricing signals
+Pokt Network,DePIN,0.0900,2.00,1.00,1.50,1.50,1.50,1.5000,1.4651,PUPs; node operators + portal partners + DAO polycentric; relay-volume signals
+LayerZero,L1_L2_Infra,0.0140,1.50,1.00,1.00,1.00,1.00,1.1000,1.0845,DVN configuration public; operator-centric governance
+Wormhole,L1_L2_Infra,0.0120,1.50,1.00,1.00,1.00,1.00,1.1000,1.0845,WIPs; guardian-set governance
+Morpheus AI,DePIN,0.0460,1.50,1.00,1.00,1.00,1.50,1.2000,1.1761,Morpheus.os governance docs; AI agent quality signals (theoretical)
+Axelar,L1_L2_Infra,0.0270,1.75,1.00,1.50,1.25,1.00,1.3000,1.2683,AIP process; validator-set governance
+MetaDAO,DeFi,0.0150,2.00,1.00,2.50,0.50,2.50,1.7000,1.4427,Futarchy: structural contestability via prediction markets (Pettit strength); explicit Hayek information-aggregation mechanism; single-mechanism polycentricity
+Gitcoin,Social_Dead,0.0220,2.25,2.00,1.75,2.00,1.50,1.9000,1.8822,Mature GIPs + Snapshot + Stewards; quadratic funding (strong Rawls floor-protection by design); QF aggregates dispersed signals
+Token Engineering Commons,Social_Dead,0.0280,1.50,1.50,1.50,1.50,1.50,1.5000,1.5000,Commons Hub conviction voting; working-group polycentric structure (pre-stagnation)
+Aethir,DePIN,0.0870,1.00,0.50,1.00,0.50,1.50,0.9000,0.8219,Limited public governance documentation; heavy team / investor allocation (62%); GPU compute market signals
+Hivemapper,DePIN,0.0180,1.50,1.50,1.00,1.00,2.50,1.5000,1.4126,MIPs; per-driver caps (Rawls fairness mechanism); AI training data quality signals (explicit Hayek mechanism)
+io.net,DePIN,0.1250,1.00,1.00,1.00,0.50,1.50,1.0000,0.9441,Early-stage governance; foundation-led; GPU compute pricing signals
