@@ -255,15 +255,15 @@ save(fig, "fig5_allocation_scatter")
 # =============================================================================
 print("-- Fig 6: Delegation grouped (R2 values)")
 deleg_data = [
-    {"protocol": "Compound", "raw_hhi": 0.028, "delegated_hhi": 0.053,
+    {"protocol": "Compound", "raw_hhi": 0.009223, "delegated_hhi": 0.053,
      "category": "DeFi",       "source": "Snapshot"},
-    {"protocol": "Aave",     "raw_hhi": 0.020, "delegated_hhi": 0.076,
+    {"protocol": "Aave",     "raw_hhi": 0.012790, "delegated_hhi": 0.076,
      "category": "DeFi",       "source": "Tally"},
-    {"protocol": "Uniswap",  "raw_hhi": 0.010, "delegated_hhi": 0.027,
+    {"protocol": "Uniswap",  "raw_hhi": 0.009784, "delegated_hhi": 0.027,
      "category": "DeFi",       "source": "Tally"},
-    {"protocol": "Arbitrum", "raw_hhi": 0.012, "delegated_hhi": 0.052,
+    {"protocol": "Arbitrum", "raw_hhi": 0.011914, "delegated_hhi": 0.052,
      "category": "L1_L2_Infra", "source": "Snapshot"},
-    {"protocol": "Optimism", "raw_hhi": 0.009, "delegated_hhi": 0.033,
+    {"protocol": "Optimism", "raw_hhi": 0.009281, "delegated_hhi": 0.033,
      "category": "L1_L2_Infra", "source": "Tally"},
 ]
 deleg = pd.DataFrame(deleg_data)
@@ -367,17 +367,17 @@ save(fig, "fig7_subsidy_scatter")
 print("-- Fig 8: HHI vs participation")
 part_data = [
     ("Arbitrum",    2530.6, "L1_L2_Infra", 0.012),
-    ("Gitcoin",      700.8, "Social_Dead", 0.077),
+    ("Gitcoin",      700.8, "Social_Dead", 0.022),
     ("Uniswap",      232.8, "DeFi",        0.010),
-    ("GMX",          197.1, "DeFi",        0.056),
-    ("ENS",          124.2, "L1_L2_Infra", 0.135),
-    ("Lido",          80.3, "DeFi",        0.013),
+    ("GMX",          197.1, "DeFi",        0.065),
+    ("ENS",          124.2, "L1_L2_Infra", 0.071),
+    ("Lido",          80.3, "DeFi",        0.008),
     ("Rocket Pool",   64.7, "DeFi",        0.039),
     ("WeatherXM",     51.5, "DePIN",       0.148),
-    ("Compound",      23.2, "DeFi",        0.029),
-    ("DIMO",           7.5, "DePIN",       0.038),
-    ("Balancer",       5.6, "DeFi",        0.030),
-    ("Aave",         100.0, "DeFi",        0.020),
+    ("Compound",      23.2, "DeFi",        0.009),
+    ("DIMO",           7.5, "DePIN",       0.025),
+    ("Balancer",       5.6, "DeFi",        0.029),
+    ("Aave",         100.0, "DeFi",        0.013),
     ("Optimism",     100.0, "L1_L2_Infra", 0.009),
 ]
 part = pd.DataFrame(part_data, columns=["protocol", "voters_per_proposal", "category", "hhi"])

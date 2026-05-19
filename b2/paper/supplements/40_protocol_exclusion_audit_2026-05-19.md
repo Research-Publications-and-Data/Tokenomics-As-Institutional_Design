@@ -1,8 +1,10 @@
-# 40-Protocol PCA Exclusion Coverage Audit (2026-05-19; final state)
+# 40-Protocol PCA Exclusion Coverage Audit (2026-05-19; intermediate-stage snapshot, superseded by 126-address final state)
+
+**Note (2026-05-19 evening update):** This supplement documents the audit at the 35-protocol / 92-address coverage stage. Subsequent deep-top-5 audit waves (workflow commits `cab8a2dd` → `263c6f94` → `19529d6a`) brought coverage to 38 protocols / 126 addresses. The 2026-05-19 evening Table 7 cascade (workflow commit `3a8c3065`; replication sister `6b71ea1`) updated downstream amplification ratios (1.4x to 6.0x → 1.2x to 11.4x; mean 3.3x → 5.3x; ENS 0.21x → 0.39x). The sector-stat summary below (lines 46-50) reflects the 35-protocol stage; the post-Table-7-cascade current values are in `CHANGELOG.md` under the 2026-05-19 Table 7 cascade subsection. Line 53's "universal-amplification unchanged" claim was forward-looking and turned out incorrect: Table 7 holding HHIs shifted with later audit waves and were cascaded today.
 
 **Goal:** Achieve PCA exclusion documentation for all 40 protocols in the regression sample.
 
-**Final state:** 35 of 40 protocols have documented PCA exclusions. 1 protocol confirmed non-PCA. 4 protocols remain audit-pending due to explorer/disclosure limitations.
+**Final state at write time:** 35 of 40 protocols have documented PCA exclusions. 1 protocol confirmed non-PCA. 4 protocols remain audit-pending due to explorer/disclosure limitations. (Subsequent audit waves brought this to 38 documented + 2 confirmed non-PCA = 40/40 coverage.)
 
 ## Coverage matrix
 

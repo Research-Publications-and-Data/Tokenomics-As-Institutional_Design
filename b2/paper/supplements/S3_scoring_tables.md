@@ -50,7 +50,7 @@ Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for f
 
 ---
 
-## 2. Compound (DeFi, HHI 0.028)
+## 2. Compound (DeFi, HHI 0.009)
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
@@ -77,7 +77,7 @@ Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for f
 
 ---
 
-## 3. Aave (DeFi, HHI 0.020)
+## 3. Aave (DeFi, HHI 0.013)
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
@@ -185,7 +185,7 @@ Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for f
 
 ---
 
-## 7. DIMO (DePIN, HHI 0.038)
+## 7. DIMO (DePIN, HHI 0.025)
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
@@ -212,7 +212,7 @@ Scoring scale: 0 = absent, 1 = minimal, 2 = partial, 3 = exemplary. See S2 for f
 
 ---
 
-## 8. Anyone Protocol (DePIN, HHI 0.040)
+## 8. Anyone Protocol (DePIN, HHI 0.013)
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
@@ -295,7 +295,7 @@ Note: Anyone scores uniformly at 1 due to early-stage maturity, not poor design 
 
 ---
 
-## 11. ENS (Infrastructure, HHI 0.135)
+## 11. ENS (Infrastructure, HHI 0.071)
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
