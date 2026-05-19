@@ -2,9 +2,9 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
-## [1.2.0-frontiers-r2-revision] — 2026-05-17
+## [1.2.0-frontiers-r2-revision] — 2026-05-17 (initial) / 2026-05-18 (calibration + methodology fix + Lido recompute)
 
-Round 2 revision response to Frontiers in Blockchain peer review (Reviewer 1 R2 round). The R2 cycle resolved residual manuscript-vs-data drift in Table 7 and adopted a universal delegation amplification thesis as a substantive interpretive change in Section 3.5.
+Round 2 revision response to Frontiers in Blockchain peer review (Reviewer 1 R2 round). The R2 cycle resolved residual manuscript-vs-data drift in Table 7 and adopted a universal delegation amplification thesis as a substantive interpretive change in Section 3.5. Three post-propagation calibration cycles on 2026-05-18 resolved additional drift findings in the Aethir row (Top-N% convention alignment) and the Lido row (canonical CSV used a stale 189-row curated holder set; recomputed against the universal top-1000 methodology).
 
 ### Manuscript
 
@@ -29,6 +29,14 @@ Round 2 revision response to Frontiers in Blockchain peer review (Reviewer 1 R2 
 - **Table 4 expansion (Reviewer 1 Issue 3).** Sample expanded from 37 to 40 protocols with Hivemapper, io.net, and Aethir added as full rows.
 - **Multiple-comparisons correction note (Section 3.7).** Benjamini-Hochberg FDR correction at q = 0.05 applied to the 14 tests reported in Table 5; three of four significant findings survive (the subsidy-with-Livepeer result is fragile under both multiple-comparisons correction and the Livepeer-outlier sensitivity already noted in F1).
 - **Tally data drift methodology note (Section 2.10.3).** Documents the March 2026 to May 2026 delegate-pool drift; the R2 manuscript uses the March 2026 snapshot consistent with the rest of the dataset, with May 2026 results reported as supplementary robustness check.
+
+### Post-propagation calibration cycles (2026-05-18)
+
+Three follow-on commits resolved drift findings surfaced during post-propagation audit:
+
+1. **Calibration cycle (37dae20).** Universal Table 4 audit surfaced four data integrity issues: (a) Aethir HHI stale at 0.1678 (R1-era March 2026 value) where PAPER.md had R2-canonical 0.153 (May 2026 Dune re-pull); (b) Aethir Gini empty (Phase 0 Tier A1 marked PENDING); (c) Hivemapper Gini stored as 0.8652 full-universe value where Phase 0 memo specified 0.9181 top-1000 value; (d) io.net Gini empty per Phase 0 memo Tier A1 not landing in CSV. CSV harmonization landed all four corrections; figures regenerated; DOCX figure replacement + PDF re-render shipped.
+2. **Methodology fix (0b5d4f1).** Cross-row Top-N% convention mismatch: Aethir row used Top-1% = single-largest-holder share / Top-10% = top-10-holders-sum (literal interpretation), while the other 39 rows used Top-1% = top-10-holders share / Top-10% = top-100-holders share (per Sai et al. 2021 and Fritsch et al. 2024 convention). Aethir recomputed: Top-1% 33.6% to 83.8%; Top-10% 83.8% to 98.2%. Variant B methodology footnote added to Section 2.10.2 explicitly defining the convention.
+3. **Lido recompute (this commit).** Canonical regression CSV's Lido row was computed from an older 189-row curated holder set (March 31; ~414K LDO minimum balance threshold) while every other row used the full top-1000 holder pull. Same drift class as the Aethir progression. Lido recomputed against the universal top-1000 methodology: HHI 0.013 to 0.038; Gini 0.52 to 0.82; Top-1% 7.9% to 36.0%; Top-10% 27.7% to 76.6%; N 189 to 994. Cascading manuscript edits: Table 4 Lido row; Table 7 Lido amplification ratio 6.8x to 2.3x; Section 3.3 sector contrast (Mann-Whitney p 0.014 to 0.023; Cohen's d 1.03 to 1.00; LOO robustness preserved at 30/30; permutation p 0.009 to 0.006); Section 3.5 universal-amplification range 1.4x to 6.8x to 1.4x to 6.0x (mean 4.1x to 3.3x); Lido / Dual Governance paragraph updated to acknowledge that the Dual Governance reform was justified at the time by the larger amplification measured from the 189-row subset. Supplementary file `b2/paper/supplements/lido_recompute_2026-05-18.md` documents the recompute.
 
 ### Philosophical-framework strengthening (R1 round 2 framing extension)
 
@@ -62,7 +70,7 @@ The R2 manuscript retains Table 7 at 8 protocols with a Section 3.5 methodology 
 
 ### Documentation
 
-- `README.md`: status updated to "R2 revision submitted May 2026"; Key Statistics table refreshed with universal delegation amplification finding (1.9x to 6.8x; mean 4.1x; N = 8); new section "Round 2 revision (May 2026): scope and substantive changes" added
+- `README.md`: status updated to "R2 revision submitted May 2026"; Key Statistics table refreshed with universal delegation amplification finding (1.4x to 6.0x; mean 3.3x; N = 10 with ENS exception at 0.21x); Gini inequality range updated to 0.73 to 0.99 (post-Lido-recompute); Mann-Whitney p = 0.023, Cohen's d = 1.00, permutation p = 0.006 reflected in headline; Delegation amplification narrative paragraph rewritten to match universal-amplification thesis; new section "Round 2 revision (May 2026): scope and substantive changes" added
 - `CITATION.cff`: version bumped from `1.1.0-frontiers-r1-revision` to `1.2.0-frontiers-r2-revision`; `date-released` updated to 2026-05-17; abstract updated to include universal delegation amplification finding
 
 ## [1.1.0-frontiers-r1-revision] — 2026-05-12
