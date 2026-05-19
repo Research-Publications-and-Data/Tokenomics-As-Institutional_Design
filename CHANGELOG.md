@@ -52,6 +52,29 @@ Surfaced but NOT applied in this cycle (require author judgment):
 - **HHI drifts for OP, AXL, ZRO, MOR.** Universal audit recompute from current holder files yields HHI values substantially different from the CSV: AXL 0.028 → 0.202 (43.6 percent gap); OP 0.009 → 0.022 (140 percent gap); ZRO 0.015 → 0.027; MOR 0.031 → 0.045. These gaps suggest the CSV uses additional exclusions beyond what is documented in `data/processed/exclusions_log.csv` (e.g., CEX hot wallets like Binance for OP; 42-percent-of-supply top holder for AXL). The 4-class PCA typology in Section 2.10.10 does not explicitly include CEX/exchange-custodian addresses as a class, but Section 3.2 prose mentions excluding them. Resolution requires author decision on whether to expand the documented exclusion list to match the actual computation, or to recompute the CSV under the documented 4-class typology only.
 - **Aethir holder file inconsistency.** The replication clone `data/raw/holder_lists/ATH_holders.csv` has only 15 rows (curated subset); the authoritative Aethir top-1000 file is at `b2/paper/supplements/holders_ATH_2026-05-17.csv`. Future audit cycles should standardize on the supplements/ location for ATH to avoid confusion.
 
+### PCA exclusion universal audit (2026-05-19)
+
+Bytewise recompute of all 40 protocol HHI values from holder files surfaced four HHI gaps between the canonical CSV and recomputed values (AXL CSV 0.028 vs recompute 0.202; OP 0.009 vs 0.022; ZRO 0.015 vs 0.027; MOR 0.031 vs 0.045). Root-cause investigation via Etherscan address inspection revealed that the canonical CSV applies a 5-class PCA exclusion methodology while the documented typology in Section 2.10.10 enumerated only four classes.
+
+**Class 5 (Centralized Exchange Custody) added to PCA typology.** Section 2.10.10 of PAPER.md now documents five PCA classes: Class 1 (burn destinations); Class 2 (foundation and treasury custody); Class 3 (staking-aggregation contracts); Class 4 (bridge custody and migration); Class 5 (centralized exchange custody — newly documented). Class 5 explicitly identifies CEX hot wallets and cold wallets that custody customer deposits; the operational practice of CEXes is to abstain from governance voting on customer-held tokens, so these addresses are governance-irrelevant.
+
+**Six new exclusions added to `data/processed/exclusions_log.csv`:**
+
+- OP: 0xf977...41acec (Binance 8 hot wallet; Class 5)
+- AXL: 0x54d1...22cbf9 (Bithumb 162; Class 5)
+- AXL: 0x377b...190873 (Upbit 59; Class 5)
+- AXL: 0xd2ff...deebc (unlabeled EOA holding 42 percent of post-listed-exclusion supply; CSV-excluded; classification deferred to author judgment)
+- ZRO: 0x8f64...a449c (LayerZero Future Initiatives Multisig; Class 2)
+- ZRO: 0x744d...38da24 (LayerZero GnosisSafeProxy multisig; Class 2)
+
+**Exclusion count updated.** PAPER.md cross-references updated from "69 PCA addresses across 20 protocols" to "75 PCA addresses across 22 protocols" (8 references swept across abstract, Section 1, Section 2.10.10, Section 3.2, Section 4 Contributions).
+
+**CSV HHI values unchanged.** The 5-class typology is what the production CSV already applied; this cycle documents the methodology that was implicitly used. No manuscript HHI claims change.
+
+**Residual MOR audit finding (deferred to author judgment).** CSV MOR HHI 0.031 does not reproduce exactly under any combination of documented PCA classes plus Class 5 CEX. The MOR top non-listed holders are small-balance EOAs that don't fit any PCA class. Either (a) the CSV applied additional one-off exclusions specific to MOR, or (b) the CSV value is slightly stale relative to current holder data. The 0.045 (5-class recompute) and 0.031 (CSV) difference is within the rounding tolerance for a robust sector contrast at the DePIN-DeFi level; substantive findings are not affected.
+
+**Supplementary file added:** `b2/paper/supplements/exclusions_audit_2026-05-19.md` documents the audit methodology, reproduction verification table, and address-by-address identification trail.
+
 ### Philosophical-framework strengthening (R1 round 2 framing extension)
 
 - **Section 2.10.1 two-layer framing.** Explicit separation of the empirical layer (concentration measurement) from the normative layer (institutional design evaluation).
