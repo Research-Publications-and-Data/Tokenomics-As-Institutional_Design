@@ -1,0 +1,9 @@
+test,N,pearson_r,pearson_p,spearman_rho,spearman_p
+log(revenue) vs insider_count_frac_top10,30,-0.1545,0.4149,-0.0816,0.6683
+log(revenue) vs insider_balance_frac_top10,30,-0.3325,0.0727,-0.2037,0.2803
+revenue / FDV vs insider_count_frac_top10,28,-0.1069,0.5882,0.066,0.7384
+revenue / FDV vs insider_balance_frac_top10,28,-0.1696,0.3882,-0.0939,0.6348
+revenue / market_cap vs insider_count_frac_top10,26,-0.1036,0.6143,0.0376,0.8554
+revenue / market_cap vs insider_balance_frac_top10,26,-0.151,0.4617,-0.1149,0.5761
+1 / subsidy_ratio (net-profit-per-emission) vs insider_count_frac_top10,15,0.2339,0.4015,0.4678,0.0787
+1 / subsidy_ratio (net-profit-per-emission) vs insider_balance_frac_top10,15,-0.1354,0.6303,0.3117,0.258
