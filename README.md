@@ -14,13 +14,13 @@
 
 ## Summary
 
-A 40-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (r = 0.17, p = 0.32, N = 37). Protocols with generous community distributions exhibit concentration patterns similar to those with heavy insider allocations.
+A 40-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (r = 0.04, p = 0.84, N = 37). Protocols with generous community distributions exhibit concentration patterns similar to those with heavy insider allocations.
 
 **Supporting findings:**
 
 - **Sector contrast.** DePIN protocols are more concentrated than DeFi protocols (Mann-Whitney p = 0.018, Cohen's d = 0.98; robust across all 30 leave-one-out iterations; permutation p = 0.003); the effect survives multivariate adjustment for protocol age, log fully diluted valuation, and insider allocation across three nested OLS specifications (adjusted R² 0.14 to 0.17).
 - **Insider retention.** Protocols with more insider wallets in their top-holder sets exhibit higher concentration among non-insider holders (Spearman rho = 0.54, p = 0.001, N = 34), indicating insider-heavy protocols develop concentrated governance ecosystems, not merely concentrated insider positions.
-- **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.58, p = 0.008, N = 20) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation is not significant (r = 0.12, p = 0.63).
+- **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.69, p = 0.001, N = 20) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation weakens to borderline significance (r = 0.45, p = 0.052).
 - **Delegation amplification.** Voting-power HHI exceeds holding HHI by factors of 1.2x to 11.4x across nine of ten protocols sampled (mean 5.3x), with one structural exception (ENS at 0.39x, reflecting a mature delegate program where holders systematically delegate to a broad community-delegate set). Two vote-escrowed protocols (Curve, Balancer) form a distinct class showing extreme amplification (15x and 21x) under ve-token lock-duration weighting.
 - **Inequality versus concentration.** Token inequality is severe in every protocol (Gini 0.73 to 0.98) while governance concentration varies across two orders of magnitude (HHI 0.004 to 0.199); the moderate correlation between them (r = 0.54) indicates inequality metrics cannot substitute for direct concentration measurement.
 
@@ -85,7 +85,7 @@ A 40-protocol cross-section documents that initial token allocation design does 
 | Allocation null | r = 0.17, p = 0.32 | N = 37 |
 | DePIN-DeFi sector gap | Mann-Whitney p = 0.018, Cohen's d = 0.98; 30/30 LOO robust; permutation p = 0.003 | DePIN = 15, DeFi = 15 |
 | Insider retention (non-insider HHI correlation) | Spearman rho = 0.54, p = 0.001 | N = 34 |
-| Subsidy correlation (Livepeer-driven) | r = 0.57, p = 0.008 (full) / r = 0.11, p = 0.65 (ex-Livepeer) | N = 20 / N = 19 |
+| Subsidy correlation (Livepeer-driven) | r = 0.69, p = 0.001 (full) / r = 0.45, p = 0.052 (ex-Livepeer; borderline) | N = 20 / N = 19 |
 | Gini inequality range | 0.73 to 0.99 | N = 40 |
 | HHI concentration range | 0.005 to 0.199 | N = 40 |
 | Delegation amplification (universal, non-ve-token) | 1.2x to 11.4x; mean 5.3x | N = 10 (9 amplify; ENS 0.39x exception) |
