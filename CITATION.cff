@@ -14,12 +14,13 @@ abstract: >-
   p = 0.28, N = 37). Protocols with generous community distributions exhibit
   concentration patterns similar to those with heavy insider allocations.
   Sector membership predicts concentration (DePIN more concentrated than
-  DeFi, Mann-Whitney p = 0.014, Cohen's d = 1.03; robust across all 30
-  leave-one-out iterations) after adjusting for protocol age, log fully
-  diluted valuation, and insider allocation. Delegation universally
-  amplifies governance concentration across all 8 protocols in the
-  voting-layer subsample (range 1.9x to 6.8x; mean 4.1x); magnitude varies
-  by institutional design within sector. The exclusion methodology
+  DeFi, Mann-Whitney p = 0.023, Cohen's d = 1.00; robust across all 30
+  leave-one-out iterations; permutation p = 0.006) after adjusting for
+  protocol age, log fully diluted valuation, and insider allocation.
+  Delegation universally amplifies governance concentration across nine
+  of ten protocols in the voting-layer subsample (range 1.4x to 6.0x;
+  mean 3.3x), with one structural exception (ENS at 0.21x); magnitude
+  varies by institutional design within sector. The exclusion methodology
   identifies 69 addresses controlled by protocols themselves that appear
   on holder lists but cannot vote; correcting for these changes affected
   protocols' HHI by up to 7x.
