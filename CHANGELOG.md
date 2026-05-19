@@ -75,6 +75,53 @@ Bytewise recompute of all 40 protocol HHI values from holder files surfaced four
 
 **Supplementary file added:** `b2/paper/supplements/exclusions_audit_2026-05-19.md` documents the audit methodology, reproduction verification table, and address-by-address identification trail.
 
+### 40-protocol exclusion expansion + PCA Class 5 codification (2026-05-19 v2)
+
+Universal exclusion audit expanded from 22 to 29 protocols with documented PCA exclusions; 11 new addresses identified via Etherscan verified contract labels + name tags + holder-file recompute.
+
+**New burn-address exclusions (Class 1; universal sweep across all 40 protocols):**
+
+- RPL: 0xdead...4206942069 (chain-specific burn pattern; cosmetic share)
+- GMX: 0xdead...4206942069 (chain-specific burn pattern; 0.35% share)
+- GEOD: 0x000...dead (3.25% of top-1000 GEOD supply)
+- MOR: 0x000...dead (3.29% of top-1000 MOR supply; closes the MOR residual gap surfaced in eee7a5a2)
+- IO: 11111...11111 (Solana System Program / null destination; cosmetic share)
+
+**New PCA Class 2-4 exclusions (identified via Etherscan address inspection):**
+
+- MKR: 0x473d...AF90B (LockstakeMigrator; Class 4 migration contract; Sky Deployer 8; 11.37% top-holder)
+- IOTX: 0x87c9...29193 (Verified IoTeX Staking contract; Class 3 staking-aggregation; 19.75% top-holder)
+- ANYONE: 0x0d9a...583EF (Anyone Protocol and Staking ERC1967Proxy; Class 3 staking-aggregation; 13.29% top-holder)
+- GTC: 0x57a8...Be518 (Verified Gitcoin GTC Timelock; Class 2 governance infrastructure; 17.58% top-holder)
+- ETHFI: 0x7a6a...39bb53 (GnosisSafeProxy accumulator; Class 2 likely Ether.Fi protocol-controlled pending verification; 19.02% top-holder)
+- GEOD: 0xca3e...324b2 (Unlabeled GEODNET treasury / unallocated supply wallet; Class 2 pending GEODNET disclosure; 24.95% top-holder)
+
+**CSV HHI updates (recomputed with full 5-class exclusions applied):**
+
+Substantive shifts (greater than 5 percent absolute):
+- Ether.Fi: 0.067 to 0.047 (-30 percent; DeFi)
+- Anyone Protocol: 0.040 to 0.030 (-25 percent; DePIN)
+- Morpheus AI: 0.031 to 0.046 (+50 percent; DePIN; burn now excluded)
+- Gitcoin: 0.077 to 0.067 (-12 percent; Social_Dead)
+- MakerDAO: 0.045 to 0.041 (-9 percent; DeFi)
+
+Moderate / minor: IoTeX 0.107 to 0.105; GEOD 0.133 to 0.134; GMX 0.056 to 0.057; RPL 0.039 to 0.039; IO 0.111 to 0.111.
+
+**Sector contrast strengthens slightly post-audit:**
+
+- DeFi mean: 0.0430 to 0.0415
+- DePIN mean: 0.0902 to 0.0905 (essentially unchanged; Anyone Protocol decrease offsets Morpheus AI increase)
+- Mann-Whitney p: 0.023 to 0.018 (more significant)
+- Cohen's d: 1.00 to 1.04
+- Permutation p: 0.006 to 0.004 (more significant)
+- LOO robustness preserved: 30 of 30 iterations significant
+
+**Cross-references updated** across PAPER.md from "75 PCA addresses across 22 protocols" to "86 PCA addresses across 29 protocols" (8 surfaces).
+
+**Manuscript impact:** Universal-amplification range (1.4x to 6.0x; mean 3.3x) unchanged because Table 7 ratios are HHI-based and the affected protocols' HHI changes are all within sector. Headline findings (allocation null; sector contrast; subsidy disconnect; universal delegation amplification) all preserved with statistics shifting in favorable directions (more significant sector contrast; allocation null r = 0.17 vs prior 0.18; subsidy with-LPT r = 0.60 vs prior 0.57).
+
+**Supplementary file added:** `b2/paper/supplements/40_protocol_exclusion_audit_2026-05-19.md` documents the universal audit methodology, address-by-address PCA classification table, and reproduction verification.
+
 ### Philosophical-framework strengthening (R1 round 2 framing extension)
 
 - **Section 2.10.1 two-layer framing.** Explicit separation of the empirical layer (concentration measurement) from the normative layer (institutional design evaluation).
