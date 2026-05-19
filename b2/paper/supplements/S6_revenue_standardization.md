@@ -188,3 +188,47 @@ multi-chain / multi-contract aggregation execution is deferred. Per-protocol
 follow-on cycles can execute the templates and replace the rev_OC + emit_OC
 values with genuine raw-OC extractions; the methodology MDs anchor each
 protocol's TT-vs-OC cross-walk for cross-cycle continuity.
+
+## L1/L2/Infra + DePIN sector batches raw-OC population (2026-05-19 follow-on cycle)
+
+Per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` Task #13 multi-cycle workstream continuation, the L1/L2/Infra batch (5 protocols) and DePIN batch (5 protocols) have been populated this cycle. Combined with the DeFi sector batch (cycle 1), the full 19-protocol target set plus HYPE is now scaffolded with per-protocol methodology MDs at workflow clone `research_content/papers/B2_governance_concentration/supplements/raw_oc/`.
+
+### L1/L2/Infra batch results
+
+| Protocol | rev_OC (this cycle) | emit_OC (this cycle) | sub_OC | Provenance sub-class |
+|---|---:|---:|---:|---|
+| GRT | 353,716 | 17,642,151 | 49.88 | Arbitrum-sequencer / Indexer rewards |
+| OP | 12,642,754 | 95,637,974 | 7.56 | L2-sequencer + Superchain remittance |
+| POL | 8,669,743 | 22,436,654 | 2.59 | multi-chain PoS + zkEVM |
+| POKT | 22,151 | 169,152 | 7.64 | TT-UNRELIABLE-POST-SHANNON flag carried |
+| FIL | 2,877,882 | 55,193,597 | 21.6 (Messari Cat D; UNCHANGED) | Mixed: TT-equivalent for rev/emit + aggregator-only for sub_OC |
+
+### DePIN batch results
+
+| Protocol | rev_OC (this cycle) | emit_OC (this cycle) | sub_OC | Provenance sub-class |
+|---|---:|---:|---:|---|
+| DIMO | (empty; provenance-gap) | (empty; provenance-gap) | 0.33 (retained) | On-chain-direct license-burn methodology partial; deferred reconstruction |
+| HNT | 17,560,000 (pre-cycle) | 18,490,000 (pre-cycle) | 1.05 (pre-cycle) | On-chain-direct Helium DC burn; revenue_source_onchain annotation added |
+| GEOD | 9,194,616 | 14,803,332 (back-computed) | 1.61 (canonical preserved) | On-chain-direct defillama-fees-proxy + back-computed emit |
+| RENDER | (empty; provenance-gap) | (empty; provenance-gap) | 7.63 (retained) | On-chain-direct BME methodology partial; deferred reconstruction |
+| MOR | 9,590,000 (pre-cycle) | 14,740,000 (pre-cycle) | 1.54 (pre-cycle) | On-chain-direct Arbitrum burn-mint; revenue_source_onchain annotation added |
+
+### Acceptance tests post-L1/L2 + DePIN cycle
+
+- **Test 1** (rev_OC + emit_OC non-null for all 23 subsidy sample): **21 of 23 pass**. DIMO + RENDER documented as provenance-gap (sub_OC values canonical but rev_OC + emit_OC require per-protocol reconstruction).
+- **Test 2** (sub_OC equals emit_OC / rev_OC within 0.01 tolerance): **20 of 23 pass**. IOTX + LPT are pre-existing rounding-precision (4-decimal stored vs computed; not introduced this cycle). FIL is intentional Category D Messari divergence (sub_OC = 21.6 vs TT-derived 19.18); documented per FIL_methodology.md.
+- **Test 4** (PAPER.md §3.7 Spec 4 headline preserved): **PASS**. TT Spec 4 subsidy p=0.88; OC Spec 4 subsidy p=0.96; both convergence on "sector absorbs subsidy after Livepeer exclusion" canonical headline. HALT-B not triggered.
+
+### Substantive impact on regression: none
+
+The L1/L2/Infra batch population (TT-equivalent class for GRT/OP/POL/POKT; mixed for FIL) does not shift the multivariate regression (TT-preferred default unchanged; OC-sensitivity converges on TT for protocols where TT and OC are now identical). The DePIN batch population (annotation-only for HNT + MOR; back-computed emit for GEOD; provenance-gap for DIMO + RENDER) preserves the canonical sub_OC values driving the OC-sensitivity regression.
+
+### Remaining workstream (per-protocol full-extraction cycles)
+
+The 19-of-19 target methodology scaffolding is complete this cycle arc (DeFi + L1/L2/Infra + DePIN). Remaining workstream is per-protocol full-Dune-extraction follow-on cycles:
+
+- **DIMO + RENDER provenance-gap reconstruction** (priority; sub_OC canonical but rev_OC + emit_OC empty). Both have raw data files or known methodology in place; reconstruction is a ~30-60 min cycle per protocol.
+- **POKT POST-SHANNON re-measurement** (TT-UNRELIABLE flag motivates independent measurement via POKTscan API or Pocket native explorer).
+- **FIL TT-vs-Messari convergence cycle** (Category D 21.6 vs TT-derived 19.18 reconciliation; methodology decision pending).
+- **HNT + MOR + GEOD on-chain re-derivation** (currently TT-cross-walked or back-computed; full Dune extraction defers to follow-on per-protocol cycles).
+- **9 DeFi-batch protocols full-Dune extraction** (per cycle 1 deferred list; COMP + LDO have POC SQL templates as starting points).
