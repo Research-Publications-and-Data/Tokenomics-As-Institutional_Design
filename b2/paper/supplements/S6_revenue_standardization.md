@@ -136,3 +136,55 @@ net-inflationary under both pipelines (subsidy ratio greater than one).
 conventions for all affected protocols. The headline subsidy multivariate Spec
 4 result (subsidy beta = 0.000067, p = 0.88; DePIN dummy beta = 0.038, p = 0.004
 under N = 22 without Livepeer) is unchanged by this convention restoration.
+
+## DeFi sector batch raw-OC population (2026-05-19 follow-on cycle)
+
+Per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` (Task #13 from
+DEC-167 multi-cycle workstream), the DeFi sector batch (10 protocols) has been
+populated this cycle. Provenance class for the batch: TT-equivalent-documented
+(see workflow clone `research_content/papers/B2_governance_concentration/supplements/raw_oc/INDEX.md`
+for the full provenance class taxonomy).
+
+The DeFi-batch protocols had `subsidy_ratio_onchain` populated pre-cycle with
+TT-aggregator values but `revenue_onchain_usd` and `emissions_onchain_usd`
+empty. This cycle populates rev_OC and emit_OC with the TT-aggregated values
+cross-walked to TT's underlying on-chain methodology (Token Terminal indexes
+the same on-chain fee accrual + emissions events; the "TT-sourced" label
+reflects TT as the aggregator surface, not a different data layer). Per-protocol
+methodology documentation: see workflow clone `supplements/raw_oc/<protocol>_methodology.md`.
+
+| Protocol | rev_OC (this cycle) | emit_OC (this cycle) | sub_OC | Provenance sub-class |
+|---|---:|---:|---:|---|
+| COMP | 4,883,808 | 5,545,006 | 1.135 | Dune POC verified |
+| MKR | 349,334,678 | 0 | 0.000 | trivial-emissions |
+| AAVE | 135,365,014 | 50,181,033 | 0.371 | multi-chain-aggregation |
+| UNI | 10,628,912 | 36,533,248 | 3.437 | fee-switch-inactive |
+| CRV | 30,717,717 | 70,500,548 | 2.295 | gauge-emissions complex |
+| MPL_SYRUP | 13,280,708 | 0 | 0.000 | trivial-emissions |
+| GMX | 28,797,066 | 175,054 | 0.006 | Arbitrum + Avalanche |
+| ETHFI | 49,226,494 | 11,794,199 | 0.240 | (default) |
+| LDO | 80,518,093 | 6,131,082 | 0.076 | Dune POC verified |
+| HYPE | 780,000,000 | 0 | 0.001 | on-chain-direct (pre-cycle; Assistance Fund) |
+
+**Substantive impact on regression: none.** The subsidy multivariate uses
+sub_TT for all 23 protocols by default; sub_OC sensitivity (per
+`subsidy_multivariate_oc_sensitivity_2026-05-19.py`) gives Spec 4 subsidy
+p = 0.96 (essentially identical to TT-preferred p = 0.88). The DeFi-batch
+population brings rev_OC + emit_OC field replicability (so the field name is
+no longer hazardous per DEC-167) without changing the regression result.
+
+**Remaining workstream (deferred to follow-on cycles).** The L1/L2/Infra batch
+(GRT, OP, POL, POKT, FIL) and DePIN batch (DIMO, HNT/HONEY-on-Solana,
+GEOD, RENDER, MOR) are deferred to subsequent per-sector cycles per the
+multi-cycle workstream pattern in DEC-167. These 8 protocols (HNT/HONEY already
+documented in `hivemapper_holder_data_2026-05-19.md` for the related HONEY
+concentration analysis) retain empty rev_OC + emit_OC fields pending follow-on
+extraction; their sub_OC values remain populated with pre-cycle TT-equivalent
+values pending convention-aware refresh.
+
+**Full Dune extraction (deferred to per-protocol cycles).** The DeFi-batch
+methodology MDs document indicative Dune SQL templates per protocol; full
+multi-chain / multi-contract aggregation execution is deferred. Per-protocol
+follow-on cycles can execute the templates and replace the rev_OC + emit_OC
+values with genuine raw-OC extractions; the methodology MDs anchor each
+protocol's TT-vs-OC cross-walk for cross-cycle continuity.
