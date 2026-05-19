@@ -83,10 +83,14 @@ def main():
                 rev_source = "none"
             sub_tt = _f(r.get("subsidy_ratio"))
             sub_oc = _f(r.get("subsidy_ratio_onchain"))
-            if not np.isnan(sub_tt) and sub_tt > 0:
+            # Note: subsidy_ratio = 0 is meaningful (zero emissions per dollar
+            # of revenue; protocols with no protocol-level emissions like
+            # MakerDAO Surplus Auction, Arbitrum fixed-supply, Maple buyback).
+            # Only treat NaN as missing data.
+            if not np.isnan(sub_tt):
                 sub = sub_tt
                 sub_source = "TT"
-            elif not np.isnan(sub_oc) and sub_oc > 0:
+            elif not np.isnan(sub_oc):
                 sub = sub_oc
                 sub_source = "on-chain"
             else:
@@ -181,7 +185,10 @@ def main():
                 print(f"    N={res['N']}, Pearson r = {res['pearson_r']:+.3f} (p = {res['pearson_p']:.4f}) {sig_p}; Spearman rho = {res['spearman_rho']:+.3f} (p = {res['spearman_p']:.4f}) {sig_s}")
 
     # Burn-active vs subsidizing subset analysis (subsidy_ratio < 1 vs >= 1)
-    burn_active = [r for r in records if not np.isnan(r["subsidy_ratio"]) and 0 < r["subsidy_ratio"] < 1]
+    # Note: subsidy_ratio = 0 is included as the MAXIMALLY net-deflationary case
+    # (zero emissions per dollar of revenue; e.g., MakerDAO MKR Surplus Auction,
+    # Arbitrum fixed-supply ARB, Maple Finance SYRUP buyback).
+    burn_active = [r for r in records if not np.isnan(r["subsidy_ratio"]) and r["subsidy_ratio"] < 1]
     subsidizing = [r for r in records if not np.isnan(r["subsidy_ratio"]) and r["subsidy_ratio"] >= 1]
     print(f"\n=== Burn-active vs subsidizing subset (Mann-Whitney) ===")
     print(f"Net deflationary (subsidy_ratio < 1): N = {len(burn_active)}")
