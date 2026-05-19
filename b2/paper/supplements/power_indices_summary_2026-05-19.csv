@@ -1,0 +1,6 @@
+protocol,source,voting_hhi,voting_top1_pct,shapley_shubik_top1,shapley_shubik_hhi
+AAVE,tally,0.0755,21.91,0.2671,0.0978
+ARB,tally,0.0355,10.40,0.1135,0.0375
+COMP,tally,0.0387,11.80,0.1275,0.0431
+OP,tally,0.0330,10.03,0.1060,0.0347
+UNI,tally,0.0271,6.80,0.0699,0.0279

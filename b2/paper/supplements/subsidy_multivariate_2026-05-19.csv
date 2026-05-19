@@ -1,0 +1,5 @@
+spec,N,subsidy_beta,subsidy_t,subsidy_p,depin_beta,depin_t,depin_p,adj_r2
+1. Subsidy only (all),22,0.001579,2.160,0.0308,,,,0.3554
+2. Subsidy only (no LPT),21,0.001073,0.479,0.6322,,,,0.0499
+3. Subsidy + DePIN (all),22,0.001384,2.449,0.0143,0.045844,2.559,0.0105,0.5149
+4. Subsidy + DePIN (no LPT),21,0.001013,0.591,0.5546,0.044711,2.142,0.0322,0.2767
