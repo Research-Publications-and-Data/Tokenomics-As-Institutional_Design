@@ -2,6 +2,64 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.3.0-frontiers-r3-prep-dimo-path-b] — 2026-05-24
+
+### DIMO Path B canonical methodology adoption (DEC-194; cycle 5 Phase A)
+
+Workflow-clone DEC-194 codification: DIMO rev_OC + sub_OC Path B canonical selection per cycle 5 max-effort Phase A investigation. Foundation dashboard 159676 protocol-wallet inflow methodology adopted (wallet `0x62b98e019e0d3e4A1Ad8C786202e09017Bd995e1`; GnosisSafeL2 multisig; created 2024-06-21; verified via Blockscout on Polygon chain_id=137); supersedes cycle 3 burn-to-dead alternative-mechanism inference.
+
+**Replication-clone CSV refresh:**
+- `data/processed/regression_data_april2026.csv` DIMO row update:
+  - rev_OC: 7,667,597.7 (cycle 3 dead-burn) → 510,045.0 (Foundation dashboard 159676 protocol-wallet inflow TTM Q1 2026; Dune MCP direct query 4219993 execution; 29.9 credits)
+  - emit_OC: 2,570,643.27 PRESERVED (cycle 3 mints-from-null methodology valid; 51M DIMO TTM Q1 2026 baseline weekly issuance approximately 1.1M DIMO/week × 52 weeks = 57.2M DIMO/year theoretical max)
+  - sub_OC: 0.335 → 5.04 (15x shift)
+  - revenue_source_onchain: `on_chain_direct_license_burn_dune_extracted_2026-05-19` → `foundation_dashboard_159676_dcx_purchase_wallet_inflow_path_b_2026-05-24`
+
+**Material reclassification:** DIMO moves from net-deflationary subset (sub_OC = 0.335 cycle 3 / pre-cycle) to subsidy-heavy subset (sub_OC = 5.04 Path B canonical; adjacent to RENDER 9.83 and post-DEC-172 GEODNET 4.51). Analogous to GEODNET DEC-172 cycle 4 1.61 to 4.51 methodology shift.
+
+**Methodology divergence summary:**
+- Cycle 3 query 7541442 (`to IN (0x0...0000, 0x0...dEaD)`): 167M DIMO / $7,667,597 TTM Q1 2026 = supply-removal events dominated by Polygon-to-Base supply migration burns + Foundation treasury burns (NOT operating revenue)
+- Foundation methodology query 4219993 (`to = 0x62b98...`): 12.09M DIMO / $510,045 TTM Q1 2026 = DCX-purchase + Developer-License inflows per DIP-3 marketplace issuance framework
+- Divergence ratio: 13.8x token count, 15.0x USD value
+- Cross-check: all-time Foundation revenue cumulative through May 2026 is only ~15.5M DIMO / $852K USD; cycle 3 single-TTM 167M cannot be revenue if all-time revenue is only ~9% of cycle 3 single-TTM figure
+
+**HALT-B Spec 4 verification (PASS; convention-invariance preserved):**
+- TT-preferred Spec 4 (no Livepeer; N = 22): subsidy_p = 0.9949 (pre-DEC-194 0.9161; delta +0.079); DePIN_p = 0.0050 (pre-DEC-194 0.0044; delta +0.0006); Adj R² = 0.259
+- OC-sensitivity Spec 4 (no Livepeer; N = 22): subsidy_p = 0.8480 (pre-DEC-194 0.9300; delta -0.082); DePIN_p = 0.0063 (pre-DEC-194 0.0065; delta -0.0002); Adj R² = 0.261
+
+Both specifications preserve the headline finding: subsidy coefficient remains non-significant under sector control; DePIN sector dummy continues to absorb the apparent subsidy-HHI association. The DIMO sub_OC shift (15x) is methodology-significant for per-protocol reclassification but finding-stable at multivariate-headline layer. Per DEC-167 convention-invariance preserved across cycles 1-3 baseline (TT p ≈ 0.92 / OC p ≈ 0.93) + post-DEC-172 GEODNET Path B (TT 0.9161 / OC 0.9300) + post-DEC-194 DIMO Path B (TT 0.9949 / OC 0.8480); three-cycle robustness signal.
+
+**Six reasons for Path B over Path A (cycle 3 dead-burn $7.67M; sub_OC = 0.335; rejected) and Path C (refined cycle 3 with bridge-out exclusion; sub_OC ≈ 0.43-0.56; rejected):**
+1. Project-canonical (Foundation dashboard 159676 IS the canonical revenue surface; dashboard title explicitly distinguishes "Protocol Revenue" from "Out of Circulation" which is staking-dominated)
+2. Foundation-aligned + address-verified (Foundation wallet `0x62b98e019e0d3e4A1Ad8C786202e09017Bd995e1` verified via Blockscout; Foundation query SQL inspection confirms address usage)
+3. Within-protocol methodology symmetry (both rev_OC + emit_OC direct on-chain measurements; no back-computation; no proxy estimates; no mechanism inference)
+4. Cross-protocol consistency with DEC-172 GEODNET precedent (project-canonical revenue methodology supersedes alternative-mechanism queries; DEC-172 "burn-to-dead methodology symmetry" reasoning recalibrated to "project-canonical operating-revenue mechanism per project")
+5. Reflects true economic state ($510K DCX-purchase revenue against $2.57M baseline issuance is genuinely subsidy-heavy ramp-phase economy; Path A would make DIMO appear 23x deflationary by counting supply-migration burns as revenue)
+6. Migration-immune by design (Foundation wallet structurally immune to Polygon-to-Base migration contamination; cannot receive bridge-migration burns which route to zero address `0x0...0000`)
+
+**Workflow-clone canonical state cascade (commits `999ab3a5` + `77d1ff5e`):**
+- `docs/DECISION_LOG.md` DEC-194 added
+- `docs/ERROR_CORRECTION_LOG.md` NEW EC-2026-05-24-B2-DIMO-Methodology-Shift-Path-B-Canonical (PATTERN; direct-Foundation-measurement-supersedes-alternative-mechanism-burn-to-dead-inference sub-class; 2-of-N strict per DEC-107 cross-protocol applicability confirmed; sister to EC-2026-05-19-B2-GEOD-Methodology-Shift-Path-B-Canonical)
+- `docs/KEY_FINDINGS.md` F-B2-11 cycle 5 Path B status note + F-B2-12 cycle 5 refinement insight #6 (Foundation-dashboard-supersedes-burn-to-dead-inference; methodology-of-record extension; sister to insight #3 Custom Reward Distributor Detection Class)
+- `docs/KNOWN_UNKNOWNS.md` 4 KU status-appends (3 DIMO RESOLVED + 1 POKT PARTIAL)
+- `docs/PROGRAM_STATE.md` Session Changes block
+- `docs/VERSION_HISTORY.md` R3_Prep_Phase_A_Path_B_Cascade row
+- `research_content/papers/B2_governance_concentration/PAPER.md` §3.4 substantive prose cascade (3 surfaces: abstract null-pattern reframe + §3.4 enumeration audit-trail + §3.4 paragraph-end DEC-194 cascade note)
+- `research_content/papers/B2_governance_concentration/supplements/raw_oc/DIMO_methodology.md` Cycle 5 Path B canonical subsection
+- `research_content/papers/B2_governance_concentration/supplements/raw_oc/POKT_methodology.md` §3.1-§3.4 Shannon transition extension
+- `.cursor/tasks/Living_File_Updates_2026-05-24_0714_B2_Phase_A_POKT_DIMO_Findings.md` (261 lines; HIGH-confidence Path B recommendation; LFU source memo)
+
+**Replication-clone Tier 3 files this cycle:**
+- `data/processed/regression_data_april2026.csv` (DIMO row update)
+- `data/processed/regression_data_april2026.csv.pre_dimo_path_b_2026-05-24` (backup)
+- `b2/paper/supplements/subsidy_multivariate_2026-05-19.csv` (Spec 1-4 output regenerated with DIMO sub_OC = 5.04)
+- `b2/paper/supplements/halt_b_verification_dimo_path_b_2026-05-24.md` (verification memo this cycle)
+- `CHANGELOG.md` (this section)
+
+Per author "Execute tier 3. R3 authorized" directive 2026-05-24 (AUTHOR-DIRECT lane authorization; CSV refresh + multivariate regression rerun executed in single replication-clone session per BULK-EXECUTOR delegation).
+
+---
+
 ## [1.2.0-frontiers-r2-revision] — 2026-05-17 (initial) / 2026-05-18 (calibration + methodology fix + Lido recompute) / 2026-05-19 (Table 7 cascade + Table-4-prose cascade + HHI inflation factor recompute)
 
 ### HHI inflation factor recompute (2026-05-19, GC-2 closure)
