@@ -2,6 +2,84 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.4.0-frontiers-r3-prep-cycle-5-multi-protocol] — 2026-05-24
+
+### Cycle 5 cumulative multi-protocol Path B cascade (DEC-195 + DEC-196; HNT + LPT preserved)
+
+Workflow-clone canonical-state cascade per workflow commits `999ab3a5` (Phase A DIMO + POKT) + `77d1ff5e` (DEC-194 DIMO Tier 1+2) + `40e27f23` (Phase B cycle 5 synthesis LFU + 4 methodology MDs). Per author "Apply all 4 in single coordinated cascade" directive 2026-05-24 (AskUserQuestion); Dune quota raised 4000 to 6000 per author authorization 2026-05-24T08:30Z.
+
+**Replication-clone CSV refresh (data/processed/regression_data_april2026.csv):**
+
+| Protocol | Cycle 3 | Cycle 5 Path B | Methodology |
+|---|---:|---:|---|
+| MOR | sub_OC 1.63; rev_OC $8.82M; emit_OC $14.36M | sub_OC **13.84**; rev_OC $874,659; emit_OC $12,107,145 | Distribution.sol OverplusBridged + UserClaimed (DEC-195 candidate) |
+| FIL | sub_OC 21.6; rev_OC $2.88M; emit_OC $55.19M | sub_OC **46.05**; rev_OC $2,874,197; emit_OC $132,350,157 | Spacescope + Tokenomist (DEC-196 candidate; corrects TT emit_OC undercount) |
+| DIMO | sub_OC 0.335; rev_OC $7.67M; emit_OC $2.57M (cycle 3) | sub_OC **5.04**; rev_OC $510,045; emit_OC $2,570,643 (DEC-194; cycle 5 partial; shipped 2026-05-24 replication commit `729679d`) | Foundation dashboard 159676 wallet `0x62b98...` |
+| HNT | sub_OC 2.15 PRESERVED | sub_OC 2.15 PRESERVED | Path A precision-residual annotation only (KU acceptance criterion strictly met) |
+| LPT | sub_OC 88.5 PRESERVED | sub_OC 88.5 PRESERVED | Path A archeology-confirmed (commit `a31b69c` 2026-03-31 TicketBroker ETH-fees correction) |
+
+**Material reclassifications:**
+- DIMO + MOR cluster-flips: net-deflationary subset → subsidy-heavy subset
+- FIL within-cluster magnitude increase: 21.6 → 46.05 (subsidy-heavy preserved)
+- HNT + LPT preserved (no change)
+
+Subsidy-cluster composition post-cycle-5-cumulative:
+- LPT 88.5 (extreme outlier; load-bearing for Livepeer-driven null discussion per B2 §3.4 + §3.6 + §3.7)
+- FIL 46.05 (HIGH; post-DEC-196 Path B)
+- MOR 13.84 (HIGH; post-DEC-195 Path B)
+- RENDER 9.83
+- DIMO 5.04 (post-DEC-194)
+- GEODNET 4.51 (post-DEC-172)
+
+**HALT-B Spec 4 verification (PASS; convention-invariance preserved across 4 cumulative cycles):**
+
+| Cycle | TT Spec 4 subsidy_p | TT Spec 4 DePIN_p | OC Spec 4 subsidy_p | OC Spec 4 DePIN_p |
+|---|---:|---:|---:|---:|
+| Cycles 1-3 baseline | ~0.92 | (sig) | ~0.93 | (sig) |
+| Cycle 4 (DEC-172 GEODNET) | 0.9161 | 0.0044 | 0.9300 | 0.0065 |
+| Cycle 5 partial (DEC-194 DIMO) | 0.9949 | 0.0050 | 0.8480 | 0.0063 |
+| **Cycle 5 cumulative (DIMO + MOR + FIL)** | **0.9410** | **0.0068** | **0.4540** | **0.0048** |
+
+Across all 4 cycles: subsidy_p non-significant under sector control (all values p > 0.45); DePIN_p highly significant (all values p < 0.01). DePIN sector dummy continues to absorb the apparent subsidy-HHI association. 4-cycle convention-invariance robustness signal preserved per DEC-167 + DEC-107 4-of-4-strict promotion candidate.
+
+**Critical FIL finding (TT emit_OC undercount):** TT-reported $55.2M vs project-canonical Tokenomist + Spacescope $132.4M = 140% divergence. TT incentives field applies a vesting-discount filter inconsistent with full protocol-emissions definition (75% of FIL block rewards vest over 180 days per Filecoin spec). External anchors (Coinbase Institutional Tokenomics Review + Filecoin Docs cite "$120-130M/yr new supply") corroborate Tokenomist-derived figure within 1.8%. rev_OC cross-validated to 0.13% (Spacescope $2,874,197 matches TT $2,877,882 within $3,685).
+
+**Critical MOR finding (LayerZero OFT bridge contamination):** 96.3% of cycle 3 burns (5.25M of 5.45M MOR) were `oftSent` bridge-outs from Arbitrum to Base + Ethereum; 20.4% of cycle 3 mints (0.97M of 4.73M MOR) were `oftReceived` bridge-ins. Distribution.sol on Ethereum is canonical origin; OverplusBridged = canonical revenue event; UserClaimed = canonical emission event; LayerZero Relayer v2 mediates 1:1.
+
+**LPT archeology resolution:** commit `a31b69c` (2026-03-31; "Full revision: 42 exclusions, N=20 expansion, Livepeer $839K correction") proves pre-cycle canonical sub_OC = 88.5 IS the structurally-correct TicketBroker ETH-fees Path B methodology, deliberately codified in March 2026. KU's proposed Path B via bondingmanager_call_rewardwithhint had 3 structural defects (no _amount field; LPT burns NOT canonical revenue; chain framing inverted post-Arbitrum migration).
+
+**HNT precision-residual resolution:** Helium Foundation transformation views (`dune."helium-foundation".result_helium_dc_minted_hnt_burned_unparameterized`) yield rev_OC $12.90M / sub_OC 2.44 vs cycle 3 SPL $14.64M / 2.15. emit_OC delta -0.24% strictly meets KU acceptance criterion (within 10%). Cycle 3 SPL methodology IS canonical mechanism, just less precise (11.85% precision-residual scope difference; Foundation filters to `BurnDelegatedDataCreditsV0` instruction only; SPL includes admin/governance/tooling residue). Path A preserved.
+
+**Pattern 27 Mode B 3-of-N strict PROMOTION-ELIGIBLE per DEC-107:** Direct-canonical-Foundation-methodology-supersedes-alternative-mechanism-inference class:
+1. GEODNET cycle 4 (DEC-172): back-computation-vs-independent-measurement
+2. DIMO cycle 5 (DEC-194): wrong-mechanism-measured
+3. MOR cycle 5 (DEC-195 candidate): bridge-flow-not-protocol
+
+Sister 2-of-N strict multisig-treasury-burn class (DIMO Foundation treasury + MOR Morpheus DAO multisig + LPT discretionary Foundation/DAO burns) qualifies as promotion candidate.
+
+**Workflow-clone canonical state cascade (pending; this cycle replication-clone commit + workflow Tier 1+2 follow-on commit):**
+- docs/DECISION_LOG.md: DEC-195 (MOR Path B) + DEC-196 (FIL Path B); both sister to DEC-194
+- docs/ERROR_CORRECTION_LOG.md: EC-2026-05-24-B2-Cycle-5-Phase-B-Multi-Protocol-Methodology-Shift (or per-protocol ECs)
+- docs/KEY_FINDINGS.md: F-B2-11 MOR + FIL row updates; F-B2-12 cycle 5 refinement insights #6 + #7 + #8
+- docs/KNOWN_UNKNOWNS.md: 4 KU status-appends (HNT + LPT + MOR + FIL)
+- docs/PROGRAM_STATE.md: Session Changes block
+- docs/VERSION_HISTORY.md: R3_Prep_Phase_B_Cycle_5_Multi_Protocol_Cascade row
+- research_content/papers/B2_governance_concentration/PAPER.md: §3.4 cascade for MOR + FIL classification shifts
+
+**Replication-clone Tier 3 files this cycle:**
+- `data/processed/regression_data_april2026.csv` (MOR + FIL row updates)
+- `data/processed/regression_data_april2026.csv.pre_mor_fil_path_b_2026-05-24` (pre-cycle-5-cumulative backup)
+- `b2/paper/supplements/subsidy_multivariate_2026-05-19.csv` (Spec 1-4 output regenerated)
+- `b2/paper/supplements/halt_b_verification_multi_protocol_cycle_5_2026-05-24.md` (this verification memo)
+- `CHANGELOG.md` (this section)
+- `CITATION.cff` (version bump 1.3.0 → 1.4.0)
+
+Per author 2026-05-24 directives: "Execute tier 3. R3 authorized" + "Do not push to public repo yet" + "We can go to 6000 dune credits" + "Continue: full Tier 1+2 + Tier 3 cascade this session" (AskUserQuestion).
+
+NOT pushed to origin per ongoing author hold (pending author authorization for push to Research-Publications-and-Data/Tokenomics-As-Institutional_Design).
+
+---
+
 ## [1.3.0-frontiers-r3-prep-dimo-path-b] — 2026-05-24
 
 ### DIMO Path B canonical methodology adoption (DEC-194; cycle 5 Phase A)
