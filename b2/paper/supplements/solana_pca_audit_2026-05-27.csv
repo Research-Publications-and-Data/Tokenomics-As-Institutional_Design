@@ -1,0 +1,10 @@
+protocol,token,status,n_holders,n_existing_exclusions,hhi_pre_exclusion,hhi_post_existing_exclusion,hhi_shift
+Jupiter,JUP,OK,1000,1,0.116578,0.095708,-0.020870
+Drift,DRIFT,OK,1000,1,0.101134,0.052914,-0.048220
+Helium,HNT,OK,1000,1,0.102402,0.074465,-0.027937
+Hivemapper,HONEY,OK,100,1,0.022484,0.022774,+0.000290
+MetaDAO,META,OK,1000,1,0.048249,0.015176,-0.033073
+io.net,IO,MISSING_HOLDER_FILE,,,,,
+Grass,GRASS,OK,1000,0,0.035201,0.035201,+0.000000
+Render (Solana),RENDER_SOL,OK,549,0,0.070342,0.070341,-0.000001
+Wormhole,W,OK,1000,1,0.014927,0.011532,-0.003395
