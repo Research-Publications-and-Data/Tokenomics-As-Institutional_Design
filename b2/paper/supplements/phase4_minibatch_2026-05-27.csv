@@ -1,0 +1,6 @@
+symbol,sector,chain,n_holders,top1_pct,top10_pct,hhi_pre_exclusion,status,notes
+FXS,DeFi,ethereum,500,48.86,79.97,0.267936,PRE-EXCLUSION,PCA classification pending
+SNX,DeFi,ethereum,500,38.74,69.59,0.170104,PRE-EXCLUSION,PCA classification pending
+GNO,DeFi,ethereum,500,38.73,95.89,0.273346,PRE-EXCLUSION,PCA classification pending
+TAO,DePIN,bittensor,0,38.73,95.89,0.273346,PRE-EXCLUSION,TAOSTATS API; balance_total includes staked; PCA classification pending
+DOT,L1,polkadot,,,,,GAP,Subscan API or Polkadot.js custom query required
