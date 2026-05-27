@@ -1,0 +1,537 @@
+{
+  "polkawatch_operators_total": 147,
+  "polkawatch_validators_total": 353,
+  "matched_operators_count": 66,
+  "matched_validators_count": 67,
+  "by_operator": {
+    "Figment 4": {
+      "matched_addrs": [
+        "15twfAkh6TKdNpE7kNgxcQSRYtSpt3QpgjxmR6HKHFGs6Yrz"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621552.7842798964,
+      "class": "Institutional"
+    },
+    "Figment 3": {
+      "matched_addrs": [
+        "15tsaRbwLLBHst5chP1pVkQHc5n2JS4DcapFdhCnqJMZebda"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621534.9351838501,
+      "class": "Institutional"
+    },
+    "Figment 1": {
+      "matched_addrs": [
+        "12YFWxpS32wTZq4HcH28HMR5atkGhxzfD7aNjhTCu5Vyz9J9"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621527.2517080451,
+      "class": "Institutional"
+    },
+    "Figment 7": {
+      "matched_addrs": [
+        "16kzYodFWy43sVGFKGnpDK8T3P8F9NhyMKqWNFfeFVN4XT9K"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621521.727261307,
+      "class": "Institutional"
+    },
+    "Figment 5": {
+      "matched_addrs": [
+        "16fcR1ercimd6qyBVQyXTTjtWL1kosTS1myiSuVf7kxutxvg"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621496.5564364486,
+      "class": "Institutional"
+    },
+    "Figment 2": {
+      "matched_addrs": [
+        "12doSHUJN1P6HL9zj96Bh2ZwVBXH7NcCi78caVtte8aQWGHz"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621495.5624364393,
+      "class": "Institutional"
+    },
+    "Figment 8": {
+      "matched_addrs": [
+        "1RhqvtG4SS6ooc3JELk8kpTaDiLP9f92jdyR5p5efPWVsx1"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1621493.7268478754,
+      "class": "Institutional"
+    },
+    "Luganodes": {
+      "matched_addrs": [
+        "1vTaLKEyj2Wn9xEkUGixBkVXJAd4pzDgXzz9CuVjhVqhHRQ"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1555122.9224941116,
+      "class": "Institutional"
+    },
+    "ProStakers.com": {
+      "matched_addrs": [
+        "12R2eXcE2QhMa9BkMsWktt9wmoxbgiQBDG9YUM1p94r2F5UD"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469989.9607668524,
+      "class": "Independent_or_Community"
+    },
+    "Nodeasy": {
+      "matched_addrs": [
+        "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469639.9822771782,
+      "class": "Independent_or_Community"
+    },
+    "GTSTAKING": {
+      "matched_addrs": [
+        "16YwUZyLdeAoe4KmhivGwuuJpBH1US4qkUtXK2V83MVXUy6x"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469331.830034769,
+      "class": "Independent_or_Community"
+    },
+    "RockX_Polkadot3": {
+      "matched_addrs": [
+        "14N5GT7YTaDBSsLpfxxtCxNdYfgDofGj5wQSfqC1URKHdT8C"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469323.8200820896,
+      "class": "Institutional"
+    },
+    "Mile": {
+      "matched_addrs": [
+        "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469299.8067464994,
+      "class": "Independent_or_Community"
+    },
+    "Staker Space": {
+      "matched_addrs": [
+        "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469283.2403251678,
+      "class": "Independent_or_Community"
+    },
+    "Coinstudio": {
+      "matched_addrs": [
+        "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469280.2242394418,
+      "class": "Independent_or_Community"
+    },
+    "Tesla": {
+      "matched_addrs": [
+        "15tfUt4iQNjMyhZiJGBf4EpETE2KqtW1nfJwbBT1MvWjvcK9"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469278.7956488898,
+      "class": "Independent_or_Community"
+    },
+    "Stampede": {
+      "matched_addrs": [
+        "16ccn3xe5tAeR8kvzCRTcqHZjMJHvuF2pnLfTqyF1EmMusCU"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469276.664921085,
+      "class": "Independent_or_Community"
+    },
+    "Zug Capital": {
+      "matched_addrs": [
+        "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469273.2057846533,
+      "class": "Institutional_VC"
+    },
+    "Cypher Labs": {
+      "matched_addrs": [
+        "16Jh21ThTh2tW98NuN2gM7Q3KaYiuJLbxCNbuBkFpwcDkRqx"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469272.5981595449,
+      "class": "Institutional_VC"
+    },
+    "HODL.FARM": {
+      "matched_addrs": [
+        "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469271.3192017935,
+      "class": "Independent_or_Community"
+    },
+    "YellowFin Tuna": {
+      "matched_addrs": [
+        "12MgK2Sc8Rrh6DXS2gDrt7fWJ24eGeVb23NALbZLMw1grnkL"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469270.7582539525,
+      "class": "Independent_or_Community"
+    },
+    "Meria": {
+      "matched_addrs": [
+        "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469270.756490555,
+      "class": "Independent_or_Community"
+    },
+    "P2P.ORG": {
+      "matched_addrs": [
+        "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469270.3029947088,
+      "class": "Institutional"
+    },
+    "POLKACHU.COM": {
+      "matched_addrs": [
+        "15ym3MDSG4WPABNoEtx2rAzBB1EYWJDWbWYpNg1BwuWRAQcY"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469269.5188647283,
+      "class": "Institutional"
+    },
+    "WDMASTER": {
+      "matched_addrs": [
+        "14PkBX3BUF71wDh44BLeNby2u7X9ZBu36V28LMcBrdK35yC2"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469268.8623086421,
+      "class": "Independent_or_Community"
+    },
+    "Dionysus": {
+      "matched_addrs": [
+        "12CJw9KNkC7FzVVg3dvny4PWHjjkvdyM17mmNfXyfucp8JfM"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469268.7344464122,
+      "class": "Independent_or_Community"
+    },
+    "COSMOON": {
+      "matched_addrs": [
+        "15CosmEmAfQAhnxwan18e5TueAe6bDzrqqxg13dToDWr7A8M"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469263.4097080508,
+      "class": "Independent_or_Community"
+    },
+    "Sik | crifferent.de": {
+      "matched_addrs": [
+        "15wepZh1jWNqxBjsgErm8HmYiE21n79c5krQJeTsYAjHddeM"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469248.8250936437,
+      "class": "Independent_or_Community"
+    },
+    "CP287-CLOUDWALK": {
+      "matched_addrs": [
+        "16GDRhRYxk42paoK6TfHAqWej8PdDDUwdDazjv4bAn4KGNeb"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469248.5047548169,
+      "class": "Independent_or_Community"
+    },
+    "stateless_money": {
+      "matched_addrs": [
+        "12713bbq45c66CN9AD7yusSXWE1kY91DcMpjVcB2rXqZKy2w"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469246.0853775323,
+      "class": "Independent_or_Community"
+    },
+    "Kraken01": {
+      "matched_addrs": [
+        "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469244.0193399345,
+      "class": "CEX"
+    },
+    "Sio34": {
+      "matched_addrs": [
+        "16DJbUVKFJp6igLoDxCTPesE2DMgMmiawLXG9jsGpYNTshxt"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469242.1586600507,
+      "class": "Independent_or_Community"
+    },
+    "Swiss Bond": {
+      "matched_addrs": [
+        "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469241.4854235672,
+      "class": "Independent_or_Community"
+    },
+    "Zetetic Validator": {
+      "matched_addrs": [
+        "152cdecr7tagcB2t63dvjBnxV5j7YDW8PpbfX7orXj6ZQFWG"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469241.418933368,
+      "class": "Independent_or_Community"
+    },
+    "dakkk": {
+      "matched_addrs": [
+        "12iqwZGB2sguEhjFi2ZRuWWixU8mHJnSiP1pwDefqGsBy4rV"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469231.974841797,
+      "class": "Independent_or_Community"
+    },
+    "GuruStaking": {
+      "matched_addrs": [
+        "138tCNoHg9QbhjqanRS7R8ZC8547A6CdaSmrCtJCRLpjQk6r"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469230.943226269,
+      "class": "Independent_or_Community"
+    },
+    "SNZPool": {
+      "matched_addrs": [
+        "15fU523Wq5BCt2NWAmrCU6p8nFB29uVifeG7bwYJHbw5Mmd9"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469226.8741429916,
+      "class": "Independent_or_Community"
+    },
+    "Hsinchu": {
+      "matched_addrs": [
+        "16SDUqoRr6f8DAyKhYWvo9dwFPdJHeFXFr1may1vhomqqPTQ"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469225.8653184173,
+      "class": "Independent_or_Community"
+    },
+    "COSMOTRON": {
+      "matched_addrs": [
+        "16KjnbCmBXqT3R956sHak7THsgQZ9Ek8ibnG1sFyCNtfJ8y"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469222.3947291265,
+      "class": "Independent_or_Community"
+    },
+    "Titan Nodes": {
+      "matched_addrs": [
+        "1NebF2xZHb4TJJpiqZZ3reeTo8dZov6LZ49qZqcHHbsmHfo"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469220.3999682872,
+      "class": "Independent_or_Community"
+    },
+    "VF Validierung": {
+      "matched_addrs": [
+        "15x643ScnbVQM3zGcyRw3qVtaCoddmAfDv5LZVfU8fNxkVaR"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469207.5116375913,
+      "class": "Independent_or_Community"
+    },
+    "Stakebaby": {
+      "matched_addrs": [
+        "168CakdikhdJAyNkDqaPMontvC5k14xVjc2dbGeGyGCbkHzo"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469201.2718543436,
+      "class": "Independent_or_Community"
+    },
+    "SAXEMBERG": {
+      "matched_addrs": [
+        "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469197.0448506058,
+      "class": "Independent_or_Community"
+    },
+    "GameTheory": {
+      "matched_addrs": [
+        "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469194.892794642,
+      "class": "Independent_or_Community"
+    },
+    "Blockseeker.io": {
+      "matched_addrs": [
+        "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469185.3007189094,
+      "class": "Independent_or_Community"
+    },
+    "LEGEND": {
+      "matched_addrs": [
+        "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469178.6712210502,
+      "class": "Independent_or_Community"
+    },
+    "cryptostake.com": {
+      "matched_addrs": [
+        "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469162.9269447485,
+      "class": "Independent_or_Community"
+    },
+    "hirish": {
+      "matched_addrs": [
+        "1627VVB5gtHiseCV8ZdffF7P3bWrLMkU92Q6u3LsG8tGuB63"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469160.8457224527,
+      "class": "Independent_or_Community"
+    },
+    "ANAMIX": {
+      "matched_addrs": [
+        "15kkg1mK1tCGgqqo3c1CghtKCQsBEAPPjYNNmmRT3r29FeRX"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469158.7296434722,
+      "class": "Independent_or_Community"
+    },
+    "DOZENODES.COM": {
+      "matched_addrs": [
+        "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1469121.2760435054,
+      "class": "Independent_or_Community"
+    },
+    "RockX_Polkadot": {
+      "matched_addrs": [
+        "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1453837.8102031609,
+      "class": "Institutional"
+    },
+    "prematurata": {
+      "matched_addrs": [
+        "155tk9HmeJGsNZtA5LFasSCGZCdpAb2P2Gs6ej9JeP38sAww"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1421971.6397141581,
+      "class": "Independent_or_Community"
+    },
+    "Grimface": {
+      "matched_addrs": [
+        "14i61mrUnaYZZD19v9uZ7MPudxNGP84SNEitammFPNuFArkA"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1357112.8474836203,
+      "class": "Independent_or_Community"
+    },
+    "Taichung": {
+      "matched_addrs": [
+        "16iiKwFsRKRsjAiEpD4zgNgEX84nzHtHHNFKXhz1sHtan3ne"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1357087.8573468046,
+      "class": "Independent_or_Community"
+    },
+    "SenseiNode": {
+      "matched_addrs": [
+        "147sNiboCGb2B4TCBwKW3vz8faCx9fh9kQsxRjvLyjJmduZE"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1357070.8003110618,
+      "class": "Institutional"
+    },
+    "Animoca Brands": {
+      "matched_addrs": [
+        "14Xh6ffkMALKBVAmFwgSwnrU1D5ufQAUa1o2sZ54dGuGfDY2"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1357057.8781227195,
+      "class": "Institutional_VC"
+    },
+    "helixstreet.foundation": {
+      "matched_addrs": [
+        "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1356983.6497967448,
+      "class": "Independent_or_Community"
+    },
+    "KOLKADOT.COM": {
+      "matched_addrs": [
+        "16RfWatcKzDUqYyGKifUhHDcossWumW7bkyiX9fEMN77WKA"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1353541.0802711924,
+      "class": "Independent_or_Community"
+    },
+    "NEWDEAL": {
+      "matched_addrs": [
+        "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1350544.4979459478,
+      "class": "Independent_or_Community"
+    },
+    "P2P STAKING": {
+      "matched_addrs": [
+        "13S541dQ5NXFCxSBqFUFghkCfUU6LsZUVem7z2tfvsJwWFys"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1350349.1032080348,
+      "class": "Institutional"
+    },
+    "ChainSafe-Polkadot-Validator": {
+      "matched_addrs": [
+        "149AnEATtGViYqvJ5EqRMt1BkrJo88GUAdmiG9RuvMz8CKUk",
+        "15ASn2hhzYBquxFNMf2dF2kKLrgkijGUYqbYeLSuLHX6zLyQ"
+      ],
+      "matched_count": 2,
+      "stake_dot": 2700017.0145451184,
+      "class": "Institutional"
+    },
+    "Bodhi-Validator": {
+      "matched_addrs": [
+        "16AUtxRZDD8cVKwBQBTdsnFgWrnyvi6AJgmQYN91PhYAKJjX"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1350024.7424594185,
+      "class": "Independent_or_Community"
+    },
+    "openbitlab": {
+      "matched_addrs": [
+        "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1350009.4561252368,
+      "class": "Independent_or_Community"
+    },
+    "VALIDEXIS": {
+      "matched_addrs": [
+        "15DChmtG5ZsRgYR3sirKMEbPsxyvPSts2Fz9s9qaiu2eqKhY"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1350003.3265681595,
+      "class": "Independent_or_Community"
+    },
+    "ALESSIO": {
+      "matched_addrs": [
+        "16cdSZUq7kxq6mtoVMWmYXo62FnNGT9jzWjVRUg87CpL9pxP"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1349976.2325367015,
+      "class": "Independent_or_Community"
+    },
+    "deigenvektor.io": {
+      "matched_addrs": [
+        "1guBaaUmYpYPmsNmooQApqFmpmRHeaipb1CxoncMuiaqXGh"
+      ],
+      "matched_count": 1,
+      "stake_dot": 1349942.329535788,
+      "class": "Independent_or_Community"
+    }
+  }
+}
