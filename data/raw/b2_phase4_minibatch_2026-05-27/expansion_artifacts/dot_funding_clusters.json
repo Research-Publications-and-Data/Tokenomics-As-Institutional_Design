@@ -1,0 +1,504 @@
+{
+  "n_processed": 150,
+  "multi_funder_count": 45,
+  "top_funders": [
+    {
+      "funder": "14BsHGhfW3HuYRfcsfUo4AXFW4jRV3p2wRYBnax81bLhxuYT",
+      "validator_count": 19,
+      "validator_addresses": [
+        "15oKi7HoBQbwwdQc47k71q4sJJWnu5opn1pqoGx4NAEYZSHs",
+        "13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW",
+        "14AkAFBzukRhAFh1wyko1ZoNWnUyq7bY1XbjeTeCHimCzPU1",
+        "15qomv8YFTpHrbiJKicP4oXfxRDyG4XEHZH7jdfJScnw2xnV",
+        "12YP2b7L7gcHabZqE7vJMyF9eSZA9W68gnvb8BzTYx4MUxRo",
+        "1Wo6qcrh7wxc1kQY5nfixFuCAFuzkgiwau64SmrPXBE7vVf",
+        "1342iFZNrBfCP9VWxqt5p39LiHp2ynyq85Ww9K7R8w6BURps",
+        "12ud6X3HTfWmV6rYZxiFo6f6QEDc1FF74k91vF76AmCDMT4j",
+        "14Y626iStBUWcNtnmH97163BBJJ2f7jc1piGMZwEQfK3t8zw",
+        "134Bw4gHcAaHBYx6JVK91b1CeC9yWseVdZqyttpaN5zBHn43",
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK",
+        "13uW7auWPX9WAtqwkBx7yagb78PLcv8FAcPZEVCovbXoNJK4",
+        "11uMPbeaEDJhUxzU4ZfWW9VQEsryP9XqFcNRfPdYda6aFWJ",
+        "121gZtuuG6sq3BZp1UKg8oRLRZvp89SAYSxXypwDJjaSRJR5",
+        "12Z3Bhjn42TPXy5re2CiYz1fqMd21i2XyBLmbekbjLXrqVBV",
+        "16Zgx3vsge6VdLW8WYk6hCX1EqgRk61vnJuqZmoYMdwmX2iR",
+        "145Vw57NN3Y4tqFNidLTmkhaMLD4HPoRtU91vioXrKcTcirS",
+        "1737bipUqNUHYjUB5HCezyYqto5ZjFiMSXNAX8fWktnD5AS",
+        "16Sud9b5uUfUi1HXdfwb3drbYBZBLPVvdKuZhwxz2n7HR12M"
+      ],
+      "total_stake_funded_dot": 27916064.529865984
+    },
+    {
+      "funder": "15iuYWAyfBkVnLrQJNJ7YZURMXoDXypBSsomMZMoj2ib7k7P",
+      "validator_count": 16,
+      "validator_addresses": [
+        "15oKi7HoBQbwwdQc47k71q4sJJWnu5opn1pqoGx4NAEYZSHs",
+        "13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW",
+        "14AkAFBzukRhAFh1wyko1ZoNWnUyq7bY1XbjeTeCHimCzPU1",
+        "15qomv8YFTpHrbiJKicP4oXfxRDyG4XEHZH7jdfJScnw2xnV",
+        "12YP2b7L7gcHabZqE7vJMyF9eSZA9W68gnvb8BzTYx4MUxRo",
+        "1342iFZNrBfCP9VWxqt5p39LiHp2ynyq85Ww9K7R8w6BURps",
+        "12ud6X3HTfWmV6rYZxiFo6f6QEDc1FF74k91vF76AmCDMT4j",
+        "134Bw4gHcAaHBYx6JVK91b1CeC9yWseVdZqyttpaN5zBHn43",
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK",
+        "13uW7auWPX9WAtqwkBx7yagb78PLcv8FAcPZEVCovbXoNJK4",
+        "121gZtuuG6sq3BZp1UKg8oRLRZvp89SAYSxXypwDJjaSRJR5",
+        "12Z3Bhjn42TPXy5re2CiYz1fqMd21i2XyBLmbekbjLXrqVBV",
+        "16Zgx3vsge6VdLW8WYk6hCX1EqgRk61vnJuqZmoYMdwmX2iR",
+        "145Vw57NN3Y4tqFNidLTmkhaMLD4HPoRtU91vioXrKcTcirS",
+        "1737bipUqNUHYjUB5HCezyYqto5ZjFiMSXNAX8fWktnD5AS",
+        "16Sud9b5uUfUi1HXdfwb3drbYBZBLPVvdKuZhwxz2n7HR12M"
+      ],
+      "total_stake_funded_dot": 23508247.218217846
+    },
+    {
+      "funder": "14MceVAhD8moRWR3U3vLWBU5R9tqjSVWHA4sMfMuwSUPn3vb",
+      "validator_count": 15,
+      "validator_addresses": [
+        "14MvgGf3PzgsEmMBHxdqwQrfhEzsGhzPReATQdpLVpN6aK6U",
+        "14iffevcSjvG6NCP1CwLy8GLmigkS6saa7KjmWWTkUhXYp7R",
+        "15B9z922jSHotJZp3VR8B25nJHfFXwpYSkJF1DZPbZiscC3F",
+        "13TBraYSRLejaxxMqAYFQ87RNPoCy3c4LTE3Y7FKq4qcFEqf",
+        "16Cmm8ZrZMauz7nzKWQvrTu12qznK8z2D8EVeRBfNqzpz4FY",
+        "12gp3USksqBBrThp7G3QYJ2Nw3JR2azFxqYgsSch4NyPFgN5",
+        "14aCA6DHDyUKbPpE8JRp5pzhU2P2xgfj7BpKL1EY1EAonozr",
+        "13mscy5wfYAmDBgLoA43rkWGpR1PJApcGtXJt8NvtMcM9VAr",
+        "1535dDRXs8ga9CJeAMinCogZcEhpfrmm8cdJnhkVehbnedmb",
+        "12KYrnCDjdx1amhJfgmii5W1dGT1bgN4iMLy2r2BpX19XG1s",
+        "1iyDF3iHuNjTNuQS7XEqMSdvx4CrdaxK6kLhpMCBc9rKumm",
+        "155htNoLnXSr4wkQsBfv7S7pZq6ZUTnQnsjsTHGBiqCBiwoe",
+        "14VsdLMt7eH66aZFM13imSjFriYGU84bwPNZb99qNVhKuYSC",
+        "17T31HJzsoBFkwpje8CqvgUpFGSzAVR3NcaNxacknfHYopx",
+        "15MLn9YQaHZ4GMkhK3qXqR5iGGSdULyJ995ctjeBgFRseyi6"
+      ],
+      "total_stake_funded_dot": 22039461.416747443
+    },
+    {
+      "funder": "12wvz9PZswHrtqayJGmcRGKNT2znp4dehDDcaznvSFzfwW5K",
+      "validator_count": 9,
+      "validator_addresses": [
+        "15qtTjVnfFs1DqAbUJBX4N74k7mAbXiPwww8qiWFXbpUoB4y",
+        "1vP68Adjn7JW7brJJc89V7R4hAXPtJr3FzKuJF1qm6uyzWt",
+        "16M3oPL7NAsaDyumZs84XmjhYRPLKA8jbVN8N4FNECZ1KSKy",
+        "1QmHs5E9zGeJ2iGZMYoBdYKvNLfF316WGi7GvGtSruUJzW9",
+        "1y3bTaJiiTbyp8run4WG7XKrqZC7Zxw1AZVAeyNXj48ybhW",
+        "16iPkhcq851iaeuP8rZyN1oejneBGtSeQCbhyGMwkiwm7dBX",
+        "1KfeQgNt2h9mxB9eHqkr7rWrXjP3qPoZdnS65GYyyp99C8d",
+        "15wD8upZxRZijKkF7JZDdaaFXuRZJhFyYpFQC5j6FaZL5Pza",
+        "12HC5RsJcPRNhemZ1dixD2f4MWCQUFzem6YDNNrqS9jz9off"
+      ],
+      "total_stake_funded_dot": 14593762.249173053
+    },
+    {
+      "funder": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "validator_count": 9,
+      "validator_addresses": [
+        "16G8NDzxUeUbGiw2bFX3Wy7JwNEJz9U8B1smCFqqe4GPZbdN",
+        "16A1zLQ3KjMnxch1NAU44hoijFK3fHUjqb11bVgcHCfoj9z3",
+        "14g7XsFWsMpsPNkwQNhdHfsqKRehdRbpPLaGVTEhBe4Pt3Eu",
+        "1LMtHkfrADk7awSEFC45nyDKWxPu9cK796vtrf7Fu3NZQmB",
+        "12ZTDL5BPYrrPxLWZM2TEe3GckXm9rz86mDZSkRvWrXeJ3c1",
+        "12gkhA8JEz8ywmVj1tsVafSp9C4saKzSofgMwBJcmFJAGUVX",
+        "12ErBetb4FWp3992tXET1GtHrTW3TdhUXsnQd5zDuF9WaxYV",
+        "15QbBVsKoTnshpY7tvntziYYSTD2FyUR15xPiMdpkpJDUygh",
+        "1RJP5i7zuyBLtgGTMCD9oF8zQMTQvfc4zpKNsVxfvTKdHmr"
+      ],
+      "total_stake_funded_dot": 13224599.245458256
+    },
+    {
+      "funder": "14Dyrjcj2S8HfgTg32ViuMV3HB7A8vH7u5VspKXVavUXqiaf",
+      "validator_count": 9,
+      "validator_addresses": [
+        "13Q48Ep3PVpvXA1BeVcUhNJerLshsaeq4EdgPUHnemqJYmND",
+        "13iPW4pSokbEQWomqZhwsyrMWuNspt6R1YnuCHXqUVvFYM1H",
+        "15ciPs3xZsJd86WFoijPs365f7viqGnubZ14aa9fGavyWJoM",
+        "14bUYpiF2oxVpmXDnFxBipSi4m9zYBThMZoLpY8bRQrPQNG1",
+        "15FctDfqPsFubuXo6UpKMQdbdCC3XXdnHsRMZ3DN6ZKPLrSu",
+        "148CkH8YBzA1pbudK1bMo2zUMHZwbucBVH8s3utwTS687UiR",
+        "1ufRSF5gx9Q8hrYoj7KwpzQzDNqLJdbKrFwC6okxa5gtBRd",
+        "15a9ScnYeVfQGL9HQtTn3nkUY1DTB8LzEX391yZvFRzJZ9V7",
+        "1jqkeJhuoRudNTVL5dV1qZf8RQtyzcf6ZT4yyvUQbKFktr8"
+      ],
+      "total_stake_funded_dot": 13223671.606489811
+    },
+    {
+      "funder": "1nXBtBPt3PV35m7Dfgp32xXgrC9tm1Pw7Hk7MDuGAejvB7J",
+      "validator_count": 7,
+      "validator_addresses": [
+        "13REihPMQRbujGMrSUyCvWhg1Rrzuy2BAyXaRv4KXFyCsrMq",
+        "15drCUvFMiWvy1YfkU6xgENxRzmFXDaqQFpjUwR5nu11DHu3",
+        "1edsjLpqQ4QxtgLPP5xQiNNkjzKcXuaNmUQ6vc944J1jQAa",
+        "15XU7uzAP3nS7inBaWDNdZQXN8oXLnhkxUX7sink7HfxW752",
+        "16FCPBq8sa9CZvCRV3TPYtRBrES3dk1BVDaYiceTg2c99jsF",
+        "14v1KAyrm7LQJJvRpRP44qpf36uQWkRT1mzqUQzDY92r7BDa",
+        "14e6xD5f8MuyWqLNanZDqSGe9TEzNMn29namWpKBJBa5ukwJ"
+      ],
+      "total_stake_funded_dot": 12116434.181370465
+    },
+    {
+      "funder": "1346PqVgQuntdu4UFPbdSviidscuiiKbktGBv7ntSHVA7mcq",
+      "validator_count": 7,
+      "validator_addresses": [
+        "1zugcawsx74AgoC4wz2dMEVFVDNo7rVuTRjZMnfNp9T49po",
+        "1zugcacan4nrJ3HPBmiBgEn2XvRMbehqvmzSQXT3uLBDkh3",
+        "1zugcacYFxX3HveFpJVUShjfb3KyaomfVqMTFoxYuUWCdD8",
+        "1zugcag7cJVBtVRnFxv5Qftn7xKAnR6YJ9x4x3XLgGgmNnS",
+        "1zugcabTuN7rs1bFYb33gRemtg67i4Mvp1twW85nQKiwhwQ",
+        "1zugcaaABVRXtyepKmwNR4g5iH2NtTNVBz1McZ81p91uAm8",
+        "1zugcakrhr3ZR7q7B8WKuaZY5BjZAU43m79xEyhNQwLTFjb"
+      ],
+      "total_stake_funded_dot": 10284887.41627803
+    },
+    {
+      "funder": "1mndd9E8kssCxXDacCbKw3iwFQwdABiFrE8fVRKS5SeS4E4",
+      "validator_count": 5,
+      "validator_addresses": [
+        "13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW",
+        "1342iFZNrBfCP9VWxqt5p39LiHp2ynyq85Ww9K7R8w6BURps",
+        "12ud6X3HTfWmV6rYZxiFo6f6QEDc1FF74k91vF76AmCDMT4j",
+        "14bUYpiF2oxVpmXDnFxBipSi4m9zYBThMZoLpY8bRQrPQNG1",
+        "12Z3Bhjn42TPXy5re2CiYz1fqMd21i2XyBLmbekbjLXrqVBV"
+      ],
+      "total_stake_funded_dot": 7346370.577004727
+    },
+    {
+      "funder": "1qnJN7FViy3HZaxZK9tGAA71zxHSBeUweirKqCaox4t8GT7",
+      "validator_count": 5,
+      "validator_addresses": [
+        "15uCAG6qK9qdx3EG3kyb5TFn83PgFUSQEioUgA9GLTjMFfq",
+        "126RwaHn4MDekLWfUYfiqcVbiQHapwDSAT9vZZS15HLqfDJh",
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK",
+        "1KikY9PK1kYwawnGcERnzLbSi39cJyxMRW5iLNsg2nfjWiN",
+        "12H9FfSYdQ4GrKc7tdxK8U6DitAZMqfnhB8gtHwd2rpCiZfN"
+      ],
+      "total_stake_funded_dot": 7346356.376744109
+    },
+    {
+      "funder": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "validator_count": 5,
+      "validator_addresses": [
+        "13GFUpQkNonsMMiBuYK4pqGUkwnE5AojvtigR95ahiimMaBb",
+        "15XY7oJ99hVscy5jS3zUh5M3H6sxfccovyTVCPt15DuXCRAF",
+        "15cow6Uoq1KtBvyvRetuX52M1DepVpfVmc8qrpqCWH9grHdq",
+        "14yrHPbyTy4ffNqaJJTUx1tqPdW3jJ9m48q7gGymyhVcmJDL",
+        "1LHerbBSF71DqonH3p696atmCUwmFQZg2e9aYuvF2xEvRBY"
+      ],
+      "total_stake_funded_dot": 7346186.509145591
+    },
+    {
+      "funder": "12xtAYsRUrmbniiWQqJtECiBQrMn8AypQcXhnQAc6RB6XkLW",
+      "validator_count": 4,
+      "validator_addresses": [
+        "163AJJfUjzonWiSqmGD71iZBPv9Q4VTbjgm6K6NTv9Fvd42p",
+        "158ihFTX2xr96UW4kRfEm4Cbm219swtzUT52GemqDrvGhmwx",
+        "14hM4oLJCK6wtS7gNfwTDhthRjy5QJ1t3NAcoPjEepo9AH67",
+        "13rG5oK2qskxP27mjUEyn1YbrmzpCV6fbBVcnBUd8Y7sQX6Z"
+      ],
+      "total_stake_funded_dot": 5990626.159411802
+    },
+    {
+      "funder": "133FTagMMVnVtSa4YAtYZz5EzbWv8Zr9WRqcFZzpmYzGBucp",
+      "validator_count": 4,
+      "validator_addresses": [
+        "12ud6X3HTfWmV6rYZxiFo6f6QEDc1FF74k91vF76AmCDMT4j",
+        "1NDRMvN7FH9YtJLVPf9doF5zbuUwn6hdH1b4WmVyZDr5joM",
+        "15ciPs3xZsJd86WFoijPs365f7viqGnubZ14aa9fGavyWJoM",
+        "15FctDfqPsFubuXo6UpKMQdbdCC3XXdnHsRMZ3DN6ZKPLrSu"
+      ],
+      "total_stake_funded_dot": 5877070.005372142
+    },
+    {
+      "funder": "14upMeWUxkV62eqwc7ZNRTdgN5LkjyCN8p2CWCWGUkTVcnq2",
+      "validator_count": 3,
+      "validator_addresses": [
+        "138SnSYhxMUyAafW7QVnBxHiZtEjQXA1zbbE8jUayJ8e2Fer",
+        "1Kmfp4pKbspNG94nLgUzdoz526uMh9RojCNoFKr1GXrgodo",
+        "14xso8KpEUMD174VA7FQR9qSK5fg2tHGsQ1ftF3LVTC4R4vy"
+      ],
+      "total_stake_funded_dot": 4500251.406160001
+    },
+    {
+      "funder": "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN",
+      "validator_count": 3,
+      "validator_addresses": [
+        "158ihFTX2xr96UW4kRfEm4Cbm219swtzUT52GemqDrvGhmwx",
+        "1d6po5LATxuHeAUTSRd61LGA6QWJ7dJRzi852kojKFLbL3t",
+        "14hM4oLJCK6wtS7gNfwTDhthRjy5QJ1t3NAcoPjEepo9AH67"
+      ],
+      "total_stake_funded_dot": 4409014.357457556
+    },
+    {
+      "funder": "162sT6oYYKb6aLAQ92MUboSkLY2ea8RgQgE9CkFv2F8CG4PR",
+      "validator_count": 3,
+      "validator_addresses": [
+        "1zugcawsx74AgoC4wz2dMEVFVDNo7rVuTRjZMnfNp9T49po",
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK",
+        "1zugcakrhr3ZR7q7B8WKuaZY5BjZAU43m79xEyhNQwLTFjb"
+      ],
+      "total_stake_funded_dot": 4407841.242360417
+    },
+    {
+      "funder": "14wW685ZE4aw3RRSFTv1NaDiHeai5WY74YGePzpgFBfhkBQT",
+      "validator_count": 3,
+      "validator_addresses": [
+        "1342iFZNrBfCP9VWxqt5p39LiHp2ynyq85Ww9K7R8w6BURps",
+        "134Bw4gHcAaHBYx6JVK91b1CeC9yWseVdZqyttpaN5zBHn43",
+        "1LMtHkfrADk7awSEFC45nyDKWxPu9cK796vtrf7Fu3NZQmB"
+      ],
+      "total_stake_funded_dot": 4407806.3711879775
+    },
+    {
+      "funder": "15j4dg5GzsL1bw2U2AWgeyAk6QTxq43V7ZPbXdAmbVLjvDCK",
+      "validator_count": 3,
+      "validator_addresses": [
+        "1zugcabTuN7rs1bFYb33gRemtg67i4Mvp1twW85nQKiwhwQ",
+        "15a9ScnYeVfQGL9HQtTn3nkUY1DTB8LzEX391yZvFRzJZ9V7",
+        "1737bipUqNUHYjUB5HCezyYqto5ZjFiMSXNAX8fWktnD5AS"
+      ],
+      "total_stake_funded_dot": 4407687.804059621
+    },
+    {
+      "funder": "15de5coDYXAQysDB8Kd6xjHtF3XxTX9jQws83ib1M7mBU2F8",
+      "validator_count": 2,
+      "validator_addresses": [
+        "14muArNrdJovje5CcRmdzvtbfnCqVdphfVKaokZvsRC18qXL",
+        "15qdguCCzQjauGkwz8NcykLEh8zFhDDCrowDynFfkFJRDBAn"
+      ],
+      "total_stake_funded_dot": 2939539.963103212
+    },
+    {
+      "funder": "15D2JM548bqRuE45aDmeF2WqiKC56WtNnRmCxVSree9YKwVb",
+      "validator_count": 2,
+      "validator_addresses": [
+        "158ihFTX2xr96UW4kRfEm4Cbm219swtzUT52GemqDrvGhmwx",
+        "14hM4oLJCK6wtS7gNfwTDhthRjy5QJ1t3NAcoPjEepo9AH67"
+      ],
+      "total_stake_funded_dot": 2939144.537251914
+    },
+    {
+      "funder": "12gkhA8JEz8ywmVj1tsVafSp9C4saKzSofgMwBJcmFJAGUVX",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1KQS1Tsk9oKrTJ6u5vJs7bF3Zh8JqceZSuUkaAdJ1DZxoPN",
+        "16d9PJvEJYydbkvhz5GawZZFqR4trJanWv6Kq2Eq92Pmw3Ri"
+      ],
+      "total_stake_funded_dot": 2938914.278733179
+    },
+    {
+      "funder": "14Y54THNgEmDEP16zVUxJbLrRdukBgnFjJ94wHxsUtRst589",
+      "validator_count": 2,
+      "validator_addresses": [
+        "13Q48Ep3PVpvXA1BeVcUhNJerLshsaeq4EdgPUHnemqJYmND",
+        "1zugcacYFxX3HveFpJVUShjfb3KyaomfVqMTFoxYuUWCdD8"
+      ],
+      "total_stake_funded_dot": 2938957.7112400657
+    },
+    {
+      "funder": "1DjVUP3jk7EecQRAk54ycRQPFU8zRgVWR3f53AWv3zYzVTZ",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1ZyhbSPMDMMuveHErhmd4XR4YK7r23E1kwn1RQzhp2EnSme",
+        "15DJ6BzNKGYKtScD77hC1NEWe6iybp89A96kchPtkWyFWXLg"
+      ],
+      "total_stake_funded_dot": 2938577.1936266483
+    },
+    {
+      "funder": "12RZuBDK1RG6PddfJWopmq9Z5wLUN81bZWBGGBKSRCX1zd4X",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1ZyhbSPMDMMuveHErhmd4XR4YK7r23E1kwn1RQzhp2EnSme",
+        "15DJ6BzNKGYKtScD77hC1NEWe6iybp89A96kchPtkWyFWXLg"
+      ],
+      "total_stake_funded_dot": 2938577.1936266483
+    },
+    {
+      "funder": "1ZgbGY5pVNz8MLdbvv8VQU8cRaFLCf93osLHLqUTtP67VbQ",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1zugcawsx74AgoC4wz2dMEVFVDNo7rVuTRjZMnfNp9T49po",
+        "1zugcacan4nrJ3HPBmiBgEn2XvRMbehqvmzSQXT3uLBDkh3"
+      ],
+      "total_stake_funded_dot": 2938603.9125270667
+    },
+    {
+      "funder": "1ZXdGs6gFETHVTEW9RAZXwYxkDwAfE7wdt6czjBM4QRfMfk",
+      "validator_count": 2,
+      "validator_addresses": [
+        "13xa7rCYpABL4WvisHhzkwMtzKbEy8hoFDoXJU8efKqrCUPu",
+        "15B3UVXPRp3yS2gU7GogS41mwoT2fTL1KaNYPF7eMVjjWZJJ"
+      ],
+      "total_stake_funded_dot": 2938491.390973502
+    },
+    {
+      "funder": "162tJdpDKWQZEwXEaNJKPSJiSyJtsv7wYGxYrreaTAXtvhK3",
+      "validator_count": 2,
+      "validator_addresses": [
+        "13xa7rCYpABL4WvisHhzkwMtzKbEy8hoFDoXJU8efKqrCUPu",
+        "15B3UVXPRp3yS2gU7GogS41mwoT2fTL1KaNYPF7eMVjjWZJJ"
+      ],
+      "total_stake_funded_dot": 2938491.390973502
+    },
+    {
+      "funder": "16hp43x8DUZtU8L3cJy9Z8JMwTzuu8ZZRWqDZnpMhp464oEd",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15uCAG6qK9qdx3EG3kyb5TFn83PgFUSQEioUgA9GLTjMFfq",
+        "14N5nJ4oR4Wj36DsBcPLh1JqjvrM2Uf23No2yc2ojjCvSC24"
+      ],
+      "total_stake_funded_dot": 2938484.1378772957
+    },
+    {
+      "funder": "1jzXx3VKWpgDGEiDSNUCH45kszuhhFcMP7iJg7J6hSEJYkc",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15uCAG6qK9qdx3EG3kyb5TFn83PgFUSQEioUgA9GLTjMFfq",
+        "12H9FfSYdQ4GrKc7tdxK8U6DitAZMqfnhB8gtHwd2rpCiZfN"
+      ],
+      "total_stake_funded_dot": 2938544.5429701833
+    },
+    {
+      "funder": "13HFCkh4gxkdiJcARaQnbTdkjsnnpwPmszWjZUDb4jEqegV8",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15uCAG6qK9qdx3EG3kyb5TFn83PgFUSQEioUgA9GLTjMFfq",
+        "145Vw57NN3Y4tqFNidLTmkhaMLD4HPoRtU91vioXrKcTcirS"
+      ],
+      "total_stake_funded_dot": 2938511.3571740706
+    },
+    {
+      "funder": "16dU435idX3jZmVXvPsrhgiUg5eqY8Zn2miZRFL7bqevkvvD",
+      "validator_count": 2,
+      "validator_addresses": [
+        "14Y626iStBUWcNtnmH97163BBJJ2f7jc1piGMZwEQfK3t8zw",
+        "1zugcacan4nrJ3HPBmiBgEn2XvRMbehqvmzSQXT3uLBDkh3"
+      ],
+      "total_stake_funded_dot": 2938548.864551322
+    },
+    {
+      "funder": "1jDHP9Uninid7BqHm5KbZVs6SzjnBcjyY8tbq3Ac5b5NcR5",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1zugcacYFxX3HveFpJVUShjfb3KyaomfVqMTFoxYuUWCdD8",
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK"
+      ],
+      "total_stake_funded_dot": 2938542.5435742335
+    },
+    {
+      "funder": "12iuLajPiow7q4ZA6vPXDcDTConAyfLC4PNFsZaCEDNr4Ms5",
+      "validator_count": 2,
+      "validator_addresses": [
+        "11VR4pF6c7kfBhfmuwwjWY3FodeYBKWx7ix2rsRCU2q6hqJ",
+        "14cxMDpBNLsNEXWyCzked3zghzaYWXwoqGT4h12GqQXdVhmn"
+      ],
+      "total_stake_funded_dot": 2938473.7956147776
+    },
+    {
+      "funder": "15MRvGwCQuPaEzyv8UGWRtJoSpGF6Mk6GTwnVyEQ552d8WtX",
+      "validator_count": 2,
+      "validator_addresses": [
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK",
+        "1zugcakrhr3ZR7q7B8WKuaZY5BjZAU43m79xEyhNQwLTFjb"
+      ],
+      "total_stake_funded_dot": 2938509.8384629283
+    },
+    {
+      "funder": "16k5oJMBY9QXCnKeMhMmQwyStcM7sRGfbbrTiHWL2m87JJP9",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1KikY9PK1kYwawnGcERnzLbSi39cJyxMRW5iLNsg2nfjWiN",
+        "156dG94Rcq61HVrn6Ndx33NysDimutzAq7j5Mz7yo2Hxf6wh"
+      ],
+      "total_stake_funded_dot": 2938487.7858589925
+    },
+    {
+      "funder": "15aWxNLG88qUkr3MTsQKu2ZVmCXXrNVqcuWVET4tgRpd5Ztc",
+      "validator_count": 2,
+      "validator_addresses": [
+        "12H9FfSYdQ4GrKc7tdxK8U6DitAZMqfnhB8gtHwd2rpCiZfN",
+        "12gkhA8JEz8ywmVj1tsVafSp9C4saKzSofgMwBJcmFJAGUVX"
+      ],
+      "total_stake_funded_dot": 2938477.4531175094
+    },
+    {
+      "funder": "15FfXSwiLTNV2gTKJhCU4FvbVECqSVfeRdazSH5wZXhLQjLo",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15yWjJfhPwiBECjVezPTA42EFpcrxmRUjzPN6nf3azvZ5wDX",
+        "13JuwkvSqGUDo8zErgfC9ivGfKfcdDyceFkvh9NW4wz7NbuF"
+      ],
+      "total_stake_funded_dot": 2938487.955641152
+    },
+    {
+      "funder": "15UHvPeMjYLvMLqh6bWLxAP3MbqjjsMXFWToJKCijzGPM3p9",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15yWjJfhPwiBECjVezPTA42EFpcrxmRUjzPN6nf3azvZ5wDX",
+        "13JuwkvSqGUDo8zErgfC9ivGfKfcdDyceFkvh9NW4wz7NbuF"
+      ],
+      "total_stake_funded_dot": 2938487.955641152
+    },
+    {
+      "funder": "14aF7Fgmeom8ZA58Qa4mA2GdHsr6WD82VbEbvJSPrC38Mamq",
+      "validator_count": 2,
+      "validator_addresses": [
+        "14g7XsFWsMpsPNkwQNhdHfsqKRehdRbpPLaGVTEhBe4Pt3Eu",
+        "15QbBVsKoTnshpY7tvntziYYSTD2FyUR15xPiMdpkpJDUygh"
+      ],
+      "total_stake_funded_dot": 2938457.139473033
+    },
+    {
+      "funder": "14VShsCQo9UTBzz7jhySco9Yw7pbAJQtxJDmDSVf42f3Pvuq",
+      "validator_count": 2,
+      "validator_addresses": [
+        "148CkH8YBzA1pbudK1bMo2zUMHZwbucBVH8s3utwTS687UiR",
+        "15a9ScnYeVfQGL9HQtTn3nkUY1DTB8LzEX391yZvFRzJZ9V7"
+      ],
+      "total_stake_funded_dot": 2938476.8528359933
+    },
+    {
+      "funder": "13eBKsYFyGV6ovZCFH7EN7trPuDo5NBCN6oC1KZsexGrcp96",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15axNgLsGTaBYfpC53YZ31LSskSGsDVXzw7edW9MT3z6rJ56",
+        "12gandRebSiGHsyYyePTqcKghP2ij79QFRKv5AzqcaYNNiLN"
+      ],
+      "total_stake_funded_dot": 2938471.5321104066
+    },
+    {
+      "funder": "1R3wWPctiZVEgpGk5Q37L1eNYSSv1eCYNi8hc3g55Kk3h2S",
+      "validator_count": 2,
+      "validator_addresses": [
+        "1CQh6CLJdzkFrbGPim4N48ZGz42VHyPyEFFHnUvB4FrwJmL",
+        "16K5HDyq7MqLGBV7gCTZbLef81n7WF5CzGdLuX6LxGZbFXou"
+      ],
+      "total_stake_funded_dot": 2938444.0183301354
+    },
+    {
+      "funder": "1NqVmUJCyaj5yZ9jp7ZZa58hbUx2QaBZ4eSCu9bqAdZXgAm",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15i7KZA28F82jCfHubQ22RptEJypTZsbnSSobjU9KUnxUvdW",
+        "14N5nJ4oR4Wj36DsBcPLh1JqjvrM2Uf23No2yc2ojjCvSC24"
+      ],
+      "total_stake_funded_dot": 2938423.3104249407
+    },
+    {
+      "funder": "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p",
+      "validator_count": 2,
+      "validator_addresses": [
+        "15i7KZA28F82jCfHubQ22RptEJypTZsbnSSobjU9KUnxUvdW",
+        "14N5nJ4oR4Wj36DsBcPLh1JqjvrM2Uf23No2yc2ojjCvSC24"
+      ],
+      "total_stake_funded_dot": 2938423.3104249407
+    },
+    {
+      "funder": "13E7LXW3NGYAJGKugiEitKZ4XjR4MXBs4ZhE1bkwBAaAoBCn",
+      "validator_count": 2,
+      "validator_addresses": [
+        "12gkhA8JEz8ywmVj1tsVafSp9C4saKzSofgMwBJcmFJAGUVX",
+        "14ghKTz5mjZPgGYvgVC9VnFw1HYZmmsnYvSSHFgFTJfMvwQS"
+      ],
+      "total_stake_funded_dot": 2938412.5663093626
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "telemetry_validators_total": 54,
+  "unique_telemetry_names": 54,
+  "direct_address_matches": 0,
+  "multi_validator_operators_in_telemetry": 3,
+  "operators_with_multiple_validators": [
+    {
+      "operator": "cryptologypolka",
+      "n_validators_telemetry": 23,
+      "addresses": [
+        "12BeL8B28e46xt6PpPTBUf4iCQDQQwdDX8DEFnMnePKiHuF3",
+        "12fgahdA8xjEK63oe8fM53LwsJZo8aaxzLg9umCNzZx5i6EC",
+        "12zyopgj1UyJwfvgTv6UzVVvDig43JdVTbbb2vuY2PbRvURD",
+        "136wnwmTTNhn1cWMgbdv4Re6SGEt8GPjzZ3fMggA1NYYPmD4",
+        "13WhY5ePBdE916UR1ccTwqX48oQoQ3Je2kzbH7FjjcNams8e",
+        "13g7C6aSns4xbbr4QfV8KYXmGZA9ry6KoqJMkrEAuJFjXxGz",
+        "13suoogcUj7HBb32p9MaRqDPbhh2MKhhjupTzG6eGYspsT27",
+        "145N4NQQ85nPAAafgmnN23dZVqmjVHWbdGwufaDCT4ATfBGq",
+        "14GDrnonLKJAd1RyRYZjmomwqjTTN591QxfsPmw2s82xDgPq",
+        "14VcdB8jTPbKUysK3QymiJ19M8RTDGV5WT7Ly9b7NFCfRpR1",
+        "14XL2xQx95PN59cV1F2yKfRH3KUcNHjcWaNqAve9mucquFJ4",
+        "14cQiTFFyxwTTK6fz14wdNt6fiG6U5ofuJwAwE2ErBX8J2W2",
+        "14vThyocyeQQxgbwEFPWqXQr167juyLD5NqQLzqwM3iXw7sN",
+        "15CGm2HCjxDSP4jvj5GkjYBBhXmCnu4G1xgYmghRWrf2rtJ9",
+        "15GRFPWYuG2Zr6cde1Cre844qZw4EJWHimdXfwLwBVutETyR",
+        "15sbKHbzLRhjyKN3rc77qbi9fuAh6jdjvwbemeruSchB8Ew3",
+        "15wQaqtL3xYqrbAX5auwjgCu1GVjYdg7GWoJhpqRVBJJ1eSX",
+        "162cs1BAayDcyGg1Nh59PkMKfPsHGyzJc1D17UHpaUCKSrSb",
+        "16AxH1smDJhebZ4sCc1QP5nUgUuDo5Sa9PsKdzWWDfr5oAzf",
+        "1gZc15zeUc6Qf2CD54nxAZqGs9Ni9L8tnjKG9j8oTzUgPJm",
+        "1iunpw3bmCTtPUNAWfv4HLj3HoevmfxGuFCzrFPREfVhPyE",
+        "1ng48NFoRr3445k3BAZmk4p1UNS6VkP7aQqmKaYsssF4nxa",
+        "1wHxLoEB8c77TSMpWWHwnj9mfdprEvf54R7c7bQmVHXinzc"
+      ]
+    },
+    {
+      "operator": "meria",
+      "n_validators_telemetry": 6,
+      "addresses": [
+        "12d9vaMXBWdSS2HRdWKACPpUsFkDMcByAjQv773Faq3HHFg2",
+        "13kt5zNuKddsKNNCg7G1r3YiMtiopA5zDn9WpubxLYVQW1qT",
+        "13rmFrW5ywiXBSdJHygFiHpHf3ohoiDxUmkvEwt3bYtEixwb",
+        "14yWpSGYqwzmJHmwqS7XqgbdqwGoR6TmSf7Uu1utBUtCL6Ds",
+        "15EX3td2RjU43Lb6PsAeybFhhUygtxmqFDoxvtPrq7YRd2Aj",
+        "15mj8ZLG32BbHjujb6rNibPsjbX7dwFt7v8F8hEfaywHaPjE"
+      ]
+    },
+    {
+      "operator": "dox-dot",
+      "n_validators_telemetry": 3,
+      "addresses": [
+        "12Hju1PGJLUUtkrRm9YeFJMBSUdK5x7JVEihHTSLoyvMtmm5",
+        "12cqUx94oEMB4rZJ5KCCLX9e6n6xbnLyN1NJndYHkz1vsvX4",
+        "1zoYuFUKA2MmaKWWjMANhVxJNiwCpJBJxuWsGwMPMhDvFQp"
+      ]
+    }
+  ]
+}
