@@ -1,0 +1,7 @@
+token,n_holders,n_existing_exclusions,n_new_exclusions_applicable,hhi_existing_exclusion,hhi_with_verified_exclusions,hhi_shift,halt_5_1_threshold_0.05
+JUP,1000,1,4,0.095708,0.126008,+0.030301,OK
+HNT,1000,1,2,0.074465,0.087431,+0.012966,OK
+DRIFT,1000,1,1,0.052914,0.056802,+0.003888,OK
+GRASS,1000,0,2,0.035201,0.036648,+0.001447,OK
+RENDER_SOL,549,0,5,0.070341,0.101453,+0.031112,OK
+W,1000,1,1,0.011532,0.011667,+0.000134,OK
