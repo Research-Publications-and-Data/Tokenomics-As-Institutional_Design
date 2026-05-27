@@ -1,0 +1,8 @@
+symbol,space,source,voting_hhi,voting_top1_pct,voting_top10_pct,n_unique_voters,n_sampled,status
+BAL,balancer.eth,snapshot,0.304666,51.96,98.01,36,36,OK
+GTC,gitcoindao.eth,snapshot,0.355264,49.24,99.82,683,683,OK
+MPL_SYRUP,maple.eth,snapshot,,,,,,no_data
+POKT,poktdao.eth,snapshot,0.045455,4.55,45.45,22,22,OK
+LPT,livepeer.eth,snapshot,,,,,,no_data
+RENDER,rendernetwork.eth,snapshot,,,,,,no_data
+AXL,axelarcommunity.eth,snapshot,,,,,,no_data
