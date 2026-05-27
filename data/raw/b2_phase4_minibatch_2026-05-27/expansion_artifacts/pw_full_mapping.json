@@ -1,0 +1,3579 @@
+{
+  "operators_total": 91,
+  "validators_mapped": 275,
+  "validator_to_operator": {
+    "15QbBVsKoTnshpY7tvntziYYSTD2FyUR15xPiMdpkpJDUygh": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 3",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 294,
+      "TokenRewards": 14205.8127435119
+    },
+    "14d71bbo4vrVXV3QGUunCdXqoXYCG2xPJY2S1EDDnTj78Ath": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 24",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 9,
+      "TokenRewards": 14151.9840842017
+    },
+    "16A9nLc3SXvbv7x1NUGL9zWjitQ27JWmKoc6yrUYhMsF8tGC": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 31",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 4,
+      "TokenRewards": 14142.189126804
+    },
+    "16A1zLQ3KjMnxch1NAU44hoijFK3fHUjqb11bVgcHCfoj9z3": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 5",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 120,
+      "TokenRewards": 14117.7567435582
+    },
+    "12ZTDL5BPYrrPxLWZM2TEe3GckXm9rz86mDZSkRvWrXeJ3c1": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 17",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 21,
+      "TokenRewards": 14115.857034115801
+    },
+    "15p4wTCaY2tggjfHc62FGmXr9wuLgmK5PnZW1kWKhsqKm88H": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 25",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 7,
+      "TokenRewards": 14108.0208683644
+    },
+    "16Zjo9bK3ubRrZCjwEkotG3fk4ka69TKQbPbUAJedHhMFYoH": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 29",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 7,
+      "TokenRewards": 14094.7083208288
+    },
+    "1vRNR4nicdV1LbxGWJg15Lr4ZL3tn8e5bwbP1LNqAwQWdiH": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 27",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 8,
+      "TokenRewards": 14081.2127326936
+    },
+    "15wdC56juwXeqriyBJMdEpi6FrnB9PsrLjVuKZG4Smp9a2fP": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 23",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 12,
+      "TokenRewards": 14070.8738356907
+    },
+    "1jeB5w8XyBADtgmVmwk2stWpTyfTVWEgLo85tF7gYVxnmSw": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 10",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 307,
+      "TokenRewards": 14045.6866395421
+    },
+    "16MTPYUDqLaCMErgvbTu6WehcUFKiocUWUDFN1Jdpeo5nED4": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 28",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 12,
+      "TokenRewards": 14023.5065513857
+    },
+    "16G8NDzxUeUbGiw2bFX3Wy7JwNEJz9U8B1smCFqqe4GPZbdN": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 9",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 185,
+      "TokenRewards": 14018.2260332659
+    },
+    "12gkhA8JEz8ywmVj1tsVafSp9C4saKzSofgMwBJcmFJAGUVX": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 338,
+      "TokenRewards": 14016.1125287694
+    },
+    "16aThbzrsb2ohiLXJLqN8jLST6JgUPRi3BqyHxUW4yVHBQ44": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 6",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 298,
+      "TokenRewards": 14009.4465844919
+    },
+    "1RJP5i7zuyBLtgGTMCD9oF8zQMTQvfc4zpKNsVxfvTKdHmr": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 7",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 437,
+      "TokenRewards": 13992.535878771
+    },
+    "1KQS1Tsk9oKrTJ6u5vJs7bF3Zh8JqceZSuUkaAdJ1DZxoPN": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 22",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 15,
+      "TokenRewards": 13936.301475145201
+    },
+    "14ghKTz5mjZPgGYvgVC9VnFw1HYZmmsnYvSSHFgFTJfMvwQS": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 0",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 344,
+      "TokenRewards": 13845.925590069899
+    },
+    "12wtfs4UfodYT1Y6y8NQsQaduLSJbhz7oaNt1F6gTLFHD1y5": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 1",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 369,
+      "TokenRewards": 13829.4566420942
+    },
+    "14g7XsFWsMpsPNkwQNhdHfsqKRehdRbpPLaGVTEhBe4Pt3Eu": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 4",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 311,
+      "TokenRewards": 13783.9931480513
+    },
+    "15fMqfNt5i2yz1Nq6fHAbmLokfbWfDbuTFZoLxv2RZkWpDTu": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 12",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 35,
+      "TokenRewards": 13669.3864931269
+    },
+    "16d9PJvEJYydbkvhz5GawZZFqR4trJanWv6Kq2Eq92Pmw3Ri": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 21",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 17,
+      "TokenRewards": 13649.1305903905
+    },
+    "1LMtHkfrADk7awSEFC45nyDKWxPu9cK796vtrf7Fu3NZQmB": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 8",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 236,
+      "TokenRewards": 13570.9713782883
+    },
+    "13g3qpjcv4yuCEnqn7VFKbeq4LZ8qNMvNTJcfsaC4Dgms2tH": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 26",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 5,
+      "TokenRewards": 13215.9208387054
+    },
+    "12sNJAzECf7AUgz1Asc8iYTmoFZLy7prg88nuX5VASVZmjnq": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 14",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 16,
+      "TokenRewards": 13165.5114616818
+    },
+    "1jbUHVCrwyKtUmoCZ4sJousx1og8aoP1HEyFcAW6xvdKYCU": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 11",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 27,
+      "TokenRewards": 13159.2732865075
+    },
+    "167ePSNFzjb2jrBqqCqkWMcH728onmjVYYzozYsZQHwReqRJ": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 13",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 9,
+      "TokenRewards": 12651.2463992181
+    },
+    "12ErBetb4FWp3992tXET1GtHrTW3TdhUXsnQd5zDuF9WaxYV": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 18",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 18,
+      "TokenRewards": 11766.9186051124
+    },
+    "16JJSWvMNM8i7T97ULGPHPyjvBM3JrV7poyKJRjCzTTE6kWx": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 30",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 7,
+      "TokenRewards": 10075.3081631447
+    },
+    "15x21oPqRLeVakTN3grGB82HZ92ELqbnzE9W2wc3CHRreefB": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 32",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 3,
+      "TokenRewards": 9283.7169239142
+    },
+    "12L4a8t2RGou15GZDMu8Eokx4gXxQAim5MePgYjHeAeSmNHY": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 19",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 20,
+      "TokenRewards": 8497.2577911053
+    },
+    "128cG9CRYUL8XRzB8n53jjfb1iJ2FasrMdrTVHjKguqg5CPS": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 20",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 8,
+      "TokenRewards": 8474.579665578
+    },
+    "15DrUZpBdedSxGwTRG6k35kkJezho54PA837eJ45d6j6fTkT": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 35",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 3,
+      "TokenRewards": 7998.8013020961
+    },
+    "13MqUAZVA2KEy3EChkzuVqdwPpe51DbmzDhLtxaca596W5S4": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 15",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 12,
+      "TokenRewards": 7074.6748937566
+    },
+    "13VKHPMcWj9Lpu9sBd6ZpxHW45kBSuM6aPCgpCZqUS8jZ5Ea": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 36",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 2,
+      "TokenRewards": 6103.9178406655
+    },
+    "14DvQhUDWVABBzqD3jEK3VHHRZ1UbKDGCExf7LYNJLQd8CGd": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 37",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 3,
+      "TokenRewards": 6088.5836753426
+    },
+    "1rxCNHsCnvgBRE6duxifTPaBA5vhmpwADXb4FBqfgXbzue5": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 33",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 3,
+      "TokenRewards": 5578.1090319879
+    },
+    "14YEkQjfqQqWy8ckNsgbH4CiwTLMKEMgzYPSfgBRNocwDigB": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 34",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 3,
+      "TokenRewards": 5560.5906202364
+    },
+    "14dcFGfWhzn32PWf6g5d6A6dDPUZdssEv2fCuouydd6Rc4Aq": {
+      "operator_id": "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM",
+      "operator_name": "pos.dog",
+      "validator_display": "pos.dog / 16",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 6,
+      "TokenRewards": 5200.2645086973
+    },
+    "13uW7auWPX9WAtqwkBx7yagb78PLcv8FAcPZEVCovbXoNJK4": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 13",
+      "LastRegion": "Europe",
+      "LastCountry": "Luxembourg",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 570,
+      "TokenRewards": 14104.562688303
+    },
+    "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Luxembourg",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 536,
+      "TokenRewards": 14052.15536137
+    },
+    "15oKi7HoBQbwwdQc47k71q4sJJWnu5opn1pqoGx4NAEYZSHs": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 5",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 624,
+      "TokenRewards": 14050.163000881
+    },
+    "1737bipUqNUHYjUB5HCezyYqto5ZjFiMSXNAX8fWktnD5AS": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 29",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Fornex Hosting S.L.",
+      "Nominators": 84,
+      "TokenRewards": 14048.313094346
+    },
+    "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 1147,
+      "TokenRewards": 14044.1489540304
+    },
+    "121gZtuuG6sq3BZp1UKg8oRLRZvp89SAYSxXypwDJjaSRJR5": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 6",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 862,
+      "TokenRewards": 14036.5107536578
+    },
+    "134Bw4gHcAaHBYx6JVK91b1CeC9yWseVdZqyttpaN5zBHn43": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 15",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ORACLE-BMC-31898",
+      "Nominators": 796,
+      "TokenRewards": 14035.004994097
+    },
+    "11uMPbeaEDJhUxzU4ZfWW9VQEsryP9XqFcNRfPdYda6aFWJ": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 4",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ORACLE-BMC-31898",
+      "Nominators": 1198,
+      "TokenRewards": 14030.3279317447
+    },
+    "129TM37DNpyJqtRYYimSMp8aQZ8QW7Jg3b4qtSrRqjgAChQf": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 23",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 705,
+      "TokenRewards": 13995.218709393
+    },
+    "12YP2b7L7gcHabZqE7vJMyF9eSZA9W68gnvb8BzTYx4MUxRo": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 14",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ORACLE-BMC-31898",
+      "Nominators": 684,
+      "TokenRewards": 13990.9742692566
+    },
+    "1Wo6qcrh7wxc1kQY5nfixFuCAFuzkgiwau64SmrPXBE7vVf": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 21",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 1060,
+      "TokenRewards": 13983.5395956498
+    },
+    "1342iFZNrBfCP9VWxqt5p39LiHp2ynyq85Ww9K7R8w6BURps": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 10",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ORACLE-BMC-31898",
+      "Nominators": 649,
+      "TokenRewards": 13968.4722021946
+    },
+    "14AkAFBzukRhAFh1wyko1ZoNWnUyq7bY1XbjeTeCHimCzPU1": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 12",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 786,
+      "TokenRewards": 13950.2234463656
+    },
+    "14Y626iStBUWcNtnmH97163BBJJ2f7jc1piGMZwEQfK3t8zw": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 17",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 572,
+      "TokenRewards": 13945.7280438537
+    },
+    "13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 9",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ORACLE-BMC-31898",
+      "Nominators": 646,
+      "TokenRewards": 13846.760796844901
+    },
+    "15qomv8YFTpHrbiJKicP4oXfxRDyG4XEHZH7jdfJScnw2xnV": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 3",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ORACLE-BMC-31898",
+      "Nominators": 596,
+      "TokenRewards": 13839.8047855808
+    },
+    "12ud6X3HTfWmV6rYZxiFo6f6QEDc1FF74k91vF76AmCDMT4j": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 7",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 574,
+      "TokenRewards": 12644.2745543431
+    },
+    "145Vw57NN3Y4tqFNidLTmkhaMLD4HPoRtU91vioXrKcTcirS": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 37",
+      "LastRegion": "Europe",
+      "LastCountry": "Luxembourg",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 324,
+      "TokenRewards": 10850.9804330426
+    },
+    "12Z3Bhjn42TPXy5re2CiYz1fqMd21i2XyBLmbekbjLXrqVBV": {
+      "operator_id": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+      "operator_name": "P2P.ORG",
+      "validator_display": "P2P.ORG / 8",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 144,
+      "TokenRewards": 4681.7603803595
+    },
+    "15FctDfqPsFubuXo6UpKMQdbdCC3XXdnHsRMZ3DN6ZKPLrSu": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v08",
+      "LastRegion": "Europe",
+      "LastCountry": "United Kingdom",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 439,
+      "TokenRewards": 14467.8996634644
+    },
+    "13Q48Ep3PVpvXA1BeVcUhNJerLshsaeq4EdgPUHnemqJYmND": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v06",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 729,
+      "TokenRewards": 14451.6231454037
+    },
+    "148CkH8YBzA1pbudK1bMo2zUMHZwbucBVH8s3utwTS687UiR": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v05",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 901,
+      "TokenRewards": 14428.2363531278
+    },
+    "1jqkeJhuoRudNTVL5dV1qZf8RQtyzcf6ZT4yyvUQbKFktr8": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v03",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 817,
+      "TokenRewards": 14421.358980189
+    },
+    "14bUYpiF2oxVpmXDnFxBipSi4m9zYBThMZoLpY8bRQrPQNG1": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v02",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 607,
+      "TokenRewards": 14410.2889620228
+    },
+    "1ufRSF5gx9Q8hrYoj7KwpzQzDNqLJdbKrFwC6okxa5gtBRd": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v01",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 796,
+      "TokenRewards": 14398.8900868446
+    },
+    "15a9ScnYeVfQGL9HQtTn3nkUY1DTB8LzEX391yZvFRzJZ9V7": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v04",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 619,
+      "TokenRewards": 14384.5714271905
+    },
+    "13iPW4pSokbEQWomqZhwsyrMWuNspt6R1YnuCHXqUVvFYM1H": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v09",
+      "LastRegion": "Europe",
+      "LastCountry": "United Kingdom",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 641,
+      "TokenRewards": 14366.0154975221
+    },
+    "15ciPs3xZsJd86WFoijPs365f7viqGnubZ14aa9fGavyWJoM": {
+      "operator_id": "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv",
+      "operator_name": "Jaco",
+      "validator_display": "Jaco / v07",
+      "LastRegion": "Europe",
+      "LastCountry": "United Kingdom",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 563,
+      "TokenRewards": 13994.7293370894
+    },
+    "15G171nzcUvrTRwWZx8K5GLh1NReHdnTDANeWSMRK4Rjuhfu": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / ldot02",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 164,
+      "TokenRewards": 13967.8731222761
+    },
+    "1569aqCBma2m4TuUe1MxEs8EXBAZFCmwwcZMLde6HNbimuW8": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / ldot01",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 77,
+      "TokenRewards": 13926.7497765503
+    },
+    "15V6NjwmKkZihe644Tyr8GVLxjEzBAHktf6ZcJCTx7RPCoYS": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc2",
+      "LastRegion": "Europe",
+      "LastCountry": "Ireland",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 200,
+      "TokenRewards": 13913.7326876378
+    },
+    "1VrKDfXunzstY5uxPpjArUbZekirGXcpMDYvCBJmjV1KdEm": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / v01",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 151,
+      "TokenRewards": 13793.6584304605
+    },
+    "14wFkAiTSxhUUdpkN37QMhZv6dYcURJVgSGwqDRd4TK2qhrL": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc10",
+      "LastRegion": "Europe",
+      "LastCountry": "Ireland",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 117,
+      "TokenRewards": 13788.2013048036
+    },
+    "1A2ATy1FEu5yQ9ZzghPLsRckPQ7XLmq5MJQYcTvGnxGvCho": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc1",
+      "LastRegion": "Asia",
+      "LastCountry": "Hong Kong",
+      "LastNetwork": "GOOGLE-CLOUD-PLATFORM",
+      "Nominators": 634,
+      "TokenRewards": 13641.0754628779
+    },
+    "12e1tkDgfF3GYdiTkRq1vunXrvvhpKq3BQZYbJ1haXHApQTn": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / v04",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 119,
+      "TokenRewards": 12976.4139036846
+    },
+    "124YFXA3XoRs9Epcx3aRUSk3EKYaznocqMWfrMKtGjx8TJ2W": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc3",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 330,
+      "TokenRewards": 11036.9874176161
+    },
+    "12ECDEb18Wiy4MoLn3NTM5zhJfDfpS4mLNvjHpcEr8ogGrMZ": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc4",
+      "LastRegion": "Europe",
+      "LastCountry": "Ireland",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 282,
+      "TokenRewards": 9610.9271787708
+    },
+    "12HFymxpDmi4XXPHaEMp74CNpRhkqwG5qxnrgikkhon1XMrj": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc5",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "GOOGLE-CLOUD-PLATFORM",
+      "Nominators": 274,
+      "TokenRewards": 8831.9053273662
+    },
+    "12WmM98h4Ar6y7ZyyMKPXwSyuP5GSZvXTbEkDXm1tirbZFW4": {
+      "operator_id": "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN",
+      "operator_name": "Coinbase",
+      "validator_display": "Coinbase / cc6",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 153,
+      "TokenRewards": 2274.412416282
+    },
+    "1zugcag7cJVBtVRnFxv5Qftn7xKAnR6YJ9x4x3XLgGgmNnS": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 19",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 484,
+      "TokenRewards": 14400.7839067859
+    },
+    "1zugcaaABVRXtyepKmwNR4g5iH2NtTNVBz1McZ81p91uAm8": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 02",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 595,
+      "TokenRewards": 14376.0258514225
+    },
+    "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 1077,
+      "TokenRewards": 14312.9603079016
+    },
+    "1zugcacYFxX3HveFpJVUShjfb3KyaomfVqMTFoxYuUWCdD8": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 18",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 560,
+      "TokenRewards": 14067.9627412005
+    },
+    "1zugcabTuN7rs1bFYb33gRemtg67i4Mvp1twW85nQKiwhwQ": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 05",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 392,
+      "TokenRewards": 14010.6289415371
+    },
+    "1zugcawsx74AgoC4wz2dMEVFVDNo7rVuTRjZMnfNp9T49po": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 11",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 495,
+      "TokenRewards": 13945.9121390293
+    },
+    "1zugcakrhr3ZR7q7B8WKuaZY5BjZAU43m79xEyhNQwLTFjb": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 22",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 567,
+      "TokenRewards": 12005.314118538001
+    },
+    "1zugcacan4nrJ3HPBmiBgEn2XvRMbehqvmzSQXT3uLBDkh3": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 10",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 533,
+      "TokenRewards": 11184.0425669543
+    },
+    "1zugcaiwmKdWsfuubmCMBgKKMLSef2TEC3Gfvv5GxLGTKMN": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 09",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 342,
+      "TokenRewards": 5221.4812866571
+    },
+    "1zugcajKZ8XwjWvC5QZWcrpjfnjZZ9FfxRB9f5Hy6GdXBpZ": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 08",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 274,
+      "TokenRewards": 3313.3153905046
+    },
+    "1zugcaebzKgKLebGSQvtxpmPGCZLFoEVu6AfqwD7W5ZKQZt": {
+      "operator_id": "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+      "operator_name": "Zug Capital",
+      "validator_display": "Zug Capital / 04",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "CKW Fiber Services AG",
+      "Nominators": 243,
+      "TokenRewards": 1452.2650015103
+    },
+    "14yrHPbyTy4ffNqaJJTUx1tqPdW3jJ9m48q7gGymyhVcmJDL": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / DN1",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 199,
+      "TokenRewards": 14240.2298903692
+    },
+    "14ices1G5qTmqhMfDVBECh4jotNDGTLu8fhE9YktWT3cLF2F": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / V1",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 724,
+      "TokenRewards": 14198.2916879914
+    },
+    "15XY7oJ99hVscy5jS3zUh5M3H6sxfccovyTVCPt15DuXCRAF": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / V3",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 400,
+      "TokenRewards": 14110.845240819699
+    },
+    "13N7R5rP3gtz3W4uDEQBVddXf5HE9V3CsAibuxUjCr6UWjwA": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / DN4",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "PhoenixNAP",
+      "Nominators": 40,
+      "TokenRewards": 14069.2399894224
+    },
+    "15cow6Uoq1KtBvyvRetuX52M1DepVpfVmc8qrpqCWH9grHdq": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / V4",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 46,
+      "TokenRewards": 14053.0782578956
+    },
+    "14aD1tQavhRi9eB6SZ2JNoTFiW1RpGtavFANwrfQnT1B7t6D": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / DN3",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "PhoenixNAP",
+      "Nominators": 50,
+      "TokenRewards": 14018.083507543
+    },
+    "13GFUpQkNonsMMiBuYK4pqGUkwnE5AojvtigR95ahiimMaBb": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / DN2",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 302,
+      "TokenRewards": 13703.3194785632
+    },
+    "139J8svWogi6Xbn4rfYnCBCwh7CQj6hRxmSaZQMhTGsB81s1": {
+      "operator_id": "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL",
+      "operator_name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "validator_display": "\ud83e\uddca Iceberg Nodes \ud83e\uddca / V2",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 434,
+      "TokenRewards": 13699.0467689634
+    },
+    "15B3UVXPRp3yS2gU7GogS41mwoT2fTL1KaNYPF7eMVjjWZJJ": {
+      "operator_id": "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+      "operator_name": "LEGEND",
+      "validator_display": "LEGEND / 4",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 26,
+      "TokenRewards": 14148.8310425612
+    },
+    "1ZXdGs6gFETHVTEW9RAZXwYxkDwAfE7wdt6czjBM4QRfMfk": {
+      "operator_id": "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+      "operator_name": "LEGEND",
+      "validator_display": "LEGEND / 3",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 99,
+      "TokenRewards": 14108.0715942961
+    },
+    "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k": {
+      "operator_id": "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+      "operator_name": "LEGEND",
+      "validator_display": "LEGEND",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 109,
+      "TokenRewards": 14093.6075538398
+    },
+    "16k5kPkBCMi89e1a9yGZGT4gHJW5H4KUQ5eVqPc8PGPxhi1K": {
+      "operator_id": "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+      "operator_name": "LEGEND",
+      "validator_display": "LEGEND / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 64,
+      "TokenRewards": 14062.1705423231
+    },
+    "162tJdpDKWQZEwXEaNJKPSJiSyJtsv7wYGxYrreaTAXtvhK3": {
+      "operator_id": "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+      "operator_name": "LEGEND",
+      "validator_display": "LEGEND / 5",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 41,
+      "TokenRewards": 13681.261494613
+    },
+    "13xa7rCYpABL4WvisHhzkwMtzKbEy8hoFDoXJU8efKqrCUPu": {
+      "operator_id": "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+      "operator_name": "LEGEND",
+      "validator_display": "LEGEND / 6",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 19,
+      "TokenRewards": 13635.9941532185
+    },
+    "1d6po5LATxuHeAUTSRd61LGA6QWJ7dJRzi852kojKFLbL3t": {
+      "operator_id": "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN",
+      "operator_name": "ParaNodes.io",
+      "validator_display": "ParaNodes.io / 05\ud83d\ude80",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "LFLL-ASN",
+      "Nominators": 73,
+      "TokenRewards": 14304.5313711671
+    },
+    "13wroNHV6aJEkUFJEx4NYv7kv5vgq4HypLAPSz347VVQbYj3": {
+      "operator_id": "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN",
+      "operator_name": "ParaNodes.io",
+      "validator_display": "ParaNodes.io / 03\ud83d\ude80",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "LFLL-ASN",
+      "Nominators": 141,
+      "TokenRewards": 14298.1137657056
+    },
+    "158ihFTX2xr96UW4kRfEm4Cbm219swtzUT52GemqDrvGhmwx": {
+      "operator_id": "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN",
+      "operator_name": "ParaNodes.io",
+      "validator_display": "ParaNodes.io / 06\ud83d\ude80 - 1KV",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "LFLL-ASN",
+      "Nominators": 16,
+      "TokenRewards": 14277.9456167488
+    },
+    "14hM4oLJCK6wtS7gNfwTDhthRjy5QJ1t3NAcoPjEepo9AH67": {
+      "operator_id": "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN",
+      "operator_name": "ParaNodes.io",
+      "validator_display": "ParaNodes.io / 01\ud83d\ude80",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "LFLL-ASN",
+      "Nominators": 386,
+      "TokenRewards": 14251.4823518786
+    },
+    "13foHgXdzr1agokV6Ed9CBHGQG1NpBqvqhmUL7rojcBUBzvq": {
+      "operator_id": "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN",
+      "operator_name": "ParaNodes.io",
+      "validator_display": "ParaNodes.io / 02\ud83d\ude80 - 1KV",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "LFLL-ASN",
+      "Nominators": 26,
+      "TokenRewards": 14188.6361141943
+    },
+    "1q5QgXCsasUtjvwq8ByT5QPivNgidUSR55c4kFJnjKSiF4q": {
+      "operator_id": "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz",
+      "operator_name": "DOZENODES.COM",
+      "validator_display": "DOZENODES.COM / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "Korbank S. A.",
+      "Nominators": 353,
+      "TokenRewards": 14174.3833110059
+    },
+    "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz": {
+      "operator_id": "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz",
+      "operator_name": "DOZENODES.COM",
+      "validator_display": "DOZENODES.COM",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "ISPpro Internet KG",
+      "Nominators": 627,
+      "TokenRewards": 14159.0623634876
+    },
+    "1hchSbMVTPrxmMuuCQQ2dkZnUcWLwNHcuU4C5RR9raKkfXh": {
+      "operator_id": "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz",
+      "operator_name": "DOZENODES.COM",
+      "validator_display": "DOZENODES.COM / DN2",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "Host Universal Pty Ltd",
+      "Nominators": 43,
+      "TokenRewards": 14058.114700574
+    },
+    "13uBxESEQZ63cKu4LtLNdHX7CYkokh5iiJryJSA2A2AZenJQ": {
+      "operator_id": "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz",
+      "operator_name": "DOZENODES.COM",
+      "validator_display": "DOZENODES.COM / DN",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "Korbank S. A.",
+      "Nominators": 201,
+      "TokenRewards": 14037.0897330913
+    },
+    "12TB6KHDVSRy6f2rwDFwrKosBQXayNdCPKAAXHYtev2yxuZC": {
+      "operator_id": "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz",
+      "operator_name": "DOZENODES.COM",
+      "validator_display": "DOZENODES.COM / DN3",
+      "LastRegion": "Oceania",
+      "LastCountry": "New Zealand",
+      "LastNetwork": "Host Universal Pty Ltd",
+      "Nominators": 47,
+      "TokenRewards": 13101.3735171511
+    },
+    "1ERUvCzrrA5GfUfnQyxSjNPudMKEwcD5rtp661Dbfb4EdTG": {
+      "operator_id": "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ",
+      "operator_name": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6",
+      "validator_display": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6 / 3",
+      "LastRegion": "Europe",
+      "LastCountry": "Lithuania",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 82,
+      "TokenRewards": 13984.6120309657
+    },
+    "13gQZWtAVc3v55wEpNfQR1VrDgEhNQdFr7x6q8pK5mW51Rn5": {
+      "operator_id": "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ",
+      "operator_name": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6",
+      "validator_display": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6 / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Lithuania",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 46,
+      "TokenRewards": 13889.7183280796
+    },
+    "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ": {
+      "operator_id": "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ",
+      "operator_name": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6",
+      "validator_display": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6",
+      "LastRegion": "Europe",
+      "LastCountry": "Lithuania",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 93,
+      "TokenRewards": 13877.198950981
+    },
+    "16JvJXLPySkFtH48aYhnCrpdsbFsMFB9ERtEWuXFmRxQrwx5": {
+      "operator_id": "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ",
+      "operator_name": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6",
+      "validator_display": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6 / 1",
+      "LastRegion": "Europe",
+      "LastCountry": "Lithuania",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 43,
+      "TokenRewards": 13850.6416547946
+    },
+    "15nLLFfX8jtyhnYogRqPU798qNpjvSp6n14AiH7ddHRFWnL8": {
+      "operator_id": "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3",
+      "operator_name": "Meria",
+      "validator_display": "Meria / 03",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 6,
+      "TokenRewards": 13983.0288361305
+    },
+    "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3": {
+      "operator_id": "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3",
+      "operator_name": "Meria",
+      "validator_display": "Meria",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 722,
+      "TokenRewards": 13712.8157571878
+    },
+    "15roBmbe5NmRXb4imfmhKxSjH8k9J5xtHSrvYJKpmmCLoPqD": {
+      "operator_id": "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3",
+      "operator_name": "Meria",
+      "validator_display": "Meria / 02",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 842,
+      "TokenRewards": 13564.7741258838
+    },
+    "16kovK2pbJDZFTCVenu7yQGhxzvqfGLJyH6XpgxEcQKSGAn4": {
+      "operator_id": "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3",
+      "operator_name": "Meria",
+      "validator_display": "Meria / 05",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 102,
+      "TokenRewards": 13222.7476787371
+    },
+    "1hT5LC2keHNNKAC7zR5JFJ8CNBi5mXhuphP4Tt6YynijgnL": {
+      "operator_id": "14VauJKLZRa7PYjpnWHcGD4tP971dpZrhALXqUGH88gkWm9u",
+      "operator_name": "BRC",
+      "validator_display": "BRC / 03",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 2,
+      "TokenRewards": 10880.9604106497
+    },
+    "14fu8gsdLTMvAWxq2c7DJxyfbcHmkFWcngxAkxmMtX3fDtk8": {
+      "operator_id": "14VauJKLZRa7PYjpnWHcGD4tP971dpZrhALXqUGH88gkWm9u",
+      "operator_name": "BRC",
+      "validator_display": "BRC / 02",
+      "LastRegion": "Asia",
+      "LastCountry": "South Korea",
+      "LastNetwork": "TERASWITCH",
+      "Nominators": 2,
+      "TokenRewards": 10880.7023380268
+    },
+    "12LCH7wmj8LAa4bXLq1iQnDbeZZfE9AUjvP7xqDNiR87fLdp": {
+      "operator_id": "14VauJKLZRa7PYjpnWHcGD4tP971dpZrhALXqUGH88gkWm9u",
+      "operator_name": "BRC",
+      "validator_display": "BRC / 05",
+      "LastRegion": "Asia",
+      "LastCountry": "India",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 2,
+      "TokenRewards": 10865.639531303701
+    },
+    "16hWLHbxMwucyrzpWcEMGQtVzXY4rBtyYTRhPix5rJeeKT8N": {
+      "operator_id": "14VauJKLZRa7PYjpnWHcGD4tP971dpZrhALXqUGH88gkWm9u",
+      "operator_name": "BRC",
+      "validator_display": "BRC / 04",
+      "LastRegion": "Asia",
+      "LastCountry": "India",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 2,
+      "TokenRewards": 10772.0091237562
+    },
+    "155DgtpDborwtUFPZ4kPBFX7JTFfs7AxfzDqdu5uz8Sun4Qy": {
+      "operator_id": "14VauJKLZRa7PYjpnWHcGD4tP971dpZrhALXqUGH88gkWm9u",
+      "operator_name": "BRC",
+      "validator_display": "BRC / 01",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 2,
+      "TokenRewards": 10513.8514269305
+    },
+    "16UgRGtYLuDWsBvjLLtc6FYVB3qSCV9c4sidcN4zaFm9qCFR": {
+      "operator_id": "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+      "operator_name": "SAXEMBERG",
+      "validator_display": "SAXEMBERG / SAXEMBERG 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Estonia",
+      "LastNetwork": "RJ Network OU",
+      "Nominators": 315,
+      "TokenRewards": 14325.8025616717
+    },
+    "12ryLNrg44r7Qv7oWZa2wK6PuzUmAMueyVHRBsyR5N6anEaV": {
+      "operator_id": "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+      "operator_name": "SAXEMBERG",
+      "validator_display": "SAXEMBERG / SAXEMBERG 3",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 69,
+      "TokenRewards": 14314.5370761889
+    },
+    "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC": {
+      "operator_id": "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+      "operator_name": "SAXEMBERG",
+      "validator_display": "SAXEMBERG",
+      "LastRegion": "Europe",
+      "LastCountry": "Lithuania",
+      "LastNetwork": "UAB Cherry Servers",
+      "Nominators": 593,
+      "TokenRewards": 14294.5516020035
+    },
+    "16BEvxYpyRWPaFbtwCPzSCtHVKr1soViaobKojNWBH12U5dk": {
+      "operator_id": "14Sqrs7dk6gmSiuPK7VWGbPmGr4EfESzZBcpT6U15W4ajJRf",
+      "operator_name": "turboflakes.io",
+      "validator_display": "turboflakes.io / GOKUN",
+      "LastRegion": "Europe",
+      "LastCountry": "Portugal",
+      "LastNetwork": "AR TELECOM - Acessos e Redes de Telecomunicacoes, S.A.",
+      "Nominators": 22,
+      "TokenRewards": 14391.1944940711
+    },
+    "12gPFmRqnsDhc9C5DuXyXBFA23io5fSGtKTSAimQtAWgueD2": {
+      "operator_id": "14Sqrs7dk6gmSiuPK7VWGbPmGr4EfESzZBcpT6U15W4ajJRf",
+      "operator_name": "turboflakes.io",
+      "validator_display": "turboflakes.io / RAIDEN",
+      "LastRegion": "Europe",
+      "LastCountry": "Portugal",
+      "LastNetwork": "Interfiber Networks LDA",
+      "Nominators": 803,
+      "TokenRewards": 14317.8155811962
+    },
+    "145QiuMq8w1vBVXfwDVFxUSchdRZ6W1tTGb1uZ45TcoUskRC": {
+      "operator_id": "14Sqrs7dk6gmSiuPK7VWGbPmGr4EfESzZBcpT6U15W4ajJRf",
+      "operator_name": "turboflakes.io",
+      "validator_display": "turboflakes.io / GALEN",
+      "LastRegion": "Europe",
+      "LastCountry": "Portugal",
+      "LastNetwork": "AR TELECOM - Acessos e Redes de Telecomunicacoes, S.A.",
+      "Nominators": 203,
+      "TokenRewards": 14133.3645089433
+    },
+    "15Zx4M1W1caBHvwdQY6EjUDVoAv714eEBLcLCuE5A25RqiMH": {
+      "operator_id": "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs",
+      "operator_name": "\u265eGameTheory\u265c",
+      "validator_display": "\u265eGameTheory\u265c / 01",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hostkey B.v.",
+      "Nominators": 93,
+      "TokenRewards": 14472.9726140264
+    },
+    "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs": {
+      "operator_id": "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs",
+      "operator_name": "\u265eGameTheory\u265c",
+      "validator_display": "\u265eGameTheory\u265c",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hostkey B.v.",
+      "Nominators": 110,
+      "TokenRewards": 14440.7829545387
+    },
+    "14WAVMT53PQ4RM25xVPoQBL9ozLNwFBXiryqvuKipM9J4TwT": {
+      "operator_id": "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs",
+      "operator_name": "\u265eGameTheory\u265c",
+      "validator_display": "\u265eGameTheory\u265c / 02",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Elisa Oyj",
+      "Nominators": 99,
+      "TokenRewards": 13619.5675058815
+    },
+    "15i7KZA28F82jCfHubQ22RptEJypTZsbnSSobjU9KUnxUvdW": {
+      "operator_id": "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p",
+      "operator_name": "Staker Space",
+      "validator_display": "Staker Space / 4",
+      "LastRegion": "Europe",
+      "LastCountry": "Czechia",
+      "LastNetwork": "Qupra B.V.",
+      "Nominators": 43,
+      "TokenRewards": 14410.1863975427
+    },
+    "14N5nJ4oR4Wj36DsBcPLh1JqjvrM2Uf23No2yc2ojjCvSC24": {
+      "operator_id": "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p",
+      "operator_name": "Staker Space",
+      "validator_display": "Staker Space / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "Xyphen IT",
+      "Nominators": 407,
+      "TokenRewards": 14258.9524580363
+    },
+    "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p": {
+      "operator_id": "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p",
+      "operator_name": "Staker Space",
+      "validator_display": "Staker Space",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "Serverius Holding B.V.",
+      "Nominators": 137,
+      "TokenRewards": 13715.9435024347
+    },
+    "13JuwkvSqGUDo8zErgfC9ivGfKfcdDyceFkvh9NW4wz7NbuF": {
+      "operator_id": "15UHvPeMjYLvMLqh6bWLxAP3MbqjjsMXFWToJKCijzGPM3p9",
+      "operator_name": "\ud83c\udf0c Novasama \ud83c\udf0c",
+      "validator_display": "\ud83c\udf0c Novasama \ud83c\udf0c / Shannon",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 810,
+      "TokenRewards": 14081.2539599332
+    },
+    "15yWjJfhPwiBECjVezPTA42EFpcrxmRUjzPN6nf3azvZ5wDX": {
+      "operator_id": "15UHvPeMjYLvMLqh6bWLxAP3MbqjjsMXFWToJKCijzGPM3p9",
+      "operator_name": "\ud83c\udf0c Novasama \ud83c\udf0c",
+      "validator_display": "\ud83c\udf0c Novasama \ud83c\udf0c / Dijkstra",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 595,
+      "TokenRewards": 14014.0957390457
+    },
+    "127zarPDhVzmCXVQ7Kfr1yyaa9wsMuJ74GJW9Q7ezHfQEgh6": {
+      "operator_id": "15UHvPeMjYLvMLqh6bWLxAP3MbqjjsMXFWToJKCijzGPM3p9",
+      "operator_name": "\ud83c\udf0c Novasama \ud83c\udf0c",
+      "validator_display": "\ud83c\udf0c Novasama \ud83c\udf0c / Nash",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 944,
+      "TokenRewards": 13998.173497522
+    },
+    "15cfSaBcTxNr8rV59cbhdMNCRagFr3GE6B3zZRsCp4QHHKPu": {
+      "operator_id": "15UHvPeMjYLvMLqh6bWLxAP3MbqjjsMXFWToJKCijzGPM3p9",
+      "operator_name": "\ud83c\udf0c Novasama \ud83c\udf0c",
+      "validator_display": "\ud83c\udf0c Novasama \ud83c\udf0c / \u2728\ud83d\udc4d\u2728 Day7 \u2728\ud83d\udc4d\u2728",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 227,
+      "TokenRewards": 5.3326247397
+    },
+    "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN": {
+      "operator_id": "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN",
+      "operator_name": "\ud83d\udc11 HODL.FARM \ud83d\udc11",
+      "validator_display": "\ud83d\udc11 HODL.FARM \ud83d\udc11",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 805,
+      "TokenRewards": 14025.5543092287
+    },
+    "13jN7oYuc8TBcUwGjpjbSghvPE8DdEuArvjvymqTCB6Vkguc": {
+      "operator_id": "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN",
+      "operator_name": "\ud83d\udc11 HODL.FARM \ud83d\udc11",
+      "validator_display": "\ud83d\udc11 HODL.FARM \ud83d\udc11 / B",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 93,
+      "TokenRewards": 13913.55221141
+    },
+    "11VR4pF6c7kfBhfmuwwjWY3FodeYBKWx7ix2rsRCU2q6hqJ": {
+      "operator_id": "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN",
+      "operator_name": "\ud83d\udc11 HODL.FARM \ud83d\udc11",
+      "validator_display": "\ud83d\udc11 HODL.FARM \ud83d\udc11 / C",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Scaleway S.a.s.",
+      "Nominators": 1541,
+      "TokenRewards": 13876.6518744928
+    },
+    "16TnLArANi5Y4SmQbGjW8V8XV1NBbjPr7AzwUsrHjBoERXTp": {
+      "operator_id": "139YLKvyLxEeG7asCwBZniVKacCibNMNdMPrq3ukrzagMqUV",
+      "operator_name": "Khastor",
+      "validator_display": "Khastor / DN2",
+      "LastRegion": "Asia",
+      "LastCountry": "Malaysia",
+      "LastNetwork": "Evoxt Enterprise",
+      "Nominators": 93,
+      "TokenRewards": 14114.6960987864
+    },
+    "1429tQ2RK8xCwiVYYw7YVUFGX2rbASQN2maMExay7x18neoZ": {
+      "operator_id": "139YLKvyLxEeG7asCwBZniVKacCibNMNdMPrq3ukrzagMqUV",
+      "operator_name": "Khastor",
+      "validator_display": "Khastor / K1",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "RELIABLESITE",
+      "Nominators": 580,
+      "TokenRewards": 14089.473210205
+    },
+    "165VtFs6qEWeSHDsNp6fNmQDm6fviLSzWGJFhKuaGvk6PMYS": {
+      "operator_id": "139YLKvyLxEeG7asCwBZniVKacCibNMNdMPrq3ukrzagMqUV",
+      "operator_name": "Khastor",
+      "validator_display": "Khastor / DN1",
+      "LastRegion": "Asia",
+      "LastCountry": "Malaysia",
+      "LastNetwork": "Evoxt Enterprise",
+      "Nominators": 77,
+      "TokenRewards": 13600.1641106484
+    },
+    "15DJ6BzNKGYKtScD77hC1NEWe6iybp89A96kchPtkWyFWXLg": {
+      "operator_id": "15zS1NXMHucBDYhzEdg8W83EYgqfnzg5X3gdS3iQQYJxAsxa",
+      "operator_name": "talisman.xyz",
+      "validator_display": "talisman.xyz / 3",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 26,
+      "TokenRewards": 14333.0649319618
+    },
+    "1ZyhbSPMDMMuveHErhmd4XR4YK7r23E1kwn1RQzhp2EnSme": {
+      "operator_id": "15zS1NXMHucBDYhzEdg8W83EYgqfnzg5X3gdS3iQQYJxAsxa",
+      "operator_name": "talisman.xyz",
+      "validator_display": "talisman.xyz / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 15,
+      "TokenRewards": 13796.5470954744
+    },
+    "13qsqBRWCaH12UsuKuaLuvW9M29FRjfxtZMmMMZLLi9JmyZc": {
+      "operator_id": "15zS1NXMHucBDYhzEdg8W83EYgqfnzg5X3gdS3iQQYJxAsxa",
+      "operator_name": "talisman.xyz",
+      "validator_display": "talisman.xyz / 1",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 15,
+      "TokenRewards": 13552.6330276728
+    },
+    "1bxnxTev14jMGab4QRXeafa7chTRHV7ZZ9e6GrKrrpXAHtM": {
+      "operator_id": "12s6UMSSfE2bNxtYrJc6eeuZ7UxQnRpUzaAh1gPQrGNFnE8h",
+      "operator_name": "Polkadotters",
+      "validator_display": "Polkadotters / \ud83d\udc2c DOLPHIN",
+      "LastRegion": "Europe",
+      "LastCountry": "Czechia",
+      "LastNetwork": "MasterDC s.r.o.",
+      "Nominators": 24,
+      "TokenRewards": 14093.6372876012
+    },
+    "16A4n4UQqgxw5ndeehPjUAobDNmuX2bBoPXVKj4xTe16ktRN": {
+      "operator_id": "12s6UMSSfE2bNxtYrJc6eeuZ7UxQnRpUzaAh1gPQrGNFnE8h",
+      "operator_name": "Polkadotters",
+      "validator_display": "Polkadotters / \ud83e\udd90 SHRIMP",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Ikoula Net SAS",
+      "Nominators": 85,
+      "TokenRewards": 13898.5633686365
+    },
+    "12L5m9htNsUP58mBHFXcsABDSCohhX2J4nMuY9TrJHNLCssQ": {
+      "operator_id": "12s6UMSSfE2bNxtYrJc6eeuZ7UxQnRpUzaAh1gPQrGNFnE8h",
+      "operator_name": "Polkadotters",
+      "validator_display": "Polkadotters / \ud83d\udc19 OCTOPUS",
+      "LastRegion": "Europe",
+      "LastCountry": "Czechia",
+      "LastNetwork": "MasterDC s.r.o.",
+      "Nominators": 69,
+      "TokenRewards": 13366.8668739464
+    },
+    "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az": {
+      "operator_id": "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az",
+      "operator_name": "Coinstudio",
+      "validator_display": "Coinstudio",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 836,
+      "TokenRewards": 13844.2481997524
+    },
+    "16ZrzTmq8yZ3Mq4LQZxQAaoNx4fStAp9neH8M62iNYks87bv": {
+      "operator_id": "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az",
+      "operator_name": "Coinstudio",
+      "validator_display": "Coinstudio / 02",
+      "LastRegion": "Oceania",
+      "LastCountry": "New Zealand",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 246,
+      "TokenRewards": 13460.391379388
+    },
+    "16cT2wjqq18WJdNwzeDvm57GgiQHhaQeWCrA5ZUPyKhyujtF": {
+      "operator_id": "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az",
+      "operator_name": "Coinstudio",
+      "validator_display": "Coinstudio / 01",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 162,
+      "TokenRewards": 13391.4858635069
+    },
+    "1xgB6seaZbH1v7GnK686iiNcqafPyGa3KexabQSSFhQcfAy": {
+      "operator_id": "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB",
+      "operator_name": "Blockseeker.io",
+      "validator_display": "Blockseeker.io / sentinel",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 240,
+      "TokenRewards": 14164.7521972621
+    },
+    "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB": {
+      "operator_id": "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB",
+      "operator_name": "Blockseeker.io",
+      "validator_display": "Blockseeker.io",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 220,
+      "TokenRewards": 14139.4242279839
+    },
+    "1scioGhw4gEtZP94gYyRDupmKaDUdEsohuecWoVrNB5q8ec": {
+      "operator_id": "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB",
+      "operator_name": "Blockseeker.io",
+      "validator_display": "Blockseeker.io / alpha",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 253,
+      "TokenRewards": 12101.7520953685
+    },
+    "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj": {
+      "operator_id": "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj",
+      "operator_name": "helixstreet.foundation",
+      "validator_display": "helixstreet.foundation",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "Init7 (Switzerland) Ltd.",
+      "Nominators": 96,
+      "TokenRewards": 13854.2326483014
+    },
+    "15qiiCBRGjyKbQRLci7cM9gHWDqNDGY8LZTTksczsy4j1dKb": {
+      "operator_id": "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj",
+      "operator_name": "helixstreet.foundation",
+      "validator_display": "helixstreet.foundation / 3",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "Init7 (Switzerland) Ltd.",
+      "Nominators": 29,
+      "TokenRewards": 13328.7788436355
+    },
+    "1HMQVknF2rGz2vBegqA9jU4NhZKQtW7nZTDQykgeSm8FgPa": {
+      "operator_id": "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj",
+      "operator_name": "helixstreet.foundation",
+      "validator_display": "helixstreet.foundation / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "Init7 (Switzerland) Ltd.",
+      "Nominators": 211,
+      "TokenRewards": 12469.2636942972
+    },
+    "13Ybj8CPEArUee78DxUAP9yX3ABmFNVQME1ZH4w8HVncHGzc": {
+      "operator_id": "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv",
+      "operator_name": "EXNESS.COM",
+      "validator_display": "EXNESS.COM / 0",
+      "LastRegion": "Europe",
+      "LastCountry": "Luxembourg",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 50,
+      "TokenRewards": 14206.0210905049
+    },
+    "14g5vMTk5CR9ZUM4Ji2jkwTHuycmUJthEYCYUfj8mQLSks4p": {
+      "operator_id": "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv",
+      "operator_name": "EXNESS.COM",
+      "validator_display": "EXNESS.COM / 5",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 60,
+      "TokenRewards": 13834.1117174379
+    },
+    "14oRE62MB1SWR6h5RTx3GY5HK2oZipi1Gp3zdiLwVYLfEyRZ": {
+      "operator_id": "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv",
+      "operator_name": "EXNESS.COM",
+      "validator_display": "EXNESS.COM / 4",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 59,
+      "TokenRewards": 5314.8496457965
+    },
+    "13AxoWJYFEHxjrFYvjNCsad8XMqnbhEgH3G2ULPjiuudywNJ": {
+      "operator_id": "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv",
+      "operator_name": "EXNESS.COM",
+      "validator_display": "EXNESS.COM / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 55,
+      "TokenRewards": 2866.3097717245
+    },
+    "14das6GvVjXMFf6PysheHX9ek59fCgH3MhnvQ2aNLD9n8VDV": {
+      "operator_id": "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv",
+      "operator_name": "EXNESS.COM",
+      "validator_display": "EXNESS.COM / 3",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "SERVERS-COM",
+      "Nominators": 28,
+      "TokenRewards": 6.3001101267
+    },
+    "16aHTtVyQe61KJkcciSVtnEJ3ThNdErNsY223JTBvd7U5xfb": {
+      "operator_id": "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv",
+      "operator_name": "EXNESS.COM",
+      "validator_display": "EXNESS.COM / 1",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "Equinix (EMEA) Acquisition Enterprises B.V.",
+      "Nominators": 20,
+      "TokenRewards": 5.8616399452
+    },
+    "123kFHVth2udmM79sn3RPQ81HukrQWCxA1vmTWkGHSvkR4k1": {
+      "operator_id": "15fTH34bbKGMUjF1bLmTqxPYgpg481imThwhWcQfCyktyBzL",
+      "operator_name": "\ud83c\udfd4 HELIKON \ud83c\udfd4",
+      "validator_display": "\ud83c\udfd4 HELIKON \ud83c\udfd4 / ISTANBUL",
+      "LastRegion": "Asia",
+      "LastCountry": "T\u00fcrkiye",
+      "LastNetwork": "Teknet Yazlim Ve Bilgisayar Teknolojileri",
+      "Nominators": 64,
+      "TokenRewards": 14401.9831843982
+    },
+    "12uT5wrkGedBiKLfPRZaSVdaoKQfpnQyLRHgB65cJHH3zQn9": {
+      "operator_id": "15fTH34bbKGMUjF1bLmTqxPYgpg481imThwhWcQfCyktyBzL",
+      "operator_name": "\ud83c\udfd4 HELIKON \ud83c\udfd4",
+      "validator_display": "\ud83c\udfd4 HELIKON \ud83c\udfd4 / PARIS",
+      "LastRegion": "Asia",
+      "LastCountry": "T\u00fcrkiye",
+      "LastNetwork": "Teknet Yazlim Ve Bilgisayar Teknolojileri",
+      "Nominators": 61,
+      "TokenRewards": 14365.5133802516
+    },
+    "15gx1QMCKtB16pfYh3wKc8844NygfrXWKh6UqojajDftxS1d": {
+      "operator_id": "14MVAs6jPc7bPW33fC7eTwz4Zf1pD3KWW4tQtrHWUd9w1Phx",
+      "operator_name": "cedric.AAA\ud83e\udd8a| ajuna.io",
+      "validator_display": "cedric.AAA\ud83e\udd8a| ajuna.io / AJUNA STASH",
+      "LastRegion": "North America",
+      "LastCountry": "Mexico",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 41,
+      "TokenRewards": 14387.4172429513
+    },
+    "14EoEECHSTJE1n6oCQ72zoC5hjpRU29JF8NZRK7S5vk1enwt": {
+      "operator_id": "14MVAs6jPc7bPW33fC7eTwz4Zf1pD3KWW4tQtrHWUd9w1Phx",
+      "operator_name": "cedric.AAA\ud83e\udd8a| ajuna.io",
+      "validator_display": "cedric.AAA\ud83e\udd8a| ajuna.io / BLOGA STASH",
+      "LastRegion": "North America",
+      "LastCountry": "Mexico",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 80,
+      "TokenRewards": 14361.9649972206
+    },
+    "16JwE96t9MMvWQHuyHntqVyo6Ks97XCK1kHvWumGNLGVJg5p": {
+      "operator_id": "1LJPfJbndBr3R3nfvs6KCusveZF4QTx2VfQQJzeCfrrisa9",
+      "operator_name": "BUENO VALIDATORO",
+      "validator_display": "BUENO VALIDATORO / p1",
+      "LastRegion": "South America",
+      "LastCountry": "Colombia",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 57,
+      "TokenRewards": 14382.2563518082
+    },
+    "12zREJg4524bbPVhZrH1tyJAWkAWV1kUd5hh8TeALSSjCv65": {
+      "operator_id": "1LJPfJbndBr3R3nfvs6KCusveZF4QTx2VfQQJzeCfrrisa9",
+      "operator_name": "BUENO VALIDATORO",
+      "validator_display": "BUENO VALIDATORO / p2",
+      "LastRegion": "South America",
+      "LastCountry": "Colombia",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 22,
+      "TokenRewards": 14353.4709027501
+    },
+    "13J6LkvsEtdZpvRwUMVNbag26md9ycmGe5PM8UnEokhL6Tgk": {
+      "operator_id": "13pdGgRp27xp4tWYcGx5FwVEgVambqV8XiR5L734kJXgSnSx",
+      "operator_name": "Eric",
+      "validator_display": "Eric / BladeRunner",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 158,
+      "TokenRewards": 14311.2792450535
+    },
+    "1qNhYLFbBi1tFyvYfSRRBP3Ce5cjS1xKMTMVNr8gJZvNTXM": {
+      "operator_id": "13pdGgRp27xp4tWYcGx5FwVEgVambqV8XiR5L734kJXgSnSx",
+      "operator_name": "Eric",
+      "validator_display": "Eric / BladeRunner2",
+      "LastRegion": "Asia",
+      "LastCountry": "Hong Kong",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 57,
+      "TokenRewards": 14283.1386150979
+    },
+    "1dGsgLgFez7gt5WjX2FYzNCJtaCjGG6W9dA42d9cHngDYGg": {
+      "operator_id": "1Dra6uQP2j3ZEBGkvtJvnun6UYCz1DX62yyqT9eFenfArXZ",
+      "operator_name": "DRAGONSTAKE \ud83d\udc32",
+      "validator_display": "DRAGONSTAKE \ud83d\udc32 / 01",
+      "LastRegion": "Europe",
+      "LastCountry": "Spain",
+      "LastNetwork": "IONOS SE",
+      "Nominators": 1002,
+      "TokenRewards": 14356.2562660279
+    },
+    "12dGS1zjyiUqj7GuxDDwv9i72RMye1mT7tSWNaSx7QVeJ32H": {
+      "operator_id": "1Dra6uQP2j3ZEBGkvtJvnun6UYCz1DX62yyqT9eFenfArXZ",
+      "operator_name": "DRAGONSTAKE \ud83d\udc32",
+      "validator_display": "DRAGONSTAKE \ud83d\udc32 / 02",
+      "LastRegion": "Europe",
+      "LastCountry": "Spain",
+      "LastNetwork": "IONOS SE",
+      "Nominators": 619,
+      "TokenRewards": 14130.5321855579
+    },
+    "1TunGctS5HELfuJZjd5qBNoMVsST2EBdMw5vWK8f3dCFbq9": {
+      "operator_id": "12MgK2Sc8Rrh6DXS2gDrt7fWJ24eGeVb23NALbZLMw1grnkL",
+      "operator_name": "\ud83d\udc1fYellowFin Tuna\ud83d\udc1f",
+      "validator_display": "\ud83d\udc1fYellowFin Tuna\ud83d\udc1f / \ud83c\udf0aAdriatic\ud83c\udf0a",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 328,
+      "TokenRewards": 14321.875262810101
+    },
+    "12MgK2Sc8Rrh6DXS2gDrt7fWJ24eGeVb23NALbZLMw1grnkL": {
+      "operator_id": "12MgK2Sc8Rrh6DXS2gDrt7fWJ24eGeVb23NALbZLMw1grnkL",
+      "operator_name": "\ud83d\udc1fYellowFin Tuna\ud83d\udc1f",
+      "validator_display": "\ud83d\udc1fYellowFin Tuna\ud83d\udc1f",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 984,
+      "TokenRewards": 14158.9756292107
+    },
+    "126RwaHn4MDekLWfUYfiqcVbiQHapwDSAT9vZZS15HLqfDJh": {
+      "operator_id": "12NLgzqfhuJkc9mZ5XUTTG85N8yhhzfptwqF1xVhtK3ZX7f6",
+      "operator_name": "Joe",
+      "validator_display": "Joe / V01",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 1084,
+      "TokenRewards": 14221.5927426284
+    },
+    "1NDRMvN7FH9YtJLVPf9doF5zbuUwn6hdH1b4WmVyZDr5joM": {
+      "operator_id": "12NLgzqfhuJkc9mZ5XUTTG85N8yhhzfptwqF1xVhtK3ZX7f6",
+      "operator_name": "Joe",
+      "validator_display": "Joe / V02",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 1273,
+      "TokenRewards": 14173.7093769667
+    },
+    "1123RekaPHgWaPL5v9qfsikRemeZdYC4tvKXYuLXwhfT3NKy": {
+      "operator_id": "16fH2RPKB81butanvooF2tZqCfWrAuwXNWhcPyomCbCBDaPF",
+      "operator_name": "BESTVALIDATOR | ZURICH",
+      "validator_display": "BESTVALIDATOR | ZURICH / p1",
+      "LastRegion": "South America",
+      "LastCountry": "Peru",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 426,
+      "TokenRewards": 14418.9807807203
+    },
+    "15vthsDeqGnawu8L9Cz3RheobRFZyzgbB59MpFFVFurW4AP9": {
+      "operator_id": "16fH2RPKB81butanvooF2tZqCfWrAuwXNWhcPyomCbCBDaPF",
+      "operator_name": "BESTVALIDATOR | ZURICH",
+      "validator_display": "BESTVALIDATOR | ZURICH / p2",
+      "LastRegion": "South America",
+      "LastCountry": "Peru",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 33,
+      "TokenRewards": 13934.2370818622
+    },
+    "1qUKZLhxVGUPozs8j8XpxH8VbZX5ckXV7ziUf6ji83ieZYd": {
+      "operator_id": "15cu9qomrRvnqkvnSMhPPkBp9359QDbGBy1bVo3tseozxhxj",
+      "operator_name": "HYPERSPEED",
+      "validator_display": "HYPERSPEED / DOT[1]\u23e9",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "ZONENETWORKS.COM.AU - Hosting Provider AUSTRALIA",
+      "Nominators": 53,
+      "TokenRewards": 14245.6567099896
+    },
+    "12zTFfxSi1oa2cgSGHavuZctowWXkyukgSq7H8AV169hXdPj": {
+      "operator_id": "15cu9qomrRvnqkvnSMhPPkBp9359QDbGBy1bVo3tseozxhxj",
+      "operator_name": "HYPERSPEED",
+      "validator_display": "HYPERSPEED / DOT[2]\u23e9",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "ZONENETWORKS.COM.AU - Hosting Provider AUSTRALIA",
+      "Nominators": 70,
+      "TokenRewards": 14078.9798080232
+    },
+    "1LSvoFpnspPhvwgJ1GLLT4SRHBmWXwXE26JHiiZJ4RKxHqC": {
+      "operator_id": "12sU2MTFuaSezAm1xNnmffJCNxvCdHbr4Hxbc9ZYtVWk92JF",
+      "operator_name": "ITRocket",
+      "validator_display": "ITRocket / ITRocket_2",
+      "LastRegion": "Asia",
+      "LastCountry": "India",
+      "LastNetwork": "AS-VULTR",
+      "Nominators": 66,
+      "TokenRewards": 14202.2028265927
+    },
+    "14fiiokuMzrh8DvorHgM1yXt1kDBQwq8AGPyHxQz9JCXkLGQ": {
+      "operator_id": "12sU2MTFuaSezAm1xNnmffJCNxvCdHbr4Hxbc9ZYtVWk92JF",
+      "operator_name": "ITRocket",
+      "validator_display": "ITRocket / ITRocket_1",
+      "LastRegion": "Asia",
+      "LastCountry": "India",
+      "LastNetwork": "AS-VULTR",
+      "Nominators": 60,
+      "TokenRewards": 14071.0669892555
+    },
+    "13pZskDR7Pt67NtcChSr4uFRBf9ZS52nQeyrceSykq8MDrMe": {
+      "operator_id": "14rp4CvtyN3WSftrndyNxjJFi4cGXsgrE9gFr528QSYFvPTu",
+      "operator_name": "PERMANENCE DAO",
+      "validator_display": "PERMANENCE DAO / ASIMOV",
+      "LastRegion": "Asia",
+      "LastCountry": "T\u00fcrkiye",
+      "LastNetwork": "Teknet Yazlim Ve Bilgisayar Teknolojileri",
+      "Nominators": 40,
+      "TokenRewards": 14374.548617382
+    },
+    "14m7VDz8PUe35Agvt1Z4ymxzR5fnKxfnGM9wT2WdtoYEtFQ4": {
+      "operator_id": "14rp4CvtyN3WSftrndyNxjJFi4cGXsgrE9gFr528QSYFvPTu",
+      "operator_name": "PERMANENCE DAO",
+      "validator_display": "PERMANENCE DAO / TURING",
+      "LastRegion": "Asia",
+      "LastCountry": "T\u00fcrkiye",
+      "LastNetwork": "Teknet Yazlim Ve Bilgisayar Teknolojileri",
+      "Nominators": 53,
+      "TokenRewards": 13826.9815897102
+    },
+    "15iA5hpjUecWBbf38Nfegwmtyux25o3LrGaNodfZDxq5nXXE": {
+      "operator_id": "1gatoakSkH4be8KD9Ekj5xCXMdAiGxieg2NfTg41s2UME5J",
+      "operator_name": "GATOTECH",
+      "validator_display": "GATOTECH / UK1",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 212,
+      "TokenRewards": 14147.134087968
+    },
+    "14KHzXAZ5admFLXdgbEGpSjCGxiePniHRDM6t5r4o8kbYV7P": {
+      "operator_id": "1gatoakSkH4be8KD9Ekj5xCXMdAiGxieg2NfTg41s2UME5J",
+      "operator_name": "GATOTECH",
+      "validator_display": "GATOTECH / UK2",
+      "LastRegion": "Europe",
+      "LastCountry": "United Kingdom",
+      "LastNetwork": "Hfd Datavita Limited",
+      "Nominators": 40,
+      "TokenRewards": 14052.3146952244
+    },
+    "12R2eXcE2QhMa9BkMsWktt9wmoxbgiQBDG9YUM1p94r2F5UD": {
+      "operator_id": "12R2eXcE2QhMa9BkMsWktt9wmoxbgiQBDG9YUM1p94r2F5UD",
+      "operator_name": "ProStakers.com \ud83d\udc8e",
+      "validator_display": "ProStakers.com \ud83d\udc8e",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 480,
+      "TokenRewards": 14131.9464031594
+    },
+    "13sULqZ2NidBvrocYwJYxT6WJkcSY77SiQXtFiJHsurTZgqN": {
+      "operator_id": "12R2eXcE2QhMa9BkMsWktt9wmoxbgiQBDG9YUM1p94r2F5UD",
+      "operator_name": "ProStakers.com \ud83d\udc8e",
+      "validator_display": "ProStakers.com \ud83d\udc8e / 02",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 444,
+      "TokenRewards": 14032.551394709
+    },
+    "12Qq3fn9xnFZ37Ltcj6BH8NSpAQjEMp2oKnEALa7bbuguU4L": {
+      "operator_id": "16fbkDCMrAo1uyC52NyA8Y2dETnYVpCofSoj3QEE2WUNnkLk",
+      "operator_name": "INFRASTRUCTURE CORPORATION",
+      "validator_display": "INFRASTRUCTURE CORPORATION / 02",
+      "LastRegion": "South America",
+      "LastCountry": "Argentina",
+      "LastNetwork": "LATITUDE-SH",
+      "Nominators": 25,
+      "TokenRewards": 14086.3687203695
+    },
+    "15zH8tbFxyBgvkAdF3UWSfykAXADbS32vJuYRHTkZJ15Y4jd": {
+      "operator_id": "16fbkDCMrAo1uyC52NyA8Y2dETnYVpCofSoj3QEE2WUNnkLk",
+      "operator_name": "INFRASTRUCTURE CORPORATION",
+      "validator_display": "INFRASTRUCTURE CORPORATION / 01",
+      "LastRegion": "South America",
+      "LastCountry": "Argentina",
+      "LastNetwork": "LATITUDE-SH",
+      "Nominators": 17,
+      "TokenRewards": 14059.4381512875
+    },
+    "15ZvLonEseaWZNy8LDkXXj3Y8bmAjxCjwvpy4pXWSL4nGSBs": {
+      "operator_id": "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp",
+      "operator_name": "Swiss Bond",
+      "validator_display": "Swiss Bond / in Davos",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 805,
+      "TokenRewards": 13898.3994414363
+    },
+    "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp": {
+      "operator_id": "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp",
+      "operator_name": "Swiss Bond",
+      "validator_display": "Swiss Bond",
+      "LastRegion": "Europe",
+      "LastCountry": "United Kingdom",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 806,
+      "TokenRewards": 13775.0079729249
+    },
+    "15koMvYRHfSB4U2smwRQvKo6jd275Rdf8wS7TSkAe5yxbZsk": {
+      "operator_id": "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp",
+      "operator_name": "Swiss Bond",
+      "validator_display": "Swiss Bond / GENEVA",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 6,
+      "TokenRewards": 399.8121922145
+    },
+    "14fcsJbrR7MQfUMJmb7NKpE2shVRyko17rt2PcaY4HKthQg": {
+      "operator_id": "15XFryPdurvcxD7YSpR4H43CVpXYvxCxYTL76nrjih9MTkH9",
+      "operator_name": "Chris-Staking",
+      "validator_display": "Chris-Staking / p2",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "IS",
+      "Nominators": 102,
+      "TokenRewards": 14049.1106295064
+    },
+    "16hUkBK3h94uh7682gk7HeTYvPmSa4D1Y2w4KUZh1u1cP5J": {
+      "operator_id": "15XFryPdurvcxD7YSpR4H43CVpXYvxCxYTL76nrjih9MTkH9",
+      "operator_name": "Chris-Staking",
+      "validator_display": "Chris-Staking / p1",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "IS",
+      "Nominators": 122,
+      "TokenRewards": 13994.3092156087
+    },
+    "14dTZLAwhcBennygERRS5tXnWVAHq3e12LoCoHrQsmDd4X4H": {
+      "operator_id": "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7",
+      "operator_name": "Kraken01",
+      "validator_display": "Kraken01 / 2\n",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 130,
+      "TokenRewards": 14016.6142453899
+    },
+    "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7": {
+      "operator_id": "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7",
+      "operator_name": "Kraken01",
+      "validator_display": "Kraken01",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "AMAZON-02",
+      "Nominators": 378,
+      "TokenRewards": 13898.5575009805
+    },
+    "13f1iU967VsBeRxueqs9zrJV6JZ1EmEP6A1QTatThBcYbxqE": {
+      "operator_id": "13G9THQY9iGaUfNBL69uW8FX6cNmQmquwqoPFyQYHjhzKpxE",
+      "operator_name": "\ud83c\udf0e ValidAndina \ud83c\udfd4\ufe0f",
+      "validator_display": "\ud83c\udf0e ValidAndina \ud83c\udfd4\ufe0f / LIM \ud83c\uddf5\ud83c\uddea DOT",
+      "LastRegion": "South America",
+      "LastCountry": "Peru",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 15,
+      "TokenRewards": 14330.9453095658
+    },
+    "16mrcAndMguy3wqfuLNubgxxeyWQHjYAdqRbj26Vb2gYtszK": {
+      "operator_id": "13G9THQY9iGaUfNBL69uW8FX6cNmQmquwqoPFyQYHjhzKpxE",
+      "operator_name": "\ud83c\udf0e ValidAndina \ud83c\udfd4\ufe0f",
+      "validator_display": "\ud83c\udf0e ValidAndina \ud83c\udfd4\ufe0f / BOG \ud83c\udde8\ud83c\uddf4 DOT",
+      "LastRegion": "South America",
+      "LastCountry": "Colombia",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 88,
+      "TokenRewards": 13527.1151231663
+    },
+    "14bGpFntaPUgoSNdXeU99ddPH8RvHfZRic1dCcQBwnNuJwwr": {
+      "operator_id": "13XrsStBnHnJNgDq1bMPVax63gbdautnstBxARWGeDbED4pU",
+      "operator_name": "digitalghost.xyz",
+      "validator_display": "digitalghost.xyz / dot01",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "LIMESTONENETWORKS",
+      "Nominators": 52,
+      "TokenRewards": 14163.3062448277
+    },
+    "13jagnVH4vS6a5XD1xixGA4zUxgjkZ9h8dbQDVCDZYR6rS9m": {
+      "operator_id": "13XrsStBnHnJNgDq1bMPVax63gbdautnstBxARWGeDbED4pU",
+      "operator_name": "digitalghost.xyz",
+      "validator_display": "digitalghost.xyz / dot02",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "LIMESTONENETWORKS",
+      "Nominators": 29,
+      "TokenRewards": 13639.1812397409
+    },
+    "155qLCXRwMZjepZgfcwsoGuXXtHyWum6bScc5SbfM2yekfc3": {
+      "operator_id": "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs",
+      "operator_name": "openbitlab",
+      "validator_display": "openbitlab / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 81,
+      "TokenRewards": 14159.5054836782
+    },
+    "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs": {
+      "operator_id": "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs",
+      "operator_name": "openbitlab",
+      "validator_display": "openbitlab",
+      "LastRegion": "Europe",
+      "LastCountry": "Italy",
+      "LastNetwork": "Aruba S.p.A.",
+      "Nominators": 105,
+      "TokenRewards": 13590.9645312183
+    },
+    "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG": {
+      "operator_id": "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG",
+      "operator_name": "Mile\ud83c\udf0d",
+      "validator_display": "Mile\ud83c\udf0d",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 741,
+      "TokenRewards": 14044.4770812741
+    },
+    "1HmAqbBRrWvsqbLkvpiVDkdA2PcctUE5JUe3qokEh1FN455": {
+      "operator_id": "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG",
+      "operator_name": "Mile\ud83c\udf0d",
+      "validator_display": "Mile\ud83c\udf0d / Bravo",
+      "LastRegion": "Europe",
+      "LastCountry": "Poland",
+      "LastNetwork": "MEVSPACE sp. z o.o.",
+      "Nominators": 995,
+      "TokenRewards": 13696.1743746256
+    },
+    "13rG5oK2qskxP27mjUEyn1YbrmzpCV6fbBVcnBUd8Y7sQX6Z": {
+      "operator_id": "1srcFWVcPn2oXEKuddMMTGCLQMDdRqxKKo9qpFTi8PA7NW1",
+      "operator_name": "ValidOrange",
+      "validator_display": "ValidOrange / DOT2",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "Phoenix Nap, LLC.",
+      "Nominators": 37,
+      "TokenRewards": 14098.0325507169
+    },
+    "12WRpiUFDZ1GjksnpmBL3EzT2jz2TZ7QHhUTqoubhYPQ7PAZ": {
+      "operator_id": "1srcFWVcPn2oXEKuddMMTGCLQMDdRqxKKo9qpFTi8PA7NW1",
+      "operator_name": "ValidOrange",
+      "validator_display": "ValidOrange / DOT3",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "Phoenix Nap, LLC.",
+      "Nominators": 79,
+      "TokenRewards": 13566.438680484
+    },
+    "16Ar9KjX2LQf2CdTrTxbyxPjDNswhL7qPhnwcr8ocMynBRWo": {
+      "operator_id": "152cdecr7tagcB2t63dvjBnxV5j7YDW8PpbfX7orXj6ZQFWG",
+      "operator_name": "Zetetic Validator",
+      "validator_display": "Zetetic Validator / 01",
+      "LastRegion": "Asia",
+      "LastCountry": "Malaysia",
+      "LastNetwork": "Evoxt Enterprise",
+      "Nominators": 136,
+      "TokenRewards": 13862.709696551101
+    },
+    "152cdecr7tagcB2t63dvjBnxV5j7YDW8PpbfX7orXj6ZQFWG": {
+      "operator_id": "152cdecr7tagcB2t63dvjBnxV5j7YDW8PpbfX7orXj6ZQFWG",
+      "operator_name": "Zetetic Validator",
+      "validator_display": "Zetetic Validator",
+      "LastRegion": "South America",
+      "LastCountry": "Argentina",
+      "LastNetwork": "LATITUDE-SH",
+      "Nominators": 58,
+      "TokenRewards": 13784.4191802293
+    },
+    "13unkT9DyFUnzKZdLCkHBvGLuhvcHQSrRhTWhrL9gqG98CTH": {
+      "operator_id": "1Chd8YNhBkHiUcdLwQetjYu11mw9TweJ8tY6ySew8RjVB2Q",
+      "operator_name": "PROOF.COMPUTER",
+      "validator_display": "PROOF.COMPUTER / FUTUREPROOF",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "SERVER-MANIA",
+      "Nominators": 78,
+      "TokenRewards": 14076.0327905414
+    },
+    "12KzKVWqYqyEXx4RpPLvbPTakfrhNgfXeTWSR65CF8ZrFHrt": {
+      "operator_id": "1Chd8YNhBkHiUcdLwQetjYu11mw9TweJ8tY6ySew8RjVB2Q",
+      "operator_name": "PROOF.COMPUTER",
+      "validator_display": "PROOF.COMPUTER / WEATHERPROOF",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "SERVER-MANIA",
+      "Nominators": 121,
+      "TokenRewards": 13481.8417272271
+    },
+    "13uvDxdd6LUNp1WWzM3xbch7q1DFfAaqRaQE5bo5QG7RGqt": {
+      "operator_id": "12QQZYE6oXUUM4qpomHh72ehe4pbZhvfW7w9dEqNUfs7zbCE",
+      "operator_name": "STEAKCHEF",
+      "validator_display": "STEAKCHEF / p1",
+      "LastRegion": "South America",
+      "LastCountry": "Peru",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 166,
+      "TokenRewards": 13948.5425800158
+    },
+    "13VFYHh4svavBdFzyYNtzKF3jgTkjXARTabtQHoAYJj4T3Gd": {
+      "operator_id": "12QQZYE6oXUUM4qpomHh72ehe4pbZhvfW7w9dEqNUfs7zbCE",
+      "operator_name": "STEAKCHEF",
+      "validator_display": "STEAKCHEF / p2",
+      "LastRegion": "South America",
+      "LastCountry": "Peru",
+      "LastNetwork": "Datacamp Limited",
+      "Nominators": 72,
+      "TokenRewards": 13587.579662739301
+    },
+    "13bRirNoyWD3iEF9yHvua5QBoeYjSSEFmZ7bhoryTH5NkGue": {
+      "operator_id": "1627VVB5gtHiseCV8ZdffF7P3bWrLMkU92Q6u3LsG8tGuB63",
+      "operator_name": "hirish",
+      "validator_display": "hirish / HIRISH_2",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Orange",
+      "Nominators": 32,
+      "TokenRewards": 13755.5653193289
+    },
+    "1627VVB5gtHiseCV8ZdffF7P3bWrLMkU92Q6u3LsG8tGuB63": {
+      "operator_id": "1627VVB5gtHiseCV8ZdffF7P3bWrLMkU92Q6u3LsG8tGuB63",
+      "operator_name": "hirish",
+      "validator_display": "hirish",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Orange",
+      "Nominators": 163,
+      "TokenRewards": 13650.9227423111
+    },
+    "15KhD36jXQsqrAbYCjcTmguPYvBdCNdZFvEZbntAB1mrRN8Y": {
+      "operator_id": "16g6ZBYbEP3kRMgVBki7zdvdGpymXDyHWzj3D3rDaEATXzc8",
+      "operator_name": "ECH0.RE",
+      "validator_display": "ECH0.RE / 02",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "NTT-DATA-Inc",
+      "Nominators": 27,
+      "TokenRewards": 13923.6462446745
+    },
+    "126cWhehuBFhQvbDqt26dWBNgELfkpc72WvJV3sx82qRogkT": {
+      "operator_id": "16g6ZBYbEP3kRMgVBki7zdvdGpymXDyHWzj3D3rDaEATXzc8",
+      "operator_name": "ECH0.RE",
+      "validator_display": "ECH0.RE / 01",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "NTT-DATA-Inc",
+      "Nominators": 54,
+      "TokenRewards": 13473.7361389601
+    },
+    "16ALG7wV7j1nUExAY8LYwxQxVwrMEoW2tqPRjKgbfX1ZNgZU": {
+      "operator_id": "15tQ5joTz2nywZ4UgPYWDMN522s91W7yTmhvV1rp4hpVhZT3",
+      "operator_name": "\ud83d\ude82 Zugian Duck \ud83e\udd86",
+      "validator_display": "\ud83d\ude82 Zugian Duck \ud83e\udd86 / V3",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "ZONENETWORKS.COM.AU - Hosting Provider AUSTRALIA",
+      "Nominators": 57,
+      "TokenRewards": 13832.0211184079
+    },
+    "12TxPQBN99gGwn4g9HRKCjndrnCSv3SuRaCHstk3qmoQuS9L": {
+      "operator_id": "15tQ5joTz2nywZ4UgPYWDMN522s91W7yTmhvV1rp4hpVhZT3",
+      "operator_name": "\ud83d\ude82 Zugian Duck \ud83e\udd86",
+      "validator_display": "\ud83d\ude82 Zugian Duck \ud83e\udd86 / V4",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "xTom",
+      "Nominators": 252,
+      "TokenRewards": 13538.0189412699
+    },
+    "12BVn5jTsJv78Kd8PhpguMnQjiBLUBzXTys9F8V8Scm7y4St": {
+      "operator_id": "16XXocb76BpprdspsR7j5iWFHf4aTMnsVHxgGBXfixs1FFLb",
+      "operator_name": "Encointer",
+      "validator_display": "Encointer / PV2",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "GSL Networks Pty LTD",
+      "Nominators": 73,
+      "TokenRewards": 13734.91144768
+    },
+    "165NJXk1HKxeFPbNK3ZEsgRPoGTkxMU9DyteK3cE7AGt7xrJ": {
+      "operator_id": "16XXocb76BpprdspsR7j5iWFHf4aTMnsVHxgGBXfixs1FFLb",
+      "operator_name": "Encointer",
+      "validator_display": "Encointer / PV1",
+      "LastRegion": "Oceania",
+      "LastCountry": "New Zealand",
+      "LastNetwork": "GSL Networks Pty LTD",
+      "Nominators": 78,
+      "TokenRewards": 13624.9876850079
+    },
+    "14SvpNr394ZedPfXMkNm87HvTBJWCdrW7C5Cb1J9LSP4s27p": {
+      "operator_id": "1jd8iGcgYLwmRPPyR934eePGiT4LJy6iRq1EV751Qga2j2g",
+      "operator_name": "locozoo",
+      "validator_display": "locozoo / neko",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "Leaseweb Japan K.K.",
+      "Nominators": 20,
+      "TokenRewards": 13922.2098478416
+    },
+    "13agGwdvkkrUbjiR1BMptgxYXbPQNVqDFPRGu7wAHRb8Wj4M": {
+      "operator_id": "1jd8iGcgYLwmRPPyR934eePGiT4LJy6iRq1EV751Qga2j2g",
+      "operator_name": "locozoo",
+      "validator_display": "locozoo / wan",
+      "LastRegion": "Asia",
+      "LastCountry": "Japan",
+      "LastNetwork": "Leaseweb Japan K.K.",
+      "Nominators": 80,
+      "TokenRewards": 13192.633399234901
+    },
+    "15MZqPwJTkmPieNpT3vNXeqZ9S1B5ThmnE8jtqotEVXQoLcE": {
+      "operator_id": "14DgNYSXVTFJxbNJJaVJFPrvfmdoB1S6DAcC7jKSsGyFczjq",
+      "operator_name": "pathrocknetwork",
+      "validator_display": "pathrocknetwork / PathrockNetwork",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "TERASWITCH",
+      "Nominators": 66,
+      "TokenRewards": 13677.6506157568
+    },
+    "15GAZsLr6X2vhDjcpnztFZuYibAemzVw2i8VYBb42VHJhcZB": {
+      "operator_id": "14DgNYSXVTFJxbNJJaVJFPrvfmdoB1S6DAcC7jKSsGyFczjq",
+      "operator_name": "pathrocknetwork",
+      "validator_display": "pathrocknetwork / pathrocknetwork",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "velia.net Internetdienste GmbH",
+      "Nominators": 81,
+      "TokenRewards": 13433.7311742063
+    },
+    "1KikY9PK1kYwawnGcERnzLbSi39cJyxMRW5iLNsg2nfjWiN": {
+      "operator_id": "16k5oJMBY9QXCnKeMhMmQwyStcM7sRGfbbrTiHWL2m87JJP9",
+      "operator_name": "\ud83c\udf6f HoneyStake.xyz \ud83c\udf6f",
+      "validator_display": "\ud83c\udf6f HoneyStake.xyz \ud83c\udf6f / DN 1",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "AS-VULTR",
+      "Nominators": 47,
+      "TokenRewards": 13623.0097571975
+    },
+    "156dG94Rcq61HVrn6Ndx33NysDimutzAq7j5Mz7yo2Hxf6wh": {
+      "operator_id": "16k5oJMBY9QXCnKeMhMmQwyStcM7sRGfbbrTiHWL2m87JJP9",
+      "operator_name": "\ud83c\udf6f HoneyStake.xyz \ud83c\udf6f",
+      "validator_display": "\ud83c\udf6f HoneyStake.xyz \ud83c\udf6f / DN 2",
+      "LastRegion": "Oceania",
+      "LastCountry": "Australia",
+      "LastNetwork": "AS-VULTR",
+      "Nominators": 66,
+      "TokenRewards": 13322.1190501015
+    },
+    "15DChmtG5ZsRgYR3sirKMEbPsxyvPSts2Fz9s9qaiu2eqKhY": {
+      "operator_id": "15DChmtG5ZsRgYR3sirKMEbPsxyvPSts2Fz9s9qaiu2eqKhY",
+      "operator_name": "VALIDEXIS",
+      "validator_display": "VALIDEXIS",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "NTT-DATA-Inc",
+      "Nominators": 79,
+      "TokenRewards": 13601.6586023582
+    },
+    "14KMKAzCX6z1e2ASu5kwVur4o6DhUfC2s5KUrXUW2VgMgkLk": {
+      "operator_id": "15DChmtG5ZsRgYR3sirKMEbPsxyvPSts2Fz9s9qaiu2eqKhY",
+      "operator_name": "VALIDEXIS",
+      "validator_display": "VALIDEXIS / 2",
+      "LastRegion": "South America",
+      "LastCountry": "Chile",
+      "LastNetwork": "LATITUDE-SH",
+      "Nominators": 76,
+      "TokenRewards": 13335.4292135481
+    },
+    "12eJYg9RLVtAphFfr7FZ7rV3T5NmRa1B6jWPGNgGzE1mEDSa": {
+      "operator_id": "13GtCixw3EZARj52CVbKLrsAzyc7dmmYhDV6quS5yeVCfnh1",
+      "operator_name": "RADIUMBLOCK.COM",
+      "validator_display": "RADIUMBLOCK.COM / 04",
+      "LastRegion": "Asia",
+      "LastCountry": "India",
+      "LastNetwork": "LEAPSWITCH NETWORKS PRIVATE LIMITED",
+      "Nominators": 73,
+      "TokenRewards": 13759.102936399
+    },
+    "133oN3pkmNqqR5rzpaTEDq3AtmVNhfFDfoYLFMk7EuTwNzNZ": {
+      "operator_id": "13GtCixw3EZARj52CVbKLrsAzyc7dmmYhDV6quS5yeVCfnh1",
+      "operator_name": "RADIUMBLOCK.COM",
+      "validator_display": "RADIUMBLOCK.COM / 05",
+      "LastRegion": "Asia",
+      "LastCountry": "South Korea",
+      "LastNetwork": "AS-VULTR",
+      "Nominators": 89,
+      "TokenRewards": 13177.7928649019
+    },
+    "126ANkfm32BEYjHLGvqW5KDEkzmTGxAr6RchdE85GoyjMjeW": {
+      "operator_id": "13ujiSd3d6rCuQjDMgue2HPBvcYVa8wPCcUnAwHznetpHX5w",
+      "operator_name": "luizv",
+      "validator_display": "luizv / StakeHarvest/v2",
+      "LastRegion": "South America",
+      "LastCountry": "Brazil",
+      "LastNetwork": "TELEFONICA BRASIL S.A",
+      "Nominators": 52,
+      "TokenRewards": 13387.7586984922
+    },
+    "1PqUaCWULAwrdvY2B6FnkzPHWzAhbKEk6hoFoUGs2tCy5jS": {
+      "operator_id": "13ujiSd3d6rCuQjDMgue2HPBvcYVa8wPCcUnAwHznetpHX5w",
+      "operator_name": "luizv",
+      "validator_display": "luizv / StakeHarvest/v1",
+      "LastRegion": "South America",
+      "LastCountry": "Brazil",
+      "LastNetwork": "V tal",
+      "Nominators": 59,
+      "TokenRewards": 13378.360395387701
+    },
+    "13BWVNKSQn9dTrLXhmgm3QHZZNCKZ9ToEsJitjypEvLwJB13": {
+      "operator_id": "12jtFwn8Kvnqd2JEEtRiCfBaSFVY9NQivSXHJc93gTbdJkNe",
+      "operator_name": "vonFlandern",
+      "validator_display": "vonFlandern / VFDA",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 55,
+      "TokenRewards": 13869.8194366741
+    },
+    "13JxPP5Cc5oE3y3BC9RadyiHdUMctMnvdExApfN8M22NgdAS": {
+      "operator_id": "12jtFwn8Kvnqd2JEEtRiCfBaSFVY9NQivSXHJc93gTbdJkNe",
+      "operator_name": "vonFlandern",
+      "validator_display": "vonFlandern / VFDB",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "NTT-DATA-Inc",
+      "Nominators": 68,
+      "TokenRewards": 12895.1710491843
+    },
+    "16UpmQgoFroRH1i4Gi1wVZmomXxSZc8gqkGQG2czD1yJHoEu": {
+      "operator_id": "1guBaaUmYpYPmsNmooQApqFmpmRHeaipb1CxoncMuiaqXGh",
+      "operator_name": "deigenvektor.io",
+      "validator_display": "deigenvektor.io / 2",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "Init7 (Switzerland) Ltd.",
+      "Nominators": 65,
+      "TokenRewards": 13396.4865876781
+    },
+    "1guBaaUmYpYPmsNmooQApqFmpmRHeaipb1CxoncMuiaqXGh": {
+      "operator_id": "1guBaaUmYpYPmsNmooQApqFmpmRHeaipb1CxoncMuiaqXGh",
+      "operator_name": "deigenvektor.io",
+      "validator_display": "deigenvektor.io",
+      "LastRegion": "Europe",
+      "LastCountry": "Switzerland",
+      "LastNetwork": "Bluewin",
+      "Nominators": 102,
+      "TokenRewards": 13082.2597776408
+    },
+    "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK": {
+      "operator_id": "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK",
+      "operator_name": "NEWDEAL",
+      "validator_display": "NEWDEAL",
+      "LastRegion": "South America",
+      "LastCountry": "Argentina",
+      "LastNetwork": "Dattatec.com",
+      "Nominators": 127,
+      "TokenRewards": 13163.6684261715
+    },
+    "143bj6p3rQeoC1RuWEgZNu2pbwaQtdhiwX28599EdqvCSPmb": {
+      "operator_id": "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK",
+      "operator_name": "NEWDEAL",
+      "validator_display": "NEWDEAL / 1",
+      "LastRegion": "Asia",
+      "LastCountry": "India",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 93,
+      "TokenRewards": 13055.8167823109
+    },
+    "13C2DHD8djdFiXorENB1nPkjhN3f9efNmstqKQqzaiDrVe8L": {
+      "operator_id": "15rb4HVycC1KLHsdaSdV1x2TJAmUkD7PhubmhL3PnGv7RiGY",
+      "operator_name": "OnFinality.io",
+      "validator_display": "OnFinality.io / ONFINALITY/Validator#1\ud83d\ude80",
+      "LastRegion": "Asia",
+      "LastCountry": "Hong Kong",
+      "LastNetwork": "Telekomunikasi Indonesia International HongKong Limited",
+      "Nominators": 80,
+      "TokenRewards": 13400.022209171
+    },
+    "15V7kggXFSr79BcLRsxxonx19B1kMRGyR4FtyYYuNiKvynnr": {
+      "operator_id": "15rb4HVycC1KLHsdaSdV1x2TJAmUkD7PhubmhL3PnGv7RiGY",
+      "operator_name": "OnFinality.io",
+      "validator_display": "OnFinality.io / ONFINALITY/Validator#2\ud83d\ude80",
+      "LastRegion": "Asia",
+      "LastCountry": "Hong Kong",
+      "LastNetwork": "Telekomunikasi Indonesia International HongKong Limited",
+      "Nominators": 110,
+      "TokenRewards": 12723.1387336203
+    },
+    "14cxMDpBNLsNEXWyCzked3zghzaYWXwoqGT4h12GqQXdVhmn": {
+      "operator_id": "16g43B7VPfTmpXQujSz3aKbqY9twSrDreHFWtwp4P7bLkQPp",
+      "operator_name": "Staking4All \ud83e\udd69",
+      "validator_display": "Staking4All \ud83e\udd69 / validator",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 1051,
+      "TokenRewards": 13989.4723421408
+    },
+    "16g43B7VPfTmpXQujSz3aKbqY9twSrDreHFWtwp4P7bLkQPp": {
+      "operator_id": "16g43B7VPfTmpXQujSz3aKbqY9twSrDreHFWtwp4P7bLkQPp",
+      "operator_name": "Staking4All \ud83e\udd69",
+      "validator_display": "Staking4All \ud83e\udd69",
+      "LastRegion": "Africa",
+      "LastCountry": "South Africa",
+      "LastNetwork": "Tesuco-Telecommunications",
+      "Nominators": 252,
+      "TokenRewards": 7026.9031665427
+    },
+    "15PPJX7PvSbN7k6FSVZ5wnjWiMcf3swyRu4rzBZMnuhP7Koj": {
+      "operator_id": "1bG5MdYcqMX8RdBHmgtkDv2qW6GM8iCQhwTkvw9SAo93QSr",
+      "operator_name": "KUZO STAKE",
+      "validator_display": "KUZO STAKE / 01",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "GORILLASERVERS",
+      "Nominators": 580,
+      "TokenRewards": 14445.6177025533
+    },
+    "13mK8AssyPekT5cFuYQ7ijKNXcjHPq8Gnx6TxF5eFCAwoLQ": {
+      "operator_id": "15oXUdem7MwP62EwZ7yNK4arwJtXimqQR7YfEMDvY1mgo1E6",
+      "operator_name": "HYPERSPHERE",
+      "validator_display": "HYPERSPHERE / 5",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 1250,
+      "TokenRewards": 14358.0837062788
+    },
+    "1NebF2xZHb4TJJpiqZZ3reeTo8dZov6LZ49qZqcHHbsmHfo": {
+      "operator_id": "1NebF2xZHb4TJJpiqZZ3reeTo8dZov6LZ49qZqcHHbsmHfo",
+      "operator_name": "Titan Nodes",
+      "validator_display": "Titan Nodes",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "RELIABLESITE",
+      "Nominators": 138,
+      "TokenRewards": 14337.358827497
+    },
+    "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN": {
+      "operator_id": "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN",
+      "operator_name": "Nodeasy",
+      "validator_display": "Nodeasy",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 261,
+      "TokenRewards": 14329.9518314746
+    },
+    "123VugBRFMqUEFviSYrG3ewdZ46ZmqxjmRaGY6BvakfdPVaG": {
+      "operator_id": "14MceVAhD8moRWR3U3vLWBU5R9tqjSVWHA4sMfMuwSUPn3vb",
+      "operator_name": "Blockdaemon",
+      "validator_display": "Blockdaemon / 1",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "TERASWITCH",
+      "Nominators": 424,
+      "TokenRewards": 14317.0979352668
+    },
+    "147sNiboCGb2B4TCBwKW3vz8faCx9fh9kQsxRjvLyjJmduZE": {
+      "operator_id": "147sNiboCGb2B4TCBwKW3vz8faCx9fh9kQsxRjvLyjJmduZE",
+      "operator_name": "SenseiNode",
+      "validator_display": "SenseiNode",
+      "LastRegion": "South America",
+      "LastCountry": "Brazil",
+      "LastNetwork": "LATITUDE-SH",
+      "Nominators": 37,
+      "TokenRewards": 14293.9394841201
+    },
+    "15uCAG6qK9qdx3EG3kyb5TFn83PgFUSQEioUgA9GLTjMFfq": {
+      "operator_id": "1zkynXdGj8p2JbXR7CesPuhbJvZt4G8k8T8q2jYgoattgKy",
+      "operator_name": "STAKE HULK\ud83d\udc7d",
+      "validator_display": "STAKE HULK\ud83d\udc7d / Alpha",
+      "LastRegion": "Europe",
+      "LastCountry": "Finland",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 1087,
+      "TokenRewards": 14262.725450748
+    },
+    "14AakQ4jAmr2ytcrhfmaiHMpj5F9cR6wK1jRrdfC3N1oTbUz": {
+      "operator_id": "15MV2nX6BEoiBz8Ua2xNta19sVBKT7kiw2MEHdu2Jd9a4VaC",
+      "operator_name": "LuckyFriday.io",
+      "validator_display": "LuckyFriday.io / \ud83c\udf40 DOT 01 \ud83c\udf40",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "SERVERCENTRAL",
+      "Nominators": 170,
+      "TokenRewards": 14246.8787513967
+    },
+    "14kpNbU4XjEHfYdqp95Gq3NkBWbgFd6J8Yjd2SneWNzvf1Yp": {
+      "operator_id": "13Jpq4n3PXXaSAbJTMmFD78mXAzs8PzgUUQd5ve8saw7HQS5",
+      "operator_name": "Stakeworld.io",
+      "validator_display": "Stakeworld.io / 01",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 96,
+      "TokenRewards": 14240.8887179266
+    },
+    "16iiKwFsRKRsjAiEpD4zgNgEX84nzHtHHNFKXhz1sHtan3ne": {
+      "operator_id": "16iiKwFsRKRsjAiEpD4zgNgEX84nzHtHHNFKXhz1sHtan3ne",
+      "operator_name": "Taichung",
+      "validator_display": "Taichung",
+      "LastRegion": "Asia",
+      "LastCountry": "Taiwan",
+      "LastNetwork": "Data Communication Business Group",
+      "Nominators": 94,
+      "TokenRewards": 14205.4783135849
+    },
+    "13Emjax1tBfQMEKisppTMMe7jMbqpmCH1jRpTXudLocaevND": {
+      "operator_id": "13Emjax1tBfQMEKisppTMMe7jMbqpmCH1jRpTXudLocaevND",
+      "operator_name": "Stake\ud83e\uddf2Magnet",
+      "validator_display": "Stake\ud83e\uddf2Magnet",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 530,
+      "TokenRewards": 14187.7350575346
+    },
+    "15kkg1mK1tCGgqqo3c1CghtKCQsBEAPPjYNNmmRT3r29FeRX": {
+      "operator_id": "15kkg1mK1tCGgqqo3c1CghtKCQsBEAPPjYNNmmRT3r29FeRX",
+      "operator_name": "ANAMIX",
+      "validator_display": "ANAMIX",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 423,
+      "TokenRewards": 14185.0785999774
+    },
+    "16kzYodFWy43sVGFKGnpDK8T3P8F9NhyMKqWNFfeFVN4XT9K": {
+      "operator_id": "16kzYodFWy43sVGFKGnpDK8T3P8F9NhyMKqWNFfeFVN4XT9K",
+      "operator_name": "Figment 7",
+      "validator_display": "Figment 7",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 109,
+      "TokenRewards": 14170.9960944466
+    },
+    "12pHJra8Wm8TKmUhVjDJgcWbYQm5q7BPtzm7mmZGaJHBcf7u": {
+      "operator_id": "12pHJra8Wm8TKmUhVjDJgcWbYQm5q7BPtzm7mmZGaJHBcf7u",
+      "operator_name": "anvel",
+      "validator_display": "anvel",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "SERVER-MANIA",
+      "Nominators": 184,
+      "TokenRewards": 14169.5023464878
+    },
+    "13BeUcLu7hzSTaoKpEtpdqiXKZz6yVfT9exKH6JuTW8RQQvJ": {
+      "operator_id": "143xeV45MsSeUGFpCns1ACgaUvCeouSJ4WDoppio9qNUNr5S",
+      "operator_name": "KeepNode",
+      "validator_display": "KeepNode / carbon",
+      "LastRegion": "Europe",
+      "LastCountry": "France",
+      "LastNetwork": "Contabo GmbH",
+      "Nominators": 245,
+      "TokenRewards": 14168.9899020501
+    },
+    "145SvVXoAwR5ufJynYWDeNXzfyxbf5VkCqkHu3Jt7FSdYBE2": {
+      "operator_id": "13uUd8q21iS7HLDG43BQQ9TiFn7wGFPSF8Uy99uze8zw4V8c",
+      "operator_name": "APERTURE MINING \ud83c\udf82",
+      "validator_display": "APERTURE MINING \ud83c\udf82 / 01",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "UUNET",
+      "Nominators": 415,
+      "TokenRewards": 14138.7285549753
+    },
+    "14MDvXHcSfZXacZR3nvbS4XYgpWi2dY65BnthsUnMZU6R1kH": {
+      "operator_id": "148PMz7qJokU88xB3raf9EMmBb3KbTe3XNxXcLVicQoWxrne",
+      "operator_name": "ALFASTAKE",
+      "validator_display": "ALFASTAKE / ZENIT",
+      "LastRegion": "Europe",
+      "LastCountry": "Norway",
+      "LastNetwork": "Gigahost AS",
+      "Nominators": 588,
+      "TokenRewards": 14121.9917854387
+    },
+    "12YFWxpS32wTZq4HcH28HMR5atkGhxzfD7aNjhTCu5Vyz9J9": {
+      "operator_id": "12YFWxpS32wTZq4HcH28HMR5atkGhxzfD7aNjhTCu5Vyz9J9",
+      "operator_name": "Figment 1",
+      "validator_display": "Figment 1",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 116,
+      "TokenRewards": 14119.9020378819
+    },
+    "15tsaRbwLLBHst5chP1pVkQHc5n2JS4DcapFdhCnqJMZebda": {
+      "operator_id": "15tsaRbwLLBHst5chP1pVkQHc5n2JS4DcapFdhCnqJMZebda",
+      "operator_name": "Figment 3",
+      "validator_display": "Figment 3",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 118,
+      "TokenRewards": 14107.4865227569
+    },
+    "138tCNoHg9QbhjqanRS7R8ZC8547A6CdaSmrCtJCRLpjQk6r": {
+      "operator_id": "138tCNoHg9QbhjqanRS7R8ZC8547A6CdaSmrCtJCRLpjQk6r",
+      "operator_name": "GuruStaking\ud83d\udc73",
+      "validator_display": "GuruStaking\ud83d\udc73",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "Hetzner Online GmbH",
+      "Nominators": 270,
+      "TokenRewards": 14102.5382307574
+    },
+    "16YwUZyLdeAoe4KmhivGwuuJpBH1US4qkUtXK2V83MVXUy6x": {
+      "operator_id": "16YwUZyLdeAoe4KmhivGwuuJpBH1US4qkUtXK2V83MVXUy6x",
+      "operator_name": "1% - GTSTAKING",
+      "validator_display": "1% - GTSTAKING",
+      "LastRegion": "Europe",
+      "LastCountry": "The Netherlands",
+      "LastNetwork": "WorldStream B.V.",
+      "Nominators": 350,
+      "TokenRewards": 14092.8220380411
+    },
+    "13S541dQ5NXFCxSBqFUFghkCfUU6LsZUVem7z2tfvsJwWFys": {
+      "operator_id": "1YiNZeuoqgLtN3X4x3SGszaXE5tA2aJxbZFH7PttDTkj459",
+      "operator_name": "P2P STAKING",
+      "validator_display": "P2P STAKING",
+      "LastRegion": "Asia",
+      "LastCountry": "Singapore",
+      "LastNetwork": "AS-VULTR",
+      "Nominators": 102,
+      "TokenRewards": 14086.553777766
+    },
+    "14Xh6ffkMALKBVAmFwgSwnrU1D5ufQAUa1o2sZ54dGuGfDY2": {
+      "operator_id": "14Xh6ffkMALKBVAmFwgSwnrU1D5ufQAUa1o2sZ54dGuGfDY2",
+      "operator_name": "Animoca Brands",
+      "validator_display": "Animoca Brands",
+      "LastRegion": "North America",
+      "LastCountry": "United States",
+      "LastNetwork": "GOOGLE-CLOUD-PLATFORM",
+      "Nominators": 37,
+      "TokenRewards": 14078.87728934
+    },
+    "15x643ScnbVQM3zGcyRw3qVtaCoddmAfDv5LZVfU8fNxkVaR": {
+      "operator_id": "15x643ScnbVQM3zGcyRw3qVtaCoddmAfDv5LZVfU8fNxkVaR",
+      "operator_name": "VF Validierung \ud83c\udde9\ud83c\uddea",
+      "validator_display": "VF Validierung \ud83c\udde9\ud83c\uddea",
+      "LastRegion": "Europe",
+      "LastCountry": "Germany",
+      "LastNetwork": "OVH SAS",
+      "Nominators": 680,
+      "TokenRewards": 14077.3291872519
+    },
+    "15fU523Wq5BCt2NWAmrCU6p8nFB29uVifeG7bwYJHbw5Mmd9": {
+      "operator_id": "15fU523Wq5BCt2NWAmrCU6p8nFB29uVifeG7bwYJHbw5Mmd9",
+      "operator_name": "SNZPool-1",
+      "validator_display": "SNZPool-1",
+      "LastRegion": "Asia",
+      "LastCountry": "T\u00fcrkiye",
+      "LastNetwork": "HUAWEI CLOUDS",
+      "Nominators": 836,
+      "TokenRewards": 14058.1043798129
+    },
+    "12doSHUJN1P6HL9zj96Bh2ZwVBXH7NcCi78caVtte8aQWGHz": {
+      "operator_id": "12doSHUJN1P6HL9zj96Bh2ZwVBXH7NcCi78caVtte8aQWGHz",
+      "operator_name": "Figment 2",
+      "validator_display": "Figment 2",
+      "LastRegion": "North America",
+      "LastCountry": "Canada",
+      "LastNetwork": "DIGITALOCEAN-ASN",
+      "Nominators": 117,
+      "TokenRewards": 14047.3031573969
+    }
+  },
+  "operators_to_validators": {
+    "13KJ3t8w1CKMkXCmZ6s3VwdWo4h747kXE88ZNh6rCBTvojmM": {
+      "name": "pos.dog",
+      "n_polkawatch": 38,
+      "addresses": [
+        "15QbBVsKoTnshpY7tvntziYYSTD2FyUR15xPiMdpkpJDUygh",
+        "14d71bbo4vrVXV3QGUunCdXqoXYCG2xPJY2S1EDDnTj78Ath",
+        "16A9nLc3SXvbv7x1NUGL9zWjitQ27JWmKoc6yrUYhMsF8tGC",
+        "16A1zLQ3KjMnxch1NAU44hoijFK3fHUjqb11bVgcHCfoj9z3",
+        "12ZTDL5BPYrrPxLWZM2TEe3GckXm9rz86mDZSkRvWrXeJ3c1",
+        "15p4wTCaY2tggjfHc62FGmXr9wuLgmK5PnZW1kWKhsqKm88H",
+        "16Zjo9bK3ubRrZCjwEkotG3fk4ka69TKQbPbUAJedHhMFYoH",
+        "1vRNR4nicdV1LbxGWJg15Lr4ZL3tn8e5bwbP1LNqAwQWdiH",
+        "15wdC56juwXeqriyBJMdEpi6FrnB9PsrLjVuKZG4Smp9a2fP",
+        "1jeB5w8XyBADtgmVmwk2stWpTyfTVWEgLo85tF7gYVxnmSw",
+        "16MTPYUDqLaCMErgvbTu6WehcUFKiocUWUDFN1Jdpeo5nED4",
+        "16G8NDzxUeUbGiw2bFX3Wy7JwNEJz9U8B1smCFqqe4GPZbdN",
+        "12gkhA8JEz8ywmVj1tsVafSp9C4saKzSofgMwBJcmFJAGUVX",
+        "16aThbzrsb2ohiLXJLqN8jLST6JgUPRi3BqyHxUW4yVHBQ44",
+        "1RJP5i7zuyBLtgGTMCD9oF8zQMTQvfc4zpKNsVxfvTKdHmr",
+        "1KQS1Tsk9oKrTJ6u5vJs7bF3Zh8JqceZSuUkaAdJ1DZxoPN",
+        "14ghKTz5mjZPgGYvgVC9VnFw1HYZmmsnYvSSHFgFTJfMvwQS",
+        "12wtfs4UfodYT1Y6y8NQsQaduLSJbhz7oaNt1F6gTLFHD1y5",
+        "14g7XsFWsMpsPNkwQNhdHfsqKRehdRbpPLaGVTEhBe4Pt3Eu",
+        "15fMqfNt5i2yz1Nq6fHAbmLokfbWfDbuTFZoLxv2RZkWpDTu",
+        "16d9PJvEJYydbkvhz5GawZZFqR4trJanWv6Kq2Eq92Pmw3Ri",
+        "1LMtHkfrADk7awSEFC45nyDKWxPu9cK796vtrf7Fu3NZQmB",
+        "13g3qpjcv4yuCEnqn7VFKbeq4LZ8qNMvNTJcfsaC4Dgms2tH",
+        "12sNJAzECf7AUgz1Asc8iYTmoFZLy7prg88nuX5VASVZmjnq",
+        "1jbUHVCrwyKtUmoCZ4sJousx1og8aoP1HEyFcAW6xvdKYCU",
+        "167ePSNFzjb2jrBqqCqkWMcH728onmjVYYzozYsZQHwReqRJ",
+        "12ErBetb4FWp3992tXET1GtHrTW3TdhUXsnQd5zDuF9WaxYV",
+        "16JJSWvMNM8i7T97ULGPHPyjvBM3JrV7poyKJRjCzTTE6kWx",
+        "15x21oPqRLeVakTN3grGB82HZ92ELqbnzE9W2wc3CHRreefB",
+        "12L4a8t2RGou15GZDMu8Eokx4gXxQAim5MePgYjHeAeSmNHY",
+        "128cG9CRYUL8XRzB8n53jjfb1iJ2FasrMdrTVHjKguqg5CPS",
+        "15DrUZpBdedSxGwTRG6k35kkJezho54PA837eJ45d6j6fTkT",
+        "13MqUAZVA2KEy3EChkzuVqdwPpe51DbmzDhLtxaca596W5S4",
+        "13VKHPMcWj9Lpu9sBd6ZpxHW45kBSuM6aPCgpCZqUS8jZ5Ea",
+        "14DvQhUDWVABBzqD3jEK3VHHRZ1UbKDGCExf7LYNJLQd8CGd",
+        "1rxCNHsCnvgBRE6duxifTPaBA5vhmpwADXb4FBqfgXbzue5",
+        "14YEkQjfqQqWy8ckNsgbH4CiwTLMKEMgzYPSfgBRNocwDigB",
+        "14dcFGfWhzn32PWf6g5d6A6dDPUZdssEv2fCuouydd6Rc4Aq"
+      ]
+    },
+    "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu": {
+      "name": "P2P.ORG",
+      "n_polkawatch": 19,
+      "addresses": [
+        "13uW7auWPX9WAtqwkBx7yagb78PLcv8FAcPZEVCovbXoNJK4",
+        "16DKyH4fggEXeGwCytqM19e9NFGkgR2neZPDJ5ta8BKpPbPK",
+        "15oKi7HoBQbwwdQc47k71q4sJJWnu5opn1pqoGx4NAEYZSHs",
+        "1737bipUqNUHYjUB5HCezyYqto5ZjFiMSXNAX8fWktnD5AS",
+        "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
+        "121gZtuuG6sq3BZp1UKg8oRLRZvp89SAYSxXypwDJjaSRJR5",
+        "134Bw4gHcAaHBYx6JVK91b1CeC9yWseVdZqyttpaN5zBHn43",
+        "11uMPbeaEDJhUxzU4ZfWW9VQEsryP9XqFcNRfPdYda6aFWJ",
+        "129TM37DNpyJqtRYYimSMp8aQZ8QW7Jg3b4qtSrRqjgAChQf",
+        "12YP2b7L7gcHabZqE7vJMyF9eSZA9W68gnvb8BzTYx4MUxRo",
+        "1Wo6qcrh7wxc1kQY5nfixFuCAFuzkgiwau64SmrPXBE7vVf",
+        "1342iFZNrBfCP9VWxqt5p39LiHp2ynyq85Ww9K7R8w6BURps",
+        "14AkAFBzukRhAFh1wyko1ZoNWnUyq7bY1XbjeTeCHimCzPU1",
+        "14Y626iStBUWcNtnmH97163BBJJ2f7jc1piGMZwEQfK3t8zw",
+        "13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW",
+        "15qomv8YFTpHrbiJKicP4oXfxRDyG4XEHZH7jdfJScnw2xnV",
+        "12ud6X3HTfWmV6rYZxiFo6f6QEDc1FF74k91vF76AmCDMT4j",
+        "145Vw57NN3Y4tqFNidLTmkhaMLD4HPoRtU91vioXrKcTcirS",
+        "12Z3Bhjn42TPXy5re2CiYz1fqMd21i2XyBLmbekbjLXrqVBV"
+      ]
+    },
+    "1363HWTPzDrzAQ6ChFiMU6mP4b6jmQid2ae55JQcKtZnpLGv": {
+      "name": "Jaco",
+      "n_polkawatch": 9,
+      "addresses": [
+        "15FctDfqPsFubuXo6UpKMQdbdCC3XXdnHsRMZ3DN6ZKPLrSu",
+        "13Q48Ep3PVpvXA1BeVcUhNJerLshsaeq4EdgPUHnemqJYmND",
+        "148CkH8YBzA1pbudK1bMo2zUMHZwbucBVH8s3utwTS687UiR",
+        "1jqkeJhuoRudNTVL5dV1qZf8RQtyzcf6ZT4yyvUQbKFktr8",
+        "14bUYpiF2oxVpmXDnFxBipSi4m9zYBThMZoLpY8bRQrPQNG1",
+        "1ufRSF5gx9Q8hrYoj7KwpzQzDNqLJdbKrFwC6okxa5gtBRd",
+        "15a9ScnYeVfQGL9HQtTn3nkUY1DTB8LzEX391yZvFRzJZ9V7",
+        "13iPW4pSokbEQWomqZhwsyrMWuNspt6R1YnuCHXqUVvFYM1H",
+        "15ciPs3xZsJd86WFoijPs365f7viqGnubZ14aa9fGavyWJoM"
+      ]
+    },
+    "12EvNGseaJLHmhSKnGdqsG8DC9LNpGUYXwBeU7jUengEG9EN": {
+      "name": "Coinbase",
+      "n_polkawatch": 11,
+      "addresses": [
+        "15G171nzcUvrTRwWZx8K5GLh1NReHdnTDANeWSMRK4Rjuhfu",
+        "1569aqCBma2m4TuUe1MxEs8EXBAZFCmwwcZMLde6HNbimuW8",
+        "15V6NjwmKkZihe644Tyr8GVLxjEzBAHktf6ZcJCTx7RPCoYS",
+        "1VrKDfXunzstY5uxPpjArUbZekirGXcpMDYvCBJmjV1KdEm",
+        "14wFkAiTSxhUUdpkN37QMhZv6dYcURJVgSGwqDRd4TK2qhrL",
+        "1A2ATy1FEu5yQ9ZzghPLsRckPQ7XLmq5MJQYcTvGnxGvCho",
+        "12e1tkDgfF3GYdiTkRq1vunXrvvhpKq3BQZYbJ1haXHApQTn",
+        "124YFXA3XoRs9Epcx3aRUSk3EKYaznocqMWfrMKtGjx8TJ2W",
+        "12ECDEb18Wiy4MoLn3NTM5zhJfDfpS4mLNvjHpcEr8ogGrMZ",
+        "12HFymxpDmi4XXPHaEMp74CNpRhkqwG5qxnrgikkhon1XMrj",
+        "12WmM98h4Ar6y7ZyyMKPXwSyuP5GSZvXTbEkDXm1tirbZFW4"
+      ]
+    },
+    "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE": {
+      "name": "Zug Capital",
+      "n_polkawatch": 11,
+      "addresses": [
+        "1zugcag7cJVBtVRnFxv5Qftn7xKAnR6YJ9x4x3XLgGgmNnS",
+        "1zugcaaABVRXtyepKmwNR4g5iH2NtTNVBz1McZ81p91uAm8",
+        "1zugcapKRuHy2C1PceJxTvXWiq6FHEDm2xa5XSU7KYP3rJE",
+        "1zugcacYFxX3HveFpJVUShjfb3KyaomfVqMTFoxYuUWCdD8",
+        "1zugcabTuN7rs1bFYb33gRemtg67i4Mvp1twW85nQKiwhwQ",
+        "1zugcawsx74AgoC4wz2dMEVFVDNo7rVuTRjZMnfNp9T49po",
+        "1zugcakrhr3ZR7q7B8WKuaZY5BjZAU43m79xEyhNQwLTFjb",
+        "1zugcacan4nrJ3HPBmiBgEn2XvRMbehqvmzSQXT3uLBDkh3",
+        "1zugcaiwmKdWsfuubmCMBgKKMLSef2TEC3Gfvv5GxLGTKMN",
+        "1zugcajKZ8XwjWvC5QZWcrpjfnjZZ9FfxRB9f5Hy6GdXBpZ",
+        "1zugcaebzKgKLebGSQvtxpmPGCZLFoEVu6AfqwD7W5ZKQZt"
+      ]
+    },
+    "14icei1ZMoG9QtKBFDk4y1eMR756q2TREuRAi2BanJ9MJVPL": {
+      "name": "\ud83e\uddca Iceberg Nodes \ud83e\uddca",
+      "n_polkawatch": 8,
+      "addresses": [
+        "14yrHPbyTy4ffNqaJJTUx1tqPdW3jJ9m48q7gGymyhVcmJDL",
+        "14ices1G5qTmqhMfDVBECh4jotNDGTLu8fhE9YktWT3cLF2F",
+        "15XY7oJ99hVscy5jS3zUh5M3H6sxfccovyTVCPt15DuXCRAF",
+        "13N7R5rP3gtz3W4uDEQBVddXf5HE9V3CsAibuxUjCr6UWjwA",
+        "15cow6Uoq1KtBvyvRetuX52M1DepVpfVmc8qrpqCWH9grHdq",
+        "14aD1tQavhRi9eB6SZ2JNoTFiW1RpGtavFANwrfQnT1B7t6D",
+        "13GFUpQkNonsMMiBuYK4pqGUkwnE5AojvtigR95ahiimMaBb",
+        "139J8svWogi6Xbn4rfYnCBCwh7CQj6hRxmSaZQMhTGsB81s1"
+      ]
+    },
+    "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k": {
+      "name": "LEGEND",
+      "n_polkawatch": 6,
+      "addresses": [
+        "15B3UVXPRp3yS2gU7GogS41mwoT2fTL1KaNYPF7eMVjjWZJJ",
+        "1ZXdGs6gFETHVTEW9RAZXwYxkDwAfE7wdt6czjBM4QRfMfk",
+        "14zfiH2sMH955cG2yKUQbHSP3oQ8W4Ai9p9wSSZunvQ4TU4k",
+        "16k5kPkBCMi89e1a9yGZGT4gHJW5H4KUQ5eVqPc8PGPxhi1K",
+        "162tJdpDKWQZEwXEaNJKPSJiSyJtsv7wYGxYrreaTAXtvhK3",
+        "13xa7rCYpABL4WvisHhzkwMtzKbEy8hoFDoXJU8efKqrCUPu"
+      ]
+    },
+    "16WWmr2Xqgy5fna35GsNHXMU7vDBM12gzHCFGibQjSmKpAN": {
+      "name": "ParaNodes.io",
+      "n_polkawatch": 5,
+      "addresses": [
+        "1d6po5LATxuHeAUTSRd61LGA6QWJ7dJRzi852kojKFLbL3t",
+        "13wroNHV6aJEkUFJEx4NYv7kv5vgq4HypLAPSz347VVQbYj3",
+        "158ihFTX2xr96UW4kRfEm4Cbm219swtzUT52GemqDrvGhmwx",
+        "14hM4oLJCK6wtS7gNfwTDhthRjy5QJ1t3NAcoPjEepo9AH67",
+        "13foHgXdzr1agokV6Ed9CBHGQG1NpBqvqhmUL7rojcBUBzvq"
+      ]
+    },
+    "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz": {
+      "name": "DOZENODES.COM",
+      "n_polkawatch": 5,
+      "addresses": [
+        "1q5QgXCsasUtjvwq8ByT5QPivNgidUSR55c4kFJnjKSiF4q",
+        "167ShbHu769mP5jbtt7AHayJhzEied6s8M5kN5nBSAQewnRz",
+        "1hchSbMVTPrxmMuuCQQ2dkZnUcWLwNHcuU4C5RR9raKkfXh",
+        "13uBxESEQZ63cKu4LtLNdHX7CYkokh5iiJryJSA2A2AZenJQ",
+        "12TB6KHDVSRy6f2rwDFwrKosBQXayNdCPKAAXHYtev2yxuZC"
+      ]
+    },
+    "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ": {
+      "name": "cryptostake.com \ud83c\udde8\ud83c\udded\ud83c\uddfa\ud83c\udde6",
+      "n_polkawatch": 4,
+      "addresses": [
+        "1ERUvCzrrA5GfUfnQyxSjNPudMKEwcD5rtp661Dbfb4EdTG",
+        "13gQZWtAVc3v55wEpNfQR1VrDgEhNQdFr7x6q8pK5mW51Rn5",
+        "14DE8GdKnNvgoXCLFq62ZjNz2zsGqnxXBsRMwNpiPip2JSFJ",
+        "16JvJXLPySkFtH48aYhnCrpdsbFsMFB9ERtEWuXFmRxQrwx5"
+      ]
+    },
+    "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3": {
+      "name": "Meria",
+      "n_polkawatch": 4,
+      "addresses": [
+        "15nLLFfX8jtyhnYogRqPU798qNpjvSp6n14AiH7ddHRFWnL8",
+        "16RJiGgc9uhZNXmd47Nywsnf43ApCJkSrnLTiodi5RDodBd3",
+        "15roBmbe5NmRXb4imfmhKxSjH8k9J5xtHSrvYJKpmmCLoPqD",
+        "16kovK2pbJDZFTCVenu7yQGhxzvqfGLJyH6XpgxEcQKSGAn4"
+      ]
+    },
+    "14VauJKLZRa7PYjpnWHcGD4tP971dpZrhALXqUGH88gkWm9u": {
+      "name": "BRC",
+      "n_polkawatch": 5,
+      "addresses": [
+        "1hT5LC2keHNNKAC7zR5JFJ8CNBi5mXhuphP4Tt6YynijgnL",
+        "14fu8gsdLTMvAWxq2c7DJxyfbcHmkFWcngxAkxmMtX3fDtk8",
+        "12LCH7wmj8LAa4bXLq1iQnDbeZZfE9AUjvP7xqDNiR87fLdp",
+        "16hWLHbxMwucyrzpWcEMGQtVzXY4rBtyYTRhPix5rJeeKT8N",
+        "155DgtpDborwtUFPZ4kPBFX7JTFfs7AxfzDqdu5uz8Sun4Qy"
+      ]
+    },
+    "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC": {
+      "name": "SAXEMBERG",
+      "n_polkawatch": 3,
+      "addresses": [
+        "16UgRGtYLuDWsBvjLLtc6FYVB3qSCV9c4sidcN4zaFm9qCFR",
+        "12ryLNrg44r7Qv7oWZa2wK6PuzUmAMueyVHRBsyR5N6anEaV",
+        "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC"
+      ]
+    },
+    "14Sqrs7dk6gmSiuPK7VWGbPmGr4EfESzZBcpT6U15W4ajJRf": {
+      "name": "turboflakes.io",
+      "n_polkawatch": 3,
+      "addresses": [
+        "16BEvxYpyRWPaFbtwCPzSCtHVKr1soViaobKojNWBH12U5dk",
+        "12gPFmRqnsDhc9C5DuXyXBFA23io5fSGtKTSAimQtAWgueD2",
+        "145QiuMq8w1vBVXfwDVFxUSchdRZ6W1tTGb1uZ45TcoUskRC"
+      ]
+    },
+    "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs": {
+      "name": "\u265eGameTheory\u265c",
+      "n_polkawatch": 3,
+      "addresses": [
+        "15Zx4M1W1caBHvwdQY6EjUDVoAv714eEBLcLCuE5A25RqiMH",
+        "13Srw7dVtGJnZrV3o6RCAJ97MaGbSKShQQiSYjbGp4Jvu4Cs",
+        "14WAVMT53PQ4RM25xVPoQBL9ozLNwFBXiryqvuKipM9J4TwT"
+      ]
+    },
+    "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p": {
+      "name": "Staker Space",
+      "n_polkawatch": 3,
+      "addresses": [
+        "15i7KZA28F82jCfHubQ22RptEJypTZsbnSSobjU9KUnxUvdW",
+        "14N5nJ4oR4Wj36DsBcPLh1JqjvrM2Uf23No2yc2ojjCvSC24",
+        "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p"
+      ]
+    },
+    "15UHvPeMjYLvMLqh6bWLxAP3MbqjjsMXFWToJKCijzGPM3p9": {
+      "name": "\ud83c\udf0c Novasama \ud83c\udf0c",
+      "n_polkawatch": 4,
+      "addresses": [
+        "13JuwkvSqGUDo8zErgfC9ivGfKfcdDyceFkvh9NW4wz7NbuF",
+        "15yWjJfhPwiBECjVezPTA42EFpcrxmRUjzPN6nf3azvZ5wDX",
+        "127zarPDhVzmCXVQ7Kfr1yyaa9wsMuJ74GJW9Q7ezHfQEgh6",
+        "15cfSaBcTxNr8rV59cbhdMNCRagFr3GE6B3zZRsCp4QHHKPu"
+      ]
+    },
+    "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN": {
+      "name": "\ud83d\udc11 HODL.FARM \ud83d\udc11",
+      "n_polkawatch": 3,
+      "addresses": [
+        "1sAkfdTH3cHAdJRYqMPNdeV7GhTKrddvMfkQrm3pQBABWrN",
+        "13jN7oYuc8TBcUwGjpjbSghvPE8DdEuArvjvymqTCB6Vkguc",
+        "11VR4pF6c7kfBhfmuwwjWY3FodeYBKWx7ix2rsRCU2q6hqJ"
+      ]
+    },
+    "139YLKvyLxEeG7asCwBZniVKacCibNMNdMPrq3ukrzagMqUV": {
+      "name": "Khastor",
+      "n_polkawatch": 3,
+      "addresses": [
+        "16TnLArANi5Y4SmQbGjW8V8XV1NBbjPr7AzwUsrHjBoERXTp",
+        "1429tQ2RK8xCwiVYYw7YVUFGX2rbASQN2maMExay7x18neoZ",
+        "165VtFs6qEWeSHDsNp6fNmQDm6fviLSzWGJFhKuaGvk6PMYS"
+      ]
+    },
+    "15zS1NXMHucBDYhzEdg8W83EYgqfnzg5X3gdS3iQQYJxAsxa": {
+      "name": "talisman.xyz",
+      "n_polkawatch": 3,
+      "addresses": [
+        "15DJ6BzNKGYKtScD77hC1NEWe6iybp89A96kchPtkWyFWXLg",
+        "1ZyhbSPMDMMuveHErhmd4XR4YK7r23E1kwn1RQzhp2EnSme",
+        "13qsqBRWCaH12UsuKuaLuvW9M29FRjfxtZMmMMZLLi9JmyZc"
+      ]
+    },
+    "12s6UMSSfE2bNxtYrJc6eeuZ7UxQnRpUzaAh1gPQrGNFnE8h": {
+      "name": "Polkadotters",
+      "n_polkawatch": 3,
+      "addresses": [
+        "1bxnxTev14jMGab4QRXeafa7chTRHV7ZZ9e6GrKrrpXAHtM",
+        "16A4n4UQqgxw5ndeehPjUAobDNmuX2bBoPXVKj4xTe16ktRN",
+        "12L5m9htNsUP58mBHFXcsABDSCohhX2J4nMuY9TrJHNLCssQ"
+      ]
+    },
+    "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az": {
+      "name": "Coinstudio",
+      "n_polkawatch": 3,
+      "addresses": [
+        "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az",
+        "16ZrzTmq8yZ3Mq4LQZxQAaoNx4fStAp9neH8M62iNYks87bv",
+        "16cT2wjqq18WJdNwzeDvm57GgiQHhaQeWCrA5ZUPyKhyujtF"
+      ]
+    },
+    "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB": {
+      "name": "Blockseeker.io",
+      "n_polkawatch": 3,
+      "addresses": [
+        "1xgB6seaZbH1v7GnK686iiNcqafPyGa3KexabQSSFhQcfAy",
+        "131Qzz7SvHUn7zdDAt2jFZmzVsP2KkoiDWLZa9N7FivGTXpB",
+        "1scioGhw4gEtZP94gYyRDupmKaDUdEsohuecWoVrNB5q8ec"
+      ]
+    },
+    "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj": {
+      "name": "helixstreet.foundation",
+      "n_polkawatch": 3,
+      "addresses": [
+        "16WzVw5JDCXLiA3t5D4LL15S2sqSBtCsjVNXkwLCVxGdeQGj",
+        "15qiiCBRGjyKbQRLci7cM9gHWDqNDGY8LZTTksczsy4j1dKb",
+        "1HMQVknF2rGz2vBegqA9jU4NhZKQtW7nZTDQykgeSm8FgPa"
+      ]
+    },
+    "1EVX9FRY5Kw2siUpBkfidqAFh9X16zS65ucUwNpwm4EmZsv": {
+      "name": "EXNESS.COM",
+      "n_polkawatch": 6,
+      "addresses": [
+        "13Ybj8CPEArUee78DxUAP9yX3ABmFNVQME1ZH4w8HVncHGzc",
+        "14g5vMTk5CR9ZUM4Ji2jkwTHuycmUJthEYCYUfj8mQLSks4p",
+        "14oRE62MB1SWR6h5RTx3GY5HK2oZipi1Gp3zdiLwVYLfEyRZ",
+        "13AxoWJYFEHxjrFYvjNCsad8XMqnbhEgH3G2ULPjiuudywNJ",
+        "14das6GvVjXMFf6PysheHX9ek59fCgH3MhnvQ2aNLD9n8VDV",
+        "16aHTtVyQe61KJkcciSVtnEJ3ThNdErNsY223JTBvd7U5xfb"
+      ]
+    },
+    "15fTH34bbKGMUjF1bLmTqxPYgpg481imThwhWcQfCyktyBzL": {
+      "name": "\ud83c\udfd4 HELIKON \ud83c\udfd4",
+      "n_polkawatch": 2,
+      "addresses": [
+        "123kFHVth2udmM79sn3RPQ81HukrQWCxA1vmTWkGHSvkR4k1",
+        "12uT5wrkGedBiKLfPRZaSVdaoKQfpnQyLRHgB65cJHH3zQn9"
+      ]
+    },
+    "14MVAs6jPc7bPW33fC7eTwz4Zf1pD3KWW4tQtrHWUd9w1Phx": {
+      "name": "cedric.AAA\ud83e\udd8a| ajuna.io",
+      "n_polkawatch": 2,
+      "addresses": [
+        "15gx1QMCKtB16pfYh3wKc8844NygfrXWKh6UqojajDftxS1d",
+        "14EoEECHSTJE1n6oCQ72zoC5hjpRU29JF8NZRK7S5vk1enwt"
+      ]
+    },
+    "1LJPfJbndBr3R3nfvs6KCusveZF4QTx2VfQQJzeCfrrisa9": {
+      "name": "BUENO VALIDATORO",
+      "n_polkawatch": 2,
+      "addresses": [
+        "16JwE96t9MMvWQHuyHntqVyo6Ks97XCK1kHvWumGNLGVJg5p",
+        "12zREJg4524bbPVhZrH1tyJAWkAWV1kUd5hh8TeALSSjCv65"
+      ]
+    },
+    "13pdGgRp27xp4tWYcGx5FwVEgVambqV8XiR5L734kJXgSnSx": {
+      "name": "Eric",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13J6LkvsEtdZpvRwUMVNbag26md9ycmGe5PM8UnEokhL6Tgk",
+        "1qNhYLFbBi1tFyvYfSRRBP3Ce5cjS1xKMTMVNr8gJZvNTXM"
+      ]
+    },
+    "1Dra6uQP2j3ZEBGkvtJvnun6UYCz1DX62yyqT9eFenfArXZ": {
+      "name": "DRAGONSTAKE \ud83d\udc32",
+      "n_polkawatch": 2,
+      "addresses": [
+        "1dGsgLgFez7gt5WjX2FYzNCJtaCjGG6W9dA42d9cHngDYGg",
+        "12dGS1zjyiUqj7GuxDDwv9i72RMye1mT7tSWNaSx7QVeJ32H"
+      ]
+    },
+    "12MgK2Sc8Rrh6DXS2gDrt7fWJ24eGeVb23NALbZLMw1grnkL": {
+      "name": "\ud83d\udc1fYellowFin Tuna\ud83d\udc1f",
+      "n_polkawatch": 2,
+      "addresses": [
+        "1TunGctS5HELfuJZjd5qBNoMVsST2EBdMw5vWK8f3dCFbq9",
+        "12MgK2Sc8Rrh6DXS2gDrt7fWJ24eGeVb23NALbZLMw1grnkL"
+      ]
+    },
+    "12NLgzqfhuJkc9mZ5XUTTG85N8yhhzfptwqF1xVhtK3ZX7f6": {
+      "name": "Joe",
+      "n_polkawatch": 2,
+      "addresses": [
+        "126RwaHn4MDekLWfUYfiqcVbiQHapwDSAT9vZZS15HLqfDJh",
+        "1NDRMvN7FH9YtJLVPf9doF5zbuUwn6hdH1b4WmVyZDr5joM"
+      ]
+    },
+    "16fH2RPKB81butanvooF2tZqCfWrAuwXNWhcPyomCbCBDaPF": {
+      "name": "BESTVALIDATOR | ZURICH",
+      "n_polkawatch": 2,
+      "addresses": [
+        "1123RekaPHgWaPL5v9qfsikRemeZdYC4tvKXYuLXwhfT3NKy",
+        "15vthsDeqGnawu8L9Cz3RheobRFZyzgbB59MpFFVFurW4AP9"
+      ]
+    },
+    "15cu9qomrRvnqkvnSMhPPkBp9359QDbGBy1bVo3tseozxhxj": {
+      "name": "HYPERSPEED",
+      "n_polkawatch": 2,
+      "addresses": [
+        "1qUKZLhxVGUPozs8j8XpxH8VbZX5ckXV7ziUf6ji83ieZYd",
+        "12zTFfxSi1oa2cgSGHavuZctowWXkyukgSq7H8AV169hXdPj"
+      ]
+    },
+    "12sU2MTFuaSezAm1xNnmffJCNxvCdHbr4Hxbc9ZYtVWk92JF": {
+      "name": "ITRocket",
+      "n_polkawatch": 2,
+      "addresses": [
+        "1LSvoFpnspPhvwgJ1GLLT4SRHBmWXwXE26JHiiZJ4RKxHqC",
+        "14fiiokuMzrh8DvorHgM1yXt1kDBQwq8AGPyHxQz9JCXkLGQ"
+      ]
+    },
+    "14rp4CvtyN3WSftrndyNxjJFi4cGXsgrE9gFr528QSYFvPTu": {
+      "name": "PERMANENCE DAO",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13pZskDR7Pt67NtcChSr4uFRBf9ZS52nQeyrceSykq8MDrMe",
+        "14m7VDz8PUe35Agvt1Z4ymxzR5fnKxfnGM9wT2WdtoYEtFQ4"
+      ]
+    },
+    "1gatoakSkH4be8KD9Ekj5xCXMdAiGxieg2NfTg41s2UME5J": {
+      "name": "GATOTECH",
+      "n_polkawatch": 2,
+      "addresses": [
+        "15iA5hpjUecWBbf38Nfegwmtyux25o3LrGaNodfZDxq5nXXE",
+        "14KHzXAZ5admFLXdgbEGpSjCGxiePniHRDM6t5r4o8kbYV7P"
+      ]
+    },
+    "12R2eXcE2QhMa9BkMsWktt9wmoxbgiQBDG9YUM1p94r2F5UD": {
+      "name": "ProStakers.com \ud83d\udc8e",
+      "n_polkawatch": 2,
+      "addresses": [
+        "12R2eXcE2QhMa9BkMsWktt9wmoxbgiQBDG9YUM1p94r2F5UD",
+        "13sULqZ2NidBvrocYwJYxT6WJkcSY77SiQXtFiJHsurTZgqN"
+      ]
+    },
+    "16fbkDCMrAo1uyC52NyA8Y2dETnYVpCofSoj3QEE2WUNnkLk": {
+      "name": "INFRASTRUCTURE CORPORATION",
+      "n_polkawatch": 2,
+      "addresses": [
+        "12Qq3fn9xnFZ37Ltcj6BH8NSpAQjEMp2oKnEALa7bbuguU4L",
+        "15zH8tbFxyBgvkAdF3UWSfykAXADbS32vJuYRHTkZJ15Y4jd"
+      ]
+    },
+    "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp": {
+      "name": "Swiss Bond",
+      "n_polkawatch": 3,
+      "addresses": [
+        "15ZvLonEseaWZNy8LDkXXj3Y8bmAjxCjwvpy4pXWSL4nGSBs",
+        "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp",
+        "15koMvYRHfSB4U2smwRQvKo6jd275Rdf8wS7TSkAe5yxbZsk"
+      ]
+    },
+    "15XFryPdurvcxD7YSpR4H43CVpXYvxCxYTL76nrjih9MTkH9": {
+      "name": "Chris-Staking",
+      "n_polkawatch": 2,
+      "addresses": [
+        "14fcsJbrR7MQfUMJmb7NKpE2shVRyko17rt2PcaY4HKthQg",
+        "16hUkBK3h94uh7682gk7HeTYvPmSa4D1Y2w4KUZh1u1cP5J"
+      ]
+    },
+    "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7": {
+      "name": "Kraken01",
+      "n_polkawatch": 2,
+      "addresses": [
+        "14dTZLAwhcBennygERRS5tXnWVAHq3e12LoCoHrQsmDd4X4H",
+        "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7"
+      ]
+    },
+    "13G9THQY9iGaUfNBL69uW8FX6cNmQmquwqoPFyQYHjhzKpxE": {
+      "name": "\ud83c\udf0e ValidAndina \ud83c\udfd4\ufe0f",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13f1iU967VsBeRxueqs9zrJV6JZ1EmEP6A1QTatThBcYbxqE",
+        "16mrcAndMguy3wqfuLNubgxxeyWQHjYAdqRbj26Vb2gYtszK"
+      ]
+    },
+    "13XrsStBnHnJNgDq1bMPVax63gbdautnstBxARWGeDbED4pU": {
+      "name": "digitalghost.xyz",
+      "n_polkawatch": 2,
+      "addresses": [
+        "14bGpFntaPUgoSNdXeU99ddPH8RvHfZRic1dCcQBwnNuJwwr",
+        "13jagnVH4vS6a5XD1xixGA4zUxgjkZ9h8dbQDVCDZYR6rS9m"
+      ]
+    },
+    "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs": {
+      "name": "openbitlab",
+      "n_polkawatch": 2,
+      "addresses": [
+        "155qLCXRwMZjepZgfcwsoGuXXtHyWum6bScc5SbfM2yekfc3",
+        "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs"
+      ]
+    },
+    "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG": {
+      "name": "Mile\ud83c\udf0d",
+      "n_polkawatch": 2,
+      "addresses": [
+        "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG",
+        "1HmAqbBRrWvsqbLkvpiVDkdA2PcctUE5JUe3qokEh1FN455"
+      ]
+    },
+    "1srcFWVcPn2oXEKuddMMTGCLQMDdRqxKKo9qpFTi8PA7NW1": {
+      "name": "ValidOrange",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13rG5oK2qskxP27mjUEyn1YbrmzpCV6fbBVcnBUd8Y7sQX6Z",
+        "12WRpiUFDZ1GjksnpmBL3EzT2jz2TZ7QHhUTqoubhYPQ7PAZ"
+      ]
+    },
+    "152cdecr7tagcB2t63dvjBnxV5j7YDW8PpbfX7orXj6ZQFWG": {
+      "name": "Zetetic Validator",
+      "n_polkawatch": 2,
+      "addresses": [
+        "16Ar9KjX2LQf2CdTrTxbyxPjDNswhL7qPhnwcr8ocMynBRWo",
+        "152cdecr7tagcB2t63dvjBnxV5j7YDW8PpbfX7orXj6ZQFWG"
+      ]
+    },
+    "1Chd8YNhBkHiUcdLwQetjYu11mw9TweJ8tY6ySew8RjVB2Q": {
+      "name": "PROOF.COMPUTER",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13unkT9DyFUnzKZdLCkHBvGLuhvcHQSrRhTWhrL9gqG98CTH",
+        "12KzKVWqYqyEXx4RpPLvbPTakfrhNgfXeTWSR65CF8ZrFHrt"
+      ]
+    },
+    "12QQZYE6oXUUM4qpomHh72ehe4pbZhvfW7w9dEqNUfs7zbCE": {
+      "name": "STEAKCHEF",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13uvDxdd6LUNp1WWzM3xbch7q1DFfAaqRaQE5bo5QG7RGqt",
+        "13VFYHh4svavBdFzyYNtzKF3jgTkjXARTabtQHoAYJj4T3Gd"
+      ]
+    },
+    "1627VVB5gtHiseCV8ZdffF7P3bWrLMkU92Q6u3LsG8tGuB63": {
+      "name": "hirish",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13bRirNoyWD3iEF9yHvua5QBoeYjSSEFmZ7bhoryTH5NkGue",
+        "1627VVB5gtHiseCV8ZdffF7P3bWrLMkU92Q6u3LsG8tGuB63"
+      ]
+    },
+    "16g6ZBYbEP3kRMgVBki7zdvdGpymXDyHWzj3D3rDaEATXzc8": {
+      "name": "ECH0.RE",
+      "n_polkawatch": 2,
+      "addresses": [
+        "15KhD36jXQsqrAbYCjcTmguPYvBdCNdZFvEZbntAB1mrRN8Y",
+        "126cWhehuBFhQvbDqt26dWBNgELfkpc72WvJV3sx82qRogkT"
+      ]
+    },
+    "15tQ5joTz2nywZ4UgPYWDMN522s91W7yTmhvV1rp4hpVhZT3": {
+      "name": "\ud83d\ude82 Zugian Duck \ud83e\udd86",
+      "n_polkawatch": 2,
+      "addresses": [
+        "16ALG7wV7j1nUExAY8LYwxQxVwrMEoW2tqPRjKgbfX1ZNgZU",
+        "12TxPQBN99gGwn4g9HRKCjndrnCSv3SuRaCHstk3qmoQuS9L"
+      ]
+    },
+    "16XXocb76BpprdspsR7j5iWFHf4aTMnsVHxgGBXfixs1FFLb": {
+      "name": "Encointer",
+      "n_polkawatch": 2,
+      "addresses": [
+        "12BVn5jTsJv78Kd8PhpguMnQjiBLUBzXTys9F8V8Scm7y4St",
+        "165NJXk1HKxeFPbNK3ZEsgRPoGTkxMU9DyteK3cE7AGt7xrJ"
+      ]
+    },
+    "1jd8iGcgYLwmRPPyR934eePGiT4LJy6iRq1EV751Qga2j2g": {
+      "name": "locozoo",
+      "n_polkawatch": 2,
+      "addresses": [
+        "14SvpNr394ZedPfXMkNm87HvTBJWCdrW7C5Cb1J9LSP4s27p",
+        "13agGwdvkkrUbjiR1BMptgxYXbPQNVqDFPRGu7wAHRb8Wj4M"
+      ]
+    },
+    "14DgNYSXVTFJxbNJJaVJFPrvfmdoB1S6DAcC7jKSsGyFczjq": {
+      "name": "pathrocknetwork",
+      "n_polkawatch": 2,
+      "addresses": [
+        "15MZqPwJTkmPieNpT3vNXeqZ9S1B5ThmnE8jtqotEVXQoLcE",
+        "15GAZsLr6X2vhDjcpnztFZuYibAemzVw2i8VYBb42VHJhcZB"
+      ]
+    },
+    "16k5oJMBY9QXCnKeMhMmQwyStcM7sRGfbbrTiHWL2m87JJP9": {
+      "name": "\ud83c\udf6f HoneyStake.xyz \ud83c\udf6f",
+      "n_polkawatch": 2,
+      "addresses": [
+        "1KikY9PK1kYwawnGcERnzLbSi39cJyxMRW5iLNsg2nfjWiN",
+        "156dG94Rcq61HVrn6Ndx33NysDimutzAq7j5Mz7yo2Hxf6wh"
+      ]
+    },
+    "15DChmtG5ZsRgYR3sirKMEbPsxyvPSts2Fz9s9qaiu2eqKhY": {
+      "name": "VALIDEXIS",
+      "n_polkawatch": 2,
+      "addresses": [
+        "15DChmtG5ZsRgYR3sirKMEbPsxyvPSts2Fz9s9qaiu2eqKhY",
+        "14KMKAzCX6z1e2ASu5kwVur4o6DhUfC2s5KUrXUW2VgMgkLk"
+      ]
+    },
+    "13GtCixw3EZARj52CVbKLrsAzyc7dmmYhDV6quS5yeVCfnh1": {
+      "name": "RADIUMBLOCK.COM",
+      "n_polkawatch": 2,
+      "addresses": [
+        "12eJYg9RLVtAphFfr7FZ7rV3T5NmRa1B6jWPGNgGzE1mEDSa",
+        "133oN3pkmNqqR5rzpaTEDq3AtmVNhfFDfoYLFMk7EuTwNzNZ"
+      ]
+    },
+    "13ujiSd3d6rCuQjDMgue2HPBvcYVa8wPCcUnAwHznetpHX5w": {
+      "name": "luizv",
+      "n_polkawatch": 2,
+      "addresses": [
+        "126ANkfm32BEYjHLGvqW5KDEkzmTGxAr6RchdE85GoyjMjeW",
+        "1PqUaCWULAwrdvY2B6FnkzPHWzAhbKEk6hoFoUGs2tCy5jS"
+      ]
+    },
+    "12jtFwn8Kvnqd2JEEtRiCfBaSFVY9NQivSXHJc93gTbdJkNe": {
+      "name": "vonFlandern",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13BWVNKSQn9dTrLXhmgm3QHZZNCKZ9ToEsJitjypEvLwJB13",
+        "13JxPP5Cc5oE3y3BC9RadyiHdUMctMnvdExApfN8M22NgdAS"
+      ]
+    },
+    "1guBaaUmYpYPmsNmooQApqFmpmRHeaipb1CxoncMuiaqXGh": {
+      "name": "deigenvektor.io",
+      "n_polkawatch": 2,
+      "addresses": [
+        "16UpmQgoFroRH1i4Gi1wVZmomXxSZc8gqkGQG2czD1yJHoEu",
+        "1guBaaUmYpYPmsNmooQApqFmpmRHeaipb1CxoncMuiaqXGh"
+      ]
+    },
+    "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK": {
+      "name": "NEWDEAL",
+      "n_polkawatch": 2,
+      "addresses": [
+        "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK",
+        "143bj6p3rQeoC1RuWEgZNu2pbwaQtdhiwX28599EdqvCSPmb"
+      ]
+    },
+    "15rb4HVycC1KLHsdaSdV1x2TJAmUkD7PhubmhL3PnGv7RiGY": {
+      "name": "OnFinality.io",
+      "n_polkawatch": 2,
+      "addresses": [
+        "13C2DHD8djdFiXorENB1nPkjhN3f9efNmstqKQqzaiDrVe8L",
+        "15V7kggXFSr79BcLRsxxonx19B1kMRGyR4FtyYYuNiKvynnr"
+      ]
+    },
+    "16g43B7VPfTmpXQujSz3aKbqY9twSrDreHFWtwp4P7bLkQPp": {
+      "name": "Staking4All \ud83e\udd69",
+      "n_polkawatch": 2,
+      "addresses": [
+        "14cxMDpBNLsNEXWyCzked3zghzaYWXwoqGT4h12GqQXdVhmn",
+        "16g43B7VPfTmpXQujSz3aKbqY9twSrDreHFWtwp4P7bLkQPp"
+      ]
+    },
+    "1bG5MdYcqMX8RdBHmgtkDv2qW6GM8iCQhwTkvw9SAo93QSr": {
+      "name": "KUZO STAKE",
+      "n_polkawatch": 1,
+      "addresses": [
+        "15PPJX7PvSbN7k6FSVZ5wnjWiMcf3swyRu4rzBZMnuhP7Koj"
+      ]
+    },
+    "15oXUdem7MwP62EwZ7yNK4arwJtXimqQR7YfEMDvY1mgo1E6": {
+      "name": "HYPERSPHERE",
+      "n_polkawatch": 1,
+      "addresses": [
+        "13mK8AssyPekT5cFuYQ7ijKNXcjHPq8Gnx6TxF5eFCAwoLQ"
+      ]
+    },
+    "1NebF2xZHb4TJJpiqZZ3reeTo8dZov6LZ49qZqcHHbsmHfo": {
+      "name": "Titan Nodes",
+      "n_polkawatch": 1,
+      "addresses": [
+        "1NebF2xZHb4TJJpiqZZ3reeTo8dZov6LZ49qZqcHHbsmHfo"
+      ]
+    },
+    "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN": {
+      "name": "Nodeasy",
+      "n_polkawatch": 1,
+      "addresses": [
+        "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN"
+      ]
+    },
+    "14MceVAhD8moRWR3U3vLWBU5R9tqjSVWHA4sMfMuwSUPn3vb": {
+      "name": "Blockdaemon",
+      "n_polkawatch": 1,
+      "addresses": [
+        "123VugBRFMqUEFviSYrG3ewdZ46ZmqxjmRaGY6BvakfdPVaG"
+      ]
+    },
+    "147sNiboCGb2B4TCBwKW3vz8faCx9fh9kQsxRjvLyjJmduZE": {
+      "name": "SenseiNode",
+      "n_polkawatch": 1,
+      "addresses": [
+        "147sNiboCGb2B4TCBwKW3vz8faCx9fh9kQsxRjvLyjJmduZE"
+      ]
+    },
+    "1zkynXdGj8p2JbXR7CesPuhbJvZt4G8k8T8q2jYgoattgKy": {
+      "name": "STAKE HULK\ud83d\udc7d",
+      "n_polkawatch": 1,
+      "addresses": [
+        "15uCAG6qK9qdx3EG3kyb5TFn83PgFUSQEioUgA9GLTjMFfq"
+      ]
+    },
+    "15MV2nX6BEoiBz8Ua2xNta19sVBKT7kiw2MEHdu2Jd9a4VaC": {
+      "name": "LuckyFriday.io",
+      "n_polkawatch": 1,
+      "addresses": [
+        "14AakQ4jAmr2ytcrhfmaiHMpj5F9cR6wK1jRrdfC3N1oTbUz"
+      ]
+    },
+    "13Jpq4n3PXXaSAbJTMmFD78mXAzs8PzgUUQd5ve8saw7HQS5": {
+      "name": "Stakeworld.io",
+      "n_polkawatch": 1,
+      "addresses": [
+        "14kpNbU4XjEHfYdqp95Gq3NkBWbgFd6J8Yjd2SneWNzvf1Yp"
+      ]
+    },
+    "16iiKwFsRKRsjAiEpD4zgNgEX84nzHtHHNFKXhz1sHtan3ne": {
+      "name": "Taichung",
+      "n_polkawatch": 1,
+      "addresses": [
+        "16iiKwFsRKRsjAiEpD4zgNgEX84nzHtHHNFKXhz1sHtan3ne"
+      ]
+    },
+    "13Emjax1tBfQMEKisppTMMe7jMbqpmCH1jRpTXudLocaevND": {
+      "name": "Stake\ud83e\uddf2Magnet",
+      "n_polkawatch": 1,
+      "addresses": [
+        "13Emjax1tBfQMEKisppTMMe7jMbqpmCH1jRpTXudLocaevND"
+      ]
+    },
+    "15kkg1mK1tCGgqqo3c1CghtKCQsBEAPPjYNNmmRT3r29FeRX": {
+      "name": "ANAMIX",
+      "n_polkawatch": 1,
+      "addresses": [
+        "15kkg1mK1tCGgqqo3c1CghtKCQsBEAPPjYNNmmRT3r29FeRX"
+      ]
+    },
+    "16kzYodFWy43sVGFKGnpDK8T3P8F9NhyMKqWNFfeFVN4XT9K": {
+      "name": "Figment 7",
+      "n_polkawatch": 1,
+      "addresses": [
+        "16kzYodFWy43sVGFKGnpDK8T3P8F9NhyMKqWNFfeFVN4XT9K"
+      ]
+    },
+    "12pHJra8Wm8TKmUhVjDJgcWbYQm5q7BPtzm7mmZGaJHBcf7u": {
+      "name": "anvel",
+      "n_polkawatch": 1,
+      "addresses": [
+        "12pHJra8Wm8TKmUhVjDJgcWbYQm5q7BPtzm7mmZGaJHBcf7u"
+      ]
+    },
+    "143xeV45MsSeUGFpCns1ACgaUvCeouSJ4WDoppio9qNUNr5S": {
+      "name": "KeepNode",
+      "n_polkawatch": 1,
+      "addresses": [
+        "13BeUcLu7hzSTaoKpEtpdqiXKZz6yVfT9exKH6JuTW8RQQvJ"
+      ]
+    },
+    "13uUd8q21iS7HLDG43BQQ9TiFn7wGFPSF8Uy99uze8zw4V8c": {
+      "name": "APERTURE MINING \ud83c\udf82",
+      "n_polkawatch": 1,
+      "addresses": [
+        "145SvVXoAwR5ufJynYWDeNXzfyxbf5VkCqkHu3Jt7FSdYBE2"
+      ]
+    },
+    "148PMz7qJokU88xB3raf9EMmBb3KbTe3XNxXcLVicQoWxrne": {
+      "name": "ALFASTAKE",
+      "n_polkawatch": 1,
+      "addresses": [
+        "14MDvXHcSfZXacZR3nvbS4XYgpWi2dY65BnthsUnMZU6R1kH"
+      ]
+    },
+    "12YFWxpS32wTZq4HcH28HMR5atkGhxzfD7aNjhTCu5Vyz9J9": {
+      "name": "Figment 1",
+      "n_polkawatch": 1,
+      "addresses": [
+        "12YFWxpS32wTZq4HcH28HMR5atkGhxzfD7aNjhTCu5Vyz9J9"
+      ]
+    },
+    "15tsaRbwLLBHst5chP1pVkQHc5n2JS4DcapFdhCnqJMZebda": {
+      "name": "Figment 3",
+      "n_polkawatch": 1,
+      "addresses": [
+        "15tsaRbwLLBHst5chP1pVkQHc5n2JS4DcapFdhCnqJMZebda"
+      ]
+    },
+    "138tCNoHg9QbhjqanRS7R8ZC8547A6CdaSmrCtJCRLpjQk6r": {
+      "name": "GuruStaking\ud83d\udc73",
+      "n_polkawatch": 1,
+      "addresses": [
+        "138tCNoHg9QbhjqanRS7R8ZC8547A6CdaSmrCtJCRLpjQk6r"
+      ]
+    },
+    "16YwUZyLdeAoe4KmhivGwuuJpBH1US4qkUtXK2V83MVXUy6x": {
+      "name": "1% - GTSTAKING",
+      "n_polkawatch": 1,
+      "addresses": [
+        "16YwUZyLdeAoe4KmhivGwuuJpBH1US4qkUtXK2V83MVXUy6x"
+      ]
+    },
+    "1YiNZeuoqgLtN3X4x3SGszaXE5tA2aJxbZFH7PttDTkj459": {
+      "name": "P2P STAKING",
+      "n_polkawatch": 1,
+      "addresses": [
+        "13S541dQ5NXFCxSBqFUFghkCfUU6LsZUVem7z2tfvsJwWFys"
+      ]
+    },
+    "14Xh6ffkMALKBVAmFwgSwnrU1D5ufQAUa1o2sZ54dGuGfDY2": {
+      "name": "Animoca Brands",
+      "n_polkawatch": 1,
+      "addresses": [
+        "14Xh6ffkMALKBVAmFwgSwnrU1D5ufQAUa1o2sZ54dGuGfDY2"
+      ]
+    },
+    "15x643ScnbVQM3zGcyRw3qVtaCoddmAfDv5LZVfU8fNxkVaR": {
+      "name": "VF Validierung \ud83c\udde9\ud83c\uddea",
+      "n_polkawatch": 1,
+      "addresses": [
+        "15x643ScnbVQM3zGcyRw3qVtaCoddmAfDv5LZVfU8fNxkVaR"
+      ]
+    },
+    "15fU523Wq5BCt2NWAmrCU6p8nFB29uVifeG7bwYJHbw5Mmd9": {
+      "name": "SNZPool-1",
+      "n_polkawatch": 1,
+      "addresses": [
+        "15fU523Wq5BCt2NWAmrCU6p8nFB29uVifeG7bwYJHbw5Mmd9"
+      ]
+    },
+    "12doSHUJN1P6HL9zj96Bh2ZwVBXH7NcCi78caVtte8aQWGHz": {
+      "name": "Figment 2",
+      "n_polkawatch": 1,
+      "addresses": [
+        "12doSHUJN1P6HL9zj96Bh2ZwVBXH7NcCi78caVtte8aQWGHz"
+      ]
+    }
+  }
+}
