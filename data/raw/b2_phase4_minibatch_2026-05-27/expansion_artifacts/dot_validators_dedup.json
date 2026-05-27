@@ -1,0 +1,539 @@
+{
+  "n_unique_validators": 600,
+  "n_unique_operators": 578,
+  "stake_hhi_deduped": 0.0016920381629039413,
+  "operator_hhi_by_slot": 0.002377777777777778,
+  "operator_hhi_by_stake": 0.0031525339118833925,
+  "top1_pct_stake": 0.248393660737111,
+  "top5_pct_stake": 1.240339895152112,
+  "top10_pct_stake": 2.4801768429126034,
+  "top_operators": [
+    [
+      "binance_stake",
+      15,
+      31136980.600638337
+    ],
+    [
+      "figment",
+      7,
+      11350622.544153862
+    ],
+    [
+      "rockx_polkadot",
+      2,
+      2923161.6302852505
+    ],
+    [
+      "chainsafe-polkadot-validator-",
+      2,
+      2700017.0145451184
+    ],
+    [
+      "dothub-",
+      1,
+      2075494.3456774366
+    ],
+    [
+      "<unlabeled:12GTt3pf>",
+      1,
+      1900663.2284609003
+    ],
+    [
+      "<unlabeled:15ANfaUM>",
+      1,
+      1900638.8084987774
+    ],
+    [
+      "<unlabeled:13REihPM>",
+      1,
+      1731103.308766308
+    ],
+    [
+      "<unlabeled:15drCUvF>",
+      1,
+      1730902.4996918577
+    ],
+    [
+      "<unlabeled:1edsjLpq>",
+      1,
+      1730892.6658274205
+    ],
+    [
+      "<unlabeled:15XU7uzA>",
+      1,
+      1730892.6658274205
+    ],
+    [
+      "<unlabeled:16FCPBq8>",
+      1,
+      1730892.6658274205
+    ],
+    [
+      "<unlabeled:14v1KAyr>",
+      1,
+      1730892.6658274203
+    ],
+    [
+      "<unlabeled:14e6xD5f>",
+      1,
+      1730857.709602618
+    ],
+    [
+      "<unlabeled:1497QNdy>",
+      1,
+      1730786.4657742847
+    ]
+  ],
+  "validators": [
+    {
+      "address": "13ougYD2SRkn88L14XiYCJc3mL7AzWoAMVdn1FwLumV49LjU",
+      "display": "BINANCE_STAKE_10",
+      "bonded_total_plancks": 20791038699788185,
+      "bonded_total_dot": 2079103.8699788186,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20791038699788185,
+      "count_nominators": 2
+    },
+    {
+      "address": "1ZKHNRib33noQn1FpjFsPCHuVYUfci5TXy4Lif1FcUUwZe6",
+      "display": "BINANCE_STAKE_11",
+      "bonded_total_plancks": 20757311338968766,
+      "bonded_total_dot": 2075731.1338968766,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20757311338968766,
+      "count_nominators": 2
+    },
+    {
+      "address": "13wxjPuajyJrHcBabsgoD7oqL1mJhFVWjeXFxEvMbSBY9xn9",
+      "display": "BINANCE_STAKE_4",
+      "bonded_total_plancks": 20756847486076143,
+      "bonded_total_dot": 2075684.7486076143,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20756847486076143,
+      "count_nominators": 1
+    },
+    {
+      "address": "16FRYg2zE5cgrkKQmJhU9YJRT7Uquqxfz6hmp6GnqgdcBv16",
+      "display": "binance_stake_2",
+      "bonded_total_plancks": 20756847486076143,
+      "bonded_total_dot": 2075684.7486076143,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20756847486076143,
+      "count_nominators": 1
+    },
+    {
+      "address": "12771k5UXewvK7FXd1RpPHxvFiCG4GQCrxRmXWN5tAAwDQoi",
+      "display": "BINANCE_STAKE_8",
+      "bonded_total_plancks": 20756847486076142,
+      "bonded_total_dot": 2075684.7486076143,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20756847486076142,
+      "count_nominators": 1
+    },
+    {
+      "address": "15kb76J3G8QvtoYKZdWyvPC12MzewsMYYneYT7E6SM2R3oTB",
+      "display": "BINANCE_STAKE_6",
+      "bonded_total_plancks": 20756524381696803,
+      "bonded_total_dot": 2075652.4381696803,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20756524381696803,
+      "count_nominators": 2
+    },
+    {
+      "address": "114SUbKCXjmb9czpWTtS3JANSmNRwVa4mmsMrWYpRG1kDH5",
+      "display": "BINANCE_STAKE_9",
+      "bonded_total_plancks": 20755440057560291,
+      "bonded_total_dot": 2075544.0057560292,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20755440057560291,
+      "count_nominators": 108
+    },
+    {
+      "address": "1v7QwYLMaABh7eyFKN9PHbKquAyPt6PtcYZZWvf12KV5pMk",
+      "display": "binance_stake_1",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "13fqhWQCqTHTPbU1fyvbz9Ua3NC47fVVexYuNQRBwpSeZyKM",
+      "display": "dothub-1",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "14GWWeZzMYkR7bwyeBvq7c44nJr4ncEodM4fAJX89ZSAHLw3",
+      "display": "BINANCE_STAKE_13",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "15UjmGk7qn992vQ2TjQzVSYrrbM3eMUHReCF5TxL7RmpjpJn",
+      "display": "BINANCE_STAKE_14",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "15XvGmoR6NqAPoV86yDGMDkvU8PCtYGJoywGq1AFcwF6Y2qy",
+      "display": "BINANCE_STAKE_3",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "15cqv5Ei4DB64t7undqpnPtskY7VGb1uwiGuQSs5u2UYfpXa",
+      "display": "BINANCE_STAKE_15",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "15p158r32Z12YyFU7BiqLcqpySmHUedVfJLJ4M73THBixKJY",
+      "display": "BINANCE_STAKE_5",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "16Q2PH4woP6gCE4LzgWtmwTGzxrrkxSsz5bDnXQnEpdabxf4",
+      "display": "BINANCE_STAKE_12",
+      "bonded_total_plancks": 20754943456774365,
+      "bonded_total_dot": 2075494.3456774366,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754943456774365,
+      "count_nominators": 1
+    },
+    {
+      "address": "1Ew5wAsMtvbRdd4RdxSheLpEkSRc718gtcfTv8EmgzEbknA",
+      "display": "BINANCE_STAKE_7",
+      "bonded_total_plancks": 20754344872720352,
+      "bonded_total_dot": 2075434.487272035,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 20754344872720352,
+      "count_nominators": 2
+    },
+    {
+      "address": "12GTt3pfM3SjTU6UL6dQ3SMgMSvdw94PnRoF6osU6hPvxbUZ",
+      "display": "",
+      "bonded_total_plancks": 19006632284609003,
+      "bonded_total_dot": 1900663.2284609003,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 19006632284609003,
+      "count_nominators": 5
+    },
+    {
+      "address": "15ANfaUMadXk65NtRqzCKuhAiVSA47Ks6fZs8rUcRQX11pzM",
+      "display": "",
+      "bonded_total_plancks": 19006388084987775,
+      "bonded_total_dot": 1900638.8084987774,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 19006388084987775,
+      "count_nominators": 2
+    },
+    {
+      "address": "13REihPMQRbujGMrSUyCvWhg1Rrzuy2BAyXaRv4KXFyCsrMq",
+      "display": "",
+      "bonded_total_plancks": 17311033087663081,
+      "bonded_total_dot": 1731103.308766308,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17311033087663081,
+      "count_nominators": 2
+    },
+    {
+      "address": "15drCUvFMiWvy1YfkU6xgENxRzmFXDaqQFpjUwR5nu11DHu3",
+      "display": "",
+      "bonded_total_plancks": 17309024996918578,
+      "bonded_total_dot": 1730902.4996918577,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17309024996918578,
+      "count_nominators": 1
+    },
+    {
+      "address": "1edsjLpqQ4QxtgLPP5xQiNNkjzKcXuaNmUQ6vc944J1jQAa",
+      "display": "",
+      "bonded_total_plancks": 17308926658274205,
+      "bonded_total_dot": 1730892.6658274205,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17308926658274205,
+      "count_nominators": 1
+    },
+    {
+      "address": "15XU7uzAP3nS7inBaWDNdZQXN8oXLnhkxUX7sink7HfxW752",
+      "display": "",
+      "bonded_total_plancks": 17308926658274205,
+      "bonded_total_dot": 1730892.6658274205,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17308926658274205,
+      "count_nominators": 1
+    },
+    {
+      "address": "16FCPBq8sa9CZvCRV3TPYtRBrES3dk1BVDaYiceTg2c99jsF",
+      "display": "",
+      "bonded_total_plancks": 17308926658274205,
+      "bonded_total_dot": 1730892.6658274205,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17308926658274205,
+      "count_nominators": 1
+    },
+    {
+      "address": "14v1KAyrm7LQJJvRpRP44qpf36uQWkRT1mzqUQzDY92r7BDa",
+      "display": "",
+      "bonded_total_plancks": 17308926658274204,
+      "bonded_total_dot": 1730892.6658274203,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17308926658274204,
+      "count_nominators": 1
+    },
+    {
+      "address": "14e6xD5f8MuyWqLNanZDqSGe9TEzNMn29namWpKBJBa5ukwJ",
+      "display": "",
+      "bonded_total_plancks": 17308577096026179,
+      "bonded_total_dot": 1730857.709602618,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 17308577096026179,
+      "count_nominators": 2
+    },
+    {
+      "address": "1497QNdycmxqMi3VJDxZDhaJh4s9tytr5RFWyrLcNse2xqPD",
+      "display": "",
+      "bonded_total_plancks": 17307864657742846,
+      "bonded_total_dot": 1730786.4657742847,
+      "bonded_owner_plancks": 5001031934673,
+      "bonded_nominators_plancks": 17302863625808173,
+      "count_nominators": 3
+    },
+    {
+      "address": "15qtTjVnfFs1DqAbUJBX4N74k7mAbXiPwww8qiWFXbpUoB4y",
+      "display": "",
+      "bonded_total_plancks": 16216672103622774,
+      "bonded_total_dot": 1621667.2103622775,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16216672103622774,
+      "count_nominators": 3
+    },
+    {
+      "address": "1vP68Adjn7JW7brJJc89V7R4hAXPtJr3FzKuJF1qm6uyzWt",
+      "display": "",
+      "bonded_total_plancks": 16215750667648680,
+      "bonded_total_dot": 1621575.066764868,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215750667648680,
+      "count_nominators": 2
+    },
+    {
+      "address": "15twfAkh6TKdNpE7kNgxcQSRYtSpt3QpgjxmR6HKHFGs6Yrz",
+      "display": "Figment 4",
+      "bonded_total_plancks": 16215527842798964,
+      "bonded_total_dot": 1621552.7842798964,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215527842798964,
+      "count_nominators": 4
+    },
+    {
+      "address": "15tsaRbwLLBHst5chP1pVkQHc5n2JS4DcapFdhCnqJMZebda",
+      "display": "Figment 3",
+      "bonded_total_plancks": 16215349351838502,
+      "bonded_total_dot": 1621534.9351838501,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215349351838502,
+      "count_nominators": 12
+    },
+    {
+      "address": "16M3oPL7NAsaDyumZs84XmjhYRPLKA8jbVN8N4FNECZ1KSKy",
+      "display": "",
+      "bonded_total_plancks": 16215338827593982,
+      "bonded_total_dot": 1621533.8827593983,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215338827593982,
+      "count_nominators": 2
+    },
+    {
+      "address": "12YFWxpS32wTZq4HcH28HMR5atkGhxzfD7aNjhTCu5Vyz9J9",
+      "display": "Figment 1",
+      "bonded_total_plancks": 16215272517080451,
+      "bonded_total_dot": 1621527.2517080451,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215272517080451,
+      "count_nominators": 26
+    },
+    {
+      "address": "16kzYodFWy43sVGFKGnpDK8T3P8F9NhyMKqWNFfeFVN4XT9K",
+      "display": "Figment 7",
+      "bonded_total_plancks": 16215217272613070,
+      "bonded_total_dot": 1621521.727261307,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215217272613070,
+      "count_nominators": 4
+    },
+    {
+      "address": "1QmHs5E9zGeJ2iGZMYoBdYKvNLfF316WGi7GvGtSruUJzW9",
+      "display": "",
+      "bonded_total_plancks": 16215134038152028,
+      "bonded_total_dot": 1621513.4038152029,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215134038152028,
+      "count_nominators": 2
+    },
+    {
+      "address": "1y3bTaJiiTbyp8run4WG7XKrqZC7Zxw1AZVAeyNXj48ybhW",
+      "display": "",
+      "bonded_total_plancks": 16215112799641270,
+      "bonded_total_dot": 1621511.279964127,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215112799641270,
+      "count_nominators": 1
+    },
+    {
+      "address": "16iPkhcq851iaeuP8rZyN1oejneBGtSeQCbhyGMwkiwm7dBX",
+      "display": "",
+      "bonded_total_plancks": 16215084202991602,
+      "bonded_total_dot": 1621508.4202991603,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16215084202991602,
+      "count_nominators": 2
+    },
+    {
+      "address": "1KfeQgNt2h9mxB9eHqkr7rWrXjP3qPoZdnS65GYyyp99C8d",
+      "display": "",
+      "bonded_total_plancks": 16214998012175459,
+      "bonded_total_dot": 1621499.801217546,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16214998012175459,
+      "count_nominators": 2
+    },
+    {
+      "address": "16fcR1ercimd6qyBVQyXTTjtWL1kosTS1myiSuVf7kxutxvg",
+      "display": "Figment 5",
+      "bonded_total_plancks": 16214965564364487,
+      "bonded_total_dot": 1621496.5564364486,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16214965564364487,
+      "count_nominators": 8
+    },
+    {
+      "address": "12doSHUJN1P6HL9zj96Bh2ZwVBXH7NcCi78caVtte8aQWGHz",
+      "display": "Figment 2",
+      "bonded_total_plancks": 16214955624364394,
+      "bonded_total_dot": 1621495.5624364393,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16214955624364394,
+      "count_nominators": 4
+    },
+    {
+      "address": "1RhqvtG4SS6ooc3JELk8kpTaDiLP9f92jdyR5p5efPWVsx1",
+      "display": "Figment 8",
+      "bonded_total_plancks": 16214937268478753,
+      "bonded_total_dot": 1621493.7268478754,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16214937268478753,
+      "count_nominators": 6
+    },
+    {
+      "address": "15wD8upZxRZijKkF7JZDdaaFXuRZJhFyYpFQC5j6FaZL5Pza",
+      "display": "",
+      "bonded_total_plancks": 16214916479930649,
+      "bonded_total_dot": 1621491.647993065,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16214916479930649,
+      "count_nominators": 1
+    },
+    {
+      "address": "12HC5RsJcPRNhemZ1dixD2f4MWCQUFzem6YDNNrqS9jz9off",
+      "display": "",
+      "bonded_total_plancks": 16214615359974083,
+      "bonded_total_dot": 1621461.5359974082,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 16214615359974083,
+      "count_nominators": 3
+    },
+    {
+      "address": "163AJJfUjzonWiSqmGD71iZBPv9Q4VTbjgm6K6NTv9Fvd42p",
+      "display": "",
+      "bonded_total_plancks": 15822569847786717,
+      "bonded_total_dot": 1582256.9847786718,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 15822569847786717,
+      "count_nominators": 1
+    },
+    {
+      "address": "1vTaLKEyj2Wn9xEkUGixBkVXJAd4pzDgXzz9CuVjhVqhHRQ",
+      "display": "Luganodes",
+      "bonded_total_plancks": 15551229224941115,
+      "bonded_total_dot": 1555122.9224941116,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 15551229224941115,
+      "count_nominators": 184
+    },
+    {
+      "address": "138SnSYhxMUyAafW7QVnBxHiZtEjQXA1zbbE8jUayJ8e2Fer",
+      "display": "",
+      "bonded_total_plancks": 15001140749629298,
+      "bonded_total_dot": 1500114.0749629298,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 15001140749629298,
+      "count_nominators": 2
+    },
+    {
+      "address": "1Kmfp4pKbspNG94nLgUzdoz526uMh9RojCNoFKr1GXrgodo",
+      "display": "",
+      "bonded_total_plancks": 15000686655985351,
+      "bonded_total_dot": 1500068.6655985352,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 15000686655985351,
+      "count_nominators": 1
+    },
+    {
+      "address": "14xso8KpEUMD174VA7FQR9qSK5fg2tHGsQ1ftF3LVTC4R4vy",
+      "display": "",
+      "bonded_total_plancks": 15000686655985351,
+      "bonded_total_dot": 1500068.6655985352,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 15000686655985351,
+      "count_nominators": 1
+    },
+    {
+      "address": "14muArNrdJovje5CcRmdzvtbfnCqVdphfVKaokZvsRC18qXL",
+      "display": "",
+      "bonded_total_plancks": 14703026074085533,
+      "bonded_total_dot": 1470302.6074085534,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 14703026074085533,
+      "count_nominators": 3
+    },
+    {
+      "address": "16G8NDzxUeUbGiw2bFX3Wy7JwNEJz9U8B1smCFqqe4GPZbdN",
+      "display": "",
+      "bonded_total_plancks": 14700386883379371,
+      "bonded_total_dot": 1470038.688337937,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 14700386883379371,
+      "count_nominators": 134
+    },
+    {
+      "address": "16A1zLQ3KjMnxch1NAU44hoijFK3fHUjqb11bVgcHCfoj9z3",
+      "display": "",
+      "bonded_total_plancks": 14700053384679473,
+      "bonded_total_dot": 1470005.3384679472,
+      "bonded_owner_plancks": 0,
+      "bonded_nominators_plancks": 14700053384679473,
+      "count_nominators": 13
+    }
+  ]
+}

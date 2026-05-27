@@ -1,0 +1,55 @@
+{
+  "FXS": {
+    "symbol": "FXS",
+    "defillama_name": "Frax",
+    "defillama_category": "Algo-Stables",
+    "defillama_tvl_current": 67137376.90339,
+    "defillama_mcap": null,
+    "defillama_fdv": null,
+    "defillama_chain": "Ethereum",
+    "defillama_token_address": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0",
+    "defillama_tvl_value": 67137376,
+    "price_usd": 0.4024042649707457,
+    "symbol_confirmed": "FRAX",
+    "timestamp": 1779868741,
+    "fees_total_24h": 0,
+    "fees_total_30d": 17584,
+    "fees_total_1y": null,
+    "rev_total_1y": null
+  },
+  "SNX": {
+    "symbol": "SNX",
+    "defillama_name": "Synthetix",
+    "defillama_category": null,
+    "defillama_tvl_current": 42539548,
+    "defillama_mcap": 109059400.98103945,
+    "defillama_fdv": null,
+    "defillama_chain": null,
+    "defillama_token_address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+    "defillama_tvl_value": 42540849,
+    "price_usd": 0.31554008496520103,
+    "symbol_confirmed": "SNX",
+    "timestamp": 1779868744,
+    "fees_total_24h": 493,
+    "fees_total_30d": 2630,
+    "fees_total_1y": null,
+    "rev_total_1y": null
+  },
+  "GNO": {
+    "symbol": "GNO",
+    "defillama_err": "HTTP Error 400: Bad Request",
+    "price_usd": 116.87646779036176,
+    "symbol_confirmed": "GNO",
+    "timestamp": 1779868735,
+    "fees_total_24h": 250,
+    "fees_total_30d": 9626,
+    "fees_total_1y": null,
+    "rev_total_1y": null
+  },
+  "DOT": {
+    "symbol": "DOT",
+    "price_usd": 1.2672381482437705,
+    "symbol_confirmed": "DOT",
+    "timestamp": 1779868984
+  }
+}
