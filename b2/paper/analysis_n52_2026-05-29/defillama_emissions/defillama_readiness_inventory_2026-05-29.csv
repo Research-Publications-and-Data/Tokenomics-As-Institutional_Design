@@ -1,0 +1,51 @@
+token,sector,defillama_slug,gecko_id,valid,has_incentives,has_insiders,labels,span,note
+COMP,DeFi,compound-finance,compound-governance-token,True,True,True,Liquidity Mining:INCENTIVE|Team Founders:INSIDER|Shareholders:OTHER|Coinbase Earn:OTHER|Future Team:INSIDER,2020-06..2025-05,
+MKR,DeFi,,,False,False,False,,,
+AAVE,DeFi,aave,aave,True,True,False,Staking Rewards:INCENTIVE|Farming Incentives:INCENTIVE|LEND core development:OTHER|LEND user experience development:OTHER|LEND management and legal:OTHER|LEND promotions and marketing:OTHER|LEND unexpected costs:OTHER|LEND public sale:OTHER,2017-12..2026-05,
+UNI,DeFi,uniswap,uniswap,True,True,True,Incentives:INCENTIVE|airdrop:OTHER|team:INSIDER|investors:INSIDER|advisors:INSIDER|community:OTHER,2020-09..2026-05,
+CRV,DeFi,curve-finance,curve-dao-token,True,False,True,Community Reserve:OTHER|Community:OTHER|Team & Investors:INSIDER|Early Users:OTHER|Employees:OTHER,2020-08..2026-08,
+RPL,DeFi,rocket-pool,rocket-pool,True,True,True,Node Operator Rewards:INCENTIVE|Trusted Node Rewards:INCENTIVE|Protocol DAO Rewards:INCENTIVE|Pre Sale Investors:INSIDER|Public Sale:OTHER|Rocket Pool Team:INSIDER,2017-09..2026-05,
+JUP,DeFi,jupiter,jupiter-exchange-solana,True,False,True,Airdrop:OTHER|Launchpool:OTHER|Market Makers:OTHER|Immediate Needs:OTHER|LFG Launchpad Fees:OTHER|Team:INSIDER|Mercurial Stakeholders:OTHER|DAO:OTHER,2024-01..2026-02,
+MPL_SYRUP,DeFi,maple-finance,syrup,True,True,True,Public Sale:OTHER|Team and Advisors:INSIDER|Seed Investors:INSIDER|Liquidity Mining:INCENTIVE|Treasury:OTHER,2024-09..2026-09,slug correct; gecko-id naming differs
+GMX,DeFi,gmx,gmx,True,True,False,Farming Incentives:INCENTIVE|Staking Rewards:INCENTIVE|XVIX and Gambit migration:OTHER|Floor Price Fund:OTHER|Marketing:OTHER|Uniswap Pool:OTHER|Contributors:OTHER,2021-07..2026-05,
+DRIFT,DeFi,drift,drift-protocol,True,True,True,Initial Airdrop:OTHER|Ecosystem Development & Trading Rewards:INCENTIVE|Strategic Participants:INSIDER|Protocol Development:OTHER,2024-05..2029-05,
+ETHFI,DeFi,ether.fi,ether-fi,True,True,True,DAO Treasury:OTHER|Incentives:INCENTIVE|Core Contributors:INSIDER|Airdrops:OTHER|Future Airdrops:OTHER|Partnerships & Liquidity:INCENTIVE|Investors:INSIDER,2024-03..2027-03,
+GRT,L1_L2_Infra,the-graph,the-graph,True,True,True,Early Backers:OTHER|Backers:OTHER|Educational Program:OTHER|Bug Bounty:OTHER|Public GRT Sale:OTHER|Strategic GRT Sale:INSIDER|Testnet Indexer Rewards:INCENTIVE|Early Team & Advisors:INSIDER|Curator Program Grants:OTHER|Edge & Node:OTHER|Graph Foundation:OTHER|New Issuance:OTHER,2020-12..2030-12,
+OP,L1_L2_Infra,optimism-foundation,optimism,True,False,True,Seed Fund:INSIDER|Governance Fund:OTHER|Unallocated Ecosystem Fund:OTHER|Retroactive Public Goods Funding:OTHER|Airdrops:OTHER|Future Airdrops:OTHER|Team:INSIDER|Investors:INSIDER,2022-06..2029-09,
+POL,L1_L2_Infra,,,False,False,False,,,NOT in DefiLlama unlocks (fuzzy mismatch removed)
+ARB,L1_L2_Infra,arbitrum,arbitrum,True,False,True,"Airdrop:OTHER|Daos in Arbitrum:OTHER|Foundation:OTHER|Team, Contributors & Advisors:INSIDER|Investors:INSIDER|Arbitrum DAO Treasury:OTHER",2023-03..2027-04,
+ENS,L1_L2_Infra,ens,ethereum-name-service,True,False,True,Airdrop:OTHER|Other contributors:OTHER|Core Contributors:INSIDER|DAO Community Treasury:OTHER,2021-11..2025-11,
+DIMO,DePIN,,,False,False,False,,,
+IOTX,DePIN,,,False,False,False,,,
+WXM,DePIN,,,False,False,False,,,
+ANYONE,DePIN,,,False,False,False,,,
+GRASS,DePIN,grass,grass,True,True,True,Airdrop One:OTHER|Future Incentives:INCENTIVE|Router Rewards:INCENTIVE|Foundation & Ecosystem Growth:OTHER|Early Investors:INSIDER|Contributors:OTHER,2024-10..2030-10,
+LPT,DePIN,,,False,False,False,,,
+HNT,DePIN,helium-network,helium,True,False,True,Founders and Investors:INSIDER|Proof of Coverage:OTHER|Data Transfer:OTHER|Consensus:OTHER,2019-08..2069-08,
+GEOD,DePIN,geodnet,geodnet,True,True,True,Mining:INCENTIVE|Team:INSIDER|Ecosystem:OTHER|Investors:INSIDER|Vendor / Marketing:OTHER,2023-02..2026-05,
+FIL,DePIN,filecoin,filecoin,True,False,True,Baseline Minting:OTHER|Simple Minting:OTHER|Protocol Labs:OTHER|Protocol Labs Team & Contributors:INSIDER|Fundraising 6 Months:OTHER|Fundraising 12 Months:OTHER|Fundraising 24 Months:OTHER|Fundraising 36 Months:OTHER|Filecoin Foundation:OTHER,2020-10..2056-10,
+RENDER,DePIN,,,False,False,False,,,
+POKT,DePIN,,,False,False,False,,,
+ZRO,L1_L2_Infra,layerzero,layerzero,True,False,True,Community Allocation:OTHER|Core Contributors:INSIDER|Strategic Partners:INSIDER|Foundation:OTHER,2024-06..2027-06,
+W,L1_L2_Infra,,,False,False,False,,,NOT in DefiLlama unlocks (fuzzy mismatch removed)
+MOR,DePIN,morpheusai,morpheusai,True,False,False,Compute Providers:OTHER|Code Contributors:OTHER|Capital Providers:OTHER|Application Builders:OTHER|Protection Fund:OTHER,2024-02..2040-01,slug correct; gecko-id naming differs
+AXL,L1_L2_Infra,axelar-network,axelar,True,True,True,Community Programs:OTHER|Company Core Team:INSIDER|Seed Round:INSIDER|Series A:OTHER|Series B:OTHER|Company Operations:OTHER|Community Sale:OTHER|Staking Rewards:INCENTIVE,2022-09..2026-12,
+META,DeFi,,,False,False,False,,,NOT in DefiLlama unlocks (fuzzy mismatch removed)
+LDO,DeFi,lido,lido-dao,True,True,True,Incentives:INCENTIVE|Investors:INSIDER|Validators & Signature Holders:OTHER|Initial Lido Developers:OTHER|Founders & Future Employees:INSIDER,2021-01..2026-03,
+ATH,DePIN,aethir,aethir,True,False,True,Team:INSIDER|Airdrop:OTHER|Investors:INSIDER|Advisors:INSIDER|Checkers & Compute Providers:OTHER|Ecosystem:OTHER,2024-06..2028-12,slug correct; gecko-id naming differs
+HONEY,DePIN,,,False,False,False,,,
+IO,DePIN,,,False,False,False,,,NOT in DefiLlama unlocks (fuzzy mismatch removed)
+HYPE,DeFi,hyperliquid,hyperliquid,True,True,True,Core Contributors:INSIDER|Validator Rewards:INCENTIVE|Hyper Foundation Budget:OTHER|Community Grants:OTHER|HIP-2:OTHER|Genesis Distribution:OTHER,2024-11..2026-05,slug correct; gecko-id naming differs
+BAL,DeFi,balancer,balancer,True,True,True,"Liquidity Providers:INCENTIVE|Founders, Options, Advisors, Investors:INSIDER|Treasury Safe:OTHER|Balancer Labs Fundraising Fund:OTHER|Balancer Labs Contributors Incentives Program:INCENTIVE",2020-06..2026-05,slug correct; gecko-id naming differs
+WLFI,DeFi,,,False,False,False,,,NOT in DefiLlama unlocks (fuzzy mismatch removed)
+ENA,DeFi,ethena,ethena,True,False,True,Investors:INSIDER|Team:INSIDER|Ecosystem Development:OTHER|Foundation:OTHER|Airdrop S1:OTHER|Airdrop S2:OTHER|Airdrop S3:OTHER,2024-03..2028-04,
+PUMP,DeFi,pump,pump-fun,True,True,True,Initial Coin Offering:OTHER|Livestreaming:OTHER|Liquidity & Exchanges:INCENTIVE|Ecosystem Fund:OTHER|Foundation:OTHER|Community & Ecosystem:OTHER|Team:INSIDER|Existing Investors:INSIDER,2025-07..2029-07,slug correct; gecko-id naming differs
+JTO,DeFi,jito,jito-governance-token,True,False,True,Investors:INSIDER|Core Contributors:INSIDER|Ecosystem Development:OTHER|Airdrop:OTHER|Community Growth:OTHER,2023-12..2026-12,
+BONK,DeFi,,,False,False,False,,,
+KMNO,DeFi,kamino,kamino,True,True,True,Community & Grants:OTHER|Liquidity & Treasury:INCENTIVE|Genesis Allocation:OTHER|Season 2 Allocation:OTHER|Season 3 Allocation:OTHER|Season 4 Allocation:OTHER|Season 5 Allocation:OTHER|Core Contributors:INSIDER|Key Stakeholders & Advisors:INSIDER,2024-04..2027-05,
+FXS,DeFi,frax-finance,frax-share,True,True,True,Liquidity Programs & Farming:INCENTIVE|Team / Founders:INSIDER|Strategic Advisors:INSIDER|Accredited Private Investors:INSIDER|Project Team Treasury:INSIDER|Initial Farming Rewards:INCENTIVE,2020-12..2026-03,slug correct; gecko-id naming differs
+SNX,DeFi,synthetix,havven,True,True,True,Pre Sale:OTHER|Public Sale:OTHER|Private Sale:INSIDER|Airdrop:OTHER|Partnership Incentives:INCENTIVE|Team:INSIDER|Advisors:INSIDER|Foundation:OTHER|Staking:INCENTIVE,2018-03..2026-02,
+GNO,DeFi,,,False,False,False,,,
+ALGO,L1_L2_Infra,,,False,False,False,,,
+DOT,L1_L2_Infra,polkadot-treasury,polkadot,True,True,True,Private Sale 1:INSIDER|Private Sale 2:INSIDER|Private Sale 3:INSIDER|Public Sale (ICO):OTHER|Web3 Foundation:OTHER|Premined Rewards & Airdrops:INCENTIVE|Staking Rewards:INCENTIVE|Treasury:OTHER,2020-06..2034-03,
+TAO,L1_L2_Infra,bittensor,bittensor,True,True,False,Mining rewards:INCENTIVE,2021-01..2069-09,
