@@ -1,0 +1,412 @@
+{
+ "coverage": "49/50",
+ "incentive_coverage_before_TT": 9,
+ "incentive_coverage_after_constructed": 49,
+ "panel_rows": 2266,
+ "annual": [
+  {
+   "token": "COMP",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 33005991.08,
+   "tt_incentives_annual_usd": 1225567.0,
+   "calib_ratio": 26.93
+  },
+  {
+   "token": "MKR",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": -647422049.27,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "AAVE",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 25111385.17,
+   "tt_incentives_annual_usd": 8099992.0,
+   "calib_ratio": 3.1
+  },
+  {
+   "token": "UNI",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 215041841.28,
+   "tt_incentives_annual_usd": 536653.0,
+   "calib_ratio": 400.71
+  },
+  {
+   "token": "CRV",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 87967286.05,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "RPL",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 4478752.15,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "JUP",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 226334596.56,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "MPL_SYRUP",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 81418478.54,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "GMX",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 3780465.6,
+   "tt_incentives_annual_usd": 53912.0,
+   "calib_ratio": 70.12
+  },
+  {
+   "token": "DRIFT",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 85040638.62,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ETHFI",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 531333765.78,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "GRT",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 101743846.93,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "OP",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 193629048.88,
+   "tt_incentives_annual_usd": 56578046.0,
+   "calib_ratio": 3.42
+  },
+  {
+   "token": "POL",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 445281814.54,
+   "tt_incentives_annual_usd": 9657767.0,
+   "calib_ratio": 46.11
+  },
+  {
+   "token": "ARB",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 398841413.75,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ENS",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 64889205.27,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "DIMO",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 5911177.34,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "IOTX",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": -12454.36,
+   "tt_incentives_annual_usd": 994755.0,
+   "calib_ratio": -0.01
+  },
+  {
+   "token": "WXM",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": -7876741.82,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ANYONE",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 37049.8,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "GRASS",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 162725708.73,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "LPT",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 50986117.12,
+   "tt_incentives_annual_usd": 24587414.0,
+   "calib_ratio": 2.07
+  },
+  {
+   "token": "HNT",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 12660929.27,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "GEOD",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 15386815.75,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "FIL",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 185494174.95,
+   "tt_incentives_annual_usd": 19712256.0,
+   "calib_ratio": 9.41
+  },
+  {
+   "token": "RENDER",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 7499235.69,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "POKT",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 395706.7,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ZRO",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 234372644.98,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "W",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 50220416.14,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "MOR",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 9723275.49,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "AXL",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 46466525.88,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "META",
+   "sector": "DeFi",
+   "covered": false,
+   "ttm_newsupply_value_usd": "",
+   "tt_incentives_annual_usd": null
+  },
+  {
+   "token": "LDO",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": -29671772.37,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ATH",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 271177836.54,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "HONEY",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 19056448.67,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "IO",
+   "sector": "DePIN",
+   "covered": true,
+   "ttm_newsupply_value_usd": 55382378.23,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "HYPE",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": -3604970904.9,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "BAL",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 1460297.79,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "WLFI",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 411717870.35,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ENA",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 990580924.74,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "PUMP",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 833449226.55,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "JTO",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 141469310.01,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "BONK",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 104686918.2,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "KMNO",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 130363247.32,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "FXS",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": -43795745.2,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "SNX",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 144452.47,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "GNO",
+   "sector": "DeFi",
+   "covered": true,
+   "ttm_newsupply_value_usd": 14210.84,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "ALGO",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 55486997.12,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "DOT",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 391093430.85,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  },
+  {
+   "token": "TAO",
+   "sector": "L1",
+   "covered": true,
+   "ttm_newsupply_value_usd": 316999580.33,
+   "tt_incentives_annual_usd": null,
+   "calib_ratio": ""
+  }
+ ],
+ "by_sector_ttm_positive": {
+  "DeFi": 3907399659.1,
+  "L1": 2299024924.67,
+  "DePIN": 796436854.28
+ }
+}

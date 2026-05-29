@@ -1,9 +1,13 @@
 # SCOPE: incentive / mining-reward VALUE over time (construction from emission schedules x price)
 
-**As-of:** 2026-05-29. This is a SCOPE / spec memo, not an executed build (per the author's
-"scope it as a separate cycle"). It specifies how to construct a time-series of incentive /
-mining-reward USD value for the cross-section, from data already on hand. Reader MUST re-verify
-against live canonical state before executing.
+**As-of:** 2026-05-29. STATUS UPDATE: Method 1 (the supply-delta proxy) WAS executed this cycle
+(`b2_incentive_value_timeseries_2026-05-29.py` + `b2_incentive_value_findings_2026-05-29.md`),
+and the calibration showed it is INSUFFICIENT for pure incentives: constructed trailing-12-month
+new-supply value runs 2x to 400x Token Terminal incentives (unlock-dominated). Coverage was
+expanded to 50/50 (the 10 new-cohort daily series fetched). What REMAINS for a dedicated cycle
+is Method 2 (the schedule method) and/or netting out vesting unlocks. The original memo follows.
+
+This is the SCOPE / spec for the remaining work. Reader MUST re-verify before executing.
 
 ## Objective
 
