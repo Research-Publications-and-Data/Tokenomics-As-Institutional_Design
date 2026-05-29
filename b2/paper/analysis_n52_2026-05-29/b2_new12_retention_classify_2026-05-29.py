@@ -8,14 +8,23 @@ explanatory model is reproducible BY CONSTRUCTION. DOT/TAO/ALGO retention is
 low-confidence ~0 (older L1; survivors are validators/treasury-residual/unattributed
 after exclusion; conservative rule -> not insider).
 
-CLASSIFICATION RULE (consistent with the original-sample composition-shift framing):
-  INSIDER = team/founder/VC/early-investor ALLOCATION wallet NOT already PCA-excluded
-            (named VC/fund, named individual investor, "Investment Recipient").
-  NOT INSIDER = protocol-controlled contract/foundation/treasury/staking/custody
-                (Class 2/3 PCA; if it leaked past the exclusion set it is flagged as
-                exclusion-incompleteness but is still NOT an insider), CEX/exchange,
-                market-maker, unlabeled EOA / retail whale ("High Balance",
-                "Token/ETH Millionaire", "PUMP/BONK Whale").
+CLASSIFICATION RULE (matches the original sample's definition in
+analysis/03_insider_classification.py line 127: insider = team, investor, founder, vest,
+foundation, treasury, multisig, deployer, grant), applied to the POST-EXCLUSION SURVIVORS:
+  INSIDER = team / founder / co-founder / investor (VC/fund) / "Investment Recipient" /
+            foundation / treasury / attributed multisig (Safe) / vesting, surviving in the
+            post-exclusion top-10.
+  NOT INSIDER = CEX / exchange ("custody" hot wallets included, e.g. pump.fun Token Custody
+                which Nansen flags exchange-class), market-maker (e.g. Jump Trading,
+                Wintermute), bridge / escrow / staking-pool / vault aggregation / token
+                proxy contract (Class 3/4 protocol infrastructure), unlabeled EOA / retail
+                whale ("High Balance", "Token/ETH Millionaire", "PUMP/BONK Whale", "Yield
+                Farmer").
+  HHI is UNCHANGED (the PCA exclusion set stays as published; this reclassifies the LABELS
+  of surviving addresses only). The big foundation/treasury/co-founder addresses already in
+  the exclusion set remain excluded (they never enter the survivor top-10); separately
+  re-adjudicating those (the S3 un-exclusion) is an author-owned PCA-methodology decision
+  recorded in the residual-ambiguity log, NOT applied here.
 
 LABEL SOURCES (cost-tiered; free-first then Nansen bulk; no premium-labels needed):
   - Nansen token_current_top_holders (one labeled call per token; 2026-05-29) -- primary
@@ -34,16 +43,30 @@ A = "/Users/zach/Tokenomics-As-Institutional_Design"
 ADIR = os.path.join(A, "b2/paper/analysis_n52_2026-05-29")
 SURV = json.load(open(os.path.join(ADIR, "new12_unified_post_exclusion_top10_2026-05-29.json")))
 
-# ---- per-address INSIDER set (everything else among survivors defaults to NOT insider) ----
-# addresses lowercased for EVM; verbatim for Solana. label + rationale per the rule above.
+# ---- per-address INSIDER set among the post-exclusion survivors (everything else -> NOT insider) ----
+# addresses lowercased for EVM; verbatim for Solana. Per the original-methodology rule above:
+# team / founder / investor / foundation / treasury / attributed-multisig / Investment-Recipient.
 INSIDER = {
- # FXS: Dragonfly Capital VC fund (early-investor allocation, still holding)
+ # FXS: VC fund + two Frax-protocol-labeled operational/treasury EOAs (foundation/treasury)
  "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0": "Dragonfly Capital: Fund (VC/early-investor)",
- # WLFI: named individual investor + external investment foundation + corporate treasury strategy
+ "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee": "Frax (protocol-team/treasury operational EOA)",
+ "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f": "Frax Finance (protocol-team/treasury operational EOA)",
+ # SNX: surviving protocol treasury (treasury -> insider per the original definition)
+ "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92": "Synthetix: Treasury (treasury)",
+ # GNO: surviving attributed multisig (co-founder Safes stay PCA-excluded under S2)
+ "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341": "Gnosis Multisig (multisig)",
+ # WLFI: named individual investor + investment foundation + corporate treasury + attributed multisigs/Safes
  "0x5ab26169051d0d96217949adb91e86e51a5fda74": "Justin Sun (named individual strategic investor)",
  "0x0249d14d15531065b927f4930562c3814e654b54": "Aqua1 Foundation (external strategic investor)",
  "0xcd52e35f7784efc78e835ef6e00be914f48beee6": "ALT5 Sigma: Treasury Strategy (corporate strategic-investor treasury)",
- # ENA: strategic-investment recipients (REZ + ENA)
+ "0xf0cc01b37086bc122a3d63c615dab379478d2745": "WLFI Multisig (multisig)",
+ "0x29de882559194e2be08c182c1860193f8137cbf8": "Ethena Labs WLFI Multisig (multisig)",
+ "0x33ccf78a2091979fbc5a7631e6c71e900715ab78": "SafeProxy (team multisig; bare attribution, see ambiguity log)",
+ "0x284cf133aa570f29da0961be897dbbb2a37962f8": "SafeProxy (team multisig; bare attribution, see ambiguity log)",
+ # ENA: Ethena Labs protocol/team EOAs (foundation/team) + strategic-investment recipients
+ "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666": "Ethena (protocol-team EOA)",
+ "0x7462f0d93260909870487f17a27c336349579557": "Ethena Labs (protocol-team EOA)",
+ "0xb2af973905f05bc82bf97486b6ab883598d98298": "Ethena Labs (protocol-team EOA)",
  "0x877b3d5c681c8890d19dbf450306caa3c3d4bba6": "Ethena Labs: REZ Investment Recipient (strategic investor)",
  "0xa55457e0d0652ba47fe1f97873a62b4f9dcae4d1": "ENA Investment Recipient (strategic investor)",
  # KMNO: 3 investment-recipient survivors
@@ -52,35 +75,29 @@ INSIDER = {
  "6AapP9rsXMsNTJEMbKUatmzLeYwkZSJWd84c6PLBJNvK": "Kamino: KMNO Investment Recipient (strategic investor)",
 }
 
-# AMBIGUOUS flags (NOT counted as insider in the primary vector; recorded for the
-# residual-ambiguity sensitivity). If counted, FXS->0.3, WLFI->0.4.
+# AMBIGUOUS flags (counted per the rule above, but lower-confidence; recorded for sensitivity).
 AMBIGUOUS = {
- "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee": "FXS 'Frax' labeled EOA (protocol-team vs operational; treated protocol/not-insider)",
- "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f": "FXS 'Frax Finance' labeled EOA (protocol-team vs operational; treated protocol/not-insider)",
- "0xcc261ab4be137eacf57c19ed97c186b4d88004ca": "WLFI 'Jump Trading' (market-maker vs strategic-investor; treated MM/not-insider)",
+ "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee": "FXS 'Frax' EOA (protocol-team vs operational; counted insider as foundation/treasury)",
+ "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f": "FXS 'Frax Finance' EOA (counted insider as foundation/treasury)",
+ "0x33ccf78a2091979fbc5a7631e6c71e900715ab78": "WLFI bare 'SafeProxy' (multisig rule -> insider; unattributed; WLFI -> 0.5 if both bare Safes dropped)",
+ "0x284cf133aa570f29da0961be897dbbb2a37962f8": "WLFI bare 'SafeProxy' (multisig rule -> insider; unattributed)",
 }
 
-# EXCLUSION-INCOMPLETENESS flags: protocol-controlled (Class 2/3) addresses that leaked
-# past the new-cohort exclusion set; not insiders, but the exclusion set is incomplete
-# relative to Nansen entity labels (surfaced for a future exclusion-tightening cycle).
+# NOT-INSIDER protocol/infra survivors recorded explicitly (Nansen exchange-class / aggregation /
+# proxy / market-maker). These are NOT insiders per the rule; kept here for provenance clarity.
 EXCL_LEAK = {
- "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92": "SNX Synthetix: Treasury (Class-2 leak)",
- "0x2146aa5807d96e6b2922a149cee870f17347f1d0": "ENA Ethena Labs: Proxy (Class-2/4 leak)",
- "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666": "ENA 'Ethena' protocol EOA (Class-2 leak)",
- "0x7462f0d93260909870487f17a27c336349579557": "ENA 'Ethena Labs' protocol EOA (Class-2 leak)",
- "0xb2af973905f05bc82bf97486b6ab883598d98298": "ENA 'Ethena Labs' protocol EOA (Class-2 leak)",
- "0xfef30c262676de9af5e5e9ba999cf774000b14b4": "WLFI Ecosystem fund contract (Class-2 leak)",
- "0xf0cc01b37086bc122a3d63c615dab379478d2745": "WLFI Multisig (Class-2 leak)",
- "0x29de882559194e2be08c182c1860193f8137cbf8": "WLFI Ethena-Labs WLFI Multisig (institutional/Class-2 leak)",
- "85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS": "PUMP pump.fun custody (Class-2 leak)",
- "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6": "PUMP pump.fun custody (Class-2 leak)",
- "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9": "PUMP pump.fun custody (Class-2 leak)",
- "ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa": "PUMP pump.fun custody (Class-2 leak)",
- "9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN": "PUMP pump.fun custody (Class-2 leak)",
- "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt": "JTO JITO Staking Pool (Class-3 leak)",
- "Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57": "KMNO Kamino Staking (Class-3 leak)",
- "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew": "KMNO Custody Vaults (Class-2 leak)",
- "4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N": "KMNO Custody Vaults (Class-2 leak)",
+ "0x2146aa5807d96e6b2922a149cee870f17347f1d0": "ENA Ethena Labs: Proxy (token/staking proxy contract -> not insider)",
+ "0xfef30c262676de9af5e5e9ba999cf774000b14b4": "WLFI Ecosystem fund contract (protocol contract -> not insider)",
+ "0xcc261ab4be137eacf57c19ed97c186b4d88004ca": "WLFI Jump Trading (market-maker -> not insider)",
+ "85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS": "PUMP pump.fun (Nansen exchange-class custody -> not insider)",
+ "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6": "PUMP pump.fun (exchange-class custody -> not insider)",
+ "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9": "PUMP pump.fun (exchange-class custody -> not insider)",
+ "ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa": "PUMP pump.fun (exchange-class custody -> not insider)",
+ "9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN": "PUMP pump.fun (exchange-class custody -> not insider)",
+ "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt": "JTO JITO Staking Pool (Class-3 aggregation -> not insider)",
+ "Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57": "KMNO Kamino Staking (Class-3 aggregation -> not insider)",
+ "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew": "KMNO Custody Vaults (DeFi vault aggregation -> not insider)",
+ "4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N": "KMNO Custody Vaults (DeFi vault aggregation -> not insider)",
 }
 
 def is_insider(addr):

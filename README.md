@@ -112,7 +112,8 @@ python reproduce.py
 CODEBOOK hazards a replicator should know (documented so they are not re-hit):
 
 - **De-tautology column:** use `non_insider_hhi_approx`, NOT `non_insider_hhi_top10`. The `_top10` column in `insider_analysis_results_v3.csv` is buggy for insider-count = 0 rows (it does not equal `full_hhi` though it must, for example BAL, IO, ARB); using it yields a spurious rho near 0.27. The `_approx` column is correct.
-- **Retention-spec DePIN p:** reproduces at 0.040 (significant), which supersedes any earlier prose-cited 0.014 to 0.016. The finding holds in both the retention-spec and the maturity-spec (DePIN significant; insider-retention not significant, the composition-shift result).
+- **Retention-spec DePIN p:** reproduces at approximately 0.041 (significant), which supersedes any earlier prose-cited 0.014 to 0.016. The finding holds in both the retention-spec and the maturity-spec (DePIN significant; insider-retention not significant, the composition-shift result).
+- **Insider definition (new-12 retention):** matches the original sample (`analysis/03_insider_classification.py`): among post-exclusion top-10 survivors, insider = team / founder / investor (VC/fund) / Investment Recipient / foundation / treasury / attributed multisig / vesting; not insider = CEX / market-maker / staking-pool or vault aggregation / proxy contract / retail whale. This reclassifies survivor labels only; the published HHIs and the PCA-exclusion methodology are unchanged.
 - **Covariates** (revenue, FDV, maturity) are sourced documented inputs read as-is; the pipeline does not re-call live APIs, which would not be stable for a replicator.
 
 ### Prerequisites

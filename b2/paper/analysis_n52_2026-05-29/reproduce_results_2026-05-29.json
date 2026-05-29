@@ -74,12 +74,12 @@
  },
  "retention_spec": {
   "N": 49,
-  "depin_b": 0.7034,
-  "depin_p": 0.04,
-  "L1_p": 0.2407,
-  "revint_p": 0.8905,
-  "retention_b": 0.2304,
-  "retention_p": 0.7554,
+  "depin_b": 0.6909,
+  "depin_p": 0.0409,
+  "L1_p": 0.3139,
+  "revint_p": 0.9652,
+  "retention_b": 0.565,
+  "retention_p": 0.4884,
   "obs_per_pred": 12.2,
   "sectors": {
    "DePIN": 14,

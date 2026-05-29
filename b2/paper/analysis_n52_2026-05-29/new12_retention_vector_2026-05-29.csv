@@ -1,9 +1,9 @@
 token,insider_count,n_top10,insider_count_frac,insider_balance_frac
-FXS,1,10,0.1,0.0789
-SNX,0,10,0.0,0.0
-GNO,0,10,0.0,0.0
-WLFI,3,10,0.3,0.2809
-ENA,2,10,0.2,0.0728
+FXS,3,10,0.3,0.2295
+SNX,1,10,0.1,0.0618
+GNO,1,10,0.1,0.195
+WLFI,7,10,0.7,0.4004
+ENA,5,10,0.5,0.4541
 PUMP,0,10,0.0,0.0
 JTO,0,10,0.0,0.0
 BONK,0,10,0.0,0.0

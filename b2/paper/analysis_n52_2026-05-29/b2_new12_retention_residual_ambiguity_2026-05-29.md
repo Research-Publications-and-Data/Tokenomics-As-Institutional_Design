@@ -5,75 +5,85 @@ retention vector), `new12_retention_provenance_2026-05-29.json` (per-address cla
 and `b2_new12_retention_classify_2026-05-29.py` (the classifier). Reader MUST re-verify
 against live canonical state before acting on any specific value.
 
-## Method (cost-tiered; no premium-labels were needed)
+## Insider definition (matches the original sample)
 
-Label sources, free-first then Nansen bulk:
-1. Nansen `token_current_top_holders` (one labeled call per token; 2026-05-29) for entity labels.
-2. phase4 `etherscan_labels.json` / `nansen_labels.json` (2026-05-27; FXS/SNX/GNO contract status).
-3. `exclusions_log.csv` + the phase4 v2-audited set (what is already PCA-excluded).
+Anchored to `analysis/03_insider_classification.py` line 127, which defines insider among
+the post-exclusion top-10 survivors as: team, investor, founder, vest, foundation, treasury,
+multisig, deployer, grant. This re-fetch applies the SAME definition to the new-12 survivors:
+INSIDER = team / founder / co-founder / investor (VC/fund) / Investment Recipient /
+foundation / treasury / attributed multisig (Safe) / vesting. NOT insider = CEX/exchange
+(including exchange-class custody hot wallets), market-maker, bridge / escrow / staking-pool /
+vault aggregation / token-proxy contract, unlabeled EOA / retail whale.
 
-Classification rule (consistent with the original-sample composition-shift framing):
-INSIDER = team / founder / VC / early-investor allocation wallet NOT already PCA-excluded
-(named VC or fund, named individual investor, "Investment Recipient"). NOT insider =
-protocol-controlled contract / foundation / treasury / staking / custody (Class 2/3 PCA;
-flagged if it leaked past exclusion, but still not an insider), CEX, market-maker, and any
-unlabeled EOA or retail whale (conservative rule: no imputation).
+An earlier draft of this re-fetch was too strict (it treated surviving foundation/team/
+treasury/multisig addresses as not-insider "exclusion leaks"); that undercounted relative to
+the original methodology (which counts them, e.g. DIMO and META at 10/10). Corrected here.
+
+## Scope: HHIs UNCHANGED (this is the S2 boundary)
+
+This reclassifies the LABELS of post-exclusion SURVIVORS only. The PCA-exclusion set and the
+published HHIs are untouched. The big foundation/treasury/co-founder addresses already in the
+exclusion set stay excluded (they never enter the survivor top-10). Separately re-adjudicating
+those (the S3 un-exclusion: GNO co-founder Safes, PUMP team 80B/35B, WLFI Foundation/team) is
+an author-owned PCA-methodology decision recorded below, NOT applied here.
 
 ## Resolved retention vector (insider_count_frac)
 
-| token | insiders/10 | count_frac | basis |
+| token | insiders/10 | count_frac | basis (surviving insiders) |
 |---|---|---|---|
-| WLFI | 3 | 0.30 | Justin Sun + Aqua1 Foundation + ALT5 Sigma Treasury Strategy (strategic investors) |
-| KMNO | 3 | 0.30 | three "KMNO Investment Recipient" survivors |
-| ENA | 2 | 0.20 | "REZ Investment Recipient" + "ENA Investment Recipient" |
-| FXS | 1 | 0.10 | Dragonfly Capital (VC fund) |
-| SNX, GNO, PUMP, JTO, BONK | 0 | 0.00 | survivors are CEX / market-maker / retail whales / protocol contracts |
+| WLFI | 7 | 0.70 | Justin Sun + Aqua1 Foundation + ALT5 Sigma Treasury + WLFI Multisig + Ethena-Labs WLFI Multisig + 2 bare SafeProxies |
+| ENA | 5 | 0.50 | 3 Ethena Labs protocol-team EOAs + REZ Investment Recipient + ENA Investment Recipient |
+| FXS | 3 | 0.30 | Dragonfly Capital (VC) + 2 Frax-protocol-team/treasury EOAs |
+| KMNO | 3 | 0.30 | 3 KMNO Investment Recipients |
+| SNX | 1 | 0.10 | surviving Synthetix Treasury |
+| GNO | 1 | 0.10 | surviving Gnosis Multisig (co-founder Safes stay PCA-excluded under S2) |
+| PUMP, JTO, BONK | 0 | 0.00 | survivors are CEX / exchange-class custody / staking-pool / retail whales |
 | DOT, TAO, ALGO | 0 | 0.00 | LOW CONFIDENCE: survivors are validators / treasury-residual / unattributed |
 
-Pattern: retention is age-dependent. The newest tokens (WLFI, KMNO, ENA launched 2024)
-retain strategic investors in the post-exclusion top-10; the mature tokens (FXS, SNX, GNO
-at 6 to 9 years) have shed them. This refines the composition-shift interpretation; it is
-immaterial to the headline (see sensitivity below).
+Pattern: retention is age-dependent. Newest tokens (WLFI, ENA, KMNO launched 2024) retain
+team/foundation/investor allocations in the post-exclusion top-10; mature tokens (FXS, SNX,
+GNO at 6 to 9 years) retain little. Consistent with the composition-shift interpretation.
 
 ## Headline robustness (the decisive check)
 
-The retention-spec DePIN p is robust across the full plausible range of new-12 retention
-vectors (all-zero, prose-estimate, high, extreme): DePIN p stays in 0.019 to 0.040, always
-under 0.05, and the insider-retention coefficient is not significant in every scenario
-(p 0.55 to 0.94). The classification judgment calls below therefore do not move the headline.
+HHIs are unchanged, so the retention values (which rose materially under this correction) do
+NOT move the DePIN significance: maturity-spec DePIN p = 0.0395 (exact reproduction), retention-
+spec DePIN p = 0.0409 (significant), insider-retention coefficient not significant (p = 0.49,
+the channel-shift), balanced-30 Mann-Whitney p = 0.0202 (published, robust). An adversarial
+stress-test (4003 retention vectors) could not push the DePIN p to 0.05 with the HHIs fixed.
 
-## Residual ambiguities (judgment calls; NOT counted as insider in the primary vector)
+## Residual ambiguities (lower-confidence calls; flagged for sensitivity)
 
-1. **FXS "Frax" / "Frax Finance" labeled EOAs** (`0x6fcfee4f...`, `0xd53e50c6...`): protocol-team
-   vs operational. Treated as protocol (not insider). If counted as insider, FXS -> 0.30.
-2. **WLFI "Jump Trading"** (`0xcc261ab4...`): market-maker vs strategic investor. Treated as
-   market-maker (not insider). If counted, WLFI -> 0.40.
-3. **DOT / TAO / ALGO**: low-confidence ~0. DOT also has a capture-provenance gap (the
-   clone-A `DOT_holders.csv` top-1 is 132.8M = 9.92%, vs the S16 AssetHub canonical capture
-   top-1 = 94.1M = 6.90%); the retention reads near zero under either capture because the
-   survivors are validators / treasury-residual / unattributed.
+1. **FXS "Frax" / "Frax Finance" labeled EOAs** (`0x6fcfee4f...`, `0xd53e50c6...`): counted
+   insider as foundation/treasury operational holdings. If treated as not-insider, FXS -> 0.10.
+2. **WLFI two bare "SafeProxy" addresses** (`0x33ccf78a...`, `0x284cf133...`): counted insider
+   per the multisig rule, but unattributed. If dropped, WLFI -> 0.50.
+3. **DOT / TAO / ALGO**: low-confidence ~0. DOT also has a capture-provenance gap (clone-A
+   `DOT_holders.csv` top-1 = 132.8M = 9.92% vs the S16 AssetHub canonical top-1 = 94.1M =
+   6.90%); retention reads near zero under either capture (validators / treasury-residual /
+   unattributed survivors).
 
-## Exclusion-incompleteness flags (Class 2/3 leaked past the new-cohort exclusion set)
+## S3 (author-owned PCA-methodology decision; NOT applied this cycle)
 
-These are protocol-controlled addresses that survived into the post-exclusion top-10 but are
-NOT insiders. They do not affect insider_count_frac and do not move the headline. They are
-recorded for a future exclusion-tightening cycle (the new-cohort exclusion set is incomplete
-relative to current Nansen entity labels):
-
-- SNX: Synthetix Treasury (`0x99f4176e...`).
-- ENA: Ethena Labs Proxy (`0x2146aa58...`) + three "Ethena Labs" protocol EOAs
-  (`0xa5274a5a...`, `0x7462f0d9...`, `0xb2af9739...`).
-- WLFI: Ecosystem fund (`0xfef30c26...`), Multisig (`0xf0cc01b3...`), Ethena-Labs WLFI
-  Multisig (`0x29de8825...`), two SafeProxies.
-- PUMP: five "pump.fun" custody addresses surviving in the top-10.
-- JTO: JITO Staking Pool (`jjCAwuuN...`).
-- KMNO: KMNO Staking (`Ec6MuWtp...`) + two KMNO Custody Vaults.
+Un-excluding the named co-founder/team allocation pools from the HHI (treating them as insider
+holders rather than Class-2 PCAs) is defensible under the same "team = insider" principle but
+changes the PUBLISHED HHIs and is out of this dispatch's scope:
+- GNO co-founder Safes (Stefan George `0x9d94ef33...`, Köppelmann `0xae5fb390...`): GNO HHI
+  0.042 -> 0.074; GNO retention -> 0.20.
+- PUMP team allocation (`8uhb...` 80B, `9pkf...` 35B): PUMP HHI 0.040 -> 0.065.
+- WLFI Foundation/team allocation (`0x4af891...`): WLFI HHI 0.156 -> 0.135.
+Consequence if applied (S3): the retention-spec primary (0.042) and the balanced-30 Mann-Whitney
+(0.045) stay significant, but the maturity-spec robustness anchor goes to 0.0510 (just over
+0.05). Un-excluding ALL Class-2 foundation/treasury (S4) collapses the finding (DePIN p 0.19 to
+0.37) and is NOT viable: the big foundation/treasury MUST remain PCA-excluded for the paper's
+methodology. The original-sample (v3) retention may also understate any protocols whose
+co-founder personal Safes were excluded as Class-2; a dedicated cross-sample audit is the right
+venue for the S3 boundary.
 
 ## Reconciliation to surface (claim of record + response letter; out of this cycle's scope)
 
-The reproduced retention-spec DePIN p is **0.040**, not the prose-locked 0.014 to 0.016.
-The finding holds (DePIN significant in both specs; insider-retention not significant = the
-channel-shift), but the authoritative reproduced value supersedes the prose lock. The claim
-of record (`handoff/dispatch/b2_r3_explanatory_model_reframe_2026-05-29.md` Section 7) and
-the R2 response-letter draft should update from 0.014 to 0.016 to the reproduced 0.040. The
-maturity-spec reproduces exactly at 0.0395, confirming the model machinery.
+The reproduced retention-spec DePIN p is **0.0409**, not the prose-locked 0.014 to 0.016. The
+finding holds (DePIN significant in both specs; insider-retention not significant), but the
+reproduced value supersedes the prose lock. The claim of record (reframe Section 7) and the R2
+response-letter draft should update to the reproduced 0.041 (retention-spec) alongside the
+maturity-spec 0.0395.

@@ -36,9 +36,9 @@
    "address": "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee",
    "orig_rank": "8",
    "share_orig": "0.013113",
-   "insider": false,
-   "insider_label": null,
-   "flag": "FXS 'Frax' labeled EOA (protocol-team vs operational; treated protocol/not-insider)"
+   "insider": true,
+   "insider_label": "Frax (protocol-team/treasury operational EOA)",
+   "flag": "FXS 'Frax' EOA (protocol-team vs operational; counted insider as foundation/treasury)"
   },
   {
    "address": "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0",
@@ -52,9 +52,9 @@
    "address": "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f",
    "orig_rank": "10",
    "share_orig": "0.009710",
-   "insider": false,
-   "insider_label": null,
-   "flag": "FXS 'Frax Finance' labeled EOA (protocol-team vs operational; treated protocol/not-insider)"
+   "insider": true,
+   "insider_label": "Frax Finance (protocol-team/treasury operational EOA)",
+   "flag": "FXS 'Frax Finance' EOA (counted insider as foundation/treasury)"
   },
   {
    "address": "0xd8b42cebc82607226f68a5373d99f54b397f886a",
@@ -158,9 +158,9 @@
    "address": "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92",
    "orig_rank": "16",
    "share_orig": "0.007531",
-   "insider": false,
-   "insider_label": null,
-   "flag": "SNX Synthetix: Treasury (Class-2 leak)"
+   "insider": true,
+   "insider_label": "Synthetix: Treasury (treasury)",
+   "flag": null
   }
  ],
  "GNO": [
@@ -176,8 +176,8 @@
    "address": "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341",
    "orig_rank": "9",
    "share_orig": "0.004928",
-   "insider": false,
-   "insider_label": null,
+   "insider": true,
+   "insider_label": "Gnosis Multisig (multisig)",
    "flag": null
   },
   {
@@ -252,7 +252,7 @@
    "share_orig": "0.091128",
    "insider": false,
    "insider_label": null,
-   "flag": "WLFI Ecosystem fund contract (Class-2 leak)"
+   "flag": "WLFI Ecosystem fund contract (protocol contract -> not insider)"
   },
   {
    "address": "0xcd52e35f7784efc78e835ef6e00be914f48beee6",
@@ -276,15 +276,15 @@
    "share_orig": "0.007765",
    "insider": false,
    "insider_label": null,
-   "flag": "WLFI 'Jump Trading' (market-maker vs strategic-investor; treated MM/not-insider)"
+   "flag": "WLFI Jump Trading (market-maker -> not insider)"
   },
   {
    "address": "0xf0cc01b37086bc122a3d63c615dab379478d2745",
    "orig_rank": "13",
    "share_orig": "0.006902",
-   "insider": false,
-   "insider_label": null,
-   "flag": "WLFI Multisig (Class-2 leak)"
+   "insider": true,
+   "insider_label": "WLFI Multisig (multisig)",
+   "flag": null
   },
   {
    "address": "0x5ab26169051d0d96217949adb91e86e51a5fda74",
@@ -298,17 +298,17 @@
    "address": "0x33ccf78a2091979fbc5a7631e6c71e900715ab78",
    "orig_rank": "15",
    "share_orig": "0.005011",
-   "insider": false,
-   "insider_label": null,
-   "flag": null
+   "insider": true,
+   "insider_label": "SafeProxy (team multisig; bare attribution, see ambiguity log)",
+   "flag": "WLFI bare 'SafeProxy' (multisig rule -> insider; unattributed; WLFI -> 0.5 if both bare Safes dropped)"
   },
   {
    "address": "0x29de882559194e2be08c182c1860193f8137cbf8",
    "orig_rank": "16",
    "share_orig": "0.004486",
-   "insider": false,
-   "insider_label": null,
-   "flag": "WLFI Ethena-Labs WLFI Multisig (institutional/Class-2 leak)"
+   "insider": true,
+   "insider_label": "Ethena Labs WLFI Multisig (multisig)",
+   "flag": null
   },
   {
    "address": "0xcaf92481d3f0e3b32c90cde5aa1bf3d731753003",
@@ -322,9 +322,9 @@
    "address": "0x284cf133aa570f29da0961be897dbbb2a37962f8",
    "orig_rank": "18",
    "share_orig": "0.004162",
-   "insider": false,
-   "insider_label": null,
-   "flag": null
+   "insider": true,
+   "insider_label": "SafeProxy (team multisig; bare attribution, see ambiguity log)",
+   "flag": "WLFI bare 'SafeProxy' (multisig rule -> insider; unattributed)"
   }
  ],
  "ENA": [
@@ -342,31 +342,31 @@
    "share_orig": "0.081545",
    "insider": false,
    "insider_label": null,
-   "flag": "ENA Ethena Labs: Proxy (Class-2/4 leak)"
+   "flag": "ENA Ethena Labs: Proxy (token/staking proxy contract -> not insider)"
   },
   {
    "address": "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666",
    "orig_rank": "5",
    "share_orig": "0.061114",
-   "insider": false,
-   "insider_label": null,
-   "flag": "ENA 'Ethena' protocol EOA (Class-2 leak)"
+   "insider": true,
+   "insider_label": "Ethena (protocol-team EOA)",
+   "flag": null
   },
   {
    "address": "0x7462f0d93260909870487f17a27c336349579557",
    "orig_rank": "6",
    "share_orig": "0.059165",
-   "insider": false,
-   "insider_label": null,
-   "flag": "ENA 'Ethena Labs' protocol EOA (Class-2 leak)"
+   "insider": true,
+   "insider_label": "Ethena Labs (protocol-team EOA)",
+   "flag": null
   },
   {
    "address": "0xb2af973905f05bc82bf97486b6ab883598d98298",
    "orig_rank": "7",
    "share_orig": "0.056096",
-   "insider": false,
-   "insider_label": null,
-   "flag": "ENA 'Ethena Labs' protocol EOA (Class-2 leak)"
+   "insider": true,
+   "insider_label": "Ethena Labs (protocol-team EOA)",
+   "flag": null
   },
   {
    "address": "0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae",
@@ -416,7 +416,7 @@
    "share_orig": "0.034986",
    "insider": false,
    "insider_label": null,
-   "flag": "PUMP pump.fun custody (Class-2 leak)"
+   "flag": "PUMP pump.fun (Nansen exchange-class custody -> not insider)"
   },
   {
    "address": "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6",
@@ -424,7 +424,7 @@
    "share_orig": "0.027989",
    "insider": false,
    "insider_label": null,
-   "flag": "PUMP pump.fun custody (Class-2 leak)"
+   "flag": "PUMP pump.fun (exchange-class custody -> not insider)"
   },
   {
    "address": "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9",
@@ -432,7 +432,7 @@
    "share_orig": "0.026823",
    "insider": false,
    "insider_label": null,
-   "flag": "PUMP pump.fun custody (Class-2 leak)"
+   "flag": "PUMP pump.fun (exchange-class custody -> not insider)"
   },
   {
    "address": "8UHpWBnhYNeAQURWjAABp8vSrzfYa69o7sfi65vYLC42",
@@ -448,7 +448,7 @@
    "share_orig": "0.019825",
    "insider": false,
    "insider_label": null,
-   "flag": "PUMP pump.fun custody (Class-2 leak)"
+   "flag": "PUMP pump.fun (exchange-class custody -> not insider)"
   },
   {
    "address": "GhFaBi8sy3M5mgG97YguQ6J3f7XH4JwV5CoW8MbzRgAU",
@@ -488,7 +488,7 @@
    "share_orig": "0.010263",
    "insider": false,
    "insider_label": null,
-   "flag": "PUMP pump.fun custody (Class-2 leak)"
+   "flag": "PUMP pump.fun (exchange-class custody -> not insider)"
   }
  ],
  "JTO": [
@@ -546,7 +546,7 @@
    "share_orig": "0.020177",
    "insider": false,
    "insider_label": null,
-   "flag": "JTO JITO Staking Pool (Class-3 leak)"
+   "flag": "JTO JITO Staking Pool (Class-3 aggregation -> not insider)"
   },
   {
    "address": "3mv8hXktfpgCgK2W2jwRKdwDkw2UaYVJcVDozWmgv1uA",
@@ -662,7 +662,7 @@
    "share_orig": "0.059741",
    "insider": false,
    "insider_label": null,
-   "flag": "KMNO Kamino Staking (Class-3 leak)"
+   "flag": "KMNO Kamino Staking (Class-3 aggregation -> not insider)"
   },
   {
    "address": "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew",
@@ -670,7 +670,7 @@
    "share_orig": "0.056899",
    "insider": false,
    "insider_label": null,
-   "flag": "KMNO Custody Vaults (Class-2 leak)"
+   "flag": "KMNO Custody Vaults (DeFi vault aggregation -> not insider)"
   },
   {
    "address": "G2VtFJ9P5P7qjz5bcfwVQw6DGJ2sYBUTXf7npQy5PZ2R",
@@ -694,7 +694,7 @@
    "share_orig": "0.036915",
    "insider": false,
    "insider_label": null,
-   "flag": "KMNO Custody Vaults (Class-2 leak)"
+   "flag": "KMNO Custody Vaults (DeFi vault aggregation -> not insider)"
   },
   {
    "address": "6EyjmmTYdAEyoLN1eTynuGvQPRq8mR4HKrW9uBqWqi7N",
