@@ -1,0 +1,57 @@
+token,address,pca_class,label,source
+FXS,0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d,4,Fraxtal: Optimism Portal Proxy (Frax L2 bridge custody),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+FXS,0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0,3,veFXS (vote-escrowed FXS staking aggregation),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+FXS,0x4a6d155df9ec9a1bb3639e6b7b99e46fb68d42f6,4,Fraxferry (Frax cross-chain bridge),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+FXS,0x000000000004444c5dc75cb358380d2e3de08a90,5,Uniswap V4: Pool Manager (DEX trading-protocol custody),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+FXS,0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa,5,FraxswapPair (Frax-native DEX liquidity pool custody),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+FXS,0xb1748c79709f4ba2dd82834b8c82d4a505003f27,2,Frax Finance: Comptroller (Foundation operational multisig),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+FXS,0xedc6bacdc1e29d7c5fa6f6eca6fdd447b9c487c9,5,Bitvavo CEX hot wallet (cross-protocol; also in SNX + GNO),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0xffffffaeff0b96ea8e4f94b2253f31abdd875847,4,Synthetix: Synthetix Core (V3 protocol-controlled inflation / treasury),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0x5fd79d46eba7f351fe49bff9e87cdea6c821ef9f,4,SynthetixBridgeEscrow (L1<->L2 bridge custody),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0xf977814e90da44bfa03b6295a0616a897441acec,5,Binance 8 (CEX hot wallet),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597,5,Luno: Wallet (CEX hot wallet),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43,5,Coinbase 10 (CEX hot wallet),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0x28c6c06298d514db089934071355e5743bf21d60,5,Binance 14 (CEX hot wallet),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0xa023f08c70a23abc7edfc5b6b5e171d78dfc947e,5,Crypto.com 22 / Crypto.com: Hot Wallet (cross-protocol; also in GNO),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0x0529ea5885702715e83923c59746ae8734c553b7,5,Bitpanda 18 (CEX hot wallet; cross-protocol; also in FXS),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0xedc6bacdc1e29d7c5fa6f6eca6fdd447b9c487c9,5,Bitvavo CEX (cross-protocol; also in FXS + GNO),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+SNX,0xab782bc7d4a2b306825de5a7730034f8f63ee1bc,5,Bitvavo: Hot Wallet (cross-protocol; also in GNO),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0x0000000000000000000000000000000000000000,1,Null address (canonical burn destination),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0x88ad09518695c6c3712ac10a214be5109a655671,4,Gnosis Chain: ETH-xDAI Omni Bridge (bridge custody),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xec83f750adfe0e52a8b0dba6eeb6be5ba0bee535,2,Gnosis: Vesting (Foundation treasury vesting),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0x604e4557e9020841f4e8eb98148de3d3cdea350c,2,GnosisDAO Disbursement (same creator/factory as Gnosis: Vesting),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0x849d52316331967b6ff1198e5e32a0eb168d039d,2,Gnosis: Active Treasury Management (Foundation treasury),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xae5fb390e5c4fa1962e39e98dbfb0ed8055ed7a9,2,koeppelmann.eth Safe (Martin Koppelmann; Gnosis co-founder personal custody),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0x4f8ad938eba0cd19155a835f617317a6e788c868,3,Gnosis: LGNO Token (Locked GNO staking aggregation contract; sister-pattern to veFXS),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xf977814e90da44bfa03b6295a0616a897441acec,5,Binance 8 (CEX hot wallet),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xa023f08c70a23abc7edfc5b6b5e171d78dfc947e,5,Crypto.com 22 / Crypto.com: Hot Wallet (cross-protocol; also in SNX),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xedc6bacdc1e29d7c5fa6f6eca6fdd447b9c487c9,5,Bitvavo CEX (cross-protocol; also in FXS + SNX),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xab782bc7d4a2b306825de5a7730034f8f63ee1bc,5,Bitvavo: Hot Wallet (cross-protocol; also in SNX),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0x9d94ef33e7f8087117f85b3ff7b1d8f27e4053d5,2,Stefan George Safe (Gnosis co-founder personal custody; v1 mis-attributed as Mintr),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+GNO,0xd2c8dfa974a8f6a5d25a45aa3ebf35b58c059185,2,GnosisSafeProxy (no public name tag; rank-17 at 0.12 percent),phase4_evm_minibatch_exclusions_v2_audited_2026-05-27.csv
+WLFI,0x74b4f6a2e579d730aacb9dd23cfbbaeb95029583,2,World Liberty Financial: Unlock Contract | Etherscan public name tag; protocol vesting/unlock smart contract (45.9B WLFI,exclusions_log.csv
+WLFI,0x5be9a4959308a0d0c7bc0870e319314d8d957dbb,2,World Liberty: Multisig | Etherscan public name tag; Safe Singleton 1.3.0 multisig (12.6B WLFI; n=149 tokens but 99.5% W,exclusions_log.csv
+WLFI,0x4af8911204909f6b234da8deb3680738ef967bf9,2,WLFI Foundation/team allocation (unverified) | Single-WLFI behavioral signature; 3.58B WLFI; n=1 token; 100% WLFI-domina,exclusions_log.csv
+WLFI,0xf977814e90da44bfa03b6295a0616a897441acec,5,Binance 8 (canonical CEX) | Canonical CEX exchange custodian (1.78B WLFI; n=93 tokens with major-asset diversity; cross-,exclusions_log.csv
+WLFI,0x9e8f9a6ea64cbba627749de83c32d2096ba0c787,3,PAIRED-cluster with 0xd250b488 (1B WLFI each) | Sister-cluster paired-set pattern per Cycle 4 S21 codification candidate,exclusions_log.csv
+WLFI,0xd250b4888433cc080f510f243b24aea2413e89ef,3,PAIRED-cluster with 0x9e8f9a6e (1B WLFI each) | Sister-cluster paired-set pattern per Cycle 4 S21 codification candidate,exclusions_log.csv
+WLFI,0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d,5,DolomiteMargin (DeFi protocol custody),CORRECTED 2026-05-29; HHI 0.1265->0.1557
+WLFI,0xc785d05961b3c537cac11f1d496876a255f6d650,4,LockReleaseTokenPool (CCIP bridge),CORRECTED 2026-05-29; HHI 0.1265->0.1557
+ENA,0xb805ef84dd9c7de96d8fe79c1b6f2ca52e890936,2,Ethena Foundation/treasury candidate (Coinbase Prime funded) | Coinbase Prime custody deposit funder source; n=5 tokens;,exclusions_log.csv
+ENA,0xf977814e90da44bfa03b6295a0616a897441acec,5,Binance 8 (canonical CEX) | Canonical CEX exchange custodian (762M ENA; cross-protocol also WLFI rank-7 + canonical acro,exclusions_log.csv
+ENA,0x8be3460a480c80728a8c4d7a5d5303c85ba7b3b9,3,Ethena Staked ENA (sENA) staking aggregation,CORRECTED 2026-05-29; missing from canonical log; HHI 0.0467->0.0472
+PUMP,cfq1ts1ifr1euwwbm8efxuzm5r3ya3uvmzznwishbgzt,2,Pump.fun Foundation/treasury candidate | 365B PUMP (42.6% top-1); $769M total USD; 97% PUMP-dominant; n=85 tokens with P,exclusions_log.csv
+PUMP,8uhbnobxmgoxjr2teww8wmsmowmjs2rtt2tvjxzutogc,2,Pump.fun team/treasury (exact 80B PUMP allocation) | Exact 80B PUMP (9.3%); $149M total USD; 98% PUMP-dominant; n=67 tok,exclusions_log.csv
+PUMP,9pkfkcr1mds31jxjkdtmwg2awzug6vjuyvy722dacxzv,2,Pump.fun team/treasury (exact 35B PUMP allocation) | Exact 35B PUMP (4.08%); n=53 tokens; round-number allocation patter,exclusions_log.csv
+PUMP,9wzdxwbbmkg8ztbnmquxvqrayrzzdsgydlvl9zytawwm,5,Cross-protocol Solana whale / institutional hot wallet | CROSS-PROTOCOL: also BONK rank-1 (8.78%; 7T BONK); n=1000 SPL t,exclusions_log.csv
+PUMP,bbvqteuawkb2utexfevl8hyljwwsgmwxsp922vfbvcft,3,PAIRED-cluster with GTeSSwov (25B PUMP each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codifica,exclusions_log.csv
+PUMP,gtesswovpivirpvwjpthuwildslsuapmjw621yom3mhb,3,PAIRED-cluster with BBvQteuaw (25B PUMP each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codific,exclusions_log.csv
+JTO,5eosrve6lktmzgvnszyzebgmmc7bjlk8nowyrqtcmgtf,2,Jito Foundation/treasury candidate | 209M JTO (21.4% top-1); $111.9M total USD; 99% JTO-dominant; n=46 tokens; ezSOL + k,exclusions_log.csv
+JTO,cswayfmjumfu4cbndn1qyciphfngirrjgpks2h2lsuyk,3,PAIRED-cluster with Ad5i15ft (20M JTO each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codificat,exclusions_log.csv
+JTO,ad5i15ft4qwmxmvj721wqdczwwinmr5x5bmpkfeqht31,3,PAIRED-cluster with CsWayfMj (20M JTO each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codificat,exclusions_log.csv
+BONK,9wzdxwbbmkg8ztbnmquxvqrayrzzdsgydlvl9zytawwm,5,Cross-protocol Solana whale / institutional hot wallet | CROSS-PROTOCOL: also PUMP rank-5; n=1000 SPL tokens; high-tier ,exclusions_log.csv
+BONK,agkgwk1r669kdt4fcqgdgk7pgahgjpjd4j9xmvjul9kn,5,Mid-tier Class 5 (memecoin-diverse Solana wallet) | n=328 tokens with RODAI/DM1000x/HBRD/Bonk memecoin diversity; 4.4T B,exclusions_log.csv
+BONK,7lp4jbapgnhxoxpjtr2twufh7oaqyqngqjpy7hfjcn7h,5,Mid-tier Class 5 (memecoin-diverse Solana wallet) | n=204 tokens with DM1000x/Bonk/NASUA/KANGA memecoin diversity; 3.4T ,exclusions_log.csv
+BONK,1tjoqzwg21cemahylvs4s2zc1pm27mltcj9efefu7km,3,PAIRED-cluster with GJ8HjXMq (2.68T BONK each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codifi,exclusions_log.csv
+BONK,gj8hjxmqq79wrvxeamrmng4ztaohpcf1mzmbf9tvppxa,3,PAIRED-cluster with 1tjoQzWg (2.68T BONK each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codifi,exclusions_log.csv
+KMNO,gvxkgjiangv9wbw6xtd9alynfwsjjhq4aa3nbbaeirvu,2,Kamino Foundation/treasury candidate | 2.41B KMNO (24.2% top-1); $48.25M total USD; 99.99% KMNO-dominant; n=18 tokens wi,exclusions_log.csv

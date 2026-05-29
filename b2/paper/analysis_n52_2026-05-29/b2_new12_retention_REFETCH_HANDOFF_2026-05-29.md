@@ -1,6 +1,12 @@
-# New-12 retention re-fetch — scoping, de-risking, and pipeline-integration handoff
+# New-12 retention re-fetch: scoping, de-risking, and pipeline-integration handoff
 
 **As-of:** 2026-05-29. Purpose: re-classify the new-12 post-exclusion top-10 holders insider/not, persist per-protocol `insider_count_frac`, so the retention-spec explanatory model (DePIN + retention + revenue-intensity) is reproducible BY CONSTRUCTION. This memo de-risks the cycle; EXECUTE within the reproduction-pipeline build (`handoff/dispatch/b2_replication_package_reproduction_pipeline_2026-05-29.md`), not ad-hoc.
+
+## DETERMINISTIC PREP DONE (2026-05-29; the fresh session starts here)
+The unified, gap-closed exclusion set + correct post-exclusion top-10 for the new-cohort EVM-5 + Solana-4 are built and persisted (no API, no insider-judgment):
+- `b2_new12_unified_exclusions_2026-05-29.py` -> `new12_unified_exclusions_2026-05-29.csv` (56 rows: main log + v2-audited + the 3 decided corrections) + `new12_unified_post_exclusion_top10_2026-05-29.json` (the correct survivors to classify).
+- Gaps CLOSED in the unified set: ENA Class-3 `0x8be3...` now excluded (top-1 -> orig-rank-2); WLFI DolomiteMargin `0x003ca23...` + LockReleaseTokenPool `0xc785d...` excluded (top-1 -> orig-rank-3); GNO null-burn excluded (top-1 -> orig-rank-7). The 3 corrections are flagged `CORRECTED 2026-05-29` in the CSV (still need backfill into the canonical `exclusions_log.csv` -- a CANONICAL/pipeline task).
+- REMAINING for the fresh session: (1) classify the survivors in the JSON insider/not (free-tools-first per the cost plan below); (2) extract DOT/TAO/ALGO exclusions from their per-protocol artifacts (low-confidence ~0); (3) compute `insider_count_frac`, persist, re-run the retention-spec, promote PAPER.md to retention-primary.
 
 ## WHY NOT AD-HOC (the decisive finding)
 The post-exclusion top-10 (the retention denominator) depends on the COMPLETE PCA-exclusion set, which is scattered AND partially inconsistent across files. Classifying survivors before unifying exclusions yields wrong `insider_count_frac`. Concrete gaps found this cycle:
