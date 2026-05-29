@@ -1,0 +1,131 @@
+{
+ "stage_hhi": {
+  "FXS": {
+   "recomputed": 0.032411,
+   "documented": 0.032411,
+   "match": true,
+   "n_excluded": 7,
+   "n_survivors": 993
+  },
+  "SNX": {
+   "recomputed": 0.017075,
+   "documented": 0.017075,
+   "match": true,
+   "n_excluded": 10,
+   "n_survivors": 990
+  },
+  "GNO": {
+   "recomputed": 0.042485,
+   "documented": 0.042485,
+   "match": true,
+   "n_excluded": 13,
+   "n_survivors": 987
+  },
+  "WLFI": {
+   "recomputed": 0.155738,
+   "documented": 0.155738,
+   "match": true,
+   "n_excluded": 8,
+   "n_survivors": 992
+  },
+  "ENA": {
+   "recomputed": 0.047164,
+   "documented": 0.047164,
+   "match": true,
+   "n_excluded": 3,
+   "n_survivors": 997
+  },
+  "PUMP": {
+   "recomputed": 0.040147,
+   "documented": 0.040147,
+   "match": true,
+   "n_excluded": 6,
+   "n_survivors": 994
+  },
+  "JTO": {
+   "recomputed": 0.025881,
+   "documented": 0.025881,
+   "match": true,
+   "n_excluded": 3,
+   "n_survivors": 997
+  },
+  "BONK": {
+   "recomputed": 0.022611,
+   "documented": 0.022611,
+   "match": true,
+   "n_excluded": 5,
+   "n_survivors": 995
+  },
+  "KMNO": {
+   "recomputed": 0.031341,
+   "documented": 0.031341,
+   "match": true,
+   "n_excluded": 1,
+   "n_survivors": 999
+  }
+ },
+ "maturity_spec": {
+  "N": 50,
+  "depin_b": 0.6509,
+  "depin_p": 0.0395,
+  "revint_p": 0.8322,
+  "maturity_p": 0.8621,
+  "obs_per_pred": 12.5
+ },
+ "retention_spec": {
+  "N": 49,
+  "depin_b": 0.7034,
+  "depin_p": 0.04,
+  "L1_p": 0.2407,
+  "revint_p": 0.8905,
+  "retention_b": 0.2304,
+  "retention_p": 0.7554,
+  "obs_per_pred": 12.2,
+  "sectors": {
+   "DePIN": 14,
+   "DeFi": 24,
+   "L1": 11
+  },
+  "dropped": [
+   "HONEY"
+  ]
+ },
+ "de_tautology": {
+  "full_hhi_rho": 0.441,
+  "full_hhi_p": 0.0049,
+  "full_N": 39,
+  "deTautology_spearman_rho": 0.544,
+  "deTautology_spearman_p": 0.0009,
+  "deTautology_ols_beta": 0.1951,
+  "deTautology_ols_p": 0.0024,
+  "deTautology_N": 34
+ },
+ "distribution": {
+  "DePIN": {
+   "n": 15,
+   "mean": 0.0705,
+   "median": 0.0605
+  },
+  "DeFi": {
+   "n": 24,
+   "mean": 0.0365,
+   "median": 0.0302
+  },
+  "L1": {
+   "n": 11,
+   "mean": 0.0239,
+   "median": 0.0143
+  }
+ },
+ "depin_defi_contrast_fullframe": {
+  "p": 0.0364,
+  "cohens_d": 0.807,
+  "n_depin": 15,
+  "n_defi": 24
+ },
+ "balanced30_of_record": {
+  "mann_whitney_p": 0.0202,
+  "cohens_d": 0.94,
+  "N": "15/15"
+ }
+}

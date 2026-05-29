@@ -1,0 +1,755 @@
+{
+ "FXS": [
+  {
+   "address": "0xccfc07b3f23bf293e7363495fa2f9509bf72ecf1",
+   "orig_rank": "3",
+   "share_orig": "0.035772",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x1aabda2551c0b062f61ed57f103e0385ec051065",
+   "orig_rank": "4",
+   "share_orig": "0.023558",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xe0dd07b181ca77ed9063821b4d2d28a85f722f5f",
+   "orig_rank": "5",
+   "share_orig": "0.020170",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x12d7df4910d3dc0867cc7720e3bec6260b4b1100",
+   "orig_rank": "6",
+   "share_orig": "0.018368",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee",
+   "orig_rank": "8",
+   "share_orig": "0.013113",
+   "insider": false,
+   "insider_label": null,
+   "flag": "FXS 'Frax' labeled EOA (protocol-team vs operational; treated protocol/not-insider)"
+  },
+  {
+   "address": "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0",
+   "orig_rank": "9",
+   "share_orig": "0.011963",
+   "insider": true,
+   "insider_label": "Dragonfly Capital: Fund (VC/early-investor)",
+   "flag": null
+  },
+  {
+   "address": "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f",
+   "orig_rank": "10",
+   "share_orig": "0.009710",
+   "insider": false,
+   "insider_label": null,
+   "flag": "FXS 'Frax Finance' labeled EOA (protocol-team vs operational; treated protocol/not-insider)"
+  },
+  {
+   "address": "0xd8b42cebc82607226f68a5373d99f54b397f886a",
+   "orig_rank": "11",
+   "share_orig": "0.007958",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x602d9abd5671d24026e2ca473903ff2a9a957407",
+   "orig_rank": "13",
+   "share_orig": "0.006061",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xd51e42ca4db0fad80bcc4cc216f98c9b44e98cb7",
+   "orig_rank": "15",
+   "share_orig": "0.004917",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  }
+ ],
+ "SNX": [
+  {
+   "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+   "orig_rank": "5",
+   "share_orig": "0.031954",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x5aeebe2fed4eafcd4a1f0cfb1159dd4f31cf4447",
+   "orig_rank": "6",
+   "share_orig": "0.013488",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x83270d639d09727f73577ca55c6d74ae70a6af30",
+   "orig_rank": "7",
+   "share_orig": "0.012986",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xa31231e727ca53ff95f0d00a06c645110c4ab647",
+   "orig_rank": "9",
+   "share_orig": "0.010696",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa",
+   "orig_rank": "10",
+   "share_orig": "0.009880",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x7446ffe91d1f3cba51e949e8f238f4bacfbc05ae",
+   "orig_rank": "11",
+   "share_orig": "0.009746",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe",
+   "orig_rank": "12",
+   "share_orig": "0.009125",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x15da7556d5ed888306839bed06f868aeaedcb0d7",
+   "orig_rank": "13",
+   "share_orig": "0.008731",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+   "orig_rank": "15",
+   "share_orig": "0.007695",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92",
+   "orig_rank": "16",
+   "share_orig": "0.007531",
+   "insider": false,
+   "insider_label": null,
+   "flag": "SNX Synthetix: Treasury (Class-2 leak)"
+  }
+ ],
+ "GNO": [
+  {
+   "address": "0x445cc6c3d51eb0a63395a613a0960c7922bca0d6",
+   "orig_rank": "7",
+   "share_orig": "0.007059",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341",
+   "orig_rank": "9",
+   "share_orig": "0.004928",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x70e278941ed3c0d2c6d6105df184831992aca856",
+   "orig_rank": "10",
+   "share_orig": "0.003835",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x926a21917d067c52e132e318686ebcf11182c428",
+   "orig_rank": "12",
+   "share_orig": "0.002189",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xc2a39291acf6ae4ed29c6fcc15f1d54141f8d833",
+   "orig_rank": "14",
+   "share_orig": "0.001355",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x98dd467fbc8b32f08387f8888b161d5cd8c00889",
+   "orig_rank": "15",
+   "share_orig": "0.001353",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x5db8e9605de5cd567293518fca840536a5ac3a91",
+   "orig_rank": "16",
+   "share_orig": "0.001285",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xca5bbc1196aae807b097c0f7e696e2b3977d2abe",
+   "orig_rank": "18",
+   "share_orig": "0.001093",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+   "orig_rank": "19",
+   "share_orig": "0.001089",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+   "orig_rank": "20",
+   "share_orig": "0.001084",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  }
+ ],
+ "WLFI": [
+  {
+   "address": "0xfef30c262676de9af5e5e9ba999cf774000b14b4",
+   "orig_rank": "3",
+   "share_orig": "0.091128",
+   "insider": false,
+   "insider_label": null,
+   "flag": "WLFI Ecosystem fund contract (Class-2 leak)"
+  },
+  {
+   "address": "0xcd52e35f7784efc78e835ef6e00be914f48beee6",
+   "orig_rank": "6",
+   "share_orig": "0.034391",
+   "insider": true,
+   "insider_label": "ALT5 Sigma: Treasury Strategy (corporate strategic-investor treasury)",
+   "flag": null
+  },
+  {
+   "address": "0x0249d14d15531065b927f4930562c3814e654b54",
+   "orig_rank": "11",
+   "share_orig": "0.008283",
+   "insider": true,
+   "insider_label": "Aqua1 Foundation (external strategic investor)",
+   "flag": null
+  },
+  {
+   "address": "0xcc261ab4be137eacf57c19ed97c186b4d88004ca",
+   "orig_rank": "12",
+   "share_orig": "0.007765",
+   "insider": false,
+   "insider_label": null,
+   "flag": "WLFI 'Jump Trading' (market-maker vs strategic-investor; treated MM/not-insider)"
+  },
+  {
+   "address": "0xf0cc01b37086bc122a3d63c615dab379478d2745",
+   "orig_rank": "13",
+   "share_orig": "0.006902",
+   "insider": false,
+   "insider_label": null,
+   "flag": "WLFI Multisig (Class-2 leak)"
+  },
+  {
+   "address": "0x5ab26169051d0d96217949adb91e86e51a5fda74",
+   "orig_rank": "14",
+   "share_orig": "0.005640",
+   "insider": true,
+   "insider_label": "Justin Sun (named individual strategic investor)",
+   "flag": null
+  },
+  {
+   "address": "0x33ccf78a2091979fbc5a7631e6c71e900715ab78",
+   "orig_rank": "15",
+   "share_orig": "0.005011",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x29de882559194e2be08c182c1860193f8137cbf8",
+   "orig_rank": "16",
+   "share_orig": "0.004486",
+   "insider": false,
+   "insider_label": null,
+   "flag": "WLFI Ethena-Labs WLFI Multisig (institutional/Class-2 leak)"
+  },
+  {
+   "address": "0xcaf92481d3f0e3b32c90cde5aa1bf3d731753003",
+   "orig_rank": "17",
+   "share_orig": "0.004254",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x284cf133aa570f29da0961be897dbbb2a37962f8",
+   "orig_rank": "18",
+   "share_orig": "0.004162",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  }
+ ],
+ "ENA": [
+  {
+   "address": "0x1dc55d87c4143cc1829989d7ff8d580549ac0901",
+   "orig_rank": "2",
+   "share_orig": "0.082339",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x2146aa5807d96e6b2922a149cee870f17347f1d0",
+   "orig_rank": "3",
+   "share_orig": "0.081545",
+   "insider": false,
+   "insider_label": null,
+   "flag": "ENA Ethena Labs: Proxy (Class-2/4 leak)"
+  },
+  {
+   "address": "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666",
+   "orig_rank": "5",
+   "share_orig": "0.061114",
+   "insider": false,
+   "insider_label": null,
+   "flag": "ENA 'Ethena' protocol EOA (Class-2 leak)"
+  },
+  {
+   "address": "0x7462f0d93260909870487f17a27c336349579557",
+   "orig_rank": "6",
+   "share_orig": "0.059165",
+   "insider": false,
+   "insider_label": null,
+   "flag": "ENA 'Ethena Labs' protocol EOA (Class-2 leak)"
+  },
+  {
+   "address": "0xb2af973905f05bc82bf97486b6ab883598d98298",
+   "orig_rank": "7",
+   "share_orig": "0.056096",
+   "insider": false,
+   "insider_label": null,
+   "flag": "ENA 'Ethena Labs' protocol EOA (Class-2 leak)"
+  },
+  {
+   "address": "0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae",
+   "orig_rank": "9",
+   "share_orig": "0.045792",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x0c36fda877d41671b14fb4e7655798965237c7d0",
+   "orig_rank": "10",
+   "share_orig": "0.022117",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0x877b3d5c681c8890d19dbf450306caa3c3d4bba6",
+   "orig_rank": "11",
+   "share_orig": "0.021121",
+   "insider": true,
+   "insider_label": "Ethena Labs: REZ Investment Recipient (strategic investor)",
+   "flag": null
+  },
+  {
+   "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+   "orig_rank": "12",
+   "share_orig": "0.020720",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "0xa55457e0d0652ba47fe1f97873a62b4f9dcae4d1",
+   "orig_rank": "13",
+   "share_orig": "0.012536",
+   "insider": true,
+   "insider_label": "ENA Investment Recipient (strategic investor)",
+   "flag": null
+  }
+ ],
+ "PUMP": [
+  {
+   "address": "85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS",
+   "orig_rank": "4",
+   "share_orig": "0.034986",
+   "insider": false,
+   "insider_label": null,
+   "flag": "PUMP pump.fun custody (Class-2 leak)"
+  },
+  {
+   "address": "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6",
+   "orig_rank": "8",
+   "share_orig": "0.027989",
+   "insider": false,
+   "insider_label": null,
+   "flag": "PUMP pump.fun custody (Class-2 leak)"
+  },
+  {
+   "address": "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9",
+   "orig_rank": "9",
+   "share_orig": "0.026823",
+   "insider": false,
+   "insider_label": null,
+   "flag": "PUMP pump.fun custody (Class-2 leak)"
+  },
+  {
+   "address": "8UHpWBnhYNeAQURWjAABp8vSrzfYa69o7sfi65vYLC42",
+   "orig_rank": "10",
+   "share_orig": "0.022311",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa",
+   "orig_rank": "11",
+   "share_orig": "0.019825",
+   "insider": false,
+   "insider_label": null,
+   "flag": "PUMP pump.fun custody (Class-2 leak)"
+  },
+  {
+   "address": "GhFaBi8sy3M5mgG97YguQ6J3f7XH4JwV5CoW8MbzRgAU",
+   "orig_rank": "12",
+   "share_orig": "0.018222",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "AC5RDfQFmDS1deWZos921JfqscXdByf8BKHs5ACWjtW2",
+   "orig_rank": "13",
+   "share_orig": "0.014996",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "2WHL4XiNGKW9NgSwsJeG7WG2kD35Bi44rZoLrXHEz3dw",
+   "orig_rank": "14",
+   "share_orig": "0.011662",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "9SLPTL41SPsYkgdsMzdfJsxymEANKr5bYoBsQzJyKpKS",
+   "orig_rank": "15",
+   "share_orig": "0.011657",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN",
+   "orig_rank": "16",
+   "share_orig": "0.010263",
+   "insider": false,
+   "insider_label": null,
+   "flag": "PUMP pump.fun custody (Class-2 leak)"
+  }
+ ],
+ "JTO": [
+  {
+   "address": "5SybwTvGno6SBApbGinXyLqhnPzs47aaBG4PShyPT8ey",
+   "orig_rank": "2",
+   "share_orig": "0.071671",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "ESnLXehGeReTRw3WxxEZwB4u2C9gAe8dMbob8Q4gm9Yg",
+   "orig_rank": "3",
+   "share_orig": "0.048632",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "7r5xFtcJZpc8vtzBCc1S9ooR2xadHt1jcT8HiH23a1x1",
+   "orig_rank": "4",
+   "share_orig": "0.043886",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "MbzL6v1mDkF8QW6r9TJKV6eaiYSf6MNtpVei2ciFQHN",
+   "orig_rank": "5",
+   "share_orig": "0.028058",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "FQnVcnwEXREJ3D4j7LzNGzCiMUVVqxkGEqZ2KffRY8ud",
+   "orig_rank": "6",
+   "share_orig": "0.020393",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "3dguv2qss6GjmUEnJsddxkR9q5Zoem1sjoSk1jpXFPsz",
+   "orig_rank": "9",
+   "share_orig": "0.020393",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt",
+   "orig_rank": "10",
+   "share_orig": "0.020177",
+   "insider": false,
+   "insider_label": null,
+   "flag": "JTO JITO Staking Pool (Class-3 leak)"
+  },
+  {
+   "address": "3mv8hXktfpgCgK2W2jwRKdwDkw2UaYVJcVDozWmgv1uA",
+   "orig_rank": "11",
+   "share_orig": "0.018982",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "8sjM83a4u2M8YZYshLGKzYxh1VHFfbgtaytwaoEg4bUJ",
+   "orig_rank": "12",
+   "share_orig": "0.018740",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "9xSi6onCqhLuXTgodd5wB7EXv2WwuYPZyZwDyruGKL6v",
+   "orig_rank": "13",
+   "share_orig": "0.015295",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  }
+ ],
+ "BONK": [
+  {
+   "address": "51yZyDSnec4xnUv7XLRVYcDyV4x3wUtzrDcRaYbmQU5j",
+   "orig_rank": "2",
+   "share_orig": "0.059138",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "9AdEE8AAm1XgJrPEs4zkTPozr3o4U5iGbgvPwkNdLDJ3",
+   "orig_rank": "5",
+   "share_orig": "0.040129",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "9RpzaFh4J8F6Qg1gjnhrhSp9eXdVDjsesZXe53qp7ubB",
+   "orig_rank": "6",
+   "share_orig": "0.033739",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "EbLm4ZtRqDftrQnZaMMvnwcKjK5ef5vm1Hg3sAPv3tKi",
+   "orig_rank": "9",
+   "share_orig": "0.033599",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "EfEgUV2uQAzTooo6L4oYiEm15F6JBTnGiWMejqxPaqL3",
+   "orig_rank": "10",
+   "share_orig": "0.030984",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "4xLpwxgYuPwPvtQjE94RLS4WZ4aD8NJYYKr2AJk99Qdg",
+   "orig_rank": "11",
+   "share_orig": "0.029143",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+   "orig_rank": "12",
+   "share_orig": "0.024848",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "CJjCPXBnSt6wRoyi7wzcMj5NbWvmPtzxE2JpWDMTRxj4",
+   "orig_rank": "13",
+   "share_orig": "0.021212",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "3B7XAQrLoEMDEGvX8569F9GRb9PcXXocJmj5wvhhei9z",
+   "orig_rank": "14",
+   "share_orig": "0.019795",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "5oNhn2ESFHgg52xiEKBt93cEEnbsoUoekcxXsWpLbHUJ",
+   "orig_rank": "15",
+   "share_orig": "0.012550",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  }
+ ],
+ "KMNO": [
+  {
+   "address": "Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57",
+   "orig_rank": "2",
+   "share_orig": "0.059741",
+   "insider": false,
+   "insider_label": null,
+   "flag": "KMNO Kamino Staking (Class-3 leak)"
+  },
+  {
+   "address": "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew",
+   "orig_rank": "3",
+   "share_orig": "0.056899",
+   "insider": false,
+   "insider_label": null,
+   "flag": "KMNO Custody Vaults (Class-2 leak)"
+  },
+  {
+   "address": "G2VtFJ9P5P7qjz5bcfwVQw6DGJ2sYBUTXf7npQy5PZ2R",
+   "orig_rank": "4",
+   "share_orig": "0.048234",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "4x3uU27N1cfmBx8JerY13ZzdNxgmgQdiZUSFZQHbhe1B",
+   "orig_rank": "5",
+   "share_orig": "0.040234",
+   "insider": true,
+   "insider_label": "KMNO Investment Recipient (strategic investor)",
+   "flag": null
+  },
+  {
+   "address": "4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N",
+   "orig_rank": "6",
+   "share_orig": "0.036915",
+   "insider": false,
+   "insider_label": null,
+   "flag": "KMNO Custody Vaults (Class-2 leak)"
+  },
+  {
+   "address": "6EyjmmTYdAEyoLN1eTynuGvQPRq8mR4HKrW9uBqWqi7N",
+   "orig_rank": "7",
+   "share_orig": "0.033528",
+   "insider": true,
+   "insider_label": "KMNO Investment Recipient (strategic investor)",
+   "flag": null
+  },
+  {
+   "address": "Ad29ikw7DwEEbFTW6LEDVNC3cxGrNdsY4r276FAeT1Dt",
+   "orig_rank": "8",
+   "share_orig": "0.025674",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "AGzZas78FXZkH8FrUW3x54h639fbfT1PhBA6SLbY5tTi",
+   "orig_rank": "9",
+   "share_orig": "0.025146",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  },
+  {
+   "address": "6AapP9rsXMsNTJEMbKUatmzLeYwkZSJWd84c6PLBJNvK",
+   "orig_rank": "10",
+   "share_orig": "0.024140",
+   "insider": true,
+   "insider_label": "Kamino: KMNO Investment Recipient (strategic investor)",
+   "flag": null
+  },
+  {
+   "address": "Ej1xvF8ycSA7ufZhCRAi5EPk2DjPgyuByDS6RgpG5i7c",
+   "orig_rank": "11",
+   "share_orig": "0.022368",
+   "insider": false,
+   "insider_label": null,
+   "flag": null
+  }
+ ],
+ "DOT": [
+  {
+   "note": "low-confidence ~0; post-exclusion survivors are validators/treasury-residual/unattributed; conservative rule -> not insider"
+  }
+ ],
+ "TAO": [
+  {
+   "note": "low-confidence ~0; post-exclusion survivors are validators/treasury-residual/unattributed; conservative rule -> not insider"
+  }
+ ],
+ "ALGO": [
+  {
+   "note": "low-confidence ~0; post-exclusion survivors are validators/treasury-residual/unattributed; conservative rule -> not insider"
+  }
+ ]
+}

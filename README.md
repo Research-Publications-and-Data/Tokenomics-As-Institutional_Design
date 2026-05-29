@@ -93,6 +93,28 @@ A 40-protocol cross-section documents that initial token allocation design does 
 
 ## Reproduction
 
+### One-command reproduction of the headline regression results
+
+To regenerate the paper's headline numbers from persisted raw, re-fetched, and documented inputs (no `/tmp` dependency, no live-API calls):
+
+```
+python reproduce.py
+```
+
+`reproduce.py` (repository root) runs the full pipeline and prints a reconciliation table against `b2/paper/analysis_n52_2026-05-29/b2_explanatory_model_VERIFIED_NUMBERS_2026-05-29.md`. It regenerates:
+
+1. **Post-exclusion holder-HHI from raw** for the new cohort (FXS, SNX, GNO, WLFI, ENA, PUMP, JTO, BONK, KMNO): the raw top-1000 holder lists in `data/raw/holder_lists/` minus the unified PCA-exclusion set in `b2/paper/analysis_n52_2026-05-29/new12_unified_exclusions_2026-05-29.csv` reproduce the documented HHIs to within 1e-4 (all nine match exactly), including the corrected ENA and WLFI exclusions.
+2. **Retention-spec powered model (elected primary):** log-HHI ~ sector + insider-retention + revenue-intensity, N = 49, HC3 robust SE. The insider-retention vector is the persisted `new12_retention_vector_2026-05-29.csv` (re-fetched, with per-address provenance in `new12_retention_provenance_2026-05-29.json`) joined to the original-sample retention in `insider_analysis_results_v3.csv`. HONEY (Hivemapper) drops because it has no insider-retention vector, giving N = 49 (37 original-sample + 12 re-fetched).
+3. **Maturity-spec powered model (robustness anchor):** log-HHI ~ sector + revenue-intensity + maturity, N = 50, HC3 robust SE.
+4. **Insider-retention de-tautology** (original sample), reporting both the Spearman rho and the OLS p, both confirming the paper's original rho near 0.48.
+5. **Control null-sweep** and the **sector HHI distribution** plus the DePIN-vs-DeFi contrast.
+
+CODEBOOK hazards a replicator should know (documented so they are not re-hit):
+
+- **De-tautology column:** use `non_insider_hhi_approx`, NOT `non_insider_hhi_top10`. The `_top10` column in `insider_analysis_results_v3.csv` is buggy for insider-count = 0 rows (it does not equal `full_hhi` though it must, for example BAL, IO, ARB); using it yields a spurious rho near 0.27. The `_approx` column is correct.
+- **Retention-spec DePIN p:** reproduces at 0.040 (significant), which supersedes any earlier prose-cited 0.014 to 0.016. The finding holds in both the retention-spec and the maturity-spec (DePIN significant; insider-retention not significant, the composition-shift result).
+- **Covariates** (revenue, FDV, maturity) are sourced documented inputs read as-is; the pipeline does not re-call live APIs, which would not be stable for a replicator.
+
 ### Prerequisites
 
 - **R** (>= 4.2) with packages: `sandwich` (HC3 robust SE), `car`, `lmtest`
