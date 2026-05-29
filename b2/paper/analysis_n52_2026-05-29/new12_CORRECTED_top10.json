@@ -1,0 +1,674 @@
+{
+ "FXS": {
+  "chain": "ethereum",
+  "n_excluded": 7,
+  "top10": [
+   {
+    "rank_orig": "3",
+    "address": "0xccfc07b3f23bf293e7363495fa2f9509bf72ecf1",
+    "share_orig": "0.035772"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x1aabda2551c0b062f61ed57f103e0385ec051065",
+    "share_orig": "0.023558"
+   },
+   {
+    "rank_orig": "5",
+    "address": "0xe0dd07b181ca77ed9063821b4d2d28a85f722f5f",
+    "share_orig": "0.020170"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x12d7df4910d3dc0867cc7720e3bec6260b4b1100",
+    "share_orig": "0.018368"
+   },
+   {
+    "rank_orig": "8",
+    "address": "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee",
+    "share_orig": "0.013113"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0",
+    "share_orig": "0.011963"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f",
+    "share_orig": "0.009710"
+   },
+   {
+    "rank_orig": "11",
+    "address": "0xd8b42cebc82607226f68a5373d99f54b397f886a",
+    "share_orig": "0.007958"
+   },
+   {
+    "rank_orig": "13",
+    "address": "0x602d9abd5671d24026e2ca473903ff2a9a957407",
+    "share_orig": "0.006061"
+   },
+   {
+    "rank_orig": "15",
+    "address": "0xd51e42ca4db0fad80bcc4cc216f98c9b44e98cb7",
+    "share_orig": "0.004917"
+   }
+  ]
+ },
+ "SNX": {
+  "chain": "ethereum",
+  "n_excluded": 10,
+  "top10": [
+   {
+    "rank_orig": "5",
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "share_orig": "0.031954"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x5aeebe2fed4eafcd4a1f0cfb1159dd4f31cf4447",
+    "share_orig": "0.013488"
+   },
+   {
+    "rank_orig": "7",
+    "address": "0x83270d639d09727f73577ca55c6d74ae70a6af30",
+    "share_orig": "0.012986"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0xa31231e727ca53ff95f0d00a06c645110c4ab647",
+    "share_orig": "0.010696"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa",
+    "share_orig": "0.009880"
+   },
+   {
+    "rank_orig": "11",
+    "address": "0x7446ffe91d1f3cba51e949e8f238f4bacfbc05ae",
+    "share_orig": "0.009746"
+   },
+   {
+    "rank_orig": "12",
+    "address": "0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe",
+    "share_orig": "0.009125"
+   },
+   {
+    "rank_orig": "13",
+    "address": "0x15da7556d5ed888306839bed06f868aeaedcb0d7",
+    "share_orig": "0.008731"
+   },
+   {
+    "rank_orig": "15",
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "share_orig": "0.007695"
+   },
+   {
+    "rank_orig": "16",
+    "address": "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92",
+    "share_orig": "0.007531"
+   }
+  ]
+ },
+ "GNO": {
+  "chain": "ethereum",
+  "n_excluded": 13,
+  "top10": [
+   {
+    "rank_orig": "7",
+    "address": "0x445cc6c3d51eb0a63395a613a0960c7922bca0d6",
+    "share_orig": "0.007059"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341",
+    "share_orig": "0.004928"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0x70e278941ed3c0d2c6d6105df184831992aca856",
+    "share_orig": "0.003835"
+   },
+   {
+    "rank_orig": "12",
+    "address": "0x926a21917d067c52e132e318686ebcf11182c428",
+    "share_orig": "0.002189"
+   },
+   {
+    "rank_orig": "14",
+    "address": "0xc2a39291acf6ae4ed29c6fcc15f1d54141f8d833",
+    "share_orig": "0.001355"
+   },
+   {
+    "rank_orig": "15",
+    "address": "0x98dd467fbc8b32f08387f8888b161d5cd8c00889",
+    "share_orig": "0.001353"
+   },
+   {
+    "rank_orig": "16",
+    "address": "0x5db8e9605de5cd567293518fca840536a5ac3a91",
+    "share_orig": "0.001285"
+   },
+   {
+    "rank_orig": "18",
+    "address": "0xca5bbc1196aae807b097c0f7e696e2b3977d2abe",
+    "share_orig": "0.001093"
+   },
+   {
+    "rank_orig": "19",
+    "address": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+    "share_orig": "0.001089"
+   },
+   {
+    "rank_orig": "20",
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "share_orig": "0.001084"
+   }
+  ]
+ },
+ "WLFI": {
+  "chain": "ethereum",
+  "n_excluded": 6,
+  "top10": [
+   {
+    "rank_orig": "3",
+    "address": "0xfef30c262676de9af5e5e9ba999cf774000b14b4",
+    "share_orig": "0.091128"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d",
+    "share_orig": "0.051749"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0xcd52e35f7784efc78e835ef6e00be914f48beee6",
+    "share_orig": "0.034391"
+   },
+   {
+    "rank_orig": "8",
+    "address": "0xc785d05961b3c537cac11f1d496876a255f6d650",
+    "share_orig": "0.013793"
+   },
+   {
+    "rank_orig": "11",
+    "address": "0x0249d14d15531065b927f4930562c3814e654b54",
+    "share_orig": "0.008283"
+   },
+   {
+    "rank_orig": "12",
+    "address": "0xcc261ab4be137eacf57c19ed97c186b4d88004ca",
+    "share_orig": "0.007765"
+   },
+   {
+    "rank_orig": "13",
+    "address": "0xf0cc01b37086bc122a3d63c615dab379478d2745",
+    "share_orig": "0.006902"
+   },
+   {
+    "rank_orig": "14",
+    "address": "0x5ab26169051d0d96217949adb91e86e51a5fda74",
+    "share_orig": "0.005640"
+   },
+   {
+    "rank_orig": "15",
+    "address": "0x33ccf78a2091979fbc5a7631e6c71e900715ab78",
+    "share_orig": "0.005011"
+   },
+   {
+    "rank_orig": "16",
+    "address": "0x29de882559194e2be08c182c1860193f8137cbf8",
+    "share_orig": "0.004486"
+   }
+  ]
+ },
+ "ENA": {
+  "chain": "ethereum",
+  "n_excluded": 2,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "0x1dc55d87c4143cc1829989d7ff8d580549ac0901",
+    "share_orig": "0.082339"
+   },
+   {
+    "rank_orig": "3",
+    "address": "0x2146aa5807d96e6b2922a149cee870f17347f1d0",
+    "share_orig": "0.081545"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x8be3460a480c80728a8c4d7a5d5303c85ba7b3b9",
+    "share_orig": "0.072746"
+   },
+   {
+    "rank_orig": "5",
+    "address": "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666",
+    "share_orig": "0.061114"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x7462f0d93260909870487f17a27c336349579557",
+    "share_orig": "0.059165"
+   },
+   {
+    "rank_orig": "7",
+    "address": "0xb2af973905f05bc82bf97486b6ab883598d98298",
+    "share_orig": "0.056096"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae",
+    "share_orig": "0.045792"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0x0c36fda877d41671b14fb4e7655798965237c7d0",
+    "share_orig": "0.022117"
+   },
+   {
+    "rank_orig": "11",
+    "address": "0x877b3d5c681c8890d19dbf450306caa3c3d4bba6",
+    "share_orig": "0.021121"
+   },
+   {
+    "rank_orig": "12",
+    "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "share_orig": "0.020720"
+   }
+  ]
+ },
+ "PUMP": {
+  "chain": "solana",
+  "n_excluded": 6,
+  "top10": [
+   {
+    "rank_orig": "4",
+    "address": "85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS",
+    "share_orig": "0.034986"
+   },
+   {
+    "rank_orig": "8",
+    "address": "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6",
+    "share_orig": "0.027989"
+   },
+   {
+    "rank_orig": "9",
+    "address": "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9",
+    "share_orig": "0.026823"
+   },
+   {
+    "rank_orig": "10",
+    "address": "8UHpWBnhYNeAQURWjAABp8vSrzfYa69o7sfi65vYLC42",
+    "share_orig": "0.022311"
+   },
+   {
+    "rank_orig": "11",
+    "address": "ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa",
+    "share_orig": "0.019825"
+   },
+   {
+    "rank_orig": "12",
+    "address": "GhFaBi8sy3M5mgG97YguQ6J3f7XH4JwV5CoW8MbzRgAU",
+    "share_orig": "0.018222"
+   },
+   {
+    "rank_orig": "13",
+    "address": "AC5RDfQFmDS1deWZos921JfqscXdByf8BKHs5ACWjtW2",
+    "share_orig": "0.014996"
+   },
+   {
+    "rank_orig": "14",
+    "address": "2WHL4XiNGKW9NgSwsJeG7WG2kD35Bi44rZoLrXHEz3dw",
+    "share_orig": "0.011662"
+   },
+   {
+    "rank_orig": "15",
+    "address": "9SLPTL41SPsYkgdsMzdfJsxymEANKr5bYoBsQzJyKpKS",
+    "share_orig": "0.011657"
+   },
+   {
+    "rank_orig": "16",
+    "address": "9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN",
+    "share_orig": "0.010263"
+   }
+  ]
+ },
+ "JTO": {
+  "chain": "solana",
+  "n_excluded": 3,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "5SybwTvGno6SBApbGinXyLqhnPzs47aaBG4PShyPT8ey",
+    "share_orig": "0.071671"
+   },
+   {
+    "rank_orig": "3",
+    "address": "ESnLXehGeReTRw3WxxEZwB4u2C9gAe8dMbob8Q4gm9Yg",
+    "share_orig": "0.048632"
+   },
+   {
+    "rank_orig": "4",
+    "address": "7r5xFtcJZpc8vtzBCc1S9ooR2xadHt1jcT8HiH23a1x1",
+    "share_orig": "0.043886"
+   },
+   {
+    "rank_orig": "5",
+    "address": "MbzL6v1mDkF8QW6r9TJKV6eaiYSf6MNtpVei2ciFQHN",
+    "share_orig": "0.028058"
+   },
+   {
+    "rank_orig": "6",
+    "address": "FQnVcnwEXREJ3D4j7LzNGzCiMUVVqxkGEqZ2KffRY8ud",
+    "share_orig": "0.020393"
+   },
+   {
+    "rank_orig": "9",
+    "address": "3dguv2qss6GjmUEnJsddxkR9q5Zoem1sjoSk1jpXFPsz",
+    "share_orig": "0.020393"
+   },
+   {
+    "rank_orig": "10",
+    "address": "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt",
+    "share_orig": "0.020177"
+   },
+   {
+    "rank_orig": "11",
+    "address": "3mv8hXktfpgCgK2W2jwRKdwDkw2UaYVJcVDozWmgv1uA",
+    "share_orig": "0.018982"
+   },
+   {
+    "rank_orig": "12",
+    "address": "8sjM83a4u2M8YZYshLGKzYxh1VHFfbgtaytwaoEg4bUJ",
+    "share_orig": "0.018740"
+   },
+   {
+    "rank_orig": "13",
+    "address": "9xSi6onCqhLuXTgodd5wB7EXv2WwuYPZyZwDyruGKL6v",
+    "share_orig": "0.015295"
+   }
+  ]
+ },
+ "BONK": {
+  "chain": "solana",
+  "n_excluded": 5,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "51yZyDSnec4xnUv7XLRVYcDyV4x3wUtzrDcRaYbmQU5j",
+    "share_orig": "0.059138"
+   },
+   {
+    "rank_orig": "5",
+    "address": "9AdEE8AAm1XgJrPEs4zkTPozr3o4U5iGbgvPwkNdLDJ3",
+    "share_orig": "0.040129"
+   },
+   {
+    "rank_orig": "6",
+    "address": "9RpzaFh4J8F6Qg1gjnhrhSp9eXdVDjsesZXe53qp7ubB",
+    "share_orig": "0.033739"
+   },
+   {
+    "rank_orig": "9",
+    "address": "EbLm4ZtRqDftrQnZaMMvnwcKjK5ef5vm1Hg3sAPv3tKi",
+    "share_orig": "0.033599"
+   },
+   {
+    "rank_orig": "10",
+    "address": "EfEgUV2uQAzTooo6L4oYiEm15F6JBTnGiWMejqxPaqL3",
+    "share_orig": "0.030984"
+   },
+   {
+    "rank_orig": "11",
+    "address": "4xLpwxgYuPwPvtQjE94RLS4WZ4aD8NJYYKr2AJk99Qdg",
+    "share_orig": "0.029143"
+   },
+   {
+    "rank_orig": "12",
+    "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+    "share_orig": "0.024848"
+   },
+   {
+    "rank_orig": "13",
+    "address": "CJjCPXBnSt6wRoyi7wzcMj5NbWvmPtzxE2JpWDMTRxj4",
+    "share_orig": "0.021212"
+   },
+   {
+    "rank_orig": "14",
+    "address": "3B7XAQrLoEMDEGvX8569F9GRb9PcXXocJmj5wvhhei9z",
+    "share_orig": "0.019795"
+   },
+   {
+    "rank_orig": "15",
+    "address": "5oNhn2ESFHgg52xiEKBt93cEEnbsoUoekcxXsWpLbHUJ",
+    "share_orig": "0.012550"
+   }
+  ]
+ },
+ "KMNO": {
+  "chain": "solana",
+  "n_excluded": 1,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57",
+    "share_orig": "0.059741"
+   },
+   {
+    "rank_orig": "3",
+    "address": "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew",
+    "share_orig": "0.056899"
+   },
+   {
+    "rank_orig": "4",
+    "address": "G2VtFJ9P5P7qjz5bcfwVQw6DGJ2sYBUTXf7npQy5PZ2R",
+    "share_orig": "0.048234"
+   },
+   {
+    "rank_orig": "5",
+    "address": "4x3uU27N1cfmBx8JerY13ZzdNxgmgQdiZUSFZQHbhe1B",
+    "share_orig": "0.040234"
+   },
+   {
+    "rank_orig": "6",
+    "address": "4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N",
+    "share_orig": "0.036915"
+   },
+   {
+    "rank_orig": "7",
+    "address": "6EyjmmTYdAEyoLN1eTynuGvQPRq8mR4HKrW9uBqWqi7N",
+    "share_orig": "0.033528"
+   },
+   {
+    "rank_orig": "8",
+    "address": "Ad29ikw7DwEEbFTW6LEDVNC3cxGrNdsY4r276FAeT1Dt",
+    "share_orig": "0.025674"
+   },
+   {
+    "rank_orig": "9",
+    "address": "AGzZas78FXZkH8FrUW3x54h639fbfT1PhBA6SLbY5tTi",
+    "share_orig": "0.025146"
+   },
+   {
+    "rank_orig": "10",
+    "address": "6AapP9rsXMsNTJEMbKUatmzLeYwkZSJWd84c6PLBJNvK",
+    "share_orig": "0.024140"
+   },
+   {
+    "rank_orig": "11",
+    "address": "Ej1xvF8ycSA7ufZhCRAi5EPk2DjPgyuByDS6RgpG5i7c",
+    "share_orig": "0.022368"
+   }
+  ]
+ },
+ "DOT": {
+  "chain": "polkadot",
+  "n_excluded": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "16ZL8yLyXv3V3L3z9ofR1ovFLziyXaN1DPq4yffMAZ9czzBD",
+    "share_orig": "0.099245"
+   },
+   {
+    "rank_orig": "2",
+    "address": "13Z7KjGnzdAdMre9cqRwTZHR6F2p36gqBsaNmQwwosiPz8JT",
+    "share_orig": "0.026317"
+   },
+   {
+    "rank_orig": "3",
+    "address": "15j4dg5GzsL1bw2U2AWgeyAk6QTxq43V7ZPbXdAmbVLjvDCK",
+    "share_orig": "0.013422"
+   },
+   {
+    "rank_orig": "4",
+    "address": "14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ",
+    "share_orig": "0.013421"
+   },
+   {
+    "rank_orig": "5",
+    "address": "12ouvKSvKnXAdXFR5oCL1vXimWrkDWG3joMNw3ETupTRs1ab",
+    "share_orig": "0.012122"
+   },
+   {
+    "rank_orig": "6",
+    "address": "1gn68eNGNGqV3QjVcRRDVfw22xFn1eFyUizHCENVn256LXh",
+    "share_orig": "0.010585"
+   },
+   {
+    "rank_orig": "7",
+    "address": "1GVe7pAK2Pc4TVGuPBYbEU82VmaiQhKjFTzECpX7GGXgzBB",
+    "share_orig": "0.008903"
+   },
+   {
+    "rank_orig": "8",
+    "address": "13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB",
+    "share_orig": "0.008847"
+   },
+   {
+    "rank_orig": "9",
+    "address": "13UVJyLnbVp9x5XDyJv8g8r3UddNwBrdaH7AADCmw9XQWvYW",
+    "share_orig": "0.008576"
+   },
+   {
+    "rank_orig": "10",
+    "address": "16GMHo9HZv8CcJy4WLoMaU9qusgzx2wxKDLbXStEBvt5274B",
+    "share_orig": "0.008469"
+   }
+  ]
+ },
+ "TAO": {
+  "chain": "bittensor",
+  "n_excluded": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N",
+    "share_orig": "0.088643"
+   },
+   {
+    "rank_orig": "2",
+    "address": "5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n",
+    "share_orig": "0.031236"
+   },
+   {
+    "rank_orig": "3",
+    "address": "5Gs1zPdtVKJ9dh1DdTRYrNPbxnkBmLCBPQ5FVMjn7mV1kUNA",
+    "share_orig": "0.022962"
+   },
+   {
+    "rank_orig": "4",
+    "address": "5GaTCa1ZEBTjfiSq9965mvaDkc8YgWnsHzrdVXMmmzWDy3iJ",
+    "share_orig": "0.021327"
+   },
+   {
+    "rank_orig": "5",
+    "address": "5HbUBhvvCVsYYA1ghsHrVzSzARxhkF5yLFMctVgcENXjJ329",
+    "share_orig": "0.019296"
+   },
+   {
+    "rank_orig": "6",
+    "address": "5HeWF2M4hHtsjeaKemfVUi427sM6caTGyqZo5XvCQLE8r7qc",
+    "share_orig": "0.016110"
+   },
+   {
+    "rank_orig": "7",
+    "address": "5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL",
+    "share_orig": "0.015666"
+   },
+   {
+    "rank_orig": "8",
+    "address": "5CSkuzS15xc8bu5ypPjS42grD3uQh3hKsj2e9YMvzobdu1nf",
+    "share_orig": "0.015532"
+   },
+   {
+    "rank_orig": "9",
+    "address": "5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi",
+    "share_orig": "0.014388"
+   },
+   {
+    "rank_orig": "10",
+    "address": "5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s",
+    "share_orig": "0.013446"
+   }
+  ]
+ },
+ "ALGO": {
+  "chain": "algorand",
+  "n_excluded": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "N2C374IRX7HEX2YEQWJBTRSVRHRUV4ZSF76S54WV4COTHRUNYRCI47R3WU",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "2",
+    "address": "E7O4QOCFC4WV5Y4AV552NPGFEQKFREX7BOI2MB4OTLTNEZSV4VVEDLAXJM",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "3",
+    "address": "MTCEM5YJJSYGW2RCXYXGE4SXLSPUUEJKQAWG2GUX6CNN72KQ3XPJCM6NOI",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "4",
+    "address": "RH7F44VSLAHQHTXWO6FPLJVG77QUYZIHGAKMNGN6CIFMWI22WALTMLXVAI",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "5",
+    "address": "HWLQOM2NDMWEKEUCJFXH7EM4ZXUMU62VRP5IOZOEZOWCLTB4EYIIPTCUXA",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "6",
+    "address": "OU5436PXO2H2IZYYVYKOZJ7PP5FUY4OZRFSI3JA3NZED6I3ZWVP5F7GGQA",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "7",
+    "address": "H4OI2I6ELGJOBZR2YZHQTQ5F52W75O22Z5JLCTFBRKE3TOMRMDMUVXOEDA",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "8",
+    "address": "OZAWSPA24ZG5JMNEKY473VFN2YLD3TBD7BMBNHJ2YT7BYIWQB4XI7ANU6Q",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "9",
+    "address": "KI47DCJ3KZD4TPV456G4TWIAI3VKOAJH2WXTT6X2V6PTGEU3K3ANEEHG7U",
+    "share_orig": null
+   },
+   {
+    "rank_orig": "10",
+    "address": "RDTYQOCIGAZYO7U5FI6242YTHWUQ62547F5RK562R4JQZITQ27PYWMWTTI",
+    "share_orig": null
+   }
+  ]
+ }
+}

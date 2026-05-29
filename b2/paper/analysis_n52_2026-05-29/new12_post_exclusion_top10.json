@@ -1,0 +1,806 @@
+{
+ "FXS": {
+  "chain": "ethereum",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d",
+    "share_orig": "0.482807",
+    "balance": "52317091.30895682"
+   },
+   {
+    "rank_orig": "2",
+    "address": "0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0",
+    "share_orig": "0.157449",
+    "balance": "17061239.57755941"
+   },
+   {
+    "rank_orig": "3",
+    "address": "0xccfc07b3f23bf293e7363495fa2f9509bf72ecf1",
+    "share_orig": "0.035772",
+    "balance": "3876239.15953169"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x1aabda2551c0b062f61ed57f103e0385ec051065",
+    "share_orig": "0.023558",
+    "balance": "2552756.65123809"
+   },
+   {
+    "rank_orig": "5",
+    "address": "0xe0dd07b181ca77ed9063821b4d2d28a85f722f5f",
+    "share_orig": "0.020170",
+    "balance": "2185679.55714540"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x12d7df4910d3dc0867cc7720e3bec6260b4b1100",
+    "share_orig": "0.018368",
+    "balance": "1990364.58171817"
+   },
+   {
+    "rank_orig": "7",
+    "address": "0x03b59bd1c8b9f6c265ba0c3421923b93f15036fa",
+    "share_orig": "0.017332",
+    "balance": "1878116.95786905"
+   },
+   {
+    "rank_orig": "8",
+    "address": "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee",
+    "share_orig": "0.013113",
+    "balance": "1420938.50000000"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0",
+    "share_orig": "0.011963",
+    "balance": "1296295.12000000"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f",
+    "share_orig": "0.009710",
+    "balance": "1052187.99894883"
+   }
+  ]
+ },
+ "SNX": {
+  "chain": "ethereum",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "0xffffffaeff0b96ea8e4f94b2253f31abdd875847",
+    "share_orig": "0.380677",
+    "balance": "132613905.49235222"
+   },
+   {
+    "rank_orig": "2",
+    "address": "0x5fd79d46eba7f351fe49bff9e87cdea6c821ef9f",
+    "share_orig": "0.094908",
+    "balance": "33062417.63410782"
+   },
+   {
+    "rank_orig": "3",
+    "address": "0xf977814e90da44bfa03b6295a0616a897441acec",
+    "share_orig": "0.078430",
+    "balance": "27322039.11900000"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597",
+    "share_orig": "0.038293",
+    "balance": "13339934.95428995"
+   },
+   {
+    "rank_orig": "5",
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "share_orig": "0.031954",
+    "balance": "11131486.96591109"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x5aeebe2fed4eafcd4a1f0cfb1159dd4f31cf4447",
+    "share_orig": "0.013488",
+    "balance": "4698677.63614059"
+   },
+   {
+    "rank_orig": "7",
+    "address": "0x83270d639d09727f73577ca55c6d74ae70a6af30",
+    "share_orig": "0.012986",
+    "balance": "4523946.32240219"
+   },
+   {
+    "rank_orig": "8",
+    "address": "0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43",
+    "share_orig": "0.012556",
+    "balance": "4374107.71063466"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0xa31231e727ca53ff95f0d00a06c645110c4ab647",
+    "share_orig": "0.010696",
+    "balance": "3725942.10520762"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa",
+    "share_orig": "0.009880",
+    "balance": "3441683.93438339"
+   }
+  ]
+ },
+ "GNO": {
+  "chain": "ethereum",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "0xec83f750adfe0e52a8b0dba6eeb6be5ba0bee535",
+    "share_orig": "0.386858",
+    "balance": "3852258.90848240"
+   },
+   {
+    "rank_orig": "2",
+    "address": "0x0000000000000000000000000000000000000000",
+    "share_orig": "0.316114",
+    "balance": "3147806.34574551"
+   },
+   {
+    "rank_orig": "3",
+    "address": "0x88ad09518695c6c3712ac10a214be5109a655671",
+    "share_orig": "0.140477",
+    "balance": "1398843.76622104"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x849d52316331967b6ff1198e5e32a0eb168d039d",
+    "share_orig": "0.041669",
+    "balance": "414931.57982813"
+   },
+   {
+    "rank_orig": "5",
+    "address": "0x604e4557e9020841f4e8eb98148de3d3cdea350c",
+    "share_orig": "0.036194",
+    "balance": "360411.00000000"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x9d94ef33e7f8087117f85b3ff7b1d8f27e4053d5",
+    "share_orig": "0.015504",
+    "balance": "154381.05710878"
+   },
+   {
+    "rank_orig": "7",
+    "address": "0x445cc6c3d51eb0a63395a613a0960c7922bca0d6",
+    "share_orig": "0.007059",
+    "balance": "70292.77678616"
+   },
+   {
+    "rank_orig": "8",
+    "address": "0x4f8ad938eba0cd19155a835f617317a6e788c868",
+    "share_orig": "0.005238",
+    "balance": "52157.19436170"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341",
+    "share_orig": "0.004928",
+    "balance": "49075.99096511"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0x70e278941ed3c0d2c6d6105df184831992aca856",
+    "share_orig": "0.003835",
+    "balance": "38188.00000000"
+   }
+  ]
+ },
+ "WLFI": {
+  "chain": "ethereum",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 6,
+  "top10": [
+   {
+    "rank_orig": "3",
+    "address": "0xfef30c262676de9af5e5e9ba999cf774000b14b4",
+    "share_orig": "0.091128",
+    "balance": "8801813390.270000457763671875"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d",
+    "share_orig": "0.051749",
+    "balance": "4998322064.667050361633300781"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0xcd52e35f7784efc78e835ef6e00be914f48beee6",
+    "share_orig": "0.034391",
+    "balance": "3321690993.708012580871582031"
+   },
+   {
+    "rank_orig": "8",
+    "address": "0xc785d05961b3c537cac11f1d496876a255f6d650",
+    "share_orig": "0.013793",
+    "balance": "1332223209.437559127807617188"
+   },
+   {
+    "rank_orig": "11",
+    "address": "0x0249d14d15531065b927f4930562c3814e654b54",
+    "share_orig": "0.008283",
+    "balance": "800000000.000000000000000000"
+   },
+   {
+    "rank_orig": "12",
+    "address": "0xcc261ab4be137eacf57c19ed97c186b4d88004ca",
+    "share_orig": "0.007765",
+    "balance": "749999950.000000000000000000"
+   },
+   {
+    "rank_orig": "13",
+    "address": "0xf0cc01b37086bc122a3d63c615dab379478d2745",
+    "share_orig": "0.006902",
+    "balance": "666666666.666666626930236816"
+   },
+   {
+    "rank_orig": "14",
+    "address": "0x5ab26169051d0d96217949adb91e86e51a5fda74",
+    "share_orig": "0.005640",
+    "balance": "544718605.980320930480957031"
+   },
+   {
+    "rank_orig": "15",
+    "address": "0x33ccf78a2091979fbc5a7631e6c71e900715ab78",
+    "share_orig": "0.005011",
+    "balance": "484000000.000000000000000000"
+   },
+   {
+    "rank_orig": "16",
+    "address": "0x29de882559194e2be08c182c1860193f8137cbf8",
+    "share_orig": "0.004486",
+    "balance": "433333333.333333313465118408"
+   }
+  ]
+ },
+ "ENA": {
+  "chain": "ethereum",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 2,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "0x1dc55d87c4143cc1829989d7ff8d580549ac0901",
+    "share_orig": "0.082339",
+    "balance": "1231887037.759999990463256836"
+   },
+   {
+    "rank_orig": "3",
+    "address": "0x2146aa5807d96e6b2922a149cee870f17347f1d0",
+    "share_orig": "0.081545",
+    "balance": "1220012588.845785379409790039"
+   },
+   {
+    "rank_orig": "4",
+    "address": "0x8be3460a480c80728a8c4d7a5d5303c85ba7b3b9",
+    "share_orig": "0.072746",
+    "balance": "1088364297.400473117828369141"
+   },
+   {
+    "rank_orig": "5",
+    "address": "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666",
+    "share_orig": "0.061114",
+    "balance": "914341820.830000042915344238"
+   },
+   {
+    "rank_orig": "6",
+    "address": "0x7462f0d93260909870487f17a27c336349579557",
+    "share_orig": "0.059165",
+    "balance": "885175557.356710672378540039"
+   },
+   {
+    "rank_orig": "7",
+    "address": "0xb2af973905f05bc82bf97486b6ab883598d98298",
+    "share_orig": "0.056096",
+    "balance": "839271334.898200035095214844"
+   },
+   {
+    "rank_orig": "9",
+    "address": "0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae",
+    "share_orig": "0.045792",
+    "balance": "685111161.027982831001281738"
+   },
+   {
+    "rank_orig": "10",
+    "address": "0x0c36fda877d41671b14fb4e7655798965237c7d0",
+    "share_orig": "0.022117",
+    "balance": "330892823.920700907707214355"
+   },
+   {
+    "rank_orig": "11",
+    "address": "0x877b3d5c681c8890d19dbf450306caa3c3d4bba6",
+    "share_orig": "0.021121",
+    "balance": "315999990.000150024890899658"
+   },
+   {
+    "rank_orig": "12",
+    "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "share_orig": "0.020720",
+    "balance": "310000000.000000000000000000"
+   }
+  ]
+ },
+ "PUMP": {
+  "chain": "solana",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 6,
+  "top10": [
+   {
+    "rank_orig": "4",
+    "address": "85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS",
+    "share_orig": "0.034986",
+    "balance": "29999946428.000000000000000000"
+   },
+   {
+    "rank_orig": "8",
+    "address": "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6",
+    "share_orig": "0.027989",
+    "balance": "24000000010.000267028808593750"
+   },
+   {
+    "rank_orig": "9",
+    "address": "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9",
+    "share_orig": "0.026823",
+    "balance": "22999958928.000000000000000000"
+   },
+   {
+    "rank_orig": "10",
+    "address": "8UHpWBnhYNeAQURWjAABp8vSrzfYa69o7sfi65vYLC42",
+    "share_orig": "0.022311",
+    "balance": "19131083343.250259399414062500"
+   },
+   {
+    "rank_orig": "11",
+    "address": "ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa",
+    "share_orig": "0.019825",
+    "balance": "16999969644.000000000000000000"
+   },
+   {
+    "rank_orig": "12",
+    "address": "GhFaBi8sy3M5mgG97YguQ6J3f7XH4JwV5CoW8MbzRgAU",
+    "share_orig": "0.018222",
+    "balance": "15625000010.000265121459960938"
+   },
+   {
+    "rank_orig": "13",
+    "address": "AC5RDfQFmDS1deWZos921JfqscXdByf8BKHs5ACWjtW2",
+    "share_orig": "0.014996",
+    "balance": "12858991410.786405563354492188"
+   },
+   {
+    "rank_orig": "14",
+    "address": "2WHL4XiNGKW9NgSwsJeG7WG2kD35Bi44rZoLrXHEz3dw",
+    "share_orig": "0.011662",
+    "balance": "10000000010.000249862670898438"
+   },
+   {
+    "rank_orig": "15",
+    "address": "9SLPTL41SPsYkgdsMzdfJsxymEANKr5bYoBsQzJyKpKS",
+    "share_orig": "0.011657",
+    "balance": "9996036227.071063995361328125"
+   },
+   {
+    "rank_orig": "16",
+    "address": "9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN",
+    "share_orig": "0.010263",
+    "balance": "8800000010.000236511230468750"
+   }
+  ]
+ },
+ "JTO": {
+  "chain": "solana",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 3,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "5SybwTvGno6SBApbGinXyLqhnPzs47aaBG4PShyPT8ey",
+    "share_orig": "0.071671",
+    "balance": "70288940.662379994988441467"
+   },
+   {
+    "rank_orig": "3",
+    "address": "ESnLXehGeReTRw3WxxEZwB4u2C9gAe8dMbob8Q4gm9Yg",
+    "share_orig": "0.048632",
+    "balance": "47694698.127680785953998566"
+   },
+   {
+    "rank_orig": "4",
+    "address": "7r5xFtcJZpc8vtzBCc1S9ooR2xadHt1jcT8HiH23a1x1",
+    "share_orig": "0.043886",
+    "balance": "43039504.660028018057346344"
+   },
+   {
+    "rank_orig": "5",
+    "address": "MbzL6v1mDkF8QW6r9TJKV6eaiYSf6MNtpVei2ciFQHN",
+    "share_orig": "0.028058",
+    "balance": "27517281.000000000000000000"
+   },
+   {
+    "rank_orig": "6",
+    "address": "FQnVcnwEXREJ3D4j7LzNGzCiMUVVqxkGEqZ2KffRY8ud",
+    "share_orig": "0.020393",
+    "balance": "20000000.030299998819828033"
+   },
+   {
+    "rank_orig": "9",
+    "address": "3dguv2qss6GjmUEnJsddxkR9q5Zoem1sjoSk1jpXFPsz",
+    "share_orig": "0.020393",
+    "balance": "19999999.000000000000000000"
+   },
+   {
+    "rank_orig": "10",
+    "address": "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt",
+    "share_orig": "0.020177",
+    "balance": "19788036.521275203675031662"
+   },
+   {
+    "rank_orig": "11",
+    "address": "3mv8hXktfpgCgK2W2jwRKdwDkw2UaYVJcVDozWmgv1uA",
+    "share_orig": "0.018982",
+    "balance": "18615525.110001001507043839"
+   },
+   {
+    "rank_orig": "12",
+    "address": "8sjM83a4u2M8YZYshLGKzYxh1VHFfbgtaytwaoEg4bUJ",
+    "share_orig": "0.018740",
+    "balance": "18378779.000000000000000000"
+   },
+   {
+    "rank_orig": "13",
+    "address": "9xSi6onCqhLuXTgodd5wB7EXv2WwuYPZyZwDyruGKL6v",
+    "share_orig": "0.015295",
+    "balance": "15000000.000000000000000000"
+   }
+  ]
+ },
+ "BONK": {
+  "chain": "solana",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 5,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "51yZyDSnec4xnUv7XLRVYcDyV4x3wUtzrDcRaYbmQU5j",
+    "share_orig": "0.059138",
+    "balance": "4712047669409.043945312500000000"
+   },
+   {
+    "rank_orig": "5",
+    "address": "9AdEE8AAm1XgJrPEs4zkTPozr3o4U5iGbgvPwkNdLDJ3",
+    "share_orig": "0.040129",
+    "balance": "3197406526791.839843750000000000"
+   },
+   {
+    "rank_orig": "6",
+    "address": "9RpzaFh4J8F6Qg1gjnhrhSp9eXdVDjsesZXe53qp7ubB",
+    "share_orig": "0.033739",
+    "balance": "2688258761035.302246093750000000"
+   },
+   {
+    "rank_orig": "9",
+    "address": "EbLm4ZtRqDftrQnZaMMvnwcKjK5ef5vm1Hg3sAPv3tKi",
+    "share_orig": "0.033599",
+    "balance": "2677126193536.917968750000000000"
+   },
+   {
+    "rank_orig": "10",
+    "address": "EfEgUV2uQAzTooo6L4oYiEm15F6JBTnGiWMejqxPaqL3",
+    "share_orig": "0.030984",
+    "balance": "2468728678820.589843750000000000"
+   },
+   {
+    "rank_orig": "11",
+    "address": "4xLpwxgYuPwPvtQjE94RLS4WZ4aD8NJYYKr2AJk99Qdg",
+    "share_orig": "0.029143",
+    "balance": "2322094304334.461914062500000000"
+   },
+   {
+    "rank_orig": "12",
+    "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+    "share_orig": "0.024848",
+    "balance": "1979871998416.478759765625000000"
+   },
+   {
+    "rank_orig": "13",
+    "address": "CJjCPXBnSt6wRoyi7wzcMj5NbWvmPtzxE2JpWDMTRxj4",
+    "share_orig": "0.021212",
+    "balance": "1690120280002.202880859375000000"
+   },
+   {
+    "rank_orig": "14",
+    "address": "3B7XAQrLoEMDEGvX8569F9GRb9PcXXocJmj5wvhhei9z",
+    "share_orig": "0.019795",
+    "balance": "1577270374759.118652343750000000"
+   },
+   {
+    "rank_orig": "15",
+    "address": "5oNhn2ESFHgg52xiEKBt93cEEnbsoUoekcxXsWpLbHUJ",
+    "share_orig": "0.012550",
+    "balance": "1000000000000.000000000000000000"
+   }
+  ]
+ },
+ "KMNO": {
+  "chain": "solana",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 1,
+  "top10": [
+   {
+    "rank_orig": "2",
+    "address": "Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57",
+    "share_orig": "0.059741",
+    "balance": "593934799.321763038635253906"
+   },
+   {
+    "rank_orig": "3",
+    "address": "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew",
+    "share_orig": "0.056899",
+    "balance": "565681470.000000953674316406"
+   },
+   {
+    "rank_orig": "4",
+    "address": "G2VtFJ9P5P7qjz5bcfwVQw6DGJ2sYBUTXf7npQy5PZ2R",
+    "share_orig": "0.048234",
+    "balance": "479538853.000000000000000000"
+   },
+   {
+    "rank_orig": "5",
+    "address": "4x3uU27N1cfmBx8JerY13ZzdNxgmgQdiZUSFZQHbhe1B",
+    "share_orig": "0.040234",
+    "balance": "400000001.000000000000000000"
+   },
+   {
+    "rank_orig": "6",
+    "address": "4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N",
+    "share_orig": "0.036915",
+    "balance": "367000001.000001013278961182"
+   },
+   {
+    "rank_orig": "7",
+    "address": "6EyjmmTYdAEyoLN1eTynuGvQPRq8mR4HKrW9uBqWqi7N",
+    "share_orig": "0.033528",
+    "balance": "333333333.000000000000000000"
+   },
+   {
+    "rank_orig": "8",
+    "address": "Ad29ikw7DwEEbFTW6LEDVNC3cxGrNdsY4r276FAeT1Dt",
+    "share_orig": "0.025674",
+    "balance": "255251141.297360986471176147"
+   },
+   {
+    "rank_orig": "9",
+    "address": "AGzZas78FXZkH8FrUW3x54h639fbfT1PhBA6SLbY5tTi",
+    "share_orig": "0.025146",
+    "balance": "250000000.009999990463256836"
+   },
+   {
+    "rank_orig": "10",
+    "address": "6AapP9rsXMsNTJEMbKUatmzLeYwkZSJWd84c6PLBJNvK",
+    "share_orig": "0.024140",
+    "balance": "240000001.000000000000000000"
+   },
+   {
+    "rank_orig": "11",
+    "address": "Ej1xvF8ycSA7ufZhCRAi5EPk2DjPgyuByDS6RgpG5i7c",
+    "share_orig": "0.022368",
+    "balance": "222381701.662156999111175537"
+   }
+  ]
+ },
+ "DOT": {
+  "chain": "polkadot",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "16ZL8yLyXv3V3L3z9ofR1ovFLziyXaN1DPq4yffMAZ9czzBD",
+    "share_orig": "0.099245",
+    "balance": "132878844.75763506"
+   },
+   {
+    "rank_orig": "2",
+    "address": "13Z7KjGnzdAdMre9cqRwTZHR6F2p36gqBsaNmQwwosiPz8JT",
+    "share_orig": "0.026317",
+    "balance": "35235961.00055342"
+   },
+   {
+    "rank_orig": "3",
+    "address": "15j4dg5GzsL1bw2U2AWgeyAk6QTxq43V7ZPbXdAmbVLjvDCK",
+    "share_orig": "0.013422",
+    "balance": "17970279.00858717"
+   },
+   {
+    "rank_orig": "4",
+    "address": "14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ",
+    "share_orig": "0.013421",
+    "balance": "17969891.44545402"
+   },
+   {
+    "rank_orig": "5",
+    "address": "12ouvKSvKnXAdXFR5oCL1vXimWrkDWG3joMNw3ETupTRs1ab",
+    "share_orig": "0.012122",
+    "balance": "16230000.00000000"
+   },
+   {
+    "rank_orig": "6",
+    "address": "1gn68eNGNGqV3QjVcRRDVfw22xFn1eFyUizHCENVn256LXh",
+    "share_orig": "0.010585",
+    "balance": "14172517.73199251"
+   },
+   {
+    "rank_orig": "7",
+    "address": "1GVe7pAK2Pc4TVGuPBYbEU82VmaiQhKjFTzECpX7GGXgzBB",
+    "share_orig": "0.008903",
+    "balance": "11920000.00119200"
+   },
+   {
+    "rank_orig": "8",
+    "address": "13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB",
+    "share_orig": "0.008847",
+    "balance": "11845654.84284845"
+   },
+   {
+    "rank_orig": "9",
+    "address": "13UVJyLnbVp9x5XDyJv8g8r3UddNwBrdaH7AADCmw9XQWvYW",
+    "share_orig": "0.008576",
+    "balance": "11482788.26851780"
+   },
+   {
+    "rank_orig": "10",
+    "address": "16GMHo9HZv8CcJy4WLoMaU9qusgzx2wxKDLbXStEBvt5274B",
+    "share_orig": "0.008469",
+    "balance": "11339712.69918772"
+   }
+  ]
+ },
+ "TAO": {
+  "chain": "bittensor",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N",
+    "share_orig": "0.088643",
+    "balance": "797821.79024665"
+   },
+   {
+    "rank_orig": "2",
+    "address": "5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n",
+    "share_orig": "0.031236",
+    "balance": "281136.92461176"
+   },
+   {
+    "rank_orig": "3",
+    "address": "5Gs1zPdtVKJ9dh1DdTRYrNPbxnkBmLCBPQ5FVMjn7mV1kUNA",
+    "share_orig": "0.022962",
+    "balance": "206665.91828259"
+   },
+   {
+    "rank_orig": "4",
+    "address": "5GaTCa1ZEBTjfiSq9965mvaDkc8YgWnsHzrdVXMmmzWDy3iJ",
+    "share_orig": "0.021327",
+    "balance": "191950.51905993"
+   },
+   {
+    "rank_orig": "5",
+    "address": "5HbUBhvvCVsYYA1ghsHrVzSzARxhkF5yLFMctVgcENXjJ329",
+    "share_orig": "0.019296",
+    "balance": "173672.50736005"
+   },
+   {
+    "rank_orig": "6",
+    "address": "5HeWF2M4hHtsjeaKemfVUi427sM6caTGyqZo5XvCQLE8r7qc",
+    "share_orig": "0.016110",
+    "balance": "144995.73013092"
+   },
+   {
+    "rank_orig": "7",
+    "address": "5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL",
+    "share_orig": "0.015666",
+    "balance": "141002.54461614"
+   },
+   {
+    "rank_orig": "8",
+    "address": "5CSkuzS15xc8bu5ypPjS42grD3uQh3hKsj2e9YMvzobdu1nf",
+    "share_orig": "0.015532",
+    "balance": "139791.87764007"
+   },
+   {
+    "rank_orig": "9",
+    "address": "5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi",
+    "share_orig": "0.014388",
+    "balance": "129499.33164067"
+   },
+   {
+    "rank_orig": "10",
+    "address": "5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s",
+    "share_orig": "0.013446",
+    "balance": "121021.31301122"
+   }
+  ]
+ },
+ "ALGO": {
+  "chain": "algorand",
+  "n_holders_listed": 1000,
+  "n_excluded_matched": 0,
+  "top10": [
+   {
+    "rank_orig": "1",
+    "address": "N2C374IRX7HEX2YEQWJBTRSVRHRUV4ZSF76S54WV4COTHRUNYRCI47R3WU",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "2",
+    "address": "E7O4QOCFC4WV5Y4AV552NPGFEQKFREX7BOI2MB4OTLTNEZSV4VVEDLAXJM",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "3",
+    "address": "MTCEM5YJJSYGW2RCXYXGE4SXLSPUUEJKQAWG2GUX6CNN72KQ3XPJCM6NOI",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "4",
+    "address": "RH7F44VSLAHQHTXWO6FPLJVG77QUYZIHGAKMNGN6CIFMWI22WALTMLXVAI",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "5",
+    "address": "HWLQOM2NDMWEKEUCJFXH7EM4ZXUMU62VRP5IOZOEZOWCLTB4EYIIPTCUXA",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "6",
+    "address": "OU5436PXO2H2IZYYVYKOZJ7PP5FUY4OZRFSI3JA3NZED6I3ZWVP5F7GGQA",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "7",
+    "address": "H4OI2I6ELGJOBZR2YZHQTQ5F52W75O22Z5JLCTFBRKE3TOMRMDMUVXOEDA",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "8",
+    "address": "OZAWSPA24ZG5JMNEKY473VFN2YLD3TBD7BMBNHJ2YT7BYIWQB4XI7ANU6Q",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "9",
+    "address": "KI47DCJ3KZD4TPV456G4TWIAI3VKOAJH2WXTT6X2V6PTGEU3K3ANEEHG7U",
+    "share_orig": null,
+    "balance": null
+   },
+   {
+    "rank_orig": "10",
+    "address": "RDTYQOCIGAZYO7U5FI6242YTHWUQ62547F5RK562R4JQZITQ27PYWMWTTI",
+    "share_orig": null,
+    "balance": null
+   }
+  ]
+ }
+}
