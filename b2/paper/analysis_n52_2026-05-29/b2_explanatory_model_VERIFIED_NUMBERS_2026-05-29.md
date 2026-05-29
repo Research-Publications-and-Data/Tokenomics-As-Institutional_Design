@@ -1,4 +1,4 @@
-# B2 explanatory model — VERIFIED authoritative numbers (cascade-time reproduction)
+# B2 explanatory model: VERIFIED authoritative numbers (cascade-time reproduction)
 
 **As-of:** 2026-05-29. Reproduced READ-ONLY from persisted clone-A data after the original
 /tmp run scripts evaporated (artifact-retention gap). Script:
@@ -21,7 +21,7 @@ This file is the authoritative number source for the PAPER.md Table 5 cascade + 
 ### COLUMN-CHOICE WARNING (corrected this cycle)
 `non_insider_hhi_top10` in v3 is BUGGY: for 7 insider_count=0 rows (ARB, CRV, OP, HYPE, BAL, IO; IOTX OK) it does NOT equal full_hhi though it must (BAL top10=0.182 vs full=0.0295; IO top10=0.284 vs full=0.111). Using it gives a spurious rho=0.265 p=0.113. **Use `non_insider_hhi_approx`** (insider=0 -> equals full_hhi, as required). A first reproduction used the wrong column and momentarily contradicted the lock; the lock was right.
 
-## NOT REPRODUCIBLE (artifact-retention gap — flagged)
+## NOT REPRODUCIBLE (artifact-retention gap, flagged)
 The exact model in the locked claim, **log-HHI ~ sector + insider-RETENTION + revenue-intensity (N=49, DePIN p=0.016, retention n.s. p=0.91)**, cannot be reproduced from persisted data: the new-12 retention frame (FXS/SNX/GNO/WLFI/ENA/PUMP/JTO/BONK/KMNO/DOT/TAO/ALGO insider_count_frac) was assembled at run-time and evaporated with the /tmp script. v3.csv covers only the original ~38 (AAVE..IO).
 - Re-derivable: the new-12 post-exclusion top-10 holder lists ARE persisted (data/raw/holder_lists/); the session's Nansen/Blockscout/Helius insider classifications are in the LFU prose (FXS ~0.3; SNX/GNO/WLFI/ENA ~0; PUMP/JTO/BONK/KMNO ~0-0.1; DOT/TAO/ALGO ~0/low). A re-derivation cycle would re-establish insider_count_frac for the 12 and reproduce the retention-spec exactly.
 - Headline does NOT depend on it: DePIN robust (p=0.040) reproduces without the retention term; retention's "doesn't generalize to the new cohort" is the channel-shift observation (verified this session: new-cohort insiders sit in PCA-excluded vehicles, so post-exclusion-top-10 retention ~0 by construction).
