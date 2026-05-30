@@ -1,0 +1,15 @@
+{
+ "v3_detautology_of_record": {
+  "spearman_rho": 0.544,
+  "spearman_p": 0.0009,
+  "N": 34,
+  "source": "reproduce.py STAGE 8 (non_insider_hhi_approx, original sample)",
+  "interpretation": "retention vs non-insider-HHI correlates -> de-tautology 'survives' in v3"
+ },
+ "v4_reviewed_detautology": {
+  "status": "NOT_COMPUTED_THIS_CYCLE",
+  "reason": "A valid v4 de-tautology requires v3's exact non_insider_hhi_approx methodology. Verification showed v3 non_insider_hhi_approx != full_hhi - insider_hhi_contribution (max abs err 0.145 over N=34), so the naive reconstruction (full_hhi - sum(v4_insider_share^2)) is the WRONG formula and its rho is invalid. An earlier in-cycle computation under that wrong formula returned rho=0.128 and is DISCARDED.",
+  "follow_on": "Recompute non_insider_hhi under v3's actual definition (locate the v3-generation script in analysis/) with v4 insider flags, then re-test rho(v4_frac, non_insider_hhi_v4). Out of this cycle's reliable scope."
+ },
+ "headline_note": "The de-tautology is a robustness check on the insider-RETENTION measure, not the headline. The headline (DePIN sector concentration) is robust under all four retention vectors (b2_nansen_v4_headline_impact_results), and the retention regressor is n.s. throughout (channel-shift). The v4 de-tautology is a follow-on, not a blocker."
+}

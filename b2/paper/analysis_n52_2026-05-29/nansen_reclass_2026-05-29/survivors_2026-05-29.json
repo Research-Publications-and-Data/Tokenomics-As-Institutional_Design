@@ -1,0 +1,2972 @@
+{
+ "COMP": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x841ed663f2636863d40be4ee76243377dff13a34",
+    "address_lc": "0x841ed663f2636863d40be4ee76243377dff13a34",
+    "share": 0.027413
+   },
+   {
+    "rank": 2,
+    "address": "0x3bbd4947df4e1bd80d130ddcfa9b54f1b03a1a8d",
+    "address_lc": "0x3bbd4947df4e1bd80d130ddcfa9b54f1b03a1a8d",
+    "share": 0.025963
+   },
+   {
+    "rank": 3,
+    "address": "0x4290cd12f6ff4cdea0638916cbfb229b9d2c8806",
+    "address_lc": "0x4290cd12f6ff4cdea0638916cbfb229b9d2c8806",
+    "share": 0.020346
+   },
+   {
+    "rank": 4,
+    "address": "0x7e9955e7f0c1c88d76d13720b5dd122cc3f6d8f6",
+    "address_lc": "0x7e9955e7f0c1c88d76d13720b5dd122cc3f6d8f6",
+    "share": 0.017261
+   },
+   {
+    "rank": 5,
+    "address": "0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241",
+    "address_lc": "0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241",
+    "share": 0.015167
+   },
+   {
+    "rank": 6,
+    "address": "0xc78e14e378b035b53561fa79445069d379b1f868",
+    "address_lc": "0xc78e14e378b035b53561fa79445069d379b1f868",
+    "share": 0.013113
+   },
+   {
+    "rank": 7,
+    "address": "0x6522b7f9d481eceb96557f44753a4b893f837e90",
+    "address_lc": "0x6522b7f9d481eceb96557f44753a4b893f837e90",
+    "share": 0.012092
+   },
+   {
+    "rank": 8,
+    "address": "0x3e0f52239518b540a06f81d51ac4ea7ffdece329",
+    "address_lc": "0x3e0f52239518b540a06f81d51ac4ea7ffdece329",
+    "share": 0.011466
+   },
+   {
+    "rank": 9,
+    "address": "0x7c01aa3783577e15fd7e272443d44b92d5b21056",
+    "address_lc": "0x7c01aa3783577e15fd7e272443d44b92d5b21056",
+    "share": 0.01144
+   },
+   {
+    "rank": 10,
+    "address": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+    "address_lc": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+    "share": 0.011384
+   }
+  ]
+ },
+ "MKR": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xf65475e74c1ed6d004d5240b06e3088724dfda5d",
+    "address_lc": "0xf65475e74c1ed6d004d5240b06e3088724dfda5d",
+    "share": 0.113117
+   },
+   {
+    "rank": 2,
+    "address": "0x2cba76638bf0c7d965fc8f2253a91ead40cb83c8",
+    "address_lc": "0x2cba76638bf0c7d965fc8f2253a91ead40cb83c8",
+    "share": 0.073019
+   },
+   {
+    "rank": 3,
+    "address": "0x959bfcaee050515296fc3d8aafafeaabf5c44f1d",
+    "address_lc": "0x959bfcaee050515296fc3d8aafafeaabf5c44f1d",
+    "share": 0.043546
+   },
+   {
+    "rank": 4,
+    "address": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
+    "address_lc": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
+    "share": 0.041179
+   },
+   {
+    "rank": 5,
+    "address": "0x93e9ba7a00856c3c1efa9b927d40b275602839ed",
+    "address_lc": "0x93e9ba7a00856c3c1efa9b927d40b275602839ed",
+    "share": 0.034308
+   },
+   {
+    "rank": 6,
+    "address": "0x7d6149ad9a573a6e2ca6ebf7d4897c1b766841b4",
+    "address_lc": "0x7d6149ad9a573a6e2ca6ebf7d4897c1b766841b4",
+    "share": 0.024152
+   },
+   {
+    "rank": 7,
+    "address": "0xc4269cc7acdedc3794b221aa4d9205f564e27f0d",
+    "address_lc": "0xc4269cc7acdedc3794b221aa4d9205f564e27f0d",
+    "share": 0.023993
+   },
+   {
+    "rank": 8,
+    "address": "0x04b688725ed55f60ffc0f63b14ebe9a826a98598",
+    "address_lc": "0x04b688725ed55f60ffc0f63b14ebe9a826a98598",
+    "share": 0.0208
+   },
+   {
+    "rank": 9,
+    "address": "0xc4de1a0f88b5e10bdef769830699c4f6191b4933",
+    "address_lc": "0xc4de1a0f88b5e10bdef769830699c4f6191b4933",
+    "share": 0.020701
+   },
+   {
+    "rank": 10,
+    "address": "0x4b3f1048c55faa0c0873e249e541139360501f2a",
+    "address_lc": "0x4b3f1048c55faa0c0873e249e541139360501f2a",
+    "share": 0.016726
+   }
+  ]
+ },
+ "AAVE": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+    "address_lc": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+    "share": 0.028844
+   },
+   {
+    "rank": 2,
+    "address": "0x7915f9373ae32d1fcaf0cdf17a532a3d8046d759",
+    "address_lc": "0x7915f9373ae32d1fcaf0cdf17a532a3d8046d759",
+    "share": 0.024373
+   },
+   {
+    "rank": 3,
+    "address": "0x25f2226b597e8f9514b3f68f00f494cf4f286491",
+    "address_lc": "0x25f2226b597e8f9514b3f68f00f494cf4f286491",
+    "share": 0.023088
+   },
+   {
+    "rank": 4,
+    "address": "0x317625234562b1526ea2fac4030ea499c5291de4",
+    "address_lc": "0x317625234562b1526ea2fac4030ea499c5291de4",
+    "share": 0.021813
+   },
+   {
+    "rank": 5,
+    "address": "0x5a801a9418d036fd453078c3adcb761fdc5ae695",
+    "address_lc": "0x5a801a9418d036fd453078c3adcb761fdc5ae695",
+    "share": 0.01605
+   },
+   {
+    "rank": 6,
+    "address": "0x45292a0eafa4d1625c06902f359c5ee819afb026",
+    "address_lc": "0x45292a0eafa4d1625c06902f359c5ee819afb026",
+    "share": 0.015597
+   },
+   {
+    "rank": 7,
+    "address": "0x73af3bcf944a6559933396c1577b257e2054d935",
+    "address_lc": "0x73af3bcf944a6559933396c1577b257e2054d935",
+    "share": 0.01457
+   },
+   {
+    "rank": 8,
+    "address": "0x22740deba78d5a0c24c58c740e3715ec29de1bfa",
+    "address_lc": "0x22740deba78d5a0c24c58c740e3715ec29de1bfa",
+    "share": 0.013814
+   },
+   {
+    "rank": 9,
+    "address": "0x0e240e9a7b40ad11fdd69f952ba3bbd29a238bbd",
+    "address_lc": "0x0e240e9a7b40ad11fdd69f952ba3bbd29a238bbd",
+    "share": 0.013701
+   },
+   {
+    "rank": 10,
+    "address": "0x6e9ddc0143cf07d21ea51b6406755e2da9be0f58",
+    "address_lc": "0x6e9ddc0143cf07d21ea51b6406755e2da9be0f58",
+    "share": 0.012983
+   }
+  ]
+ },
+ "UNI": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x61cb39bece033c5bda281747db1c15cced2096eb",
+    "address_lc": "0x61cb39bece033c5bda281747db1c15cced2096eb",
+    "share": 0.025342
+   },
+   {
+    "rank": 2,
+    "address": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "address_lc": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "share": 0.016787
+   },
+   {
+    "rank": 3,
+    "address": "0x5069a64bc6616dec1584ee0500b7813a9b680f7e",
+    "address_lc": "0x5069a64bc6616dec1584ee0500b7813a9b680f7e",
+    "share": 0.016362
+   },
+   {
+    "rank": 4,
+    "address": "0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a",
+    "address_lc": "0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a",
+    "share": 0.013867
+   },
+   {
+    "rank": 5,
+    "address": "0x090d4613473dee047c3f2706764f49e0821d256e",
+    "address_lc": "0x090d4613473dee047c3f2706764f49e0821d256e",
+    "share": 0.013818
+   },
+   {
+    "rank": 6,
+    "address": "0x6d278351f4a973d1349ef1e54ed37daed0799e19",
+    "address_lc": "0x6d278351f4a973d1349ef1e54ed37daed0799e19",
+    "share": 0.01131
+   },
+   {
+    "rank": 7,
+    "address": "0x19d373d0f95f00d368a8d57605af746c4ea9b1d0",
+    "address_lc": "0x19d373d0f95f00d368a8d57605af746c4ea9b1d0",
+    "share": 0.010221
+   },
+   {
+    "rank": 8,
+    "address": "0x030d6830dc8ff125850390da620fa3e12decd437",
+    "address_lc": "0x030d6830dc8ff125850390da620fa3e12decd437",
+    "share": 0.009896
+   },
+   {
+    "rank": 9,
+    "address": "0x177df24addc9a216f927d2a894ab0b6eec59eb09",
+    "address_lc": "0x177df24addc9a216f927d2a894ab0b6eec59eb09",
+    "share": 0.009896
+   },
+   {
+    "rank": 10,
+    "address": "0x7d325a9c8f10758188641fe91cfd902499edc782",
+    "address_lc": "0x7d325a9c8f10758188641fe91cfd902499edc782",
+    "share": 0.008796
+   }
+  ]
+ },
+ "CRV": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x72402ce4d16619e88ceff669634997c360b0f0ad",
+    "address_lc": "0x72402ce4d16619e88ceff669634997c360b0f0ad",
+    "share": 0.030633
+   },
+   {
+    "rank": 2,
+    "address": "0xbe7be7023902f09cc28f0101a3e6e313bf2bc626",
+    "address_lc": "0xbe7be7023902f09cc28f0101a3e6e313bf2bc626",
+    "share": 0.020449
+   },
+   {
+    "rank": 3,
+    "address": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "address_lc": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "share": 0.015304
+   },
+   {
+    "rank": 4,
+    "address": "0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597",
+    "address_lc": "0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597",
+    "share": 0.015228
+   },
+   {
+    "rank": 5,
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "address_lc": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "share": 0.012581
+   },
+   {
+    "rank": 6,
+    "address": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "address_lc": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "share": 0.012269
+   },
+   {
+    "rank": 7,
+    "address": "0x77fb357f55bef5a70d30663955f8c9f35794df0e",
+    "address_lc": "0x77fb357f55bef5a70d30663955f8c9f35794df0e",
+    "share": 0.011112
+   },
+   {
+    "rank": 8,
+    "address": "0x8fa129f87b8a11ee1ca35abd46674f8b66984d4a",
+    "address_lc": "0x8fa129f87b8a11ee1ca35abd46674f8b66984d4a",
+    "share": 0.01007
+   },
+   {
+    "rank": 9,
+    "address": "0x5dc61282cdcf58a27f7a5c9612aea3d2330964be",
+    "address_lc": "0x5dc61282cdcf58a27f7a5c9612aea3d2330964be",
+    "share": 0.009865
+   },
+   {
+    "rank": 10,
+    "address": "0x88a1493366d48225fc3cefbdae9ebb23e323ade3",
+    "address_lc": "0x88a1493366d48225fc3cefbdae9ebb23e323ade3",
+    "share": 0.007092
+   }
+  ]
+ },
+ "RPL": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x57757e3d981446d585af0d9ae4d7df6d64647806",
+    "address_lc": "0x57757e3d981446d585af0d9ae4d7df6d64647806",
+    "share": 0.058449
+   },
+   {
+    "rank": 2,
+    "address": "0xd33526068d116ce69f19a9ee46f0bd304f21a51f",
+    "address_lc": "0xd33526068d116ce69f19a9ee46f0bd304f21a51f",
+    "share": 0.043516
+   },
+   {
+    "rank": 3,
+    "address": "0x6cebc3509489af12904f92478cfca3ebb5f15a40",
+    "address_lc": "0x6cebc3509489af12904f92478cfca3ebb5f15a40",
+    "share": 0.039771
+   },
+   {
+    "rank": 4,
+    "address": "0x07a98956df1b3a555f8f8408e280d6342451daaa",
+    "address_lc": "0x07a98956df1b3a555f8f8408e280d6342451daaa",
+    "share": 0.024725
+   },
+   {
+    "rank": 5,
+    "address": "0xfce77eb807bc9d293899d20ecae2e3b473b24a96",
+    "address_lc": "0xfce77eb807bc9d293899d20ecae2e3b473b24a96",
+    "share": 0.024656
+   },
+   {
+    "rank": 6,
+    "address": "0xd2a4848a6644749e652c1d9398b5aa317f57395b",
+    "address_lc": "0xd2a4848a6644749e652c1d9398b5aa317f57395b",
+    "share": 0.021235
+   },
+   {
+    "rank": 7,
+    "address": "0x296c4a564bdda1138488f918326a759bb0ea6f64",
+    "address_lc": "0x296c4a564bdda1138488f918326a759bb0ea6f64",
+    "share": 0.016724
+   },
+   {
+    "rank": 8,
+    "address": "0xb76cf92076adbf1d9c39294fa8e7a67579fde357",
+    "address_lc": "0xb76cf92076adbf1d9c39294fa8e7a67579fde357",
+    "share": 0.014923
+   },
+   {
+    "rank": 9,
+    "address": "0x32d47da20c59cfb2af20c5cdbb0609ce0a107815",
+    "address_lc": "0x32d47da20c59cfb2af20c5cdbb0609ce0a107815",
+    "share": 0.012205
+   },
+   {
+    "rank": 10,
+    "address": "0x91b4556d4ccaaae59e37c4a57ddef8903f644621",
+    "address_lc": "0x91b4556d4ccaaae59e37c4a57ddef8903f644621",
+    "share": 0.011124
+   }
+  ]
+ },
+ "JUP": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "27b4PRN7K37rpTywq65t29rjuNfQkYpxZUjkbtHc5VvZ",
+    "address_lc": "27b4prn7k37rptywq65t29rjunfqkypxzujkbthc5vvz",
+    "share": 0.194503
+   },
+   {
+    "rank": 2,
+    "address": "43DbAvKxhXh1oSxkJSqGosNw3HpBnmsWiak6tB5wpecN",
+    "address_lc": "43dbavkxhxh1osxkjsqgosnw3hpbnmswiak6tb5wpecn",
+    "share": 0.074692
+   },
+   {
+    "rank": 3,
+    "address": "Gem2VAypSg7Ai7vjDKPTtqFahpoQWkfgVkyzx3rPoTka",
+    "address_lc": "gem2vaypsg7ai7vjdkpttqfahpoqwkfgvkyzx3rpotka",
+    "share": 0.043436
+   },
+   {
+    "rank": 4,
+    "address": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+    "address_lc": "7s1da8dduubfqgra5bjbjpnvl5e9mgzcumk1qkh4or2z",
+    "share": 0.037774
+   },
+   {
+    "rank": 5,
+    "address": "6QqVvibpcQpju2QCqR7pdD4dzFKdAEDrCFAFCscFmCy6",
+    "address_lc": "6qqvvibpcqpju2qcqr7pdd4dzfkdaedrcfafcscfmcy6",
+    "share": 0.026475
+   },
+   {
+    "rank": 6,
+    "address": "2h56LbCJDC9PAjYJWSVmXP4VBhrwzaD9nMUqiz9TTgBD",
+    "address_lc": "2h56lbcjdc9pajyjwsvmxp4vbhrwzad9nmuqiz9ttgbd",
+    "share": 0.021834
+   },
+   {
+    "rank": 7,
+    "address": "7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh",
+    "address_lc": "7twnq4weycwqwbcwkeex2q9xqvtthpgkb7adnvueuvuh",
+    "share": 0.019331
+   },
+   {
+    "rank": 8,
+    "address": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+    "address_lc": "c68a6rcglipskbpytacscjhg8tftwycob4jjcrxfdqyo",
+    "share": 0.017299
+   },
+   {
+    "rank": 9,
+    "address": "8wM44Ryv9DFCSfkgUnPEPgnsc53arT4cnmXL6LnnC4UW",
+    "address_lc": "8wm44ryv9dfcsfkgunpepgnsc53art4cnmxl6lnnc4uw",
+    "share": 0.014681
+   },
+   {
+    "rank": 10,
+    "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+    "address_lc": "astyfsima4lladdgofgkgqokowg1lzfdr9faqrg7iajz",
+    "share": 0.014272
+   }
+  ]
+ },
+ "MPL_SYRUP": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xca31c9ef59a6ab45343f60968148c0ed07c39c59",
+    "address_lc": "0xca31c9ef59a6ab45343f60968148c0ed07c39c59",
+    "share": 0.069535
+   },
+   {
+    "rank": 2,
+    "address": "0x517ce9b6d1fcffd29805c3e19b295247fcd94aef",
+    "address_lc": "0x517ce9b6d1fcffd29805c3e19b295247fcd94aef",
+    "share": 0.051254
+   },
+   {
+    "rank": 3,
+    "address": "0x58be00490d6a5d298d61f24226d2397983ee39a1",
+    "address_lc": "0x58be00490d6a5d298d61f24226d2397983ee39a1",
+    "share": 0.043707
+   },
+   {
+    "rank": 4,
+    "address": "0xfd4587cc7eed80ff09c483d3d85704859f20311b",
+    "address_lc": "0xfd4587cc7eed80ff09c483d3d85704859f20311b",
+    "share": 0.043207
+   },
+   {
+    "rank": 5,
+    "address": "0x92915365e5fefbb85eee632dbc2e22da6037d706",
+    "address_lc": "0x92915365e5fefbb85eee632dbc2e22da6037d706",
+    "share": 0.028276
+   },
+   {
+    "rank": 6,
+    "address": "0x13a682e0def0ff00b901b13458f3b2d9eb96f4b1",
+    "address_lc": "0x13a682e0def0ff00b901b13458f3b2d9eb96f4b1",
+    "share": 0.021904
+   },
+   {
+    "rank": 7,
+    "address": "0x310f087d117330cabe5b82e873ec5950071ebb03",
+    "address_lc": "0x310f087d117330cabe5b82e873ec5950071ebb03",
+    "share": 0.021518
+   },
+   {
+    "rank": 8,
+    "address": "0x2711a1ef82587ee46b0a42f76eac3b70161daf30",
+    "address_lc": "0x2711a1ef82587ee46b0a42f76eac3b70161daf30",
+    "share": 0.019402
+   },
+   {
+    "rank": 9,
+    "address": "0x7700a1a2025dfa4520c811a492e976ae8f147772",
+    "address_lc": "0x7700a1a2025dfa4520c811a492e976ae8f147772",
+    "share": 0.018064
+   },
+   {
+    "rank": 10,
+    "address": "0x89860fbeab8d59858c57c920f39f5d7ba48d0722",
+    "address_lc": "0x89860fbeab8d59858c57c920f39f5d7ba48d0722",
+    "share": 0.01667
+   }
+  ]
+ },
+ "GMX": {
+  "chain": "arbitrum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x02984c3bb35f0e61cfc690f221a5ebcc5389f86b",
+    "address_lc": "0x02984c3bb35f0e61cfc690f221a5ebcc5389f86b",
+    "share": 0.066999
+   },
+   {
+    "rank": 2,
+    "address": "0x0755d33e45ed2b874c9ebf5b279023c8bd1e5e93",
+    "address_lc": "0x0755d33e45ed2b874c9ebf5b279023c8bd1e5e93",
+    "share": 0.027321
+   },
+   {
+    "rank": 3,
+    "address": "0x80a9ae39310abf666a87c743d6ebbd0e8c42158e",
+    "address_lc": "0x80a9ae39310abf666a87c743d6ebbd0e8c42158e",
+    "share": 0.026696
+   },
+   {
+    "rank": 4,
+    "address": "0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e",
+    "address_lc": "0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e",
+    "share": 0.014223
+   },
+   {
+    "rank": 5,
+    "address": "0xafee421482faea92292ed3ffe29371742542ad72",
+    "address_lc": "0xafee421482faea92292ed3ffe29371742542ad72",
+    "share": 0.013763
+   },
+   {
+    "rank": 6,
+    "address": "0x68863dde14303bced249ca8ec6af85d4694dea6a",
+    "address_lc": "0x68863dde14303bced249ca8ec6af85d4694dea6a",
+    "share": 0.013673
+   },
+   {
+    "rank": 7,
+    "address": "0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2",
+    "address_lc": "0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2",
+    "share": 0.012359
+   },
+   {
+    "rank": 8,
+    "address": "0x199070ddfd1cfb69173aa2f7e20906f26b363004",
+    "address_lc": "0x199070ddfd1cfb69173aa2f7e20906f26b363004",
+    "share": 0.009468
+   },
+   {
+    "rank": 9,
+    "address": "0x25681ab599b4e2ceea31f8b498052c53fc2d74db",
+    "address_lc": "0x25681ab599b4e2ceea31f8b498052c53fc2d74db",
+    "share": 0.006851
+   },
+   {
+    "rank": 10,
+    "address": "0xbd48149673724f9caee647bb4e9d9ddaf896efeb",
+    "address_lc": "0xbd48149673724f9caee647bb4e9d9ddaf896efeb",
+    "share": 0.00645
+   }
+  ]
+ },
+ "DRIFT": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "FH9iLV5Z8EUEDMnW6CzUPkpDhWJCsHqJ5N4W23njNsUo",
+    "address_lc": "fh9ilv5z8euedmnw6czupkpdhwjcshqj5n4w23njnsuo",
+    "share": 0.140889
+   },
+   {
+    "rank": 2,
+    "address": "Gu6nuuGLPora979uTwwVCyKhiMRnGfzKAPwqcrBfaiJq",
+    "address_lc": "gu6nuuglpora979utwwvcykhimrngfzkapwqcrbfaijq",
+    "share": 0.054908
+   },
+   {
+    "rank": 3,
+    "address": "7LCwgH3TtA7v9jvPoU3zHhRUCgd2XNCdAwQSjBPDzFQ6",
+    "address_lc": "7lcwgh3tta7v9jvpou3zhhrucgd2xncdawqsjbpdzfq6",
+    "share": 0.040047
+   },
+   {
+    "rank": 4,
+    "address": "EPpctwZpP7LE61Xkpbb9ixfxMFD8fFAxewe7dTk6dg1M",
+    "address_lc": "eppctwzpp7le61xkpbb9ixfxmfd8ffaxewe7dtk6dg1m",
+    "share": 0.026699
+   },
+   {
+    "rank": 5,
+    "address": "DemTRm4sQbLxMywg9XST9TMYRmXfwNH6CCfiU4xb47kR",
+    "address_lc": "demtrm4sqblxmywg9xst9tmyrmxfwnh6ccfiu4xb47kr",
+    "share": 0.02237
+   },
+   {
+    "rank": 6,
+    "address": "3VYKR2SWa8PmDBkwHWTrwznEsqSajhRyDDeNyY8rb2mK",
+    "address_lc": "3vykr2swa8pmdbkwhwtrwznesqsajhryddenyy8rb2mk",
+    "share": 0.015076
+   },
+   {
+    "rank": 7,
+    "address": "HPjkU5hUR1diprB6Uihqxtr5hkRaJXFEetGjkVyEmoUR",
+    "address_lc": "hpjku5hur1diprb6uihqxtr5hkrajxfeetgjkvyemour",
+    "share": 0.01449
+   },
+   {
+    "rank": 8,
+    "address": "87HMEidQ35cidTRwgRaJ9DWMvopMfemP48PEmo2hAgjy",
+    "address_lc": "87hmeidq35cidtrwgraj9dwmvopmfemp48pemo2hagjy",
+    "share": 0.011699
+   },
+   {
+    "rank": 9,
+    "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+    "address_lc": "5lzkatrlwhycqj2yuvbjjgsdzzbk6yfl4pfqrjmtbot2",
+    "share": 0.011044
+   },
+   {
+    "rank": 10,
+    "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+    "address_lc": "8mm46csqxiyaputdup2cxhg41he3bfyntembdwzrmzqh",
+    "share": 0.008869
+   }
+  ]
+ },
+ "ETHFI": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x95bf94e06d5be1000c23cd99968eff414aa4995e",
+    "address_lc": "0x95bf94e06d5be1000c23cd99968eff414aa4995e",
+    "share": 0.111539
+   },
+   {
+    "rank": 2,
+    "address": "0xf10873355b209b401262cadc753d654e2b7e41ac",
+    "address_lc": "0xf10873355b209b401262cadc753d654e2b7e41ac",
+    "share": 0.044924
+   },
+   {
+    "rank": 3,
+    "address": "0xf619ab1f33cdc8a0123e093de92ea4d7399de39f",
+    "address_lc": "0xf619ab1f33cdc8a0123e093de92ea4d7399de39f",
+    "share": 0.039408
+   },
+   {
+    "rank": 4,
+    "address": "0x6630ff17cf5357c5f9c3d2a21ac98d2ff1070739",
+    "address_lc": "0x6630ff17cf5357c5f9c3d2a21ac98d2ff1070739",
+    "share": 0.031868
+   },
+   {
+    "rank": 5,
+    "address": "0x7a93190d436436bbb79fa2c0d24ca93afb59b3fb",
+    "address_lc": "0x7a93190d436436bbb79fa2c0d24ca93afb59b3fb",
+    "share": 0.030352
+   },
+   {
+    "rank": 6,
+    "address": "0x43684d03d81d3a4c70da68febdd61029d426f042",
+    "address_lc": "0x43684d03d81d3a4c70da68febdd61029d426f042",
+    "share": 0.019326
+   },
+   {
+    "rank": 7,
+    "address": "0x7d4bbe471369a066186c18baf33622796a08d5cd",
+    "address_lc": "0x7d4bbe471369a066186c18baf33622796a08d5cd",
+    "share": 0.017446
+   },
+   {
+    "rank": 8,
+    "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "address_lc": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "share": 0.016819
+   },
+   {
+    "rank": 9,
+    "address": "0x56bbb2d4b4d95450f3eae3b9b6de6a3f45d98d70",
+    "address_lc": "0x56bbb2d4b4d95450f3eae3b9b6de6a3f45d98d70",
+    "share": 0.014975
+   },
+   {
+    "rank": 10,
+    "address": "0x1331669cdfd56a5a865fdb38d825451fde8f13bf",
+    "address_lc": "0x1331669cdfd56a5a865fdb38d825451fde8f13bf",
+    "share": 0.01405
+   }
+  ]
+ },
+ "GRT": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x823fd1a44a37a4be35c3b0c8b11463cc4f27396c",
+    "address_lc": "0x823fd1a44a37a4be35c3b0c8b11463cc4f27396c",
+    "share": 0.079446
+   },
+   {
+    "rank": 2,
+    "address": "0xfcb40a54be132a26c87f6bb7d2f74354ce13d96d",
+    "address_lc": "0xfcb40a54be132a26c87f6bb7d2f74354ce13d96d",
+    "share": 0.055025
+   },
+   {
+    "rank": 3,
+    "address": "0x5b0a3c6d28b9b11770b0b838f3ff48062805b4e1",
+    "address_lc": "0x5b0a3c6d28b9b11770b0b838f3ff48062805b4e1",
+    "share": 0.023855
+   },
+   {
+    "rank": 4,
+    "address": "0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597",
+    "address_lc": "0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597",
+    "share": 0.01567
+   },
+   {
+    "rank": 5,
+    "address": "0x5eb529e12eb1de6b3c467d54b2861d3b56f63911",
+    "address_lc": "0x5eb529e12eb1de6b3c467d54b2861d3b56f63911",
+    "share": 0.01561
+   },
+   {
+    "rank": 6,
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "address_lc": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "share": 0.012854
+   },
+   {
+    "rank": 7,
+    "address": "0xeb8ee0503e0301720eb7616e0897f8ecdf751fc3",
+    "address_lc": "0xeb8ee0503e0301720eb7616e0897f8ecdf751fc3",
+    "share": 0.011763
+   },
+   {
+    "rank": 8,
+    "address": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "address_lc": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "share": 0.010099
+   },
+   {
+    "rank": 9,
+    "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "address_lc": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "share": 0.009839
+   },
+   {
+    "rank": 10,
+    "address": "0x8e1aff4fe98129edbe423aca6a3af51b4de2af09",
+    "address_lc": "0x8e1aff4fe98129edbe423aca6a3af51b4de2af09",
+    "share": 0.009544
+   }
+  ]
+ },
+ "OP": {
+  "chain": "optimism",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x641f7b308fc59e0fadaa859ce37d08ae4c35ec6e",
+    "address_lc": "0x641f7b308fc59e0fadaa859ce37d08ae4c35ec6e",
+    "share": 0.02561
+   },
+   {
+    "rank": 2,
+    "address": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "address_lc": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "share": 0.014139
+   },
+   {
+    "rank": 3,
+    "address": "0xae56aaa3f1d511225d740eda7eb70907626556be",
+    "address_lc": "0xae56aaa3f1d511225d740eda7eb70907626556be",
+    "share": 0.010418
+   },
+   {
+    "rank": 4,
+    "address": "0x7336abff06bbaf79b4093df1e16c1aa87fb27efd",
+    "address_lc": "0x7336abff06bbaf79b4093df1e16c1aa87fb27efd",
+    "share": 0.009371
+   },
+   {
+    "rank": 5,
+    "address": "0xe94ffce5c34b14a434363002b5ef9843d664887b",
+    "address_lc": "0xe94ffce5c34b14a434363002b5ef9843d664887b",
+    "share": 0.007546
+   },
+   {
+    "rank": 6,
+    "address": "0xb7206fa64287f6dc5070de25bbf9b85bf40df1ed",
+    "address_lc": "0xb7206fa64287f6dc5070de25bbf9b85bf40df1ed",
+    "share": 0.006638
+   },
+   {
+    "rank": 7,
+    "address": "0xb18fe4b95b7d633c83689b5ed3ac4ad0a857a2a7",
+    "address_lc": "0xb18fe4b95b7d633c83689b5ed3ac4ad0a857a2a7",
+    "share": 0.005199
+   },
+   {
+    "rank": 8,
+    "address": "0x85782468bd25d2a7d92581b3448cd11617d72b52",
+    "address_lc": "0x85782468bd25d2a7d92581b3448cd11617d72b52",
+    "share": 0.004919
+   },
+   {
+    "rank": 9,
+    "address": "0x0a5952a41da1b16d61532a9e019b79855f5afce2",
+    "address_lc": "0x0a5952a41da1b16d61532a9e019b79855f5afce2",
+    "share": 0.004918
+   },
+   {
+    "rank": 10,
+    "address": "0xb76a33b0fe54400a96d22839fafedc27eb45d429",
+    "address_lc": "0xb76a33b0fe54400a96d22839fafedc27eb45d429",
+    "share": 0.004918
+   }
+  ]
+ },
+ "POL": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x29e7df7b6a1b2b07b731457f499e1696c60e2c4e",
+    "address_lc": "0x29e7df7b6a1b2b07b731457f499e1696c60e2c4e",
+    "share": 0.040427
+   },
+   {
+    "rank": 2,
+    "address": "0x57f1ad8d95ebd0ab51e7ab131d2fab89a15de3b1",
+    "address_lc": "0x57f1ad8d95ebd0ab51e7ab131d2fab89a15de3b1",
+    "share": 0.021712
+   },
+   {
+    "rank": 3,
+    "address": "0x4c569c1e541a19132ac893748e0ad54c7c989ff4",
+    "address_lc": "0x4c569c1e541a19132ac893748e0ad54c7c989ff4",
+    "share": 0.016313
+   },
+   {
+    "rank": 4,
+    "address": "0x8be2b97333ebcc6af2441e4018961ff39d63e883",
+    "address_lc": "0x8be2b97333ebcc6af2441e4018961ff39d63e883",
+    "share": 0.013675
+   },
+   {
+    "rank": 5,
+    "address": "0x0ba98b0067778ed0da2093c1f1600d4d17ccbf01",
+    "address_lc": "0x0ba98b0067778ed0da2093c1f1600d4d17ccbf01",
+    "share": 0.013242
+   },
+   {
+    "rank": 6,
+    "address": "0x84faec6529a98b72cad63254211f3f0399f38367",
+    "address_lc": "0x84faec6529a98b72cad63254211f3f0399f38367",
+    "share": 0.013242
+   },
+   {
+    "rank": 7,
+    "address": "0x796ce52e96000a76e926c35d8e6284a544456168",
+    "address_lc": "0x796ce52e96000a76e926c35d8e6284a544456168",
+    "share": 0.013226
+   },
+   {
+    "rank": 8,
+    "address": "0x58a3cabac2d8a807b73a44d26526b1ea7b7b6938",
+    "address_lc": "0x58a3cabac2d8a807b73a44d26526b1ea7b7b6938",
+    "share": 0.013185
+   },
+   {
+    "rank": 9,
+    "address": "0xa5946a2c7a6c4232224b89a696ae51879bf5aed1",
+    "address_lc": "0xa5946a2c7a6c4232224b89a696ae51879bf5aed1",
+    "share": 0.012314
+   },
+   {
+    "rank": 10,
+    "address": "0x3f43b56004cb9a8927f11b78949a2624a455868b",
+    "address_lc": "0x3f43b56004cb9a8927f11b78949a2624a455868b",
+    "share": 0.008596
+   }
+  ]
+ },
+ "ARB": {
+  "chain": "arbitrum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xf7f468b184a48f6ca37eeffe12733ee1c16b6e26",
+    "address_lc": "0xf7f468b184a48f6ca37eeffe12733ee1c16b6e26",
+    "share": 0.052528
+   },
+   {
+    "rank": 2,
+    "address": "0x07455344be8db742627ae4514c1071e43a154ddb",
+    "address_lc": "0x07455344be8db742627ae4514c1071e43a154ddb",
+    "share": 0.013289
+   },
+   {
+    "rank": 3,
+    "address": "0x1190cea3e2c8727218768bfb990c3228aa06dfa9",
+    "address_lc": "0x1190cea3e2c8727218768bfb990c3228aa06dfa9",
+    "share": 0.012822
+   },
+   {
+    "rank": 4,
+    "address": "0xee5b5b923ffce93a870b3104b7ca09c3db80047a",
+    "address_lc": "0xee5b5b923ffce93a870b3104b7ca09c3db80047a",
+    "share": 0.009993
+   },
+   {
+    "rank": 5,
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "address_lc": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "share": 0.009494
+   },
+   {
+    "rank": 6,
+    "address": "0x361ad597f6a0cf86f8ab14234ca17a5739a67458",
+    "address_lc": "0x361ad597f6a0cf86f8ab14234ca17a5739a67458",
+    "share": 0.008105
+   },
+   {
+    "rank": 7,
+    "address": "0x43684d03d81d3a4c70da68febdd61029d426f042",
+    "address_lc": "0x43684d03d81d3a4c70da68febdd61029d426f042",
+    "share": 0.007829
+   },
+   {
+    "rank": 8,
+    "address": "0xf5acf47847963bd0ae2b8e080729bf508b2482df",
+    "address_lc": "0xf5acf47847963bd0ae2b8e080729bf508b2482df",
+    "share": 0.007755
+   },
+   {
+    "rank": 9,
+    "address": "0x3964128e13e05d4a672b4b45a1a96a2d56c27efb",
+    "address_lc": "0x3964128e13e05d4a672b4b45a1a96a2d56c27efb",
+    "share": 0.00771
+   },
+   {
+    "rank": 10,
+    "address": "0x73af3bcf944a6559933396c1577b257e2054d935",
+    "address_lc": "0x73af3bcf944a6559933396c1577b257e2054d935",
+    "share": 0.00745
+   }
+  ]
+ },
+ "ENS": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x2cd5bb500066b913d320fc9ac52a72422915c422",
+    "address_lc": "0x2cd5bb500066b913d320fc9ac52a72422915c422",
+    "share": 0.035151
+   },
+   {
+    "rank": 2,
+    "address": "0x498697892fd0e5e3a16bd40d7bf2644f33cbbbd4",
+    "address_lc": "0x498697892fd0e5e3a16bd40d7bf2644f33cbbbd4",
+    "share": 0.025324
+   },
+   {
+    "rank": 3,
+    "address": "0xa0b49ee43b256ee817d0e466fb88a3a25bf76277",
+    "address_lc": "0xa0b49ee43b256ee817d0e466fb88a3a25bf76277",
+    "share": 0.007904
+   },
+   {
+    "rank": 4,
+    "address": "0x073f564419b625a45d8aea3bb0de4d5647113ad7",
+    "address_lc": "0x073f564419b625a45d8aea3bb0de4d5647113ad7",
+    "share": 0.007455
+   },
+   {
+    "rank": 5,
+    "address": "0x6a496c6076a1f3ca554b6f4eef81e4885a433cfe",
+    "address_lc": "0x6a496c6076a1f3ca554b6f4eef81e4885a433cfe",
+    "share": 0.004384
+   },
+   {
+    "rank": 6,
+    "address": "0x187c9fbf5bd0f266883c03f320260c407c7b4100",
+    "address_lc": "0x187c9fbf5bd0f266883c03f320260c407c7b4100",
+    "share": 0.003638
+   },
+   {
+    "rank": 7,
+    "address": "0x801960b082d48f822395b03df7b1908899ab03aa",
+    "address_lc": "0x801960b082d48f822395b03df7b1908899ab03aa",
+    "share": 0.003254
+   },
+   {
+    "rank": 8,
+    "address": "0x9c80d042db8cdd2586f00fa8ed47c387dfd05026",
+    "address_lc": "0x9c80d042db8cdd2586f00fa8ed47c387dfd05026",
+    "share": 0.002662
+   },
+   {
+    "rank": 9,
+    "address": "0x4e5cb586c2ee0d0f42891b705061d2ea42b236dc",
+    "address_lc": "0x4e5cb586c2ee0d0f42891b705061d2ea42b236dc",
+    "share": 0.002374
+   },
+   {
+    "rank": 10,
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "address_lc": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "share": 0.002166
+   }
+  ]
+ },
+ "DIMO": {
+  "chain": "polygon",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xccfa7c808f5b77822e4935a7230f46681c99f4bc",
+    "address_lc": "0xccfa7c808f5b77822e4935a7230f46681c99f4bc",
+    "share": 0.024067
+   },
+   {
+    "rank": 2,
+    "address": "0x354698f0e93c6830196e81250074733d8a792ff2",
+    "address_lc": "0x354698f0e93c6830196e81250074733d8a792ff2",
+    "share": 0.022508
+   },
+   {
+    "rank": 3,
+    "address": "0x3ace81a93ff91f7ce42da8d1c18d2de6b470070c",
+    "address_lc": "0x3ace81a93ff91f7ce42da8d1c18d2de6b470070c",
+    "share": 0.015849
+   },
+   {
+    "rank": 4,
+    "address": "0x62b98e019e0d3e4a1ad8c786202e09017bd995e1",
+    "address_lc": "0x62b98e019e0d3e4a1ad8c786202e09017bd995e1",
+    "share": 0.015743
+   },
+   {
+    "rank": 5,
+    "address": "0x0daf060795df02c59fb15f20b41e1bf24d6b31d8",
+    "address_lc": "0x0daf060795df02c59fb15f20b41e1bf24d6b31d8",
+    "share": 0.014761
+   },
+   {
+    "rank": 6,
+    "address": "0x7b3d491d7ad5d14166369b8fe53c51cb16d0a296",
+    "address_lc": "0x7b3d491d7ad5d14166369b8fe53c51cb16d0a296",
+    "share": 0.014749
+   },
+   {
+    "rank": 7,
+    "address": "0xc20d25fb4cafd5b7d3cd99ec4df6349f6aa61b58",
+    "address_lc": "0xc20d25fb4cafd5b7d3cd99ec4df6349f6aa61b58",
+    "share": 0.013727
+   },
+   {
+    "rank": 8,
+    "address": "0xced3c922200559128930180d3f0bffd4d9f4f123",
+    "address_lc": "0xced3c922200559128930180d3f0bffd4d9f4f123",
+    "share": 0.013685
+   },
+   {
+    "rank": 9,
+    "address": "0x597a1df671a3b32801e7687ef469541a91562ca4",
+    "address_lc": "0x597a1df671a3b32801e7687ef469541a91562ca4",
+    "share": 0.013197
+   },
+   {
+    "rank": 10,
+    "address": "0xe2c966cd017f03ac7f735cd19ad684e332d0c5a0",
+    "address_lc": "0xe2c966cd017f03ac7f735cd19ad684e332d0c5a0",
+    "share": 0.013197
+   }
+  ]
+ },
+ "IOTX": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x4761571eeec2fee2fb9f8d5c08ef7c7606a9f659",
+    "address_lc": "0x4761571eeec2fee2fb9f8d5c08ef7c7606a9f659",
+    "share": 0.015319
+   },
+   {
+    "rank": 2,
+    "address": "0x58bc01f516c8d6986bc0fd67944f2718c2a94348",
+    "address_lc": "0x58bc01f516c8d6986bc0fd67944f2718c2a94348",
+    "share": 0.015015
+   },
+   {
+    "rank": 3,
+    "address": "0xcbe6523edbfa82f376ee842794128dbf9141510a",
+    "address_lc": "0xcbe6523edbfa82f376ee842794128dbf9141510a",
+    "share": 0.014377
+   },
+   {
+    "rank": 4,
+    "address": "0xc579eabd327a28ee646bf937ac15a9321d14bb87",
+    "address_lc": "0xc579eabd327a28ee646bf937ac15a9321d14bb87",
+    "share": 0.013786
+   },
+   {
+    "rank": 5,
+    "address": "0x450e91d6c8c356c9b47894e623b4226edbc81ebd",
+    "address_lc": "0x450e91d6c8c356c9b47894e623b4226edbc81ebd",
+    "share": 0.012019
+   },
+   {
+    "rank": 6,
+    "address": "0xc59b962be5118a2680cda9d730e5a23a257f4ea0",
+    "address_lc": "0xc59b962be5118a2680cda9d730e5a23a257f4ea0",
+    "share": 0.010228
+   },
+   {
+    "rank": 7,
+    "address": "0x460829c2e8d0b79fbe75f9be3e2a4da39637963e",
+    "address_lc": "0x460829c2e8d0b79fbe75f9be3e2a4da39637963e",
+    "share": 0.010059
+   },
+   {
+    "rank": 8,
+    "address": "0x2444919721b0b1abef3a21adeb504179ee67888f",
+    "address_lc": "0x2444919721b0b1abef3a21adeb504179ee67888f",
+    "share": 0.005022
+   },
+   {
+    "rank": 9,
+    "address": "0x77fb357f55bef5a70d30663955f8c9f35794df0e",
+    "address_lc": "0x77fb357f55bef5a70d30663955f8c9f35794df0e",
+    "share": 0.00288
+   },
+   {
+    "rank": 10,
+    "address": "0xfe7bcb3676aabe9a6b39cb23f3a5fa41eed7ad1b",
+    "address_lc": "0xfe7bcb3676aabe9a6b39cb23f3a5fa41eed7ad1b",
+    "share": 0.002092
+   }
+  ]
+ },
+ "WXM": {
+  "chain": "arbitrum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x2cdba04dcfd3999ef3fda00121b23c693af4041b",
+    "address_lc": "0x2cdba04dcfd3999ef3fda00121b23c693af4041b",
+    "share": 0.088053
+   },
+   {
+    "rank": 2,
+    "address": "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
+    "address_lc": "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
+    "share": 0.024827
+   },
+   {
+    "rank": 3,
+    "address": "0xf20168e846498969f0621d696e97ff13b5b926f3",
+    "address_lc": "0xf20168e846498969f0621d696e97ff13b5b926f3",
+    "share": 0.014125
+   },
+   {
+    "rank": 4,
+    "address": "0x28cc933fecf280e720299b1258e8680355d8841f",
+    "address_lc": "0x28cc933fecf280e720299b1258e8680355d8841f",
+    "share": 0.013288
+   },
+   {
+    "rank": 5,
+    "address": "0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260",
+    "address_lc": "0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260",
+    "share": 0.013215
+   },
+   {
+    "rank": 6,
+    "address": "0xb99401dbbc3576738b6cd28f62ac35e4ca2bd03d",
+    "address_lc": "0xb99401dbbc3576738b6cd28f62ac35e4ca2bd03d",
+    "share": 0.011954
+   },
+   {
+    "rank": 7,
+    "address": "0x00000000d64bbf35def9cdf1ea28d861957588dd",
+    "address_lc": "0x00000000d64bbf35def9cdf1ea28d861957588dd",
+    "share": 0.010464
+   },
+   {
+    "rank": 8,
+    "address": "0x0b2402144bb366a632d14b83f244d2e0e21bd39c",
+    "address_lc": "0x0b2402144bb366a632d14b83f244d2e0e21bd39c",
+    "share": 0.01046
+   },
+   {
+    "rank": 9,
+    "address": "0xff1ad9961b9d28db7981cfb19e91ac0cf84ed326",
+    "address_lc": "0xff1ad9961b9d28db7981cfb19e91ac0cf84ed326",
+    "share": 0.005286
+   },
+   {
+    "rank": 10,
+    "address": "0xe09471ab9b3f8c45d7ebada73ec51f22776afca3",
+    "address_lc": "0xe09471ab9b3f8c45d7ebada73ec51f22776afca3",
+    "share": 0.00448
+   }
+  ]
+ },
+ "ANYONE": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xc593fe9193b745447e86b45ea0bf62565ee030cc",
+    "address_lc": "0xc593fe9193b745447e86b45ea0bf62565ee030cc",
+    "share": 0.032438
+   },
+   {
+    "rank": 2,
+    "address": "0x1ef7a8dc436253b28167153aec7a1562bf73551c",
+    "address_lc": "0x1ef7a8dc436253b28167153aec7a1562bf73551c",
+    "share": 0.029308
+   },
+   {
+    "rank": 3,
+    "address": "0x50e6d8485b448de44cd9d9c979d5d8ed36bd82cb",
+    "address_lc": "0x50e6d8485b448de44cd9d9c979d5d8ed36bd82cb",
+    "share": 0.029308
+   },
+   {
+    "rank": 4,
+    "address": "0xd19eab591fc1840c237488a180ced4aad9faecf8",
+    "address_lc": "0xd19eab591fc1840c237488a180ced4aad9faecf8",
+    "share": 0.029308
+   },
+   {
+    "rank": 5,
+    "address": "0xeed86b90448c371eab47b7f16e294297c27e4f51",
+    "address_lc": "0xeed86b90448c371eab47b7f16e294297c27e4f51",
+    "share": 0.018247
+   },
+   {
+    "rank": 6,
+    "address": "0xe8fdfb7b89519ed7c4999a912abf315e6aa52b6f",
+    "address_lc": "0xe8fdfb7b89519ed7c4999a912abf315e6aa52b6f",
+    "share": 0.01524
+   },
+   {
+    "rank": 7,
+    "address": "0x446b86a33e2a438f569b15855189e3da28d027ba",
+    "address_lc": "0x446b86a33e2a438f569b15855189e3da28d027ba",
+    "share": 0.015002
+   },
+   {
+    "rank": 8,
+    "address": "0x9da8bfa73922ba179b7ce8dc9d5d1d4444e48878",
+    "address_lc": "0x9da8bfa73922ba179b7ce8dc9d5d1d4444e48878",
+    "share": 0.014297
+   },
+   {
+    "rank": 9,
+    "address": "0xaa10db8804d076601999c7cd769e02e44a99d5b2",
+    "address_lc": "0xaa10db8804d076601999c7cd769e02e44a99d5b2",
+    "share": 0.012943
+   },
+   {
+    "rank": 10,
+    "address": "0xaa469fc353c0ccffc8fc192e021afbc4e5303892",
+    "address_lc": "0xaa469fc353c0ccffc8fc192e021afbc4e5303892",
+    "share": 0.012739
+   }
+  ]
+ },
+ "GRASS": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+    "address_lc": "5q544fkrfoe6tsebd7s8emxgtjyakttvhaw5q5pge4j1",
+    "share": 0.160145
+   },
+   {
+    "rank": 2,
+    "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+    "address_lc": "u6pj8dtqupfnfmwhbgfulq4u4egjdiyykjvesynxq2w",
+    "share": 0.066047
+   },
+   {
+    "rank": 3,
+    "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+    "address_lc": "5pahqiydlbd6svdjzbqdxuaefyddf5exnpqfcscnprj5",
+    "share": 0.031631
+   },
+   {
+    "rank": 4,
+    "address": "4gXs8oc2yEwDTPkDyo6V8ZixheTCZvu8JicrEuDat8tH",
+    "address_lc": "4gxs8oc2yewdtpkdyo6v8zixhetczvu8jicreudat8th",
+    "share": 0.026543
+   },
+   {
+    "rank": 5,
+    "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+    "address_lc": "astyfsima4lladdgofgkgqokowg1lzfdr9faqrg7iajz",
+    "share": 0.022353
+   },
+   {
+    "rank": 6,
+    "address": "CafeQ2wWakoKs8wKLhk8KFHvsddSQUt5jynwpceA9Zad",
+    "address_lc": "cafeq2wwakoks8wklhk8kfhvsddsqut5jynwpcea9zad",
+    "share": 0.019287
+   },
+   {
+    "rank": 7,
+    "address": "1hQP5Qdvi9L2ptueRAMWxBa8Ri65WciotvfgpG6XeZV",
+    "address_lc": "1hqp5qdvi9l2ptueramwxba8ri65wciotvfgpg6xezv",
+    "share": 0.01713
+   },
+   {
+    "rank": 8,
+    "address": "7RmkMNQerKaVioRnmqZsHM5Gm8F3gngQG8umLNoK97q4",
+    "address_lc": "7rmkmnqerkaviornmqzshm5gm8f3gngqg8umlnok97q4",
+    "share": 0.01353
+   },
+   {
+    "rank": 9,
+    "address": "D5jx4wmxuPz18hqmgpCMLGVq3uSksCafCp5xjVe1nw8p",
+    "address_lc": "d5jx4wmxupz18hqmgpcmlgvq3uskscafcp5xjve1nw8p",
+    "share": 0.012578
+   },
+   {
+    "rank": 10,
+    "address": "5oxVntYzjPobCN7GETBPFe8YdpabCZc8U64KH2HzMhZt",
+    "address_lc": "5oxvntyzjpobcn7getbpfe8ydpabczc8u64kh2hzmhzt",
+    "share": 0.012427
+   }
+  ]
+ },
+ "LPT": {
+  "chain": "arbitrum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xf82c1ff415f1fcf582554fdba790e27019c8e8c4",
+    "address_lc": "0xf82c1ff415f1fcf582554fdba790e27019c8e8c4",
+    "share": 0.01791
+   },
+   {
+    "rank": 2,
+    "address": "0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085",
+    "address_lc": "0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085",
+    "share": 0.003552
+   },
+   {
+    "rank": 3,
+    "address": "0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546",
+    "address_lc": "0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546",
+    "share": 0.00197
+   },
+   {
+    "rank": 4,
+    "address": "0x96daa0b8a5499ea9323421ed0cda06b345caab73",
+    "address_lc": "0x96daa0b8a5499ea9323421ed0cda06b345caab73",
+    "share": 0.001523
+   },
+   {
+    "rank": 5,
+    "address": "0x730363304acce48bd7aeb348462e074b0a7f3268",
+    "address_lc": "0x730363304acce48bd7aeb348462e074b0a7f3268",
+    "share": 0.001413
+   },
+   {
+    "rank": 6,
+    "address": "0x99c675e33d41c10f0fa1ebdd9c1b30b85c7711e2",
+    "address_lc": "0x99c675e33d41c10f0fa1ebdd9c1b30b85c7711e2",
+    "share": 0.001094
+   },
+   {
+    "rank": 7,
+    "address": "0x2d93af57d375cba66058f5593e786ebf2866d6c4",
+    "address_lc": "0x2d93af57d375cba66058f5593e786ebf2866d6c4",
+    "share": 0.00104
+   },
+   {
+    "rank": 8,
+    "address": "0x176f3dab24a159341c0509bb36b833e7fdd0a132",
+    "address_lc": "0x176f3dab24a159341c0509bb36b833e7fdd0a132",
+    "share": 0.000982
+   },
+   {
+    "rank": 9,
+    "address": "0x2be5a5ce6555162d67c16b35ece3160c6f509e0a",
+    "address_lc": "0x2be5a5ce6555162d67c16b35ece3160c6f509e0a",
+    "share": 0.00074
+   },
+   {
+    "rank": 10,
+    "address": "0x077031fd82feaba89ae214599c59fe265e6570c2",
+    "address_lc": "0x077031fd82feaba89ae214599c59fe265e6570c2",
+    "share": 0.000574
+   }
+  ]
+ },
+ "HNT": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+    "address_lc": "5lzkatrlwhycqj2yuvbjjgsdzzbk6yfl4pfqrjmtbot2",
+    "share": 0.124346
+   },
+   {
+    "rank": 2,
+    "address": "4UiT93tyCivCHetditvH15wqWxYrHcoPWzQiKDQYF7Uo",
+    "address_lc": "4uit93tycivchetditvh15wqwxyrhcopwzqikdqyf7uo",
+    "share": 0.087579
+   },
+   {
+    "rank": 3,
+    "address": "2AdZQmGikAMWahuJRb27PGABQyF6iyQ8aUUYyDDwRRG6",
+    "address_lc": "2adzqmgikamwahujrb27pgabqyf6iyq8auuyyddwrrg6",
+    "share": 0.064568
+   },
+   {
+    "rank": 4,
+    "address": "22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa",
+    "address_lc": "22wnk8pwywzv7bfkzgjekt9jggdtvu7xy6exerh7zkba",
+    "share": 0.051172
+   },
+   {
+    "rank": 5,
+    "address": "73zsmmqCXjvHHhNSib26Y8p3jYiH3UUuyKv71RJDnctW",
+    "address_lc": "73zsmmqcxjvhhhnsib26y8p3jyih3uuuykv71rjdnctw",
+    "share": 0.038608
+   },
+   {
+    "rank": 6,
+    "address": "53unSgGWqEWANcPYRF35B2Bgf8BkszUtcccKiXwGGLyr",
+    "address_lc": "53unsggwqewancpyrf35b2bgf8bkszutccckixwgglyr",
+    "share": 0.038192
+   },
+   {
+    "rank": 7,
+    "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+    "address_lc": "efe3j1pcsp1pauza86zw7989zjsfp2j7ginyuqo4ewqr",
+    "share": 0.032727
+   },
+   {
+    "rank": 8,
+    "address": "7SmkxiXnGVrenvHKUDgosMUxSaN35GH3ziocaxA7hkd2",
+    "address_lc": "7smkxixngvrenvhkudgosmuxsan35gh3ziocaxa7hkd2",
+    "share": 0.027527
+   },
+   {
+    "rank": 9,
+    "address": "8iQY3mJNW1Zq9d5BQXtH9HYPNJCvaHEek7Mtk1tTXmhc",
+    "address_lc": "8iqy3mjnw1zq9d5bqxth9hypnjcvaheek7mtk1ttxmhc",
+    "share": 0.020468
+   },
+   {
+    "rank": 10,
+    "address": "AjsyrYpgaH275DBSnvNWdGK33hVycSFuXN87FKnX6fVY",
+    "address_lc": "ajsyrypgah275dbsnvnwdgk33hvycsfuxn87fknx6fvy",
+    "share": 0.016842
+   }
+  ]
+ },
+ "GEOD": {
+  "chain": "polygon",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x3a6906e4239f9860c81035c54198df58d892653b",
+    "address_lc": "0x3a6906e4239f9860c81035c54198df58d892653b",
+    "share": 0.061633
+   },
+   {
+    "rank": 2,
+    "address": "0x47c8ebecfa390a59b0e127c9178e936a4ada907d",
+    "address_lc": "0x47c8ebecfa390a59b0e127c9178e936a4ada907d",
+    "share": 0.040741
+   },
+   {
+    "rank": 3,
+    "address": "0xcdd8dcfc406d0487d09b8332cf1bafa2a21a9f47",
+    "address_lc": "0xcdd8dcfc406d0487d09b8332cf1bafa2a21a9f47",
+    "share": 0.037515
+   },
+   {
+    "rank": 4,
+    "address": "0x3783f34cad40f4bcb5eaff3594458da1f5ea041f",
+    "address_lc": "0x3783f34cad40f4bcb5eaff3594458da1f5ea041f",
+    "share": 0.02037
+   },
+   {
+    "rank": 5,
+    "address": "0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f",
+    "address_lc": "0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f",
+    "share": 0.02037
+   },
+   {
+    "rank": 6,
+    "address": "0xcdfd8ec577217df0a577cc64a64eca71bb28d954",
+    "address_lc": "0xcdfd8ec577217df0a577cc64a64eca71bb28d954",
+    "share": 0.017315
+   },
+   {
+    "rank": 7,
+    "address": "0x3ad45fb5c28da8e8a1e75a767a271296254e7522",
+    "address_lc": "0x3ad45fb5c28da8e8a1e75a767a271296254e7522",
+    "share": 0.012731
+   },
+   {
+    "rank": 8,
+    "address": "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
+    "address_lc": "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
+    "share": 0.008838
+   },
+   {
+    "rank": 9,
+    "address": "0xe92e65049b3c2ca12806e9567b08895118c5a03f",
+    "address_lc": "0xe92e65049b3c2ca12806e9567b08895118c5a03f",
+    "share": 0.008786
+   },
+   {
+    "rank": 10,
+    "address": "0x682ba846eed9934cc89ed89a350ea98781256b6f",
+    "address_lc": "0x682ba846eed9934cc89ed89a350ea98781256b6f",
+    "share": 0.008164
+   }
+  ]
+ },
+ "RENDER": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "51PZFsSVorGDsWLopZvsqZ4zT1cHNzhfsL9KaJtBqZk1",
+    "address_lc": "51pzfssvorgdswlopzvsqz4zt1chnzhfsl9kajtbqzk1",
+    "share": 0.088459
+   },
+   {
+    "rank": 2,
+    "address": "0xf97deb1c0bb4536ff16617d29e5f4b340fe231df",
+    "address_lc": "0xf97deb1c0bb4536ff16617d29e5f4b340fe231df",
+    "share": 0.046004
+   },
+   {
+    "rank": 3,
+    "address": "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+    "address_lc": "6fevkh17p9y8q9ackddpcmdjvj7svxrtetayem8f51jy",
+    "share": 0.043273
+   },
+   {
+    "rank": 4,
+    "address": "5cQj8RLUU2or1aGnmufs5LPwCaijp7w7H5gCWJfNRfKX",
+    "address_lc": "5cqj8rluu2or1agnmufs5lpwcaijp7w7h5gcwjfnrfkx",
+    "share": 0.036046
+   },
+   {
+    "rank": 5,
+    "address": "7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh",
+    "address_lc": "7twnq4weycwqwbcwkeex2q9xqvtthpgkb7adnvueuvuh",
+    "share": 0.03415
+   },
+   {
+    "rank": 6,
+    "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+    "address_lc": "6ly1jzafvzsp2a2xkrtu6znqmq5h4i7tocwdgrkzzkzf",
+    "share": 0.033992
+   },
+   {
+    "rank": 7,
+    "address": "0x2ed60539c655a9e74f3a7c24633da18dbf4bb221",
+    "address_lc": "0x2ed60539c655a9e74f3a7c24633da18dbf4bb221",
+    "share": 0.029645
+   },
+   {
+    "rank": 8,
+    "address": "AYm4Knn6Sw1f52Eq42ujQ2ez5Xb7iBJeviprFCA7ADCy",
+    "address_lc": "aym4knn6sw1f52eq42ujq2ez5xb7ibjeviprfca7adcy",
+    "share": 0.02949
+   },
+   {
+    "rank": 9,
+    "address": "J8k11p1E2FKfYhVxgNkKT9xWUz7Npwqx1RPQvGcfo56H",
+    "address_lc": "j8k11p1e2fkfyhvxgnkkt9xwuz7npwqx1rpqvgcfo56h",
+    "share": 0.024964
+   },
+   {
+    "rank": 10,
+    "address": "5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi9",
+    "address_lc": "5tzfkikscxhk5zxcgbxzxdw7gtjjd1mbwuofbhuvuai9",
+    "share": 0.020613
+   }
+  ]
+ },
+ "ZRO": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xc2f31575b97df563a3bba2a94e3a0b317ba2d412",
+    "address_lc": "0xc2f31575b97df563a3bba2a94e3a0b317ba2d412",
+    "share": 0.032499
+   },
+   {
+    "rank": 2,
+    "address": "0x1f903473376fbe98cc763f1bc459c8fdb6ac3909",
+    "address_lc": "0x1f903473376fbe98cc763f1bc459c8fdb6ac3909",
+    "share": 0.031706
+   },
+   {
+    "rank": 3,
+    "address": "0x637ca60dfb4d3acbd2ba65aaed9c6ca564bbf7bf",
+    "address_lc": "0x637ca60dfb4d3acbd2ba65aaed9c6ca564bbf7bf",
+    "share": 0.02866
+   },
+   {
+    "rank": 4,
+    "address": "0xda8b6eb4e31a387577c0e20c00c8f7e31cbc18bc",
+    "address_lc": "0xda8b6eb4e31a387577c0e20c00c8f7e31cbc18bc",
+    "share": 0.026796
+   },
+   {
+    "rank": 5,
+    "address": "0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431",
+    "address_lc": "0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431",
+    "share": 0.023779
+   },
+   {
+    "rank": 6,
+    "address": "0x6e0e32684df6e3ae415ab1146a305bfd03e42427",
+    "address_lc": "0x6e0e32684df6e3ae415ab1146a305bfd03e42427",
+    "share": 0.023779
+   },
+   {
+    "rank": 7,
+    "address": "0x53326cfb6ec33f18ccb0e23828a133bc6805390c",
+    "address_lc": "0x53326cfb6ec33f18ccb0e23828a133bc6805390c",
+    "share": 0.021692
+   },
+   {
+    "rank": 8,
+    "address": "0x72afaa442b98f71b8bba9937f95be764ab9f97d1",
+    "address_lc": "0x72afaa442b98f71b8bba9937f95be764ab9f97d1",
+    "share": 0.020851
+   },
+   {
+    "rank": 9,
+    "address": "0x7be1125e9284ee108850a19f362b111526737cfd",
+    "address_lc": "0x7be1125e9284ee108850a19f362b111526737cfd",
+    "share": 0.017614
+   },
+   {
+    "rank": 10,
+    "address": "0x3425bd866c5d0cbacb1fe011e604789456a28f88",
+    "address_lc": "0x3425bd866c5d0cbacb1fe011e604789456a28f88",
+    "share": 0.016078
+   }
+  ]
+ },
+ "W": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "8nDFPaPRbK7HFCS4TprG187s2oNM1UrHm3tVqrSwzdRN",
+    "address_lc": "8ndfpaprbk7hfcs4tprg187s2onm1urhm3tvqrswzdrn",
+    "share": 0.065143
+   },
+   {
+    "rank": 2,
+    "address": "Dpfz8BDBmFCSXvsyi468YQZCtNbJXa4KQq3a82DLugvo",
+    "address_lc": "dpfz8bdbmfcsxvsyi468yqzctnbjxa4kqq3a82dlugvo",
+    "share": 0.018509
+   },
+   {
+    "rank": 3,
+    "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+    "address_lc": "5lzkatrlwhycqj2yuvbjjgsdzzbk6yfl4pfqrjmtbot2",
+    "share": 0.018501
+   },
+   {
+    "rank": 4,
+    "address": "Apw5cfHw7QcQoMvoT3YRiLJ6s28J27ACJ1kFn8QaKZ4e",
+    "address_lc": "apw5cfhw7qcqomvot3yrilj6s28j27acj1kfn8qakz4e",
+    "share": 0.012664
+   },
+   {
+    "rank": 5,
+    "address": "Hh29xjUGJYH81GUM9bJU12x9hKwQRH3yJ2pJ77bs92ec",
+    "address_lc": "hh29xjugjyh81gum9bju12x9hkwqrh3yj2pj77bs92ec",
+    "share": 0.011009
+   },
+   {
+    "rank": 6,
+    "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+    "address_lc": "8mm46csqxiyaputdup2cxhg41he3bfyntembdwzrmzqh",
+    "share": 0.010923
+   },
+   {
+    "rank": 7,
+    "address": "FTXtHs8qZC2qP96ReaNsFCc61qo63eSCNrwTwif1UVB1",
+    "address_lc": "ftxths8qzc2qp96reansfcc61qo63escnrwtwif1uvb1",
+    "share": 0.009833
+   },
+   {
+    "rank": 8,
+    "address": "CCeEVQLhUgRAiL1X3Di4oV98CQA71TJvdRwUPwja7RxU",
+    "address_lc": "cceevqlhugrail1x3di4ov98cqa71tjvdrwupwja7rxu",
+    "share": 0.009666
+   },
+   {
+    "rank": 9,
+    "address": "ofFJnH6UTyisea37rNr3isNsrC3z2e1nZ1kLtGcUurh",
+    "address_lc": "offjnh6utyisea37rnr3isnsrc3z2e1nz1kltgcuurh",
+    "share": 0.009563
+   },
+   {
+    "rank": 10,
+    "address": "9BUcWT9zvixVmpUD7kZ2hcUqRCbd5jTKpVfhk42KPfj5",
+    "address_lc": "9bucwt9zvixvmpud7kz2hcuqrcbd5jtkpvfhk42kpfj5",
+    "share": 0.009386
+   }
+  ]
+ },
+ "MOR": {
+  "chain": "arbitrum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xc0ed68f163d44b6e9985f0041fdf6f67c6bcff3f",
+    "address_lc": "0xc0ed68f163d44b6e9985f0041fdf6f67c6bcff3f",
+    "share": 0.057163
+   },
+   {
+    "rank": 2,
+    "address": "0xe5cf22ee4988d54141b77050967e1052bd9c7f7a",
+    "address_lc": "0xe5cf22ee4988d54141b77050967e1052bd9c7f7a",
+    "share": 0.045099
+   },
+   {
+    "rank": 3,
+    "address": "0xbd5d3a6d2ced315dbded2a434164a268b122694a",
+    "address_lc": "0xbd5d3a6d2ced315dbded2a434164a268b122694a",
+    "share": 0.03643
+   },
+   {
+    "rank": 4,
+    "address": "0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a",
+    "address_lc": "0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a",
+    "share": 0.032941
+   },
+   {
+    "rank": 5,
+    "address": "0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169",
+    "address_lc": "0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169",
+    "share": 0.028007
+   },
+   {
+    "rank": 6,
+    "address": "0xadd08936c6439a8a3f4eb4c1cad35a7cf234df0b",
+    "address_lc": "0xadd08936c6439a8a3f4eb4c1cad35a7cf234df0b",
+    "share": 0.012007
+   },
+   {
+    "rank": 7,
+    "address": "0x1206b182d26da31c01c7110c2672ea479f8b7daf",
+    "address_lc": "0x1206b182d26da31c01c7110c2672ea479f8b7daf",
+    "share": 0.011201
+   },
+   {
+    "rank": 8,
+    "address": "0x51d25291a5fe3281c65e46f1c2cb1738f3db12da",
+    "address_lc": "0x51d25291a5fe3281c65e46f1c2cb1738f3db12da",
+    "share": 0.011062
+   },
+   {
+    "rank": 9,
+    "address": "0x858da48232ea6731f22573dc711c0cc415c334c5",
+    "address_lc": "0x858da48232ea6731f22573dc711c0cc415c334c5",
+    "share": 0.009506
+   },
+   {
+    "rank": 10,
+    "address": "0xc794ba3d6462be04d250976c4bbf9b4ac7b60710",
+    "address_lc": "0xc794ba3d6462be04d250976c4bbf9b4ac7b60710",
+    "share": 0.007805
+   }
+  ]
+ },
+ "AXL": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xf42aac93ab142090db9fdc0bc86aab73cb36f173",
+    "address_lc": "0xf42aac93ab142090db9fdc0bc86aab73cb36f173",
+    "share": 0.033461
+   },
+   {
+    "rank": 2,
+    "address": "0xfcac185644e5c6cd73c309a60d2758ae56cf78b3",
+    "address_lc": "0xfcac185644e5c6cd73c309a60d2758ae56cf78b3",
+    "share": 0.028733
+   },
+   {
+    "rank": 3,
+    "address": "0xd1669ac6044269b59fa12c5822439f609ca54f41",
+    "address_lc": "0xd1669ac6044269b59fa12c5822439f609ca54f41",
+    "share": 0.021035
+   },
+   {
+    "rank": 4,
+    "address": "0xc80afd311c9626528de66d86814770361fe92416",
+    "address_lc": "0xc80afd311c9626528de66d86814770361fe92416",
+    "share": 0.013923
+   },
+   {
+    "rank": 5,
+    "address": "0x3de3a257f0e50af9bf48aea633e06085695d9c1b",
+    "address_lc": "0x3de3a257f0e50af9bf48aea633e06085695d9c1b",
+    "share": 0.013396
+   },
+   {
+    "rank": 6,
+    "address": "0x05e9c5bcc805aefefebbec13742cec01c6fac42e",
+    "address_lc": "0x05e9c5bcc805aefefebbec13742cec01c6fac42e",
+    "share": 0.010728
+   },
+   {
+    "rank": 7,
+    "address": "0x0431e3b8bd78ef3aa3527d2d8bbcf089012f0cdf",
+    "address_lc": "0x0431e3b8bd78ef3aa3527d2d8bbcf089012f0cdf",
+    "share": 0.00939
+   },
+   {
+    "rank": 8,
+    "address": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "address_lc": "0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83",
+    "share": 0.009001
+   },
+   {
+    "rank": 9,
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "address_lc": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "share": 0.00789
+   },
+   {
+    "rank": 10,
+    "address": "0xab782bc7d4a2b306825de5a7730034f8f63ee1bc",
+    "address_lc": "0xab782bc7d4a2b306825de5a7730034f8f63ee1bc",
+    "share": 0.007642
+   }
+  ]
+ },
+ "META": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "7SwCJg3Ti1F8fsYDvppWo3EfcgCtSerFCRfbLiV3BEuv",
+    "address_lc": "7swcjg3ti1f8fsydvppwo3efcgctserfcrfbliv3beuv",
+    "share": 0.049953
+   },
+   {
+    "rank": 2,
+    "address": "7qRUKe5B663FVyMij1LAtpH51JvyzWwavTRqwMAD2G24",
+    "address_lc": "7qruke5b663fvymij1latph51jvyzwwavtrqwmad2g24",
+    "share": 0.041355
+   },
+   {
+    "rank": 3,
+    "address": "3fKDKt85rxfwT3A1BHjcxZ27yKb1vYutxoZek7H2rEVE",
+    "address_lc": "3fkdkt85rxfwt3a1bhjcxz27ykb1vyutxozek7h2reve",
+    "share": 0.026862
+   },
+   {
+    "rank": 4,
+    "address": "4j19AEcDwhtAZrnoDc4epNPmEL1jPpVUMeg7RmQ72Qkb",
+    "address_lc": "4j19aecdwhtazrnodc4epnpmel1jppvumeg7rmq72qkb",
+    "share": 0.025569
+   },
+   {
+    "rank": 5,
+    "address": "2Vqx84hJ2bZozNmwXSUYUnc8YLm3keLvTEwSEdL5CmV1",
+    "address_lc": "2vqx84hj2bzoznmwxsuyunc8ylm3kelvtewsedl5cmv1",
+    "share": 0.023478
+   },
+   {
+    "rank": 6,
+    "address": "DxDZQaDPiw3ofVsqmrjTSbQuh9gXiPNqkBg5B1seFWnF",
+    "address_lc": "dxdzqadpiw3ofvsqmrjtsbquh9gxipnqkbg5b1sefwnf",
+    "share": 0.01359
+   },
+   {
+    "rank": 7,
+    "address": "CSBbKo8RkPrP4qdsYusRxRL8tidCB3kKDHjZJUNvMMLp",
+    "address_lc": "csbbko8rkprp4qdsyusrxrl8tidcb3kkdhjzjunvmmlp",
+    "share": 0.013014
+   },
+   {
+    "rank": 8,
+    "address": "qodhTms2ojNCZTjxbE4DNypzzanTHD5tMLGmSkgqRZb",
+    "address_lc": "qodhtms2ojncztjxbe4dnypzzanthd5tmlgmskgqrzb",
+    "share": 0.012603
+   },
+   {
+    "rank": 9,
+    "address": "GyL9JZ4PFFGd1LiX7tCWvjTAothh4XMPenbyu2ouZqbv",
+    "address_lc": "gyl9jz4pffgd1lix7tcwvjtaothh4xmpenbyu2ouzqbv",
+    "share": 0.011881
+   },
+   {
+    "rank": 10,
+    "address": "G6zmzdRXYWqqvnLfPqhxd13opH3q3P232tPs9DwDTdff",
+    "address_lc": "g6zmzdrxywqqvnlfpqhxd13oph3q3p232tps9dwdtdff",
+    "share": 0.011877
+   }
+  ]
+ },
+ "LDO": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "address_lc": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+    "share": 0.015385
+   },
+   {
+    "rank": 2,
+    "address": "0x39df74d611dca188f2f182a27c79f34a5ad4821e",
+    "address_lc": "0x39df74d611dca188f2f182a27c79f34a5ad4821e",
+    "share": 0.01417
+   },
+   {
+    "rank": 3,
+    "address": "0xed3d9bac1b26610a6f8c42f4fd2c741a16647056",
+    "address_lc": "0xed3d9bac1b26610a6f8c42f4fd2c741a16647056",
+    "share": 0.010521
+   },
+   {
+    "rank": 4,
+    "address": "0x88a1493366d48225fc3cefbdae9ebb23e323ade3",
+    "address_lc": "0x88a1493366d48225fc3cefbdae9ebb23e323ade3",
+    "share": 0.009469
+   },
+   {
+    "rank": 5,
+    "address": "0x008756e24b06267b9d2488e5bf50091fc26c8e8d",
+    "address_lc": "0x008756e24b06267b9d2488e5bf50091fc26c8e8d",
+    "share": 0.008417
+   },
+   {
+    "rank": 6,
+    "address": "0x109b9744397acf987a1abb5bb4eef7362ab9ff66",
+    "address_lc": "0x109b9744397acf987a1abb5bb4eef7362ab9ff66",
+    "share": 0.007524
+   },
+   {
+    "rank": 7,
+    "address": "0x54b68cc7132666eba5aa1d26dad735226e8faa7d",
+    "address_lc": "0x54b68cc7132666eba5aa1d26dad735226e8faa7d",
+    "share": 0.007524
+   },
+   {
+    "rank": 8,
+    "address": "0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54",
+    "address_lc": "0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54",
+    "share": 0.006371
+   },
+   {
+    "rank": 9,
+    "address": "0xdb1aabe42f48f4b6b40cded8eeefaea3ebab2766",
+    "address_lc": "0xdb1aabe42f48f4b6b40cded8eeefaea3ebab2766",
+    "share": 0.006351
+   },
+   {
+    "rank": 10,
+    "address": "0xc012e9eaebc44ba0236c50d97a94f633a14c15ca",
+    "address_lc": "0xc012e9eaebc44ba0236c50d97a94f633a14c15ca",
+    "share": 0.006137
+   }
+  ]
+ },
+ "GTC": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x6eede31a2a15340342b4bcb3039447d457ac7c4b",
+    "address_lc": "0x6eede31a2a15340342b4bcb3039447d457ac7c4b",
+    "share": 0.034148
+   },
+   {
+    "rank": 2,
+    "address": "0x74d3d473a44bc6b2b806861be511d52e2ce530af",
+    "address_lc": "0x74d3d473a44bc6b2b806861be511d52e2ce530af",
+    "share": 0.023779
+   },
+   {
+    "rank": 3,
+    "address": "0xed95d629c4db80060c59432e81254d256aec97e2",
+    "address_lc": "0xed95d629c4db80060c59432e81254d256aec97e2",
+    "share": 0.022742
+   },
+   {
+    "rank": 4,
+    "address": "0x3896ab65f7191a446f5ba550a92f9fbe5dd658af",
+    "address_lc": "0x3896ab65f7191a446f5ba550a92f9fbe5dd658af",
+    "share": 0.015533
+   },
+   {
+    "rank": 5,
+    "address": "0x6a5843919f17cc9003424008cfa953c989046904",
+    "address_lc": "0x6a5843919f17cc9003424008cfa953c989046904",
+    "share": 0.014053
+   },
+   {
+    "rank": 6,
+    "address": "0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351",
+    "address_lc": "0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351",
+    "share": 0.013614
+   },
+   {
+    "rank": 7,
+    "address": "0x0e3efd5be54cc0f4c64e0d186b0af4b7f2a0e95f",
+    "address_lc": "0x0e3efd5be54cc0f4c64e0d186b0af4b7f2a0e95f",
+    "share": 0.013596
+   },
+   {
+    "rank": 8,
+    "address": "0x900a248296691385357551cc7d5fae9e256dce8e",
+    "address_lc": "0x900a248296691385357551cc7d5fae9e256dce8e",
+    "share": 0.01343
+   },
+   {
+    "rank": 9,
+    "address": "0xe527bbde3654e9ba824f9b72dff495eee60fd366",
+    "address_lc": "0xe527bbde3654e9ba824f9b72dff495eee60fd366",
+    "share": 0.013174
+   },
+   {
+    "rank": 10,
+    "address": "0xdc36473e2e1f36ef54b8afac9fe907a1e8278534",
+    "address_lc": "0xdc36473e2e1f36ef54b8afac9fe907a1e8278534",
+    "share": 0.012647
+   }
+  ]
+ },
+ "ATH": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xaf8dcd50fdc14e413e5ef4468d4d21a961a7dcfd",
+    "address_lc": "0xaf8dcd50fdc14e413e5ef4468d4d21a961a7dcfd",
+    "share": 0.061829
+   },
+   {
+    "rank": 2,
+    "address": "0x5a4a88b4c6be83344ad9331facac9fd629e7831d",
+    "address_lc": "0x5a4a88b4c6be83344ad9331facac9fd629e7831d",
+    "share": 0.057606
+   },
+   {
+    "rank": 3,
+    "address": "0x33548d42afa567dba29e0da665d295e232166a43",
+    "address_lc": "0x33548d42afa567dba29e0da665d295e232166a43",
+    "share": 0.038584
+   },
+   {
+    "rank": 4,
+    "address": "0x651641299c7ec0aa44ad7ed9b7e12702fed2022f",
+    "address_lc": "0x651641299c7ec0aa44ad7ed9b7e12702fed2022f",
+    "share": 0.015774
+   },
+   {
+    "rank": 5,
+    "address": "0x8714909ac67adb799df8901b1825234215c96e19",
+    "address_lc": "0x8714909ac67adb799df8901b1825234215c96e19",
+    "share": 0.008906
+   },
+   {
+    "rank": 6,
+    "address": "0xe60e21cedb02bff2e88cd328a6cd74324a67a737",
+    "address_lc": "0xe60e21cedb02bff2e88cd328a6cd74324a67a737",
+    "share": 0.007528
+   },
+   {
+    "rank": 7,
+    "address": "0x4320d08ff059cd11803d3ef1fc5c241ab38d18f8",
+    "address_lc": "0x4320d08ff059cd11803d3ef1fc5c241ab38d18f8",
+    "share": 0.007008
+   },
+   {
+    "rank": 8,
+    "address": "0xdcba55e25b40af721a717f13f0b523739fbdfbcb",
+    "address_lc": "0xdcba55e25b40af721a717f13f0b523739fbdfbcb",
+    "share": 0.005522
+   },
+   {
+    "rank": 9,
+    "address": "0x5f4cac3cf9253c508655fa2c63bc0a71453a80b4",
+    "address_lc": "0x5f4cac3cf9253c508655fa2c63bc0a71453a80b4",
+    "share": 0.004664
+   },
+   {
+    "rank": 10,
+    "address": "0x5d55d7f0f5d0078cc12f8fce3a6845aa812150a6",
+    "address_lc": "0x5d55d7f0f5d0078cc12f8fce3a6845aa812150a6",
+    "share": 0.004203
+   }
+  ]
+ },
+ "HONEY": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "FZ9diFCJoPHaXKM7ik34YYAYHsEJ6oBvy9H74dVzqyjk",
+    "address_lc": "fz9difcjophaxkm7ik34yyayhsej6obvy9h74dvzqyjk",
+    "share": 0.03705
+   },
+   {
+    "rank": 2,
+    "address": "A6zNJCrSEZprWMMmRgdAiNY1jDmJnW1QfFnXWs6dUU3y",
+    "address_lc": "a6znjcrsezprwmmmrgdainy1jdmjnw1qffnxws6duu3y",
+    "share": 0.034628
+   },
+   {
+    "rank": 3,
+    "address": "8MgKUjhQ1e38owDu8BR6783Z73r1TQk1YtmB6UbCiwfS",
+    "address_lc": "8mgkujhq1e38owdu8br6783z73r1tqk1ytmb6ubciwfs",
+    "share": 0.030434
+   },
+   {
+    "rank": 4,
+    "address": "EAmeyPtAyFPLccyaEwoyAcYaLLjdhEeDoriDSSTjdT6i",
+    "address_lc": "eameyptayfplccyaewoyacyalljdheedoridsstjdt6i",
+    "share": 0.023408
+   },
+   {
+    "rank": 5,
+    "address": "D99E2pr78DSVmBcjuDWETY8Nfm9X9ro3Grgc67mzfutA",
+    "address_lc": "d99e2pr78dsvmbcjudwety8nfm9x9ro3grgc67mzfuta",
+    "share": 0.022164
+   },
+   {
+    "rank": 6,
+    "address": "HyW7x3gFHWLFA67a2DZVGeCcLNzuNTSG3yUyq2bSsuvA",
+    "address_lc": "hyw7x3gfhwlfa67a2dzvgecclnzuntsg3yuyq2bssuva",
+    "share": 0.022132
+   },
+   {
+    "rank": 7,
+    "address": "Fe3XYFYaXEo2LEy4ff1fdvp5TT5pJN5nbusNoSwBcmor",
+    "address_lc": "fe3xyfyaxeo2ley4ff1fdvp5tt5pjn5nbusnoswbcmor",
+    "share": 0.019912
+   },
+   {
+    "rank": 8,
+    "address": "FsAA2JoVBLin4CbGk16eCjQM4Etixz9cbT1smJvfC6NQ",
+    "address_lc": "fsaa2jovblin4cbgk16ecjqm4etixz9cbt1smjvfc6nq",
+    "share": 0.019335
+   },
+   {
+    "rank": 9,
+    "address": "3A6s38hSeXDrapWiAR7pRxyaJSiCbGLeKmEZSA9Tix4F",
+    "address_lc": "3a6s38hsexdrapwiar7prxyajsicbglekmezsa9tix4f",
+    "share": 0.019302
+   },
+   {
+    "rank": 10,
+    "address": "5YMPkRAQN6S6sVw3hLwPGqg8w9ZDiVDwFdYNFK2QYJzp",
+    "address_lc": "5ympkraqn6s6svw3hlwpgqg8w9zdivdwfdynfk2qyjzp",
+    "share": 0.018733
+   }
+  ]
+ },
+ "IO": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "28SqbTKJmqpRzqHmCqWHP6rHXMnLs5SVwWiTqzUZFWTm",
+    "address_lc": "28sqbtkjmqprzqhmcqwhp6rhxmnls5svwwitqzuzfwtm",
+    "share": 0.076467
+   },
+   {
+    "rank": 2,
+    "address": "6erNn9LP9EQfJMgSBRKX3rt5tJYXraHMmgwbbSCWuWdj",
+    "address_lc": "6ernn9lp9eqfjmgsbrkx3rt5tjyxrahmmgwbbscwuwdj",
+    "share": 0.046112
+   },
+   {
+    "rank": 3,
+    "address": "Gm9t9T9mb9QjdGvY9huq99oTaTqubpyHgvDbAE7feNZv",
+    "address_lc": "gm9t9t9mb9qjdgvy9huq99otatqubpyhgvdbae7fenzv",
+    "share": 0.03984
+   },
+   {
+    "rank": 4,
+    "address": "Fo7DTEWgW8PYLcTuSAvz3Hf9f1qQW4ngJXm4J2EKJSRK",
+    "address_lc": "fo7dtewgw8pylctusavz3hf9f1qqw4ngjxm4j2ekjsrk",
+    "share": 0.037717
+   },
+   {
+    "rank": 5,
+    "address": "7oemYfuh96vjwui49wXo3XUp4kw67jTCrKoLgzsYkCuz",
+    "address_lc": "7oemyfuh96vjwui49wxo3xup4kw67jtcrkolgzsykcuz",
+    "share": 0.03383
+   },
+   {
+    "rank": 6,
+    "address": "BB6toFFMQTvSYw5AZvVhWQGrs7oGnxhzjVQCie2rDsVt",
+    "address_lc": "bb6toffmqtvsyw5azvvhwqgrs7ognxhzjvqcie2rdsvt",
+    "share": 0.023516
+   },
+   {
+    "rank": 7,
+    "address": "6FHTSZaYTL2sLsjeLfMsbeek5BqZBm6nTUaqGtceB5Qw",
+    "address_lc": "6fhtszaytl2slsjelfmsbeek5bqzbm6ntuaqgtceb5qw",
+    "share": 0.021382
+   },
+   {
+    "rank": 8,
+    "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+    "address_lc": "8mm46csqxiyaputdup2cxhg41he3bfyntembdwzrmzqh",
+    "share": 0.02058
+   },
+   {
+    "rank": 9,
+    "address": "DZ2hv4ZEBBmoXJ5o3v1f5bPYtifK1kEDYLeNbUTMaZkg",
+    "address_lc": "dz2hv4zebbmoxj5o3v1f5bpytifk1kedylenbutmazkg",
+    "share": 0.019842
+   },
+   {
+    "rank": 10,
+    "address": "8nxaFYPgshDx9sYhQYK1BmCtczXJsMbrojEiY9eCBQnz",
+    "address_lc": "8nxafypgshdx9syhqyk1bmctczxjsmbrojeiy9ecbqnz",
+    "share": 0.018342
+   }
+  ]
+ },
+ "BAL": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xc80afd311c9626528de66d86814770361fe92416",
+    "address_lc": "0xc80afd311c9626528de66d86814770361fe92416",
+    "share": 0.118852
+   },
+   {
+    "rank": 2,
+    "address": "0x2f28cac69f61841d6fe1a01d5bd80ac352ea6d2b",
+    "address_lc": "0x2f28cac69f61841d6fe1a01d5bd80ac352ea6d2b",
+    "share": 0.055141
+   },
+   {
+    "rank": 3,
+    "address": "0xff052381092420b7f24cc97fded9c0c17b2cbbb9",
+    "address_lc": "0xff052381092420b7f24cc97fded9c0c17b2cbbb9",
+    "share": 0.044784
+   },
+   {
+    "rank": 4,
+    "address": "0xa0b3da7383b969008ebbab1d2567c93a143f472a",
+    "address_lc": "0xa0b3da7383b969008ebbab1d2567c93a143f472a",
+    "share": 0.018371
+   },
+   {
+    "rank": 5,
+    "address": "0x91b9e59614995e13a32e36440ac524825f7ae39e",
+    "address_lc": "0x91b9e59614995e13a32e36440ac524825f7ae39e",
+    "share": 0.013598
+   },
+   {
+    "rank": 6,
+    "address": "0xda6b2a5e0c56542984d84a710f90eefd94ca1991",
+    "address_lc": "0xda6b2a5e0c56542984d84a710f90eefd94ca1991",
+    "share": 0.013467
+   },
+   {
+    "rank": 7,
+    "address": "0xd519d5704b41511951c8cf9f65fee9ab9bef2611",
+    "address_lc": "0xd519d5704b41511951c8cf9f65fee9ab9bef2611",
+    "share": 0.013205
+   },
+   {
+    "rank": 8,
+    "address": "0xbb19053e031d9b2b364351b21a8ed3568b21399b",
+    "address_lc": "0xbb19053e031d9b2b364351b21a8ed3568b21399b",
+    "share": 0.012899
+   },
+   {
+    "rank": 9,
+    "address": "0xe08a8b19e5722a201eaf20a6bc595ef655397bd5",
+    "address_lc": "0xe08a8b19e5722a201eaf20a6bc595ef655397bd5",
+    "share": 0.012573
+   },
+   {
+    "rank": 10,
+    "address": "0x1c39babd4e0d7bff33bc27c6cc5a4f1d74c9f562",
+    "address_lc": "0x1c39babd4e0d7bff33bc27c6cc5a4f1d74c9f562",
+    "share": 0.012558
+   }
+  ]
+ },
+ "WLFI": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xfef30c262676de9af5e5e9ba999cf774000b14b4",
+    "address_lc": "0xfef30c262676de9af5e5e9ba999cf774000b14b4",
+    "share": 0.091128
+   },
+   {
+    "rank": 2,
+    "address": "0xcd52e35f7784efc78e835ef6e00be914f48beee6",
+    "address_lc": "0xcd52e35f7784efc78e835ef6e00be914f48beee6",
+    "share": 0.034391
+   },
+   {
+    "rank": 3,
+    "address": "0x0249d14d15531065b927f4930562c3814e654b54",
+    "address_lc": "0x0249d14d15531065b927f4930562c3814e654b54",
+    "share": 0.008283
+   },
+   {
+    "rank": 4,
+    "address": "0xcc261ab4be137eacf57c19ed97c186b4d88004ca",
+    "address_lc": "0xcc261ab4be137eacf57c19ed97c186b4d88004ca",
+    "share": 0.007765
+   },
+   {
+    "rank": 5,
+    "address": "0xf0cc01b37086bc122a3d63c615dab379478d2745",
+    "address_lc": "0xf0cc01b37086bc122a3d63c615dab379478d2745",
+    "share": 0.006902
+   },
+   {
+    "rank": 6,
+    "address": "0x5ab26169051d0d96217949adb91e86e51a5fda74",
+    "address_lc": "0x5ab26169051d0d96217949adb91e86e51a5fda74",
+    "share": 0.00564
+   },
+   {
+    "rank": 7,
+    "address": "0x33ccf78a2091979fbc5a7631e6c71e900715ab78",
+    "address_lc": "0x33ccf78a2091979fbc5a7631e6c71e900715ab78",
+    "share": 0.005011
+   },
+   {
+    "rank": 8,
+    "address": "0x29de882559194e2be08c182c1860193f8137cbf8",
+    "address_lc": "0x29de882559194e2be08c182c1860193f8137cbf8",
+    "share": 0.004486
+   },
+   {
+    "rank": 9,
+    "address": "0xcaf92481d3f0e3b32c90cde5aa1bf3d731753003",
+    "address_lc": "0xcaf92481d3f0e3b32c90cde5aa1bf3d731753003",
+    "share": 0.004254
+   },
+   {
+    "rank": 10,
+    "address": "0x284cf133aa570f29da0961be897dbbb2a37962f8",
+    "address_lc": "0x284cf133aa570f29da0961be897dbbb2a37962f8",
+    "share": 0.004162
+   }
+  ]
+ },
+ "ENA": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x1dc55d87c4143cc1829989d7ff8d580549ac0901",
+    "address_lc": "0x1dc55d87c4143cc1829989d7ff8d580549ac0901",
+    "share": 0.082339
+   },
+   {
+    "rank": 2,
+    "address": "0x2146aa5807d96e6b2922a149cee870f17347f1d0",
+    "address_lc": "0x2146aa5807d96e6b2922a149cee870f17347f1d0",
+    "share": 0.081545
+   },
+   {
+    "rank": 3,
+    "address": "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666",
+    "address_lc": "0xa5274a5a4b4bb3b3646475886b41bf6c50edd666",
+    "share": 0.061114
+   },
+   {
+    "rank": 4,
+    "address": "0x7462f0d93260909870487f17a27c336349579557",
+    "address_lc": "0x7462f0d93260909870487f17a27c336349579557",
+    "share": 0.059165
+   },
+   {
+    "rank": 5,
+    "address": "0xb2af973905f05bc82bf97486b6ab883598d98298",
+    "address_lc": "0xb2af973905f05bc82bf97486b6ab883598d98298",
+    "share": 0.056096
+   },
+   {
+    "rank": 6,
+    "address": "0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae",
+    "address_lc": "0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae",
+    "share": 0.045792
+   },
+   {
+    "rank": 7,
+    "address": "0x0c36fda877d41671b14fb4e7655798965237c7d0",
+    "address_lc": "0x0c36fda877d41671b14fb4e7655798965237c7d0",
+    "share": 0.022117
+   },
+   {
+    "rank": 8,
+    "address": "0x877b3d5c681c8890d19dbf450306caa3c3d4bba6",
+    "address_lc": "0x877b3d5c681c8890d19dbf450306caa3c3d4bba6",
+    "share": 0.021121
+   },
+   {
+    "rank": 9,
+    "address": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "address_lc": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+    "share": 0.02072
+   },
+   {
+    "rank": 10,
+    "address": "0xa55457e0d0652ba47fe1f97873a62b4f9dcae4d1",
+    "address_lc": "0xa55457e0d0652ba47fe1f97873a62b4f9dcae4d1",
+    "share": 0.012536
+   }
+  ]
+ },
+ "PUMP": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS",
+    "address_lc": "85wtujfj9mejq5hfjaeb5gftj7n8q7qtszjbrqmd5ers",
+    "share": 0.034986
+   },
+   {
+    "rank": 2,
+    "address": "AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6",
+    "address_lc": "avqfxknryznvxsj2owhlw8det68hzcxbqswshod2tdt6",
+    "share": 0.027989
+   },
+   {
+    "rank": 3,
+    "address": "96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9",
+    "address_lc": "96hiv4cgwtjncjgvff3rthgpxmpyz7msrgtamxnkvwm9",
+    "share": 0.026823
+   },
+   {
+    "rank": 4,
+    "address": "8UHpWBnhYNeAQURWjAABp8vSrzfYa69o7sfi65vYLC42",
+    "address_lc": "8uhpwbnhyneaqurwjaabp8vsrzfya69o7sfi65vylc42",
+    "share": 0.022311
+   },
+   {
+    "rank": 5,
+    "address": "ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa",
+    "address_lc": "errgqu3dh6zybg7mnahkl33tyvb7efmmakxnmdukdnya",
+    "share": 0.019825
+   },
+   {
+    "rank": 6,
+    "address": "GhFaBi8sy3M5mgG97YguQ6J3f7XH4JwV5CoW8MbzRgAU",
+    "address_lc": "ghfabi8sy3m5mgg97yguq6j3f7xh4jwv5cow8mbzrgau",
+    "share": 0.018222
+   },
+   {
+    "rank": 7,
+    "address": "AC5RDfQFmDS1deWZos921JfqscXdByf8BKHs5ACWjtW2",
+    "address_lc": "ac5rdfqfmds1dewzos921jfqscxdbyf8bkhs5acwjtw2",
+    "share": 0.014996
+   },
+   {
+    "rank": 8,
+    "address": "2WHL4XiNGKW9NgSwsJeG7WG2kD35Bi44rZoLrXHEz3dw",
+    "address_lc": "2whl4xingkw9ngswsjeg7wg2kd35bi44rzolrxhez3dw",
+    "share": 0.011662
+   },
+   {
+    "rank": 9,
+    "address": "9SLPTL41SPsYkgdsMzdfJsxymEANKr5bYoBsQzJyKpKS",
+    "address_lc": "9slptl41spsykgdsmzdfjsxymeankr5byobsqzjykpks",
+    "share": 0.011657
+   },
+   {
+    "rank": 10,
+    "address": "9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN",
+    "address_lc": "9ucygiamy92ygntgkukbki4sdapxkbmzd9qso6wmc2dn",
+    "share": 0.010263
+   }
+  ]
+ },
+ "JTO": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "5SybwTvGno6SBApbGinXyLqhnPzs47aaBG4PShyPT8ey",
+    "address_lc": "5sybwtvgno6sbapbginxylqhnpzs47aabg4pshypt8ey",
+    "share": 0.071671
+   },
+   {
+    "rank": 2,
+    "address": "ESnLXehGeReTRw3WxxEZwB4u2C9gAe8dMbob8Q4gm9Yg",
+    "address_lc": "esnlxehgeretrw3wxxezwb4u2c9gae8dmbob8q4gm9yg",
+    "share": 0.048632
+   },
+   {
+    "rank": 3,
+    "address": "7r5xFtcJZpc8vtzBCc1S9ooR2xadHt1jcT8HiH23a1x1",
+    "address_lc": "7r5xftcjzpc8vtzbcc1s9oor2xadht1jct8hih23a1x1",
+    "share": 0.043886
+   },
+   {
+    "rank": 4,
+    "address": "MbzL6v1mDkF8QW6r9TJKV6eaiYSf6MNtpVei2ciFQHN",
+    "address_lc": "mbzl6v1mdkf8qw6r9tjkv6eaiysf6mntpvei2cifqhn",
+    "share": 0.028058
+   },
+   {
+    "rank": 5,
+    "address": "FQnVcnwEXREJ3D4j7LzNGzCiMUVVqxkGEqZ2KffRY8ud",
+    "address_lc": "fqnvcnwexrej3d4j7lzngzcimuvvqxkgeqz2kffry8ud",
+    "share": 0.020393
+   },
+   {
+    "rank": 6,
+    "address": "3dguv2qss6GjmUEnJsddxkR9q5Zoem1sjoSk1jpXFPsz",
+    "address_lc": "3dguv2qss6gjmuenjsddxkr9q5zoem1sjosk1jpxfpsz",
+    "share": 0.020393
+   },
+   {
+    "rank": 7,
+    "address": "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt",
+    "address_lc": "jjcawuunpjcnmlaanpwgjz6cdxzlpxe2gfd6tadqbxt",
+    "share": 0.020177
+   },
+   {
+    "rank": 8,
+    "address": "3mv8hXktfpgCgK2W2jwRKdwDkw2UaYVJcVDozWmgv1uA",
+    "address_lc": "3mv8hxktfpgcgk2w2jwrkdwdkw2uayvjcvdozwmgv1ua",
+    "share": 0.018982
+   },
+   {
+    "rank": 9,
+    "address": "8sjM83a4u2M8YZYshLGKzYxh1VHFfbgtaytwaoEg4bUJ",
+    "address_lc": "8sjm83a4u2m8yzyshlgkzyxh1vhffbgtaytwaoeg4buj",
+    "share": 0.01874
+   },
+   {
+    "rank": 10,
+    "address": "9xSi6onCqhLuXTgodd5wB7EXv2WwuYPZyZwDyruGKL6v",
+    "address_lc": "9xsi6oncqhluxtgodd5wb7exv2wwuypzyzwdyrugkl6v",
+    "share": 0.015295
+   }
+  ]
+ },
+ "BONK": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "51yZyDSnec4xnUv7XLRVYcDyV4x3wUtzrDcRaYbmQU5j",
+    "address_lc": "51yzydsnec4xnuv7xlrvycdyv4x3wutzrdcraybmqu5j",
+    "share": 0.059138
+   },
+   {
+    "rank": 2,
+    "address": "9AdEE8AAm1XgJrPEs4zkTPozr3o4U5iGbgvPwkNdLDJ3",
+    "address_lc": "9adee8aam1xgjrpes4zktpozr3o4u5igbgvpwkndldj3",
+    "share": 0.040129
+   },
+   {
+    "rank": 3,
+    "address": "9RpzaFh4J8F6Qg1gjnhrhSp9eXdVDjsesZXe53qp7ubB",
+    "address_lc": "9rpzafh4j8f6qg1gjnhrhsp9exdvdjseszxe53qp7ubb",
+    "share": 0.033739
+   },
+   {
+    "rank": 4,
+    "address": "EbLm4ZtRqDftrQnZaMMvnwcKjK5ef5vm1Hg3sAPv3tKi",
+    "address_lc": "eblm4ztrqdftrqnzammvnwckjk5ef5vm1hg3sapv3tki",
+    "share": 0.033599
+   },
+   {
+    "rank": 5,
+    "address": "EfEgUV2uQAzTooo6L4oYiEm15F6JBTnGiWMejqxPaqL3",
+    "address_lc": "efeguv2uqaztooo6l4oyiem15f6jbtngiwmejqxpaql3",
+    "share": 0.030984
+   },
+   {
+    "rank": 6,
+    "address": "4xLpwxgYuPwPvtQjE94RLS4WZ4aD8NJYYKr2AJk99Qdg",
+    "address_lc": "4xlpwxgyupwpvtqje94rls4wz4ad8njyykr2ajk99qdg",
+    "share": 0.029143
+   },
+   {
+    "rank": 7,
+    "address": "8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH",
+    "address_lc": "8mm46csqxiyaputdup2cxhg41he3bfyntembdwzrmzqh",
+    "share": 0.024848
+   },
+   {
+    "rank": 8,
+    "address": "CJjCPXBnSt6wRoyi7wzcMj5NbWvmPtzxE2JpWDMTRxj4",
+    "address_lc": "cjjcpxbnst6wroyi7wzcmj5nbwvmptzxe2jpwdmtrxj4",
+    "share": 0.021212
+   },
+   {
+    "rank": 9,
+    "address": "3B7XAQrLoEMDEGvX8569F9GRb9PcXXocJmj5wvhhei9z",
+    "address_lc": "3b7xaqrloemdegvx8569f9grb9pcxxocjmj5wvhhei9z",
+    "share": 0.019795
+   },
+   {
+    "rank": 10,
+    "address": "5oNhn2ESFHgg52xiEKBt93cEEnbsoUoekcxXsWpLbHUJ",
+    "address_lc": "5onhn2esfhgg52xiekbt93ceenbsouoekcxxswplbhuj",
+    "share": 0.01255
+   }
+  ]
+ },
+ "KMNO": {
+  "chain": "solana",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57",
+    "address_lc": "ec6muwtpvfcvymsp7vipkcg1cmkkrwhzpwpdnjf16g57",
+    "share": 0.059741
+   },
+   {
+    "rank": 2,
+    "address": "8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew",
+    "address_lc": "8civ8uaa4rmy8ho6dmjzgataqutsrdl4hkmmcxtxz8ew",
+    "share": 0.056899
+   },
+   {
+    "rank": 3,
+    "address": "G2VtFJ9P5P7qjz5bcfwVQw6DGJ2sYBUTXf7npQy5PZ2R",
+    "address_lc": "g2vtfj9p5p7qjz5bcfwvqw6dgj2sybutxf7npqy5pz2r",
+    "share": 0.048234
+   },
+   {
+    "rank": 4,
+    "address": "4x3uU27N1cfmBx8JerY13ZzdNxgmgQdiZUSFZQHbhe1B",
+    "address_lc": "4x3uu27n1cfmbx8jery13zzdnxgmgqdizusfzqhbhe1b",
+    "share": 0.040234
+   },
+   {
+    "rank": 5,
+    "address": "4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N",
+    "address_lc": "4ud7k6kcffawoejvedkk2v5furd8x4y926caqeoahd8n",
+    "share": 0.036915
+   },
+   {
+    "rank": 6,
+    "address": "6EyjmmTYdAEyoLN1eTynuGvQPRq8mR4HKrW9uBqWqi7N",
+    "address_lc": "6eyjmmtydaeyoln1etynugvqprq8mr4hkrw9ubqwqi7n",
+    "share": 0.033528
+   },
+   {
+    "rank": 7,
+    "address": "Ad29ikw7DwEEbFTW6LEDVNC3cxGrNdsY4r276FAeT1Dt",
+    "address_lc": "ad29ikw7dweebftw6ledvnc3cxgrndsy4r276faet1dt",
+    "share": 0.025674
+   },
+   {
+    "rank": 8,
+    "address": "AGzZas78FXZkH8FrUW3x54h639fbfT1PhBA6SLbY5tTi",
+    "address_lc": "agzzas78fxzkh8fruw3x54h639fbft1phba6slby5tti",
+    "share": 0.025146
+   },
+   {
+    "rank": 9,
+    "address": "6AapP9rsXMsNTJEMbKUatmzLeYwkZSJWd84c6PLBJNvK",
+    "address_lc": "6aapp9rsxmsntjembkuatmzleywkzsjwd84c6plbjnvk",
+    "share": 0.02414
+   },
+   {
+    "rank": 10,
+    "address": "Ej1xvF8ycSA7ufZhCRAi5EPk2DjPgyuByDS6RgpG5i7c",
+    "address_lc": "ej1xvf8ycsa7ufzhcrai5epk2djpgyubyds6rgpg5i7c",
+    "share": 0.022368
+   }
+  ]
+ },
+ "FXS": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0xccfc07b3f23bf293e7363495fa2f9509bf72ecf1",
+    "address_lc": "0xccfc07b3f23bf293e7363495fa2f9509bf72ecf1",
+    "share": 0.035772
+   },
+   {
+    "rank": 2,
+    "address": "0x1aabda2551c0b062f61ed57f103e0385ec051065",
+    "address_lc": "0x1aabda2551c0b062f61ed57f103e0385ec051065",
+    "share": 0.023558
+   },
+   {
+    "rank": 3,
+    "address": "0xe0dd07b181ca77ed9063821b4d2d28a85f722f5f",
+    "address_lc": "0xe0dd07b181ca77ed9063821b4d2d28a85f722f5f",
+    "share": 0.02017
+   },
+   {
+    "rank": 4,
+    "address": "0x12d7df4910d3dc0867cc7720e3bec6260b4b1100",
+    "address_lc": "0x12d7df4910d3dc0867cc7720e3bec6260b4b1100",
+    "share": 0.018368
+   },
+   {
+    "rank": 5,
+    "address": "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee",
+    "address_lc": "0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee",
+    "share": 0.013113
+   },
+   {
+    "rank": 6,
+    "address": "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0",
+    "address_lc": "0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0",
+    "share": 0.011963
+   },
+   {
+    "rank": 7,
+    "address": "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f",
+    "address_lc": "0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f",
+    "share": 0.00971
+   },
+   {
+    "rank": 8,
+    "address": "0xd8b42cebc82607226f68a5373d99f54b397f886a",
+    "address_lc": "0xd8b42cebc82607226f68a5373d99f54b397f886a",
+    "share": 0.007958
+   },
+   {
+    "rank": 9,
+    "address": "0x602d9abd5671d24026e2ca473903ff2a9a957407",
+    "address_lc": "0x602d9abd5671d24026e2ca473903ff2a9a957407",
+    "share": 0.006061
+   },
+   {
+    "rank": 10,
+    "address": "0xd51e42ca4db0fad80bcc4cc216f98c9b44e98cb7",
+    "address_lc": "0xd51e42ca4db0fad80bcc4cc216f98c9b44e98cb7",
+    "share": 0.004917
+   }
+  ]
+ },
+ "SNX": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "address_lc": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
+    "share": 0.031954
+   },
+   {
+    "rank": 2,
+    "address": "0x5aeebe2fed4eafcd4a1f0cfb1159dd4f31cf4447",
+    "address_lc": "0x5aeebe2fed4eafcd4a1f0cfb1159dd4f31cf4447",
+    "share": 0.013488
+   },
+   {
+    "rank": 3,
+    "address": "0x83270d639d09727f73577ca55c6d74ae70a6af30",
+    "address_lc": "0x83270d639d09727f73577ca55c6d74ae70a6af30",
+    "share": 0.012986
+   },
+   {
+    "rank": 4,
+    "address": "0xa31231e727ca53ff95f0d00a06c645110c4ab647",
+    "address_lc": "0xa31231e727ca53ff95f0d00a06c645110c4ab647",
+    "share": 0.010696
+   },
+   {
+    "rank": 5,
+    "address": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa",
+    "address_lc": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa",
+    "share": 0.00988
+   },
+   {
+    "rank": 6,
+    "address": "0x7446ffe91d1f3cba51e949e8f238f4bacfbc05ae",
+    "address_lc": "0x7446ffe91d1f3cba51e949e8f238f4bacfbc05ae",
+    "share": 0.009746
+   },
+   {
+    "rank": 7,
+    "address": "0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe",
+    "address_lc": "0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe",
+    "share": 0.009125
+   },
+   {
+    "rank": 8,
+    "address": "0x15da7556d5ed888306839bed06f868aeaedcb0d7",
+    "address_lc": "0x15da7556d5ed888306839bed06f868aeaedcb0d7",
+    "share": 0.008731
+   },
+   {
+    "rank": 9,
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "address_lc": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "share": 0.007695
+   },
+   {
+    "rank": 10,
+    "address": "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92",
+    "address_lc": "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92",
+    "share": 0.007531
+   }
+  ]
+ },
+ "GNO": {
+  "chain": "ethereum",
+  "n_survivors": 10,
+  "survivors": [
+   {
+    "rank": 1,
+    "address": "0x445cc6c3d51eb0a63395a613a0960c7922bca0d6",
+    "address_lc": "0x445cc6c3d51eb0a63395a613a0960c7922bca0d6",
+    "share": 0.007059
+   },
+   {
+    "rank": 2,
+    "address": "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341",
+    "address_lc": "0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341",
+    "share": 0.004928
+   },
+   {
+    "rank": 3,
+    "address": "0x70e278941ed3c0d2c6d6105df184831992aca856",
+    "address_lc": "0x70e278941ed3c0d2c6d6105df184831992aca856",
+    "share": 0.003835
+   },
+   {
+    "rank": 4,
+    "address": "0x926a21917d067c52e132e318686ebcf11182c428",
+    "address_lc": "0x926a21917d067c52e132e318686ebcf11182c428",
+    "share": 0.002189
+   },
+   {
+    "rank": 5,
+    "address": "0xc2a39291acf6ae4ed29c6fcc15f1d54141f8d833",
+    "address_lc": "0xc2a39291acf6ae4ed29c6fcc15f1d54141f8d833",
+    "share": 0.001355
+   },
+   {
+    "rank": 6,
+    "address": "0x98dd467fbc8b32f08387f8888b161d5cd8c00889",
+    "address_lc": "0x98dd467fbc8b32f08387f8888b161d5cd8c00889",
+    "share": 0.001353
+   },
+   {
+    "rank": 7,
+    "address": "0x5db8e9605de5cd567293518fca840536a5ac3a91",
+    "address_lc": "0x5db8e9605de5cd567293518fca840536a5ac3a91",
+    "share": 0.001285
+   },
+   {
+    "rank": 8,
+    "address": "0xca5bbc1196aae807b097c0f7e696e2b3977d2abe",
+    "address_lc": "0xca5bbc1196aae807b097c0f7e696e2b3977d2abe",
+    "share": 0.001093
+   },
+   {
+    "rank": 9,
+    "address": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+    "address_lc": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+    "share": 0.001089
+   },
+   {
+    "rank": 10,
+    "address": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "address_lc": "0xd2dd7b597fd2435b6db61ddf48544fd931e6869f",
+    "share": 0.001084
+   }
+  ]
+ }
+}

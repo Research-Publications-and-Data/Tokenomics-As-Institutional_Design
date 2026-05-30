@@ -1,0 +1,340 @@
+{
+ "flags_by_token": {
+  "AAVE": [
+   "rank 3 (Aave: Ecosystem Reserve): classified INSIDER (treasury), differs from keyword baseline which had it as other_labeled/non-insider.",
+   "rank 5 (Upbit: Hot Wallet): keyword baseline class was 'other_labeled'; corrected to 'exchange' (still non-insider).",
+   "rank 10 (Token Millionaire): keyword baseline class was 'other_labeled'; corrected to 'retail' (non-insider)."
+  ],
+  "ANYONE": [
+   "Ranks 2-4 (ANYONE Relay Rewards 2/3/4) are DePIN relay-reward distributor contracts. Classified protocol_contract/not-insider per the distributor/reward-contract rule. Caveat: these emit team-provisioned token rewards, so an aggressive reading could treat them as team-controlled emission pools; they sit at the boundary between protocol-emission infrastructure and treasury. Rule text explicitly puts reward/distributor contracts in protocol_contract, so kept non-insider, but flagging the boundary call.",
+   "v3 reference frac was 0.4 vs my 0.1; the divergence comes entirely from the three Relay Rewards contracts (and not counting the bridge), which v3 evidently treated as insider emission pools. My read follows the distributor-not-insider rule."
+  ],
+  "ARB": [
+   "rank3 Lightspeed: Fund -> insider=true (investor); differs from keyword_class=other_labeled; medium confidence (named VC fund, but 'Lightspeed' could in principle be a non-VC trading entity)",
+   "rank4 Bybit -> exchange; differs from keyword_class=other_labeled",
+   "rank5 BTCTurk -> exchange; differs from keyword_class=other_labeled",
+   "rank6 Bithumb: Wallet -> exchange; differs from keyword_class=other_labeled",
+   "rank10 empty label -> unlabeled/retail; low-information bare address"
+  ],
+  "ATH": [
+   "rank 1 Upbit: differs from keyword_class (other_labeled -> exchange, insider=false)",
+   "rank 4 Bybit: differs from keyword_class (other_labeled -> exchange, insider=false)",
+   "rank 5 Bithumb Deposit: differs from keyword_class (other_labeled -> exchange, insider=false)",
+   "rank 3 Aethir: medium-confidence treasury inference from bare project name; differs from keyword_class (other_labeled -> insider=true); decision-relevant"
+  ],
+  "AXL": [
+   "rank 6 TokenManagerProxy: low-keyword-ambiguity entity; classified as Axelar ITS bridge/escrow system contract (protocol_contract), not team treasury. Medium confidence; the one survivor where the team-control question is non-trivial.",
+   "rank 2 High Balance: generic Nansen whale label, no project attribution; classified retail by unlabeled-whale rule. Medium confidence judgment call.",
+   "rank 3 CoinList: launchpad/custodial platform that ran the AXL token sale; holds participant tokens custodially, not as team treasury. Classified exchange. Medium confidence."
+  ],
+  "BAL": [
+   "rank 3 'Balancer: Shareholder' classified insider (investor/team-equity), differs from keyword baseline 'other_labeled' (not insider); medium confidence because 'Shareholder' is project-namespace-attributed but role (team vs early equity investor) is ambiguous"
+  ],
+  "COMP": [
+   "Rank 1 Robinhood: Hot Wallet -> differs from keyword_class 'other_labeled'; classified exchange (not insider).",
+   "Rank 7 Bybit -> differs from keyword_class 'other_labeled'; classified exchange (not insider).",
+   "Rank 8 Geoffrey Hayes -> differs from keyword_class 'other_labeled'; classified founder INSIDER via knowledge that Geoffrey Hayes is a Compound Labs co-founder/lead engineer.",
+   "Rank 9 Sablier: Vesting -> medium confidence; generic Sablier vesting label does not confirm the beneficiary is the Compound team specifically, but vesting/grant contracts are insider per rule."
+  ],
+  "CRV": [
+   "rank4 Luno classified as exchange (keyword_class other_labeled); insider=false either way, no count impact",
+   "rank7 eToro classified as exchange (keyword_class other_labeled); insider=false either way, no count impact",
+   "rank8 Bybit: Hot Wallet classified as exchange (keyword_class other_labeled); insider=false either way",
+   "rank10 Bybit classified as exchange (keyword_class other_labeled); insider=false either way"
+  ],
+  "DIMO": [
+   "rank 1: bare unattributed Multisig (no protocol name) -> low-confidence insider; matches keyword_class but attribution missing",
+   "rank 3: differs from keyword_class 'other_labeled' -> bare hex, no label, classed unlabeled/retail",
+   "rank 4: bare unattributed Gnosis Safe Proxy -> low-confidence insider; differs from keyword_class 'other_labeled'",
+   "rank 5: differs from keyword_class 'other_labeled' -> bare hex, no label, classed unlabeled/retail",
+   "rank 6: differs from keyword_class 'other_labeled' -> bare hex, no label, classed unlabeled/retail",
+   "rank 7: differs from keyword_class 'other_labeled' -> bare hex, no label, classed unlabeled/retail",
+   "rank 8: bare unattributed Gnosis Safe Proxy -> low-confidence insider; differs from keyword_class 'other_labeled'",
+   "rank 9: differs from keyword_class 'other_labeled' -> bare hex, no label, classed unlabeled/retail",
+   "rank 10: differs from keyword_class 'other_labeled' -> bare hex, no label, classed unlabeled/retail"
+  ],
+  "DRIFT": [
+   "Rank 8 DRIFT Custody Vaults: low-confidence; canonical ambiguous case (protocol team-custody vs DeFi user-deposit vaults). Drift's 'Vaults' are a user-facing strategy-vault product, which would make this protocol_contract/user-funds rather than team treasury. Called insider per the protocol-custody rule but this is the weakest call.",
+   "Rank 3 Drift [7LCwgH3T]: bare protocol-name label treated as team/treasury (insider); differs from keyword_class 'other_labeled'. Could conceivably be a labeled protocol contract.",
+   "Rank 1 Upbit Internal Wallet: call (exchange, not-insider) differs from keyword_class 'other_labeled'.",
+   "Rank 5 [DemTRm4s]: call (unlabeled retail) differs from keyword_class 'other_labeled' (keyword treated the bracketed hex as a label).",
+   "Rank 9 Bybit Hot Wallet: call (exchange) differs from keyword_class 'other_labeled'.",
+   "Rank 10 Bithumb Hot Wallet: call (exchange) differs from keyword_class 'other_labeled'."
+  ],
+  "ENS": [
+   "rank1 Nick Johnson: insider=true (founder) differs from keyword_class other_labeled; largest survivor share (0.0352)",
+   "rank2 Bithumb Hot Wallet: exchange (not insider) differs from keyword_class other_labeled",
+   "rank6 Bybit: exchange (not insider) differs from keyword_class other_labeled",
+   "rank9 Gnosis Safe Proxy: LOW-CONFIDENCE bare/unattributed multisig classed insider=true; differs from keyword_class other_labeled",
+   "rank10 BTCTurk: exchange (not insider) differs from keyword_class other_labeled"
+  ],
+  "ETHFI": [
+   "Ranks 3, 5, 10 ('Token Millionaire') classified as retail (insider=false), diverging from keyword_class string 'other_labeled' -> resolved to explicit retail per rule.",
+   "No low-confidence survivors: all 9 matched labels are unambiguous and the 1 unmatched is clearly unlabeled retail."
+  ],
+  "GEOD": [
+   "Rank 1 Token Vault [0x3a6906]: low-confidence; generic vault label ambiguous between protocol deposit/reward vault and team treasury/vesting vault.",
+   "Rank 5 Multisig [0xcecccb]: low-confidence; bare/unattributed Safe with no owner, classed insider per multisig rule.",
+   "Rank 6 Multisig [0xcdfd8e]: low-confidence; bare/unattributed Safe with no owner, classed insider per multisig rule.",
+   "Rank 7 ParaFi Capital: insider=true differs from keyword_class 'other_labeled' (named VC investor).",
+   "Rank 9 GSR: differs from keyword_class 'other_labeled'; classed market_maker insider=false (not insider absent project-seeding evidence)."
+  ],
+  "GMX": [
+   "rank 1 GMX_LockboxAdapter: keyword baseline 'other_labeled', reclassified protocol_contract (cross-chain bridge infra), insider=false",
+   "rank 3 Uniswap GMX-ETH LP: keyword baseline 'other_labeled', reclassified lp, insider=false",
+   "rank 4 SafeProxy [0xc6378d]: BARE unattributed Safe, low-confidence insider=true; keyword baseline 'other_labeled'",
+   "rank 6 GMX Timelock: keyword baseline 'protocol_contract', reclassified treasury/team-controlled insider=true (medium confidence; could be transient governance custody)",
+   "rank 7 SafeProxy [0x4d4dc3]: BARE unattributed Safe, low-confidence insider=true; keyword baseline 'other_labeled'",
+   "rank 10 GMX Market: keyword baseline 'other_labeled', reclassified protocol_contract, insider=false"
+  ],
+  "GRASS": [
+   "All 9 empty-label survivors (ranks 1,3-10) are unlabeled/bare with no Nansen attribution; insider=false is high-confidence per rule (unmatched low-balance survivor -> retail, do not assume insider), but entity identity itself is unverifiable.",
+   "v3 reference frac was 0.1 (one survivor flagged insider in v3) yet no current label supports any insider call; final frac 0.0 matches v4 keyword_frac."
+  ],
+  "HNT": [
+   "rank3_low_confidence_decision_flipper: bare 'Helium' label inferred as project/foundation treasury (insider=true); could alternatively be an unattributed project bucket (e.g. unsold/escrowed supply) but still project-controlled. Differs from keyword baseline (other_labeled).",
+   "rank1_differs_from_keyword: keyword_class 'other_labeled' but classified exchange (Bybit hot wallet), insider=false.",
+   "rank4_differs_from_keyword: keyword_class 'other_labeled' but classified exchange (Crypto.com), insider=false.",
+   "rank9_differs_from_keyword: keyword_class 'other_labeled' but bracketed hex with no name -> unlabeled retail, insider=false.",
+   "ranks2_5_distributor_carveout: 'HNT Distributor' wallets are emission/reward distribution contracts, classified protocol_contract NOT insider despite Helium-branded label."
+  ],
+  "HONEY": [
+   "Rank 6 (Hivemapper: Deposit) is LOW confidence: project-namespace prefix implies team custody but the Deposit suffix is ambiguous (treasury vs routing/infrastructure contract).",
+   "Rank 3 (Hivemapper) call differs from keyword baseline: keyword_class=other_labeled -> classified insider/treasury on bare protocol-name label.",
+   "Rank 4 (Hivemapper) call differs from keyword baseline: keyword_class=other_labeled -> classified insider/treasury.",
+   "Rank 6 (Hivemapper: Deposit) call differs from keyword baseline: keyword_class=other_labeled -> classified insider/treasury (low confidence)."
+  ],
+  "IOTX": [
+   "rank 9 eToro: Wallet differs from keyword baseline (other_labeled -> exchange); still insider=false either way",
+   "rank 10 machinefi.eth differs from keyword baseline (other_labeled -> insider/team); judgment-based ENS-to-IoTeX-brand tie, confidence medium"
+  ],
+  "JUP": [
+   "rank4: Jupiter USDC-jupSOL Supply Vault classified protocol_contract (DeFi user-liquidity supply pool), NOT team treasury, despite 'Jupiter:' prefix; differs from keyword_class other_labeled",
+   "rank1: Upbit -> exchange (not insider); differs from keyword_class other_labeled",
+   "rank3: Bybit Hot Wallet -> exchange (not insider); differs from keyword_class other_labeled",
+   "rank5: bare hex [6QqVvibp] -> unlabeled/retail; differs from keyword_class other_labeled; low confidence",
+   "ranks 6-10: empty labels, low-confidence unlabeled/retail survivors"
+  ],
+  "LDO": [
+   "rank 9: empty/bare label, low confidence (unlabeled retail).",
+   "rank 2 Wintermute: class differs from keyword baseline (other_labeled -> market_maker); still non-insider.",
+   "rank 5 KR1: insider call DIFFERS from keyword baseline (other_labeled -> investor insider); named investment company and early Lido backer.",
+   "rank 6 Lido [0x109b97]: insider call DIFFERS from keyword baseline (other_labeled -> treasury insider); medium confidence on treasury vs other protocol-controlled wallet.",
+   "rank 10 Lido [0xc012e9]: insider call DIFFERS from keyword baseline (other_labeled -> treasury insider); medium confidence on treasury vs other protocol-controlled wallet."
+  ],
+  "LPT": [
+   "rank 3 Uniswap LPT-WETH LP: differs from keyword_class other_labeled -> lp (non-insider; trivial)",
+   "rank 4 DEX/CEX Trading Bot: differs from keyword_class other_labeled -> market_maker (non-insider)",
+   "rank 5 Token Millionaire: differs from keyword_class other_labeled -> retail (non-insider)",
+   "rank 6 bare hex [0x99c675]: differs from keyword_class other_labeled -> unlabeled retail (non-insider)",
+   "rank 7 SafeProxy: LOW CONFIDENCE; bare/unattributed Safe; insider call differs from keyword_class other_labeled (keyword baseline missed it)",
+   "rank 8 Justin Sun: judgment call; differs from keyword_class other_labeled -> retail; named individual but NOT a Livepeer insider (TRON founder, external whale)",
+   "rank 9 Multisig: LOW CONFIDENCE; bare/unattributed multisig; matches keyword_class insider but confidence low",
+   "rank 10 michellekwu.eth: differs from keyword_class other_labeled -> retail (non-insider)"
+  ],
+  "META": [
+   "rank 9 (Custody Vaults [GyL9JZ4P]): low-confidence, bare unattributed custody-vault label, ambiguous team-custody vs DeFi user-vault",
+   "rank 3 (MetaDAO): insider=true differs from keyword_class other_labeled (non-insider) baseline",
+   "rank 5 (MetaDAO (META) Custody Vaults): insider=true differs from keyword_class other_labeled (non-insider) baseline",
+   "rank 7 (Variant): insider=true differs from keyword_class other_labeled (non-insider) baseline"
+  ],
+  "MKR": [
+   "All 10 MKR survivors have empty Nansen labels (n_matched=0); none matched in the current Nansen top set. Per rule, unmatched survivors are low-balance-now and treated as retail, insider=false.",
+   "v3 reference frac is 0.2 (implies 2 prior insiders) but no current label evidence supports any insider call; v3 not anchored to per instructions."
+  ],
+  "MOR": [
+   "rank 1 ERC1967Proxy: low-confidence; judged protocol_contract (Distribution contract) NOT insider, but a top-holding upgradeable proxy could be a team-controlled allocation contract; differs from keyword baseline (other_labeled)",
+   "rank 4 Multisig [0xb1972e]: low-confidence bare/unattributed multisig classified insider",
+   "rank 5 SafeProxy [0xb19b3b]: low-confidence bare/unattributed Safe classified insider=true (multisig); differs from keyword baseline (other_labeled)",
+   "rank 9 Big Brain Holdings: insider=true (investor) differs from keyword baseline (other_labeled)",
+   "rank 10 Big Brain Holdings: insider=true (investor) differs from keyword baseline (other_labeled)"
+  ],
+  "MPL_SYRUP": [
+   "rank1 SYRUP Custody Vaults: low-confidence-class flag; 'Custody Vaults' is the rule's explicitly-ambiguous case (team custody vs DeFi user-vaults). Called INSIDER (medium) because it custodies the protocol's own SYRUP. Differs from keyword_class 'other_labeled'.",
+   "rank2 FalconX: Deposit: called NOT insider (exchange, medium); differs from keyword_class 'other_labeled' (in that keyword left it unclassified; substantive call is non-insider).",
+   "rank3 Maple Finance: SYRUP Token Vault: called INSIDER (treasury); differs from keyword_class 'other_labeled'.",
+   "rank7 Framework Ventures: called INSIDER (investor); differs from keyword_class 'other_labeled'.",
+   "rank9 Castle Island Ventures: called INSIDER (investor); differs from keyword_class 'other_labeled'.",
+   "rank10 Upbit: Main Wallet: called NOT insider (exchange); differs from keyword_class 'other_labeled'."
+  ],
+  "OP": [
+   "rank7_bithumb_reclassified_from_keyword_other_labeled_to_exchange_CEX",
+   "rank1_unlabeled_low_confidence_bare_address_treated_as_retail"
+  ],
+  "POL": [
+   "rank 1 Polygon: MATIC-POL Migration classified insider=true (treasury/team migration contract) but keyword_class was 'other_labeled' - call differs from keyword baseline",
+   "rank 9 B2C2 is a market maker; classified not-insider but flagged for project-seeding possibility (no evidence found of POL being project-seeded to B2C2)"
+  ],
+  "RENDER": [
+   "rank 4 RENDER Custody Vaults: LOW confidence insider call (treasury); '<Protocol> Custody Vaults' could be team-custody treasury OR user-side DeFi vaults; sole insider and a decision-flipper.",
+   "rank 3 Crypto.com: Wallet: call differs from keyword_class (other_labeled -> exchange/not-insider).",
+   "rank 5 Bitget: Deposit: call differs from keyword_class (other_labeled -> exchange/not-insider).",
+   "rank 9 Trading Bot: call differs from keyword_class (other_labeled -> retail/not-insider).",
+   "rank 10 Binance: Wallet: call differs from keyword_class (other_labeled -> exchange/not-insider)."
+  ],
+  "RPL": [
+   "rank1 Patricio Worthalter: named individual, differs from keyword baseline; identified as POAP founder (not Rocket Pool), classified retail not insider, medium confidence",
+   "rank2 Rocket Pool: RPL Token: differs from keyword baseline; token self-contract classified protocol_contract not insider",
+   "rank4 Bithumb: Wallet: differs from keyword baseline (other_labeled); classified exchange",
+   "rank6 Rocket Pool: Oracle DAO Rewards 1: differs from keyword baseline; low/medium confidence borderline (protocol rewards distributor vs protocol-controlled allocation); insider=false",
+   "rank8 Aave: aEthRPL Token: differs from keyword baseline; classified protocol_contract (lending aToken)"
+  ],
+  "UNI": [
+   "rank 1: differs from keyword baseline (other_labeled -> protocol_contract); bare 'Uniswap' label treated as non-custodial system contract, not insider",
+   "rank 3: differs from keyword baseline (other_labeled -> protocol_contract); bare 'Uniswap' system contract",
+   "rank 10: differs from keyword baseline (other_labeled -> investor); a16z crypto recognized as named VC investor and classified insider"
+  ],
+  "W": [
+   "rank 1 [8nDFPaPR]: low-confidence bare bracketed address (no entity label); largest survivor at 6.51% share but no project tie, classified retail not insider",
+   "rank 9 [ofFJnH6U]: low-confidence bare bracketed address (no entity label); no project tie, classified retail not insider"
+  ],
+  "WXM": [
+   "Rank 3 low-confidence: bare SafeProxy [0xf20168], no owner attribution; differs from keyword_class other_labeled.",
+   "Rank 5 low-confidence: bare SafeProxy [0xe4b785], no owner attribution; differs from keyword_class other_labeled.",
+   "Rank 9 low-confidence: bare SafeProxy [0xff1ad9], no owner attribution; differs from keyword_class other_labeled.",
+   "Rank 10 low-confidence: bare GnosisSafeProxy [0xe09471], no owner attribution; differs from keyword_class other_labeled.",
+   "Rank 1 judgment call: WXM Distributor is project-controlled but treated as distribution rail (protocol_contract, not insider) per HNT-Distributor precedent; if reclassed as team-controlled allocation it would flip to insider and add 0.1 to the frac.",
+   "v4_keyword_frac was 0.0; all four insider calls (ranks 3,5,9,10) differ from the keyword baseline."
+  ],
+  "ZRO": [
+   "3 bare 'LayerZero [0x...]' tags (ranks 2, 8, 10) classified insider at medium confidence: protocol-team-controlled per Nansen entity tag but could be operational (relayer/executor/ops) rather than allocation custody."
+  ]
+ },
+ "decision_flippers_by_token": {
+  "AAVE": [
+   "rank 3 (Aave: Ecosystem Reserve): the single insider call; moves insider_count_frac from 0.0 to 0.1. High confidence (clearly protocol-controlled reserve), so not a low-confidence flipper, but it is the only call that moves the fraction."
+  ],
+  "ANYONE": [
+   "Ranks 2, 3, 4 (ANYONE Relay Rewards 2/3/4): each is a DePIN reward distributor. If these are reclassified as team-controlled emission/treasury pools (insider=true) rather than distributor contracts, insider_count_frac moves from 0.1 to as high as 0.4. This is the single largest source of uncertainty for ANYONE."
+  ],
+  "ARB": [
+   "rank3 Lightspeed: Fund -- sole insider; flips insider_count_frac from 0.0 to 0.1; medium confidence on the VC-fund read"
+  ],
+  "ATH": [
+   "rank 3 Aethir [0x33548d]: bare project-name label inferred as team/treasury (insider=true) at medium confidence; this single call moves insider_count_frac from 0.3 to 0.4"
+  ],
+  "BAL": [
+   "rank 3 'Balancer: Shareholder' \u2014 sole insider call; moves insider_count_frac from 0.0 to 0.1; medium confidence judgment call"
+  ],
+  "COMP": [
+   "Rank 8 Geoffrey Hayes: insider call rests on identifying him as a Compound co-founder (not stated in the label); flipping this to non-insider moves frac from 0.3 to 0.2.",
+   "Rank 9 Sablier: Vesting: vesting contract insider call; if read as a generic third-party vesting stream rather than a team/grant allocation, flipping moves frac from 0.3 to 0.2."
+  ],
+  "DIMO": [
+   "rank 1 Multisig [0xccfa7c]: bare unattributed multisig; insider call rests on rule that any Safe/multisig is team-controlled, but no owner attribution to confirm it is DIMO team vs a generic shared wallet.",
+   "rank 4 Gnosis Safe Proxy [0x62b98e]: bare unattributed Safe; could be team treasury or any third-party multisig holder; low confidence.",
+   "rank 8 Gnosis Safe Proxy [0xced3c9]: bare unattributed Safe; same ambiguity as rank 4; low confidence."
+  ],
+  "DRIFT": [
+   "Rank 8 DRIFT Custody Vaults (share 0.0117): if reclassified as protocol_contract/user-vaults (not insider), insider_count drops to 3 and insider_count_frac to 0.3. Low confidence; weakest call.",
+   "Rank 3 Drift [7LCwgH3T] (share 0.04): if reclassified as a non-team protocol contract (not insider), insider_count drops to 3 and frac to 0.3. Medium confidence."
+  ],
+  "ENS": [
+   "rank1 Nick Johnson (founder, insider=true): high-confidence call but the single largest-share survivor and the dominant driver of insider_count_frac; if disputed the frac drops from 0.2 to 0.1",
+   "rank9 Gnosis Safe Proxy (bare multisig, insider=true, LOW confidence): unattributed Safe could be a user wallet rather than ENS team; flipping it to false moves frac from 0.2 to 0.1"
+  ],
+  "GEOD": [
+   "Rank 1 Token Vault [0x3a6906] (share 6.16%): if this generic vault is in fact a team vesting/treasury vault, it flips to insider, moving insider_count_frac from 0.3 to 0.4. Largest single-survivor share; not highly confident.",
+   "Ranks 5+6 bare Multisigs (combined ~3.8%): classed insider on the multisig rule but unattributed; if either is actually an exchange/MM/protocol multisig rather than team, frac drops below 0.3."
+  ],
+  "GMX": [
+   "rank 4 SafeProxy [0xc6378d]: bare unattributed Safe; insider=true call is low-confidence and materially moves frac (0.4 vs 0.3 if not insider)",
+   "rank 7 SafeProxy [0x4d4dc3]: bare unattributed Safe; insider=true call is low-confidence and materially moves frac",
+   "rank 6 GMX Timelock: insider=true (team/governance custody) is medium-confidence; if treated as pure protocol_contract, frac drops by 0.1"
+  ],
+  "HNT": [
+   "rank3 'Helium [2AdZQmGi]' \u2014 only survivor called insider; medium confidence. If treated as a non-team-controlled or distribution/escrow bucket it flips insider_count_frac from 0.1 to 0.0."
+  ],
+  "HONEY": [
+   "Rank 6 (Hivemapper: Deposit [HyW7x3gF]): insider call is low-confidence and is the marginal third insider; if reclassified as protocol_contract/infrastructure (not insider), insider_count drops 3->2 and insider_count_frac 0.3->0.2."
+  ],
+  "IOTX": [
+   "rank 10 machinefi.eth: the sole judgment-based insider call; if this ENS is a community holder rather than IoTeX team/treasury, insider_count_frac drops from 0.2 to 0.1"
+  ],
+  "JUP": [
+   "rank4 Jupiter: USDC-jupSOL Supply Vault \u2014 if read as team-custody treasury rather than DeFi user-supply vault, insider_count_frac moves from 0.0 to 0.1; classified protocol_contract (medium confidence) as it aggregates user-supplied lending liquidity, not project-controlled treasury allocation"
+  ],
+  "LDO": [
+   "rank 5 KR1 [0x008756]: investor insider call (flip from keyword baseline) adds 0.1 to insider_count_frac.",
+   "rank 6 Lido [0x109b97]: protocol-controlled treasury call (flip) adds 0.1; medium confidence on exact sub-type.",
+   "rank 10 Lido [0xc012e9]: protocol-controlled treasury call (flip) adds 0.1; medium confidence on exact sub-type."
+  ],
+  "LPT": [
+   "rank 7 SafeProxy (insider=true, low conf): bare Safe insider call adds 0.1 to frac; if treated as unattributed-non-team it would flip to 0.1",
+   "rank 9 Multisig (insider=true, low conf): bare multisig insider call adds 0.1 to frac; if treated as unattributed-non-team it would flip to 0.1",
+   "rank 8 Justin Sun (insider=false): if (incorrectly) counted as a protocol insider on the basis of being a named individual, frac would rise to 0.3"
+  ],
+  "META": [
+   "rank 9 (Custody Vaults [GyL9JZ4P]): if this bare custody-vault is in fact MetaDAO team custody, insider_count_frac moves from 0.4 to 0.5; low confidence",
+   "rank 1 (LIGHT Custody Vaults): medium confidence; if mislabeled and actually MetaDAO team custody it would flip frac from 0.4 to 0.5"
+  ],
+  "MOR": [
+   "rank 1 ERC1967Proxy: if this is a team-controlled allocation contract rather than the protocol Distribution contract, insider flips true -> frac 0.4 to 0.5",
+   "rank 4 Multisig: bare multisig insider call; if it is a non-team holder, flips false -> frac 0.4 to 0.3",
+   "rank 5 SafeProxy: bare Safe insider call; if non-team holder, flips false -> frac 0.4 to 0.3"
+  ],
+  "MPL_SYRUP": [
+   "rank1 SYRUP Custody Vaults (share 6.95%): largest single survivor and the only medium-confidence insider call; 'Custody Vaults' is the rule's named-ambiguous class. If reclassified as a DeFi user-custody product (NOT insider), insider_count_frac drops from 0.6 to 0.5.",
+   "rank3 Maple Finance: SYRUP Token Vault (share 4.37%): 'Token Vault' could in principle be a protocol-contract holding user deposits rather than team treasury; high-confidence-insider here because label is explicitly the named protocol holding its own gov token, but it moves the frac if challenged."
+  ],
+  "POL": [
+   "rank 1 Polygon: MATIC-POL Migration is the sole insider; it alone sets insider_count_frac to 0.1. High confidence it is a team/foundation-controlled migration contract, but as the single determinant it materially moves the frac."
+  ],
+  "RENDER": [
+   "rank 4 RENDER Custody Vaults [5cQj8RLU] (share 0.036): if team-custodied treasury -> insider_count_frac 0.1; if user-side DeFi vaults -> insider_count_frac 0.0. Sole insider; low confidence."
+  ],
+  "RPL": [
+   "rank6 Rocket Pool: Oracle DAO Rewards 1 - if treated as a protocol-controlled allocation/treasury rather than a pass-through rewards distributor, insider would flip true and insider_count_frac would move from 0.10 to 0.20"
+  ],
+  "UNI": [
+   "rank 10 (a16z crypto: UNI Tokens): investor call moves insider_count_frac from 0.2 to 0.3; high-confidence (a16z is a well-known Uniswap investor) but it is the single call that lifts the frac above keyword baseline"
+  ],
+  "WXM": [
+   "Rank 3 SafeProxy [0xf20168] (insider, low confidence) \u2014 moves frac by 0.1.",
+   "Rank 5 SafeProxy [0xe4b785] (insider, low confidence) \u2014 moves frac by 0.1.",
+   "Rank 9 SafeProxy [0xff1ad9] (insider, low confidence) \u2014 moves frac by 0.1.",
+   "Rank 10 GnosisSafeProxy [0xe09471] (insider, low confidence) \u2014 moves frac by 0.1.",
+   "Rank 1 WeatherXM Network: WXM Distributor (called protocol_contract/not-insider; largest holder at 8.81%) \u2014 if reclassed as team allocation it adds 0.1 to the frac."
+  ],
+  "ZRO": [
+   "If the 3 bare 'LayerZero [0x...]' addresses (ranks 2,8,10) are operational infrastructure rather than allocation/treasury, ZRO insider_count_frac drops from 0.7 toward 0.4."
+  ]
+ },
+ "notes_by_token": {
+  "AAVE": "AAVE: 1 of 10 survivors is insider (rank 3, Aave Ecosystem Reserve = protocol treasury/reserve). All other matched survivors are CEX custody/hot wallets (Binance BSC-pegged, Upbit, two Coinbase Prime) or a 'Token Millionaire' retail behavioral label. Four survivors (ranks 2,4,7,8) are unlabeled/bare = retail. No multisigs, VCs, vesting, or founder addresses in the survivor set. insider_count_frac = 0.1. All calls high confidence; no low-confidence/bare-Safe ambiguity present.",
+  "ANYONE": "ANYONE = ANyONe Protocol, a DePIN privacy/onion-routing relay network. Only the rank-6 Vesting contract is a clear insider (locked team/investor allocation). The rest are: 1 Uniswap LP, 3 relay-reward distributor contracts, 1 protocol bridge, 3 CEX wallets (Coinspot, KuCoin x2), and 1 named retail trader. insider_count = 1, frac = 0.1. My result matches the keyword baseline frac (0.1) and diverges from the v3 reference (0.4); the divergence is fully attributable to whether the three Relay Rewards distributor contracts count as insider emission pools (see decision_flippers).",
+  "ARB": "9 of 10 survivors are centralized-exchange custody/deposit wallets (Upbit, Coinbase x3 incl Prime, Bybit, BTCTurk, Bithumb, Binance) plus one empty/unlabeled bare address; none of these are insider. The one insider is rank 3 'Lightspeed: Fund', a named venture/investment fund (Lightspeed, an early Arbitrum-ecosystem investor) -> investor class. Keyword baseline mis-tagged several CEXes as other_labeled (Bybit, BTCTurk, Bithumb) and missed Lightspeed as investor. insider_count=1, frac=0.1. The Lightspeed call is the sole decision flipper (medium confidence).",
+  "ATH": "ATH = Aethir (DePIN GPU-cloud). 4 of 10 survivors are insiders: Aethir bare-project wallet (treasury, medium conf), MerkleVester (vesting), and two 'Aethir Token (ATH) Investment Recipient' wallets (investors). The other 6 are NOT insiders: 4 CEX/custody wallets (Upbit, Bybit, Bithumb, Coinbase Prime) and 2 'Token Millionaire' retail heuristic labels. My frac (0.4) is one higher than both v3 and keyword (0.3); the delta is rank 3 Aethir, which the keyword baseline scored 'other_labeled' but which I read as a project-controlled treasury/team wallet. The three CEX labels (Upbit/Bybit/Bithumb) were keyword 'other_labeled' but correctly resolve to exchange=not-insider, so they do not change the count relative to keyword. Only flagged below-high-confidence call is rank 3.\"",
+  "AXL": "All 10 AXL survivors classified insider=false: 7 centralized-exchange custody/hot wallets (Bybit, Paribu, Coinbase Prime, Kraken x2, Bitvavo) + CoinList custodial launchpad, 1 generic whale label (High Balance), 1 unlabeled/bare-hex, and 1 protocol system contract (Axelar ITS TokenManagerProxy bridge/escrow, not team treasury). insider_count=0, insider_count_frac=0.0. Matches the v4 keyword baseline (0.0); no calls differ from keyword_class. No decision_flippers since every borderline call (TokenManagerProxy, High Balance, CoinList) lands insider=false and none would move the count if reversed individually except TokenManagerProxy, which is confidently a system contract rather than discretionary team treasury. Source: /Users/zach/Tokenomics-As-Institutional_Design/b2/paper/analysis_n52_2026-05-29/nansen_reclass_2026-05-29/b2_nansen_review_input_2026-05-29.json (AXL block).",
+  "BAL": "BAL (Balancer governance token). 8 of 10 survivors matched in Nansen top set. Only rank 3 'Balancer: Shareholder' is a project-affiliated insider (Nansen 'Balancer:' namespace prefix denotes project equity holder). Rank 1 is Paribu (Turkish CEX, exchange). Ranks 5-10 are generic behavioral labels (Token Millionaire / High Balance) with no project tie = retail. Ranks 2 and 4 unlabeled. insider_count=1, frac=0.1. Keyword baseline was 0.0 because it classed 'Balancer: Shareholder' as other_labeled rather than recognizing the project-namespace insider signal.",
+  "COMP": "COMP: 3 insiders of 10 survivors (frac 0.30). Insiders = Compound: COMP Multisig (team multisig, high), Geoffrey Hayes (Compound co-founder/lead engineer, high but knowledge-based), Sablier: Vesting (vesting contract, medium). Non-insiders = 4 CEX wallets (Robinhood, Coinbase Prime, Bybit, Binance BSC-peg), 1 protocol distributor contract (COMP Distributor), 2 unlabeled/retail. Diverges from keyword baseline (v4_keyword_frac 0.2): keyword baseline missed Geoffrey Hayes as founder (labeled 'other_labeled') and counted COMP Distributor as protocol_contract (correctly non-insider). Reference v3 frac was 0.1.",
+  "CRV": "All 10 CRV post-exclusion survivors are unambiguously labeled: 7 centralized-exchange wallets (Kraken x3, OKX, Luno, eToro, Bybit x2) and 3 retail/behavioral labels (Token Millionaire, Passive Holder). Zero protocol team/founder/investor/foundation/treasury/multisig/vesting entities. insider_count=0, insider_count_frac=0.0. This matches the v3 (0.0) and keyword (0.0) reference fracs. Four exchange calls differ from the keyword_class 'other_labeled' baseline (Luno, eToro, Bybit:Hot Wallet, Bybit), but all are insider=false in both schemes so none affects the count. No low-confidence survivors and no decision flippers.",
+  "DIMO": "DIMO (DePIN vehicle-data token). 6 of 10 survivors (ranks 3,5,6,7,9,10) carry only a bracketed bare hex address with no Nansen label; per the rule, bare addresses with no project tie are unlabeled/retail (insider=false), so I diverged from their keyword_class 'other_labeled'. Insiders are the three multisig/Safe survivors (ranks 1,4,8), all bare/unattributed -> all low confidence, all flagged, all decision flippers. insider_count=3, frac=0.3 (vs v3 1.0 and keyword 0.1; neither anchored). Used only the provided JSON and entity knowledge; no Nansen/web calls.",
+  "DRIFT": "DRIFT = Drift Protocol (Solana perpetual DEX). 4/10 survivors classified insider: rank 3 'Drift' (team/treasury), rank 6 'DRIFT Investment Recipient' (investor), rank 7 'Drift Foundation' (foundation), rank 8 'DRIFT Custody Vaults' (team custody, low-confidence). Six are exchanges (Upbit, Coinbase, Bybit, Bithumb) or unlabeled/bare-hex retail (ranks 2, 5). My 0.4 sits between v3 reference 0.5 and keyword 0.2; the keyword baseline missed the bare-protocol 'Drift' label and the Custody Vaults call while my classification correctly excludes the four CEX wallets it had bucketed as 'other_labeled'. Two decision flippers (ranks 3 and 8) could move frac to 0.3 if reclassified as protocol contracts/user-vaults.",
+  "ENS": "2 of 10 survivors classed insider: rank1 Nick Johnson (ENS founder, high confidence) and rank9 bare Gnosis Safe Proxy (multisig, low confidence). insider_count_frac=0.2. Five exchanges (Bithumb, OKX, Bybit, BTCTurk plus none others) and three Token Millionaire/unlabeled retail are non-insider. Two decision flippers: the founder (dominant share) and the unattributed Safe (low confidence). Reference v3_frac=0.1 and v4_keyword_frac=0.0 both undercount because the keyword baseline missed the named founder and treated the multisig as other_labeled.",
+  "ETHFI": "ETHFI insider_count_frac = 0.4 (ranks 1,2,4 = ETHFI Investment Recipients -> investor; rank 7 = ether.fi DAO Treasury -> treasury). All insider calls match the keyword baseline's 'insider' designation, so no material divergence. Non-insiders: 2 Binance exchange wallets, 3 'Token Millionaire' retail whales, 1 unlabeled. All 10 calls are high-confidence; no decision-flippers (no ambiguous survivor whose flip would move the frac). My 0.4 matches v4_keyword_frac and exceeds v3 (0.3); the v3/keyword fracs were reference-only and not anchored to.",
+  "GEOD": "GEOD = GEODNET DePIN (RTK GNSS positioning). Insiders: 2 bare Multisigs (low conf) + ParaFi Capital (named VC investor, high conf) = 3/10 = 0.30. Keyword baseline (0.2) under-counted ParaFi (named investor not keyword-matched) but over-counted nothing relevant; v3 (0.5) over-counted likely by classing Token Vault and/or GSR/Token Millionaire as insider. Token Vault (rank 1, 6.16% share) is the key uncertainty: generic Nansen vault label, not attributable to team on the label alone, held insider=false pending owner attribution.",
+  "GMX": "GMX: 4 of 10 survivors classified insider (frac 0.40), above both v3 reference (0.20) and keyword reference (0.10). Insiders: two bare unattributed SafeProxies (low confidence, team-multisig presumption per rule), the GMX Timelock (medium, team/governance-controlled admin custody), and the GMX Vester (high, vesting contract). Non-insiders: LockboxAdapter (bridge), Staking Pool (user deposits), Uniswap LP, OKX, Binance, GMX Market (V2 market pool) \u2014 all protocol/exchange/LP infrastructure. Frac is sensitive: removing the two bare Safes drops to 0.20; removing the Timelock too drops to 0.10. All three weak calls flagged as decision flippers.",
+  "GRASS": "GRASS (Solana DePIN). Only one survivor is Nansen-matched: rank 2 = Gate.io exchange wallet (not insider). The other 9 survivors carry empty labels (bare/unattributed) and are classed unlabeled retail per the rule that an unmatched, low-balance survivor is almost certainly retail and must not be assumed insider. No team/founder/investor/foundation/treasury/multisig/vesting label appears. insider_count=0, insider_count_frac=0.0. No calls differ from keyword_class baseline (which also had 0 insiders), so no keyword-divergence flags; no decision flippers since no empty-label survivor could be insider without a project tie.",
+  "GRT": "GRT post-exclusion top-10 has 1 insider: rank 10 'The Graph: Multisig' (team-controlled protocol multisig, high confidence). The other 9 survivors are 6 CEX wallets (Upbit, Luno, Coinbase Prime custody, BTCTurk, Bithumb, Kraken), 2 retail 'Token Millionaire' behavioral labels, and 1 unlabeled/empty (treated retail). insider_count_frac = 0.1, matching both the v3 and keyword baselines. No calls differ from keyword_class; no low-confidence survivors and no decision flippers.",
+  "HNT": "HNT (Helium, DePIN/L1). Of 10 post-exclusion survivors, only 1 is an insider: rank 3 'Helium' (bare project-name wallet -> project/foundation treasury, medium confidence). The two 'Helium: HNT Distributor' wallets (ranks 2, 5) are emission/reward distribution contracts and fall under the distributor carve-out (NOT insider). Ranks 1,4,6,7 are CEX wallets (Bybit, Crypto.com, Binance US, Kraken). Ranks 8,9,10 are unlabeled/bare-hex -> retail. insider_count=1, frac=0.1. Sole decision flipper is rank 3; v3 reference frac (0.5) over-counted by labeling distributors and exchanges as insiders, v4 keyword frac (0.0) under-counted by missing the bare 'Helium' treasury wallet.",
+  "HONEY": "HONEY = Hivemapper governance token (Solana DePIN mapping protocol). 10 survivors: 3 bare-hex unlabeled (ranks 1,2,5 -> retail/unlabeled), 1 generic High Balance whale (rank 7 -> retail), 3 Coinbase: Deposit CEX addresses (ranks 8-10 -> exchange), and 3 Hivemapper-labeled project wallets (ranks 3,4,6 -> treasury/team insider). insider_count=3, frac=0.3. Keyword baseline scored 0.0 because all the Hivemapper-named wallets fell into other_labeled; judgment-based reclassification of the bare-protocol-name and protocol-namespace-deposit labels as team-controlled custody drives the 3 insider calls. Rank 6 is the only low-confidence / decision-flipper survivor.",
+  "IO": "IO post-exclusion top-10 contains zero insiders. Composition: 7 \"Token Millionaire\" entries (Nansen generic balance-tier label = retail), 1 Bithumb hot wallet (Korean CEX, exchange), and 2 bare-hex unlabeled addresses (ranks 2 and 9, no Nansen label). None of the labels signal a protocol team/founder/investor/foundation/treasury/multisig/vesting/grant entity. All calls high confidence; result matches keyword baseline (0.0). No low-confidence survivors, no decision flippers.",
+  "IOTX": "Two insiders of 10: rank 2 (IOTX Investment Recipient = project investor allocation, high confidence) and rank 10 (machinefi.eth = IoTeX's MachineFi brand/MachineFi Lab team wallet, medium confidence). All six 'High Balance' survivors are generic Nansen behavioral tags with no protocol attribution -> treated as large retail holders (insider=false). Two Coinbase Prime custody wallets and one eToro wallet are exchange custody (not insider). Keyword baseline = 0.1 (only rank 2); my call = 0.2, the delta is the machinefi.eth -> team judgment. Decision flipper: machinefi.eth; if not IoTeX-controlled, frac reverts to 0.1.",
+  "JUP": "Top-10 JUP survivors are dominated by centralized exchanges (Upbit, Backpack, Bybit = ranks 1-3), one Jupiter DeFi lending supply vault (rank 4, user-liquidity protocol contract), and six unlabeled/bare-hex addresses (ranks 5-10) treated as retail. Zero insiders: no team treasury, foundation, VC, vesting, or multisig labels present. The only borderline call is rank 4, where 'Jupiter:'-prefixed Supply Vault is a DeFi user-deposit aggregation contract rather than team custody, so it is protocol_contract (not insider). insider_count=0, frac=0.0.",
+  "LDO": "Insider count rises from the v3/keyword reference of 0.1 to 0.4. Three label-based flips drive this: KR1 (named crypto investment company / early Lido backer = investor) and the two plainly-labeled 'Lido' addresses (project-controlled treasury/team wallets), plus the already-flagged Lido DAO: Multisig. Non-insiders: OKX/Bybit/Bitget exchange wallets, Wintermute (market maker, no LDO seeding evidence), Token Millionaire (retail), and one empty/unlabeled address. The two plain 'Lido' addresses and KR1 are the decision flippers; the Lido addresses are medium-confidence on treasury-vs-other but are protocol-controlled either way, so the insider bit is robust even if the entity sub-type is imprecise.",
+  "LPT": "LPT (Livepeer). 10 survivors reviewed from B2 Nansen review input. 2 insiders, both bare/unattributed team-control wallets (rank 7 SafeProxy, rank 9 Multisig), each low-confidence. The protocol's own labeled contracts (staking pool, L2 migrator) are protocol infrastructure, not team treasury, so non-insider. Uniswap LP, trading bot, Token Millionaire, bare hex, and two individual-named holders (Justin Sun, michellekwu.eth) are all non-insider. Key judgment: Justin Sun is a named individual but is the TRON founder / external whale, NOT a Livepeer founder/team/investor, so insider=false. insider_count_frac=0.2, between keyword baseline 0.1 (which missed the bare SafeProxy) and v3 0.3 (which likely over-counted). Both insider calls rest on bare Safe/multisig labels and are the dominant decision flippers.",
+  "META": "META = MetaDAO governance token on Solana. 4 insiders of 10: two explicit MetaDAO treasury/custody wallets (ranks 3, 5), one Investment Recipient allocation (rank 6), and Variant VC fund (rank 7). Keyword baseline (v4_keyword_frac 0.1) under-counted by classifying the two MetaDAO-named custody/treasury wallets and Variant as non-insider 'other_labeled'; v3 baseline (1.0) over-counted. Reference fracs not anchored to.",
+  "MKR": "All 10 survivors returned empty nansen_label with matched=false and n_matched=0. No label evidence to support any insider classification, so every survivor is classified unlabeled/retail, insider=false. insider_count=0, insider_count_frac=0.0. The v3_insider_count_frac of 0.2 was treated as reference-only and not used to override label-based classification. No decision-flippers since all calls are high-confidence unlabeled-retail under the rule's explicit handling of empty labels.",
+  "MOR": "MOR = Morpheus (DePIN/AI-compute L1 governance/utility token). 7 of 10 survivors matched in Nansen top set; 3 unlabeled. Insider=4/10 (0.4): two bare team multisigs (ranks 4,5) plus two Big Brain Holdings investment-fund wallets (ranks 9,10). The largest holder (rank 1, 5.7%) is judged the protocol Distribution/reward proxy (protocol_contract, not insider) but is the key decision flipper if it is instead a team allocation contract. Bare multisig/Safe insider calls (ranks 4,5) are low-confidence flippers. Big Brain Holdings classified as a named investment fund (investor/insider).",
+  "MPL_SYRUP": "MPL_SYRUP = Maple Finance's SYRUP governance token. 6/10 survivors are insiders: 3 treasury/foundation (SYRUP Custody Vaults, Maple Finance SYRUP Token Vault, SYRUP Foundation) + 3 investor (SYRUP Investment Recipient, Framework Ventures, Castle Island Ventures, both named VCs with Maple ties). 4 non-insiders are all exchange/custody (FalconX deposit, 2x Coinbase Prime custody, Upbit). insider_count_frac=0.6, materially above the keyword baseline (0.2) and the v3 baseline (0.1) because the keyword matcher left 'Custody Vaults', 'Token Vault', and the two named VC funds as 'other_labeled' rather than recognizing them as protocol-treasury and investor entities. Decision flippers concentrated on the two vault labels (ranks 1 and 3).",
+  "OP": "All 10 OP post-exclusion survivors are CEX deposit/wallet addresses (OKX, Coinbase, Coinbase Prime, Bithumb), generic whale tags (ETH/Token Millionaire = retail), or one unlabeled bare address. None map to a protocol team/founder/investor/foundation/treasury/multisig/vesting/grant entity, so insider_count=0 and insider_count_frac=0.0, consistent with the v3 (0.0) and keyword (0.0) reference fracs. n_matched=9 (rank 1 unmatched/unlabeled). The only baseline-divergent call is rank 7 (Bithumb): keyword_class was 'other_labeled' but it is unambiguously a Korean centralized exchange wallet (still insider=false, so no count impact). No decision flippers: no single survivor's call is both uncertain and capable of moving insider_count_frac. The Optimism Foundation / OP token-allocation / vesting contracts (the actual OP insiders) did not survive the top-exclusion into this top-10, leaving only exchange custody and whale addresses.",
+  "POL": "POL: 1 of 10 survivors classified insider (the official Polygon MATIC-POL Migration contract, a protocol/foundation-controlled token-swap vault). The remaining 9 are 6 generic 'Token Millionaire' retail wallets, 1 Upbit exchange wallet, 1 B2C2 market maker, and 1 unlabeled/unmatched address - none insider. insider_count_frac = 0.1, matching the v3 reference but reached independently from labels (keyword baseline was 0.0 because it did not flag the migration contract as insider).",
+  "RENDER": "10 survivors classified from Nansen labels. Only RENDER Custody Vaults (rank 4) is plausibly insider (protocol-branded custody treasury per the '<Protocol> Custody Vaults' rule), but low-confidence because it could be user-side vaults; it is the single decision-flipper. RENDER Distributor (rank 1) and Render Network: Bridge (rank 8) are protocol infrastructure contracts (pass-through distributor + cross-chain bridge), not insider stakes. Five CEX wallets (Crypto.com, Bitget, Kraken, Binance) and a Trading Bot are not insider; two bare-empty labels are unlabeled retail. insider_count=1, insider_count_frac=0.1 (reduces to 0.0 if Custody Vaults is user-vaults). Four exchange/bot calls flip from the keyword baseline's 'other_labeled' default.",
+  "RPL": "RPL top-10 post-exclusion survivors: only rank5 'RPL Investment Recipient' is a clear insider (investor allocation). Result matches the v3/keyword reference frac of 0.10 but via different routing: keyword baseline left several labels as 'other_labeled' that I resolved to exchange (Bithumb), protocol_contract (RPL token self-contract, Aave aEthRPL, oDAO Rewards), and retail (Patricio Worthalter=POAP founder, three 'High Balance' whales). The single borderline call is rank6 (oDAO Rewards distributor), flagged as a decision flipper.",
+  "UNI": "UNI: 3 of 10 survivors are insiders (ranks 8 and 9 Uniswap Team team/investor/advisor allocations; rank 10 a16z crypto VC investor). Non-insiders: 3 Coinbase Prime custody wallets + 1 OKX deposit (exchanges), 2 bare 'Uniswap' system contracts, and 1 UNI Token Distributor (protocol contracts). insider_count_frac=0.3, above the keyword baseline of 0.2 because a16z (other_labeled in baseline) is recognized as a named investor. No low-confidence calls: every label is unambiguous.",
+  "W": "Token W top-10 survivors (Solana-based labels) contain zero insiders. Two CEX hot wallets (Bybit rank 3, Bithumb rank 6) = exchange, not insider. One 'Token Millionaire' behavioral label (rank 4) = retail by rule. Two bracketed bare addresses (ranks 1, 9) carry Nansen bracket-tags but no entity attribution -> unlabeled, defaulting to retail (flagged low-confidence). Five empty labels (ranks 2,5,7,8,10) = unlabeled retail. No team/founder/investor/foundation/treasury/multisig/vesting/grant entity present among survivors. insider_count=0, frac=0.0. All calls agree with keyword baseline (v4_keyword_frac=0.0); no calls differ from keyword_class, so flags are limited to the two low-confidence bare-address survivors. No decision flippers (no survivor is a plausible insider that would move the fraction).",
+  "WXM": "WXM (WeatherXM, DePIN weather network). 10 matched survivors. Insiders = 4 bare Safe multisigs (ranks 3,5,9,10), all low confidence because none carry protocol/owner attribution; under the rule a bare Safe is team-controlled-by-default but flagged low. insider_count_frac = 0.4. NOT insider: Gate.io and SwissBorg (exchanges), Wormhole bridge (protocol_contract), two bare hex addresses (unlabeled/retail), and the WeatherXM WXM Distributor. The Distributor (rank 1, 8.81%, largest holder) is the key judgment call: classified protocol_contract/not-insider per the HNT-Distributor precedent (distribution/reward rail, not a static team treasury); reclassing it as a project-controlled allocation pool would raise the frac to 0.5. The v3 reference frac was 0.5 and the v4 keyword frac was 0.0; my 0.4 sits between because I count the four bare Safes as insider (vs keyword 0.0) but do not count the Distributor as insider (vs a treasury reading that would reach 0.5).",
+  "ZRO": "7 of 10 survivors LayerZero-affiliated insiders (2 multisigs, 1 foundation, 1 strategic-partnerships, 3 bare-tag team addresses); 3 generic-heuristic retail. Bare-tag set is the swing (0.4-0.7). Re-reviewed 2026-05-29 after the original review returned a truncated 1-item result."
+ }
+}

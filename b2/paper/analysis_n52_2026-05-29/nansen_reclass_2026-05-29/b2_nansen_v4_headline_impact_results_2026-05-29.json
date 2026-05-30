@@ -1,0 +1,37 @@
+{
+ "maturity_spec_anchor": {
+  "N": 50,
+  "depin_p": 0.0395,
+  "maturity_p": 0.8621
+ },
+ "retention_specs": {
+  "baseline_v3": {
+   "N": 49,
+   "depin_b": 0.6909,
+   "depin_p": 0.0409,
+   "ret_b": 0.565,
+   "ret_p": 0.4884
+  },
+  "v4_keyword": {
+   "N": 50,
+   "depin_b": 0.788,
+   "depin_p": 0.0062,
+   "ret_b": 1.7111,
+   "ret_p": 0.0845
+  },
+  "v4_reviewed": {
+   "N": 50,
+   "depin_b": 0.6669,
+   "depin_p": 0.0274,
+   "ret_b": 0.8181,
+   "ret_p": 0.3097
+  },
+  "v4_reviewed_safe": {
+   "N": 50,
+   "depin_b": 0.6973,
+   "depin_p": 0.0168,
+   "ret_b": 1.0909,
+   "ret_p": 0.183
+  }
+ }
+}

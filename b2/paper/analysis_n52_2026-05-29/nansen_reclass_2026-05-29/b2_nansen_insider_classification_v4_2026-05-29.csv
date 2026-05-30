@@ -1,0 +1,441 @@
+frame_token,chain,rank,address,share,nansen_label,nansen_ownership_pct,classification,class_source,insider,matched_in_nansen
+AAVE,ethereum,1,0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503,0.028844,Binance: BSC-pegged Assets [0x47ac0f],2.5,exchange,exchange_kw,False,True
+AAVE,ethereum,2,0x7915f9373ae32d1fcaf0cdf17a532a3d8046d759,0.024373,,,unlabeled,,False,False
+AAVE,ethereum,3,0x25f2226b597e8f9514b3f68f00f494cf4f286491,0.023088,Aave: Ecosystem Reserve [0x25f222],3.71,other_labeled,no_kw_match,False,True
+AAVE,ethereum,4,0x317625234562b1526ea2fac4030ea499c5291de4,0.021813,,,unlabeled,,False,False
+AAVE,ethereum,5,0x5a801a9418d036fd453078c3adcb761fdc5ae695,0.01605,Upbit: Hot Wallet [0x5a801a],1.5,other_labeled,no_kw_match,False,True
+AAVE,ethereum,6,0x45292a0eafa4d1625c06902f359c5ee819afb026,0.015597,Coinbase Prime: Custody Wallet [0x45292a],1.35,exchange,exchange_kw,False,True
+AAVE,ethereum,7,0x73af3bcf944a6559933396c1577b257e2054d935,0.01457,,,unlabeled,,False,False
+AAVE,ethereum,8,0x22740deba78d5a0c24c58c740e3715ec29de1bfa,0.013814,,,unlabeled,,False,False
+AAVE,ethereum,9,0x0e240e9a7b40ad11fdd69f952ba3bbd29a238bbd,0.013701,Coinbase Prime: Custody Wallet [0x0e240e],1.19,exchange,exchange_kw,False,True
+AAVE,ethereum,10,0x6e9ddc0143cf07d21ea51b6406755e2da9be0f58,0.012983,Token Millionaire [0x6e9ddc],1.13,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,1,0xc593fe9193b745447e86b45ea0bf62565ee030cc,0.032438,Uniswap: V3 WETH-ANYONE (1%) Liquidity Pool  [0xc593fe],2.69,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,2,0x1ef7a8dc436253b28167153aec7a1562bf73551c,0.029308,ANYONE: ANYONE Relay Rewards 2 [0x1ef7a8],2.5,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,3,0x50e6d8485b448de44cd9d9c979d5d8ed36bd82cb,0.029308,Anyone: Relay Rewards 3 [0x50e6d8],2.5,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,4,0xd19eab591fc1840c237488a180ced4aad9faecf8,0.029308,Anyone: ANYONE Relay Rewards 4 [0xd19eab],2.5,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,5,0xeed86b90448c371eab47b7f16e294297c27e4f51,0.018247,Coinspot: 0xeed [0xeed86b],1.51,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,6,0xe8fdfb7b89519ed7c4999a912abf315e6aa52b6f,0.01524,Vesting [0xe8fdfb],1.0,insider,insider_kw,True,True
+ANYONE,ethereum,7,0x446b86a33e2a438f569b15855189e3da28d027ba,0.015002,KuCoin: Wallet [0x446b86],1.28,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,8,0x9da8bfa73922ba179b7ce8dc9d5d1d4444e48878,0.014297,Becker: Former Smart Trader [0x9da8bf],1.31,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,9,0xaa10db8804d076601999c7cd769e02e44a99d5b2,0.012943,KuCoin: Deposit [0xaa10db],1.1,other_labeled,no_kw_match,False,True
+ANYONE,ethereum,10,0xaa469fc353c0ccffc8fc192e021afbc4e5303892,0.012739,ANyONe Protocol: ANYONE Bridge [0xaa469f],1.31,protocol_contract,protocol_kw,False,True
+ARB,arbitrum,1,0xf7f468b184a48f6ca37eeffe12733ee1c16b6e26,0.052528,Upbit: Exchange [0xf7f468],4.66,exchange,exchange_kw,False,True
+ARB,arbitrum,2,0x07455344be8db742627ae4514c1071e43a154ddb,0.013289,Coinbase: Deposit [0x074553],1.17,exchange,exchange_kw,False,True
+ARB,arbitrum,3,0x1190cea3e2c8727218768bfb990c3228aa06dfa9,0.012822,Lightspeed: Fund [0x1190ce],1.13,other_labeled,no_kw_match,False,True
+ARB,arbitrum,4,0xee5b5b923ffce93a870b3104b7ca09c3db80047a,0.009993,Bybit [0xee5b5b],0.88,other_labeled,no_kw_match,False,True
+ARB,arbitrum,5,0x76ec5a0d3632b2133d9f1980903305b62678fbd3,0.009494,BTCTurk [0x76ec5a],0.78,other_labeled,no_kw_match,False,True
+ARB,arbitrum,6,0x361ad597f6a0cf86f8ab14234ca17a5739a67458,0.008105,Bithumb: Wallet [0x361ad5],0.66,other_labeled,no_kw_match,False,True
+ARB,arbitrum,7,0x43684d03d81d3a4c70da68febdd61029d426f042,0.007829,Binance: Wallet [0x43684d],0.69,exchange,exchange_kw,False,True
+ARB,arbitrum,8,0xf5acf47847963bd0ae2b8e080729bf508b2482df,0.007755,Coinbase Prime: Deposit [0xf5acf4],0.94,exchange,exchange_kw,False,True
+ARB,arbitrum,9,0x3964128e13e05d4a672b4b45a1a96a2d56c27efb,0.00771,Coinbase: Deposit [0x396412],0.68,exchange,exchange_kw,False,True
+ARB,arbitrum,10,0x73af3bcf944a6559933396c1577b257e2054d935,0.00745,,,unlabeled,,False,False
+ATH,ethereum,1,0xaf8dcd50fdc14e413e5ef4468d4d21a961a7dcfd,0.061829,Upbit: Internal Wallet [0xaf8dcd],6.32,other_labeled,no_kw_match,False,True
+ATH,ethereum,2,0x5a4a88b4c6be83344ad9331facac9fd629e7831d,0.057606,Token Millionaire [0x5a4a88],5.71,other_labeled,no_kw_match,False,True
+ATH,ethereum,3,0x33548d42afa567dba29e0da665d295e232166a43,0.038584,Aethir [0x33548d],3.83,other_labeled,no_kw_match,False,True
+ATH,ethereum,4,0x651641299c7ec0aa44ad7ed9b7e12702fed2022f,0.015774,Bybit [0x651641],1.52,other_labeled,no_kw_match,False,True
+ATH,ethereum,5,0x8714909ac67adb799df8901b1825234215c96e19,0.008906,Bithumb: Deposit [0x871490],0.89,other_labeled,no_kw_match,False,True
+ATH,ethereum,6,0xe60e21cedb02bff2e88cd328a6cd74324a67a737,0.007528,MerkleVester [0xe60e21],0.75,insider,insider_kw,True,True
+ATH,ethereum,7,0x4320d08ff059cd11803d3ef1fc5c241ab38d18f8,0.007008,Coinbase Prime: Custody Wallet [0x4320d0],0.57,exchange,exchange_kw,False,True
+ATH,ethereum,8,0xdcba55e25b40af721a717f13f0b523739fbdfbcb,0.005522,Aethir Token (ATH) Investment Recipient [0xdcba55],0.55,insider,insider_kw,True,True
+ATH,ethereum,9,0x5f4cac3cf9253c508655fa2c63bc0a71453a80b4,0.004664,Aethir Token (ATH) Investment Recipient [0x5f4cac],0.46,insider,insider_kw,True,True
+ATH,ethereum,10,0x5d55d7f0f5d0078cc12f8fce3a6845aa812150a6,0.004203,Token Millionaire [0x5d55d7],0.42,other_labeled,no_kw_match,False,True
+AXL,ethereum,1,0xf42aac93ab142090db9fdc0bc86aab73cb36f173,0.033461,Bybit: Hot Wallet [0xf42aac],5.96,other_labeled,no_kw_match,False,True
+AXL,ethereum,2,0xfcac185644e5c6cd73c309a60d2758ae56cf78b3,0.028733,High Balance [0xfcac18],2.27,other_labeled,no_kw_match,False,True
+AXL,ethereum,3,0xd1669ac6044269b59fa12c5822439f609ca54f41,0.021035,CoinList [0xd1669a],1.41,other_labeled,no_kw_match,False,True
+AXL,ethereum,4,0xc80afd311c9626528de66d86814770361fe92416,0.013923,Paribu [0xc80afd],0.8,other_labeled,no_kw_match,False,True
+AXL,ethereum,5,0x3de3a257f0e50af9bf48aea633e06085695d9c1b,0.013396,,,unlabeled,,False,False
+AXL,ethereum,6,0x05e9c5bcc805aefefebbec13742cec01c6fac42e,0.010728,TokenManagerProxy [0x05e9c5],0.47,other_labeled,no_kw_match,False,True
+AXL,ethereum,7,0x0431e3b8bd78ef3aa3527d2d8bbcf089012f0cdf,0.00939,Coinbase Prime: Custody Wallet [0x0431e3],0.75,exchange,exchange_kw,False,True
+AXL,ethereum,8,0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83,0.009001,Kraken [0x7dafba],0.87,exchange,exchange_kw,False,True
+AXL,ethereum,9,0xd2dd7b597fd2435b6db61ddf48544fd931e6869f,0.00789,Kraken [0xd2dd7b],0.67,exchange,exchange_kw,False,True
+AXL,ethereum,10,0xab782bc7d4a2b306825de5a7730034f8f63ee1bc,0.007642,Bitvavo: Hot Wallet [0xab782b],0.96,other_labeled,no_kw_match,False,True
+BAL,ethereum,1,0xc80afd311c9626528de66d86814770361fe92416,0.118852,Paribu [0xc80afd],5.58,other_labeled,no_kw_match,False,True
+BAL,ethereum,2,0x2f28cac69f61841d6fe1a01d5bd80ac352ea6d2b,0.055141,,,unlabeled,,False,False
+BAL,ethereum,3,0xff052381092420b7f24cc97fded9c0c17b2cbbb9,0.044784,Balancer: Shareholder [0xff0523],1.86,other_labeled,no_kw_match,False,True
+BAL,ethereum,4,0xa0b3da7383b969008ebbab1d2567c93a143f472a,0.018371,,,unlabeled,,False,False
+BAL,ethereum,5,0x91b9e59614995e13a32e36440ac524825f7ae39e,0.013598,Token Millionaire [0x91b9e5],0.57,other_labeled,no_kw_match,False,True
+BAL,ethereum,6,0xda6b2a5e0c56542984d84a710f90eefd94ca1991,0.013467,High Balance [0xda6b2a],0.56,other_labeled,no_kw_match,False,True
+BAL,ethereum,7,0xd519d5704b41511951c8cf9f65fee9ab9bef2611,0.013205,High Balance [0xd519d5],0.55,other_labeled,no_kw_match,False,True
+BAL,ethereum,8,0xbb19053e031d9b2b364351b21a8ed3568b21399b,0.012899,High Balance [0xbb1905],0.54,other_labeled,no_kw_match,False,True
+BAL,ethereum,9,0xe08a8b19e5722a201eaf20a6bc595ef655397bd5,0.012573,Token Millionaire [0xe08a8b],0.52,other_labeled,no_kw_match,False,True
+BAL,ethereum,10,0x1c39babd4e0d7bff33bc27c6cc5a4f1d74c9f562,0.012558,High Balance [0x1c39ba],0.53,other_labeled,no_kw_match,False,True
+BONK,solana,1,51yZyDSnec4xnUv7XLRVYcDyV4x3wUtzrDcRaYbmQU5j,0.059138,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,2,9AdEE8AAm1XgJrPEs4zkTPozr3o4U5iGbgvPwkNdLDJ3,0.040129,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,3,9RpzaFh4J8F6Qg1gjnhrhSp9eXdVDjsesZXe53qp7ubB,0.033739,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,4,EbLm4ZtRqDftrQnZaMMvnwcKjK5ef5vm1Hg3sAPv3tKi,0.033599,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,5,EfEgUV2uQAzTooo6L4oYiEm15F6JBTnGiWMejqxPaqL3,0.030984,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,6,4xLpwxgYuPwPvtQjE94RLS4WZ4aD8NJYYKr2AJk99Qdg,0.029143,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,7,8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH,0.024848,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,8,CJjCPXBnSt6wRoyi7wzcMj5NbWvmPtzxE2JpWDMTRxj4,0.021212,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,9,3B7XAQrLoEMDEGvX8569F9GRb9PcXXocJmj5wvhhei9z,0.019795,,,reuse_noninsider,new12_provenance_reuse,False,True
+BONK,solana,10,5oNhn2ESFHgg52xiEKBt93cEEnbsoUoekcxXsWpLbHUJ,0.01255,,,reuse_noninsider,new12_provenance_reuse,False,True
+COMP,ethereum,1,0x841ed663f2636863d40be4ee76243377dff13a34,0.027413,Robinhood: Hot Wallet [0x841ed6],3.44,other_labeled,no_kw_match,False,True
+COMP,ethereum,2,0x3bbd4947df4e1bd80d130ddcfa9b54f1b03a1a8d,0.025963,,,unlabeled,,False,False
+COMP,ethereum,3,0x4290cd12f6ff4cdea0638916cbfb229b9d2c8806,0.020346,Coinbase Prime: Custody Wallet [0x4290cd],1.49,exchange,exchange_kw,False,True
+COMP,ethereum,4,0x7e9955e7f0c1c88d76d13720b5dd122cc3f6d8f6,0.017261,,,unlabeled,,False,False
+COMP,ethereum,5,0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241,0.015167,Compound: COMP Multisig [0xeb6332],2.13,insider,insider_kw,True,True
+COMP,ethereum,6,0xc78e14e378b035b53561fa79445069d379b1f868,0.013113,Compound: COMP Distributor [0xc78e14],0.97,protocol_contract,protocol_kw,False,True
+COMP,ethereum,7,0x6522b7f9d481eceb96557f44753a4b893f837e90,0.012092,Bybit [0x6522b7],1.06,other_labeled,no_kw_match,False,True
+COMP,ethereum,8,0x3e0f52239518b540a06f81d51ac4ea7ffdece329,0.011466,Geoffrey Hayes [0x3e0f52],1.01,other_labeled,no_kw_match,False,True
+COMP,ethereum,9,0x7c01aa3783577e15fd7e272443d44b92d5b21056,0.01144,Sablier: Vesting [0x7c01aa],0.67,insider,insider_kw,True,True
+COMP,ethereum,10,0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503,0.011384,Binance: BSC-pegged Assets [0x47ac0f],1.0,exchange,exchange_kw,False,True
+CRV,ethereum,1,0x72402ce4d16619e88ceff669634997c360b0f0ad,0.030633,Token Millionaire [0x72402c],2.72,other_labeled,no_kw_match,False,True
+CRV,ethereum,2,0xbe7be7023902f09cc28f0101a3e6e313bf2bc626,0.020449,Kraken: Hot Wallet [0xbe7be7],1.88,exchange,exchange_kw,False,True
+CRV,ethereum,3,0x611f7bf868a6212f871e89f7e44684045ddfb09d,0.015304,OKX: Deposit [0x611f7b],1.47,exchange,exchange_kw,False,True
+CRV,ethereum,4,0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597,0.015228,Luno: Wallet [0x3a5cc8],1.35,other_labeled,no_kw_match,False,True
+CRV,ethereum,5,0xd2dd7b597fd2435b6db61ddf48544fd931e6869f,0.012581,Kraken [0xd2dd7b],1.22,exchange,exchange_kw,False,True
+CRV,ethereum,6,0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83,0.012269,Kraken [0x7dafba],1.07,exchange,exchange_kw,False,True
+CRV,ethereum,7,0x77fb357f55bef5a70d30663955f8c9f35794df0e,0.011112,eToro: Wallet [0x77fb35],0.98,other_labeled,no_kw_match,False,True
+CRV,ethereum,8,0x8fa129f87b8a11ee1ca35abd46674f8b66984d4a,0.01007,Bybit: Hot Wallet [0x8fa129],1.28,other_labeled,no_kw_match,False,True
+CRV,ethereum,9,0x5dc61282cdcf58a27f7a5c9612aea3d2330964be,0.009865,Passive Holder [0x5dc612],0.87,other_labeled,no_kw_match,False,True
+CRV,ethereum,10,0x88a1493366d48225fc3cefbdae9ebb23e323ade3,0.007092,Bybit [0x88a149],0.63,other_labeled,no_kw_match,False,True
+DIMO,polygon,1,0xccfa7c808f5b77822e4935a7230f46681c99f4bc,0.024067,Multisig [0xccfa7c],2.16,insider,insider_kw,True,True
+DIMO,polygon,2,0x354698f0e93c6830196e81250074733d8a792ff2,0.022508,,,unlabeled,,False,False
+DIMO,polygon,3,0x3ace81a93ff91f7ce42da8d1c18d2de6b470070c,0.015849,[0x3ace81],1.42,other_labeled,no_kw_match,False,True
+DIMO,polygon,4,0x62b98e019e0d3e4a1ad8c786202e09017bd995e1,0.015743,Gnosis Safe Proxy [0x62b98e],1.42,other_labeled,no_kw_match,False,True
+DIMO,polygon,5,0x0daf060795df02c59fb15f20b41e1bf24d6b31d8,0.014761,[0x0daf06],1.33,other_labeled,no_kw_match,False,True
+DIMO,polygon,6,0x7b3d491d7ad5d14166369b8fe53c51cb16d0a296,0.014749,[0x7b3d49],1.33,other_labeled,no_kw_match,False,True
+DIMO,polygon,7,0xc20d25fb4cafd5b7d3cd99ec4df6349f6aa61b58,0.013727,[0xc20d25],1.23,other_labeled,no_kw_match,False,True
+DIMO,polygon,8,0xced3c922200559128930180d3f0bffd4d9f4f123,0.013685,Gnosis Safe Proxy [0xced3c9],2.79,other_labeled,no_kw_match,False,True
+DIMO,polygon,9,0x597a1df671a3b32801e7687ef469541a91562ca4,0.013197,[0x597a1d],1.19,other_labeled,no_kw_match,False,True
+DIMO,polygon,10,0xe2c966cd017f03ac7f735cd19ad684e332d0c5a0,0.013197,[0xe2c966],1.19,other_labeled,no_kw_match,False,True
+DRIFT,solana,1,FH9iLV5Z8EUEDMnW6CzUPkpDhWJCsHqJ5N4W23njNsUo,0.140889,Upbit: Internal Wallet [FH9iLV5Z],12.99,other_labeled,no_kw_match,False,True
+DRIFT,solana,2,Gu6nuuGLPora979uTwwVCyKhiMRnGfzKAPwqcrBfaiJq,0.054908,,,unlabeled,,False,False
+DRIFT,solana,3,7LCwgH3TtA7v9jvPoU3zHhRUCgd2XNCdAwQSjBPDzFQ6,0.040047,Drift [7LCwgH3T],3.69,other_labeled,no_kw_match,False,True
+DRIFT,solana,4,EPpctwZpP7LE61Xkpbb9ixfxMFD8fFAxewe7dTk6dg1M,0.026699,Coinbase: Deposit [EPpctwZp],2.58,exchange,exchange_kw,False,True
+DRIFT,solana,5,DemTRm4sQbLxMywg9XST9TMYRmXfwNH6CCfiU4xb47kR,0.02237,[DemTRm4s],2.23,other_labeled,no_kw_match,False,True
+DRIFT,solana,6,3VYKR2SWa8PmDBkwHWTrwznEsqSajhRyDDeNyY8rb2mK,0.015076,DRIFT Investment Recipient [3VYKR2SW],1.5,insider,insider_kw,True,True
+DRIFT,solana,7,HPjkU5hUR1diprB6Uihqxtr5hkRaJXFEetGjkVyEmoUR,0.01449,Drift Foundation [HPjkU5hU],1.66,insider,insider_kw,True,True
+DRIFT,solana,8,87HMEidQ35cidTRwgRaJ9DWMvopMfemP48PEmo2hAgjy,0.011699,DRIFT Custody Vaults [87HMEidQ],1.16,other_labeled,no_kw_match,False,True
+DRIFT,solana,9,5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2,0.011044,Bybit: Hot Wallet [5LZkATrL],3.55,other_labeled,no_kw_match,False,True
+DRIFT,solana,10,8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH,0.008869,Bithumb: Hot Wallet [8Mm46Csq],1.11,other_labeled,no_kw_match,False,True
+ENA,ethereum,1,0x1dc55d87c4143cc1829989d7ff8d580549ac0901,0.082339,,,reuse_noninsider,new12_provenance_reuse,False,True
+ENA,ethereum,2,0x2146aa5807d96e6b2922a149cee870f17347f1d0,0.081545,,,reuse_noninsider,new12_provenance_reuse,False,True
+ENA,ethereum,3,0xa5274a5a4b4bb3b3646475886b41bf6c50edd666,0.061114,Ethena (protocol-team EOA),,insider,new12_provenance_reuse,True,True
+ENA,ethereum,4,0x7462f0d93260909870487f17a27c336349579557,0.059165,Ethena Labs (protocol-team EOA),,insider,new12_provenance_reuse,True,True
+ENA,ethereum,5,0xb2af973905f05bc82bf97486b6ab883598d98298,0.056096,Ethena Labs (protocol-team EOA),,insider,new12_provenance_reuse,True,True
+ENA,ethereum,6,0x631ee55b8ecd7afb53ec30211a082691a4cbe3ae,0.045792,,,reuse_noninsider,new12_provenance_reuse,False,True
+ENA,ethereum,7,0x0c36fda877d41671b14fb4e7655798965237c7d0,0.022117,,,reuse_noninsider,new12_provenance_reuse,False,True
+ENA,ethereum,8,0x877b3d5c681c8890d19dbf450306caa3c3d4bba6,0.021121,Ethena Labs: REZ Investment Recipient (strategic investor),,insider,new12_provenance_reuse,True,True
+ENA,ethereum,9,0x5a52e96bacdabb82fd05763e25335261b270efcb,0.02072,,,reuse_noninsider,new12_provenance_reuse,False,True
+ENA,ethereum,10,0xa55457e0d0652ba47fe1f97873a62b4f9dcae4d1,0.012536,ENA Investment Recipient (strategic investor),,insider,new12_provenance_reuse,True,True
+ENS,ethereum,1,0x2cd5bb500066b913d320fc9ac52a72422915c422,0.035151,Nick Johnson [0x2cd5bb],3.29,other_labeled,no_kw_match,False,True
+ENS,ethereum,2,0x498697892fd0e5e3a16bd40d7bf2644f33cbbbd4,0.025324,Bithumb: Hot Wallet [0x498697],2.28,other_labeled,no_kw_match,False,True
+ENS,ethereum,3,0xa0b49ee43b256ee817d0e466fb88a3a25bf76277,0.007904,Token Millionaire [0xa0b49e],0.74,other_labeled,no_kw_match,False,True
+ENS,ethereum,4,0x073f564419b625a45d8aea3bb0de4d5647113ad7,0.007455,OKX: Deposit [0x073f56],0.7,exchange,exchange_kw,False,True
+ENS,ethereum,5,0x6a496c6076a1f3ca554b6f4eef81e4885a433cfe,0.004384,Token Millionaire [0x6a496c],0.41,other_labeled,no_kw_match,False,True
+ENS,ethereum,6,0x187c9fbf5bd0f266883c03f320260c407c7b4100,0.003638,Bybit [0x187c9f],0.29,other_labeled,no_kw_match,False,True
+ENS,ethereum,7,0x801960b082d48f822395b03df7b1908899ab03aa,0.003254,Token Millionaire [0x801960],0.3,other_labeled,no_kw_match,False,True
+ENS,ethereum,8,0x9c80d042db8cdd2586f00fa8ed47c387dfd05026,0.002662,,,unlabeled,,False,False
+ENS,ethereum,9,0x4e5cb586c2ee0d0f42891b705061d2ea42b236dc,0.002374,Gnosis Safe Proxy [0x4e5cb5],0.21,other_labeled,no_kw_match,False,True
+ENS,ethereum,10,0x76ec5a0d3632b2133d9f1980903305b62678fbd3,0.002166,BTCTurk [0x76ec5a],0.21,other_labeled,no_kw_match,False,True
+ETHFI,ethereum,1,0x95bf94e06d5be1000c23cd99968eff414aa4995e,0.111539,ETHFI Investment Recipient [0x95bf94],10.17,insider,insider_kw,True,True
+ETHFI,ethereum,2,0xf10873355b209b401262cadc753d654e2b7e41ac,0.044924,ETHFI Investment Recipient [0xf10873],5.46,insider,insider_kw,True,True
+ETHFI,ethereum,3,0xf619ab1f33cdc8a0123e093de92ea4d7399de39f,0.039408,Token Millionaire [0xf619ab],3.59,other_labeled,no_kw_match,False,True
+ETHFI,ethereum,4,0x6630ff17cf5357c5f9c3d2a21ac98d2ff1070739,0.031868,ETHFI Investment Recipient [0x6630ff],2.91,insider,insider_kw,True,True
+ETHFI,ethereum,5,0x7a93190d436436bbb79fa2c0d24ca93afb59b3fb,0.030352,Token Millionaire [0x7a9319],2.77,other_labeled,no_kw_match,False,True
+ETHFI,ethereum,6,0x43684d03d81d3a4c70da68febdd61029d426f042,0.019326,Binance: Wallet [0x43684d],1.76,exchange,exchange_kw,False,True
+ETHFI,ethereum,7,0x7d4bbe471369a066186c18baf33622796a08d5cd,0.017446,ether.fi: DAO Treasury [0x7d4bbe],1.59,insider,insider_kw,True,True
+ETHFI,ethereum,8,0x5a52e96bacdabb82fd05763e25335261b270efcb,0.016819,Binance [0x5a52e9],0.63,exchange,exchange_kw,False,True
+ETHFI,ethereum,9,0x56bbb2d4b4d95450f3eae3b9b6de6a3f45d98d70,0.014975,,,unlabeled,,False,False
+ETHFI,ethereum,10,0x1331669cdfd56a5a865fdb38d825451fde8f13bf,0.01405,Token Millionaire [0x133166],1.28,other_labeled,no_kw_match,False,True
+FXS,ethereum,1,0xccfc07b3f23bf293e7363495fa2f9509bf72ecf1,0.035772,,,reuse_noninsider,new12_provenance_reuse,False,True
+FXS,ethereum,2,0x1aabda2551c0b062f61ed57f103e0385ec051065,0.023558,,,reuse_noninsider,new12_provenance_reuse,False,True
+FXS,ethereum,3,0xe0dd07b181ca77ed9063821b4d2d28a85f722f5f,0.02017,,,reuse_noninsider,new12_provenance_reuse,False,True
+FXS,ethereum,4,0x12d7df4910d3dc0867cc7720e3bec6260b4b1100,0.018368,,,reuse_noninsider,new12_provenance_reuse,False,True
+FXS,ethereum,5,0x6fcfee4f14eafa723d90ad4b282757c5fe3d92ee,0.013113,Frax (protocol-team/treasury operational EOA),,insider,new12_provenance_reuse,True,True
+FXS,ethereum,6,0x628d3e52e46432ed7ff55efe0eaf67c9ac16aac0,0.011963,Dragonfly Capital: Fund (VC/early-investor),,insider,new12_provenance_reuse,True,True
+FXS,ethereum,7,0xd53e50c63b0d549f142a2dcfc454501aaa5b7f3f,0.00971,Frax Finance (protocol-team/treasury operational EOA),,insider,new12_provenance_reuse,True,True
+FXS,ethereum,8,0xd8b42cebc82607226f68a5373d99f54b397f886a,0.007958,,,reuse_noninsider,new12_provenance_reuse,False,True
+FXS,ethereum,9,0x602d9abd5671d24026e2ca473903ff2a9a957407,0.006061,,,reuse_noninsider,new12_provenance_reuse,False,True
+FXS,ethereum,10,0xd51e42ca4db0fad80bcc4cc216f98c9b44e98cb7,0.004917,,,reuse_noninsider,new12_provenance_reuse,False,True
+GEOD,polygon,1,0x3a6906e4239f9860c81035c54198df58d892653b,0.061633,Token Vault [0x3a6906],5.05,other_labeled,no_kw_match,False,True
+GEOD,polygon,2,0x47c8ebecfa390a59b0e127c9178e936a4ada907d,0.040741,Token Millionaire [0x47c8eb],4.0,other_labeled,no_kw_match,False,True
+GEOD,polygon,3,0xcdd8dcfc406d0487d09b8332cf1bafa2a21a9f47,0.037515,Token Millionaire [0xcdd8dc],3.68,other_labeled,no_kw_match,False,True
+GEOD,polygon,4,0x3783f34cad40f4bcb5eaff3594458da1f5ea041f,0.02037,Token Millionaire [0x3783f3],2.0,other_labeled,no_kw_match,False,True
+GEOD,polygon,5,0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f,0.02037,Multisig [0xcecccb],2.0,insider,insider_kw,True,True
+GEOD,polygon,6,0xcdfd8ec577217df0a577cc64a64eca71bb28d954,0.017315,Multisig [0xcdfd8e],1.7,insider,insider_kw,True,True
+GEOD,polygon,7,0x3ad45fb5c28da8e8a1e75a767a271296254e7522,0.012731,ParaFi Capital [0x3ad45f],1.25,other_labeled,no_kw_match,False,True
+GEOD,polygon,8,0x0d0707963952f2fba59dd06f2b425ace40b492fe,0.008838,Gate: Wallet [0x0d0707],0.42,exchange,exchange_kw,False,True
+GEOD,polygon,9,0xe92e65049b3c2ca12806e9567b08895118c5a03f,0.008786,GSR:  [0xe92e65],0.51,other_labeled,no_kw_match,False,True
+GEOD,polygon,10,0x682ba846eed9934cc89ed89a350ea98781256b6f,0.008164,GEOD Staking Pool [0x682ba8],0.58,protocol_contract,protocol_kw,False,True
+GMX,arbitrum,1,0x02984c3bb35f0e61cfc690f221a5ebcc5389f86b,0.066999,GMX_LockboxAdapter [0x02984c],6.44,other_labeled,no_kw_match,False,True
+GMX,arbitrum,2,0x0755d33e45ed2b874c9ebf5b279023c8bd1e5e93,0.027321,GMX Staking Pool [0x0755d3],2.36,protocol_contract,protocol_kw,False,True
+GMX,arbitrum,3,0x80a9ae39310abf666a87c743d6ebbd0e8c42158e,0.026696,Uniswap: GMX-ETH Liquidity Pool [0x80a9ae],2.53,other_labeled,no_kw_match,False,True
+GMX,arbitrum,4,0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e,0.014223,SafeProxy [0xc6378d],1.35,other_labeled,no_kw_match,False,True
+GMX,arbitrum,5,0xafee421482faea92292ed3ffe29371742542ad72,0.013763,OKX [0xafee42],1.35,exchange,exchange_kw,False,True
+GMX,arbitrum,6,0x68863dde14303bced249ca8ec6af85d4694dea6a,0.013673,GMX: GMX Timelock [0x68863d],1.3,protocol_contract,protocol_kw,False,True
+GMX,arbitrum,7,0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2,0.012359,SafeProxy [0x4d4dc3],1.17,other_labeled,no_kw_match,False,True
+GMX,arbitrum,8,0x199070ddfd1cfb69173aa2f7e20906f26b363004,0.009468,GMX: Gmx Vester [0x199070],0.82,insider,insider_kw,True,True
+GMX,arbitrum,9,0x25681ab599b4e2ceea31f8b498052c53fc2d74db,0.006851,Binance: Wallet [0x25681a],0.45,exchange,exchange_kw,False,True
+GMX,arbitrum,10,0xbd48149673724f9caee647bb4e9d9ddaf896efeb,0.00645,GMX Market [0xbd4814],0.36,other_labeled,no_kw_match,False,True
+GNO,ethereum,1,0x445cc6c3d51eb0a63395a613a0960c7922bca0d6,0.007059,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,2,0x1d65d296b6ad7fdbf77d3c9cc44c9b2787f1a341,0.004928,Gnosis Multisig (multisig),,insider,new12_provenance_reuse,True,True
+GNO,ethereum,3,0x70e278941ed3c0d2c6d6105df184831992aca856,0.003835,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,4,0x926a21917d067c52e132e318686ebcf11182c428,0.002189,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,5,0xc2a39291acf6ae4ed29c6fcc15f1d54141f8d833,0.001355,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,6,0x98dd467fbc8b32f08387f8888b161d5cd8c00889,0.001353,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,7,0x5db8e9605de5cd567293518fca840536a5ac3a91,0.001285,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,8,0xca5bbc1196aae807b097c0f7e696e2b3977d2abe,0.001093,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,9,0x39d787fdf7384597c7208644dbb6fda1cca4ebdf,0.001089,,,reuse_noninsider,new12_provenance_reuse,False,True
+GNO,ethereum,10,0xd2dd7b597fd2435b6db61ddf48544fd931e6869f,0.001084,,,reuse_noninsider,new12_provenance_reuse,False,True
+GRASS,solana,1,5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1,0.160145,,,unlabeled,,False,False
+GRASS,solana,2,u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w,0.066047,Gate: Wallet [u6PJ8DtQ],0.46,exchange,exchange_kw,False,True
+GRASS,solana,3,5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5,0.031631,,,unlabeled,,False,False
+GRASS,solana,4,4gXs8oc2yEwDTPkDyo6V8ZixheTCZvu8JicrEuDat8tH,0.026543,,,unlabeled,,False,False
+GRASS,solana,5,ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ,0.022353,,,unlabeled,,False,False
+GRASS,solana,6,CafeQ2wWakoKs8wKLhk8KFHvsddSQUt5jynwpceA9Zad,0.019287,,,unlabeled,,False,False
+GRASS,solana,7,1hQP5Qdvi9L2ptueRAMWxBa8Ri65WciotvfgpG6XeZV,0.01713,,,unlabeled,,False,False
+GRASS,solana,8,7RmkMNQerKaVioRnmqZsHM5Gm8F3gngQG8umLNoK97q4,0.01353,,,unlabeled,,False,False
+GRASS,solana,9,D5jx4wmxuPz18hqmgpCMLGVq3uSksCafCp5xjVe1nw8p,0.012578,,,unlabeled,,False,False
+GRASS,solana,10,5oxVntYzjPobCN7GETBPFe8YdpabCZc8U64KH2HzMhZt,0.012427,,,unlabeled,,False,False
+GRT,ethereum,1,0x823fd1a44a37a4be35c3b0c8b11463cc4f27396c,0.079446,Upbit [0x823fd1],7.56,other_labeled,no_kw_match,False,True
+GRT,ethereum,2,0xfcb40a54be132a26c87f6bb7d2f74354ce13d96d,0.055025,Token Millionaire [0xfcb40a],5.18,other_labeled,no_kw_match,False,True
+GRT,ethereum,3,0x5b0a3c6d28b9b11770b0b838f3ff48062805b4e1,0.023855,Token Millionaire [0x5b0a3c],2.24,other_labeled,no_kw_match,False,True
+GRT,ethereum,4,0x3a5cc8689d1b0cef2c317bc5c0ad6ce88b27d597,0.01567,Luno: Wallet [0x3a5cc8],1.41,other_labeled,no_kw_match,False,True
+GRT,ethereum,5,0x5eb529e12eb1de6b3c467d54b2861d3b56f63911,0.01561,Coinbase Prime: Custody Wallet [0x5eb529],1.51,exchange,exchange_kw,False,True
+GRT,ethereum,6,0x76ec5a0d3632b2133d9f1980903305b62678fbd3,0.012854,BTCTurk [0x76ec5a],1.26,other_labeled,no_kw_match,False,True
+GRT,ethereum,7,0xeb8ee0503e0301720eb7616e0897f8ecdf751fc3,0.011763,Bithumb: Wallet [0xeb8ee0],1.19,other_labeled,no_kw_match,False,True
+GRT,ethereum,8,0x7dafba1d69f6c01ae7567ffd7b046ca03b706f83,0.010099,Kraken [0x7dafba],0.95,exchange,exchange_kw,False,True
+GRT,ethereum,9,0x5a52e96bacdabb82fd05763e25335261b270efcb,0.009839,,,unlabeled,,False,False
+GRT,ethereum,10,0x8e1aff4fe98129edbe423aca6a3af51b4de2af09,0.009544,The Graph: Multisig [0x8e1aff],0.9,insider,insider_kw,True,True
+HNT,solana,1,5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2,0.124346,Bybit: Hot Wallet [5LZkATrL],2.25,other_labeled,no_kw_match,False,True
+HNT,solana,2,4UiT93tyCivCHetditvH15wqWxYrHcoPWzQiKDQYF7Uo,0.087579,Helium: HNT Distributor [4UiT93ty],1.37,protocol_contract,protocol_kw,False,True
+HNT,solana,3,2AdZQmGikAMWahuJRb27PGABQyF6iyQ8aUUYyDDwRRG6,0.064568,Helium [2AdZQmGi],1.03,other_labeled,no_kw_match,False,True
+HNT,solana,4,22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa,0.051172,Crypto.com [22Wnk8Pw],0.95,other_labeled,no_kw_match,False,True
+HNT,solana,5,73zsmmqCXjvHHhNSib26Y8p3jYiH3UUuyKv71RJDnctW,0.038608,Helium: HNT Distributor [73zsmmqC],0.67,protocol_contract,protocol_kw,False,True
+HNT,solana,6,53unSgGWqEWANcPYRF35B2Bgf8BkszUtcccKiXwGGLyr,0.038192,Binance US: Hot Wallet [53unSgGW],0.61,exchange,exchange_kw,False,True
+HNT,solana,7,EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR,0.032727,Kraken [EFE3j1pc],0.56,exchange,exchange_kw,False,True
+HNT,solana,8,7SmkxiXnGVrenvHKUDgosMUxSaN35GH3ziocaxA7hkd2,0.027527,,,unlabeled,,False,False
+HNT,solana,9,8iQY3mJNW1Zq9d5BQXtH9HYPNJCvaHEek7Mtk1tTXmhc,0.020468,[8iQY3mJN],0.59,other_labeled,no_kw_match,False,True
+HNT,solana,10,AjsyrYpgaH275DBSnvNWdGK33hVycSFuXN87FKnX6fVY,0.016842,,,unlabeled,,False,False
+HONEY,solana,1,FZ9diFCJoPHaXKM7ik34YYAYHsEJ6oBvy9H74dVzqyjk,0.03705,[FZ9diFCJ],3.69,other_labeled,no_kw_match,False,True
+HONEY,solana,2,A6zNJCrSEZprWMMmRgdAiNY1jDmJnW1QfFnXWs6dUU3y,0.034628,[A6zNJCrS],3.45,other_labeled,no_kw_match,False,True
+HONEY,solana,3,8MgKUjhQ1e38owDu8BR6783Z73r1TQk1YtmB6UbCiwfS,0.030434,Hivemapper [8MgKUjhQ],3.03,other_labeled,no_kw_match,False,True
+HONEY,solana,4,EAmeyPtAyFPLccyaEwoyAcYaLLjdhEeDoriDSSTjdT6i,0.023408,Hivemapper [EAmeyPtA],2.33,other_labeled,no_kw_match,False,True
+HONEY,solana,5,D99E2pr78DSVmBcjuDWETY8Nfm9X9ro3Grgc67mzfutA,0.022164,[D99E2pr7],2.21,other_labeled,no_kw_match,False,True
+HONEY,solana,6,HyW7x3gFHWLFA67a2DZVGeCcLNzuNTSG3yUyq2bSsuvA,0.022132,Hivemapper: Deposit [HyW7x3gF],2.21,other_labeled,no_kw_match,False,True
+HONEY,solana,7,Fe3XYFYaXEo2LEy4ff1fdvp5TT5pJN5nbusNoSwBcmor,0.019912,High Balance [Fe3XYFYa],1.98,other_labeled,no_kw_match,False,True
+HONEY,solana,8,FsAA2JoVBLin4CbGk16eCjQM4Etixz9cbT1smJvfC6NQ,0.019335,Coinbase: Deposit [FsAA2JoV],1.93,exchange,exchange_kw,False,True
+HONEY,solana,9,3A6s38hSeXDrapWiAR7pRxyaJSiCbGLeKmEZSA9Tix4F,0.019302,Coinbase: Deposit [3A6s38hS],1.92,exchange,exchange_kw,False,True
+HONEY,solana,10,5YMPkRAQN6S6sVw3hLwPGqg8w9ZDiVDwFdYNFK2QYJzp,0.018733,Coinbase: Deposit [5YMPkRAQ],1.87,exchange,exchange_kw,False,True
+IO,solana,1,28SqbTKJmqpRzqHmCqWHP6rHXMnLs5SVwWiTqzUZFWTm,0.076467,Token Millionaire [28SqbTKJ],5.65,other_labeled,no_kw_match,False,True
+IO,solana,2,6erNn9LP9EQfJMgSBRKX3rt5tJYXraHMmgwbbSCWuWdj,0.046112,[6erNn9LP],3.4,other_labeled,no_kw_match,False,True
+IO,solana,3,Gm9t9T9mb9QjdGvY9huq99oTaTqubpyHgvDbAE7feNZv,0.03984,Token Millionaire [Gm9t9T9m],2.94,other_labeled,no_kw_match,False,True
+IO,solana,4,Fo7DTEWgW8PYLcTuSAvz3Hf9f1qQW4ngJXm4J2EKJSRK,0.037717,Token Millionaire [Fo7DTEWg],2.78,other_labeled,no_kw_match,False,True
+IO,solana,5,7oemYfuh96vjwui49wXo3XUp4kw67jTCrKoLgzsYkCuz,0.03383,Token Millionaire [7oemYfuh],2.5,other_labeled,no_kw_match,False,True
+IO,solana,6,BB6toFFMQTvSYw5AZvVhWQGrs7oGnxhzjVQCie2rDsVt,0.023516,Token Millionaire [BB6toFFM],1.74,other_labeled,no_kw_match,False,True
+IO,solana,7,6FHTSZaYTL2sLsjeLfMsbeek5BqZBm6nTUaqGtceB5Qw,0.021382,Token Millionaire [6FHTSZaY],1.58,other_labeled,no_kw_match,False,True
+IO,solana,8,8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH,0.02058,Bithumb: Hot Wallet [8Mm46Csq],1.66,other_labeled,no_kw_match,False,True
+IO,solana,9,DZ2hv4ZEBBmoXJ5o3v1f5bPYtifK1kEDYLeNbUTMaZkg,0.019842,[DZ2hv4ZE],1.46,other_labeled,no_kw_match,False,True
+IO,solana,10,8nxaFYPgshDx9sYhQYK1BmCtczXJsMbrojEiY9eCBQnz,0.018342,Token Millionaire [8nxaFYPg],1.35,other_labeled,no_kw_match,False,True
+IOTX,ethereum,1,0x4761571eeec2fee2fb9f8d5c08ef7c7606a9f659,0.015319,High Balance [0x476157],1.53,other_labeled,no_kw_match,False,True
+IOTX,ethereum,2,0x58bc01f516c8d6986bc0fd67944f2718c2a94348,0.015015,IOTX Investment Recipient [0x58bc01],1.49,insider,insider_kw,True,True
+IOTX,ethereum,3,0xcbe6523edbfa82f376ee842794128dbf9141510a,0.014377,High Balance [0xcbe652],1.43,other_labeled,no_kw_match,False,True
+IOTX,ethereum,4,0xc579eabd327a28ee646bf937ac15a9321d14bb87,0.013786,Coinbase Prime: Custody Wallet [0xc579ea],1.23,exchange,exchange_kw,False,True
+IOTX,ethereum,5,0x450e91d6c8c356c9b47894e623b4226edbc81ebd,0.012019,Coinbase Prime: Custody Wallet [0x450e91],1.27,exchange,exchange_kw,False,True
+IOTX,ethereum,6,0xc59b962be5118a2680cda9d730e5a23a257f4ea0,0.010228,High Balance [0xc59b96],1.02,other_labeled,no_kw_match,False,True
+IOTX,ethereum,7,0x460829c2e8d0b79fbe75f9be3e2a4da39637963e,0.010059,High Balance [0x460829],0.95,other_labeled,no_kw_match,False,True
+IOTX,ethereum,8,0x2444919721b0b1abef3a21adeb504179ee67888f,0.005022,High Balance [0x244491],0.5,other_labeled,no_kw_match,False,True
+IOTX,ethereum,9,0x77fb357f55bef5a70d30663955f8c9f35794df0e,0.00288,eToro: Wallet [0x77fb35],0.29,other_labeled,no_kw_match,False,True
+IOTX,ethereum,10,0xfe7bcb3676aabe9a6b39cb23f3a5fa41eed7ad1b,0.002092,machinefi.eth [0xfe7bcb],0.21,other_labeled,no_kw_match,False,True
+JTO,solana,1,5SybwTvGno6SBApbGinXyLqhnPzs47aaBG4PShyPT8ey,0.071671,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,2,ESnLXehGeReTRw3WxxEZwB4u2C9gAe8dMbob8Q4gm9Yg,0.048632,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,3,7r5xFtcJZpc8vtzBCc1S9ooR2xadHt1jcT8HiH23a1x1,0.043886,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,4,MbzL6v1mDkF8QW6r9TJKV6eaiYSf6MNtpVei2ciFQHN,0.028058,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,5,FQnVcnwEXREJ3D4j7LzNGzCiMUVVqxkGEqZ2KffRY8ud,0.020393,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,6,3dguv2qss6GjmUEnJsddxkR9q5Zoem1sjoSk1jpXFPsz,0.020393,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,7,jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt,0.020177,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,8,3mv8hXktfpgCgK2W2jwRKdwDkw2UaYVJcVDozWmgv1uA,0.018982,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,9,8sjM83a4u2M8YZYshLGKzYxh1VHFfbgtaytwaoEg4bUJ,0.01874,,,reuse_noninsider,new12_provenance_reuse,False,True
+JTO,solana,10,9xSi6onCqhLuXTgodd5wB7EXv2WwuYPZyZwDyruGKL6v,0.015295,,,reuse_noninsider,new12_provenance_reuse,False,True
+JUP,solana,1,27b4PRN7K37rpTywq65t29rjuNfQkYpxZUjkbtHc5VvZ,0.194503,Upbit [27b4PRN7],1.1,other_labeled,no_kw_match,False,True
+JUP,solana,2,43DbAvKxhXh1oSxkJSqGosNw3HpBnmsWiak6tB5wpecN,0.074692,Backpack Exchange: Wallet [43DbAvKx],0.7,exchange,exchange_kw,False,True
+JUP,solana,3,Gem2VAypSg7Ai7vjDKPTtqFahpoQWkfgVkyzx3rPoTka,0.043436,Bybit: Hot Wallet [Gem2VAyp],0.24,other_labeled,no_kw_match,False,True
+JUP,solana,4,7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z,0.037774,Jupiter: USDC-jupSOL Supply Vault [7s1da8Dd],0.24,other_labeled,no_kw_match,False,True
+JUP,solana,5,6QqVvibpcQpju2QCqR7pdD4dzFKdAEDrCFAFCscFmCy6,0.026475,[6QqVvibp],0.19,other_labeled,no_kw_match,False,True
+JUP,solana,6,2h56LbCJDC9PAjYJWSVmXP4VBhrwzaD9nMUqiz9TTgBD,0.021834,,,unlabeled,,False,False
+JUP,solana,7,7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh,0.019331,,,unlabeled,,False,False
+JUP,solana,8,C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo,0.017299,,,unlabeled,,False,False
+JUP,solana,9,8wM44Ryv9DFCSfkgUnPEPgnsc53arT4cnmXL6LnnC4UW,0.014681,,,unlabeled,,False,False
+JUP,solana,10,ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ,0.014272,,,unlabeled,,False,False
+KMNO,solana,1,Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57,0.059741,,,reuse_noninsider,new12_provenance_reuse,False,True
+KMNO,solana,2,8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew,0.056899,,,reuse_noninsider,new12_provenance_reuse,False,True
+KMNO,solana,3,G2VtFJ9P5P7qjz5bcfwVQw6DGJ2sYBUTXf7npQy5PZ2R,0.048234,,,reuse_noninsider,new12_provenance_reuse,False,True
+KMNO,solana,4,4x3uU27N1cfmBx8JerY13ZzdNxgmgQdiZUSFZQHbhe1B,0.040234,KMNO Investment Recipient (strategic investor),,insider,new12_provenance_reuse,True,True
+KMNO,solana,5,4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N,0.036915,,,reuse_noninsider,new12_provenance_reuse,False,True
+KMNO,solana,6,6EyjmmTYdAEyoLN1eTynuGvQPRq8mR4HKrW9uBqWqi7N,0.033528,KMNO Investment Recipient (strategic investor),,insider,new12_provenance_reuse,True,True
+KMNO,solana,7,Ad29ikw7DwEEbFTW6LEDVNC3cxGrNdsY4r276FAeT1Dt,0.025674,,,reuse_noninsider,new12_provenance_reuse,False,True
+KMNO,solana,8,AGzZas78FXZkH8FrUW3x54h639fbfT1PhBA6SLbY5tTi,0.025146,,,reuse_noninsider,new12_provenance_reuse,False,True
+KMNO,solana,9,6AapP9rsXMsNTJEMbKUatmzLeYwkZSJWd84c6PLBJNvK,0.02414,Kamino: KMNO Investment Recipient (strategic investor),,insider,new12_provenance_reuse,True,True
+KMNO,solana,10,Ej1xvF8ycSA7ufZhCRAi5EPk2DjPgyuByDS6RgpG5i7c,0.022368,,,reuse_noninsider,new12_provenance_reuse,False,True
+LDO,ethereum,1,0x611f7bf868a6212f871e89f7e44684045ddfb09d,0.015385,OKX: Deposit [0x611f7b],1.46,exchange,exchange_kw,False,True
+LDO,ethereum,2,0x39df74d611dca188f2f182a27c79f34a5ad4821e,0.01417,Wintermute [0x39df74],1.35,other_labeled,no_kw_match,False,True
+LDO,ethereum,3,0xed3d9bac1b26610a6f8c42f4fd2c741a16647056,0.010521,Lido DAO: Multisig [0xed3d9b],1.0,insider,insider_kw,True,True
+LDO,ethereum,4,0x88a1493366d48225fc3cefbdae9ebb23e323ade3,0.009469,Bybit [0x88a149],0.9,other_labeled,no_kw_match,False,True
+LDO,ethereum,5,0x008756e24b06267b9d2488e5bf50091fc26c8e8d,0.008417,KR1 [0x008756],0.8,other_labeled,no_kw_match,False,True
+LDO,ethereum,6,0x109b9744397acf987a1abb5bb4eef7362ab9ff66,0.007524,Lido [0x109b97],0.72,other_labeled,no_kw_match,False,True
+LDO,ethereum,7,0x54b68cc7132666eba5aa1d26dad735226e8faa7d,0.007524,Token Millionaire [0x54b68c],0.72,other_labeled,no_kw_match,False,True
+LDO,ethereum,8,0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54,0.006371,Bitget: Deposit [0xffa8db],0.6,other_labeled,no_kw_match,False,True
+LDO,ethereum,9,0xdb1aabe42f48f4b6b40cded8eeefaea3ebab2766,0.006351,,,unlabeled,,False,False
+LDO,ethereum,10,0xc012e9eaebc44ba0236c50d97a94f633a14c15ca,0.006137,Lido [0xc012e9],0.58,other_labeled,no_kw_match,False,True
+LPT,arbitrum,1,0xf82c1ff415f1fcf582554fdba790e27019c8e8c4,0.01791,Livepeer: LPT Staking Pool [0xf82c1f],2.04,protocol_contract,protocol_kw,False,True
+LPT,arbitrum,2,0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085,0.003552,Livepeer: Proxy L2 Migrator [0x148d5b],0.34,protocol_contract,protocol_kw,False,True
+LPT,arbitrum,3,0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546,0.00197,Uniswap: V3 LPT-WETH (0.3%) Liquidity Pool  [0x4fd47e],0.18,other_labeled,no_kw_match,False,True
+LPT,arbitrum,4,0x96daa0b8a5499ea9323421ed0cda06b345caab73,0.001523,DEX/CEX Trading Bot [0x96daa0],0.01,other_labeled,no_kw_match,False,True
+LPT,arbitrum,5,0x730363304acce48bd7aeb348462e074b0a7f3268,0.001413,Token Millionaire [0x730363],0.13,other_labeled,no_kw_match,False,True
+LPT,arbitrum,6,0x99c675e33d41c10f0fa1ebdd9c1b30b85c7711e2,0.001094,[0x99c675],0.1,other_labeled,no_kw_match,False,True
+LPT,arbitrum,7,0x2d93af57d375cba66058f5593e786ebf2866d6c4,0.00104,SafeProxy [0x2d93af],0.03,other_labeled,no_kw_match,False,True
+LPT,arbitrum,8,0x176f3dab24a159341c0509bb36b833e7fdd0a132,0.000982,Justin Sun [0x176f3d],0.09,other_labeled,no_kw_match,False,True
+LPT,arbitrum,9,0x2be5a5ce6555162d67c16b35ece3160c6f509e0a,0.00074,Multisig [0x2be5a5],0.03,insider,insider_kw,True,True
+LPT,arbitrum,10,0x077031fd82feaba89ae214599c59fe265e6570c2,0.000574,michellekwu.eth* [0x077031],0.04,other_labeled,no_kw_match,False,True
+META,solana,1,7SwCJg3Ti1F8fsYDvppWo3EfcgCtSerFCRfbLiV3BEuv,0.049953,LIGHT Custody Vaults [7SwCJg3T],4.92,other_labeled,no_kw_match,False,True
+META,solana,2,7qRUKe5B663FVyMij1LAtpH51JvyzWwavTRqwMAD2G24,0.041355,[7qRUKe5B],4.9,other_labeled,no_kw_match,False,True
+META,solana,3,3fKDKt85rxfwT3A1BHjcxZ27yKb1vYutxoZek7H2rEVE,0.026862,MetaDAO [3fKDKt85],2.34,other_labeled,no_kw_match,False,True
+META,solana,4,4j19AEcDwhtAZrnoDc4epNPmEL1jPpVUMeg7RmQ72Qkb,0.025569,michae1.sol [4j19AEcD],2.42,other_labeled,no_kw_match,False,True
+META,solana,5,2Vqx84hJ2bZozNmwXSUYUnc8YLm3keLvTEwSEdL5CmV1,0.023478,MetaDAO (META) Custody Vaults [2Vqx84hJ],2.31,other_labeled,no_kw_match,False,True
+META,solana,6,DxDZQaDPiw3ofVsqmrjTSbQuh9gXiPNqkBg5B1seFWnF,0.01359,Investment Recipient [DxDZQaDP],1.34,insider,insider_kw,True,True
+META,solana,7,CSBbKo8RkPrP4qdsYusRxRL8tidCB3kKDHjZJUNvMMLp,0.013014,Variant [CSBbKo8R],1.28,other_labeled,no_kw_match,False,True
+META,solana,8,qodhTms2ojNCZTjxbE4DNypzzanTHD5tMLGmSkgqRZb,0.012603,strategichash.sol [qodhTms2],1.24,other_labeled,no_kw_match,False,True
+META,solana,9,GyL9JZ4PFFGd1LiX7tCWvjTAothh4XMPenbyu2ouZqbv,0.011881,Custody Vaults [GyL9JZ4P],1.17,other_labeled,no_kw_match,False,True
+META,solana,10,G6zmzdRXYWqqvnLfPqhxd13opH3q3P232tPs9DwDTdff,0.011877,,,unlabeled,,False,False
+MKR,ethereum,1,0xf65475e74c1ed6d004d5240b06e3088724dfda5d,0.113117,,,unlabeled,,False,False
+MKR,ethereum,2,0x2cba76638bf0c7d965fc8f2253a91ead40cb83c8,0.073019,,,unlabeled,,False,False
+MKR,ethereum,3,0x959bfcaee050515296fc3d8aafafeaabf5c44f1d,0.043546,,,unlabeled,,False,False
+MKR,ethereum,4,0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0,0.041179,,,unlabeled,,False,False
+MKR,ethereum,5,0x93e9ba7a00856c3c1efa9b927d40b275602839ed,0.034308,,,unlabeled,,False,False
+MKR,ethereum,6,0x7d6149ad9a573a6e2ca6ebf7d4897c1b766841b4,0.024152,,,unlabeled,,False,False
+MKR,ethereum,7,0xc4269cc7acdedc3794b221aa4d9205f564e27f0d,0.023993,,,unlabeled,,False,False
+MKR,ethereum,8,0x04b688725ed55f60ffc0f63b14ebe9a826a98598,0.0208,,,unlabeled,,False,False
+MKR,ethereum,9,0xc4de1a0f88b5e10bdef769830699c4f6191b4933,0.020701,,,unlabeled,,False,False
+MKR,ethereum,10,0x4b3f1048c55faa0c0873e249e541139360501f2a,0.016726,,,unlabeled,,False,False
+MOR,arbitrum,1,0xc0ed68f163d44b6e9985f0041fdf6f67c6bcff3f,0.057163,ERC1967Proxy [0xc0ed68],15.55,other_labeled,no_kw_match,False,True
+MOR,arbitrum,2,0xe5cf22ee4988d54141b77050967e1052bd9c7f7a,0.045099,Uniswap: V3 MOR-WETH (0.3%) Liquidity Pool  [0xe5cf22],8.88,other_labeled,no_kw_match,False,True
+MOR,arbitrum,3,0xbd5d3a6d2ced315dbded2a434164a268b122694a,0.03643,,,unlabeled,,False,False
+MOR,arbitrum,4,0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a,0.032941,Multisig [0xb1972e],9.9,insider,insider_kw,True,True
+MOR,arbitrum,5,0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169,0.028007,SafeProxy [0xb19b3b],7.82,other_labeled,no_kw_match,False,True
+MOR,arbitrum,6,0xadd08936c6439a8a3f4eb4c1cad35a7cf234df0b,0.012007,,,unlabeled,,False,False
+MOR,arbitrum,7,0x1206b182d26da31c01c7110c2672ea479f8b7daf,0.011201,,,unlabeled,,False,False
+MOR,arbitrum,8,0x51d25291a5fe3281c65e46f1c2cb1738f3db12da,0.011062,High Balance [0x51d252],2.46,other_labeled,no_kw_match,False,True
+MOR,arbitrum,9,0x858da48232ea6731f22573dc711c0cc415c334c5,0.009506,Big Brain Holdings [0x858da4],2.66,other_labeled,no_kw_match,False,True
+MOR,arbitrum,10,0xc794ba3d6462be04d250976c4bbf9b4ac7b60710,0.007805,Big Brain Holdings [0xc794ba],2.18,other_labeled,no_kw_match,False,True
+MPL_SYRUP,ethereum,1,0xca31c9ef59a6ab45343f60968148c0ed07c39c59,0.069535,SYRUP Custody Vaults [0xca31c9],6.22,other_labeled,no_kw_match,False,True
+MPL_SYRUP,ethereum,2,0x517ce9b6d1fcffd29805c3e19b295247fcd94aef,0.051254,FalconX: Deposit [0x517ce9],4.58,other_labeled,no_kw_match,False,True
+MPL_SYRUP,ethereum,3,0x58be00490d6a5d298d61f24226d2397983ee39a1,0.043707,Maple Finance: SYRUP Token Vault [0x58be00],3.91,other_labeled,no_kw_match,False,True
+MPL_SYRUP,ethereum,4,0xfd4587cc7eed80ff09c483d3d85704859f20311b,0.043207,SYRUP Foundation [0xfd4587],3.86,insider,insider_kw,True,True
+MPL_SYRUP,ethereum,5,0x92915365e5fefbb85eee632dbc2e22da6037d706,0.028276,SYRUP Investment Recipient [0x929153],2.53,insider,insider_kw,True,True
+MPL_SYRUP,ethereum,6,0x13a682e0def0ff00b901b13458f3b2d9eb96f4b1,0.021904,Coinbase Prime: Custody Wallet [0x13a682],1.3,exchange,exchange_kw,False,True
+MPL_SYRUP,ethereum,7,0x310f087d117330cabe5b82e873ec5950071ebb03,0.021518,Framework Ventures [0x310f08],1.92,other_labeled,no_kw_match,False,True
+MPL_SYRUP,ethereum,8,0x2711a1ef82587ee46b0a42f76eac3b70161daf30,0.019402,Coinbase Prime: Custody Wallet [0x2711a1],1.73,exchange,exchange_kw,False,True
+MPL_SYRUP,ethereum,9,0x7700a1a2025dfa4520c811a492e976ae8f147772,0.018064,Castle Island Ventures [0x7700a1],1.61,other_labeled,no_kw_match,False,True
+MPL_SYRUP,ethereum,10,0x89860fbeab8d59858c57c920f39f5d7ba48d0722,0.01667,Upbit: Main Wallet [0x89860f],1.68,other_labeled,no_kw_match,False,True
+OP,optimism,1,0x641f7b308fc59e0fadaa859ce37d08ae4c35ec6e,0.02561,,,unlabeled,,False,False
+OP,optimism,2,0x611f7bf868a6212f871e89f7e44684045ddfb09d,0.014139,OKX: Deposit [0x611f7b],1.33,exchange,exchange_kw,False,True
+OP,optimism,3,0xae56aaa3f1d511225d740eda7eb70907626556be,0.010418,Coinbase: Deposit [0xae56aa],0.99,exchange,exchange_kw,False,True
+OP,optimism,4,0x7336abff06bbaf79b4093df1e16c1aa87fb27efd,0.009371,ETH Millionaire [0x7336ab],0.47,other_labeled,no_kw_match,False,True
+OP,optimism,5,0xe94ffce5c34b14a434363002b5ef9843d664887b,0.007546,Coinbase: Deposit [0xe94ffc],0.71,exchange,exchange_kw,False,True
+OP,optimism,6,0xb7206fa64287f6dc5070de25bbf9b85bf40df1ed,0.006638,Token Millionaire [0xb7206f],0.54,other_labeled,no_kw_match,False,True
+OP,optimism,7,0xb18fe4b95b7d633c83689b5ed3ac4ad0a857a2a7,0.005199,Bithumb: Wallet [0xb18fe4],0.46,other_labeled,no_kw_match,False,True
+OP,optimism,8,0x85782468bd25d2a7d92581b3448cd11617d72b52,0.004919,Coinbase Prime: Deposit [0x857824],0.45,exchange,exchange_kw,False,True
+OP,optimism,9,0x0a5952a41da1b16d61532a9e019b79855f5afce2,0.004918,Coinbase: Deposit [0x0a5952],0.47,exchange,exchange_kw,False,True
+OP,optimism,10,0xb76a33b0fe54400a96d22839fafedc27eb45d429,0.004918,Coinbase: Deposit [0xb76a33],0.47,exchange,exchange_kw,False,True
+POL,ethereum,1,0x29e7df7b6a1b2b07b731457f499e1696c60e2c4e,0.040427,Polygon: MATIC-POL Migration [0x29e7df],3.86,other_labeled,no_kw_match,False,True
+POL,ethereum,2,0x57f1ad8d95ebd0ab51e7ab131d2fab89a15de3b1,0.021712,Token Millionaire [0x57f1ad],1.54,other_labeled,no_kw_match,False,True
+POL,ethereum,3,0x4c569c1e541a19132ac893748e0ad54c7c989ff4,0.016313,Upbit: MATIC Main Wallet [0x4c569c],1.59,other_labeled,no_kw_match,False,True
+POL,ethereum,4,0x8be2b97333ebcc6af2441e4018961ff39d63e883,0.013675,Token Millionaire [0x8be2b9],1.27,other_labeled,no_kw_match,False,True
+POL,ethereum,5,0x0ba98b0067778ed0da2093c1f1600d4d17ccbf01,0.013242,Token Millionaire [0x0ba98b],1.23,other_labeled,no_kw_match,False,True
+POL,ethereum,6,0x84faec6529a98b72cad63254211f3f0399f38367,0.013242,Token Millionaire [0x84faec],1.23,other_labeled,no_kw_match,False,True
+POL,ethereum,7,0x796ce52e96000a76e926c35d8e6284a544456168,0.013226,Token Millionaire [0x796ce5],1.22,other_labeled,no_kw_match,False,True
+POL,ethereum,8,0x58a3cabac2d8a807b73a44d26526b1ea7b7b6938,0.013185,Token Millionaire [0x58a3ca],1.22,other_labeled,no_kw_match,False,True
+POL,ethereum,9,0xa5946a2c7a6c4232224b89a696ae51879bf5aed1,0.012314,B2C2 [0xa5946a],1.17,other_labeled,no_kw_match,False,True
+POL,ethereum,10,0x3f43b56004cb9a8927f11b78949a2624a455868b,0.008596,,,unlabeled,,False,False
+PUMP,solana,1,85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS,0.034986,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,2,AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6,0.027989,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,3,96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9,0.026823,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,4,8UHpWBnhYNeAQURWjAABp8vSrzfYa69o7sfi65vYLC42,0.022311,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,5,ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa,0.019825,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,6,GhFaBi8sy3M5mgG97YguQ6J3f7XH4JwV5CoW8MbzRgAU,0.018222,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,7,AC5RDfQFmDS1deWZos921JfqscXdByf8BKHs5ACWjtW2,0.014996,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,8,2WHL4XiNGKW9NgSwsJeG7WG2kD35Bi44rZoLrXHEz3dw,0.011662,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,9,9SLPTL41SPsYkgdsMzdfJsxymEANKr5bYoBsQzJyKpKS,0.011657,,,reuse_noninsider,new12_provenance_reuse,False,True
+PUMP,solana,10,9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN,0.010263,,,reuse_noninsider,new12_provenance_reuse,False,True
+RENDER,solana,1,51PZFsSVorGDsWLopZvsqZ4zT1cHNzhfsL9KaJtBqZk1,0.088459,RENDER Distributor [51PZFsSV],2.74,protocol_contract,protocol_kw,False,True
+RENDER,solana,2,0xf97deb1c0bb4536ff16617d29e5f4b340fe231df,0.046004,,,unlabeled,,False,False
+RENDER,solana,3,6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy,0.043273,Crypto.com: Wallet [6FEVkH17],1.15,other_labeled,no_kw_match,False,True
+RENDER,solana,4,5cQj8RLUU2or1aGnmufs5LPwCaijp7w7H5gCWJfNRfKX,0.036046,RENDER Custody Vaults [5cQj8RLU],1.08,other_labeled,no_kw_match,False,True
+RENDER,solana,5,7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh,0.03415,Bitget: Deposit [7TWnq4We],1.04,other_labeled,no_kw_match,False,True
+RENDER,solana,6,6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF,0.033992,Kraken: Hot Wallet [6LY1JzAF],1.04,exchange,exchange_kw,False,True
+RENDER,solana,7,0x2ed60539c655a9e74f3a7c24633da18dbf4bb221,0.029645,,,unlabeled,,False,False
+RENDER,solana,8,AYm4Knn6Sw1f52Eq42ujQ2ez5Xb7iBJeviprFCA7ADCy,0.02949,Render Network: Bridge [AYm4Knn6],2.26,protocol_contract,protocol_kw,False,True
+RENDER,solana,9,J8k11p1E2FKfYhVxgNkKT9xWUz7Npwqx1RPQvGcfo56H,0.024964,Trading Bot [J8k11p1E],0.74,other_labeled,no_kw_match,False,True
+RENDER,solana,10,5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi9,0.020613,Binance: Wallet [5tzFkiKs],0.58,exchange,exchange_kw,False,True
+RPL,ethereum,1,0x57757e3d981446d585af0d9ae4d7df6d64647806,0.058449,Patricio Worthalter [0x57757e],5.47,other_labeled,no_kw_match,False,True
+RPL,ethereum,2,0xd33526068d116ce69f19a9ee46f0bd304f21a51f,0.043516,Rocket Pool: RPL Token [0xd33526],3.67,other_labeled,no_kw_match,False,True
+RPL,ethereum,3,0x6cebc3509489af12904f92478cfca3ebb5f15a40,0.039771,Coinbase Prime: Custody Wallet [0x6cebc3],3.38,exchange,exchange_kw,False,True
+RPL,ethereum,4,0x07a98956df1b3a555f8f8408e280d6342451daaa,0.024725,Bithumb: Wallet [0x07a989],2.61,other_labeled,no_kw_match,False,True
+RPL,ethereum,5,0xfce77eb807bc9d293899d20ecae2e3b473b24a96,0.024656,RPL Investment Recipient [0xfce77e],2.27,insider,insider_kw,True,True
+RPL,ethereum,6,0xd2a4848a6644749e652c1d9398b5aa317f57395b,0.021235,Rocket Pool: Oracle DAO Rewards 1 [0xd2a484],1.95,other_labeled,no_kw_match,False,True
+RPL,ethereum,7,0x296c4a564bdda1138488f918326a759bb0ea6f64,0.016724,High Balance [0x296c4a],1.54,other_labeled,no_kw_match,False,True
+RPL,ethereum,8,0xb76cf92076adbf1d9c39294fa8e7a67579fde357,0.014923,Aave: aEthRPL Token [0xb76cf9],1.32,other_labeled,no_kw_match,False,True
+RPL,ethereum,9,0x32d47da20c59cfb2af20c5cdbb0609ce0a107815,0.012205,High Balance [0x32d47d],1.19,other_labeled,no_kw_match,False,True
+RPL,ethereum,10,0x91b4556d4ccaaae59e37c4a57ddef8903f644621,0.011124,High Balance [0x91b455],1.02,other_labeled,no_kw_match,False,True
+SNX,ethereum,1,0x76ec5a0d3632b2133d9f1980903305b62678fbd3,0.031954,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,2,0x5aeebe2fed4eafcd4a1f0cfb1159dd4f31cf4447,0.013488,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,3,0x83270d639d09727f73577ca55c6d74ae70a6af30,0.012986,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,4,0xa31231e727ca53ff95f0d00a06c645110c4ab647,0.010696,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,5,0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa,0.00988,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,6,0x7446ffe91d1f3cba51e949e8f238f4bacfbc05ae,0.009746,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,7,0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe,0.009125,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,8,0x15da7556d5ed888306839bed06f868aeaedcb0d7,0.008731,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,9,0xd2dd7b597fd2435b6db61ddf48544fd931e6869f,0.007695,,,reuse_noninsider,new12_provenance_reuse,False,True
+SNX,ethereum,10,0x99f4176ee457afedffcb1839c7ab7a030a5e4a92,0.007531,Synthetix: Treasury (treasury),,insider,new12_provenance_reuse,True,True
+UNI,ethereum,1,0x61cb39bece033c5bda281747db1c15cced2096eb,0.025342,Uniswap [0x61cb39],2.3,other_labeled,no_kw_match,False,True
+UNI,ethereum,2,0x611f7bf868a6212f871e89f7e44684045ddfb09d,0.016787,OKX: Deposit [0x611f7b],1.58,exchange,exchange_kw,False,True
+UNI,ethereum,3,0x5069a64bc6616dec1584ee0500b7813a9b680f7e,0.016362,Uniswap [0x5069a6],1.49,other_labeled,no_kw_match,False,True
+UNI,ethereum,4,0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a,0.013867,Coinbase Prime: Custody Wallet [0x36ca0a],1.26,exchange,exchange_kw,False,True
+UNI,ethereum,5,0x090d4613473dee047c3f2706764f49e0821d256e,0.013818,Uniswap: UNI Token Distributor [0x090d46],1.25,protocol_contract,protocol_kw,False,True
+UNI,ethereum,6,0x6d278351f4a973d1349ef1e54ed37daed0799e19,0.01131,Coinbase Prime: Custody Wallet [0x6d2783],1.03,exchange,exchange_kw,False,True
+UNI,ethereum,7,0x19d373d0f95f00d368a8d57605af746c4ea9b1d0,0.010221,Coinbase Prime: Custody Wallet [0x19d373],0.93,exchange,exchange_kw,False,True
+UNI,ethereum,8,0x030d6830dc8ff125850390da620fa3e12decd437,0.009896,Uniswap Team: Team/Investor/Advisor [0x030d68],0.9,insider,insider_kw,True,True
+UNI,ethereum,9,0x177df24addc9a216f927d2a894ab0b6eec59eb09,0.009896,Uniswap Team: Team/Investor/Advisor [0x177df2],0.9,insider,insider_kw,True,True
+UNI,ethereum,10,0x7d325a9c8f10758188641fe91cfd902499edc782,0.008796,a16z crypto: UNI Tokens [0x7d325a],0.8,other_labeled,no_kw_match,False,True
+W,solana,1,8nDFPaPRbK7HFCS4TprG187s2oNM1UrHm3tVqrSwzdRN,0.065143,[8nDFPaPR],7.38,other_labeled,no_kw_match,False,True
+W,solana,2,Dpfz8BDBmFCSXvsyi468YQZCtNbJXa4KQq3a82DLugvo,0.018509,,,unlabeled,,False,False
+W,solana,3,5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2,0.018501,Bybit: Hot Wallet [5LZkATrL],1.71,other_labeled,no_kw_match,False,True
+W,solana,4,Apw5cfHw7QcQoMvoT3YRiLJ6s28J27ACJ1kFn8QaKZ4e,0.012664,Token Millionaire [Apw5cfHw],1.03,other_labeled,no_kw_match,False,True
+W,solana,5,Hh29xjUGJYH81GUM9bJU12x9hKwQRH3yJ2pJ77bs92ec,0.011009,,,unlabeled,,False,False
+W,solana,6,8Mm46CsqxiyAputDUp2cXHg41HE3BfynTeMBDwzrMZQH,0.010923,Bithumb: Hot Wallet [8Mm46Csq],1.43,other_labeled,no_kw_match,False,True
+W,solana,7,FTXtHs8qZC2qP96ReaNsFCc61qo63eSCNrwTwif1UVB1,0.009833,,,unlabeled,,False,False
+W,solana,8,CCeEVQLhUgRAiL1X3Di4oV98CQA71TJvdRwUPwja7RxU,0.009666,,,unlabeled,,False,False
+W,solana,9,ofFJnH6UTyisea37rNr3isNsrC3z2e1nZ1kLtGcUurh,0.009563,[ofFJnH6U],0.77,other_labeled,no_kw_match,False,True
+W,solana,10,9BUcWT9zvixVmpUD7kZ2hcUqRCbd5jTKpVfhk42KPfj5,0.009386,,,unlabeled,,False,False
+WLFI,ethereum,1,0xfef30c262676de9af5e5e9ba999cf774000b14b4,0.091128,,,reuse_noninsider,new12_provenance_reuse,False,True
+WLFI,ethereum,2,0xcd52e35f7784efc78e835ef6e00be914f48beee6,0.034391,ALT5 Sigma: Treasury Strategy (corporate strategic-investor treasury),,insider,new12_provenance_reuse,True,True
+WLFI,ethereum,3,0x0249d14d15531065b927f4930562c3814e654b54,0.008283,Aqua1 Foundation (external strategic investor),,insider,new12_provenance_reuse,True,True
+WLFI,ethereum,4,0xcc261ab4be137eacf57c19ed97c186b4d88004ca,0.007765,,,reuse_noninsider,new12_provenance_reuse,False,True
+WLFI,ethereum,5,0xf0cc01b37086bc122a3d63c615dab379478d2745,0.006902,WLFI Multisig (multisig),,insider,new12_provenance_reuse,True,True
+WLFI,ethereum,6,0x5ab26169051d0d96217949adb91e86e51a5fda74,0.00564,Justin Sun (named individual strategic investor),,insider,new12_provenance_reuse,True,True
+WLFI,ethereum,7,0x33ccf78a2091979fbc5a7631e6c71e900715ab78,0.005011,"SafeProxy (team multisig; bare attribution, see ambiguity log)",,insider,new12_provenance_reuse,True,True
+WLFI,ethereum,8,0x29de882559194e2be08c182c1860193f8137cbf8,0.004486,Ethena Labs WLFI Multisig (multisig),,insider,new12_provenance_reuse,True,True
+WLFI,ethereum,9,0xcaf92481d3f0e3b32c90cde5aa1bf3d731753003,0.004254,,,reuse_noninsider,new12_provenance_reuse,False,True
+WLFI,ethereum,10,0x284cf133aa570f29da0961be897dbbb2a37962f8,0.004162,"SafeProxy (team multisig; bare attribution, see ambiguity log)",,insider,new12_provenance_reuse,True,True
+WXM,arbitrum,1,0x2cdba04dcfd3999ef3fda00121b23c693af4041b,0.088053,WeatherXM Network: WXM Distributor [0x2cdba0],9.12,protocol_contract,protocol_kw,False,True
+WXM,arbitrum,2,0x0d0707963952f2fba59dd06f2b425ace40b492fe,0.024827,Gate: Wallet [0x0d0707],0.06,exchange,exchange_kw,False,True
+WXM,arbitrum,3,0xf20168e846498969f0621d696e97ff13b5b926f3,0.014125,SafeProxy [0xf20168],1.4,other_labeled,no_kw_match,False,True
+WXM,arbitrum,4,0x28cc933fecf280e720299b1258e8680355d8841f,0.013288,SwissBorg: Wallet [0x28cc93],1.48,other_labeled,no_kw_match,False,True
+WXM,arbitrum,5,0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260,0.013215,SafeProxy [0xe4b785],3.18,other_labeled,no_kw_match,False,True
+WXM,arbitrum,6,0xb99401dbbc3576738b6cd28f62ac35e4ca2bd03d,0.011954,[0xb99401],1.86,other_labeled,no_kw_match,False,True
+WXM,arbitrum,7,0x00000000d64bbf35def9cdf1ea28d861957588dd,0.010464,[0x000000],0.36,other_labeled,no_kw_match,False,True
+WXM,arbitrum,8,0x0b2402144bb366a632d14b83f244d2e0e21bd39c,0.01046,Wormhole: Token Bridge [0x0b2402],1.55,protocol_contract,protocol_kw,False,True
+WXM,arbitrum,9,0xff1ad9961b9d28db7981cfb19e91ac0cf84ed326,0.005286,SafeProxy [0xff1ad9],0.52,other_labeled,no_kw_match,False,True
+WXM,arbitrum,10,0xe09471ab9b3f8c45d7ebada73ec51f22776afca3,0.00448,GnosisSafeProxy [0xe09471],0.44,other_labeled,no_kw_match,False,True
+ZRO,ethereum,1,0xc2f31575b97df563a3bba2a94e3a0b317ba2d412,0.032499,LayerZero: LayerZero (ZRO) Multisig [0xc2f315],3.23,insider,insider_kw,True,True
+ZRO,ethereum,2,0x1f903473376fbe98cc763f1bc459c8fdb6ac3909,0.031706,LayerZero [0x1f9034],3.05,other_labeled,no_kw_match,False,True
+ZRO,ethereum,3,0x637ca60dfb4d3acbd2ba65aaed9c6ca564bbf7bf,0.02866,LayerZero: Strategic Partnerships [0x637ca6],2.92,other_labeled,no_kw_match,False,True
+ZRO,ethereum,4,0xda8b6eb4e31a387577c0e20c00c8f7e31cbc18bc,0.026796,Token Millionaire [0xda8b6e],2.67,other_labeled,no_kw_match,False,True
+ZRO,ethereum,5,0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431,0.023779,LayerZero: ZRO Multisig [0x806f68],2.37,insider,insider_kw,True,True
+ZRO,ethereum,6,0x6e0e32684df6e3ae415ab1146a305bfd03e42427,0.023779,Smart Account [0x6e0e32],2.37,other_labeled,no_kw_match,False,True
+ZRO,ethereum,7,0x53326cfb6ec33f18ccb0e23828a133bc6805390c,0.021692,LayerZero Foundation [0x53326c],2.16,insider,insider_kw,True,True
+ZRO,ethereum,8,0x72afaa442b98f71b8bba9937f95be764ab9f97d1,0.020851,LayerZero [0x72afaa],2.07,other_labeled,no_kw_match,False,True
+ZRO,ethereum,9,0x7be1125e9284ee108850a19f362b111526737cfd,0.017614,Token Millionaire [0x7be112],1.75,other_labeled,no_kw_match,False,True
+ZRO,ethereum,10,0x3425bd866c5d0cbacb1fe011e604789456a28f88,0.016078,LayerZero [0x3425bd],1.6,other_labeled,no_kw_match,False,True
