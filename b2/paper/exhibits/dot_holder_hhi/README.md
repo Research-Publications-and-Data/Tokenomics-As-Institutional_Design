@@ -13,7 +13,7 @@ Compute Polkadot (DOT) holder-balance HHI on top-1000 AssetHub addresses after P
 ## Scripts (reproducibility)
 
 1. `dot_assethub_top_holders.py`: pulls top-1000 holders via Subscan AssetHub `/api/v2/scan/accounts` endpoint (10 pages of 100). Requires `SUBSCAN_API_KEY` environment variable (free tier).
-2. `dot_pca_refined.py`: applies refined PCA classification by cross-referencing top-1000 against (a) Polkawatch operator_id registry (91 institutional staking providers controlling 275 validators; sourced from sibling repo `Tokenomics-As-Institutional_Design` Phase 4 expansion artifacts), (b) multi-funder cluster identification (45 addresses that fund multiple validators), and (c) a Class 5 CEX-cluster registry (Binance cluster confirmed via SubSquare governance-forum ground-truth plus on-chain extrinsic verification 2026-05-27; see the Substrate-analog CEX-cluster finding below). The Polkawatch and funding-cluster inputs are the sample-expansion artifacts in `data/raw/`. Outputs PCA exclusions CSV + post-exclusion HHI.
+2. `dot_pca_refined.py`: applies refined PCA classification by cross-referencing top-1000 against (a) Polkawatch operator_id registry (91 institutional staking providers controlling 275 validators), (b) multi-funder cluster identification (45 addresses that fund multiple validators), and (c) a Class 5 CEX-cluster registry (Binance cluster confirmed via SubSquare governance-forum ground-truth plus on-chain extrinsic verification 2026-05-27; see the Substrate-analog CEX-cluster finding below). The Polkawatch and funding-cluster inputs are the sample-expansion artifacts in `data/raw/`. Outputs PCA exclusions CSV + post-exclusion HHI.
 
 ## Results (2026-05-27 capture)
 
