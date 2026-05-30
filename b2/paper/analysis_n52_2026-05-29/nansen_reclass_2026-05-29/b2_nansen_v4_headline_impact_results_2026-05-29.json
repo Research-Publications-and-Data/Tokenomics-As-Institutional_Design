@@ -1,51 +1,51 @@
 {
  "maturity_spec_anchor": {
   "N": 50,
-  "depin_p": 0.0395,
-  "maturity_p": 0.8621
+  "depin_p": 0.0197,
+  "maturity_p": 0.9615
  },
  "retention_specs": {
   "baseline_v3": {
    "N": 49,
-   "depin_b": 0.6909,
-   "depin_p": 0.0409,
-   "ret_b": 0.565,
-   "ret_p": 0.4884
+   "depin_b": 0.7622,
+   "depin_p": 0.0168,
+   "ret_b": 0.2762,
+   "ret_p": 0.713
   },
   "v4_keyword": {
    "N": 50,
-   "depin_b": 0.788,
-   "depin_p": 0.0062,
-   "ret_b": 1.7111,
-   "ret_p": 0.0845
+   "depin_b": 0.8108,
+   "depin_p": 0.0058,
+   "ret_b": 1.2868,
+   "ret_p": 0.1035
   },
   "v4_reviewed": {
    "N": 50,
-   "depin_b": 0.6669,
-   "depin_p": 0.0274,
-   "ret_b": 0.8181,
-   "ret_p": 0.3097
+   "depin_b": 0.7195,
+   "depin_p": 0.0148,
+   "ret_b": 0.5991,
+   "ret_p": 0.3735
   },
   "v4_reviewed_safe": {
    "N": 50,
-   "depin_b": 0.6973,
-   "depin_p": 0.0168,
-   "ret_b": 1.0909,
-   "ret_p": 0.183
+   "depin_b": 0.7474,
+   "depin_p": 0.009,
+   "ret_b": 0.9384,
+   "ret_p": 0.1752
   },
   "v4_resolved_gapfill": {
    "N": 50,
-   "depin_b": 0.673,
-   "depin_p": 0.0245,
-   "ret_b": 0.988,
-   "ret_p": 0.2373
+   "depin_b": 0.6996,
+   "depin_p": 0.0187,
+   "ret_b": 0.5155,
+   "ret_p": 0.4843
   },
   "v4_traced_evidence": {
    "N": 50,
-   "depin_b": 0.7517,
-   "depin_p": 0.0119,
-   "ret_b": 1.0946,
-   "ret_p": 0.2385
+   "depin_b": 0.739,
+   "depin_p": 0.0139,
+   "ret_b": 0.5818,
+   "ret_p": 0.4892
   }
  }
 }

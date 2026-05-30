@@ -1,0 +1,52 @@
+{
+ "WLFI": {
+  "hhi": 0.081244,
+  "top1": 25.904617,
+  "top5": 42.715237,
+  "top10": 53.981792,
+  "n": 986,
+  "insider_count": 3,
+  "insider_count_frac": 0.3,
+  "insider_balance_frac": 0.6741
+ },
+ "ENA": {
+  "hhi": 0.04267,
+  "top1": 15.805083,
+  "top5": 36.871957,
+  "top10": 47.357204,
+  "n": 993,
+  "insider_count": 2,
+  "insider_count_frac": 0.2,
+  "insider_balance_frac": 0.1364
+ },
+ "PUMP": {
+  "hhi": 0.031642,
+  "top1": 9.749604,
+  "top5": 34.456049,
+  "top10": 47.853758,
+  "n": 989,
+  "insider_count": 0,
+  "insider_count_frac": 0.0,
+  "insider_balance_frac": 0.0
+ },
+ "KMNO": {
+  "hhi": 0.026914,
+  "top1": 7.984709,
+  "top5": 28.608142,
+  "top10": 44.217266,
+  "n": 996,
+  "insider_count": 3,
+  "insider_count_frac": 0.3,
+  "insider_balance_frac": 0.3665
+ },
+ "JTO": {
+  "hhi": 0.026567,
+  "top1": 9.878887,
+  "top5": 29.309692,
+  "top10": 41.174594,
+  "n": 996,
+  "insider_count": 0,
+  "insider_count_frac": 0.0,
+  "insider_balance_frac": 0.0
+ }
+}

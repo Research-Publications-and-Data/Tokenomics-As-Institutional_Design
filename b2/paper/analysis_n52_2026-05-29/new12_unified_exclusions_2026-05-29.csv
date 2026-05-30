@@ -55,3 +55,22 @@ BONK,7lp4jbapgnhxoxpjtr2twufh7oaqyqngqjpy7hfjcn7h,5,Mid-tier Class 5 (memecoin-d
 BONK,1tjoqzwg21cemahylvs4s2zc1pm27mltcj9efefu7km,3,PAIRED-cluster with GJ8HjXMq (2.68T BONK each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codifi,exclusions_log.csv
 BONK,gj8hjxmqq79wrvxeamrmng4ztaohpcf1mzmbf9tvppxa,3,PAIRED-cluster with 1tjoQzWg (2.68T BONK each; identical USD) | Sister-cluster paired-set pattern per Cycle 4 S21 codifi,exclusions_log.csv
 KMNO,gvxkgjiangv9wbw6xtd9alynfwsjjhq4aa3nbbaeirvu,2,Kamino Foundation/treasury candidate | 2.41B KMNO (24.2% top-1); $48.25M total USD; 99.99% KMNO-dominant; n=18 tokens wi,exclusions_log.csv
+WLFI,0xfef30c262676de9af5e5e9ba999cf774000b14b4,3,WLFI Ecosystem fund contract,a3_pca_tighten_2026-05-30
+WLFI,0xcc261ab4be137eacf57c19ed97c186b4d88004ca,5,Jump Trading (market-maker deposit),a3_pca_tighten_2026-05-30
+WLFI,0xf0cc01b37086bc122a3d63c615dab379478d2745,2,WLFI Multisig (team),a3_pca_tighten_2026-05-30
+WLFI,0x29de882559194e2be08c182c1860193f8137cbf8,2,Ethena Labs WLFI Multisig (team),a3_pca_tighten_2026-05-30
+WLFI,0x33ccf78a2091979fbc5a7631e6c71e900715ab78,2,SafeProxy (team multisig),a3_pca_tighten_2026-05-30
+WLFI,0x284cf133aa570f29da0961be897dbbb2a37962f8,2,SafeProxy (team multisig),a3_pca_tighten_2026-05-30
+ENA,0x2146aa5807d96e6b2922a149cee870f17347f1d0,3,Ethena Labs: Proxy (token/staking proxy),a3_pca_tighten_2026-05-30
+ENA,0xa5274a5a4b4bb3b3646475886b41bf6c50edd666,2,Ethena (protocol-team EOA),a3_pca_tighten_2026-05-30
+ENA,0x7462f0d93260909870487f17a27c336349579557,2,Ethena Labs (protocol-team EOA),a3_pca_tighten_2026-05-30
+ENA,0xb2af973905f05bc82bf97486b6ab883598d98298,2,Ethena Labs (protocol-team EOA),a3_pca_tighten_2026-05-30
+PUMP,85WTujfJ9meJq5hfjAeb5gftj7n8Q7QTsZJbRqMD5ERS,5,pump.fun custody (exchange-class),a3_pca_tighten_2026-05-30
+PUMP,AvqFxKNrYZNvxsj2oWhLW8det68HzCXBqswshoD2TdT6,5,pump.fun custody (exchange-class),a3_pca_tighten_2026-05-30
+PUMP,96HiV4cGWTJNCjGVff3RTHgPXmpYz7MSrGTAmxNKVWM9,5,pump.fun custody (exchange-class),a3_pca_tighten_2026-05-30
+PUMP,ERRGqu3dh6zYBg7MNAHKL33TyVb7efMmaKxnmdukdNYa,5,pump.fun custody (exchange-class),a3_pca_tighten_2026-05-30
+PUMP,9UcygiamY92yGntGkUkBKi4SdApxkBMZd9QSo6wMC2dN,5,pump.fun custody (exchange-class),a3_pca_tighten_2026-05-30
+KMNO,Ec6MuWtpvFcVyMsp7vipKCg1CMkKrWHZpWPdnJF16G57,3,Kamino Staking (Class-3 aggregation),a3_pca_tighten_2026-05-30
+KMNO,8civ8uAA4RMY8Ho6DmJzgatAqutsRDL4hkmmCXtxZ8ew,3,Kamino Custody Vaults (DeFi vault aggregation),a3_pca_tighten_2026-05-30
+KMNO,4uD7K6KCFfAWoeJVeDKk2V5fuRd8X4Y926cAqeoAhD8N,3,Kamino Custody Vaults (DeFi vault aggregation),a3_pca_tighten_2026-05-30
+JTO,jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt,3,JITO Staking Pool (Class-3 aggregation),a3_pca_tighten_2026-05-30
