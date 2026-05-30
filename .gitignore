@@ -22,3 +22,6 @@ tier2_results.json
 
 # Large binaries (use Git LFS if needed)
 # *.csv files intentionally included (all <5MB)
+
+# Pre-cycle working backups (A3 tighten / pre-exec snapshots)
+*.pre_*
