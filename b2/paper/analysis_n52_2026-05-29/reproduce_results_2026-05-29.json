@@ -66,20 +66,20 @@
  },
  "maturity_spec": {
   "N": 50,
-  "depin_b": 0.6509,
-  "depin_p": 0.0395,
-  "revint_p": 0.8322,
-  "maturity_p": 0.8621,
+  "depin_b": 0.6469,
+  "depin_p": 0.0435,
+  "revint_p": 0.8318,
+  "maturity_p": 0.8406,
   "obs_per_pred": 12.5
  },
  "retention_spec": {
   "N": 49,
-  "depin_b": 0.6909,
-  "depin_p": 0.0409,
-  "L1_p": 0.3139,
-  "revint_p": 0.9652,
-  "retention_b": 0.565,
-  "retention_p": 0.4884,
+  "depin_b": 0.6848,
+  "depin_p": 0.0453,
+  "L1_p": 0.3054,
+  "revint_p": 0.9707,
+  "retention_b": 0.6057,
+  "retention_p": 0.4692,
   "obs_per_pred": 12.2,
   "sectors": {
    "DePIN": 14,
@@ -103,12 +103,12 @@
  "distribution": {
   "DePIN": {
    "n": 15,
-   "mean": 0.0705,
+   "mean": 0.0714,
    "median": 0.0605
   },
   "DeFi": {
    "n": 24,
-   "mean": 0.0365,
+   "mean": 0.038,
    "median": 0.0302
   },
   "L1": {
@@ -118,8 +118,8 @@
   }
  },
  "depin_defi_contrast_fullframe": {
-  "p": 0.0364,
-  "cohens_d": 0.807,
+  "p": 0.039,
+  "cohens_d": 0.766,
   "n_depin": 15,
   "n_defi": 24
  },
