@@ -1,0 +1,121 @@
+{
+ "MKR#3": {
+  "key": "MKR#3",
+  "address": "0x959bfcaee050515296fc3d8aafafeaabf5c44f1d",
+  "verdict": "independent",
+  "controlling_entity": "Unlabeled EOA multisig (Safe via GnosisSafeProxyFactory)",
+  "evidence": "All 5 current signers and 3 previous signers are unlabeled EOAs; Deployed by unlabeled EOA 0x4f700f (also a previous signer); Created by generic Safe GnosisSafeProxyFactory. No MakerDAO/Maker/Sky tie or team label on any related address."
+ },
+ "ZRO#5": {
+  "key": "ZRO#5",
+  "address": "0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431",
+  "verdict": "team_confirmed",
+  "controlling_entity": "LayerZero (ZRO Multisig)",
+  "evidence": "Input address carries dispositive Nansen entity label 'LayerZero: ZRO Multisig [0x806f68]'. Related-addresses table shows 3 unlabeled signer EOAs + generic Safe Proxy Factory 1.3.0 deployer (no team label on related rows), but the multisig's own protocol-team label confirms LayerZero control."
+ },
+ "GMX#4": {
+  "key": "GMX#4",
+  "address": "0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e",
+  "verdict": "team_confirmed",
+  "controlling_entity": "GMX (gmxresearch.eth)",
+  "evidence": "First Funder is gmxresearch.eth (0xa200bc), the GMX team/core funding wallet, a clear protocol entity. Deployed by a generic 'Deployer' EOA and Created by generic GnosisSafeProxyFactory; protocol tie established via the gmxresearch.eth funding source on arbitrum."
+ },
+ "ZRO#1": {
+  "key": "ZRO#1",
+  "address": "0xc2f31575b97df563a3bba2a94e3a0b317ba2d412",
+  "verdict": "team_confirmed",
+  "controlling_entity": "LayerZero: LayerZero (ZRO) Multisig",
+  "evidence": "Nansen entity-labels the Safe itself as 'LayerZero: LayerZero (ZRO) Multisig' (explicit protocol-name multisig). Related relations: Deployed by 'Alameda Research: Deployer', Created by 'BitGo: Factory' (institutional/custodial deploy path); protocol tie is the authoritative LayerZero multisig label on the address."
+ },
+ "DIMO#4": {
+  "key": "DIMO#4",
+  "address": "0x62b98e019e0d3e4a1ad8c786202e09017bd995e1",
+  "verdict": "independent",
+  "controlling_entity": "Unlabeled EOA (High Activity)",
+  "evidence": "Deployed by unlabeled EOA 'High Activity [0x55f525]'; Created by generic 'Safe: Proxy Factory 1.3.0'; First Funder is a Wormhole NttManagerWithExecutor bridge contract. No DIMO/protocol-team label on any deployer or signer relation."
+ },
+ "GMX#7": {
+  "key": "GMX#7",
+  "address": "0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2",
+  "verdict": "team_confirmed",
+  "controlling_entity": "GMX (gmxresearch.eth)",
+  "evidence": "Deployed by 'gmxresearch.eth' (GMX team/research ENS), tying the Safe directly to the GMX protocol team; Created by generic 'Safe: GnosisSafeProxyFactory'."
+ },
+ "MKR#5": {
+  "key": "MKR#5",
+  "address": "0x93e9ba7a00856c3c1efa9b927d40b275602839ed",
+  "verdict": "team_confirmed",
+  "controlling_entity": "MakerDAO: DeFi Manager",
+  "evidence": "Safe deployed by and signed by 0xdeb2f1 labeled 'MakerDAO: DeFi Manager' (Deployed by + Signer); created via generic Safe Proxy Factory 1.3.0. Protocol-team controlled."
+ },
+ "GEOD#5": {
+  "key": "GEOD#5",
+  "address": "0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f",
+  "verdict": "independent",
+  "controlling_entity": "Token Millionaire (0x61257c, unrelated EOA)",
+  "evidence": "Deployed by 0x61257c labeled 'Token Millionaire' (generic non-protocol EOA), created via generic Safe Proxy Factory 1.3.0. No GEOD/Geodnet protocol tie, no team label, no protocol signers."
+ },
+ "DIMO#8": {
+  "key": "DIMO#8",
+  "address": "0xced3c922200559128930180d3f0bffd4d9f4f123",
+  "verdict": "independent",
+  "controlling_entity": "0x3e54d4 (unlabeled deployer EOA)",
+  "evidence": "Deployed by unlabeled EOA 0x3e54d4, created via generic Safe Proxy Factory 1.3.0, first-funded by dinc.eth (ENS EOA). No DIMO protocol tie, no team label, no protocol signers."
+ },
+ "MOR#4": {
+  "key": "MOR#4",
+  "address": "0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a",
+  "verdict": "independent",
+  "controlling_entity": "Unlabeled EOA 0xf676a9 (via Safe Proxy Factory 1.3.0)",
+  "evidence": "Deployed by unlabeled EOA 0xf676a9be8733fe3c092913bf1f5b67456c2103f7, created via generic Safe Proxy Factory 1.3.0; no Morpheus/MOR team label, no signer relations."
+ },
+ "GEOD#6": {
+  "key": "GEOD#6",
+  "address": "0xcdfd8ec577217df0a577cc64a64eca71bb28d954",
+  "verdict": "independent",
+  "controlling_entity": "EOA 0x61257c (Nansen label 'Token Millionaire'; via Safe Proxy Factory 1.3.0)",
+  "evidence": "Deployed by 0x61257c071ed39f3cdadf775d4b4bd6cddbc4f59f (generic behavioral label 'Token Millionaire', not a Geodnet entity), created via generic Safe Proxy Factory 1.3.0; no GEOD team tie, no signer relations."
+ },
+ "WXM#5": {
+  "key": "WXM#5",
+  "address": "0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260",
+  "verdict": "independent",
+  "controlling_entity": "EOA 0x417b4a (generic label 'Deployer'; via GnosisSafeProxyFactory)",
+  "evidence": "Deployed by 0x417b4adc279743fc49f047c323fc668db9e600d8 (generic label 'Deployer', no WeatherXM/WXM name), created via generic GnosisSafeProxyFactory; no protocol tie, no signer relations."
+ },
+ "MOR#5": {
+  "key": "MOR#5",
+  "address": "0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169",
+  "verdict": "independent",
+  "controlling_entity": "Unlabeled EOA deployer 0x620d7e (High Activity) via Gnosis Safe factory",
+  "evidence": "Deployed by unlabeled EOA 0x620d7e (High Activity), created via generic Safe GnosisSafeProxyFactory, first funded by unlabeled 0xde3d94; no Morpheus/MOR label and no labeled signers, so no protocol tie."
+ },
+ "COMP#5": {
+  "key": "COMP#5",
+  "address": "0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241",
+  "verdict": "team_confirmed",
+  "controlling_entity": "Compound: Timelock / Compound governance",
+  "evidence": "Signers include Compound: Timelock [0x6d903f] (Previous Signer) and TimelockController [0xefed08] (current Signer); Nansen label is Compound: COMP Multisig, confirming Compound protocol-governance control."
+ },
+ "MOR#3": {
+  "key": "MOR#3",
+  "address": "0xbd5d3a6d2ced315dbded2a434164a268b122694a",
+  "verdict": "independent",
+  "controlling_entity": "Unlabeled EOA 0x932fae (deployer + first funder)",
+  "evidence": "Deployed by and first-funded by unlabeled EOA 0x932fae; created by generic Safe GnosisSafeProxyFactory 0x4e1dcf. No Morpheus/MOR name, no team label, no signer info."
+ },
+ "DIMO#2": {
+  "key": "DIMO#2",
+  "address": "0x354698f0e93c6830196e81250074733d8a792ff2",
+  "verdict": "independent",
+  "controlling_entity": "EOA 0x96774b (OpenSea handle 'slslslsl23'), deployer",
+  "evidence": "Deployed by EOA 0x96774b labeled only as OpenSea username 'slslslsl23'; created by generic Safe Proxy Factory 1.3.0 0xa6b71e. No DIMO name, no team label, no signer info."
+ },
+ "WXM#3": {
+  "key": "WXM#3",
+  "address": "0xf20168e846498969f0621d696e97ff13b5b926f3",
+  "verdict": "independent",
+  "controlling_entity": "EOA 0x620d7e (Nansen 'High Activity' label), deployer",
+  "evidence": "Deployed by EOA 0x620d7e labeled only generic 'High Activity'; created by generic Safe GnosisSafeProxyFactory 0x4e1dcf. No WXM/WeatherXM name, no team label, no signer info."
+ }
+}

@@ -1,0 +1,23 @@
+[
+ {
+  "key": "MOR#3",
+  "address": "0xbd5d3a6d2ced315dbded2a434164a268b122694a",
+  "verdict": "independent",
+  "controlling_entity": "Unlabeled EOA 0x932fae (deployer + first funder)",
+  "evidence": "Deployed by and first-funded by unlabeled EOA 0x932fae; created by generic Safe GnosisSafeProxyFactory 0x4e1dcf. No Morpheus/MOR name, no team label, no signer info."
+ },
+ {
+  "key": "DIMO#2",
+  "address": "0x354698f0e93c6830196e81250074733d8a792ff2",
+  "verdict": "independent",
+  "controlling_entity": "EOA 0x96774b (OpenSea handle 'slslslsl23'), deployer",
+  "evidence": "Deployed by EOA 0x96774b labeled only as OpenSea username 'slslslsl23'; created by generic Safe Proxy Factory 1.3.0 0xa6b71e. No DIMO name, no team label, no signer info."
+ },
+ {
+  "key": "WXM#3",
+  "address": "0xf20168e846498969f0621d696e97ff13b5b926f3",
+  "verdict": "independent",
+  "controlling_entity": "EOA 0x620d7e (Nansen 'High Activity' label), deployer",
+  "evidence": "Deployed by EOA 0x620d7e labeled only generic 'High Activity'; created by generic Safe GnosisSafeProxyFactory 0x4e1dcf. No WXM/WeatherXM name, no team label, no signer info."
+ }
+]

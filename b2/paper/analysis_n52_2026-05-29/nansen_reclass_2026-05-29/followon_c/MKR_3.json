@@ -1,0 +1,23 @@
+[
+  {
+    "key": "MKR#3",
+    "address": "0x959bfcaee050515296fc3d8aafafeaabf5c44f1d",
+    "verdict": "independent",
+    "controlling_entity": "Unlabeled EOA multisig (Safe via GnosisSafeProxyFactory)",
+    "evidence": "All 5 current signers and 3 previous signers are unlabeled EOAs; Deployed by unlabeled EOA 0x4f700f (also a previous signer); Created by generic Safe GnosisSafeProxyFactory. No MakerDAO/Maker/Sky tie or team label on any related address."
+  },
+  {
+    "key": "ZRO#5",
+    "address": "0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431",
+    "verdict": "team_confirmed",
+    "controlling_entity": "LayerZero (ZRO Multisig)",
+    "evidence": "Input address carries dispositive Nansen entity label 'LayerZero: ZRO Multisig [0x806f68]'. Related-addresses table shows 3 unlabeled signer EOAs + generic Safe Proxy Factory 1.3.0 deployer (no team label on related rows), but the multisig's own protocol-team label confirms LayerZero control."
+  },
+  {
+    "key": "GMX#4",
+    "address": "0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e",
+    "verdict": "team_confirmed",
+    "controlling_entity": "GMX (gmxresearch.eth)",
+    "evidence": "First Funder is gmxresearch.eth (0xa200bc), the GMX team/core funding wallet, a clear protocol entity. Deployed by a generic 'Deployer' EOA and Created by generic GnosisSafeProxyFactory; protocol tie established via the gmxresearch.eth funding source on arbitrum."
+  }
+]

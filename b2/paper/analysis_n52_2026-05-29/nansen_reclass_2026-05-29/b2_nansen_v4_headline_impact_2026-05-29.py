@@ -59,7 +59,9 @@ def load():
     v4rev = {r["token"]: f(r["insider_count_frac"]) for r in csv.DictReader(open(os.path.join(HERE, "insider_retention_vector_v4_reviewed_2026-05-29.csv")))}
     rp = os.path.join(HERE, "insider_retention_vector_v4_resolved_2026-05-30.csv")
     v4res = {r["token"]: f(r["insider_count_frac"]) for r in csv.DictReader(open(rp))} if os.path.exists(rp) else {}
-    return v3, new12, v4kw, v4rev, match, v4res
+    tp = os.path.join(HERE, "insider_retention_vector_v4_traced_2026-05-30.csv")
+    v4trc = {r["token"]: f(r["insider_count_frac"]) for r in csv.DictReader(open(tp))} if os.path.exists(tp) else {}
+    return v3, new12, v4kw, v4rev, match, v4res, v4trc
 
 
 def build(retfn):
@@ -84,7 +86,7 @@ def retspec(frame):
 
 
 def main():
-    v3, new12, v4kw, v4rev, match, v4res = load()
+    v3, new12, v4kw, v4rev, match, v4res, v4trc = load()
 
     def base(t): return new12.get(t, v3.get(t))
     def kw(t): return v4kw[t] if t in v4kw else base(t)
@@ -94,6 +96,7 @@ def main():
             return v4rev[t]
         return base(t)
     def res(t): return v4res[t] if t in v4res else base(t)
+    def trc(t): return v4trc[t] if t in v4trc else base(t)
 
     specs = {
         "baseline_v3": retspec(build(base)),
@@ -101,6 +104,7 @@ def main():
         "v4_reviewed": retspec(build(rev)),
         "v4_reviewed_safe": retspec(build(rev_safe)),
         "v4_resolved_gapfill": retspec(build(res)),
+        "v4_traced_evidence": retspec(build(trc)),
     }
     # maturity-spec invariant anchor
     Fm = build(base)

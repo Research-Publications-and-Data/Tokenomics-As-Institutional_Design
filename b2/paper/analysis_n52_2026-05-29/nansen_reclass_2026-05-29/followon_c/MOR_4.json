@@ -1,0 +1,23 @@
+[
+  {
+    "key": "MOR#4",
+    "address": "0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a",
+    "verdict": "independent",
+    "controlling_entity": "Unlabeled EOA 0xf676a9 (via Safe Proxy Factory 1.3.0)",
+    "evidence": "Deployed by unlabeled EOA 0xf676a9be8733fe3c092913bf1f5b67456c2103f7, created via generic Safe Proxy Factory 1.3.0; no Morpheus/MOR team label, no signer relations."
+  },
+  {
+    "key": "GEOD#6",
+    "address": "0xcdfd8ec577217df0a577cc64a64eca71bb28d954",
+    "verdict": "independent",
+    "controlling_entity": "EOA 0x61257c (Nansen label 'Token Millionaire'; via Safe Proxy Factory 1.3.0)",
+    "evidence": "Deployed by 0x61257c071ed39f3cdadf775d4b4bd6cddbc4f59f (generic behavioral label 'Token Millionaire', not a Geodnet entity), created via generic Safe Proxy Factory 1.3.0; no GEOD team tie, no signer relations."
+  },
+  {
+    "key": "WXM#5",
+    "address": "0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260",
+    "verdict": "independent",
+    "controlling_entity": "EOA 0x417b4a (generic label 'Deployer'; via GnosisSafeProxyFactory)",
+    "evidence": "Deployed by 0x417b4adc279743fc49f047c323fc668db9e600d8 (generic label 'Deployer', no WeatherXM/WXM name), created via generic GnosisSafeProxyFactory; no protocol tie, no signer relations."
+  }
+]

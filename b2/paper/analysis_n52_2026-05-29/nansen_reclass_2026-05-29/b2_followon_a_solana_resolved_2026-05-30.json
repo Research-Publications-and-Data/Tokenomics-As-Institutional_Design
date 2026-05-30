@@ -1,0 +1,47 @@
+[
+ {
+  "key": "HNT#8",
+  "token": "HNT",
+  "rank": 8,
+  "share": 0.0275,
+  "addr": "7SmkxiXnGVrenvHKUDgosMUxSaN35GH3ziocaxA7hkd2",
+  "label": "HNT Custody Vaults [7SmkxiXn]",
+  "class": "other_labeled"
+ },
+ {
+  "key": "JUP#5",
+  "token": "JUP",
+  "rank": 5,
+  "share": 0.0265,
+  "addr": "6QqVvibpcQpju2QCqR7pdD4dzFKdAEDrCFAFCscFmCy6",
+  "label": "[6QqVvibp]",
+  "class": "other_labeled"
+ },
+ {
+  "key": "JUP#7",
+  "token": "JUP",
+  "rank": 7,
+  "share": 0.0193,
+  "addr": "7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh",
+  "label": "Bitget: Deposit [7TWnq4We]",
+  "class": "other_labeled"
+ },
+ {
+  "key": "JUP#8",
+  "token": "JUP",
+  "rank": 8,
+  "share": 0.0173,
+  "addr": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+  "label": "OKX: Hot Wallet [C68a6RCG]",
+  "class": "exchange"
+ },
+ {
+  "key": "HNT#10",
+  "token": "HNT",
+  "rank": 10,
+  "share": 0.0168,
+  "addr": "AjsyrYpgaH275DBSnvNWdGK33hVycSFuXN87FKnX6fVY",
+  "label": "High Balance [AjsyrYpg]",
+  "class": "other_labeled"
+ }
+]

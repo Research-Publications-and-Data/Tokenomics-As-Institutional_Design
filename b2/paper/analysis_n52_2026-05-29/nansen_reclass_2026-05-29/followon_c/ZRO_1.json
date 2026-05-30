@@ -1,0 +1,23 @@
+[
+  {
+    "key": "ZRO#1",
+    "address": "0xc2f31575b97df563a3bba2a94e3a0b317ba2d412",
+    "verdict": "team_confirmed",
+    "controlling_entity": "LayerZero: LayerZero (ZRO) Multisig",
+    "evidence": "Nansen entity-labels the Safe itself as 'LayerZero: LayerZero (ZRO) Multisig' (explicit protocol-name multisig). Related relations: Deployed by 'Alameda Research: Deployer', Created by 'BitGo: Factory' (institutional/custodial deploy path); protocol tie is the authoritative LayerZero multisig label on the address."
+  },
+  {
+    "key": "DIMO#4",
+    "address": "0x62b98e019e0d3e4a1ad8c786202e09017bd995e1",
+    "verdict": "independent",
+    "controlling_entity": "Unlabeled EOA (High Activity)",
+    "evidence": "Deployed by unlabeled EOA 'High Activity [0x55f525]'; Created by generic 'Safe: Proxy Factory 1.3.0'; First Funder is a Wormhole NttManagerWithExecutor bridge contract. No DIMO/protocol-team label on any deployer or signer relation."
+  },
+  {
+    "key": "GMX#7",
+    "address": "0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2",
+    "verdict": "team_confirmed",
+    "controlling_entity": "GMX (gmxresearch.eth)",
+    "evidence": "Deployed by 'gmxresearch.eth' (GMX team/research ENS), tying the Safe directly to the GMX protocol team; Created by generic 'Safe: GnosisSafeProxyFactory'."
+  }
+]

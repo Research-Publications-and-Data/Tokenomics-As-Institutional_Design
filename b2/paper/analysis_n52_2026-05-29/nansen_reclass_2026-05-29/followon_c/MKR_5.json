@@ -1,0 +1,23 @@
+[
+  {
+    "key": "MKR#5",
+    "address": "0x93e9ba7a00856c3c1efa9b927d40b275602839ed",
+    "verdict": "team_confirmed",
+    "controlling_entity": "MakerDAO: DeFi Manager",
+    "evidence": "Safe deployed by and signed by 0xdeb2f1 labeled 'MakerDAO: DeFi Manager' (Deployed by + Signer); created via generic Safe Proxy Factory 1.3.0. Protocol-team controlled."
+  },
+  {
+    "key": "GEOD#5",
+    "address": "0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f",
+    "verdict": "independent",
+    "controlling_entity": "Token Millionaire (0x61257c, unrelated EOA)",
+    "evidence": "Deployed by 0x61257c labeled 'Token Millionaire' (generic non-protocol EOA), created via generic Safe Proxy Factory 1.3.0. No GEOD/Geodnet protocol tie, no team label, no protocol signers."
+  },
+  {
+    "key": "DIMO#8",
+    "address": "0xced3c922200559128930180d3f0bffd4d9f4f123",
+    "verdict": "independent",
+    "controlling_entity": "0x3e54d4 (unlabeled deployer EOA)",
+    "evidence": "Deployed by unlabeled EOA 0x3e54d4, created via generic Safe Proxy Factory 1.3.0, first-funded by dinc.eth (ENS EOA). No DIMO protocol tie, no team label, no protocol signers."
+  }
+]

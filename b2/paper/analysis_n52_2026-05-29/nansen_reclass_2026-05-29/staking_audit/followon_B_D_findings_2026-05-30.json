@@ -1,0 +1,32 @@
+{
+ "as_of": "2026-05-30",
+ "B_ve_token_lockers": {
+  "veFXS": {"contract": "0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0",
+            "insider_locker_confirmed": "Frax Finance: fraxcetacean.eth (3.5M FXS in over 1Y) = Frax team/protocol address",
+            "verdict": "insider FXS locked in vote-escrow CONFIRMED (validates high insider-staking-risk for FXS)"},
+  "veCRV": {"contract": "0x5f3b5DfEb7B28CDbD7FAba78963EE202a494e2A2",
+            "dominant_counterparty": "Convex Finance: Voter Proxy (1.8M CRV in) = meta-governance bloc aggregator",
+            "limitation": "Founder (Egorov) + original team/investor locks predate the 1Y counterparty window; not surfaced by flow analysis. veCRV voting also concentrates via Convex/vlCVX (a bloc).",
+            "verdict": "partial; needs balance-based veCRV snapshot or long-window lock-event data for founder/team locks"}
+ },
+ "D_attribution_quantified": {
+  "AAVE": {"stkAAVE_holds_pct_of_AAVE_supply": 21.67,
+           "insider_pct_of_stkAAVE": 20.5,
+           "insider_AAVE_hidden_pct_of_supply_clear": 4.43,
+           "insider_AAVE_hidden_pct_of_supply_with_bare_safe": 6.29,
+           "note": "Excluding stkAAVE wholesale hides ~4.4-6.3% of AAVE supply that is Aave team multisigs + founder Stani Kulechov. Attributing it back materially raises AAVE measured insider concentration."},
+  "ENA": {"sENA_holds_pct_of_ENA_supply": 7.27,
+          "insider_pct_of_sENA": 5.9,
+          "insider_ENA_hidden_pct_of_supply": 0.43,
+          "note": "Ethena Labs + founder Kain Warwick + Strobe Ventures; smaller magnitude than AAVE."}
+ },
+ "A_solana_resolution": {
+  "deep_pages_resolved": "HNT#8 (HNT Custody Vaults), JUP#7 (Bitget), JUP#8 (OKX), HNT#10 (retail), JUP#5 (retail) -- all NON-insider",
+  "counterparty_characterized": {
+   "GRASS#1 (16%)": "422 'excessively high trade activity' -> CEX/MM hot-wallet signature -> not insider",
+   "W#1 (6.5%)": "funded by Upbit (CEX) -> not insider",
+   "DRIFT#2 (5.5%)": "routes to Coinbase (CEX) -> not insider"
+  },
+  "conclusion": "All resolvable ambiguous Solana survivors are exchange/custody/retail; NONE are hidden insiders. The conservative not-insider rule held on Solana (no undercounting)."
+ }
+}

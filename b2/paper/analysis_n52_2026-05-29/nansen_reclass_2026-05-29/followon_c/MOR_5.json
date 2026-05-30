@@ -1,0 +1,16 @@
+[
+  {
+    "key": "MOR#5",
+    "address": "0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169",
+    "verdict": "independent",
+    "controlling_entity": "Unlabeled EOA deployer 0x620d7e (High Activity) via Gnosis Safe factory",
+    "evidence": "Deployed by unlabeled EOA 0x620d7e (High Activity), created via generic Safe GnosisSafeProxyFactory, first funded by unlabeled 0xde3d94; no Morpheus/MOR label and no labeled signers, so no protocol tie."
+  },
+  {
+    "key": "COMP#5",
+    "address": "0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241",
+    "verdict": "team_confirmed",
+    "controlling_entity": "Compound: Timelock / Compound governance",
+    "evidence": "Signers include Compound: Timelock [0x6d903f] (Previous Signer) and TimelockController [0xefed08] (current Signer); Nansen label is Compound: COMP Multisig, confirming Compound protocol-governance control."
+  }
+]

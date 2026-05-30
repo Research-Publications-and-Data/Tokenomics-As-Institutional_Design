@@ -39,6 +39,13 @@
    "depin_p": 0.0245,
    "ret_b": 0.988,
    "ret_p": 0.2373
+  },
+  "v4_traced_evidence": {
+   "N": 50,
+   "depin_b": 0.7517,
+   "depin_p": 0.0119,
+   "ret_b": 1.0946,
+   "ret_p": 0.2385
   }
  }
 }

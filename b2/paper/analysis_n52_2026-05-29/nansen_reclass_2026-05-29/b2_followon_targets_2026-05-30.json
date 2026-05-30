@@ -1,0 +1,271 @@
+{
+ "C_safes": [
+  {
+   "key": "MKR#3",
+   "token": "MKR",
+   "rank": 3,
+   "chain": "ethereum",
+   "share": 0.0435,
+   "addr": "0x959bfcaee050515296fc3d8aafafeaabf5c44f1d",
+   "label": "Safe multisig (SafeProxy, impl Safe)"
+  },
+  {
+   "key": "MOR#3",
+   "token": "MOR",
+   "rank": 3,
+   "chain": "arbitrum",
+   "share": 0.0364,
+   "addr": "0xbd5d3a6d2ced315dbded2a434164a268b122694a",
+   "label": "Safe multisig (SafeProxy, impl SafeL2)"
+  },
+  {
+   "key": "MKR#5",
+   "token": "MKR",
+   "rank": 5,
+   "chain": "ethereum",
+   "share": 0.0343,
+   "addr": "0x93e9ba7a00856c3c1efa9b927d40b275602839ed",
+   "label": "GnosisSafe multisig (SafeProxy, impl Gno"
+  },
+  {
+   "key": "MOR#4",
+   "token": "MOR",
+   "rank": 4,
+   "chain": "arbitrum",
+   "share": 0.0329,
+   "addr": "0xb1972e86b3380fd69dcb395f98d39fbf1a5f305a",
+   "label": "GnosisSafe multisig (SafeProxy, impl Gno"
+  },
+  {
+   "key": "ZRO#1",
+   "token": "ZRO",
+   "rank": 1,
+   "chain": "ethereum",
+   "share": 0.0325,
+   "addr": "0xc2f31575b97df563a3bba2a94e3a0b317ba2d412",
+   "label": "LayerZero: LayerZero (ZRO) Multisig [0xc"
+  },
+  {
+   "key": "MOR#5",
+   "token": "MOR",
+   "rank": 5,
+   "chain": "arbitrum",
+   "share": 0.028,
+   "addr": "0xb19b3b7b23fa14f6a5fcfd1b9a03a4105e242169",
+   "label": "Safe multisig (SafeProxy, impl SafeL2)"
+  },
+  {
+   "key": "ZRO#5",
+   "token": "ZRO",
+   "rank": 5,
+   "chain": "ethereum",
+   "share": 0.0238,
+   "addr": "0x806f68bb6ce8f3100d4745c8b13b36e4f40d8431",
+   "label": "LayerZero: ZRO Multisig [0x806f68]"
+  },
+  {
+   "key": "DIMO#2",
+   "token": "DIMO",
+   "rank": 2,
+   "chain": "polygon",
+   "share": 0.0225,
+   "addr": "0x354698f0e93c6830196e81250074733d8a792ff2",
+   "label": "GnosisSafe multisig (SafeProxy, impl Gno"
+  },
+  {
+   "key": "GEOD#5",
+   "token": "GEOD",
+   "rank": 5,
+   "chain": "polygon",
+   "share": 0.0204,
+   "addr": "0xcecccb3ee2c208fb58a5a02499e97d4bf041ff6f",
+   "label": "Multisig (Nansen label; Blockscout chain"
+  },
+  {
+   "key": "GEOD#6",
+   "token": "GEOD",
+   "rank": 6,
+   "chain": "polygon",
+   "share": 0.0173,
+   "addr": "0xcdfd8ec577217df0a577cc64a64eca71bb28d954",
+   "label": "GnosisSafe multisig (GnosisSafeProxy, ma"
+  },
+  {
+   "key": "DIMO#4",
+   "token": "DIMO",
+   "rank": 4,
+   "chain": "polygon",
+   "share": 0.0157,
+   "addr": "0x62b98e019e0d3e4a1ad8c786202e09017bd995e1",
+   "label": "Gnosis Safe Proxy multisig (Nansen label"
+  },
+  {
+   "key": "COMP#5",
+   "token": "COMP",
+   "rank": 5,
+   "chain": "ethereum",
+   "share": 0.0152,
+   "addr": "0xeb6332bbb14b1488efb3a395b8ebf6a6904c4241",
+   "label": "Compound: COMP Multisig [0xeb6332]"
+  },
+  {
+   "key": "GMX#4",
+   "token": "GMX",
+   "rank": 4,
+   "chain": "arbitrum",
+   "share": 0.0142,
+   "addr": "0xc6378ddf536410c14666dc59bc92b5ebc0f2f79e",
+   "label": "SafeProxy [0xc6378d]"
+  },
+  {
+   "key": "WXM#3",
+   "token": "WXM",
+   "rank": 3,
+   "chain": "arbitrum",
+   "share": 0.0141,
+   "addr": "0xf20168e846498969f0621d696e97ff13b5b926f3",
+   "label": "SafeProxy [0xf20168]"
+  },
+  {
+   "key": "DIMO#8",
+   "token": "DIMO",
+   "rank": 8,
+   "chain": "polygon",
+   "share": 0.0137,
+   "addr": "0xced3c922200559128930180d3f0bffd4d9f4f123",
+   "label": "Gnosis Safe Proxy [0xced3c9]"
+  },
+  {
+   "key": "WXM#5",
+   "token": "WXM",
+   "rank": 5,
+   "chain": "arbitrum",
+   "share": 0.0132,
+   "addr": "0xe4b785d9a620ab5a2f7a4e6618f8b3b150797260",
+   "label": "SafeProxy [0xe4b785]"
+  },
+  {
+   "key": "GMX#7",
+   "token": "GMX",
+   "rank": 7,
+   "chain": "arbitrum",
+   "share": 0.0124,
+   "addr": "0x4d4dc37c4c0003ac32e8c4c751a5f7244c9339c2",
+   "label": "SafeProxy [0x4d4dc3]"
+  }
+ ],
+ "A_solana": [
+  {
+   "key": "GRASS#1",
+   "token": "GRASS",
+   "rank": 1,
+   "share": 0.1601,
+   "addr": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1"
+  },
+  {
+   "key": "W#1",
+   "token": "W",
+   "rank": 1,
+   "share": 0.0651,
+   "addr": "8nDFPaPRbK7HFCS4TprG187s2oNM1UrHm3tVqrSwzdRN"
+  },
+  {
+   "key": "DRIFT#2",
+   "token": "DRIFT",
+   "rank": 2,
+   "share": 0.0549,
+   "addr": "Gu6nuuGLPora979uTwwVCyKhiMRnGfzKAPwqcrBfaiJq"
+  },
+  {
+   "key": "GRASS#3",
+   "token": "GRASS",
+   "rank": 3,
+   "share": 0.0316,
+   "addr": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5"
+  },
+  {
+   "key": "HNT#8",
+   "token": "HNT",
+   "rank": 8,
+   "share": 0.0275,
+   "addr": "7SmkxiXnGVrenvHKUDgosMUxSaN35GH3ziocaxA7hkd2"
+  },
+  {
+   "key": "GRASS#4",
+   "token": "GRASS",
+   "rank": 4,
+   "share": 0.0265,
+   "addr": "4gXs8oc2yEwDTPkDyo6V8ZixheTCZvu8JicrEuDat8tH"
+  },
+  {
+   "key": "JUP#5",
+   "token": "JUP",
+   "rank": 5,
+   "share": 0.0265,
+   "addr": "6QqVvibpcQpju2QCqR7pdD4dzFKdAEDrCFAFCscFmCy6"
+  },
+  {
+   "key": "GRASS#5",
+   "token": "GRASS",
+   "rank": 5,
+   "share": 0.0224,
+   "addr": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ"
+  },
+  {
+   "key": "JUP#6",
+   "token": "JUP",
+   "rank": 6,
+   "share": 0.0218,
+   "addr": "2h56LbCJDC9PAjYJWSVmXP4VBhrwzaD9nMUqiz9TTgBD"
+  },
+  {
+   "key": "GRASS#6",
+   "token": "GRASS",
+   "rank": 6,
+   "share": 0.0193,
+   "addr": "CafeQ2wWakoKs8wKLhk8KFHvsddSQUt5jynwpceA9Zad"
+  },
+  {
+   "key": "JUP#7",
+   "token": "JUP",
+   "rank": 7,
+   "share": 0.0193,
+   "addr": "7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh"
+  },
+  {
+   "key": "W#2",
+   "token": "W",
+   "rank": 2,
+   "share": 0.0185,
+   "addr": "Dpfz8BDBmFCSXvsyi468YQZCtNbJXa4KQq3a82DLugvo"
+  },
+  {
+   "key": "JUP#8",
+   "token": "JUP",
+   "rank": 8,
+   "share": 0.0173,
+   "addr": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo"
+  },
+  {
+   "key": "GRASS#7",
+   "token": "GRASS",
+   "rank": 7,
+   "share": 0.0171,
+   "addr": "1hQP5Qdvi9L2ptueRAMWxBa8Ri65WciotvfgpG6XeZV"
+  },
+  {
+   "key": "HNT#10",
+   "token": "HNT",
+   "rank": 10,
+   "share": 0.0168,
+   "addr": "AjsyrYpgaH275DBSnvNWdGK33hVycSFuXN87FKnX6fVY"
+  }
+ ],
+ "A_soltokens": {
+  "JUP": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+  "DRIFT": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+  "GRASS": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+  "HNT": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+  "W": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ"
+ }
+}
