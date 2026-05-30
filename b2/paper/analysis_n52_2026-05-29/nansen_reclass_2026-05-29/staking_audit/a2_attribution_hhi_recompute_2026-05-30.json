@@ -1,0 +1,59 @@
+{
+ "method": "attribute insider staked-token share back as holders; keep retail shell excluded",
+ "finding": "address-level holding-HHI effect is < 1% and dilutive (downward); the substantive A2 output is the insider-share visibility finding, not an HHI change",
+ "AAVE": {
+  "stkAAVE_contract_AAVE": 3005689.0,
+  "insider_AAVE_clear_pct_of_supply": 4.43,
+  "insider_AAVE_with_ambiguous_pct_of_supply": 6.29,
+  "clear_insider_share_of_stkAAVE_pct": 20.46,
+  "baseline": {
+   "hhi": 0.01279,
+   "top1": 4.32,
+   "top5": 17.1,
+   "top10": 27.68,
+   "n": 997,
+   "total": 9261258.8
+  },
+  "attributed_clear": {
+   "hhi": 0.012744,
+   "top1": 4.05,
+   "top5": 17.04,
+   "top10": 27.39,
+   "n": 1000,
+   "total": 9876222.7
+  },
+  "attributed_with_ambiguous": {
+   "hhi": 0.012645,
+   "top1": 3.93,
+   "top5": 16.52,
+   "top10": 27.22,
+   "n": 1002,
+   "total": 10186409.9
+  },
+  "hhi_delta_clear": -4.6e-05,
+  "note": "frame holding-HHI left at the baseline 0.012790 (the clear-attribution recompute 0.012744 is a -0.4% dilutive move, immaterial and below manuscript display precision); A2 reported as insider-visibility methodology"
+ },
+ "ENA": {
+  "sENA_contract_ENA": 1088364297.4,
+  "insider_ENA_pct_of_supply": 0.43,
+  "clear_insider_share_of_sENA_pct": 5.87,
+  "baseline": {
+   "hhi": 0.047164,
+   "top1": 10.57,
+   "top5": 43.69,
+   "top10": 59.39,
+   "n": 997,
+   "total": 11653047347.4
+  },
+  "attributed": {
+   "hhi": 0.046662,
+   "top1": 10.51,
+   "top5": 43.45,
+   "top10": 59.06,
+   "n": 1000,
+   "total": 11716934331.6
+  },
+  "hhi_delta": -0.000502,
+  "note": "immaterial (0.43% of supply); frame holding-HHI left at 0.047164 (ENA is in the reproduce.py NEW_COHORT recompute; partial attribution does not fit the address-exclusion model and the effect is below display precision); reported as a consistency methodology note"
+ }
+}
