@@ -1,0 +1,149 @@
+{
+  "asset": "LPT",
+  "metric": "orchestrator_level_governance_HHI_bonded_stake",
+  "description": "HHI over Livepeer orchestrators (transcoders) by totalStake (self-bond + delegated stake). Bloc-voting model: delegators bond LPT to orchestrators who vote aggregate stake via BondingManager. Decision A4.",
+  "data_source": "Livepeer Protocol subgraph on The Graph decentralized network (gateway.thegraph.com), subgraph id FE63YgkzcpVocxdCEyEYbvjYqEf2kb1A6daMYRxmejYC; credentials extracted from the live explorer.livepeer.org production build (NEXT_PUBLIC_SUBGRAPH_API_KEY embedded in client bundle).",
+  "chain": "arbitrum-one",
+  "bonding_manager_contract": "0x35Bcf3c30594191d53231E4FF333E8A770453e40",
+  "as_of_arbitrum_block": 468186375,
+  "as_of_block_timestamp_unix": 1780130469,
+  "as_of_block_timestamp_utc": "2026-05-30T08:41:09Z",
+  "subgraph_deployment": "QmUW5cHnwoSbiDUgWvUsAujEYaB5gjbWkPMNBP7H5XQVuf",
+  "query": "{ transcoders(first:1000, orderBy: id, orderDirection: asc){ id totalStake active status } } (id-cursor paginated)",
+  "totalStake_units": "LPT (subgraph applies 18-decimal scaling; values are decimal LPT, not wei)",
+  "total_transcoder_entities_all_time": 262,
+  "primary_active_orchestrators": {
+    "n_orchestrators": 100,
+    "total_bonded_lpt": 28155564.428916,
+    "orchestrator_hhi": 0.053521,
+    "top1_pct": 14.3913,
+    "top5_pct": 43.7991,
+    "top10_pct": 56.2071,
+    "effective_n_1_over_hhi": 18.68,
+    "top10_orchestrators": [
+      {
+        "id": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+        "stake_lpt": 4051958.43214,
+        "share_pct": 14.3913
+      },
+      {
+        "id": "0xac2e50c8f7ac0f82923a7df9d9903f6ec4741919",
+        "stake_lpt": 3317630.01366,
+        "share_pct": 11.7832
+      },
+      {
+        "id": "0x4416a274f86e1db860b513548b672154d43b81b2",
+        "stake_lpt": 2450756.233069,
+        "share_pct": 8.7043
+      },
+      {
+        "id": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+        "stake_lpt": 1671259.80106,
+        "share_pct": 5.9358
+      },
+      {
+        "id": "0x847791cbf03be716a7fe9dc8c9affe17bd49ae5e",
+        "stake_lpt": 840292.815923,
+        "share_pct": 2.9845
+      },
+      {
+        "id": "0x141e6d4953b933746c770272126db2bd691a9683",
+        "stake_lpt": 799509.584916,
+        "share_pct": 2.8396
+      },
+      {
+        "id": "0x6cb1ce2516fb7d211038420a8cf9a843c7bd3b08",
+        "stake_lpt": 794435.462307,
+        "share_pct": 2.8216
+      },
+      {
+        "id": "0xa20416801ac2eacf2372e825b4a90ef52490c2bb",
+        "stake_lpt": 728659.981773,
+        "share_pct": 2.588
+      },
+      {
+        "id": "0x10e0a91e652b05e9c7449ff457cf2e96c3037fb7",
+        "stake_lpt": 631351.05779,
+        "share_pct": 2.2424
+      },
+      {
+        "id": "0xf5a88945ce64b5648b895e05eb1edf693dde8905",
+        "stake_lpt": 539566.776407,
+        "share_pct": 1.9164
+      }
+    ]
+  },
+  "robustness_all_bonded_orchestrators": {
+    "n_orchestrators": 225,
+    "total_bonded_lpt": 28470939.96774,
+    "orchestrator_hhi": 0.052374,
+    "top1_pct": 14.2319,
+    "top5_pct": 43.314,
+    "top10_pct": 55.5845,
+    "effective_n_1_over_hhi": 19.09,
+    "top10_orchestrators": [
+      {
+        "id": "0x525419ff5707190389bfb5c87c375d710f5fcb0e",
+        "stake_lpt": 4051958.43214,
+        "share_pct": 14.2319
+      },
+      {
+        "id": "0xac2e50c8f7ac0f82923a7df9d9903f6ec4741919",
+        "stake_lpt": 3317630.01366,
+        "share_pct": 11.6527
+      },
+      {
+        "id": "0x4416a274f86e1db860b513548b672154d43b81b2",
+        "stake_lpt": 2450756.233069,
+        "share_pct": 8.6079
+      },
+      {
+        "id": "0x4f4758f7167b18e1f5b3c1a7575e3eb584894dbc",
+        "stake_lpt": 1671259.80106,
+        "share_pct": 5.8701
+      },
+      {
+        "id": "0x847791cbf03be716a7fe9dc8c9affe17bd49ae5e",
+        "stake_lpt": 840292.815923,
+        "share_pct": 2.9514
+      },
+      {
+        "id": "0x141e6d4953b933746c770272126db2bd691a9683",
+        "stake_lpt": 799509.584916,
+        "share_pct": 2.8082
+      },
+      {
+        "id": "0x6cb1ce2516fb7d211038420a8cf9a843c7bd3b08",
+        "stake_lpt": 794435.462307,
+        "share_pct": 2.7903
+      },
+      {
+        "id": "0xa20416801ac2eacf2372e825b4a90ef52490c2bb",
+        "stake_lpt": 728659.981773,
+        "share_pct": 2.5593
+      },
+      {
+        "id": "0x10e0a91e652b05e9c7449ff457cf2e96c3037fb7",
+        "stake_lpt": 631351.05779,
+        "share_pct": 2.2175
+      },
+      {
+        "id": "0xf5a88945ce64b5648b895e05eb1edf693dde8905",
+        "stake_lpt": 539566.776407,
+        "share_pct": 1.8951
+      }
+    ]
+  },
+  "inactive_but_bonded_count": 125,
+  "inactive_but_bonded_stake_lpt": 315375.538824,
+  "reference_lpt_raw_token_holder_hhi_post_pca_exclusion": 0.198868,
+  "comparison": "Orchestrator-level (bloc-voting) HHI ~0.0535 is MEANINGFULLY LOWER than raw token-holder HHI 0.198868 (approx 3.7x lower / less concentrated). Delegation of bonded stake across ~100 active orchestrators disperses voting concentration relative to the raw token distribution.",
+  "caveats": [
+    "totalStake is the live subgraph-maintained current bonded stake per orchestrator (self-bond + delegated); NO event-replay approximation needed (Route 1 succeeded; Routes 2/3 not required).",
+    "Active set = orchestrators in the active rotation (active:true, status Registered). Inactive-but-bonded orchestrators (NotRegistered with residual bonded stake) hold 1.108% of bonded LPT; including them moves HHI only from 0.053521 to 0.052374.",
+    "HHI computed over orchestrator total-stake shares, NOT over individual delegators. A single large delegator concentrated under one orchestrator is captured at the orchestrator bloc level, consistent with the BondingManager bloc-voting governance model.",
+    "Credentials are a public NEXT_PUBLIC_ client-side key shipped in the explorer bundle (rate-limited gateway access), not a private secret."
+  ],
+  "generated_at_utc": "2026-05-30T08:42:24.961159Z",
+  "feasible": true
+}
