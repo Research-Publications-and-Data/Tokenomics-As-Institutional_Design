@@ -1,0 +1,51 @@
+token,documented_hhi,recompute_from_canonical_log,reproduces,n_excl_in_log,gov_conc_hhi,gov_conc_consistent,exclusion_source_if_unreproducible
+COMP,0.00922,0.00922,True,9,0.02893,False,
+MKR,0.04041,0.04041,True,2,0.04504,False,
+AAVE,0.01279,0.01279,True,3,0.0202,False,
+UNI,0.00978,0.00978,True,3,0.01,True,
+CRV,0.01442,0.01442,True,12,0.017,False,
+RPL,0.03915,0.03915,True,2,0.03915,True,
+JUP,0.09571,0.12601,False,6,0.1166,False,S13 Solana PCA audit (not in log)
+MPL_SYRUP,0.02424,0.02424,True,2,0.02424,True,
+GMX,0.06472,0.06472,True,4,0.05638,False,
+DRIFT,0.05291,0.0568,False,2,0.10113,False,S13 Solana PCA audit
+ETHFI,0.04172,0.04173,True,2,0.06678,False,
+GRT,0.03298,0.03298,True,4,0.03276,True,
+OP,0.00928,0.00928,True,8,0.0091,True,
+POL,0.03475,0.03475,True,2,0.03475,True,
+ARB,0.01191,0.01191,True,7,0.01184,True,
+ENS,0.04936,0.04936,True,4,0.13453,False,
+DIMO,0.02494,0.02494,True,2,0.0379,False,
+IOTX,0.08096,0.08096,True,8,0.10645,False,
+WXM,0.14785,0.14785,True,2,0.14785,True,
+ANYONE,0.01279,0.01279,True,3,0.04036,False,
+GRASS,0.0352,0.0352,True,0,0.0352,True,
+LPT,0.19887,0.19887,True,2,0.19887,True,
+HNT,0.07447,0.08743,False,3,0.1024,False,S13 Solana PCA audit
+GEOD,0.06046,0.06046,True,4,0.1325,False,
+FIL,0.02209,0.02209,True,1,0.04727,False,
+RENDER,0.02675,0.02675,True,2,0.03231,False,
+POKT,0.08986,0.08986,True,1,0.15916,False,
+ZRO,0.01432,0.01432,True,2,0.0147,True,
+W,0.01153,0.01167,True,2,0.01493,False,
+MOR,0.04637,0.04637,True,3,0.031,False,
+AXL,0.02676,0.02676,True,4,0.0277,True,
+META,0.01518,0.01518,True,1,0.04825,False,
+LDO,0.00772,0.00772,True,9,0.01282,False,
+ATH,0.09476,0.09476,True,8,0.1678,False,
+HONEY,0.01759,0.01925,False,2,0.0198,False,S13 Solana PCA audit
+IO,0.12514,0.07858,False,3,0.1113,False,S13 Solana PCA audit
+HYPE,0.00516,0.00453,True,5,0.00453,True,
+BAL,0.02904,0.02904,True,5,0.0295,True,
+WLFI,0.15574,0.12652,False,6,,,new12 unified (Dolomite/LockRelease; not in canonical log)
+ENA,0.04716,0.04675,True,2,,,
+PUMP,0.04015,0.04015,True,6,,,
+JTO,0.02588,0.02588,True,3,,,
+BONK,0.02261,0.02261,True,5,,,
+KMNO,0.03134,0.03134,True,1,,,
+FXS,0.03241,0.03241,True,7,,,
+SNX,0.01707,0.01708,True,10,,,
+GNO,0.04249,0.04249,True,13,,,
+ALGO,0.0591,0.03301,False,0,,,ALGO_pca_exclusions.csv (clone-B)
+DOT,0.0052,0.01392,False,0,,,per-protocol dot_pca_refined (clone-B)
+TAO,0.00749,0.01399,False,0,,,tao_pca.py script
