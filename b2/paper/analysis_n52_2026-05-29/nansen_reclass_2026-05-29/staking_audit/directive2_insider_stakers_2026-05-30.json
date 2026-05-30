@@ -1,0 +1,41 @@
+{
+ "as_of": "2026-05-30",
+ "finding": "Insider/team/founder tokens are locked inside PCA-EXCLUDED staking contracts, hiding insider concentration from both the HHI and the insider count.",
+ "stkAAVE": {
+  "token_address": "0x4da27a545c0c5b758a6ba100e3a049001de870f5",
+  "pca_status": "EXCLUDED from AAVE HHI (exclusions_log: 'Staked AAVE (stkAAVE)')",
+  "insider_stakers": [
+   {"label": "AAVE Multisig [0x3e312e]", "stkAAVE_pct": 10.72, "class": "insider_multisig"},
+   {"label": "AAVE Multisig [0x144f28]", "stkAAVE_pct": 5.08, "class": "insider_multisig"},
+   {"label": "AAVE Multisig [0x507b3f]", "stkAAVE_pct": 2.72, "class": "insider_multisig"},
+   {"label": "Stani Kulechov (Aave founder) [0xe705b1]", "stkAAVE_pct": 1.94, "class": "insider_founder"},
+   {"label": "SafeProxy [0x54a1be]", "stkAAVE_pct": 8.56, "class": "ambiguous_safe"},
+   {"label": "Multisig [0x0efccb]/[0x34ddfc]", "stkAAVE_pct": 1.76, "class": "ambiguous_multisig"}
+  ],
+  "clear_insider_share_of_stkAAVE_pct": 20.46,
+  "note": "~20% of staked AAVE is Aave team multisigs + founder; +8.6% bare Safe. This insider-staked AAVE is invisible because stkAAVE is PCA-excluded wholesale."
+ },
+ "sENA": {
+  "token_address": "0x8be3460a480c80728a8c4d7a5d5303c85ba7b3b9",
+  "pca_status": "EXCLUDED from ENA HHI (new12_unified: 'Ethena Staked ENA (sENA) staking aggregation')",
+  "insider_stakers": [
+   {"label": "Ethena Labs [0x9f6df7]", "sENA_pct": 2.71, "class": "insider_team"},
+   {"label": "Kain Warwick (founder) [0x325c7e]", "sENA_pct": 2.01, "class": "insider_founder"},
+   {"label": "Strobe Ventures [0x2f726a]", "sENA_pct": 1.15, "class": "insider_investor"}
+  ],
+  "protocol_contracts": [
+   {"label": "Ethena Labs: LP Staking", "sENA_pct": 22.11},
+   {"label": "SY Staked ENA (Pendle)", "sENA_pct": 7.75},
+   {"label": "Ethena Labs: SENA Distributor x2", "sENA_pct": 8.11}
+  ],
+  "clear_insider_share_of_sENA_pct": 5.87,
+  "note": "Ethena team + founder Kain Warwick + Strobe Ventures stake sENA; bulk is Ethena protocol contracts (further nesting). Insider portion hidden by the sENA PCA exclusion."
+ },
+ "no_data_tokens": {
+  "sETHFI_0x86b5780": "no Nansen holder data",
+  "stSYRUP_0xc7e8b36": "no Nansen holder data",
+  "veFXS_0xc8418af": "non-transferable vote-escrow; no token-holder list",
+  "veCRV_0x5f3b5Df": "non-transferable vote-escrow; no token-holder list",
+  "method_limitation": "Non-transferable ve-tokens + some staked tokens are not queryable via token_current_top_holders; would need lock-event / deposit tracing."
+ }
+}

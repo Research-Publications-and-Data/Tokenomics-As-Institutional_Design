@@ -1,0 +1,19 @@
+{
+ "as_of": "2026-05-30",
+ "method": "Nansen address_related_addresses (Signer/Deployed-by) to confirm whether high-share bare Safes are protocol-team-controlled",
+ "traces": {
+  "MKR#1 (0xf65475e74c1ed6d004d5240b06e3088724dfda5d, 11.3% of MKR)": {
+   "verdict": "TEAM-CONFIRMED insider",
+   "evidence": "Deployed by 'MakerDAO: Delegator [0xc0583d]'; is a Multisig Signer of 'MakerDAO: MKR Multisig [0x3473e9]' and 'Sky Frontier Foundation: SKY Multisig'. Part of the MakerDAO/Sky governance multisig cluster."
+  },
+  "DIMO#1 (0xccfa7c808f5b77822e4935a7230f46681c99f4bc, multisig)": {
+   "verdict": "TEAM-CONFIRMED insider",
+   "evidence": "Deployed by dinc.eth (DIMO Inc / team); created via Safe Proxy Factory."
+  },
+  "GRASS#1 (5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1, 16% of GRASS, solana)": {
+   "verdict": "UNRESOLVED (weak signal)",
+   "evidence": "First Funder = 'ALEPH-USDC Token Deployer'; no team/signer relation. Solana resolution is weak via related_addresses; remains unlabeled -> not-insider by the conservative rule (flag)."
+  }
+ },
+ "implication": "The multisig->insider rule is validated on the highest-share resolved case (MKR#1 = MakerDAO team). Remaining high-share bare Safes (MOR, GEOD, ENS) are very likely team by the same pattern but were not individually deployer-traced this cycle (budget held)."
+}

@@ -32,6 +32,13 @@
    "depin_p": 0.0168,
    "ret_b": 1.0909,
    "ret_p": 0.183
+  },
+  "v4_resolved_gapfill": {
+   "N": 50,
+   "depin_b": 0.673,
+   "depin_p": 0.0245,
+   "ret_b": 0.988,
+   "ret_p": 0.2373
   }
  }
 }
