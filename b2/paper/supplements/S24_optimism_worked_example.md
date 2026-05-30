@@ -1,4 +1,4 @@
-# Supplementary File S15: Optimism worked example (full per-lens narrative)
+# Supplementary File S24: Optimism worked example (full per-lens narrative)
 
 **Companion to:** B2 paper *Tokenomics as Applied Political Philosophy: Governance Concentration Beyond Token Allocation* (Section 2.10.9 Worked Example: Optimism Protocol Scoring). Generated 2026-05-22.
 

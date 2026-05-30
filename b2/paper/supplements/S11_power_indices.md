@@ -83,7 +83,7 @@ The dramatic non-linear divergence the theoretical literature predicts under nea
 
 ## Replication
 
-Computational detail at `b2/paper/supplements/power_indices_extended_2026-05-22.py` in the replication repository. Inputs: top-100 delegate weights per Tally-sourced protocol (5 protocols); Monte Carlo seed fixed for reproducibility (20,000 permutations per Shapley-Shubik computation; 20,000 subsets per Banzhaf computation).
+Computational detail at `b2/paper/supplements/power_indices_extended_2026-05-19.py` in the replication repository. Inputs: top-100 delegate weights per Tally-sourced protocol (5 protocols); Monte Carlo seed fixed for reproducibility (20,000 permutations per Shapley-Shubik computation; 20,000 subsets per Banzhaf computation).
 
 ## References (main-paper bibliography continues to apply)
 

@@ -1,4 +1,4 @@
-# Supplementary File S16: Phase 4 Mini-Batch Sample Expansion (B2 R3 omnibus)
+# Supplementary File S16b: Sample-expansion batch (FXS, SNX, GNO, TAO)
 
 **Companion to:** B2 paper *Tokenomics as Applied Political Philosophy: Governance Concentration Beyond Token Allocation* (§3.2 holding-HHI cross-section; §3.8 PCA typology; §5.7 #2 + §5.8 #2 sample-expansion limitation + future-research).
 

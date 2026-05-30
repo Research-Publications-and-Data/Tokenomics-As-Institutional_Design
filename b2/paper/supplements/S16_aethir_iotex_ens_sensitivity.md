@@ -1,4 +1,4 @@
-# Supplementary File S16: Aethir / IoTeX / ENS sensitivity analyses (cycle 13 audit-trail)
+# Supplementary File S16a: Aethir, IoTeX, and ENS sensitivity analyses
 
 **Companion to:** B2 paper *Tokenomics as Applied Political Philosophy: Governance Concentration Beyond Token Allocation* (Section 4.8 Limitations). Generated 2026-05-22.
 
@@ -22,7 +22,7 @@ The Aethir holding HHI was revised in the R2 cascade via a supplementary verific
 
 **Aethir-only sub-cascade effects (small):**
 
-- DePIN sector mean: 0.077 → 0.078
+- DePIN sector mean: 0.077 to 0.078
 - DePIN-vs-DeFi Mann-Whitney p-value: 0.018 (unchanged)
 - Cohen's d: 0.99 (up from 0.98)
 - LOO 30 of 30 significant-iteration result: preserved
@@ -30,11 +30,11 @@ The Aethir holding HHI was revised in the R2 cascade via a supplementary verific
 
 **Three additional top holders verified but not excluded from canonical methodology:**
 
-1. **0x33548...** — exhibits a distribution-wallet pattern (13 small-amount transfers; EOA without Etherscan label). Flagged as Class 1 candidate pending inter-rater reliability cycle.
+1. **0x33548...**: exhibits a distribution-wallet pattern (13 small-amount transfers; EOA without Etherscan label). Flagged as Class 1 candidate pending inter-rater reliability cycle.
 
-2. **0x5a4a...** — a 21-day-old EOA funded by a single source with 100 percent ATH portfolio. Flagged as a possible strategic-allocation recipient pending inter-rater reliability cycle.
+2. **0x5a4a...**: a 21-day-old EOA funded by a single source with 100 percent ATH portfolio. Flagged as a possible strategic-allocation recipient pending inter-rater reliability cycle.
 
-3. **0xaf8d...** — a 1.7-year-old EOA with 286 transactions. Deeper transfer-pattern analysis (2026-05-19) shows systematic outflows to the ATH token contract itself (regular 3 to 10 million ATH transfers every 1 to 3 days over the most recent 45-day window; no CEX-counterparty outflows visible). The token-contract-recipient pattern is consistent with treasury, vesting unlock, or staking-pool interactions rather than EOA hodling or market-maker behavior, elevating 0xaf8d... from indeterminate to a likely Class 1 or Class 4 candidate; the formal classification remains pending inter-rater reliability review.
+3. **0xaf8d...**: a 1.7-year-old EOA with 286 transactions. Deeper transfer-pattern analysis (2026-05-19) shows systematic outflows to the ATH token contract itself (regular 3 to 10 million ATH transfers every 1 to 3 days over the most recent 45-day window; no CEX-counterparty outflows visible). The token-contract-recipient pattern is consistent with treasury, vesting unlock, or staking-pool interactions rather than EOA hodling or market-maker behavior, elevating 0xaf8d... from indeterminate to a likely Class 1 or Class 4 candidate; the formal classification remains pending inter-rater reliability review.
 
 **Sensitivity scenarios:**
 
@@ -50,8 +50,8 @@ The same 2026-05-19 universal verification cycle identified two additional misse
 
 **Cascade effects:**
 
-- IoTeX HHI: 0.189 → 0.081 (substantial shift; the missed exclusions accounted for ~17.5% of supply at the protocol level)
-- DePIN sector mean: 0.078 → 0.071
+- IoTeX HHI: 0.189 to 0.081 (substantial shift; the missed exclusions accounted for ~17.5% of supply at the protocol level)
+- DePIN sector mean: 0.078 to 0.071
 - DePIN-vs-DeFi Mann-Whitney significance: p = 0.020 (preserved)
 - LOO 30 of 30 significant-iteration robustness: preserved
 
