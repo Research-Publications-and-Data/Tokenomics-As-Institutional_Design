@@ -1,0 +1,1197 @@
+[
+ {
+  "token": "RENDER (Render Network, RNDR; BME mint/work-rewards + burn on Solana, SPL mint rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof)",
+  "dashboards": [
+   {
+    "name": "RENDER EMISSION BREAKDOWN (tobiases)",
+    "url": "https://dune.com/tobiases/render-emission-breakdown",
+    "official": false,
+    "owner_handle": "tobiases",
+    "covers": [
+     "emissions",
+     "rewards",
+     "inflation",
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Best single build input. Purpose-built for RENDER's BME mint side on Solana. Decomposes emission by the actual on-chain mint/reward wallets: 1/3 node availability + compute client (7CVt936...), 2/3 node operators + LPs + artist rewards (G6uch1N...), 3/3 emissions upgrade-point reward mints (C3E5bGd...), plus per-allocation wallets (node availability rav3GKV..., compute client rnoKwRk...). Backing queries 4202230, 4202256, 4202267 all SUM(amount/1e8) from tokens_solana.transfers on the RENDER SPL mint, bucketed by DATE(block_time) (daily distribution totals) and partitioned per wallet; sibling burn queries 4210871 (per-epoch + monthly) and 4839479 (monthly_burn) exclude mint/burn tx_ids. Community-built but the most granular emission decomposition found. Re-run to refresh; some sibling query executions show FAILED/stale state."
+   },
+   {
+    "name": "Render burn (Tokenomist team query)",
+    "url": "https://dune.com/queries/5656074",
+    "official": true,
+    "owner_handle": "tokenomist_ai",
+    "covers": [
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Cleanest burn series. Tokenomist (team 17763, formerly TokenUnlocks) is a well-known tokenomics/unlocks analyst. SELECT date_trunc('day', block_time) AS day, SUM(amount/1e8) AS burn_amount FROM tokens_solana.transfers WHERE action='burn' on the RENDER SPL mint, excluding the 7 mint + 7 burn carve-out tx_ids, HAVING >= 1. Parameterized {{start_timestamp}}/{{end_timestamp}}. Daily emitted-equivalent burn directly. Burn-only (no mint side); pair with tobiases for the mint/emission half."
+   },
+   {
+    "name": "Render Network (PYOR team)",
+    "url": "https://dune.com/pyor_xyz/render-network",
+    "official": true,
+    "owner_handle": "pyor_xyz",
+    "covers": [
+     "emissions",
+     "rewards",
+     "burns",
+     "supply",
+     "revenue",
+     "governance"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Professional analyst-team (PYOR) dashboard, tagged render/solana/depin. Has explicit 'RENDER BME Model Performance', 'Incentives', 'Revenue', and 'Weekly Overview' sections; documents full BME methodology and the node-operator reward wallet rscrKMNxC3sC4fviV5hdJte8aqDfiCyQ1Uw4NPuExQV (+ early-epoch 7dTswSj...). Onchain-only Solana usage. Strong official-grade alternative; verify each widget exposes a downloadable per-period (weekly) emitted/burned amount column, several KPI tiles are point-in-time."
+   },
+   {
+    "name": "RNDR: Protocol Fundamentals (010x team)",
+    "url": "https://dune.com/010x/rndr-protocol-fundamentals",
+    "official": true,
+    "owner_handle": "010x",
+    "covers": [
+     "supply",
+     "emissions",
+     "burns",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Part of 010x team's multi-page RNDR suite (also rndr-market-fundamentals, rndr-utility-metrics, rndr-users, rndr-governance-*). 010x is an established analytics team. Fundamentals page is the one most likely to carry per-period supply/emission/burn; the suite is broad so confirm the specific widget yields a monthly/daily token-amount series rather than ratios."
+   },
+   {
+    "name": "RENDER Mint VS Burn (kneteknilch)",
+    "url": "https://dune.com/kneteknilch/render-mint-vs-burn",
+    "official": false,
+    "owner_handle": "kneteknilch",
+    "covers": [
+     "emissions",
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "The methodological origin PYOR credits. Mint-vs-burn comparison with accumulated and per-period variants (queries 3402505 accumulated, 3566039 mint-vs-burn). Useful cross-check / net-emission view. Community-built; kneteknilch also maintains the large 'RENDER NETWORK - Dashboard' partial-version series."
+   }
+  ],
+  "best_for_build": "https://dune.com/tobiases/render-emission-breakdown",
+  "fallback": "If a hosted dashboard is insufficient, build it directly on Dune from tokens_solana.transfers (the same base table all the above queries use). EMISSION/MINT side: SELECT date_trunc('month', tr.block_time) AS period, SUM(tr.amount / pow(10, tks.decimals)) AS emitted FROM tokens_solana.transfers tr LEFT JOIN tokens_solana.fungible tks ON tr.token_mint_address = tks.token_mint_address WHERE tr.token_mint_address = 'rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof' AND tr.from_owner IN (the 3 mint wallets 7CVt936gVDXfKeXdRs5xcWVkrEaYGMTV3HA2K7j4Bqa7, G6uch1NBTQoTVExxHvk714NJ4gNe7Gm9Qqos3QS71x2Y, C3E5bGdEZ9SzAbN7Ef45czDGbkDdGBGBcXtXV3cWuQgz) -- or the node-operator reward wallet rscrKMNxC3sC4fviV5hdJte8aqDfiCyQ1Uw4NPuExQV per PYOR -- GROUP BY 1 ORDER BY 1. BURN side: same FROM/WHERE with tr.action = 'burn' and the 7 mint + 7 burn carve-out tx_ids excluded (lists are in tobiases query 4210871 and Tokenomist query 5656074), GROUP BY date_trunc('month'/'day', block_time). Net emission = mint minus burn per period. RENDER decimals = 8. As an off-Dune fallback, the same daily mint/burn flows are queryable via the Solana RPC / Solscan or Helius transfer APIs for the RENDER SPL mint and these wallets; Tokenomist's own site (tokenomist.ai, formerly token.unlocks) and Messari/CoinGecko emission schedules give a cross-check on scheduled vs realized emission.\""
+ },
+ {
+  "token": "IO (io.net / io.solutions; Solana SPL token, mint BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K)",
+  "dashboards": [
+   {
+    "name": "ionet_token_economic_activity (official IONet dashboard)",
+    "url": "https://dune.com/ionet/ionettokeneconomicactivity",
+    "official": true,
+    "owner_handle": "ionet",
+    "covers": [
+     "emissions",
+     "unlocks",
+     "burns",
+     "staking",
+     "revenue",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Official protocol-team dashboard (team id 22859). Dedicated sections: Total IONET Token Schedule Emission (monthly emission/unlock schedule), IONET Staking, Compute Cluster Earnings, and Solana Transaction Data (monthly burns/transfers). Built from team-owned queries that return clean monthly/daily series. Single best one-stop build source. Glossary explicitly: 'Block Rewards: $IO tokens emissioned on an hourly basis to qualified suppliers.' Data sourced from io.net explorer + Solscan."
+   },
+   {
+    "name": "ionet_monthly_economic_activity (query 5180192)",
+    "url": "https://dune.com/queries/5180192",
+    "official": true,
+    "owner_handle": "ionet",
+    "covers": [
+     "burns",
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Official. Groups dune.ionet.result_ionet_economic_activity by month: total_burned (token), total_transferred (token), total_burned_usd, net_transferred. This is the per-period burned-token series (the build input). Daily-grain sibling is query 5180169 (ionet_total_burned_usd) over the same base table."
+   },
+   {
+    "name": "ionet_full_emission_Schedule_staked-view (query 5194567)",
+    "url": "https://dune.com/queries/5194567",
+    "official": true,
+    "owner_handle": "ionet",
+    "covers": [
+     "emissions",
+     "unlocks",
+     "inflation",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Official. Monthly emission/unlock schedule from dataset_ionet_full_emission_schedule: unlocking_on_the_11th_of_the_month, unlocking_on_the_last_day_of_the_month, plus cumulative columns. This is the per-month emitted/unlocked-token series. Note: schedule dataset (gurunath-sourced), not live on-chain decoding, so it is the planned emission schedule rather than realized on-chain mint events."
+   },
+   {
+    "name": "ionet reward claims by period (query 3902810, Syndica)",
+    "url": "https://dune.com/queries/3902810",
+    "official": false,
+    "owner_handle": "syndica",
+    "covers": [
+     "rewards",
+     "emissions"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Community (well-known Solana analyst team Syndica). Decodes on-chain NewClaim instructions for the IO reward program and joins tokens_solana.transfers for claimed-token amounts. Commented-out block trivially yields a daily claimed-amount series (date_trunc('day') sum(quantity)). Active query is date-bounded to the 2024 Season 1-3 claim windows; extend the date filter for current coverage. Best on-chain-grounded reward-emission corroboration."
+   },
+   {
+    "name": "io.net (cryptokoryo dashboard)",
+    "url": "https://dune.com/cryptokoryo/ionet",
+    "official": false,
+    "owner_handle": "cryptokoryo",
+    "covers": [
+     "other",
+     "staking",
+     "revenue"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Community DePIN analyst dashboard. Focus is inferences/DAU/usage and node-operator activity rather than a clean per-period emission/burn token series; useful context, not the primary build input."
+   }
+  ],
+  "best_for_build": "https://dune.com/ionet/ionettokeneconomicactivity",
+  "fallback": "Not needed (official per-period series exist), but to build directly: IO is a Solana SPL token (mint BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K). For realized on-chain BURNS, query Dune tokens_solana.transfers (or solana.token_burns) for the mint and date_trunc to month/day; the official daily base table dune.ionet.result_ionet_economic_activity already exposes total_burned/total_burned_usd per day. For REWARD/EMISSION events, decode the io.net reward program (executing_account MErKy6nZVoVAkryxAejJz2juifQ4ArgLgHmaJCQkU7N) NewClaim instructions joined to tokens_solana.transfers (per Syndica query 3902810), or use the io.net explorer block-rewards API (explorer.io.net/explorer/block-rewards) and staking metrics API (api.io.solutions/v1/io-explorer/staking/metrics, as used in query 5195235). For the planned UNLOCK/emission schedule, use dune.gurunath.dataset_ionet_full_emission_schedule (per official query 5194567)."
+ },
+ {
+  "token": "WXM (WeatherXM) \u2014 station rewards/emissions on Arbitrum",
+  "dashboards": [
+   {
+    "name": "WeatherXM \u2014 Network Stats (official)",
+    "url": "https://dune.com/weatherxm/network-stats",
+    "official": true,
+    "owner_handle": "weatherxm",
+    "covers": [
+     "emissions",
+     "rewards",
+     "revenue",
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official protocol-owned dashboard (owner handle = weatherxm). Has a 'WXM station reward analytics' section, but the reward widgets are NOT per-period: query 3807052 is a claimed-vs-unclaimed TOTAL (pie, two scalars); query 3806941 is just the latest 10 claim txs (table). Most other widgets are DAO buyback / treasury balance / DAO-provided liquidity / AG company wallet. Critically, its SQL names the exact emissions source tables: station rewards claimed = wxm_reward_pool_arbitrum.wxm_reward_pool_evt_Claimed; reward-pool funding = transfers to reward-pool 0x2CDBa04dcFD3999ef3FDa00121b23c693AF4041b in wxm_arbitrum.WXM_evt_Transfer. So a monthly/daily emitted-amount series is one date_trunc away but is not presented as a widget here."
+   },
+   {
+    "name": "TS-B2-DePIN-02: WeatherXM Revenue + Emissions (Arbitrum) [your own team query]",
+    "url": "https://dune.com/queries/6933258",
+    "official": false,
+    "owner_handle": "crypt0zach_team_1253",
+    "covers": [
+     "emissions",
+     "burns",
+     "revenue"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Owned by your own Dune team (crypt0zach_team_1253). Exactly the build shape: monthly mint (emissions) and burn (revenue) WXM amounts + USD, trailing 12 months, GROUP BY date_trunc('month'). BUT it currently returns 0 rows: it assumes mint-from-0x0 / burn-to-dead on token 0xB6093B61544572Ab42A0E43AF08aBaF6b3d2ad14, and WXM emissions do NOT flow that way (they come through the reward-pool Claimed event; buyback/burn is transfer-based). Fix the source to wxm_reward_pool_arbitrum.wxm_reward_pool_evt_Claimed (emissions) before relying on it."
+   },
+   {
+    "name": "WeatherXM (community, nikos159)",
+    "url": "https://dune.com/nikos159/weatherxm",
+    "official": false,
+    "owner_handle": "nikos159",
+    "covers": [
+     "revenue",
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Most-developed community WXM dashboard (16 widgets). Buyback / DAO trading wallet / station-sale inflow / wallet-flow oriented rather than station-emission time series. Useful for revenue and buyback context, not for a per-period emitted-token series."
+   },
+   {
+    "name": "WeatherXM Revenue - DAO Buyback Trading Wallet Activity (davees)",
+    "url": "https://dune.com/queries/5787311",
+    "official": false,
+    "owner_handle": "davees",
+    "covers": [
+     "revenue"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Daily WXM inflow to the DAO buyback trading wallet (date + SUM(value)). It IS a per-DAY token series, but it measures buyback/revenue flow, not station-reward emissions or burns. Good revenue proxy; wrong metric for the emissions build input."
+   },
+   {
+    "name": "wxm-buying (community, nikos159)",
+    "url": "https://dune.com/nikos159/wxm-buying",
+    "official": false,
+    "owner_handle": "nikos159",
+    "covers": [
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Companion buyback-focused community dashboard (USDC outflow to buy WXM, etc.). Buyback/revenue context only; not an emission/burn per-period series."
+   }
+  ],
+  "best_for_build": "https://dune.com/weatherxm/network-stats",
+  "fallback": "No existing widget presents a per-period emitted/burned WXM series, so build it directly from the on-chain tables the official dashboard already uses (Arbitrum). EMISSIONS (station rewards): SELECT date_trunc('month', evt_block_time) AS month, SUM(CAST(amount AS double)/1e18) AS wxm_emitted FROM wxm_reward_pool_arbitrum.wxm_reward_pool_evt_Claimed GROUP BY 1 ORDER BY 1 (use 'week' or 'day' for finer granularity). Alternatively measure reward-pool FUNDING (emission budget) via net transfers into reward pool 0x2CDBa04dcFD3999ef3FDa00121b23c693AF4041b in wxm_arbitrum.WXM_evt_Transfer, date_trunc'd. REVENUE/BUYBACK proxy: daily WXM inflow to DAO buyback wallet 0x22EB100addBE655f64a6cbA3b6a4F26021708b3F (see davees query 5787311). WXM token contract on Arbitrum: 0xB6093B61544572Ab42A0E43AF08aBaF6b3d2ad14. Practical path: clone/repair your existing team query 6933258 to source emissions from wxm_reward_pool_arbitrum.wxm_reward_pool_evt_Claimed (its current mint-from-zero / burn-to-dead assumption returns 0 rows for WXM). API alternative: WeatherXM rewards are also published off-chain via WeatherXM Pro / the rewards API, but the on-chain Arbitrum reward-pool Claimed events are the canonical per-period emission ledger.\"\n"
+ },
+ {
+  "token": "LPT (Livepeer)",
+  "dashboards": [
+   {
+    "name": "Livepeer - Reward Events (query)",
+    "url": "https://dune.com/queries/1137991",
+    "official": false,
+    "owner_handle": "stronk",
+    "covers": [
+     "emissions",
+     "rewards",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Saved query reading livepeer_arbitrum.BondingManager_evt_Reward (columns: evt_block_time, transcoder, amount). The Reward event fires when an orchestrator calls reward() each round and mints new LPT; amount is the freshly minted LPT (18 decimals). SUM(amount/1e18) GROUP BY date_trunc('day'|'month', evt_block_time) yields the per-period emission/inflation series on Arbitrum (the live chain post-2022 L2 migration). Owner stronk is a well-known long-time Livepeer orchestrator/analyst; community-built but the most direct build input. Part of stronk's 'Livepeer (Arbitrum)' dashboard (dune.com/stronk/livepeer-arbitrum)."
+   },
+   {
+    "name": "LPT rewards per round (query)",
+    "url": "https://dune.com/queries/316332",
+    "official": false,
+    "owner_handle": "Courtney",
+    "covers": [
+     "rewards",
+     "emissions",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Reads livepeer.BondingManager_evt_EarningsClaimed and exposes rewards/10^18 per event with evt_block_time. EarningsClaimed carries the minted-reward LPT credited per round. As written it filters to one delegator, but the underlying table is the canonical per-round minted-reward source; drop the WHERE and GROUP BY date_trunc for a per-period emission series. Ethereum-era (pre-Arbitrum) table."
+   },
+   {
+    "name": "lpt_rewards_staker (query)",
+    "url": "https://dune.com/queries/877807",
+    "official": false,
+    "owner_handle": "robko",
+    "covers": [
+     "rewards",
+     "emissions",
+     "staking"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Already aggregates EarningsClaimed rewards by DATE_TRUNC('day') summing rewards/1e18 per delegate, joined to LPT USD price. Direct daily LPT-reward (inflation distributed to stakers) series, Ethereum-era. Good ready-made daily series for the pre-L2 period; needs the Arbitrum reward-events query for the current period."
+   },
+   {
+    "name": "LPT Supply (query)",
+    "url": "https://dune.com/queries/9003",
+    "official": false,
+    "owner_handle": "saturnzenith",
+    "covers": [
+     "supply",
+     "emissions",
+     "burns",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Daily mint (ERC20 Transfer from 0x0) minus burn (Transfer to 0x0) on the L1 LPT contract 0x58b6...b239, accumulated to running total_supply. The inner per-day mint and burn deltas ARE the emission and burn series; the outer query only running-totals them. Ethereum-mainnet only (does not capture Arbitrum activity)."
+   },
+   {
+    "name": "Messari: Livepeer Macro Financial Statements (dashboard)",
+    "url": "https://dune.com/messari/Messari:-Livepeer-Macro-Financial-Statements",
+    "official": false,
+    "owner_handle": "messari",
+    "covers": [
+     "revenue",
+     "supply",
+     "inflation",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Messari-team macro financial dashboard (well-known analyst team, not the Livepeer protocol itself). Typically surfaces protocol revenue, token supply, and incentive/issuance lines on a periodic basis. Useful as a cross-check on per-period issuance/supply but Messari's macro templates can lag; verify the supply/issuance panel granularity before relying on it as the build input."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/1137991",
+  "fallback": "No Livepeer-team-owned (official-handle) dashboard exists; all candidates are community/analyst-built (stronk and y.fu are the recognized Livepeer analysts). The single cleanest build input is query 1137991 (livepeer_arbitrum.BondingManager_evt_Reward) for the current Arbitrum chain. If building from scratch / API: LPT inflation is minted per round when orchestrators call reward(). On Dune, SUM(amount/1e18) over livepeer_arbitrum.BondingManager_evt_Reward GROUP BY date_trunc('month', evt_block_time) gives monthly Arbitrum emissions; UNION the Ethereum-era livepeer.BondingManager_evt_Reward (and/or EarningsClaimed) for pre-2022 history. For a net-supply view, replicate query 9003's approach per chain: ERC20 Transfer mints from 0x0 minus burns to 0x0 on the LPT contracts (Ethereum 0x58b6A8A3302369DAEc383334672404Ee733aB239; Arbitrum 0x289ba1701C2F088cf0faf8B3705246331cB8A839), date_trunc'd. Non-Dune fallback: Livepeer subgraph (thegraph.com, livepeer subgraph) exposes Round.mintableTokens / RewardEvent.rewardTokens and protocol inflation per round; or call RoundsManager/Minter contract inflation() and currentMintableTokens() on Arbitrum (chain 42161) per round via RPC/Blockscout-style API.\""
+ },
+ {
+  "token": "POKT",
+  "dashboards": [
+   {
+    "name": "wPOKT (Wrapped POKT) Dashboard",
+    "url": "https://dune.com/stablescarab/wpokt",
+    "official": false,
+    "owner_handle": "stablescarab",
+    "covers": [
+     "burns",
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Most complete live POKT dashboard on Dune (11 viz widgets). CRITICAL CAVEAT: it tracks ERC-20 Wrapped POKT (contract 0x67F4C72a50f8Df6487720261E188F2abE83F57D7) on Ethereum, NOT native Pocket Network emission. Includes a 'wPOKT Minting and Burning' query (query_id 3094473: erc20 Transfer from/to 0x0 with timestamps, aggregatable to daily/monthly mint+burn amounts) and a 'wPOKT Supply Over Time' query (3094423). These measure BRIDGE mint/burn (wrap/unwrap into Ethereum), not protocol inflation per relay. Best Dune-native proxy for bridged-supply flow, but not the native minting-per-relay/inflation series the build wants."
+   },
+   {
+    "name": "POKT Tokens Minted on Ethereum (weeb3dev saved queries)",
+    "url": "https://dune.com/queries/4026824",
+    "official": false,
+    "owner_handle": "weeb3dev",
+    "covers": [
+     "emissions",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Query 4026824 returns a clean daily series: DATE_TRUNC('day', block_time), SUM(amount) AS total_minted from tokens_ethereum.transfers WHERE symbol='POKT' AND from=0x0 (last month). Sister query 4026829 gives daily total_minted since contract deployment (full history, mint = transfers from the POKT token contract 0x764A...a935). Genuinely per-period emitted-amount series, but again this is the Ethereum BRIDGED/wrapped POKT mint, not native chain emission. weeb3dev's dashboard 149805 ('Number of POKT Holders on Ethereum-Base-Solana') is holder-count only, not flow."
+   },
+   {
+    "name": "Staking Rewards wPOKT",
+    "url": "https://dune.com/dan13ram/staking-rewards-wpokt",
+    "official": false,
+    "owner_handle": "dan13ram",
+    "covers": [
+     "staking",
+     "rewards"
+    ],
+    "gives_per_period_series": false,
+    "notes": "13 widgets on wPOKT staking-reward distribution (dan13ram is a Pocket Network core contributor, so semi-credible). Focused on reward claims/distribution metrics for the wPOKT staking contract on Ethereum rather than a clean per-period total-emitted token series. Useful for rewards context, weaker as a direct emission/inflation build input."
+   },
+   {
+    "name": "tPOKT basics / tPOKT supply (richjl)",
+    "url": "https://dune.com/richjl/tpokt-basics",
+    "official": false,
+    "owner_handle": "richjl",
+    "covers": [
+     "supply"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Tracks tPOKT (an older test/bridged POKT representation on Polygon) supply via queries 1321649/1325178/1327479. Legacy and largely superseded by wPOKT; supply snapshots rather than per-period emission/burn flow. Low relevance to current emission build."
+   },
+   {
+    "name": "Pocket Network (frytos) / Pokt (lflc)",
+    "url": "https://dune.com/frytos/Pocket-Network",
+    "official": false,
+    "owner_handle": "frytos",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Both this dashboard (id 6680) and lflc's 'Pokt' (id 16720, https://dune.com/lflc/Pokt) are EMPTY shells: zero visualization/text widgets when fetched via getDashboard. Listed only because the name matches; do not cite as usable. No protocol-owned official Pocket Network Dune dashboard was found."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/4026824",
+  "fallback": "No Dune dashboard yields TRUE native POKT emission because Dune does not index the Pocket Network appchain. Native POKT minting-per-relay, inflation, and burns happen on Pocket Network's own Cosmos/Tendermint chain (Morse, now Shannon/'pocket'). On-chain build path: (1) Native emission/burn: query the Pocket Network chain directly. Morse legacy: POKTscan API / poktscan.com analytics (token economics, minting-per-relay, DAO/validator/servicer reward splits, burn) or the Pocket REST/RPC ('pocket query supply', block-level mint events) and the Tendermint RPC at a public endpoint. Shannon: the 'pocket' chain LCD/RPC (Cosmos SDK x/mint and x/tokenomics modules) plus an indexer (SubQuery/Numia 'Cosmos' coverage) for per-block/per-day minted and burned amounts. (2) Aggregator fallback for inflation/supply time series: CoinGecko or Messari API circulating/total-supply history; Messari has POKT supply+emission metrics; Token Terminal for revenue/inflation if listed. (3) For the BRIDGED Ethereum/Base/Solana wrapped-POKT mint/burn (what Dune actually sees) build directly off tokens_ethereum.transfers WHERE symbol='POKT' AND from/to = 0x0 (per weeb3dev query 4026824), but label it bridge flow, not protocol emission. Use POKTscan as the primary native source and confirm methodology (relays->minted POKT, DAO/burn shares) against the Pocket Network tokenomics docs.\""
+ },
+ {
+  "token": "IOTX",
+  "dashboards": [
+   {
+    "name": "IoTeX 2.0 (official team dashboard)",
+    "url": "https://dune.com/iotex_devrel/iotex-2",
+    "official": true,
+    "owner_handle": "iotex_devrel",
+    "covers": [
+     "revenue",
+     "supply",
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official IoTeX DevRel team dashboard. Built on the team-uploaded pre-aggregated table dune.iotex_devrel.l1_daily, whose columns are transactions, tx_volume, sum_gas, avg_gas, active_wallets, peak_tps, tvl (verified via query 3991859 v24). It surfaces L1 fees/revenue (sum_gas x avg_gas), tx volume, TVL, active wallets, DEX volume, IoID adoption, and staking widgets. It has NO native IOTX mint/emission/burn-drop column, so it does NOT directly yield a per-period emitted/burned IOTX series. Best official source for L1 revenue/fees, not emissions."
+   },
+   {
+    "name": "iotex-overview (official team dashboard)",
+    "url": "https://dune.com/iotex_devrel/iotex",
+    "official": true,
+    "owner_handle": "iotex_devrel",
+    "covers": [
+     "revenue",
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official IoTeX team summary dashboard (dashboard_id 163689). Same l1_daily backbone plus multi-chain DEX liquidity/volume widgets. Revenue/fees/TVL/holders/DEX activity. No native emission/burn/inflation token-amount series. Companion to iotex-2."
+   },
+   {
+    "name": "TS-B2-DePIN-07: IoTeX Revenue + Emissions (Ethereum) [own team / prior build]",
+    "url": "https://dune.com/queries/6933265",
+    "official": false,
+    "owner_handle": "crypt0zach_team_1253",
+    "covers": [
+     "emissions",
+     "burns",
+     "revenue"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Prior build by this program's own Dune team. Produces a monthly mint (emission) and burn IOTX series with USD via prices.usd_daily, grouped by month/event_type from erc20_ethereum.evt_Transfer on the IOTX contract 0x6Fb3e0A217407EFFf7Ca062D46c26E5d60a14d69. CRITICAL CAVEAT: it captures ONLY Ethereum-side ERC-20 activity. Live execution returned just 1 row (7 IOTX burned in a month), because IOTX's actual burn-drop emissions and staking rewards happen on IoTeX L1, not on the Ethereum ERC-20. Correct query shape, wrong chain coverage for the real emission/burn economics. The query header itself flags that L1 revenue/staking/DePIN-module fees require IoTeX explorer data (a Cowork task)."
+   },
+   {
+    "name": "TS-B2-DePIN-07b: IoTeX IOTX Mint+Burn (Ethereum) [own team / prior build]",
+    "url": "https://dune.com/queries/6933321",
+    "official": false,
+    "owner_handle": "crypt0zach_team_1253",
+    "covers": [
+     "emissions",
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Sibling of 6933265, IOTX-amount-only (no USD). Monthly mint/burn from Ethereum ERC-20 Transfer events to/from the zero and dead addresses, trailing 12 months. Same Ethereum-only limitation: near-zero rows, does not capture IoTeX L1 native emissions/burn-drop. Useful as the exact SQL pattern for a per-period mint/burn series; not useful for the real IOTX supply dynamics."
+   },
+   {
+    "name": "IoTeX L1 Daily - 18mo (Messari)",
+    "url": "https://dune.com/queries/5883665",
+    "official": false,
+    "owner_handle": "messari_team",
+    "covers": [
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Messari analyst query over the same dune.iotex_devrel.l1_daily table, 18-month window. Daily revenue/fees, tx_volume, TVL, active_wallets. Well-maintained analyst source for fees/revenue per period, but no emission/burn/inflation token amounts. Messari also has query 4281677 IoTeX Fees (USD)."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/6933265",
+  "fallback": "No Dune dashboard yields a true per-period IOTX EMISSION (burn-drop) or staking-reward series, and the existing Ethereum-side mint/burn queries (own team 6933265/6933321) capture near-zero of the real activity because IOTX economics run on the IoTeX L1, which has NO native transaction/transfer/log tables on Dune (verified: searchTables returns only iotex_ethereum.* decoded ERC-20 tables for the Ethereum contract 0x6Fb3e0A217407EFFf7Ca062D46c26E5d60a14d69, plus IoTeX-team-uploaded community tables dune.iotex_devrel.l1_daily / dataset_iotex_l1 / IoID datasets; the official l1_daily table has columns transactions/tx_volume/sum_gas/avg_gas/active_wallets/peak_tps/tvl only, no mint/burn/emission). BUILD PATH (off Dune, on IoTeX L1): (1) Use the IoTeX block explorer / Analytics API. IoTeX Hub Analytics at https://hub.iotex.io/analytics and IoTeXScan at https://iotexscan.io expose supply, staking-reward distribution, and burn-drop metrics. (2) Primary on-chain source for emissions/burns is the IoTeX REST/GraphQL API (api.iotex.one / IoTeX Antenna / iotexscan API): pull the per-epoch block rewards (burn-drop emission per epoch, ~5 IOTX/block historically, plus the burn-drop mechanism that burns the per-tx gas-fee IOTX) and the staking-reward distributions from the staking/rewarding protocol system contracts. (3) Aggregate per-epoch reward minting and per-tx fee burns to a daily/monthly emitted-and-burned IOTX series. (4) IoTeX also publishes circulating/total supply via its supply API; differencing monthly total supply gives net inflation, and the burn-drop dashboards on iotexscan give cumulative burned IOTX that can be differenced to a monthly burn series. The own-team query 6933265 SQL is the correct shape (monthly mint/burn grouped by event_type) to mirror once the L1 reward/burn event rows are loaded; the missing input is L1 data, not the query logic.\""
+ },
+ {
+  "token": "ANYONE (Anyone Protocol; formerly ATOR / AirTor)",
+  "dashboards": [
+   {
+    "name": "Anyone Analytics Dashboard (official)",
+    "url": "dune.com/anyoneprotocol_team_1945/dashboard",
+    "official": true,
+    "owner_handle": "anyoneprotocol_team_1945",
+    "covers": [
+     "supply",
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official team-owned dashboard. Covers unique holders over time, DEX trading volume (USD), relay statistics (Guard/Exit/running relays), bandwidth & usage (observed MBps, projected TB/day, peak DAU), NPM SDK downloads, app downloads, hardware units sold. It does NOT include a per-period emission/reward/inflation/unlock/burn token-amount series. No emissions or rewards widget present. Last data updates on widgets are mid-2025 (relay/bandwidth 2025-07-19; downloads 2025-07-16)."
+   },
+   {
+    "name": "TS-B2-DePIN-06: Anyone Protocol Revenue + Emissions (Ethereum)",
+    "url": "dune.com/queries/6933263",
+    "official": false,
+    "owner_handle": "crypt0zach_team_1253",
+    "covers": [
+     "emissions",
+     "burns",
+     "revenue"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Self-owned (your own research team) purpose-built query: monthly mint (emissions to relay operators) and burn (revenue) of ANYONE on Ethereum, contract 0xFeAc2Eae96899709a43E252B6B92971D32F9C0F9, trailing 12 months, with USD via prices.usd_daily. IMPORTANT: on re-execution it returns 0 rows. The ANYONE ERC-20 on Ethereum has no mint (from=0x0) or burn (to=0x0/0xdead) transfers in the window, so relay emissions are NOT distributed as on-chain mint events on this ERC-20. The query is structurally correct as a template but produces no series until the actual reward-distribution mechanism is identified (see fallback). Treat as a scaffold to repoint, not a working source."
+   },
+   {
+    "name": "Anyone Protocol Token Transfer Activity (community)",
+    "url": "dune.com/queries/5487545",
+    "official": false,
+    "owner_handle": "cl0ten",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Daily ERC-20 transfer COUNT for the ANYONE token on Ethereum (contract 0xfeac...c0f9). Activity series only, not token amounts emitted or burned. Not a build input for emissions, but confirms the canonical Ethereum contract address and that the only decoded ANYONE tables Dune has are on Ethereum (anyone_ethereum.anyoneprotocoltoken_*)."
+   },
+   {
+    "name": "Anyone Protocol Token Holder Analysis (community)",
+    "url": "dune.com/queries/5487653",
+    "official": false,
+    "owner_handle": "cl0ten",
+    "covers": [
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Holder distribution / unique-holder analysis for ANYONE on Ethereum (same author as the transfer-activity query; likely the source feeding the official dashboard's Unique Holders Over Time widget). Distribution snapshot, not a per-period emitted/burned amount series."
+   },
+   {
+    "name": "ATOR Protocol (legacy, pre-rebrand community)",
+    "url": "dune.com/cttcap/atorprotocol",
+    "official": false,
+    "owner_handle": "cttcap",
+    "covers": [
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Pre-rebrand ATOR dashboard (ATOR = old ticker before the ANYONE rebrand). Component queries are price, DEX, token stats, NFT supply/holders. No per-period emission/burn token-amount series. Listed for provenance; superseded by the ANYONE-era official dashboard."
+   }
+  ],
+  "best_for_build": "none found",
+  "fallback": "No pre-built Dune dashboard yields a per-period ANYONE emission/burn token series. The closest (self-owned query 6933263, dune.com/queries/6933263) is a correct mint/burn template but returns 0 rows: ANYONE relay rewards are NOT minted/burned on the Ethereum ERC-20 (0xFeAc2Eae96899709a43E252B6B92971D32F9C0F9), and Dune has NO decoded ANYONE tables on Arbitrum (searchTablesByContractAddress returns only anyone_ethereum.anyoneprotocoltoken_* on Ethereum). To build the per-period emitted-token series: (1) Identify the actual reward-distribution mechanism. ANYONE is a fixed/capped supply token where relay (bandwidth) rewards are paid from a distributor/treasury contract, claimed by operators, not via new-mint. Check the Anyone docs (docs.anyone.io tokenomics) and the protocol's reward-distributor / hodler-registry contracts. The reward ledger and relay-registry are managed via the Anyone smart contracts on Arbitrum One (chain_id 42161) per the protocol's own stack, even though the tradeable ERC-20 lives on Ethereum. (2) On Arbitrum, find the distributor contract address (Arbiscan / Anyone gov repo), then in DuneSQL query erc20_arbitrum.evt_Transfer WHERE from = <distributor> (claims/payouts to relay operators) grouped by date_trunc('month'|'day'), OR the bridged ANYONE token's evt_Transfer if rewards are denominated in bridged ANYONE; if the distributor exposes a decoded Claim/Reward event, use searchTablesByContractAddress on that distributor address and aggregate the reward-amount field per period. (3) For burns (revenue), aggregate transfers to 0x0/0xdead of the Ethereum ANYONE contract once a burn mechanism is confirmed (current 12-month result is empty, so confirm whether burns occur at all). (4) Cross-check totals against the official dashboard's bandwidth/relay widgets and CoinGecko/protocol-published emission schedule. Non-Dune alternative: pull from the Anyone Protocol API / The Graph subgraph if published, or read the distributor contract's reward-epoch events directly via Arbiscan/Blockscout (chain 42161, get_token_transfers_by_address on the distributor) and bucket by month."
+ },
+ {
+  "token": "ALGO (Algorand)",
+  "dashboards": [
+   {
+    "name": "Algorand (by _hectorand)",
+    "url": "https://dune.com/_hectorand/algorand",
+    "official": false,
+    "owner_handle": "_hectorand",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Top NAME-substring hit for 'algorand'. Verified via getDashboard: dashboard is EMPTY (0 visualization widgets, 0 text widgets). No emission/reward/burn series. Community user, not the Algorand Foundation. Included only because it is the closest name match; not usable for the build."
+   },
+   {
+    "name": "Goracle - DeFi adoption on Algorand",
+    "url": "https://dune.com/konstravaganza/goracle-defi-adoption-on-algorand",
+    "official": false,
+    "owner_handle": "konstravaganza",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Verified via getDashboard: contains ONLY a single marketing text widget (a 2022 BSC News press release about the Goracle oracle rebrand). Zero queries, zero charts, no ALGO emission/reward data. Not usable."
+   },
+   {
+    "name": "FolksFinance xALGO Overview (by sigrlami)",
+    "url": "https://dune.com/sigrlami/folksfinance-xalgo",
+    "official": false,
+    "owner_handle": "sigrlami",
+    "covers": [
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Name-match on 'xALGO' (Folks Finance liquid-staking derivative). Pertains to a DeFi liquid-staking wrapper, not native ALGO protocol emissions/participation/governance rewards. Folks Finance is a multi-chain protocol with EVM (Wormhole-bridged FOLKS) activity Dune can index, but this does NOT give the native-L1 ALGO emission/reward/burn series the build needs. Community-owned."
+   },
+   {
+    "name": "Algo (by hugomrc)",
+    "url": "https://dune.com/hugomrc/Algo",
+    "official": false,
+    "owner_handle": "hugomrc",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Name-substring hit for 'algo'. getDashboard returned a malformed-position parse error so contents could not be fully enumerated, but it is an old (id 11938) community dashboard and there is no native Algorand chain data on Dune for it to draw emission/reward series from. Treated as not usable for the build."
+   },
+   {
+    "name": "[Algorand] - List CEX Addresses (query, by CoinLedger team)",
+    "url": "https://dune.com/queries/4098586",
+    "official": false,
+    "owner_handle": "coinledger",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Verified query SQL: SELECT address,cex_name FROM cex_algorand.addresses. This is the ONLY genuinely Algorand-scoped table on Dune (a static CEX-address label table). It yields no time series and no emission/reward/burn amounts. Confirms Dune's Algorand coverage is limited to address labels, not native chain/block-reward data."
+   }
+  ],
+  "best_for_build": "none found",
+  "fallback": "Dune has NO native Algorand L1 chain data (no algorand.blocks / algorand.transactions / payout or reward tables; only a static cex_algorand.addresses label table and AI-mislabeled queries that actually hit ethereum.transactions). No pre-built Dune dashboard yields a per-period ALGO emission/participation-reward/governance-reward/burn series. Build the series off-chain from Algorand's own data sources instead: (1) ALGO total/circulating supply over time and the protocol-fixed distribution schedule from the Algorand Foundation's published Community/Ecosystem allocation and vesting docs (algorand.foundation 'Algo Dynamics' / transparency reports) for the canonical emission/unlock schedule; (2) per-period on-chain reward flows via the Algorand Indexer REST API (indexer.algorand.network or a hosted Nodely/AlgoNode indexer): GET /v2/accounts/{addr}/transactions to pull pay-type and the protocol 'rewards' field (block/participation rewards were paid from the rewards pool address until the post-2022 incentive change; the consensus incentive payouts after Algorand 2.0/Dynamic Lockup are pay transactions from the FeeSink/RewardsPool addresses). Aggregate by month/day on the rewards-pool and incentive-payout source addresses to get emitted-ALGO-per-period; (3) Governance rewards specifically: the Algorand Foundation Governance program paid rewards quarterly from a known Foundation governance-rewards wallet, queryable via the same Indexer (per-period = per-governance-period payout sums) and cross-checkable against governance.algorand.foundation period-results pages. (4) For a quick aggregate cross-check of circulating-supply deltas as a proxy for net emission, use CoinGecko/CoinMetrics ALGO supply history APIs. Net: build via Algorand Indexer API + Foundation schedule docs, not Dune.\""
+ },
+ {
+  "token": "POL (Polygon; formerly MATIC)",
+  "dashboards": [
+   {
+    "name": "POL Staking stats (Polygon Labs)",
+    "url": "https://dune.com/queries/5966871",
+    "official": true,
+    "owner_handle": "polygonlabs",
+    "covers": [
+     "emissions",
+     "rewards",
+     "staking",
+     "supply",
+     "burns",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Official Polygon Labs query (team 3890), latest execution COMPLETED. Single richest official source for the build input. Contains a daily 'rewards' CTE: SUM(reward)/1e18 from matic_ethereum.RootChainProxy_evt_NewHeaderBlock (checkpoint/validator-incentive emission) with day-level amount AND cumulative; also computes total_matic_supply (mints minus burn-to-0xdead) and total staked. Period enum (All Time / 365d / 90d / 30d). reward_amount column = the per-day emitted-token series; resample to monthly. Validator-incentive half of the build input out of the box."
+   },
+   {
+    "name": "Polygon validator rewards & checkpoints (Polygon Labs)",
+    "url": "https://dune.com/queries/4414708",
+    "official": true,
+    "owner_handle": "polygonlabs",
+    "covers": [
+     "emissions",
+     "rewards",
+     "staking"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Cleanest standalone official per-period emission series. SQL: sum(reward/1e18) as total_reward from matic_ethereum.RootChainProxy_evt_NewHeaderBlock grouped by proposer and date_trunc({{Aggregated_by}}) with an Aggregated_by enum = Day/Week/Month/Year. Set Aggregated_by=Month and sum total_reward across proposers to get monthly validator-incentive (checkpoint-reward) emission in POL. Latest execution COMPLETED. Direct minimal build input for validator incentives."
+   },
+   {
+    "name": "Polygon (Messari)",
+    "url": "https://dune.com/messari/polygon",
+    "official": false,
+    "owner_handle": "messari",
+    "covers": [
+     "other",
+     "supply",
+     "staking",
+     "revenue",
+     "governance",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Well-known analyst (Messari), quarterly-report-grade. Has a Validators section (validator rewards via query 1150190) AND a Treasury section driven by query 1474026 'Polygon Treasury Flows (Revised)' with parameters 1-Start Date / 2-End Date / 3-Granularity (Day/Week/Month). The treasury query tracks net MATIC flows in/out of Polygon Foundation, Vesting, Treasury2, and the delegation address. Best ready-made surface for the 'community treasury per year' half of the build input (per-period net treasury emission/flow). 'other' in covers = the treasury/community-treasury dimension."
+   },
+   {
+    "name": "Matic Inflation (21Shares by FalconX)",
+    "url": "https://dune.com/queries/3325185",
+    "official": false,
+    "owner_handle": "21sharesresearch",
+    "covers": [
+     "inflation",
+     "supply",
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Well-known analyst team (21Shares research / 21co). Tracks daily MATIC ERC20 mint/transfer balances on Ethereum plus a burn stream (from 0x70bca... to 0xdead) with daily 'burned' and cumulative. Yields a per-day net-inflation / burn token series. CAVEAT: latest execution state = FAILED (likely a stale/broken CTE), so the query needs a re-run/repair before use; the underlying logic is sound and re-usable. Use as a cross-check on the supply/burn side, not the validator-emission side."
+   },
+   {
+    "name": "Polygon Emission Rate (DeNet Community)",
+    "url": "https://dune.com/queries/372557",
+    "official": false,
+    "owner_handle": "denetprotocol",
+    "covers": [
+     "emissions",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Community. Computes Polygon PoS block-reward MATIC emission per hour from polygon.blocks: (2 * 1.05 * count(blocks)) minus burned base fee (basefee*gas_used/1e18). This is the L2 block-production emission stream (a different emission channel from L1 checkpoint/validator rewards). Resample hourly to monthly. CAVEAT: uses hardcoded constants (2 POL base reward, 1.05 performance multiplier, fixed start block 23850000); verify constants against current Polygon tokenomics (post-1%-annual-emission redesign) before relying on absolute values."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/5966871",
+  "fallback": "If you skip dashboards and build the per-period series directly, the canonical on-chain source for POL/MATIC validator-incentive emission is the L1 checkpoint-reward event: matic_ethereum.RootChainProxy_evt_NewHeaderBlock on Dune (every checkpoint submission emits a 'reward' field in wei). Build: SELECT date_trunc('month', evt_block_time) AS month, SUM(reward)/1e18 AS pol_emitted FROM matic_ethereum.RootChainProxy_evt_NewHeaderBlock GROUP BY 1 ORDER BY 1. That is exactly what the two official Polygon Labs queries (5966871, 4414708) do; clone either and set granularity to Month. For the COMMUNITY TREASURY half, there is no single mint event; reconstruct net per-period treasury flow from MATIC erc20 transfers in/out of the known treasury/foundation/vesting/delegation addresses (Foundation 0xb316fa9Fa91700D7084D377bfdC81Eb9F232f5Ff, Vesting 0xcbfE11b78C2E6cB25C6eDA2C6Ff46CD4755c8fCA, Treasury2 0xcD6507d87F605F5E95C12F7c4B1fC3279dc944aB, Delegation 0x40730f34668afcb3884f050cbc3d376a444bbe44) per Messari query 1474026, or pull the post-2024 1%-annual-emission schedule (validator incentives + community treasury split) from the Polygon contract / docs. For total supply and burn cross-check, use erc20_ethereum.evt_Transfer for the MATIC token 0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0 (mints from 0x0; burns to 0xdead) and the new POL token 0x455e53cbb86018ac2b8092fdcd39d8444affc3f6. Off-Dune alternative: token-terminal / Polygon staking API, or read emission params directly from the EmissionManager / default-staking contract via an RPC eth_call. Note the MATIC->POL migration (Sept 2024): combine MATIC-era and POL-era token addresses for a continuous series.\""
+ },
+ {
+  "token": "HONEY (Hivemapper, Solana; mint 4vMsoUT2BWatFweudnQM1xedRLfJgJ7hswhcpz4xgBTy)",
+  "dashboards": [
+   {
+    "name": "HiveMapper (PYOR)",
+    "url": "https://dune.com/pyor_xyz/hivemapper",
+    "official": false,
+    "owner_handle": "pyor_xyz",
+    "covers": [
+     "emissions",
+     "rewards",
+     "burns",
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Best packaged dashboard. PYOR is a known DePIN data analyst team; maintained fork of @murathan's work, built by @maybeYonas. Explicit BME (Burn-Mint-Emissions) methodology: mints = contributor rewards emissions, burns = map-consumption revenue. Has Weekly Overview, KPIs, and Revenue (burn) sections, 17 viz widgets, tagged hivemapper/solana/depin. Underlying queries group by week from spl_token_solana mint/burn on the HONEY mint, so they yield a per-period emitted/burned token series. Not the protocol's own handle but the strongest analyst-grade build surface."
+   },
+   {
+    "name": "Hivemapper Monthly Token Burns",
+    "url": "https://dune.com/queries/5688908",
+    "official": false,
+    "owner_handle": "hilaryhelmholz",
+    "covers": [
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Cleanest standalone monthly-burn build input. date_trunc('month') over spl_token_solana.spl_token_call_burn filtered to the HONEY mint, returns burns_honey (token amount) and burns_usd per month from 2023-09. Recently executed (Dec 2025). Owner also has a saved 'Hivemapper' dashboard (dune.com/hivemapperdollarhoney style) and a sibling Weekly Burns query exists (satoshiyourmother, query 6149668)."
+   },
+   {
+    "name": "Hivemapper Rewards by Type (Syndica)",
+    "url": "https://dune.com/queries/3965713",
+    "official": false,
+    "owner_handle": "syndica",
+    "covers": [
+     "emissions",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Emissions side, decoded-spell grade. Syndica (well-known Solana infra/data team) groups hivemapper_solana.rewards by month and reward_type (map consumption, AI training, etc.), returning total_amount (HONEY emitted) and recipient counts per month. Uses the curated hivemapper_solana.rewards spell rather than raw mintTo, so it splits emissions by reward category. Companion quarterly 'Reward Recipients' queries (4058991/4059107/4059112/4243846) and 'Median Rewards in USD' (4442610) under the same team."
+   },
+   {
+    "name": "hivemapper_daily_overview / weekly_overview (Artemis)",
+    "url": "https://dune.com/queries/3613279",
+    "official": false,
+    "owner_handle": "artemisxyz",
+    "covers": [
+     "emissions",
+     "rewards",
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Comprehensive per-period series from Artemis (known crypto-data analytics firm). Weekly mints (total emission), mapping rewards, QA rewards, and burns off the HONEY mint via spl_token_solana mintTo/burn plus invoice-program MintTo log parsing. Returns weekly totals, cumulative, and contributor/burner wallet counts. Sister query 3603325 (daily_contributors); maybeYonas authored an earlier weekly_overview (3519214/3646249)."
+   },
+   {
+    "name": "Hivemapper - Tokens Burn / Tokens Mint (davees)",
+    "url": "https://dune.com/queries/4419203",
+    "official": false,
+    "owner_handle": "davees",
+    "covers": [
+     "burns",
+     "emissions"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Simplest, most directly reusable daily build inputs. 4419203 = daily tokens_burned (date_trunc('day') over spl_token_call_burn, HONEY mint, since 2022-10-31); companion 4419487 = daily tokens_mint (spl_token_call_mintTo). davees also has 'Hivemapper - Revenue' (4421380) and 'Revenue (Burns)' (4422018). Community-built but clean and easy to fork/parameterize for a custom monthly roll-up."
+   }
+  ],
+  "best_for_build": "https://dune.com/pyor_xyz/hivemapper",
+  "fallback": "No protocol-owned dashboard is usable: the official Hivemapper-team handles exist but their dashboards are empty (dune.com/evan_hivemapper/honey has zero widgets; dune.com/gabe_hivemapper/hivemapper has one). To build the per-period emission/burn series directly, query Solana SPL token call tables on Dune for HONEY mint 4vMsoUT2BWatFweudnQM1xedRLfJgJ7hswhcpz4xgBTy: emissions = SELECT date_trunc('month', call_block_time) AS month, SUM(amount/1e9) AS honey_emitted FROM spl_token_solana.spl_token_call_mintTo WHERE account_mint='4vMsoUT2BWatFweudnQM1xedRLfJgJ7hswhcpz4xgBTy' AND call_block_time > date'2022-10-31' GROUP BY 1 (exclude the pre-2022-11-01 ~6B genesis mint); burns = same shape over spl_token_solana.spl_token_call_burn. For emissions split by reward category use the decoded spell hivemapper_solana.rewards (block_time, reward_type, amount, to_owner). Join prices.usd (contract_address = from_base58(mint)) for USD. Alternatively use the Sim API / Dune Sim SVM endpoints for token transfer/supply history, or Solana RPC getSignaturesForAddress on the mint authority. Pair token amounts with the official HONEY tokenomics (BME model) docs to label emission tranches.\""
+ },
+ {
+  "token": "DIMO",
+  "dashboards": [
+   {
+    "name": "DIMO Protocol Metrics (official flagship)",
+    "url": "https://dune.com/dimo_network/dimo-protocol",
+    "official": true,
+    "owner_handle": "dimo_network",
+    "covers": [
+     "emissions",
+     "rewards",
+     "inflation",
+     "burns",
+     "supply",
+     "staking",
+     "revenue"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Official DIMO team dashboard. Dedicated 'Baseline Issuance' section (text widget documents 1,105,000 DIMO/week, decreasing 15% annually over 40 years), plus 'DIMO Protocol Fees & Staking', 'DIMO Removed From Circulation' (net-fee burns + staking lockups, with un-lock deductions), and gross vs net protocol revenue widgets. Built on the decoded Polygon rewards contract; charts are time-series so yield per-week/per-month emitted and removed-from-circulation token amounts. Most comprehensive single official surface."
+   },
+   {
+    "name": "DIMO Taken out of Circulation and Protocol Revenue (official)",
+    "url": "https://dune.com/dimo_network/dimo-taken-out-of-circulation-and-protocol-revenue",
+    "official": true,
+    "owner_handle": "dimo_network",
+    "covers": [
+     "burns",
+     "revenue",
+     "supply",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Official DIMO team dashboard dedicated to the burn-equivalent (tokens permanently moved to a protocol wallet / removed from circulating supply) and protocol revenue. Text explicitly frames a monthly series ('every month, thousands of DIMO are permanently taken out'). Best official source specifically for the per-period removed-from-circulation (burn-proxy) and protocol-revenue amounts. Shares visualizations with olreliable's underlying queries."
+   },
+   {
+    "name": "dimo_rewards_polygon Baseline Issuance (analyst query)",
+    "url": "https://dune.com/queries/2059136",
+    "official": false,
+    "owner_handle": "olreliable",
+    "covers": [
+     "emissions",
+     "rewards",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Saved query by olreliable (the analyst whose visualizations power the two official dashboards above). SQL groups dimo_rewards_contract_polygon.Reward_evt_TokensTransferred by week: SUM(_amount/1e18) AS baseline_issuance, plus cumulative and planned-vs-actual decay curve (1105000 * 0.85^(week/52.14)). This is the canonical reference SQL for the per-period emitted series. Caveat: latest_execution_state is FAILED (the planned-issuance CTE row-numbers off a quickswap trades table, which is fragile); the actual-issuance CTE itself is sound and trivially re-runnable."
+   },
+   {
+    "name": "DIMO Avg Weekly Rewards (analyst query, runs clean)",
+    "url": "https://dune.com/queries/6346970",
+    "official": false,
+    "owner_handle": "metalight",
+    "covers": [
+     "emissions",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Saved query, latest_execution_state COMPLETED. Cleanly computes weekly_issuance = DATE_TRUNC('week', evt_block_time), SUM(_amount/1e18) FROM dimo_rewards_contract_polygon.Reward_evt_TokensTransferred, plus weekly distinct recipients and issuance-per-recipient. It surfaces only the latest week, but the weekly_issuance CTE is the exact per-period emission series; drop the latest_week filter to get the full weekly history. Cleanest working reference for the build input."
+   },
+   {
+    "name": "DIMO Issuance - Wallets (analyst query, daily grain)",
+    "url": "https://dune.com/queries/2684243",
+    "official": false,
+    "owner_handle": "olreliable",
+    "covers": [
+     "emissions",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Saved query, COMPLETED. Daily-grain aggregation of the same Reward_evt_TokensTransferred event (DATE_TRUNC('day', evt_block_time)), counting distinct recipient wallets per day; joins DIMO/USDC price from uniswap_v3_ethereum.trades. Demonstrates the daily-period pattern on the rewards contract; reward amount column is present in the source table and easily added to get daily emitted DIMO."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/6346970",
+  "fallback": "If you need a fresh, fully-controlled per-period series rather than re-running someone's saved query, the decoded Dune table is the build input: createAndExecuteQuery against dimo_rewards_contract_polygon.Reward_evt_TokensTransferred (the DIMO baseline-rewards/issuance contract on Polygon). Per-period EMISSIONS: SELECT DATE_TRUNC('month'|'week'|'day', evt_block_time) AS period, SUM(CAST(_amount AS DOUBLE)/1e18) AS dimo_emitted FROM dimo_rewards_contract_polygon.Reward_evt_TokensTransferred GROUP BY 1 ORDER BY 1. For BURNS / removed-from-circulation: DIMO has no classic burn; the protocol moves net-fee tokens to a dedicated wallet (out-of-circulation). Reproduce the official 'Taken out of Circulation' dashboard by tracking ERC20 transfers of the DIMO token (Polygon token 0xE261D618a959aFfFd53168Cd07D12E37B26761db) into that protocol wallet plus staking-lockup contract balances (net of unlocks), grouped by period; or fork the dimo_network dashboard widgets. Token contract / event ABI confirmable via Blockscout get_contract_abi on chain_id 137, or searchTablesByContractAddress for the decoded namespace. As a non-Dune path, the DIMO rewards contract emits TokensTransferred events readable via any Polygon RPC / Blockscout get_token_transfers_by_address, bucketed by block timestamp into monthly/weekly sums.\""
+ },
+ {
+  "token": "BONK",
+  "dashboards": [
+   {
+    "name": "Monthly BONK Burns (query)",
+    "url": "https://dune.com/queries/5571873",
+    "official": false,
+    "owner_handle": "adam_tehc",
+    "covers": [
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Saved query, not a dashboard. SQL: tokens_solana.transfers WHERE token_mint='DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263' AND action='burn', grouped DATE_TRUNC('month'). Returns burn_month, monthly_burned_tokens, monthly_burned_usd, monthly_burn_transactions, plus cumulative columns. No date cap; latest exec 2025. Cleanest current monthly emitted/burned series. Community analyst."
+   },
+   {
+    "name": "BONK BURN (dashboard)",
+    "url": "https://dune.com/reallynotsatoshi/bonk-burn",
+    "official": false,
+    "owner_handle": "reallynotsatoshi",
+    "covers": [
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Dedicated burn dashboard (4 widgets). Backed by sibling queries incl. 'BONK BURNED BY MONTH' (query 3835009: monthly total_burned via spl_token_solana.spl_token_call_burnChecked) and a daily burn query. Monthly query is hard-capped at block_time < 2025-01-01, so fork and remove the upper date bound to bring current. Community."
+   },
+   {
+    "name": "BONK burn (PYOR query)",
+    "url": "https://dune.com/queries/4260494",
+    "official": false,
+    "owner_handle": "pyor_xyz",
+    "covers": [
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Team-owned by PYOR (recognized token-analytics firm). Daily series: DATE_TRUNC('day') over spl_token_solana.spl_token_call_burnChecked for BONK mint since 2022-01-01, with cumulative_burn window. Yields daily_burned + cumulative. Reliable, semi-authoritative analyst source. Roll up to monthly trivially."
+   },
+   {
+    "name": "BONK burning on Solana +table (dashboard)",
+    "url": "https://dune.com/coar/bonk-burning-on-solana",
+    "official": false,
+    "owner_handle": "coar",
+    "covers": [
+     "burns"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Burn-focused dashboard: one chart widget + one table widget over BONK burns. Per-period burn visuals present. Text widget solicits donations (community/hobby board), so treat as supplementary cross-check rather than primary. Community."
+   },
+   {
+    "name": "Bonk SPL Token Stats (dashboard)",
+    "url": "https://dune.com/wagg/bonk-stats",
+    "official": false,
+    "owner_handle": "wagg",
+    "covers": [
+     "supply",
+     "burns",
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Long-standing, grant-supported community board by wagg + ennnas (well-known Solana analysts). Broad token stats: supply, transactions, DAU, cumulative wallets, top holders, core/airdrop wallet flows. Comprehensive context but widgets are not a dedicated monthly/daily burn-amount series; use the standalone burn queries for the build input."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/5571873",
+  "fallback": "If a maintained dashboard is not preferred, build the per-period burn series directly in DuneSQL (no protocol-official Dune handle exists for BONK; all candidates are community/analyst). Canonical pattern, BONK mint = DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263: SELECT DATE_TRUNC('month', call_block_time) AS month, SUM(amount / POWER(10, decimals)) AS burned FROM spl_token_solana.spl_token_call_burnChecked WHERE account_mint = 'DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263' AND call_block_time >= TIMESTAMP '2022-01-01' GROUP BY 1 ORDER BY 1. Equivalent via tokens_solana.transfers WHERE token_mint_address = '<mint>' AND action = 'burn' GROUP BY DATE_TRUNC('month', block_time) (adds amount_usd). For mechanism-specific burns (BonkBot/LetsBonk fee-buyback-and-burn) add a from_owner/call_tx_signer filter on the fee wallet (e.g. ZG98FUCjb8mJ824Gbs6RsgVmr1FhXb2oNiJHa2dwmPd for BonkBot fees; 6QyD4vG1GNdZWyFBtSUNxvLszm2kxqgH1DtYTE8WZgs1 for the LetsBonk burn wallet). Non-Dune fallback: Solana RPC/Helius parsed Burn/BurnChecked instructions for the mint, or Solscan/Birdeye token-burn endpoints, bucketed by day/month. BONK has no algorithmic emission/inflation (fixed genesis supply), so the meaningful per-period token-flow series is burns, not emissions.\""
+ },
+ {
+  "token": "W (Wormhole)",
+  "dashboards": [
+   {
+    "name": "$W Token",
+    "url": "https://dune.com/1king1/w-token",
+    "official": false,
+    "owner_handle": "1king1",
+    "covers": [
+     "supply",
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Most comprehensive W-token-focused community dashboard (27 viz; tagged Wormhole/W Token). Contains: top-10000 and top-1000 holder concentration, holder-bucket distribution, a '$W Locked Token Balance' bridge-locked snapshot (queryId 3676351), Solana DEX $W volume stats, and ONE time series '$W New/Cumulative Holders' by block_date (queryId 3680929). All token-amount panels are point-in-time snapshots (balances/concentration), not a per-period emitted/unlocked series. No emission, unlock, vesting, inflation, or burn time series. Closest build input is the cumulative-holders trend, which is not token-amount emission."
+   },
+   {
+    "name": "Wormhole Staking on EVM",
+    "url": "https://dune.com/tylerhys/wormhole-staking",
+    "official": false,
+    "owner_handle": "tylerhys",
+    "covers": [
+     "staking"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Tracks $W held/staked on EVM via token_balances tables. Author flags outlier inaccuracies (CEX deposit addresses captured) and explicitly defers to bennyback's dashboard as more accurate. Stock of staked W, not a per-period rewards/emission flow. No reward-amount-per-period series."
+   },
+   {
+    "name": "Wormhole Stake, Delegate and Delegator Dashboard",
+    "url": "https://dune.com/bennyback/wormhole-delegate-and-delegator-dashboard",
+    "official": false,
+    "owner_handle": "bennyback",
+    "covers": [
+     "staking",
+     "governance"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Staking/delegation participation dashboard (cited by other authors as the accurate staking reference). Measures staked/delegated W stock and delegator counts, not staking reward emission per period. Wormhole staking is non-inflationary (no on-chain reward mint), so no emitted-token series here. Advanced variant: dune.com/bennyback/wormhole-stake-delegate-and-delegator-dashboard-advanced."
+   },
+   {
+    "name": "Wormhole Airdrop Official Dashboard 2024",
+    "url": "https://dune.com/mblahhe/wormhole-airdrop-official-dashboard-2024",
+    "official": false,
+    "owner_handle": "mblahhe",
+    "covers": [
+     "rewards",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Despite the 'Official' label, owned by community user mblahhe (not the Wormhole Foundation). It is a parameterized airdrop-eligibility wallet checker (queryId 3270333), not a token-issuance series. The one-time airdrop allocation is not a recurring per-period emission. Does not yield a monthly/daily emitted-token series."
+   },
+   {
+    "name": "$W Locked Token Balance (query)",
+    "url": "https://dune.com/queries/3676351",
+    "official": false,
+    "owner_handle": "1king1",
+    "covers": [
+     "supply"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Underlying query for the locked-balance panel on the 1king1 dashboard. Returns current total W locked in the Wormhole bridge (target_chain/token_chain breakdown), a single snapshot value. Not a per-period unlock/vesting release series. Listed as the nearest on-chain 'locked' anchor but it measures bridge custody, not tokenomics vesting unlocks."
+   }
+  ],
+  "best_for_build": "none found",
+  "fallback": "No Dune dashboard reconstructs a per-period W emission/unlock/vesting/burn token series. Searched dashboards and queries for variants ['wormhole','$W','W token','wormhole staking','wormhole unlock','wormhole vesting','wormhole emission','wormhole token supply'] via Dune MCP plus a confirming WebSearch (site:dune.com): every hit is bridge volume/TVL, the 2022 bridge hack, holder concentration, staking/delegation stock, or airdrop-eligibility checking. None is owned by an official Wormhole/Wormhole-Foundation handle, and none yields an emitted/unlocked-per-period amount. This is structural: W is a fixed 10B-supply genesis-minted Solana SPL token; 'emission' is off-chain vesting/cliff custody releases (Core Contributors, Strategic Network Participants, Guardian Nodes, Foundation, Community/Ecosystem), not an on-chain inflationary mint, so a clean per-period series is not recoverable from Dune base tables. BUILD PATH: (1) Authoritative unlock schedule from off-chain trackers: Tokenomist/TokenUnlocks (tokenomist.ai/wormhole), CoinGecko W vesting/unlock tab, and the Wormhole tokenomics docs (wormhole.com/token, the 48-month linear-after-1-year-cliff schedule starting ~2024-04). These give the canonical monthly unlock amounts directly. (2) On-chain cross-check: track W SPL mint (Solana, mint address 85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ) flows out of the known vesting/treasury custody wallets per month via Solana SPL transfer tables (spl_token_solana.token_transfers or stablecoins-style balance deltas) and Wormhole circulating-supply growth month-over-month as a proxy for net unlocked. (3) If a Dune build is required, author a new query computing monthly net inflow from foundation/vesting custody addresses to circulating wallets (custody-address list from the tokenomics docs/Etherscan-Solscan labels); there is no existing query to fork for this. Off-chain trackers (path 1) are faster and more accurate than any Dune reconstruction for the W unlock series.\""
+ },
+ {
+  "token": "WLFI",
+  "dashboards": [
+   {
+    "name": "WLFI Unlocks Tracker",
+    "url": "https://dune.com/smart_ape/wlfi-unlocks-tracker",
+    "official": false,
+    "owner_handle": "smart_ape",
+    "covers": [
+     "unlocks",
+     "emissions",
+     "supply",
+     "staking"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Purpose-built for WLFI unlocks. Sources the decoded vester Claimed-event table (wlfi_ethereum.worldlibertyfinancialvester_evt_claimed, vester 0x74b4...9583; WLFI token 0xda5e...bef6). Documents a Cumulative & daily unlocks section plus claimed_24h / claimed_7d KPIs and a sell-pressure section (CEX deposits + DEX sells vs unlocks). The per-claim event source trivially yields a daily/monthly unlocked (emission) series via date_trunc. Community-built but the cleanest unlock-specific dashboard found. Unlock start Sept 1 2025; 100B total supply."
+   },
+   {
+    "name": "World Liberty Financial (WLFI) - seoul",
+    "url": "https://dune.com/seoul/wlfi",
+    "official": false,
+    "owner_handle": "seoul",
+    "covers": [
+     "burns",
+     "supply",
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": true,
+    "notes": "seoul is the most comprehensive WLFI analyst on Dune (owns the main WLFI dashboard, Daily Transfer Volume query, Sales, Holdings). Companion query WLFI - Burn (query 5721856) returns per-tx net burn (mint/burn to/from 0x0) with running total_burn and running supply = 100B + cumsum, date-filtered from 2025-09-01; aggregates directly to a daily/monthly burn-and-supply series. Best community source for burns + circulating-supply deltas."
+   },
+   {
+    "name": "WLFI Minted Supply (CCap)",
+    "url": "https://dune.com/ccap/wlfi-dashboard",
+    "official": false,
+    "owner_handle": "ccap",
+    "covers": [
+     "emissions",
+     "supply",
+     "inflation"
+    ],
+    "gives_per_period_series": true,
+    "notes": "CCap team's WLFI Minted Supply query (4600329) selects every mint (from = 0x0) on the WLFI token with evt_block_time and WLFI-minted amount. A raw per-mint emission feed that aggregates straight to monthly/daily minted (gross emission) amounts. The mint side of the same supply equation seoul's burn query covers. Dashboard slug wlfi-dashboard hosts CCap's WLFI query set; confirm individual query is surfaced on it."
+   },
+   {
+    "name": "World Liberty Financial (WLFI) Lockbox Claimed Statistics",
+    "url": "https://dune.com/nvthao/world-liberty-financial-wlfi-lockbox-statistics",
+    "official": false,
+    "owner_handle": "nvthao",
+    "covers": [
+     "unlocks",
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Lockbox / claim-allocation estimator at TGE (24.67B circulating at TGE; 20% presale unlock). Strong on who-unlocked-what and claim-size distribution, but framed as a current-state snapshot estimator rather than a per-period unlocked time series. Useful cross-check for the unlock totals but not the primary build feed."
+   },
+   {
+    "name": "WLFI (CoinDesk / Sam Kessler analyst set)",
+    "url": "https://dune.com/sam_kessler/wlfi",
+    "official": false,
+    "owner_handle": "sam_kessler",
+    "covers": [
+     "supply",
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Well-known analyst (CoinDesk's Sam Kessler) team queries: WLFI Treasury Composition, Top Holders, Sales, WLFI Revenue. Reputable owner, but the queries are holdings / treasury / revenue snapshots rather than a per-period emission or burn series. Listed for analyst credibility; not the emission/burn build input. Verify exact dashboard slug under sam_kessler."
+   }
+  ],
+  "best_for_build": "https://dune.com/smart_ape/wlfi-unlocks-tracker",
+  "fallback": "No official protocol-owned dashboard exists. To build a per-period unlock/emission/burn series directly: (1) UNLOCKS/EMISSIONS: query the decoded vester Claimed events, SELECT date_trunc('day', evt_block_time) AS d, SUM(amount/1e18) AS wlfi_unlocked FROM wlfi_ethereum.worldlibertyfinancialvester_evt_claimed GROUP BY 1 (vester 0x74b4f6a2e579d730aacb9dd23cfbbaeb95029583; this is the canonical unlock/emission feed). (2) GROSS MINTS: SUM(value/1e18) FROM erc20_ethereum.evt_Transfer WHERE from = 0x0 AND contract_address = 0xda5e1988097297dcdc1f90d4dfe7909e847cbef6 GROUP BY date_trunc. (3) BURNS: same evt_Transfer with to = 0x0 (negative), running supply = 100e9 + cumsum(net). All three aggregate to monthly/daily series in DuneSQL. API fallback: Dune Sim / Etherscan token transfer endpoint for the WLFI token + vester contract filtered to mint (from 0x0) and burn (to 0x0) addresses, bucketed by month. Token contract 0xda5e1988097297dcdc1f90d4dfe7909e847cbef6 on Ethereum; total supply 100B; unlock start 2025-09-01.\""
+ },
+ {
+  "token": "GNO (Gnosis)",
+  "dashboards": [
+   {
+    "name": "Gnosis Analytics (official ecosystem dashboard)",
+    "url": "https://dune.com/gnosischain_team/gnosis-analytics",
+    "official": true,
+    "owner_handle": "gnosischain_team",
+    "covers": [
+     "staking",
+     "governance",
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official GnosisChain team master dashboard (dashboard_id 150134). Contains a Validators Overview section that explicitly describes GNO validator rewards (~10% GNO APR, DappNode incentive program). Inspected validator widgets, however, plot validator COUNTS/status/entities over time (viz 7683256, 6272030, 7009749), not a per-period GNO-rewards-EMITTED token amount. No emission/inflation/burn flow series surfaced. Best official starting point but does not directly hand you the build input."
+   },
+   {
+    "name": "GNO (official saved query: daily GNO balance by label)",
+    "url": "https://dune.com/queries/4378268",
+    "official": true,
+    "owner_handle": "gnosischain_team",
+    "covers": [
+     "supply",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official GnosisChain query_id 4378268 (depends on query_4378260 gnosis_gno_labels_sparse_daily_balance_v). Produces a DAILY GNO BALANCE panel per label (forward-filled sparse balances), i.e. a STOCK by holder/label, not a FLOW. You could differencing-derive net flow per label, but it is not an emission/burn series and double-counts transfers. Useful for supply-distribution, not per-period emission."
+   },
+   {
+    "name": "Gnosis Beacon Chain (Deposits)",
+    "url": "https://dune.com/gnosischain_team/Gnosis-Beacon-Chain-(Deposits)",
+    "official": true,
+    "owner_handle": "gnosischain_team",
+    "covers": [
+     "staking"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official dashboard_id 12939. Tracks GNO/mGNO DEPOSITS into the validator deposit contract over time (staking inflows, validator activations). This is staking participation, not GNO issuance/rewards. Could be repurposed: the same deposit-contract approach (claims/withdrawals) is where a true GNO-rewards-issued series must be built, but this dashboard shows deposits only."
+   },
+   {
+    "name": "Gnosis Revenue Accrual",
+    "url": "https://dune.com/gnosischain_team/gnosis-revenue-accrual",
+    "official": true,
+    "owner_handle": "gnosischain_team",
+    "covers": [
+     "revenue"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official dashboard_id 156001. Weekly USD revenue accrual to GnosisDAO (lending fees, sDAI/EURe imputed interest, Gnosis Pay 20bps, Circles/CRC). Denominated in USD, not GNO; about value capture not token emission/burn. Not an emission build input."
+   },
+   {
+    "name": "Gnosis Chain Metrics (Hashed Emergent)",
+    "url": "https://dune.com/hashed_em/gnosis-metrics",
+    "official": false,
+    "owner_handle": "hashed_em",
+    "covers": [
+     "other",
+     "staking"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Community analyst (Hashed Emergent team) chain-metrics dashboard (dashboard_id 152334). General Gnosis Chain activity/usage metrics; not verified to contain a per-period GNO emission/burn series. Listed as the best non-official-team alternative if the official dashboards are insufficient."
+   }
+  ],
+  "best_for_build": "none found",
+  "fallback": "No pre-built Dune dashboard yields a per-period GNO emitted/burned token series, because GNO has essentially no protocol-level emission, inflation, or burn: it is a FIXED-SUPPLY token (10M GNO minted at genesis; the GNO->mGNO 1:32 conversion for staking is a wrapper, not new issuance), and there is no GNO burn mechanism. The ONE genuine recurring GNO outflow is consensus-layer VALIDATOR STAKING REWARDS (GNO paid to Gnosis Chain validators, ~10% GNO APR target / DappNode incentive program). To build a per-period GNO-issued (rewards) series: (1) On Gnosis Chain (Blockscout/Dune chain_id 100), index the GBC deposit/claim/withdrawal contract that distributes GNO validator rewards (deposit contract 0x0B98057eA310F4d31F2a452B414647007d1645d9 and the associated SBC/claim-registry contracts); sum reward (GNO/mGNO) claim or mint events bucketed monthly/daily. The official 'Gnosis Beacon Chain (Deposits)' dashboard (query family behind dashboard_id 12939) and the 'GNO' label-balance query (4378260/4378268) are the cleanest reusable substrates to fork. (2) Alternatively, for total-supply confirmation (expect a flat ~10M GNO line, i.e. zero net emission), query erc20_ethereum.evt_Transfer / tokens.transfers for the GNO contract 0x6810e776880C02933D47DB1b9fc05908e5386b96 (Ethereum) and 0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb (Gnosis Chain), computing mint(from=0x0)-minus-burn(to=0x0) per period; this verifies the no-emission/no-burn conclusion. (3) For staking-reward APR/issuance context, Gnosis docs and the gnosischain_team Gnosis Analytics validators section are the canonical references. Recommend confirming with the requester whether 'emission' for GNO should be interpreted as validator-reward issuance (the only nonzero series) or treated as zero (fixed supply)."
+ },
+ {
+  "token": "MKR",
+  "dashboards": [
+   {
+    "name": "Sky Smart Burn Engine - Buybacks (query)",
+    "url": "https://dune.com/queries/6816280",
+    "official": false,
+    "owner_handle": "bperko",
+    "covers": [
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "BEST build input for the current Sky-era Smart Burn Engine. Read the SQL: produces a DAILY series (day, sky_bought, usd_spent) plus cumulative columns. Source = dex.trades filtered to taker = MCD Pause Proxy (0xbe8e...98fb) buying SKY (0x5607...9279), plus sky_evt_transfer burns to 0x0/0xdead, from 2024-09-01. Tracks the SKY token (post-MKR-rebrand buybacks/burns), NOT legacy MKR. Community-owned (not the official Sky handle) but freshest (version 9) and most directly on-target. Saved-query URL form; verify it sits on a bperko dashboard if a dashboard URL is needed."
+   },
+   {
+    "name": "Sky - MKR Burn (query, Steakhouse Financial)",
+    "url": "https://dune.com/queries/3748833",
+    "official": true,
+    "owner_handle": "steakhouse",
+    "covers": [
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Best per-period series for LEGACY MKR burns. Owned by Steakhouse Financial, MakerDAO/Sky's official financial-reporting team (de-facto official analyst). SQL yields daily ts, dai (DAI spent on buyback), tokens (MKR burned), plus cumulative cummkr/cumdai, back to 2020-01-01. Pulls from dune.steakhouse.result_maker_accounting code 31420 joined to prices.usd MKR. Directly gives the monthly/daily MKR-burned token series. Saved-query URL; lives under Steakhouse dashboards."
+   },
+   {
+    "name": "MKR | Supply & Burn (dashboard, ketcher)",
+    "url": "https://dune.com/ketcher/mkr",
+    "official": false,
+    "owner_handle": "ketcher",
+    "covers": [
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Ready-built dashboard with MKR supply + burn time-series visuals and Smart Burn Engine / Original Burn Engine / Black Thursday date annotations. Underlying queries (e.g. MKR Burn (Dai) 3627278, MKR Supply 3328985) are per-period and exportable. Community-owned but well-constructed and MKR-focused. Good visual confirmation surface; component queries are the actual build input."
+   },
+   {
+    "name": "Sky Smart Burn Engine - % of total supply burned (query, bperko)",
+    "url": "https://dune.com/queries/6816443",
+    "official": false,
+    "owner_handle": "bperko",
+    "covers": [
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Companion to query 6816280 but this one is a SNAPSHOT pie (Burned vs Unburned % of SKY total supply), NOT a per-period series. Useful context only; not a build input on its own."
+   },
+   {
+    "name": "Sky Farming Deposits by Refcode (query, virady)",
+    "url": "https://dune.com/queries/4093490",
+    "official": false,
+    "owner_handle": "virady",
+    "covers": [
+     "staking",
+     "rewards"
+    ],
+    "gives_per_period_series": true,
+    "notes": "Daily Sky farming Referral-event deposit amounts by refcode (contract 0x0650...0275). This is farming DEPOSIT inflow, not reward-token emission, so weak fit for the rewards/emissions axis. Closest pre-built surface found for the SubDAO/Sky-farming side, but does not yield emitted reward token amounts per period. No pre-built dashboard found that gives per-period SubDAO farming reward emissions in SKY/USDS."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/6816280",
+  "fallback": "For legacy MKR vs current SKY, pick the matching token. Current Sky-era buyback/burn: replicate bperko query 6816280: dex.trades WHERE token_bought_address = SKY (0x56072C95FAA701256059aa122697B133aDEd9279) AND taker = MCD Pause Proxy (0xbe8e3e3618f7474f8cb1d074a26affef007e98fb), DATE_TRUNC('day'/'month', block_time), SUM token_bought_amount_raw/1e18; plus actual burns from sky_ethereum.sky_evt_transfer WHERE to IN (0x0, 0xdead). Legacy MKR burns: maker_ethereum.mkr_evt_burn (DATE_TRUNC + SUM(wad)/1e18) for raw burn token amounts, or Steakhouse query 3748833 (dune.steakhouse.result_maker_accounting code 31420). MKR/SKY net supply (mint - burn): maker_ethereum.mkr_evt_mint minus mkr_evt_burn, plus the MkrToSky upgrade contract 0xBDcFCA946b6CDd965f99a839e4435Bcdc1bc470B MkrToSky event (topic0 0x751bfeaa...8ce1a). On-chain/API alternative: ERC20 Transfer events for MKR (0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2) and SKY to/from the zero/dead addresses via Etherscan/Blockscout or a node, aggregated per period. SubDAO farming reward emissions have no clean pre-built per-period Dune query; build from the Sky farming/rewards distribution contracts' reward-claim or RewardAdded events, or use Sky's official rewards-config + USDS Savings Rate accrual.\""
+ },
+ {
+  "token": "META (MetaDAO)",
+  "dashboards": [
+   {
+    "name": "MetaDAO mint and burn History on Solana (saved query)",
+    "url": "https://dune.com/queries/4121914",
+    "official": false,
+    "owner_handle": "xxx123xxx1",
+    "covers": [
+     "emissions",
+     "burns",
+     "supply"
+    ],
+    "gives_per_period_series": true,
+    "notes": "DIRECT build input. Queries tokens_solana.transfers for the canonical META mint METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr, filters action IN ('mint','burn'), and SUMs amount/1e9 grouped by DATE_TRUNC('day', block_time) and action. That is exactly a per-day emitted/burned token series. Community-owned (not official). Minor build tweaks: it ORDER BYs total_amount instead of date and has no date-range param, both trivial to adjust. The cached execution had expired at check time but the SQL is valid and re-runnable."
+   },
+   {
+    "name": "MetaDAO Statistics (official analytics team)",
+    "url": "https://dune.com/metadao_analytics/metadao-statistics",
+    "official": true,
+    "owner_handle": "metadao_analytics",
+    "covers": [
+     "revenue",
+     "staking",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Official MetaDAO analytics team dashboard. Comprehensive and well-maintained (daily FutarchyAMM volume, protocol fees to MetaDAO, Meteora fees, Assets Under Futarchy, treasury). It does NOT track META token emission/burn or supply per period; it is a protocol-revenue/volume/treasury surface. Best official source overall but not the per-period mint/burn series. Has parameterized start_date and token_list filters."
+   },
+   {
+    "name": "MetaDAO Metrics (official MetaDAO team)",
+    "url": "https://dune.com/metadaoproject/metadao-metrics",
+    "official": true,
+    "owner_handle": "metadaoproject",
+    "covers": [
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Owned by the official MetaDAO team handle. Focused on taker volume (OpenbookV2, AMM) and aggregate trading statistics; no emission/burn/supply time series. Confirms there is no official emissions dashboard."
+   },
+   {
+    "name": "MetaDAO Metrics (community)",
+    "url": "https://dune.com/0xdeadace/metadao-metrics",
+    "official": false,
+    "owner_handle": "0xdeadace",
+    "covers": [
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Community metrics dashboard. Not inspected in depth; name suggests general protocol metrics rather than a token emission/burn series. Lower priority than the mint/burn query for the build."
+   },
+   {
+    "name": "MetaDAO-$META (community)",
+    "url": "https://dune.com/eugene66dj/metadao-dollarmeta",
+    "official": false,
+    "owner_handle": "eugene66dj",
+    "covers": [
+     "revenue",
+     "other"
+    ],
+    "gives_per_period_series": false,
+    "notes": "Token-focused dashboard whose backing queries (MetaDAO_Fees, MetaDAO_DEX Volume, MetaDAO_Holder Growth, MetaDAO_Top Holders, MetaDAO_Transaction Count) cover fees, DEX volume, holder growth and concentration. No emission/burn or per-period supply series. Holder-growth could be a secondary supply-context source but is not the build input."
+   }
+  ],
+  "best_for_build": "https://dune.com/queries/4121914",
+  "fallback": "If query 4121914 is unavailable, rebuild trivially with DuneSQL: SELECT DATE_TRUNC('day', block_time) AS dt, action, SUM(TRY_CAST(amount AS DECIMAL(38,0)))/1e9 AS amount FROM tokens_solana.transfers WHERE token_mint_address = 'METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr' AND action IN ('mint','burn') GROUP BY 1,2 ORDER BY 1 (add DATE_TRUNC('month',...) for monthly). META is an SPL token on Solana (mint METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr, 9 decimals). Non-Dune alternative: Solana RPC/Helius getSignaturesForAddress + parsed MintTo/Burn instructions on the mint, or Solscan/SolanaFM token-supply-change endpoints. MetaDAO emissions are small (futarchy-launched token), so a single daily transfers query covers the full history cheaply.\""
+ }
+]
