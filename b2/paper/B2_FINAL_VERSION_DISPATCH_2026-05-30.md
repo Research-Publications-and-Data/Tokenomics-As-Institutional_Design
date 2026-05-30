@@ -63,6 +63,56 @@ the appended follow-on round); `reproduce.py` (repo root); `b2/paper/responses/2
 
 ---
 
+## RATIFIED RESOLUTIONS (author, 2026-05-30; gates A1-A8 closed)
+
+The eight gates are decided after three independent verification agents confirmed every number against the
+clone-A artifacts (headline-impact JSON + staking-audit JSONs, not memo prose). Unifying policy: an INSIDER
+is team / foundation / founder / VC confirmed by ON-CHAIN EVIDENCE (Nansen labels + Blockscout / Safe-
+deployer traces), not by keyword or "any multisig"; insider holdings are counted WHEREVER they sit (raw
+balances AND tokens locked in staking), applied consistently across the holder-HHI (A1), the staking
+treatment (A2), and the PCA Class-2/3 boundary (A3). One evidence standard, three places.
+
+- **A1 (adopt v4_traced) RATIFIED.** Only evidence-grounded vector; corrects the multisig over-count
+  (DIMO 0.4->0.1, GEOD 0.3->0.1, MKR 0.3->0.2, MOR 0.5->0.2, WXM 0.4->0.2) and adds genuine insiders
+  (UNI/a16z, COMP/Geoffrey Hayes, ENS/Nick Johnson, BAL vested-shareholders). Headline STRONGEST under it
+  (DePIN p=0.0119, lowest of six; retention n.s. 0.2385). Auditability spine: per-survivor
+  `b2_nansen_insider_classification_v4_TRACED_2026-05-30.csv` + all 17 Safe verdicts-with-evidence in
+  `b2_followon_c_safe_verdicts_2026-05-30.json` (6 team-confirmed / 11 independent) + 3 raw deployer-trace
+  tables as exemplars. (Supplement should cite the 17 verdicts + 3 exemplar traces, not claim 17
+  fully-raw-traced.)
+- **A2 (staking attribution) RATIFIED for the material case.** AAVE 4.4-6.3% insider AAVE hidden in stkAAVE
+  (21.67% of supply, ~20.5% Aave team + founder); ENA 0.43% (immaterial, include for consistency). Add the
+  staked balance back to each holder, exclude only the contract shell. One-directional (raises insider
+  conc.); headline-safe (AAVE/ENA not DePIN).
+- **A3 (PCA tighten on the same evidence base) RATIFIED IN PRINCIPLE; CONDITIONAL.** Executor MUST recompute
+  the v4_traced x PCA-tighten interaction and confirm the maturity anchor stays < 0.05 (the HALT below). Do
+  not full-tighten blindly; if the recomputed anchor crosses 0.05, that spec returns to the author before
+  lock. This is the one gate that needs a fresh number (depends on B1 frame reconciliation).
+- **A4 RATIFIED (split).** LPT -> INTO the HHI now (bloc-voting transcoder delegation; the one unambiguous
+  verdict). CRV/ENA/POL/IOTX/GEOD -> footnote as a disclosed methodology limitation (CRV/FXS ve-token leg
+  needs a per-address veToken snapshot = different data, not more API calls). AAVE/FXS/ETHFI/GNO/GMX/ANYONE/
+  MPL_SYRUP -> keep excluded AFTER the A2 attribution pass. (GEOD is DePIN; a proper staked-voting look there
+  is a worthwhile follow-on, not a blocker.)
+- **A5 (retention prose-lock -> 0.0409) RATIFIED.** Report reproduced 0.0409 alongside maturity 0.0395 in
+  the clone-A PAPER claim-of-record + the response letter. SCOPE: clone-A PAPER + response letter ONLY.
+  GUARD: the 0.014/0.016 in `docs/KEY_FINDINGS.md` (F-B2-2) is the DePIN-vs-DeFi sector Mann-Whitney, a
+  DIFFERENT p-value family; do NOT overwrite it. Do not conflate the two.
+- **A6 (refresh Solana holder-HHIs) RATIFIED; VERIFY-AT-APPLY.** JUP 0.126 / DRIFT 0.057 / HNT 0.087; the
+  executor re-derives these three against the frame log at apply-time. Keep DISTINCT from the voting-HHIs
+  already in DATA_REGISTRY (JUP 0.00278, DRIFT 0.0551); different measures.
+- **A7 (HONEY = 0.0 -> retention-spec N=50) RATIFIED.** Evidence-based (Hivemapper distributes to mappers/
+  retail). Status-append the Hivemapper-insider known-unknown that gates F-B2-3.
+- **A8 (DOT keep frame hhi=0.0052) RATIFIED.** Method consistency across the cross-section outranks venue
+  alignment for one protocol; footnote the DOT-holders-top1 + S16 AssetHub alternatives. DOT retention ~0
+  either way; off-Nansen, untouched by v4.
+
+**Settled (no further computation): A1, A2, A5, A7, A8.** **Verify-at-apply: A3 (recompute + anchor HALT),
+A6 (re-derive 3 values).** **Footnoted limitation: A4 CRV ve-token leg.** Headline robust across all six
+vectors regardless (p = 0.0062 / 0.0119 / 0.0168 / 0.0245 / 0.0274 / 0.0409; retention n.s. throughout;
+maturity anchor 0.0395 reproduces). The Section A detail below is retained as the rationale of record.
+
+---
+
 ## SECTION A: author decisions (GATES before the final version)
 
 These change published HHIs/insider counts, so they need an author call. Recommendations given; the headline
