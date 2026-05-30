@@ -22,7 +22,7 @@ The canonical 5-class PCA typology codified in Section 3.8 of the main paper dis
 - **Class 4:** Bridge custody and migration addresses (e.g., Wormhole Token Bridge custody; cross-chain migration contracts).
 - **Class 5:** Centralized exchange (CEX) custody (e.g., Binance hot wallets; Coinbase custody addresses).
 
-The full address-by-address documentation is in Supplementary File S6 (exclusions log).
+The full address-by-address documentation is in the exclusions log (`data/processed/exclusions_log.csv`).
 
 ## Five-specification robustness test
 

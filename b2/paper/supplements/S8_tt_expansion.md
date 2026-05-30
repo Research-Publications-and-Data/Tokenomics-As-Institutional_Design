@@ -1,4 +1,4 @@
-# Supplementary File S8: Token Terminal Expansion — Subsidy-Concentration Analysis
+# Supplementary File S8: Token Terminal Expansion, Subsidy-Concentration Analysis
 
 **Date:** 2026-04-02
 **Status:** Robustness check (additive; primary specification is on-chain N=20 in §5.7)
@@ -7,7 +7,7 @@
 
 ## Sample Construction
 
-Subsidy ratios for 13 DeFi and Infrastructure protocols are computed from Token Terminal revenue and incentive data using cumulative 35-month values (February 2023–January 2026). DePIN subsidy ratios use annualized on-chain burn revenue and mint emissions (Dune Analytics) as in the primary analysis (see §4.3). Two DePIN protocols are excluded from this expanded sample: Livepeer (subsidy ratio = 88.5×, 3.5-sigma outlier explicitly driving the primary result) and Render (subsidy ratio = 7.63×, cross-chain measurement complexity from merged Solana RENDER + Ethereum RNDR token). The full cross-sector sample is N = 22 (9 DeFi, 4 Infrastructure, 9 DePIN).
+Subsidy ratios for 13 DeFi and Infrastructure protocols are computed from Token Terminal revenue and incentive data using cumulative 35-month values (February 2023 to January 2026). DePIN subsidy ratios use annualized on-chain burn revenue and mint emissions (Dune Analytics) as in the primary analysis (see §4.3). Two DePIN protocols are excluded from this expanded sample: Livepeer (subsidy ratio = 88.5×, 3.5-sigma outlier explicitly driving the primary result) and Render (subsidy ratio = 7.63×, cross-chain measurement complexity from merged Solana RENDER + Ethereum RNDR token). The full cross-sector sample is N = 22 (9 DeFi, 4 Infrastructure, 9 DePIN).
 
 ---
 

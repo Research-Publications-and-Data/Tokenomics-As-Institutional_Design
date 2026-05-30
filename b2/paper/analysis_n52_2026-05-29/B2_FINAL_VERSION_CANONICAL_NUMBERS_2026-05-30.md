@@ -58,7 +58,7 @@ BAL 0.1. A7: HONEY carries a v4_traced retention value (0.2), lifting the retent
   holding-HHI 0.198868 (ratio 0.27x). LPT is a DISPERSER (delegation across ~100 orchestrators
   disperses governance), INVERTING the dispatch's A4 concentrate-hypothesis. Frame holding-HHI
   unchanged (0.198868). -> NEW Section 4.5 voting-vs-holding data point (LPT joins ENS/GMX/HNT/JUP
-  as a delegation-disperses exception; the first DePIN one).
+  as a delegation-disperses exception; the most pronounced DePIN one, HNT being also DePIN and also a disperser).
 - A8 (DOT): keep frame holder-HHI 0.0052 (AssetHub post-PCA of record); footnote 0.0139 raw /
   0.0093 AssetHub Class-2+3 / 0.0017 validator-set alternatives.
 

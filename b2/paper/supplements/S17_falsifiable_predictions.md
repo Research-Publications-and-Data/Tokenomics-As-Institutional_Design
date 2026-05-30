@@ -6,7 +6,7 @@
 
 ## Abstract
 
-This supplement details four falsifiable predictions about subsequent cross-protocol governance trajectories that the B2 cross-sectional design supports. Each prediction comes with an explicit operationalization that future panel-data and event-study work can test. The full operationalization includes data requirements, statistical tests, and explicit falsification thresholds; the main paper retains a brief list of the four predictions, with detail in this supplement.
+This supplement details five falsifiable predictions about subsequent cross-protocol governance trajectories that the B2 cross-sectional design supports. Each prediction comes with an explicit operationalization that future panel-data and event-study work can test. The full operationalization includes data requirements, statistical tests, and explicit falsification thresholds; the main paper retains a brief list of the five predictions, with detail in this supplement.
 
 ## Cross-reference
 
@@ -14,7 +14,7 @@ This supplement supports the Section 5.8 falsifiable forward claims subsection. 
 
 ## Methodology inheritance
 
-All four predictions inherit the methodology applied in the main paper:
+All five predictions inherit the methodology applied in the main paper:
 - PCA-symmetric exclusion via the five-class typology codified in Section 3.8
 - HHI computed on the post-exclusion top-1,000 holder distribution
 - Mann-Whitney for two-sample tests
@@ -60,11 +60,21 @@ The hypothesis specifications, statistical tests, and falsification thresholds b
 
 **Falsification threshold.** Falsified if the design-indicator coefficient does not differ from zero at p < 0.10 in a regression of amplification ratio on design choice, sector dummies, and protocol-age control.
 
+## Prediction 5 (chain-architecture as trajectory moderator)
+
+**Claim.** An age-balanced extended cohort, matching Solana and EVM DeFi protocols on distribution-phase maturity, will discriminate among three outcomes for the chain-architecture trajectory difference observed descriptively in Section 4.3.1. If the matched cohort sustains a higher post-distribution deconcentration rate for EVM than for Solana DeFi protocols at conventional significance, chain ecosystem operates as a trajectory moderator independent of maturity. If the difference attenuates below significance, the descriptive difference is attributable to the maturity imbalance rather than to chain architecture. If the difference inverts, an alternative mechanism is required.
+
+**Operationalization.** Construct an entry-cohort of Solana and EVM DeFi protocols matched on launch-era distribution-phase maturity (so that chain ecosystem is not collinear with protocol age, the confound that holds Section 4.3.1 at the descriptive layer). For each protocol, compute the post-distribution deconcentration rate (holding-HHI change under the Section 3.8 PCA-symmetric exclusion methodology) at the T+12-month and T+24-month marks.
+
+**Test.** Mann-Whitney and Fisher exact tests on the entry-cohort deconcentration rates at T+12 and T+24 months, comparing the EVM and Solana DeFi sub-cohorts on the age-balanced cohort.
+
+**Falsification thresholds.** The prediction is operationalized as a three-outcome discrimination rather than a single null: (a) chain-architecture moderates trajectory (EVM deconcentration rate exceeds Solana at conventional significance on the matched cohort); (b) the descriptive difference is a maturity artifact (the difference attenuates below significance once maturity is balanced); (c) an alternative mechanism is required (the difference inverts). The prediction that chain architecture is a trajectory moderator is falsified under outcomes (b) and (c).
+
 ---
 
 ## Power-index measurement extension
 
-Beyond the four sector / delegation / insider predictions, a parallel extension is to compute the Shapley-Shubik power index (Shapley & Shubik, 1954) and the Banzhaf index (Banzhaf, 1968) for additional protocols beyond the Tally-sourced 5-protocol partial-sample reported in Supplementary File S11. The current partial sample shows Shapley-Shubik HHI tracking voting-HHI with Pearson r = 0.999 across simple-majority quorum (per S11); the extension target is Snapshot-sourced protocols (DIMO, LDO, WXM) where complete delegate-by-delegate weight data must be reconstructed from per-proposal vote-weight distributions. Recent game-theoretic results (Kiayias et al., 2025) indicate that Shapley-based reward distributions achieve bounded Price of Stability (4/3; an efficiency-loss bound on equilibrium outcomes relative to the welfare-optimal allocation) in oceanic staking models while inherently resisting Sybil stake-splitting attacks, indicating that this measurement extension is both theoretically grounded and computationally feasible for the sample sizes in the current dataset.
+Beyond the five forward predictions, a parallel extension is to compute the Shapley-Shubik power index (Shapley & Shubik, 1954) and the Banzhaf index (Banzhaf, 1968) for additional protocols beyond the Tally-sourced 5-protocol partial-sample reported in Supplementary File S11. The current partial sample shows Shapley-Shubik HHI tracking voting-HHI with Pearson r = 0.999 across simple-majority quorum (per S11); the extension target is Snapshot-sourced protocols (DIMO, LDO, WXM) where complete delegate-by-delegate weight data must be reconstructed from per-proposal vote-weight distributions. Recent game-theoretic results (Kiayias et al., 2025) indicate that Shapley-based reward distributions achieve bounded Price of Stability (4/3; an efficiency-loss bound on equilibrium outcomes relative to the welfare-optimal allocation) in oceanic staking models while inherently resisting Sybil stake-splitting attacks, indicating that this measurement extension is both theoretically grounded and computationally feasible for the sample sizes in the current dataset.
 
 ## Cross-references
 
