@@ -1,0 +1,6 @@
+symbol,source,voting_hhi,voting_gini,voting_top1_pct,voting_top5_pct,voting_top10_pct,n_unique_voters,n_sampled_top100,holding_hhi_of_record,amplification_ratio,direction
+GNO,snapshot,0.1039,0.8378,26.3,55.5,71.8,481,100,0.04249,2.45,amplify
+FXS,snapshot,0.3693,0.9492,58.6,87.3,96.0,177,100,0.03241,11.40,amplify
+SNX,snapshot,0.0947,0.6451,16.0,62.3,84.0,30,30,0.01707,5.55,amplify
+TAO,taostats,0.0721,0.8221,13.1,50.2,76.5,75,75,0.00749,9.63,amplify
+DOT,subscan,0.1334,0.9004,29.8,65.6,86.5,239,100,0.00520,25.65,amplify
