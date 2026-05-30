@@ -70,7 +70,7 @@ The selected 5-class typology balances completeness (capturing the dominant cate
 
 ## Replication
 
-The five-specification robustness test was computed via `b2/paper/supplements/pca_classification_robustness_2026-05-22.py` in the replication repository (`Tokenomics-As-Institutional_Design`). Inputs: post-exclusion top-1000 holder files per protocol (per the canonical 5-class exclusion); per-specification exclusion masks are applied to recompute holder HHI per specification before Mann-Whitney test.
+The five-specification robustness test recomputes holder HHI under each specification's exclusion mask before the Mann-Whitney test. Inputs: the post-exclusion top-1000 holder files per protocol (per the canonical 5-class exclusion); the per-specification masks are derived by progressively relaxing the five-class typology of Section 3.8 against the address-by-address exclusions log (`data/processed/exclusions_log.csv`), so that each specification (A through E) drops a successively smaller set of protocol-controlled classes. The per-specification HHI values and the Mann-Whitney and Cohen's d results are tabulated above.
 
 ## References (main-paper bibliography continues to apply)
 
