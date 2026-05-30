@@ -138,6 +138,17 @@ survives every option. Resolve A1-A8, then proceed to Section B.
 
 ---
 
+## Parallel workstream: voting-HHI Phase 3 (separate dispatch; feeds C1 + closes the §5.7 limitation)
+
+A separate, parallelizable data-acquisition dispatch gathers voting-HHI for the 5 N=52 frame additions that
+have no voting-HHI coverage (FXS, SNX, GNO, TAO, DOT): workflow clone
+`handoff/dispatch/b2_voting_hhi_phase3_n52_additions_2026-05-30.md` (B2 R3 omnibus voting-HHI lane). It is
+NOT gated on the Section A author decisions and can run now in parallel. When complete it closes §5.7
+limitation #4 (voting-HHI coverage) and feeds C1 (the §4.5 amplification / Table 6 expansion). The
+feasibility spread (scout): FXS/TAO/DOT amplify (holdings understates governance), SNX disperses (holdings
+overstates), GNO is the linear control. Detail:
+`b2/paper/analysis_n52_2026-05-29/nansen_reclass_2026-05-29/staking_audit/voting_data_feasibility_2026-05-30.json`.
+
 ## Canonical-state lane (parallel, workflow clone; CANONICAL-WRITER)
 
 Independently of the paper, the two /tmp handoff-backs carry KEY_FINDINGS / DATA_REGISTRY / methodology

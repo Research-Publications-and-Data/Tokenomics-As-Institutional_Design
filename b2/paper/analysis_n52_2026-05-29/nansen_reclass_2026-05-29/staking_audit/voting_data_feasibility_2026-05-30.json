@@ -1,0 +1,108 @@
+[
+ {
+  "token": "FXS",
+  "governance_mechanism": "vote-escrow (veFXS), conviction/time-weighted, with dual on-chain Governor plus Snapshot",
+  "proxy_gap": "holdings_understates_governance_conc",
+  "data_source": "Snapshot (off-chain veFXS-weighted votes) + on-chain veFXS balance contract via Etherscan/Blockscout; Tally Governor surface dormant",
+  "data_availability": "medium",
+  "measurable_quantity": "veFXS-balance HHI (and Snapshot per-proposal veFXS-weighted-vote HHI / top-N voter share / turnout)"
+ },
+ {
+  "token": "SNX",
+  "governance_mechanism": "Elected-council model. Post-SR-2 (Oct 2024), a single unified Synthetix council of 7 seats governs (it replaced the prior 3-council / 17-seat system: Spartan, Treasury, Ambassador, plus Grants). All protocol proposals (SIPs, SCCPs, STPs, Treasury transactions) are decided ONLY by the elected council, requiring a 4-of-7 signature threshold, with EACH council seat carrying equal voting weight (multisig-style body). SNX token holders do not vote on proposals directly; staked SNX (specifically stakers in the 420 pool) confers voting power only in periodic council ELECTIONS. Election voting power = quadratically-weighted share of staked SNX ('weighted debt'): quadratic for advisory/Spartan-type seats, linear only for the Treasury seat. 6-month terms, elections in Oct and April (Jan 2026 cycle also ran). Nominations and voting executed via Snapshot (IPFS weighted-debt strategy) with on-chain ElectionModule contracts on Optimism L2.",
+  "governance_unit": "Quadratically-weighted staked-SNX ('weighted debt') cast in council elections; ultimate decision unit is one of 7 equal-weight elected council seats under a 4-of-7 threshold.",
+  "proxy_gap": "holdings_overstates_governance_conc",
+  "proxy_gap_reason": "Three stacked dampeners drive holdings-HHI well above true governance concentration. (1) Staking filter: raw SNX holders include non-stakers (CEX wallets, AMM/LP pools, bridges, treasury, idle holders) who have zero governance power; only staked SNX in the 420 pool confers any vote, so the effective voter base is a subset of holders. (2) Quadratic weighting: in elections a staker with 100x another's weighted debt gets only ~10x the vote, sharply compressing whale advantage (treasury seat is the lone linear exception). (3) Council decoupling: the body that actually sets policy is a 7-seat council with equal per-seat weight and a 4-of-7 threshold, so token concentration translates only into influence over electing members, never directly into proposal outcomes. Partial counterweight: if election turnout is low, a few large stakers could still swing seat outcomes, so election-level concentration is the empirically interesting quantity rather than a foregone overstatement.",
+  "data_source": "Snapshot (Synthetix Elections space / council.synthetix.io) for election votes + per-voter weighted-debt voting power + turnout; on-chain ElectionModule contracts on Optimism L2 for nomination/vote/seat state; Synthetix staking contracts for staked-SNX balances.",
+  "data_availability": "medium",
+  "measurable_quantity": "Election-voter weighted-debt HHI (concentration of quadratically-weighted staked-SNX across voters in a council election), top-N voter share of weighted debt, and election turnout (voting weighted-debt / total eligible staked-SNX). A staked-SNX-balance HHI can also be computed as an intermediate. Note: proposal-level (council-seat) governance is effectively un-concentratable by token weight (7 equal seats, 4-of-7), so the meaningful concentration measure lives at the election layer, not the proposal layer.",
+  "effort_estimate": "Medium: roughly 2-4 hours. Pull the most recent council election from the Synthetix Snapshot space (votes carry per-voter weighted-debt voting power directly via the Snapshot API/JSON), compute weighted-debt HHI + top-N share + turnout, and compare against the holdings-HHI for the same snapshot date. Optional cross-check of staked-SNX balances via the Optimism ElectionModule / staking contracts adds ~1-2 hours. No paid data sources required; Snapshot API is free.",
+  "recommendation": "Worth gathering. SNX is a high-value proxy-validity case precisely because it is one of the clearest holdings-overstates-governance examples in the sample (staking filter + quadratic weighting + equal-weight elected council all push the same direction). Computing the election-voter weighted-debt HHI and turnout, then differencing against the holdings-HHI, gives a concrete, defensible magnitude for the reviewer's concern and likely anchors the upper end of the overstatement range. The Snapshot data is free and per-voter voting power is already weighted-debt, so marginal effort is low relative to the robustness-check payoff.",
+  "citations": [
+   "https://docs.synthetix.io/governance",
+   "https://www.synthetix.io/governance",
+   "https://developer.synthetix.io/governance/",
+   "https://sips.synthetix.io/sips/sip-93",
+   "https://sips.synthetix.io/sips/sip-90",
+   "https://sips.synthetix.io/sips/sip-104",
+   "https://sips.synthetix.io/sips/sip-360",
+   "https://blog.synthetix.io/synthetix-elections-january-2026/",
+   "https://blog.synthetix.io/v3gm/",
+   "https://blog.synthetix.io/synthetixs-bold-reboot-what-sr-2-means-for-the-future/",
+   "https://council.synthetix.io/",
+   "https://messari.io/report/state-of-synthetix-governance"
+  ]
+ },
+ {
+  "token": "GNO",
+  "governance_mechanism": "delegated token-weighted (raw-token, linear 1 GNO = 1 vote; no vote-escrow, no conviction multiplier, no quadratic weighting). Off-chain Snapshot signaling (space gnosis.eth), three-phase GIP process (forum ideation, 5-day spec poll, 7-day Snapshot consensus vote). Optional delegation via Snapshot delegate registry (used mainly so a Gnosis Safe multisig can vote through a delegated EOA, plus a formal 10-seat delegate program from Feb 2025).",
+  "governance_unit": "GNO-denominated voting power as defined by the GIP-140 strategy bundle: the sum of GNO across Ethereum + Gnosis Chain ERC-20 balances, locked GNO (LGNO), validator/beacon-chain GNO, and StakeWise sGNO/osGNO. All variants map to underlying GNO at 1:1, so the effective unit is one GNO-equivalent = one vote.",
+  "proxy_gap": "roughly_equivalent",
+  "proxy_gap_reason": "Voting is linear in GNO with no escrow time-lock, conviction multiplier, or quadratic transform, so a holdings-HHI is structurally close to governance-power-HHI -- provided the holdings basis is the full GIP-140 aggregate (Ethereum + Gnosis Chain + locked LGNO + validator GNO + sGNO/osGNO), not a single ERC-20 contract's holder list. Using only one chain's GNO ERC-20 holders would mis-measure both directions (omits staked/locked/bridged GNO that still votes). Two effects make REALIZED-vote concentration higher than a snapshot holdings-HHI, but they are turnout effects, not weighting transforms: (1) low turnout -- the 75,000-GNO quorum is only ~5% of the ~1.5M circulating supply, so a small active set decides outcomes; (2) documented whale dominance -- a treasury-redemption vote was swung by a single whale address countering the cofounder, evidencing that a handful of addresses can be decisive. The Feb-2025 delegate program (10 delegates, 500 GNO non-transferable weight each) only marginally redistributes power. Net: holdings-HHI over the correct GNO basis approximates governance concentration; a turnout-conditioned realized-vote HHI would read higher.",
+  "data_source": "Snapshot (space gnosis.eth) via the public Snapshot GraphQL API (proposals + per-voter voting power, no auth); also indexed by Boardroom. On-chain GNO holder balances (Ethereum mainnet + Gnosis Chain) via block explorers for the holdings-basis side.",
+  "data_availability": "easy",
+  "measurable_quantity": "Per-proposal realized-vote HHI and top-N voter share computed from Snapshot's per-voter voting-power lists (the cleanest direct measure of governance concentration); turnout (quorum-GNO and unique voters per proposal vs circulating supply); and, for the proxy-validity comparison, a GNO voting-power HHI over the full GIP-140 holder aggregate to set against the study's raw top-holder GNO-HHI.",
+  "effort_estimate": "Low-to-moderate (~2-4 hours). Snapshot GraphQL is public/unauthenticated: pull the gnosis.eth proposal list, then per-proposal votes (vp, voter) and compute realized-vote HHI + top-N share + turnout directly. Slight extra effort to assemble the full GIP-140 holdings aggregate (multiple GNO representations across two chains) if a holdings-side voting-power HHI is also wanted.",
+  "recommendation": "Worth gathering, and unusually cheap to do. GNO is a clean linear token-weighted case, so it serves as a useful CONTROL/anchor for the B2 proxy-validity robustness check: it lets you show that for a no-escrow, no-conviction protocol the holdings-HHI and the realized-vote / voting-power HHI converge, isolating the gap to turnout rather than weighting mechanics. The realized-vote HHI from Snapshot also surfaces the turnout-driven concentration (single-whale-swung treasury vote; ~5%-of-supply quorum) that a static holdings-HHI misses, which directly addresses the reviewer concern. Recommend pulling: (a) GIP-140-basis voting-power HHI, (b) median per-proposal realized-vote HHI + top-N share, (c) turnout, across a recent proposal window.",
+  "measurable_quantity_note": "delegate-voting-power-HHI is also computable but low-value here since the delegate program is small (10 x 500 GNO) relative to whale holdings.",
+  "citations": [
+   "https://docs.gnosis.io/docs/Voting",
+   "https://docs.gnosis.io/docs/Governance",
+   "https://www.gnosis.io/blog/how-to-participate-in-gnosisdao-governance",
+   "https://coinjournal.net/news/gnosis-price-outlook-as-gnosisdao-gip-140-proposal-passes/",
+   "https://gnosisdao.ghost.io/gnosisdao-governance-summary-february-2025/",
+   "https://thedefiant.io/news/defi/gnosis-treasury-redemption-vote-swings-as-whale-counters-cofounder",
+   "https://snapshot.org/#/gnosis.eth",
+   "https://github.com/boardroom-inc/protocol-Info/blob/main/protocols/gnosis.eth/overview.md"
+  ]
+ },
+ {
+  "token": "TAO",
+  "governance_mechanism": "Bittensor governance is bicameral on-chain (native Substrate chain, not EVM/Nansen-indexed) layered on delegated validator stake. (1) Triumvirate: 3 Opentensor Foundation employees draft and close proposals. (2) Senate: max 12 seats, occupied by the top delegate hotkeys (validators) ranked by total delegated TAO stake who opt in; proposals execute on 50%+1 Senate approval plus a Triumvirate close. (3) dTAO (Dynamic TAO, live since early 2025) makes staking-to-subnets a continuous market vote that directs emissions. (4) Conviction mechanism (BIT-0011, shipped to mainnet 2026-05-13 after the Covenant AI exit) ties subnet ownership and voting to time-locked stake: Conviction = Stake x Time, starting at 100 percent of locked value and decaying linearly to zero over the lock period; highest-conviction key wins owner/voting rights. Net: governance power is conferred via delegated-validator-stake + an elected stake-weighted Senate + (newly) conviction-weighted locked stake, NOT raw token holdings.",
+  "governance_unit": "Total delegated TAO stake on a validator hotkey (root stake + alpha stake converted to TAO) is the base voting unit; the binding governance units are the 12 Senate seats (held by top-stake delegate validators) and, post-2026-05-13, conviction score (locked-stake x remaining-time) for subnet ownership/voting.",
+  "proxy_gap": "holdings_understates_governance_conc",
+  "proxy_gap_reason": "Binding governance power routes through a small set of elected, stake-weighted validators (Senate capped at 12 seats; historically the Root Subnet had 64 validators), and delegated TAO concentrates onto a handful of large validator hotkeys (notably Opentensor Foundation-affiliated keys). A few delegate hotkeys therefore command far more proposal/Senate power than their own token holdings, and small holders who delegate transfer voting weight upward rather than retaining it. The Triumvirate (3 Foundation employees holding exclusive propose/close rights) adds a hard chokepoint invisible to any holdings measure. The April 2026 Covenant AI exit and public 'decentralization theatre' / centralization critique are direct evidence that effective control is more concentrated than the token distribution implies. Conviction (locked stake) further decouples active governance weight from circulating holdings. So a raw top-holder HHI understates real governance concentration.",
+  "data_source": "Taostats (official Bittensor block explorer + Pro REST API, API key required via taostats.io/pro; exposes per-validator Root Stake, Alpha Stake, Dominance = validator stake / total staked, nominator counts, take); TaoMarketCap validators view; native Substrate chain queryable directly (Subscan-equivalent / Bittensor Python SDK) for Senate membership, proposal records, and on-chain vote tallies.",
+  "data_availability": "medium",
+  "measurable_quantity": "Validator-stake-HHI over total delegated TAO per validator hotkey (Taostats Dominance field is essentially per-validator share, so HHI = sum of squared dominance shares); top-N delegate voting-power share; Senate top-12 seat-share / occupied-seat concentration; and (newer, sparser) conviction-weighted-vote-HHI and per-proposal Senate vote tallies. Turnout is also computable from Senate participation per proposal.",
+  "effort_estimate": "Validator-stake-HHI: ~2-4 hours (single Taostats Pro API pull of the validators endpoint, square the dominance shares; one-time key signup). Adding Senate seat-share and a couple of proposal vote tallies: +2-4 hours of on-chain/explorer lookup. Conviction-weighted vote-HHI: not yet practical (mechanism only live since 2026-05-13, minimal vote history). Total for a credible proxy-validity check: roughly half a day to a day.",
+  "recommendation": "Worth gathering for the B2 proxy-validity robustness check. TAO is a high-value case BECAUSE it is a clear holdings-understates-governance archetype (elected stake-weighted Senate + 3-person Triumvirate chokepoint + delegated-stake concentration on Foundation-aligned validators), so a validator-stake-HHI vs raw-holder-HHI comparison cleanly demonstrates the direction and magnitude of the proxy gap the reviewer flagged. The cheapest, most defensible single artifact is the validator-stake-HHI from the Taostats Dominance field (low effort, directly governance-relevant). Caveat: TAO lives on a native Substrate chain outside the Nansen/Dune EVM toolchain, so the holdings-HHI in the main study may itself be sourced differently; confirm the holder denominator is comparable before contrasting. Conviction-weighted measures should be deferred (too new).",
+  "citations": [
+   "https://docs.learnbittensor.org/governance",
+   "https://docs.learnbittensor.org/senate",
+   "https://docs.bittensor.com/senate",
+   "https://docs.learnbittensor.org/staking-and-delegation/delegation",
+   "https://taostats.io/validators",
+   "https://docs.taostats.io/docs/validators",
+   "https://docs.taostats.io/docs/the-taostats-api",
+   "https://www.ainvest.com/news/bittensor-tao-governance-crisis-explained-covenant-ai-exit-bit-0011-proposal-2604/",
+   "https://www.tao.media/the-conviction-upgrade-bittensor-just-made-subnet-owner-exits-a-public-event/",
+   "https://oakresearch.io/en/analyses/innovations/bittensor-subnets-best-opportunities-investing-tao",
+   "https://www.tradingview.com/news/cointelegraph:8eac14495094b:0-covenant-ai-exits-bittensor-over-decentralization-theatre-tao-drops-18/"
+  ]
+ },
+ {
+  "token": "DOT",
+  "governance_mechanism": "conviction-weighted token voting (Polkadot OpenGov / Gov2). Voting power = raw DOT balance multiplied by a conviction multiplier (0.1x with no lock, scaling 1x/2x/3x/4x/5x/6x for locks of 7/14/28/56/112/224 days). Any DOT (free, bonded, or pool-staked) is eligible to vote; the governance conviction lock is separate from and does not stack with the staking lock. Multirole delegation lets a holder delegate voting power per-track to different delegates. Referenda run per-track (15 track configs, e.g. Root, Treasury spend tiers, Wish for Change) each with its own approval and support (turnout) curves. A separate Technical Fellowship votes rank-weighted (not token-weighted) on membership, RFCs, and whitelisting Root-class proposals, which is orthogonal to the token vote.",
+  "governance_unit": "conviction-weighted DOT (balance x conviction multiplier), tallied per-track per-referendum; plus delegated conviction-weighted DOT routed to per-track delegates. (Technical Fellowship votes are a separate rank-weighted unit, not token-denominated.)",
+  "proxy_gap": "holdings_understates_governance_conc",
+  "proxy_gap_reason": "Three compounding effects push realized governance concentration ABOVE static holdings-HHI. (1) Conviction multipliers (up to 6x) are applied non-uniformly: committed whales lock for max conviction and amplify effective weight well beyond their token-balance share, while casual holders vote at 0.1x-1x or not at all. (2) Low and variable turnout: only a small active subset of holders votes any given referendum, so the realized per-referendum electorate is far more concentrated than the full holder distribution. A documented case: a single ~9M-DOT 'Nay' swung a referendum to ~96% rejection, demonstrating that one whale routinely decides outcomes. (3) Delegation concentrates power onto a handful of active per-track delegates, adding a delegated-power concentration layer on top of direct holdings. A partial offsetting effect exists (large exchange/custodial/treasury balances that never vote would push toward OVERSTATEMENT), but the dominant empirical pattern in Polkadot OpenGov is whale-dominated, low-turnout referenda, so the net direction is that holdings-HHI understates the realized conviction-weighted concentration of decided referenda.",
+  "data_source": "Subscan API (referenda + ConvictionVoting endpoints, e.g. /api/scan/referenda/votes), Polkassembly (governance UI/API; note: archived to read-only through 2026-05-31), Subsquare (alternate OpenGov UI/API), and direct on-chain query of the pallet-referenda and pallet-conviction-voting storage via a Polkadot RPC/indexer. Dune also hosts community OpenGov referendum dashboards (substrate/polkadot-referendum), though that lane is excluded for this scoping check.",
+  "data_availability": "medium",
+  "measurable_quantity": "conviction-weighted referendum-vote HHI: per-referendum HHI over each voter's (DOT balance x conviction) aye/nay weight, plus a pooled/track-level version. Supporting measures: delegate-voting-power HHI (concentration across per-track delegates), top-N voter share of conviction-weighted votes, and turnout (conviction-weighted DOT voting / eligible DOT) per referendum. Distinct from a raw token-balance HHI because the weighting unit is conviction-adjusted and the population is the realized voting electorate, not all holders.",
+  "effort_estimate": "Medium: roughly 0.5-1.5 days. Pulling per-voter vote rows (account, balance, conviction, aye/nay/abstain, delegated-vs-direct) for a sample of decided referenda via the Subscan API or an on-chain indexer is straightforward. The cost is in (a) correctly computing effective conviction-weighted weight per voter, (b) attributing delegated voting power to either the delegate or the underlying delegator depending on the concentration construct chosen, and (c) deciding the unit of analysis (per-referendum vs pooled vs per-track) and reconciling it with the study's holdings-HHI snapshot date. Polkassembly's read-only archival adds mild urgency/risk but Subscan API and on-chain remain durable sources.",
+  "recommendation": "Worth gathering. DOT is a strong B2 proxy-validity case because its governance unit (conviction-weighted DOT over a low-turnout realized electorate) diverges from raw holdings in a DIRECTIONAL, demonstrable way (understatement), unlike protocols where holdings-HHI is roughly equivalent. Computing a conviction-weighted referendum-vote HHI for a sample of recent decided referenda and comparing it to the token-holdings-HHI would directly quantify the reviewer's concern (does holdings-HHI mis-state real governance concentration?) and likely show realized concentration is higher. Recommend a bounded scope: 10-30 recent high-salience decided referenda across a few tracks (incl. Root/Treasury), report per-referendum conviction-weighted HHI + top-N voter share + turnout, and note delegation as a secondary concentration layer. Medium effort, high illustrative payoff for the robustness section.",
+  "citations": [
+   "https://wiki.polkadot.com/learn/learn-polkadot-opengov/",
+   "https://docs.polkadot.com/polkadot-protocol/onchain-governance/overview/",
+   "https://wiki.polkadot.com/learn/learn-polkadot-technical-fellowship/",
+   "https://wiki.polkadot.com/learn/learn-nominator/",
+   "https://support.polkadot.network/support/solutions/articles/65000184776-polkadot-js-ui-how-to-delegate-your-voting-power-on-polkadot-opengov",
+   "https://soranauts.com/polkadot-governance-its-flaws-and-a-case-for-true-decentralization",
+   "https://forum.polkadot.network/t/if-you-are-not-a-whale-there-is-no-point-in-using-opengov-2/5320",
+   "https://messari.io/report/polkadot-opengov-report",
+   "https://dune.com/substrate/polkadot-referendum",
+   "https://docs.polkassembly.io/opengov/learn-about-referenda"
+  ]
+ }
+]
