@@ -49,6 +49,7 @@ import scipy.stats as ss
 A = os.path.dirname(os.path.abspath(__file__))
 B = "/Users/zach/b2-governance-data"
 ADIR = os.path.join(A, "b2/paper/analysis_n52_2026-05-29")
+VDIR = os.path.join(ADIR, "nansen_reclass_2026-05-29")  # A1: v4_traced insider vector of record
 HL_DIRS = [os.path.join(A, "data/raw/holder_lists"), os.path.join(B, "data/raw/holder_lists")]
 
 SEC = {"DePIN": "DePIN", "DeFi": "DeFi", "L1_L2_Infra": "L1"}
@@ -111,6 +112,12 @@ def load_frame_and_retention():
     v3 = {r["token"]: f(r.get("insider_count_frac")) for r in csv.DictReader(open(os.path.join(A, "data/processed/insider_analysis_results_v3.csv")))}
     v3 = {k: v for k, v in v3.items() if v is not None}
     new12 = {r["token"]: f(r["insider_count_frac"]) for r in csv.DictReader(open(os.path.join(ADIR, "new12_retention_vector_2026-05-29.csv")))}
+    # A1 (ratified 2026-05-30): the insider classification OF RECORD is v4_traced (Nansen
+    # entity labels + Blockscout / Safe-deployer evidence; the "team-confirmed multisig" rule,
+    # not "any multisig = insider"). ret = v4_traced where available, else the cohort baseline
+    # (new12 then v3); off-Nansen frame tokens keep the baseline. This matches the 6-vector
+    # headline harness "trc" composition, so the primary retention-spec reproduces v4_traced.
+    v4trc = {r["token"]: f(r["insider_count_frac"]) for r in csv.DictReader(open(os.path.join(VDIR, "insider_retention_vector_v4_traced_2026-05-30.csv")))}
     frame = []
     for r in csv.DictReader(open(os.path.join(A, "data/processed/regression_data_april2026.csv"))):
         if r.get("category") not in SEC:
@@ -121,7 +128,8 @@ def load_frame_and_retention():
             continue
         d = {"tok": r["token"], "sec": SEC[r["category"]], "hhi": hhi, "y": math.log(hhi),
              "ri": math.log10(rev / fdv + 1e-7), "mat": mat}
-        d["ret"] = v3.get(r["token"], new12.get(r["token"]))  # None if no retention (e.g. HONEY) -> drops in retention-spec
+        base = new12.get(r["token"], v3.get(r["token"]))
+        d["ret"] = v4trc.get(r["token"], base)  # v4_traced of record; None -> drops in retention-spec
         frame.append(d)
     return frame, v3, new12
 
@@ -157,7 +165,8 @@ def stage_models(frame):
     print(f"    log(rev/FDV) p={pm[3]:.4f}   maturity p={pm[4]:.4f}")
     results["maturity_spec"] = {"N": len(Dm), "depin_b": round(bm[1], 4), "depin_p": round(pm[1], 4),
                                 "revint_p": round(pm[3], 4), "maturity_p": round(pm[4], 4), "obs_per_pred": round(len(Dm) / 4, 1)}
-    # retention-spec (elected PRIMARY), N=49 (HONEY drops: in-frame DePIN with no retention vector)
+    # retention-spec (elected PRIMARY), N=50 under v4_traced (A1: HONEY now has a v4_traced
+    # retention value, so it no longer drops; this is A7 riding on A1)
     Dr = [d for d in frame if d["ret"] is not None]
     br, ser, pr, r2r = ols_hc3(Dr, [("sec", "DePIN"), ("sec", "L1"), "ri", "ret"])
     secs = {s: sum(1 for d in Dr if d["sec"] == s) for s in ("DePIN", "DeFi", "L1")}

@@ -73,22 +73,20 @@
   "obs_per_pred": 12.5
  },
  "retention_spec": {
-  "N": 49,
-  "depin_b": 0.6848,
-  "depin_p": 0.0453,
-  "L1_p": 0.3054,
-  "revint_p": 0.9707,
-  "retention_b": 0.6057,
-  "retention_p": 0.4692,
-  "obs_per_pred": 12.2,
+  "N": 50,
+  "depin_b": 0.7445,
+  "depin_p": 0.0151,
+  "L1_p": 0.3941,
+  "revint_p": 0.8256,
+  "retention_b": 1.0557,
+  "retention_p": 0.2593,
+  "obs_per_pred": 12.5,
   "sectors": {
-   "DePIN": 14,
+   "DePIN": 15,
    "DeFi": 24,
    "L1": 11
   },
-  "dropped": [
-   "HONEY"
-  ]
+  "dropped": []
  },
  "de_tautology": {
   "full_hhi_rho": 0.441,
