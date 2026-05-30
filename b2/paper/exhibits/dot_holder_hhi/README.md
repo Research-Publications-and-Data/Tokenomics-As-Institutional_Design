@@ -13,7 +13,7 @@ Compute Polkadot (DOT) holder-balance HHI on top-1000 AssetHub addresses after P
 ## Scripts (reproducibility)
 
 1. `dot_assethub_top_holders.py`: pulls top-1000 holders via Subscan AssetHub `/api/v2/scan/accounts` endpoint (10 pages of 100). Requires `SUBSCAN_API_KEY` environment variable (free tier).
-2. `dot_pca_refined.py`: applies refined PCA classification by cross-referencing top-1000 against (a) Polkawatch operator_id registry (91 institutional staking providers controlling 275 validators; sourced from sibling repo `Tokenomics-As-Institutional_Design` Phase 4 expansion artifacts), (b) multi-funder cluster identification (45 addresses that fund multiple validators), and (c) Class 5 CEX-cluster registry (Binance cluster confirmed via SubSquare governance-forum ground-truth + on-chain extrinsic verification 2026-05-27; see Substrate-analog CEX-cluster finding below). Outputs PCA exclusions CSV + post-exclusion HHI.
+2. `dot_pca_refined.py`: applies refined PCA classification by cross-referencing top-1000 against (a) Polkawatch operator_id registry (91 institutional staking providers controlling 275 validators; sourced from sibling repo `Tokenomics-As-Institutional_Design` Phase 4 expansion artifacts), (b) multi-funder cluster identification (45 addresses that fund multiple validators), and (c) a Class 5 CEX-cluster registry (Binance cluster confirmed via SubSquare governance-forum ground-truth plus on-chain extrinsic verification 2026-05-27; see the Substrate-analog CEX-cluster finding below). The Polkawatch and funding-cluster inputs are the sample-expansion artifacts in `data/raw/`. Outputs PCA exclusions CSV + post-exclusion HHI.
 
 ## Results (2026-05-27 capture)
 
@@ -32,7 +32,7 @@ Two reportable values bracketing methodology completeness:
 | Top-100 (post-exclusion) share | 61.78% | 58.85% |
 | Cross-section placement | Compound 0.009 / Optimism 0.009 / Uniswap 0.010 peer group | below Lido 0.008; tightest in cross-section |
 
-**Recommended primary**: 0.0052 (with Binance cluster excluded; ground-truth attributed) per cross-protocol consistency with EVM Phase 4 mini-batch findings that classify confirmed CEX hot/cold/staking addresses as Class 5. Report 0.0093 as the **methodology-completeness sensitivity** ("if Class 5 attribution is rejected on academic-source-quality grounds"). The 44.4% gap between values is itself a finding about Substrate-chain CEX-attribution gap relative to EVM/Solana.
+**Recommended primary**: 0.0052 (with Binance cluster excluded; ground-truth attributed) per cross-protocol consistency with the EVM sample-expansion findings that classify confirmed CEX hot, cold, and staking addresses as Class 5. Report 0.0093 as the **methodology-completeness sensitivity** ("if Class 5 attribution is rejected on academic-source-quality grounds"). The 44.4% gap between values is itself a finding about Substrate-chain CEX-attribution gap relative to EVM/Solana.
 
 **Extended sensitivity** (per `dot_top20_investigation_2026-05-27.md`): a third scenario C-narrow (HHI = **0.0043**) includes rank-2 (40.3M; multi-depositor + bidirectional cluster with 13fKwtY... at $15M+ cumulative flow; LIKELY-CEX distinct from Binance) and rank-5 (16.2M; zero extrinsics; pure cold-storage; POSSIBLE-CEX). The Coinbase / Kraken / OKX / Bybit / KuCoin enumeration generalizes beyond Binance; ground-truth attribution for those custodians remains pending. The 0.0043 to 0.0093 range (2x band) reflects the cross-architecture CEX-attribution methodology gap on Substrate chains.
 
