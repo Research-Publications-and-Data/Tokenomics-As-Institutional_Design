@@ -25,3 +25,7 @@ tier2_results.json
 
 # Pre-cycle working backups (A3 tighten / pre-exec snapshots)
 *.pre_*
+*SESSION_HANDOFF*
+*_REFETCH_HANDOFF*
+B2_FINAL_VERSION_*
+*_DISPATCH_*
