@@ -5,7 +5,7 @@
 **Author:** Zach Zukowski (Tokenization Systems; zach@tokenization.systems)
 **Journal:** Frontiers in Blockchain (Manuscript ID 1853465; SSRN 6599278)
 **Round:** R2 (response to Reviewer 1 Round 2 feedback)
-**Date:** 2026-05-26 (supersedes the 2026-05-17 intermediate-state draft)
+**Date:** 2026-05-31 (supersedes the 2026-05-17 intermediate-state draft)
 
 ---
 
