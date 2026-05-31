@@ -97,7 +97,7 @@ ax.text(2.5, np.mean(data[1])+0.01, f"DeFi vs L1: n.s. (p = {padj['DeFi-L1']:.2f
 ax.set_xticks([1, 2, 3])
 ax.set_xticklabels([f"DePIN (N={n['DePIN']})", f"DeFi (N={n['DeFi']})", f"L1/Infra (N={n['L1']})"], fontsize=11)
 ax.set_ylabel("Governance HHI (post-PCA exclusion)")
-ax.set_title(f"Governance Concentration by Architecture (N={N} governance tokens)\n"
+ax.set_title(f"Governance Concentration by Architecture (N={N} governance-token-measured, of the 52-protocol cross-section)\n"
              f"Kruskal-Wallis p = {p_kw:.3f}, $\\epsilon^2$ = {eps2:.2f}",
              fontsize=13, fontweight="bold", pad=14)
 fig.text(0.5, -0.02,
