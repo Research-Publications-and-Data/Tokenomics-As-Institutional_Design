@@ -68,7 +68,7 @@ print(f"KW H={H:.3f} p={p_kw:.4f} eps2={eps2:.3f}; Dunn(Holm) {padj}")
 fig, ax = plt.subplots(figsize=(8.5, 8))
 data = [groups["DePIN"], groups["DeFi"], groups["L1"]]
 colors = [DEPIN_COLOR, DEFI_COLOR, INFRA_COLOR]
-bp = ax.boxplot(data, positions=[1, 2, 3], widths=0.55, patch_artist=True, showmeans=True,
+bp = ax.boxplot(data, positions=[1, 2, 3], widths=0.55, patch_artist=True, showmeans=True, showfliers=False,
                 meanprops=dict(marker="D", markerfacecolor="white", markeredgecolor="black", markersize=8),
                 medianprops=dict(color="black", linewidth=2))
 for box, c in zip(bp["boxes"], colors):
