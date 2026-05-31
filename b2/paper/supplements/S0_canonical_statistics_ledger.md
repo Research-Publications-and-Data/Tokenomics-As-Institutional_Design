@@ -22,7 +22,7 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 | Subsidy ratio (excluding Livepeer) | 22 | |
 | Subsidy ratio (Token Terminal robustness) | 20 | |
 | Voting-HHI comparison (Table 6) | 18 | Protocols with sufficient governance data |
-| HHI-Gini correlation | 40 | |
+| HHI-Gini correlation | 44 | Governance-token-measured post-exclusion sample |
 | Median inflation-factor sample | 32 | Protocols with complete pre-exclusion and post-exclusion data |
 
 ---
@@ -64,8 +64,8 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 
 ### 5. Subsidy ratio
 
-- **With Livepeer (N = 23):** Pearson r = 0.59, p = 0.003
-- **Excluding Livepeer (N = 22):** Pearson r = 0.07, p = 0.77
+- **With Livepeer (N = 23):** Pearson r = 0.58, p = 0.004
+- **Excluding Livepeer (N = 22):** Pearson r = 0.06, p = 0.80
 - Livepeer subsidy ratio = 88.5x (3.5-sigma outlier; alone drives the inclusive correlation)
 - Token Terminal robustness (N = 20): r = 0.12, p = 0.61
 - **Do not mix:** N = 25 appears in Table 5 for the broader covariate battery including zero-subsidy protocols
@@ -84,7 +84,7 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 
 ### 8. Gini vs HHI
 
-- HHI-Theil Pearson r = 0.77; HHI-Gini Pearson r = 0.59, p < 0.001, N = 40
+- HHI-Theil Pearson r = 0.77; HHI-Gini Pearson r = 0.58, p < 0.001, N = 44
 - Gini range: 0.52 to 0.99; HHI range: 0.005 to 0.199
 
 ---
