@@ -1,6 +1,6 @@
 # Supplementary File S10: PCA-classification 5-spec robustness
 
-**Companion to:** B2 paper *Tokenomics as Applied Political Philosophy: Governance Concentration Beyond Token Allocation* (Section 4.6 Robustness). Generated 2026-05-22.
+**Companion to:** B2 paper *Tokenomics as Applied Political Philosophy: Governance Concentration Beyond Token Allocation* (Section 3.8 PCA exclusion methodology; Section 4.6.2 robustness). Generated 2026-05-22.
 
 ---
 
@@ -10,7 +10,7 @@ This supplement tests whether the DePIN-versus-DeFi sector contrast documented i
 
 ## Cross-reference
 
-This supplement supports the Section 4.6.2 PCA-classification robustness paragraph (and the limitations cross-reference in Section 5.7). Main paper retains the 5-spec results table plus a 1-paragraph interpretation summary; this supplement reports the per-specification narrative interpretation and the alternative-classification rationale.
+This supplement supports Section 4.6.2 PCA-exclusion-strictness robustness paragraph (and the Section 5.7 limitations cross-reference). Main paper retains the 5-spec results table plus a 1-paragraph interpretation summary; this supplement reports the per-specification narrative interpretation and the alternative-classification rationale.
 
 ## Five-class typology recap
 
@@ -22,7 +22,7 @@ The canonical 5-class PCA typology codified in Section 3.8 of the main paper dis
 - **Class 4:** Bridge custody and migration addresses (e.g., Wormhole Token Bridge custody; cross-chain migration contracts).
 - **Class 5:** Centralized exchange (CEX) custody (e.g., Binance hot wallets; Coinbase custody addresses).
 
-The full address-by-address documentation is in the exclusions log (`data/processed/exclusions_log.csv`).
+The full address-by-address documentation is in Supplementary File S6 (exclusions log).
 
 ## Five-specification robustness test
 
@@ -60,17 +60,17 @@ The methodological implication is that the PCA exclusion methodology applied thr
 
 ## Alternative-classification rationale
 
-The five-class typology was developed by inspection of the 40-protocol cross-section: each class corresponds to an empirically-identifiable category of token-holding address that structurally cannot or does not vote in proportion to its token holdings. The classes are not statistical convenience but operational categories derivable from blockchain-explorer labels (Etherscan, Blockscout, Solscan) and protocol documentation. An alternative classification could:
+The five-class typology was developed by inspection of the 52-protocol cross-section: each class corresponds to an empirically-identifiable category of token-holding address that structurally cannot or does not vote in proportion to its token holdings. The classes are not statistical convenience but operational categories derivable from blockchain-explorer labels (Etherscan, Blockscout, Solscan) and protocol documentation. An alternative classification could:
 
 - Drop Class 5 (CEX custody) on the rationale that exchange custody addresses do vote on behalf of beneficial holders in some governance systems (notably Compound's COMP delegation from Coinbase). This is Spec B; it preserves significance.
 - Drop Class 3 (staking aggregation) on the rationale that aggregation contracts pass-through underlying staker voting power. This is Spec D; it loses significance. The pass-through framing is partially correct (stkAAVE does pass through voting power) but stkAAVE votes as a single delegate per Tally's data model, so the aggregation contract's voting-HHI position is preserved at the contract level rather than distributed across underlying stakers.
-- Add Class 6 (lending-protocol collateral custody) on the rationale that tokens held as DeFi collateral are not governance-active. This refinement is documented as future-work; the current 40-protocol sample does not have sufficient cross-protocol lending-collateral data to estimate the effect.
+- Add Class 6 (lending-protocol collateral custody) on the rationale that tokens held as DeFi collateral are not governance-active. This refinement is documented as future-work; the current 52-protocol sample does not have sufficient cross-protocol lending-collateral data to estimate the effect.
 
-The selected 5-class typology balances completeness (capturing the dominant categories of non-vote-eligible token custody) with operational identifiability (each class can be assigned from publicly-available blockchain data with reasonable inter-rater reliability per Section 3.4).
+The selected 5-class typology balances completeness (capturing the dominant categories of non-vote-eligible token custody) with operational identifiability (each class can be assigned from publicly-available blockchain data with reasonable inter-rater reliability per Section 3.8).
 
 ## Replication
 
-The five-specification robustness test recomputes holder HHI under each specification's exclusion mask before the Mann-Whitney test. Inputs: the post-exclusion top-1000 holder files per protocol (per the canonical 5-class exclusion); the per-specification masks are derived by progressively relaxing the five-class typology of Section 3.8 against the address-by-address exclusions log (`data/processed/exclusions_log.csv`), so that each specification (A through E) drops a successively smaller set of protocol-controlled classes. The per-specification HHI values and the Mann-Whitney and Cohen's d results are tabulated above.
+The five-specification robustness test was computed via `b2/paper/supplements/pca_classification_robustness_2026-05-22.py` in the replication repository (`Tokenomics-As-Institutional_Design`). Inputs: post-exclusion top-1000 holder files per protocol (per the canonical 5-class exclusion); per-specification exclusion masks are applied to recompute holder HHI per specification before Mann-Whitney test.
 
 ## References (main-paper bibliography continues to apply)
 
