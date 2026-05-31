@@ -30,7 +30,18 @@ import csv, json, os, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, "nansen_raw")
 
-EXCHANGE_KW = ['exchange', 'binance', 'coinbase', 'kraken', 'okx', 'gate']
+# 2026-05-31 CEX-exclusion audit fix: the original keyword set carried only a
+# handful of brand names, so many CEX deposit / hot wallets (Upbit, Bybit,
+# Bithumb, Backpack, MEXC, and similar) fell through to other_labeled and were
+# not excluded. The audit prefers Nansen entity-label presence over keyword
+# matching; the brand and generic-custody terms below close the gap pending a
+# full label-presence rewrite. Generic terms ('hot wallet', 'internal wallet',
+# 'deposit') catch custody wallets that Nansen labels without a brand string.
+EXCHANGE_KW = ['exchange', 'binance', 'coinbase', 'kraken', 'okx', 'gate',
+               'upbit', 'bybit', 'bithumb', 'kucoin', 'bitget', 'robinhood',
+               'backpack', 'mexc', 'crypto.com', 'htx', 'huobi', 'coinone',
+               'gemini', 'bitfinex', 'bitvavo', 'falconx',
+               'hot wallet', 'internal wallet', 'deposit']
 INSIDER_KW = ['team', 'investor', 'founder', 'vest', 'foundation', 'treasury',
               'multisig', 'deployer', 'grant']
 PROTOCOL_KW = ['bridge', 'escrow', 'gateway', 'locker', 'minter', 'staking',
@@ -84,11 +95,25 @@ def parse_raw(path):
     return out, ("OK" if out else "EMPTY")
 
 
+def _exchange_hit(ll):
+    """True if any EXCHANGE_KW matches. 'gate' is matched on word boundaries
+    only, so a 'Gateway' protocol contract (gateway is a PROTOCOL_KW) is not
+    misclassified as an exchange via the 'gate' substring. All other terms keep
+    plain substring matching, which is the original behavior."""
+    for x in EXCHANGE_KW:
+        if x == 'gate':
+            if re.search(r'\bgate\b', ll):
+                return True
+        elif x in ll:
+            return True
+    return False
+
+
 def classify(label):
     if label is None or label == '':
         return ('unlabeled', None)
     ll = label.lower()
-    if any(x in ll for x in EXCHANGE_KW):
+    if _exchange_hit(ll):
         return ('exchange', 'exchange_kw')
     if any(x in ll for x in INSIDER_KW):
         return ('insider', 'insider_kw')

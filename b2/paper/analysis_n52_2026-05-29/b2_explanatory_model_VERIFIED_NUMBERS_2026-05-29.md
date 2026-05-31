@@ -1,5 +1,7 @@
 # B2 explanatory model: VERIFIED authoritative numbers (cascade-time reproduction)
 
+> **Superseded-in-part 2026-05-31 (CEX-exclusion audit).** The 2026-05-31 full 52-protocol exchange-custody audit (64 additional Nansen-labeled CEX wallets excluded across 21 protocols; see `EC-2026-05-31-B2-JUP-Retained-CEX-Upbit-Backpack-Plus-Full-52-Protocol-Exchange-Custody-Audit`) advanced the frame, so the model anchors below are superseded: maturity-spec DePIN p 0.0197 to 0.0107; retention-spec DePIN p 0.0139 to 0.0050; full-frame Mann-Whitney 0.0234 to 0.0172 (Cohen d 0.939 to 1.052); balanced-30 0.020 to 0.011 (d 0.94 to 1.05). All STRENGTHEN. De-tautology Spearman rho 0.544 unchanged. The post-audit of-record values are in `reproduce.py` reconcile() and the apply script `b2_apply_cex_audit_2026-05-31.py`.
+
 **As-of:** 2026-05-29. Reproduced READ-ONLY from persisted clone-A data after the original
 /tmp run scripts evaporated (artifact-retention gap). Script:
 `b2/paper/analysis_n52_2026-05-29/b2_explanatory_model_REPRODUCTION_2026-05-29.py`.
