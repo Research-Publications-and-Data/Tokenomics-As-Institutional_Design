@@ -28,8 +28,8 @@ per-voter data by a second pass that did not reuse the collection code; every ro
 
 All five amplify. FXS joins the vote-escrow class discussed in sec 4.5.2 (veCRV approximately 15x, veBAL
 approximately 21x, now veFXS approximately 11.4x). Counting the remaining four in the main cross-section,
-the amplification fraction rises from nine of thirteen to thirteen of seventeen (76.5 percent), with the
-four dispersion cases (ENS, GMX, HNT, JUP) unchanged. The amplification range widens from a prior maximum
+the amplification fraction rises from nine of thirteen to thirteen of eighteen (72.2 percent), with the
+dispersion cases now numbering five (ENS, GMX, HNT, JUP, and Livepeer at 0.27x, the most pronounced DePIN governance disperser). The amplification range widens from a prior maximum
 near 9.9x to 25.6x (DOT), with FXS at 11.4x and DOT at 25.6x both exceeding the prior maximum; DOT is an
 upward outlier, so the median is the more representative central value alongside the mean.
 
