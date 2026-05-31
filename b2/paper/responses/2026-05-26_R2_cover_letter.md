@@ -1,6 +1,6 @@
 # Cover letter: B2 R2 submission
 
-**To:** Editorial Office, Frontiers in Blockchain
+**To:** Dr. Ingrid Vasiliu-Feltes, Frontiers in Blockchain
 **From:** Zach Zukowski (Tokenization Systems; zach@tokenization.systems)
 **Re:** Governance Concentration Beyond Token Allocation: A 52-Protocol Cross-Sectional Audit of DePIN and DeFi After Protocol-Controlled-Address Exclusion (Manuscript ID 1853465; SSRN 6599278)
 **Working title (5 words):** Governance Concentration Beyond Token Allocation
@@ -10,7 +10,7 @@
 
 ---
 
-Dear Editor and Reviewers,
+Dear Dr. Vasiliu-Feltes and Reviewers,
 
 I am submitting the R2 revision of "Governance Concentration Beyond Token Allocation: A 52-Protocol Cross-Sectional Audit of DePIN and DeFi After Protocol-Controlled-Address Exclusion" addressing Reviewer 1's four Round 2 issues and incorporating substantial strengthening across data, methodology, and manuscript architecture. Point-by-point responses to all four reviewer issues are documented in the accompanying response document (`2026-05-26_R2_responses_master.md`), which is structured for direct copy-paste into the Frontiers reviewer-response web form.
 
