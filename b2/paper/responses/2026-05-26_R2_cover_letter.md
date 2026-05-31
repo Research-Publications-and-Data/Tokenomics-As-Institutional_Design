@@ -2,9 +2,9 @@
 
 **To:** Dr. Ingrid Vasiliu-Feltes, Frontiers in Blockchain
 **From:** Zach Zukowski (Tokenization Systems; zach@tokenization.systems)
-**Re:** Governance Concentration Beyond Token Allocation: A 52-Protocol Cross-Sectional Audit of DePIN and DeFi After Protocol-Controlled-Address Exclusion (Manuscript ID 1853465; SSRN 6599278)
+**Re:** Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols (Manuscript ID 1853465; SSRN 6599278)
 **Working title (5 words):** Governance Concentration Beyond Token Allocation
-**Title note:** The full title revises the R1 submission title "Governance Concentration Beyond Token Allocation: An Institutional Design Analysis of DePIN and DeFi" by preserving the lead phrase exactly and reframing the subtitle from theory-framing ("An Institutional Design Analysis") to empirical-audit framing ("A 52-Protocol Cross-Sectional Audit ... After Protocol-Controlled-Address Exclusion"). The R1 lead-phrase preservation is deliberate: it provides editorial-system continuity (the working title matches the R1 lead phrase exactly), while the new subtitle signals the reframing toward the empirical-measurement contribution. The institutional-design-and-philosophical-interpretation thread has been moved to a companion paper (Zukowski, 2026e), allowing the title and abstract to lead directly with the audit contribution.
+**Title note:** The full title revises the R1 submission title "Governance Concentration Beyond Token Allocation: An Institutional Design Analysis of DePIN and DeFi" by preserving the lead phrase exactly and reframing the subtitle from theory-framing ("An Institutional Design Analysis") to empirical-audit framing ("A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols"). The R1 lead-phrase preservation is deliberate: it provides editorial-system continuity (the working title matches the R1 lead phrase exactly), while the new subtitle signals the reframing toward the empirical-measurement contribution. The institutional-design-and-philosophical-interpretation thread has been moved to a companion paper (Zukowski, 2026e), allowing the title and abstract to lead directly with the audit contribution.
 **Date:** 2026-05-31
 **Round:** R2 revision
 
@@ -12,7 +12,7 @@
 
 Dear Dr. Vasiliu-Feltes and Reviewers,
 
-I am submitting the R2 revision of "Governance Concentration Beyond Token Allocation: A 52-Protocol Cross-Sectional Audit of DePIN and DeFi After Protocol-Controlled-Address Exclusion" addressing Reviewer 1's four Round 2 issues and incorporating substantial strengthening across data, methodology, and manuscript architecture. Point-by-point responses to all four reviewer issues are documented in the accompanying response document (`2026-05-26_R2_responses_master.md`), which is structured for direct copy-paste into the Frontiers reviewer-response web form.
+I am submitting the R2 revision of "Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols" addressing Reviewer 1's four Round 2 issues and incorporating substantial strengthening across data, methodology, and manuscript architecture. Point-by-point responses to all four reviewer issues are documented in the accompanying response document (`2026-05-26_R2_responses_master.md`), which is structured for direct copy-paste into the Frontiers reviewer-response web form.
 
 ## Manuscript identity change since R1
 

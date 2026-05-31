@@ -1,6 +1,6 @@
 # B2 R2 Responses Master
 
-**Paper:** Governance Concentration Beyond Token Allocation: A 52-Protocol Cross-Sectional Audit of DePIN and DeFi After Protocol-Controlled-Address Exclusion
+**Paper:** Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols
 **Working title (5 words):** Governance Concentration Beyond Token Allocation
 **Author:** Zach Zukowski (Tokenization Systems; zach@tokenization.systems)
 **Journal:** Frontiers in Blockchain (Manuscript ID 1853465; SSRN 6599278)
@@ -166,7 +166,7 @@ The revision also includes substantive strengthening that goes beyond the four i
 
 **Empirical-paper reframe.** The R1 manuscript developed a five-lens philosophical framework integrated with the empirical results; the revised manuscript leads with the measurement contributions and routes the philosophical-interpretation thread to a companion paper (Zukowski 2026e). The reframing preserves every R1 statistical finding. Key surface changes:
 
-- Title: from the R1 submission title "Governance Concentration Beyond Token Allocation: An Institutional Design Analysis of DePIN and DeFi" to "Governance Concentration Beyond Token Allocation: A 52-Protocol Cross-Sectional Audit of DePIN and DeFi After Protocol-Controlled-Address Exclusion". The lead phrase is preserved exactly for editorial-system continuity; the subtitle is reframed from theory-framing to empirical-audit framing.
+- Title: from the R1 submission title "Governance Concentration Beyond Token Allocation: An Institutional Design Analysis of DePIN and DeFi" to "Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols". The lead phrase is preserved exactly for editorial-system continuity; the subtitle is reframed from theory-framing to empirical-audit framing.
 - Abstract: leads with the allocation null, sector contrast, subsidy null, delegation amplification, and the PCA methodology contribution; no philosophical-framework framing.
 - Section 1.2 (new): one-paragraph bridge to the companion paper Zukowski (2026e) at SSRN registering the Polanyian fourth-fictitious-commodity interpretation; the bridge cites the companion paper rather than developing the argument inline.
 - Section 5.6 Contributions: four empirical contributions (PCA methodology; allocation null with insider-retention contrast; corrected sector contrast; predominant delegation amplification with structural exceptions); no two-layer philosophical-framework contribution.
