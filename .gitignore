@@ -29,3 +29,9 @@ tier2_results.json
 *_REFETCH_HANDOFF*
 B2_FINAL_VERSION_*
 *_DISPATCH_*
+
+# Agent-infra directories from the workflow clone. These do not belong in this public
+# data/replication repo; a stray broad "git add" of them corrupted .git/index here on
+# 2026-06-01 (phantom .claude/agents entries pointing to blobs absent from this object store).
+.claude/
+.cursor/
