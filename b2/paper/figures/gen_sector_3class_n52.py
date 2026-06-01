@@ -90,8 +90,11 @@ ax.text(1.5, y1+0.007, f"Dunn p = {padj['DePIN-DeFi']:.3f}", ha="center", fontsi
 y2 = ymax + 0.045
 ax.plot([1, 1, 3, 3], [y2, y2+0.005, y2+0.005, y2], "k-", lw=1)
 ax.text(2.0, y2+0.007, f"Dunn p = {padj['DePIN-L1']:.3f}", ha="center", fontsize=9, style="italic")
-# DeFi-L1 n.s. note
-ax.text(2.5, np.mean(data[1])+0.01, f"DeFi vs L1: n.s. (p = {padj['DeFi-L1']:.2f})",
+# DeFi-L1 n.s. note: small gray bracket above the DeFi and L1 dots so the text
+# clears both boxes (was at box level, overlapping the DeFi box).
+y_nl = max(np.max(data[1]), np.max(data[2])) + 0.014
+ax.plot([2, 2, 3, 3], [y_nl, y_nl + 0.004, y_nl + 0.004, y_nl], color="gray", lw=0.8)
+ax.text(2.5, y_nl + 0.007, f"DeFi vs L1: n.s. (p = {padj['DeFi-L1']:.2f})",
         ha="center", fontsize=8.5, style="italic", color="gray")
 
 ax.set_xticks([1, 2, 3])
