@@ -130,6 +130,13 @@ CODEBOOK hazards a replicator should know (documented so they are not re-hit):
 4. **Dune queries:** Templates in `data/dune_queries/`. See `saved_query_ids.md` for pre-saved query IDs.
 5. **Supplementary materials:** S1-S8 in `b2/paper/supplements/`. May 2026 revision additions: `burn_rule_audit_findings.csv`, `burn_rule_audit_summary.csv`, `top10_post_exclusion_all20.csv`, `uni_burn_cascade.csv`, `sample_coverage_table.md`.
 
+### Reproducibility notes
+
+- **Self-contained core.** `reproduce.py` regenerates the headline numbers from data committed in this repository, with no external dependency. Analysis, figure, and supplement scripts resolve their paths relative to the repository root, so they run from any clone (not only the author's machine).
+- **Exploratory artifact (not cited).** `b2/paper/analysis_n52_2026-05-29/b2_incentive_value_timeseries_2026-05-29.py` is exploratory; its CoinGecko price inputs are not committed and it produces no value cited in the paper or supplements. It is included for transparency only.
+- **Optional re-pull.** `b2/paper/supplements/power_indices_solana_quorum_variation_2026-05-27.py` reads a JUP voter snapshot regenerable via the Dune query documented in its header; the cited power-index values are also persisted in `power_indices_n14_full_2026-05-27.csv`, so the re-pull is optional for verification.
+- **Polkadot Table 3 top-10 share.** The Polkadot descriptive top-10% in Table 3 (21.0%) and the cross-section dataset column (13.00) use different top-share populations; the load-bearing concentration value (HHI 0.0052) is identical in both.
+
 ## Round 1 revision (May 2026): methodology updates
 
 Four methodological refinements landed in response to Reviewer 1 and Reviewer 2 comments (reviewer responses archived alongside the manuscript):

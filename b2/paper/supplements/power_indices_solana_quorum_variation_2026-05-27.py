@@ -74,7 +74,13 @@ def load_snapshot():
 
 
 def load_jup():
-    with open("/tmp/jup_voters_2026-05-27.json") as f:
+    # Input regenerable via Dune query 7585115 (see module header); the cited
+    # power-index values are also persisted in power_indices_n14_full_2026-05-27.csv.
+    _jp = "/tmp/jup_voters_2026-05-27.json"
+    if not _os_anchor.path.exists(_jp):
+        raise SystemExit("jup_voters_2026-05-27.json not present: re-pull via Dune query 7585115 "
+                         "(module header), or verify cited values against power_indices_n14_full_2026-05-27.csv")
+    with open(_jp) as f:
         rows = json.load(f)
     return [(r["voter"], r["max_weight"]) for r in rows if r["max_weight"] > 0]
 
