@@ -7,7 +7,11 @@ TAO new principal-excluded row (0.0075). All measurement_type=governance_token s
 (per HALT-C; regression subset is a separate covariate-completion track).
 """
 import csv, json, shutil, os
-DATA = "/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+DATA = _RR
 CSV = f"{DATA}/data/processed/regression_data_april2026.csv"
 BAK = CSV + ".pre_n52_merge_2026-05-29"
 

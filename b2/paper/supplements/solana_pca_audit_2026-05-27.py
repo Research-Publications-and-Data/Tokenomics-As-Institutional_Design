@@ -29,7 +29,11 @@ import csv
 from pathlib import Path
 from collections import defaultdict
 
-REPO = Path("/Users/zach/Tokenomics-As-Institutional_Design")
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+REPO = Path(_RR)
 HOLDERS_DIR = REPO / "data/raw/holder_lists"
 EXCLUSIONS = REPO / "data/processed/exclusions_log.csv"
 OUT_DIR = REPO / "b2/paper/supplements"

@@ -37,7 +37,11 @@ try:
 except ImportError:
     HAS_ADJUST_TEXT = False
 
-REG_CSV = "/Users/zach/Tokenomics-As-Institutional_Design/data/processed/regression_data_april2026.csv"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+REG_CSV = (_RR + "/data/processed/regression_data_april2026.csv")
 OUT_DIR = Path(__file__).resolve().parent
 
 plt.rcParams.update({

@@ -5,8 +5,11 @@ ground-truthed registry, plus Class-4 bridge. Report raw / principal-excluded as
 range with attribution caveat. Subnet-staking-pool (Class 3) + Opentensor foundation
 (Class 2) long-tail deferred (HALT-B: raw-with-caveat fallback; TAO is non-headline L1).
 """
-import csv, json
-DATA = "/Users/zach/Tomenomics".replace("Tomenomics","Tokenomics-As-Institutional_Design")
+import csv, json, os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+DATA = _RR
 holders = list(csv.DictReader(open(f"{DATA}/data/raw/holder_lists/TAO_holders.csv")))
 reg = json.load(open("/Users/zach/b2-governance-data/data/processed/tao_exchange_coldkeys.json"))
 cex = {r["coldkey"]: r["name"] for r in reg}

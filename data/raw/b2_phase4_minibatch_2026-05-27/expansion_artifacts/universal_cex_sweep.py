@@ -4,10 +4,14 @@ import csv, glob, json
 from pathlib import Path
 from collections import defaultdict
 
-HOLDER_DIR = Path("/Users/zach/Tokenomics-As-Institutional_Design/data/raw/holder_lists")
-OUT_DIR = Path("/Users/zach/Tokenomics-As-Institutional_Design/b2/paper/supplements")
-EXCL_LOG = Path("/Users/zach/Tokenomics-As-Institutional_Design/data/processed/exclusions_log.csv")
-REG_DATA = Path("/Users/zach/Tokenomics-As-Institutional_Design/data/processed/regression_data_april2026.csv")
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+HOLDER_DIR = Path((_RR + "/data/raw/holder_lists"))
+OUT_DIR = Path((_RR + "/b2/paper/supplements"))
+EXCL_LOG = Path((_RR + "/data/processed/exclusions_log.csv"))
+REG_DATA = Path((_RR + "/data/processed/regression_data_april2026.csv"))
 DATE = "2026-05-27"
 
 # 5 newly-confirmed CEX hot wallets from Phase 4 audit

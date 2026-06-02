@@ -11,7 +11,11 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-REG_CSV = "/Users/zach/Tokenomics-As-Institutional_Design/data/processed/regression_data_april2026.csv"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+REG_CSV = (_RR + "/data/processed/regression_data_april2026.csv")
 DEPIN_COLOR, DEFI_COLOR, INFRA_COLOR = "#2171b5", "#cb6d51", "#2d6a2e"
 
 plt.rcParams.update({
@@ -110,7 +114,7 @@ fig.text(0.5, -0.02,
          ha="center", fontsize=8, style="italic", color="gray", wrap=True)
 
 for ext in ("png", "pdf"):
-    fig.savefig(f"/Users/zach/Tokenomics-As-Institutional_Design/b2/paper/figures/fig_sector_3class_n52.{ext}",
+    fig.savefig(f(_RR + "/b2/paper/figures/fig_sector_3class_n52.{ext}"),
                 dpi=300, bbox_inches="tight")
 plt.close(fig)
 print("wrote fig_sector_3class_n52.{png,pdf}")

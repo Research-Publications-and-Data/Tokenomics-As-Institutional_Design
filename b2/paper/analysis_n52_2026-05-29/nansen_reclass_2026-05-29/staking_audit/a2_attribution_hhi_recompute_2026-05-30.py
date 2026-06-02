@@ -20,7 +20,11 @@ Writes a_2 recompute JSON alongside.
 import csv, os, json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-A = "/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+A = _RR
 HLD = [os.path.join(A, "data/raw/holder_lists"), "/Users/zach/b2-governance-data/data/raw/holder_lists"]
 
 

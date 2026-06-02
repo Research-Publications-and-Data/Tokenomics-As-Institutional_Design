@@ -7,7 +7,11 @@ import csv
 from pathlib import Path
 
 SCHEMA = ["token", "address", "identity", "exclusion_reason", "chain", "hhi_before", "hhi_after", "source"]
-OUT_CSV = Path("/Users/zach/Tokenomics-As-Institutional_Design/b2/paper/supplements/phase4_exclusions_log_extension_2026-05-27.csv")
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+OUT_CSV = Path((_RR + "/b2/paper/supplements/phase4_exclusions_log_extension_2026-05-27.csv"))
 
 new_rows = []
 
@@ -51,7 +55,7 @@ PHASE4 = [
 
 # Universal sweep extensions (new CEX hot wallets across existing protocols)
 import csv as csvmod
-with open("/Users/zach/Tokenomics-As-Institutional_Design/b2/paper/supplements/universal_cex_sweep_phase4_new_2026-05-27.csv") as f:
+with open((_RR + "/b2/paper/supplements/universal_cex_sweep_phase4_new_2026-05-27.csv")) as f:
     sweep = list(csvmod.DictReader(f))
 
 UNIVERSAL = []

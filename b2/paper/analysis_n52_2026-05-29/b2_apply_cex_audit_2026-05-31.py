@@ -16,7 +16,11 @@ EC + DEC-203 Cycle-6 closeout). n_holders is left at the top-1000 convention
 """
 import csv, os, shutil, math
 
-SIB = "/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+SIB = _RR
 FRAME = os.path.join(SIB, "data/processed/regression_data_april2026.csv")
 EXCL = os.path.join(SIB, "data/processed/exclusions_log.csv")
 CONSOL = os.path.join(SIB, "b2/paper/analysis_n52_2026-05-29/b2_pca_exclusions_consolidated_2026-05-29.csv")

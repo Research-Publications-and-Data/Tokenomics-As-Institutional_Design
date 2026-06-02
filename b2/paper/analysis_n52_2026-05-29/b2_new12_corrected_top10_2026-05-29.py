@@ -10,7 +10,11 @@ their retention is low-confidence (older L1; flagged, not classified here). READ
 """
 import csv, os, json
 
-CLONE_A="/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+CLONE_A=_RR
 CLONE_B="/Users/zach/b2-governance-data"
 HL=[os.path.join(CLONE_A,"data/raw/holder_lists"), os.path.join(CLONE_B,"data/raw/holder_lists")]
 

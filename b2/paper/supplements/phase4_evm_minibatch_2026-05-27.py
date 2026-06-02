@@ -37,7 +37,11 @@ from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import Optional
 
-SCRIPT_DIR = Path("/Users/zach/Tokenomics-As-Institutional_Design/b2/paper/supplements")
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+SCRIPT_DIR = Path((_RR + "/b2/paper/supplements"))
 RAW_DIR = Path("/tmp/b2_phase4")
 DATE_STAMP = "2026-05-27"
 

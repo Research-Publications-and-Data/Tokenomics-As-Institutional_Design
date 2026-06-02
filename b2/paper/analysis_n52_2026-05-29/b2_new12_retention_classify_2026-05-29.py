@@ -39,7 +39,11 @@ READ-ONLY against persisted survivor lists; writes the retention vector + proven
 import csv, json, os, math
 import numpy as np, scipy.stats as ss
 
-A = "/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+A = _RR
 ADIR = os.path.join(A, "b2/paper/analysis_n52_2026-05-29")
 SURV = json.load(open(os.path.join(ADIR, "new12_unified_post_exclusion_top10_2026-05-29.json")))
 

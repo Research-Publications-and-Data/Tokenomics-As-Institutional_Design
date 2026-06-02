@@ -11,7 +11,11 @@ DOES NOT touch v3 or regression_data_april2026.csv.
 import csv, json, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-A = "/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+A = _RR
 ADIR = os.path.join(A, "b2/paper/analysis_n52_2026-05-29")
 OUTFILE = "/private/tmp/claude-501/-Users-zach-Tokenization-Systems-Website/443b94a2-eaac-43c5-8f84-87c7263d42ca/tasks/w1whhdeav.output"
 

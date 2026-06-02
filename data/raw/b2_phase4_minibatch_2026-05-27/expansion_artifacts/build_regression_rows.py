@@ -13,7 +13,11 @@ covariates absent.
 import csv, math, json
 from pathlib import Path
 
-REG = Path("/Users/zach/Tokenomics-As-Institutional_Design/data/processed/regression_data_april2026.csv")
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+REG = Path((_RR + "/data/processed/regression_data_april2026.csv"))
 SCHEMA_HEADERS = []
 with open(REG) as f:
     reader = csv.DictReader(f)
@@ -154,7 +158,7 @@ for sym, row in NEW_ROWS.items():
     row["revenue_source_onchain"] = "phase4_minibatch_defillama_proxy_partial"
 
 # Write rows to CSV (append)
-out_csv = Path("/Users/zach/Tokenomics-As-Institutional_Design/b2/paper/supplements/phase4_minibatch_regression_rows_2026-05-27.csv")
+out_csv = Path((_RR + "/b2/paper/supplements/phase4_minibatch_regression_rows_2026-05-27.csv"))
 with open(out_csv, "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=SCHEMA_HEADERS)
     w.writeheader()

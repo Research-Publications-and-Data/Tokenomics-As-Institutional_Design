@@ -19,7 +19,11 @@ import numpy as np
 import scipy.stats as ss
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-A = "/Users/zach/Tokenomics-As-Institutional_Design"
+import os as _os_anchor
+_RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
+while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
+    _RR = _os_anchor.path.dirname(_RR)
+A = _RR
 ADIR = os.path.join(A, "b2/paper/analysis_n52_2026-05-29")
 SEC = {"DePIN": "DePIN", "DeFi": "DeFi", "L1_L2_Infra": "L1"}
 MATCH_FLOOR = 7
