@@ -1,5 +1,5 @@
-import csv
-rows=list(csv.DictReader(open("/tmp/IO_holders_repull_2026-05-31.csv")))
+import csv, os
+rows=list(csv.DictReader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "IO_holders_repull_2026-05-31.csv"))))
 IO_CEX={  # Nansen-labeled CEX in IO top-50 (2026-05-31)
  "5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi9":"Binance Wallet",
  "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM":"Binance Deposits",

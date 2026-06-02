@@ -1,7 +1,7 @@
 import csv, os, math
 import numpy as np
 from scipy import stats as ss
-exec(open("/tmp/b2_full_cex_recompute.py").read().split("print(\"=\"*120)")[0])  # reuse loaders, cur, frame, NEW_CEX, hhi_topn
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "b2_full_cex_recompute.py")).read().split("print(\"=\"*120)")[0])  # reuse loaders, cur, frame, NEW_CEX, hhi_topn (loader promoted from /tmp to in-repo sibling)
 # Build final new HHIs from holder-list recompute (all NEW_CEX), then override IO with fresh pull value
 newh={}
 for tok in NEW_CEX:
