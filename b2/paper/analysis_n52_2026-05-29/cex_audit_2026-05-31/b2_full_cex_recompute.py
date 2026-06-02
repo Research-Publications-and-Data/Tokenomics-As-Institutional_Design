@@ -7,7 +7,9 @@ import csv, os, math
 import numpy as np
 from scipy import stats as ss
 
-SIB = "/Users/zach/Tokenomics-As-Institutional_Design"
+SIB = os.path.abspath(__file__)  # anchor to repo root (dir containing reproduce.py) so this runs on any clone
+while SIB != os.path.dirname(SIB) and not os.path.exists(os.path.join(SIB, "reproduce.py")):
+    SIB = os.path.dirname(SIB)
 HLD = [os.path.join(SIB, "data/raw/holder_lists"), "/Users/zach/b2-governance-data/data/raw/holder_lists"]
 FRAME = os.path.join(SIB, "data/processed/regression_data_april2026.csv")
 ADIR = os.path.join(SIB, "b2/paper/analysis_n52_2026-05-29")
