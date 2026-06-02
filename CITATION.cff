@@ -9,18 +9,20 @@ authors:
     email: "zach@tokenization.systems"
     affiliation: "Tokenization Systems"
 abstract: >-
-  A 40-protocol cross-section documents that initial token allocation design
-  does not predict post-distribution governance concentration (r = 0.04,
-  p = 0.84, N = 37). Protocols with generous community distributions exhibit
-  concentration patterns similar to those with heavy insider allocations.
-  Sector membership predicts concentration (DePIN more concentrated than
-  DeFi, Mann-Whitney p = 0.020, Cohen&apos;s d = 0.94; robust across all 30
-  leave-one-out iterations; permutation p = 0.003) after adjusting for
-  protocol age, log fully diluted valuation, and insider allocation.
-  Delegation universally amplifies governance concentration across nine
-  of ten protocols in the voting-layer subsample (range 1.2x to 11.4x;
-  mean 5.3x), with one structural exception (ENS at 0.39x); magnitude
-  varies by institutional design within sector. The exclusion methodology
+  A 52-protocol cross-section documents that initial token allocation design
+  does not predict post-distribution governance concentration (insider
+  allocation Pearson r = 0.07, p = 0.68, N = 37). Protocols with generous
+  community distributions exhibit concentration patterns similar to those
+  with heavy insider allocations. Sector membership predicts concentration
+  (DePIN more concentrated than DeFi, Mann-Whitney p = 0.011, Cohen&apos;s
+  d = 1.05; robust across all 30 leave-one-out iterations; permutation
+  p = 0.004) after adjusting for protocol age, log fully diluted valuation,
+  and insider allocation. Delegation amplifies governance concentration
+  across thirteen of eighteen protocols in the voting-layer subsample
+  (range 2.5x to 25.6x; mean approximately 6.8x, median 4.4x), with five
+  structural exceptions showing dispersion (ENS 0.48x, GMX 0.87x, HNT
+  0.26x to 0.39x, JUP 0.12x, and LPT 0.27x); magnitude varies by
+  institutional design within sector. The exclusion methodology
   identifies 133 address exclusions across 38 protocols (125 unique
   addresses; five recur across multiple protocols) controlled by
   protocols themselves that appear on holder lists but cannot vote;

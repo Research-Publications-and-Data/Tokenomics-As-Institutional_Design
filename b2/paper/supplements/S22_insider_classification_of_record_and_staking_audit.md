@@ -52,18 +52,18 @@ These per-survivor insider counts are the insider-retention regressor used in th
 
 ### 1.3 Where the classification of record sits among the six schemes
 
-The main text reports that the DePIN sector coefficient stays positive and significant under six independent insider-classification schemes, with two-sided p-values from 0.0058 to 0.0187 (all below 0.02). The six schemes and their reproduced retention-specification DePIN p-values are:
+The main text reports that the DePIN sector coefficient stays positive and significant under six independent insider-classification schemes, with two-sided p-values from 0.0013 to 0.0082 (all below 0.01). The six schemes and their reproduced retention-specification DePIN p-values are:
 
 | Scheme (descriptive label) | DePIN p |
 |---|---:|
-| Keyword-floor lower bound (any treasury or multisig keyword counted insider) | 0.0058 |
-| Reliability-gated reviewed (reviewed where the current label reliably matches; prior coding retained elsewhere) | 0.0090 |
-| Evidence-traced classification of record (entity labels plus deployer-and-signer tracing) | 0.0139 |
-| Adversarially reviewed (full adoption of the reviewed labels) | 0.0148 |
-| Original cohort-baseline classification | 0.0168 |
-| Gap-filled resolved (most permissive gap-filled variant) | 0.0187 |
+| Keyword-floor lower bound (any treasury or multisig keyword counted insider) | 0.0013 |
+| Reliability-gated reviewed (reviewed where the current label reliably matches; prior coding retained elsewhere) | 0.0037 |
+| Evidence-traced classification of record (entity labels plus deployer-and-signer tracing) | 0.0050 |
+| Adversarially reviewed (full adoption of the reviewed labels) | 0.0054 |
+| Original cohort-baseline classification | 0.0072 |
+| Gap-filled resolved (most permissive gap-filled variant) | 0.0082 |
 
-The classification of record sits inside this range at 0.0139. Because it corrects the over-count present in keyword-only coding (the team-confirmed-multisig rule de-counts independent holders' Safes), the sector signal is, if anything, sharpest at the keyword floor and remains comfortably significant under the more conservative classification of record. The insider-retention regressor itself is not significant under any of the six schemes (the channel-shift noted in the main text), so the result is carried by the sector channel, not the insider-retention channel, regardless of classification choice.
+The classification of record sits inside this range at 0.0050. Because it corrects the over-count present in keyword-only coding (the team-confirmed-multisig rule de-counts independent holders' Safes), the sector signal is, if anything, sharpest at the keyword floor and remains comfortably significant under the more conservative classification of record. The insider-retention regressor itself is not significant under any of the six schemes (the channel-shift noted in the main text), so the result is carried by the sector channel, not the insider-retention channel, regardless of classification choice.
 
 ---
 
@@ -104,7 +104,7 @@ Eleven independent (not insider):
 
 ### 2.3 Net effect
 
-The eleven de-counted independent Safes are the difference between a keyword-only insider tally and the classification of record. Their removal is why the keyword-floor scheme reads as a lower bound on the DePIN p-value (0.0058) and the classification of record reads slightly more conservative (0.0139): the keyword rule attributes independent holders' Safes to protocol teams, modestly inflating measured insider retention and tightening the apparent sector contrast. The classification of record reverses that, and the sector result survives the reversal. Two additional protocol-team Safes that are not part of the bare-label seventeen (one MakerDAO Safe confirmed through its own GnosisSafe deployer trace, plus the labeled team Safes carried by entity label) are counted in Part 1 directly.
+The eleven de-counted independent Safes are the difference between a keyword-only insider tally and the classification of record. Their removal is why the keyword-floor scheme reads as a lower bound on the DePIN p-value (0.0013) and the classification of record reads slightly more conservative (0.0050): the keyword rule attributes independent holders' Safes to protocol teams, modestly inflating measured insider retention and tightening the apparent sector contrast. The classification of record reverses that, and the sector result survives the reversal. Two additional protocol-team Safes that are not part of the bare-label seventeen (one MakerDAO Safe confirmed through its own GnosisSafe deployer trace, plus the labeled team Safes carried by entity label) are counted in Part 1 directly.
 
 ---
 
@@ -122,7 +122,7 @@ For ENA, the equivalent attribution moves a much smaller share: 0.43 percent of 
 
 Livepeer governance operates a delegated bloc-voting model: delegators bond LPT to orchestrators, who then vote the aggregate bonded stake through the bonding manager. The governance-relevant concentration is therefore the distribution of bonded stake across orchestrators, not the raw token-holder distribution. Computed over the 100 active orchestrators (as of the Arbitrum block recorded in the replication artifact), the orchestrator-level bloc-voting HHI is 0.0535, against a raw post-exclusion token-holder HHI of 0.198868 for the same protocol. The orchestrator-level concentration is roughly 3.7 times lower than the holding concentration (a ratio of about 0.27). Including the inactive-but-bonded orchestrators moves the figure only from 0.0535 to 0.0524, so the result is not an artifact of the active-set cutoff.
 
-This makes Livepeer the most pronounced DePIN governance disperser, at a 0.27 ratio below Helium's 0.35 to 0.53 vote-weight-mechanism range, joining the delegation-disperses exceptions documented for ENS, GMX, Helium, and Jupiter. Helium is the other DePIN-sector disperser, so Livepeer is the most pronounced rather than the only DePIN dispersion exception. The frame holding-HHI for Livepeer is unchanged at 0.198868; the orchestrator-level figure is reported as an additional voting-versus-holding data point in Section 4.5, not as a substitute for the holding measure.
+This makes Livepeer the most pronounced DePIN governance disperser, at a 0.27 ratio, joining the delegation-disperses exceptions documented for ENS, GMX, Helium, and Jupiter. Helium is the other DePIN-sector disperser, so Livepeer is the most pronounced rather than the only DePIN dispersion exception. The frame holding-HHI for Livepeer is unchanged at 0.198868; the orchestrator-level figure is reported as an additional voting-versus-holding data point in Section 4.5, not as a substitute for the holding measure.
 
 ### 3.3 What the staking audit does not change
 
@@ -142,11 +142,11 @@ python reproduce.py
 
 It reconciles, and this file has reproduced, the following load-bearing numbers:
 
-- maturity-specification DePIN coefficient, log-HHI, p = 0.0197 (exact); same-signed and significant on the untransformed-HHI measure (coefficient +0.035, p = 0.030), so the sector result holds under both the log and the raw concentration measures;
-- retention-specification DePIN coefficient under the evidence-traced classification of record, p = 0.0139 (exact);
-- full-frame Mann-Whitney DePIN against DeFi, p = 0.0234, Cohen's d = 0.939 (distinct from, and reported alongside, the balanced-30 binary of record at p = 0.0202, d = 0.940, which is preserved unchanged);
+- maturity-specification DePIN coefficient, log-HHI, p = 0.0107 (exact); same-signed and significant on the untransformed-HHI measure (coefficient +0.036, p = 0.019), so the sector result holds under both the log and the raw concentration measures;
+- retention-specification DePIN coefficient under the evidence-traced classification of record, p = 0.0050 (exact);
+- full-frame Mann-Whitney DePIN against DeFi, p = 0.0172, Cohen's d = 1.052 (distinct from, and reported alongside, the balanced-30 binary of record at p = 0.0114, d = 1.048, which is preserved unchanged);
 - insider-retention de-tautology on the established-protocol cohort, Spearman rho = 0.544 (the regressor remains not significant at the full sample, the channel-shift).
 
 **Six-classification re-estimation harness.** The harness that re-estimates the retention specification under all six insider-classification schemes, producing the per-scheme DePIN p-values tabulated in Part 1.3, is persisted in the insider-reclassification subdirectory of the replication package, together with the six insider-retention vectors it reads.
 
-**Persisted artifacts cited by this file.** The traced per-survivor classification spine (all ten survivors of every protocol, with rank, share, label, entity type, classification reason, and traced source), the insider-retention vector of record, the seventeen-Safe deployer-and-signer verdicts, the AAVE and ENA staking-attribution recomputation, and the Livepeer orchestrator-level bonded-stake table and HHI computation are all persisted in the insider-reclassification and staking-audit subdirectories of the replication package. The address-by-address exclusion methodology that produces the survivors is documented in the exclusions log (`data/processed/exclusions_log.csv`); the empirical pipeline specification is in Supplementary File S5; the per-scheme classification robustness across the broader specification grid is in Supplementary Files S10 and S12.
+**Persisted artifacts cited by this file.** The traced per-survivor classification spine (all ten survivors of every protocol, with rank, share, label, entity type, classification reason, and traced source), the insider-retention vector of record, the seventeen-Safe deployer-and-signer verdicts, the AAVE and ENA staking-attribution recomputation, and the Livepeer orchestrator-level bonded-stake table and HHI computation are all persisted in the insider-reclassification and staking-audit subdirectories of the replication package. The address-by-address exclusion methodology that produces the survivors is documented in Supplementary File S6; the empirical pipeline specification is in Supplementary File S5; the per-scheme classification robustness across the broader specification grid is in Supplementary Files S10 and S12.

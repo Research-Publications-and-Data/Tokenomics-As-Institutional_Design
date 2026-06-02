@@ -39,7 +39,7 @@ ENS top-1 delegate (fireeyesdao.eth) holds 7.67% share with SS top-1 7.96% (+0.2
 
 The pattern matches UNI Tally (+0.20pp; top-1 6.99% share / 7.00% SS). Both protocols have broadly-distributed delegate weight at the top such that no single delegate is pivotal in materially more permutations than their share would predict.
 
-**Significance for §4.5 framing:** ENS's DISPERSE classification (Table 6 ratio 0.45x) is reinforced from a sister angle: not just low voting-HHI but low pivotal-power amplification means ENS top delegates have neither concentrated weight nor disproportionate pivotal power. Strongly DISPERSED across both axes.
+**Significance for §4.5 framing:** ENS's DISPERSE classification (Table 6 ratio 0.48x) is reinforced from a sister angle: not just low voting-HHI but low pivotal-power amplification means ENS top delegates have neither concentrated weight nor disproportionate pivotal power. Strongly DISPERSED across both axes.
 
 ---
 

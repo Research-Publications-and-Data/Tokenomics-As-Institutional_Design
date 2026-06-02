@@ -1,4 +1,4 @@
-# Supplementary File S16a: Aethir, IoTeX, and ENS sensitivity analyses
+# Supplementary File S16: Aethir / IoTeX / ENS sensitivity analyses (cycle 13 audit-trail)
 
 **Companion to:** B2 paper *Tokenomics as Applied Political Philosophy: Governance Concentration Beyond Token Allocation* (Section 4.8 Limitations). Generated 2026-05-22.
 
@@ -6,7 +6,9 @@
 
 ## Abstract
 
-This supplement documents per-protocol PCA-exclusion sensitivity analyses surfaced during the 2026-05-19 universal verification audit cycle, addressing protocol-controlled-address (PCA) classification edge cases for Aethir (4 top-holder verifications), IoTeX (Genesis-burn precompile slot completeness audit), and ENS (Cold Wallet exclusion). The audit cycle confirmed one additional Aethir Safe multisig PCA, two missed IoTeX Genesis-burn precompile exclusions, and one missed ENS Cold Wallet exclusion. All three cascade updates preserve direction of effect and statistical significance of the headline DePIN-vs-DeFi sector contrast; the audit-trail detail provides the per-protocol sensitivity-check transparency that Reviewer 1 R2 feedback specifically flagged.
+This supplement documents per-protocol PCA-exclusion sensitivity analyses surfaced during the 2026-05-19 universal verification audit cycle, addressing protocol-controlled-address (PCA) classification edge cases for Aethir (4 top-holder verifications), IoTeX (Genesis-burn precompile slot completeness audit), and ENS (Cold Wallet exclusion). The audit cycle confirmed one additional Aethir Safe multisig PCA, two missed IoTeX Genesis-burn precompile exclusions, and one missed ENS Cold Wallet exclusion. All three cascade updates preserve direction of effect and statistical significance of the headline DePIN-vs-DeFi sector contrast; the audit-trail detail provides the per-protocol sensitivity-check transparency that Reviewer 1 R2 feedback specifically flagged. 
+
+**Supersession note.** This is a point-in-time record of the 2026-05-19 verification cycle (cycle 13). The per-protocol PCA-exclusion edge cases documented below (Aethir Safe multisig, IoTeX Genesis-burn precompiles, ENS Cold Wallet) remain of-record. The downstream sector and per-protocol HHIs reported here as cycle-13 cascade effects (the DePIN-vs-DeFi sector mean and Mann-Whitney significance; the ENS and L1/L2 per-protocol HHIs) were subsequently updated by the 2026-05-31 exchange-custody completion cascade and the 2026-06-01 disperser-ratio empirical upgrade; of-record values are in Section 4.3, Table 3, and Supplementary File S0.
 
 ## Cross-reference
 
@@ -22,7 +24,7 @@ The Aethir holding HHI was revised in the R2 cascade via a supplementary verific
 
 **Aethir-only sub-cascade effects (small):**
 
-- DePIN sector mean: 0.077 to 0.078
+- DePIN sector mean: 0.077 → 0.078
 - DePIN-vs-DeFi Mann-Whitney p-value: 0.018 (unchanged)
 - Cohen's d: 0.99 (up from 0.98)
 - LOO 30 of 30 significant-iteration result: preserved
@@ -30,11 +32,11 @@ The Aethir holding HHI was revised in the R2 cascade via a supplementary verific
 
 **Three additional top holders verified but not excluded from canonical methodology:**
 
-1. **0x33548...**: exhibits a distribution-wallet pattern (13 small-amount transfers; EOA without Etherscan label). Flagged as Class 1 candidate pending inter-rater reliability cycle.
+1. **0x33548...** — exhibits a distribution-wallet pattern (13 small-amount transfers; EOA without Etherscan label). Flagged as Class 1 candidate pending inter-rater reliability cycle.
 
-2. **0x5a4a...**: a 21-day-old EOA funded by a single source with 100 percent ATH portfolio. Flagged as a possible strategic-allocation recipient pending inter-rater reliability cycle.
+2. **0x5a4a...** — a 21-day-old EOA funded by a single source with 100 percent ATH portfolio. Flagged as a possible strategic-allocation recipient pending inter-rater reliability cycle.
 
-3. **0xaf8d...**: a 1.7-year-old EOA with 286 transactions. Deeper transfer-pattern analysis (2026-05-19) shows systematic outflows to the ATH token contract itself (regular 3 to 10 million ATH transfers every 1 to 3 days over the most recent 45-day window; no CEX-counterparty outflows visible). The token-contract-recipient pattern is consistent with treasury, vesting unlock, or staking-pool interactions rather than EOA hodling or market-maker behavior, elevating 0xaf8d... from indeterminate to a likely Class 1 or Class 4 candidate; the formal classification remains pending inter-rater reliability review.
+3. **0xaf8d...** — a 1.7-year-old EOA with 286 transactions. Deeper transfer-pattern analysis (2026-05-19) shows systematic outflows to the ATH token contract itself (regular 3 to 10 million ATH transfers every 1 to 3 days over the most recent 45-day window; no CEX-counterparty outflows visible). The token-contract-recipient pattern is consistent with treasury, vesting unlock, or staking-pool interactions rather than EOA hodling or market-maker behavior, elevating 0xaf8d... from indeterminate to a likely Class 1 or Class 4 candidate; the formal classification remains pending inter-rater reliability review.
 
 **Sensitivity scenarios:**
 
@@ -50,9 +52,9 @@ The same 2026-05-19 universal verification cycle identified two additional misse
 
 **Cascade effects:**
 
-- IoTeX HHI: 0.189 to 0.081 (substantial shift; the missed exclusions accounted for ~17.5% of supply at the protocol level)
-- DePIN sector mean: 0.078 to 0.071
-- DePIN-vs-DeFi Mann-Whitney significance: p = 0.020 (preserved)
+- IoTeX HHI: 0.189 → 0.081 (substantial shift; the missed exclusions accounted for ~17.5% of supply at the protocol level)
+- DePIN sector mean: 0.078 → 0.071 at this cycle; of-record 0.067 after the subsequent 2026-05-31 exchange-custody completion cascade (Section 4.3; Supplementary File S0)
+- DePIN-vs-DeFi Mann-Whitney significance: p = 0.020 (preserved) at this cycle; of-record p = 0.011 after the same cascade (Section 4.3; Supplementary File S0)
 - LOO 30 of 30 significant-iteration robustness: preserved
 
 The cascade strengthens the universal-audit consistency of the PCA-exclusion methodology by closing a log omission surfaced during the user-flagged 2026-05-19 audit cycle.

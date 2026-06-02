@@ -14,15 +14,15 @@
 
 ## Summary
 
-A 40-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (r = 0.04, p = 0.84, N = 37). Protocols with generous community distributions exhibit concentration patterns similar to those with heavy insider allocations.
+A 52-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (insider allocation Pearson r = 0.07, p = 0.68, N = 37). Protocols with generous community distributions exhibit concentration patterns similar to those with heavy insider allocations.
 
 **Supporting findings:**
 
-- **Sector contrast.** DePIN protocols are more concentrated than DeFi protocols (Mann-Whitney p = 0.020, Cohen's d = 0.94; robust across all 30 leave-one-out iterations; permutation p = 0.012); the effect survives multivariate adjustment for protocol age, log fully diluted valuation, and insider allocation across three nested OLS specifications (adjusted R² 0.14 to 0.17).
+- **Sector contrast.** DePIN protocols are more concentrated than DeFi protocols (Mann-Whitney p = 0.011, Cohen's d = 1.05; robust across all 30 leave-one-out iterations; permutation p = 0.004); the effect survives multivariate adjustment for protocol age, log fully diluted valuation, and insider allocation across three nested OLS specifications (adjusted R² 0.14 to 0.17).
 - **Insider retention.** Protocols with more insider wallets in their top-holder sets exhibit higher concentration among non-insider holders (Spearman rho = 0.54, p = 0.001, N = 34), indicating insider-heavy protocols develop concentrated governance ecosystems, not merely concentrated insider positions.
-- **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.69, p = 0.001, N = 20) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation weakens to borderline significance (r = 0.45, p = 0.052).
-- **Delegation amplification.** Voting-power HHI exceeds holding HHI by factors of 1.2x to 11.4x across nine of ten protocols sampled (mean 5.3x), with one structural exception (ENS at 0.39x, reflecting a mature delegate program where holders systematically delegate to a broad community-delegate set). Two vote-escrowed protocols (Curve, Balancer) form a distinct class showing extreme amplification (15x and 21x) under ve-token lock-duration weighting.
-- **Inequality versus concentration.** Token inequality is severe in every protocol (Gini 0.73 to 0.98) while governance concentration varies across two orders of magnitude (HHI 0.004 to 0.199); the moderate correlation between them (r = 0.54) indicates inequality metrics cannot substitute for direct concentration measurement.
+- **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.62, p = 0.002, N = 23) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation collapses to a null (r = 0.07, p = 0.76, N = 22).
+- **Delegation amplification.** Voting-power HHI exceeds holding HHI by factors of 2.5x to 25.6x across thirteen of eighteen protocols sampled (mean approximately 6.8x, median 4.4x), with five structural exceptions showing dispersion (ENS 0.48x, GMX 0.87x, HNT 0.26x to 0.39x, JUP 0.12x, and LPT 0.27x), reflecting mature delegate programs where holders systematically delegate to broad community-delegate sets. Three vote-escrowed protocols (Curve, Balancer, Frax) form a distinct class showing extreme amplification (15x, 21x, and 11.4x respectively) under ve-token lock-duration weighting.
+- **Inequality versus concentration.** Token inequality is severe in every protocol (Gini 0.52 to 0.99) while governance concentration varies across two orders of magnitude (HHI 0.005 to 0.199); the moderate correlation between them (r = 0.58) indicates inequality metrics cannot substitute for direct concentration measurement.
 
 **Methodology contribution.** The exclusion methodology applies 133 address exclusions across 38 protocols (125 unique addresses; five recur across multiple protocols, including Binance 8 hot wallet across four tokens) controlled by protocols themselves (staking contracts, exchange custodians, vesting locks, and treasuries) that appear on holder lists but cannot vote. Correcting for these changes affected protocols' HHI by up to 18x (RENDER at 17.9x, where Wormhole Token Bridge custody dominated naive top-1000 holdings; median 2.3x across 32 protocols with complete pre-exclusion and post-exclusion HHI logged; see `b2/paper/supplements/hhi_inflation_factors_2026-05-19.md`). Prior studies computing token HHI without this correction measured protocol architecture, not governance concentration.
 
@@ -45,7 +45,7 @@ A 40-protocol cross-section documents that initial token allocation design does 
 │       └── B3_GeoDePIN_Final_v8.docx
 ├── data/
 │   ├── processed/                  # Master datasets
-│   │   ├── regression_data_april2026.csv    # 40 protocols, 39 variables
+│   │   ├── regression_data_april2026.csv    # 52 protocols, 39 variables
 │   │   ├── table6_ols_output.json           # OLS regression output (Table 6)
 │   │   ├── exclusions_log.csv               # 133 protocol-controlled address exclusions across 38 protocols (125 unique)
 │   │   ├── insider_classification.csv       # 390 classifications
@@ -82,13 +82,13 @@ A 40-protocol cross-section documents that initial token allocation design does 
 
 | Finding | Statistic | Sample |
 |---|---|---|
-| Allocation null | r = 0.17, p = 0.32 | N = 37 |
-| DePIN-DeFi sector gap | Mann-Whitney p = 0.020, Cohen's d = 0.94; 30/30 LOO robust; permutation p = 0.012 | DePIN = 15, DeFi = 15 |
+| Allocation null (insider allocation Pearson) | r = 0.07, p = 0.68 | N = 37 |
+| DePIN-DeFi sector gap | Mann-Whitney p = 0.011, Cohen's d = 1.05; 30/30 LOO robust; permutation p = 0.004 | DePIN = 15, DeFi = 15 |
 | Insider retention (non-insider HHI correlation) | Spearman rho = 0.54, p = 0.001 | N = 34 |
-| Subsidy correlation (Livepeer-driven) | r = 0.69, p = 0.001 (full) / r = 0.45, p = 0.052 (ex-Livepeer; borderline) | N = 20 / N = 19 |
-| Gini inequality range | 0.73 to 0.99 | N = 40 |
-| HHI concentration range | 0.005 to 0.199 | N = 40 |
-| Delegation amplification (universal, non-ve-token) | 1.2x to 11.4x; mean 5.3x | N = 10 (9 amplify; ENS 0.39x exception) |
+| Subsidy correlation (Livepeer-driven) | r = 0.62, p = 0.002 (full) / r = 0.07, p = 0.76 (ex-Livepeer; null) | N = 23 / N = 22 |
+| Gini inequality range | 0.52 to 0.99 | N = 52 |
+| HHI concentration range | 0.005 to 0.199 | N = 52 |
+| Delegation amplification (universal, non-ve-token) | 2.5x to 25.6x; mean approximately 6.8x, median 4.4x | N = 18 (13 amplify; 5 dispersers: ENS 0.48x, GMX 0.87x, HNT 0.26x-0.39x, JUP 0.12x, LPT 0.27x) |
 | Helium S2R (companion B3) | 1.84 (Feb 2026) | 34-month trajectory |
 
 ## Reproduction
@@ -124,7 +124,7 @@ CODEBOOK hazards a replicator should know (documented so they are not re-hit):
 
 ### Steps
 
-1. **Cross-sectional analysis:** `data/processed/regression_data_april2026.csv` is the analysis-ready dataset (40 protocols, 39 variables).
+1. **Cross-sectional analysis:** `data/processed/regression_data_april2026.csv` is the analysis-ready dataset (52 protocols, 39 variables).
 2. **OLS regression (Table 6):** Run `analysis/full_regression.R`. Pre-computed output: `data/processed/table6_ols_output.json`.
 3. **Python pipeline:** Run scripts in `analysis/` (numbered order). Key output: `outputs/regression_results.json`.
 4. **Dune queries:** Templates in `data/dune_queries/`. See `saved_query_ids.md` for pre-saved query IDs.

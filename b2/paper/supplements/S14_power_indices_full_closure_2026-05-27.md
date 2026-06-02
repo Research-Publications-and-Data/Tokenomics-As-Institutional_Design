@@ -38,7 +38,7 @@ Phase 1 of B2 R3 omnibus closed at **N=16 cross-source observations** (7 Tally +
 | Share top-1 | 8.40% |
 | SS-share divergence | **+0.35pp** (minimal; track-share class) |
 
-**Interpretation:** JUP voting is highly distributed despite token-holding concentration (canonical voting-HHI 0.0055 vs holding 0.096; ratio 0.057x is the most-extreme dispersion in Table 6). Phase 1 SS computation confirms minimal pivotal-power amplification: JUP's top-1 voter is only +0.35pp more pivotal than their direct share. **The 0.057x dispersion is REAL and stable**: not just at the Herfindahl axis but at the pivotal-power axis as well. JUP fits the track-share amplification class (per S14 cycle 2 addendum 3-class typology).
+**Interpretation:** JUP voting is highly distributed despite token-holding concentration (canonical voting-HHI 0.0055 vs holding 0.045; ratio 0.12x is the most-extreme dispersion in Table 6). Phase 1 SS computation confirms minimal pivotal-power amplification: JUP's top-1 voter is only +0.35pp more pivotal than their direct share. **The 0.12x dispersion is REAL and stable**: not just at the Herfindahl axis but at the pivotal-power axis as well. JUP fits the track-share amplification class (per S14 cycle 2 addendum 3-class typology).
 
 ### HNT (Helium; holder-proxy)
 
@@ -162,7 +162,7 @@ Top-4 are absolutely stable (WXM, DIMO, DRIFT, HNT) across all quorums. Rank-5 a
 2. **Coordinated-amplification** (>2pp SS-share at q=0.50): AAVE, GMX, COMP-snap, LDO, HNT, DRIFT. Top voter has structural pivotal power above their share due to second-tier delegate distribution.
 3. **Track-share** (<2pp SS-share at q=0.50): UNI, COMP-tally, ARB, OP, ENS, DIMO, JUP. Top voter's pivotal power closely tracks their direct share; broadly-distributed governance.
 
-**Implication for "predominant" framing in §4.5:** the 3-class typology is sister-distinction to amplification-vs-dispersion. A protocol can be DISPERSE on the voting-HHI / holding-HHI ratio axis (e.g., JUP 0.057x) AND track-share on the SS-share divergence axis (JUP +0.35pp). Both axes describe related-but-distinct aspects of governance concentration.
+**Implication for "predominant" framing in §4.5:** the 3-class typology is sister-distinction to amplification-vs-dispersion. A protocol can be DISPERSE on the voting-HHI / holding-HHI ratio axis (e.g., JUP 0.12x) AND track-share on the SS-share divergence axis (JUP +0.35pp). Both axes describe related-but-distinct aspects of governance concentration.
 
 ---
 
