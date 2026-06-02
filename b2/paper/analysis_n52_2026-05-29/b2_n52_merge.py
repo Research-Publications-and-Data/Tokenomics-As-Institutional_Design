@@ -47,7 +47,7 @@ for proto in ("Frax Finance", "Synthetix", "Gnosis"):
     new_rows.append(r)
 
 # 2) ALGO from holding-HHI json (clone B)
-algo = json.load(open("/Users/zach/b2-governance-data/data/processed/ALGO_holding_hhi_2026-04-30.json"))
+algo = json.load(open(f"{DATA}/data/processed/ALGO_holding_hhi_2026-04-30.json"))
 r = blank_row()
 r.update({
     "protocol": "Algorand", "token": "ALGO", "category": "L1_L2_Infra", "chain": "algorand",
@@ -81,7 +81,7 @@ new_rows.append(r)
 
 # 4) TAO new principal-excluded row (0.0075)
 tao_h = list(csv.DictReader(open(f"{DATA}/data/raw/holder_lists/TAO_holders.csv")))
-tao_reg = {x["coldkey"] for x in json.load(open("/Users/zach/b2-governance-data/data/processed/tao_exchange_coldkeys.json"))}
+tao_reg = {x["coldkey"] for x in json.load(open(f"{DATA}/data/processed/tao_exchange_coldkeys.json"))}
 tao_kept = [float(x["balance"]) for x in tao_h if x["address"] not in tao_reg]
 _, _, t1, t5, t10 = hhi_topN(tao_kept)
 r = blank_row()

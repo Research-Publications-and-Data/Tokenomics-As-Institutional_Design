@@ -20,7 +20,7 @@ NOT included in C-narrow per F4 downgrade (ranks 10/11/12 funded by
 163egH5d... distributor; exact-amount recurring batches at same block is
 staking-rewards-pallet batch payout signature, NOT CEX custody).
 """
-import csv
+import csv, os
 
 # === Class 2 + Class 3 refined exclusion set (10 PCAs) ===
 EXISTING_PCAS = {
@@ -58,9 +58,9 @@ LIKELY_CEX_NARROW = {
     "12ouvKSvKnXAdXFR5oCL1vXimWrkDWG3joMNw3ETupTRs1ab",
 }
 
-# Load top-1000 holders
+# Load top-1000 holders; committed in-repo beside this script
 holders = []
-with open("/tmp/dot_assethub_holders.csv") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "dot_assethub_holders_2026-05-27.csv")) as f:
     for row in csv.DictReader(f):
         holders.append({
             "rank": int(row["rank"]),

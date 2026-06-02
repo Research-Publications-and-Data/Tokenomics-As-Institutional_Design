@@ -20,11 +20,12 @@ PCA classification per B2 §3.8 five-class typology:
 """
 import csv
 import json
+import os
 from pathlib import Path
 
-# Load Subscan AssetHub holders (top-1000)
+# Load Subscan AssetHub holders (top-1000); committed in-repo beside this script
 holders = []
-with open("/tmp/dot_assethub_holders.csv") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "dot_assethub_holders_2026-05-27.csv")) as f:
     reader = csv.DictReader(f)
     for row in reader:
         holders.append({

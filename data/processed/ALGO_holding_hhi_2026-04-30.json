@@ -1,0 +1,39 @@
+{
+  "protocol": "Algorand",
+  "token": "ALGO",
+  "snapshot_date_anchor": "2026-04-30",
+  "source": "AlgoNode_indexer_v2_accounts",
+  "methodology": "Top-1000 holders by balance via currency-greater-than threshold paginated traversal; post-PCA exclusion HHI + Gini + topN_pct; current-state snapshot proxy for April 30, 2026 anchor; behavioral signature PCA classification for top tier (>= 10M ALGO) per the S21 4-property methodology",
+  "methodology_limitations": [
+    "Historical point-in-time multi-account queries unsupported on AlgoNode + Nodely public indexers; current-state snapshot used as proxy (~27 day forward delta from 2026-04-30 anchor).",
+    "Acquisition pagination capped at page 2 (2000 accounts above 100K ALGO threshold) due to indexer 'Result limit exceeded' error on an account with 1.7M asset opt-ins. Top-1000 by balance fully captured.",
+    "PCA classification uses behavioral signature heuristics (recv-only + tight-CP for Foundation/treasury; high-send + high-CP for CEX) when authoritative explorer labels are unavailable. Top tier (>= 10M ALGO; approximately top 30-50 accounts) systematically classified; mid/lower tier left as Class 0 Eligible by default.",
+    "Voting-session per-governor vote-weights NOT exposed by Algorand Foundation Governance API (only voting-session metadata accessible). Commitment-weight HHI methodology used as primary; analog to HNT VSR commitment-weight precedent at PAPER.md \u00a74.5.4 line 1826."
+  ],
+  "behavioral_signature_classifier_thresholds": {
+    "treasury_foundation_candidate": "balance >= 10M ALGO AND sent_ratio < 0.10 AND CPs < 30 AND 0 apps + 0 assets + no rekey",
+    "cex_hot_wallet_candidate": "balance >= 10M ALGO AND n_txs >= 100 AND CPs >= 100 AND sent_ratio >= 0.40"
+  },
+  "raw_holders_above_100K_algo_sampled": 1000,
+  "top1000_count": 1000,
+  "pca_class_counts": {
+    "0": 964,
+    "1": 0,
+    "2": 31,
+    "3": 0,
+    "4": 0,
+    "5": 5
+  },
+  "pca_excluded_count": 36,
+  "behavioral_classified_count": 80,
+  "eligible_n_holders": 964,
+  "total_balance_top1000_algo": 5303352512.764392,
+  "total_balance_eligible_algo": 3489093628.357169,
+  "hhi_post_pca": 0.059096455032309494,
+  "gini_post_pca": 0.8707158377557942,
+  "hhi_pre_pca": 0.03301320619115749,
+  "gini_pre_pca": 0.8872588327670589,
+  "top1_pct": 0.198744896912653,
+  "top5_pct": 0.42541417851960356,
+  "top10_pct": 0.5459989326400415
+}

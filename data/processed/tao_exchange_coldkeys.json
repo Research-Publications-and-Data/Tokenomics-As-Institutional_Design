@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Kraken Cold",
+    "coldkey": "5C5FQQSfuxgJc5sHjjAL9RKAzR98qqCV2YN5xAm2wVf1ctGR"
+  },
+  {
+    "name": "Taobridge",
+    "coldkey": "5HiveMEoWPmQmBAb8v63bKPcFhgTGCmST1TVZNvPHSTKFLCv"
+  },
+  {
+    "name": "Gate.io",
+    "coldkey": "5CNChyk2fnVgVSZDLAVVFb4QBTMGm6WfuQvseBG6hj8xWzKP"
+  },
+  {
+    "name": "Crypto.com",
+    "coldkey": "5CVSCaCXDRydd3Mkdbu2tHLNYxmNTSpy9yRixa1TRGvgRFS8"
+  },
+  {
+    "name": "Kraken Hot",
+    "coldkey": "5E2b2DcMd5W8MBhzTCFt63t2ZEN8RsRgL7oDd7BFYL9aMQux"
+  },
+  {
+    "name": "Binance",
+    "coldkey": "5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N"
+  },
+  {
+    "name": "MEXC",
+    "coldkey": "5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s"
+  },
+  {
+    "name": "Binance",
+    "coldkey": "5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi"
+  },
+  {
+    "name": "Bitget",
+    "coldkey": "5HbDZ6ULuwZegAMSPaS2kaUfBLMDaht5t48RcDrQATSgGCAR"
+  },
+  {
+    "name": "Bithumb",
+    "coldkey": "5EP5gJvve4PauTCHoiTcpVgsFCKNwVitBcrJbVYWbR5ZTwnU"
+  },
+  {
+    "name": "Kucoin",
+    "coldkey": "5CrmVKApX6sJybZaL1geHfzvHWeCpbavqrrXgYLCQmhehX2q"
+  }
+]

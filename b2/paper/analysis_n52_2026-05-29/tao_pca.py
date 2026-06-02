@@ -11,7 +11,7 @@ while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anc
     _RR = _os_anchor.path.dirname(_RR)
 DATA = _RR
 holders = list(csv.DictReader(open(f"{DATA}/data/raw/holder_lists/TAO_holders.csv")))
-reg = json.load(open("/Users/zach/b2-governance-data/data/processed/tao_exchange_coldkeys.json"))
+reg = json.load(open(f"{DATA}/data/processed/tao_exchange_coldkeys.json"))
 cex = {r["coldkey"]: r["name"] for r in reg}
 TAOBRIDGE = "5HiveMEoWPmQmBAb8v63bKPcFhgTGCmST1TVZNvPHSTKFLCv"  # Class-4 bridge custody
 
