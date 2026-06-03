@@ -233,10 +233,13 @@ save(fig, "fig4_sector_boxplot")
 
 
 # =============================================================================
-# FIGURE 5: Insider allocation scatter (N=37)
+# FIGURE 5: Insider allocation scatter (N=50, of-record allocation battery)
 # =============================================================================
 print("-- Fig 5: Allocation scatter")
-alloc = reg.dropna(subset=["insider_pct", "hhi"]).copy()
+# Of-record N=50 allocation battery: DePIN / DeFi / L1-L2-Infra with insider_pct + hhi,
+# excluding the Social_Dead protocol (Gitcoin). Reproduces the abstract allocation null
+# r=0.10, p=0.49 (the prior broad dropna included Gitcoin; the prior "N=37" was superseded).
+alloc = reg[reg["category"].isin(["DePIN", "DeFi", "L1_L2_Infra"])].dropna(subset=["insider_pct", "hhi"]).copy()
 alloc["insider_pct"] = pd.to_numeric(alloc["insider_pct"], errors="coerce")
 alloc = alloc.dropna(subset=["insider_pct"])
 print(f"  N={len(alloc)}")

@@ -11,7 +11,7 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 | Analysis | N | Notes |
 |---|---:|---|
 | Full cross-section (Table 3) | 52 | All protocols with post-exclusion holding HHI |
-| Bivariate allocation battery | 37 | Protocols with initial insider allocation data |
+| Bivariate allocation battery | 50 | Protocols with initial insider allocation data (of-record N=50; r=0.10) |
 | Covariate-complete powered model (Table 5, Model 4) | 50 | Sector + revenue intensity + maturity; 12.5 observations per predictor |
 | Retention specification (alternative Model 4) | 50 | HONEY carries a classification-of-record retention value (A7) |
 | DePIN vs DeFi Mann-Whitney (balanced sector contrast, of record) | 15 / 15 | 30 protocols total |
