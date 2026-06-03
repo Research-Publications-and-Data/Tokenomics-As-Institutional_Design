@@ -1,0 +1,351 @@
+{
+ "protocol": "GEODNET",
+ "token": "GEOD",
+ "chain": "polygon",
+ "metric": "voting-HHI per GEODNET governance improvement proposal (veNFT vote weight = nft + govStaking + superHexStaking + investor; vote-time stored userVoteMap)",
+ "methodology": "Per-proposal HHI over participating voter pool + per-signer max-weight aggregated HHI across the 9-GIP corpus; analog to PAPER.md s4.5.4 JUP/HNT/DRIFT/JTO per-signer max(weight) methodology. 4-source veNFT decomposition is a novel multi-axis surface.",
+ "aggregated_voting_hhi_per_signer_max_weight": 0.07286912794240413,
+ "n_unique_signers": 321,
+ "per_proposal_hhi_series": [
+  {
+   "label": "GIP-1",
+   "gip": "GIP336751715674082436",
+   "n_voters": 37,
+   "total_weight": 1787,
+   "hhi": 0.3215904582276586,
+   "agree_sum": 1786,
+   "against_sum": 1,
+   "pm_agree": 1786,
+   "pm_against": 1,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.0520523497917906,
+    "govStaking": 0.1497783783382459,
+    "superHexStaking": null,
+    "investor": 1.0
+   },
+   "per_source_total": {
+    "nft": 82,
+    "govStaking": 734,
+    "superHexStaking": 0,
+    "investor": 971
+   },
+   "quorum": 1532
+  },
+  {
+   "label": "GIP-2",
+   "gip": "GIP695741716474622802",
+   "n_voters": 77,
+   "total_weight": 1822,
+   "hhi": 0.1357358109988782,
+   "agree_sum": 1764,
+   "against_sum": 58,
+   "pm_agree": 1764,
+   "pm_against": 58,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.06808887872115302,
+    "govStaking": 0.10905822118149565,
+    "superHexStaking": null,
+    "investor": 0.5153534151454275
+   },
+   "per_source_total": {
+    "nft": 187,
+    "govStaking": 779,
+    "superHexStaking": 0,
+    "investor": 856
+   },
+   "quorum": 1589
+  },
+  {
+   "label": "GIP-3",
+   "gip": "GIP885291719988428966",
+   "n_voters": 94,
+   "total_weight": 3182,
+   "hhi": 0.15461578544618318,
+   "agree_sum": 3149,
+   "against_sum": 33,
+   "pm_agree": 3149,
+   "pm_against": 33,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.07988337335947886,
+    "govStaking": 0.07082447063602665,
+    "superHexStaking": null,
+    "investor": 0.38541319966505705
+   },
+   "per_source_total": {
+    "nft": 369,
+    "govStaking": 842,
+    "superHexStaking": 0,
+    "investor": 1971
+   },
+   "quorum": 2008
+  },
+  {
+   "label": "GIP-4",
+   "gip": "GIP783761722323309904",
+   "n_voters": 64,
+   "total_weight": 2778,
+   "hhi": 0.21289458830334612,
+   "agree_sum": 2729,
+   "against_sum": 49,
+   "pm_agree": 2729,
+   "pm_against": 49,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.14040816326530614,
+    "govStaking": 0.1310868044267396,
+    "superHexStaking": null,
+    "investor": 0.5440591047862858
+   },
+   "per_source_total": {
+    "nft": 280,
+    "govStaking": 817,
+    "superHexStaking": 0,
+    "investor": 1681
+   },
+   "quorum": 2293
+  },
+  {
+   "label": "GIP-5",
+   "gip": "GIP202381733411309930",
+   "n_voters": 62,
+   "total_weight": 5225,
+   "hhi": 0.19830926947643143,
+   "agree_sum": 4797,
+   "against_sum": 428,
+   "pm_agree": 4797,
+   "pm_against": 428,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.15898991560294706,
+    "govStaking": 0.13357224793323047,
+    "superHexStaking": null,
+    "investor": 0.35390334077709
+   },
+   "per_source_total": {
+    "nft": 573,
+    "govStaking": 795,
+    "superHexStaking": 0,
+    "investor": 3857
+   },
+   "quorum": 3509
+  },
+  {
+   "label": "GIP-6",
+   "gip": "GIP643631741949739805",
+   "n_voters": 142,
+   "total_weight": 5459,
+   "hhi": 0.08526835343125212,
+   "agree_sum": 3790,
+   "against_sum": 1669,
+   "pm_agree": 3790,
+   "pm_against": 1669,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.06910430839002267,
+    "govStaking": 0.06943615954782988,
+    "superHexStaking": null,
+    "investor": 0.5127121228203164
+   },
+   "per_source_total": {
+    "nft": 840,
+    "govStaking": 2656,
+    "superHexStaking": 0,
+    "investor": 1963
+   },
+   "quorum": 4778
+  },
+  {
+   "label": "GIP-7",
+   "gip": "GIP137951754696113256",
+   "n_voters": 118,
+   "total_weight": 8777,
+   "hhi": 0.12331658469799125,
+   "agree_sum": 7939,
+   "against_sum": 838,
+   "pm_agree": 7939,
+   "pm_against": 838,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.09400448865771609,
+    "govStaking": 0.18937491206622636,
+    "superHexStaking": null,
+    "investor": 0.5269603905939787
+   },
+   "per_source_total": {
+    "nft": 1273,
+    "govStaking": 4511,
+    "superHexStaking": 0,
+    "investor": 2993
+   },
+   "quorum": 6757
+  },
+  {
+   "label": "GIP-8",
+   "gip": "GIP976761754520391978",
+   "n_voters": 80,
+   "total_weight": 7354,
+   "hhi": 0.1708287571996214,
+   "agree_sum": 7103,
+   "against_sum": 251,
+   "pm_agree": 7103,
+   "pm_against": 251,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.1190881709634623,
+    "govStaking": 0.2727828448274284,
+    "superHexStaking": null,
+    "investor": 0.5271520568615464
+   },
+   "per_source_total": {
+    "nft": 668,
+    "govStaking": 3695,
+    "superHexStaking": 0,
+    "investor": 2991
+   },
+   "quorum": 6776
+  },
+  {
+   "label": "GIP-13",
+   "gip": "GIP159291773166301139",
+   "n_voters": 23,
+   "total_weight": 9490,
+   "hhi": 0.2628675739867044,
+   "agree_sum": 9490,
+   "against_sum": 0,
+   "pm_agree": 9490,
+   "pm_against": 0,
+   "crossval_agree_delta": 0,
+   "crossval_against_delta": 0,
+   "crossval_match": true,
+   "per_source_hhi": {
+    "nft": 0.45513496355247196,
+    "govStaking": 0.629444472210653,
+    "superHexStaking": null,
+    "investor": 0.45898027096663846
+   },
+   "per_source_total": {
+    "nft": 297,
+    "govStaking": 3675,
+    "superHexStaking": 0,
+    "investor": 5518
+   },
+   "quorum": 7978
+  }
+ ],
+ "sensitivity_bracket": {
+  "min": 0.08526835343125212,
+  "max": 0.3215904582276586,
+  "median": 0.1708287571996214,
+  "mean": 0.1850474646408963
+ },
+ "per_source_aggregated_hhi": {
+  "nft": 0.04792326621968577,
+  "govStaking": 0.14295360882156383,
+  "superHexStaking": null,
+  "investor": 0.16792865731607565
+ },
+ "crossval_all_proposals_match": true,
+ "source_axis_labels": {
+  "nft": "Location NFT",
+  "govStaking": "Locked GEOD (governance staking)",
+  "superHexStaking": "SuperHex-staked GEOD",
+  "investor": "Investor-tier (undocumented in public veNFT docs)"
+ },
+ "_provenance": {
+  "proxy": "0x5802590ef40956b2d7f3cc461a47de8b5aa787ed",
+  "implementation": "0x4852bbd5d25ea7090fda2e65a601871b3ac2a828",
+  "implementation_verified": false,
+  "proxy_type": "EIP-1967 transparent upgradeable proxy",
+  "chain": "polygon (chainid 137)",
+  "deployment_block": 56916594,
+  "token_GEOD": "0xAC0F66379A6d7801D7726d5a943356A172549Adb",
+  "no_events_emitted": "Governance contract emits zero events; voter enumeration via transaction-history (Etherscan V2 txlist) FROM-address extraction, NOT eth_getLogs event mining. Vote-time weights read from userVoteMap(address,string)=0x84bef87e.",
+  "vote_selectors": {
+   "0x5e707a4b": "agree vote (voteType=1)",
+   "0xb36140df": "against vote (voteType=2)"
+  },
+  "getters": {
+   "userVoteMap(address,string)": "0x84bef87e -> [voteType,nft,govStaking,superHexStaking,investor]",
+   "proposalMaps(string)": "0xe82137e2 -> [start,end,quorum,field3,proposer,agreePower,againstPower,passRate]"
+  },
+  "weight_basis": "vote-time stored veNFT weight (Path A); current-state UX API getUserVoteCountList overcounts because veNFT positions grew post-vote (verified on samples).",
+  "acquisition_date": "2026-05-28"
+ },
+ "verification": {
+  "crossval_all_9_proposals_exact": true,
+  "crossval_method": "sum(agree-voter vote-time veNFT) == proposalMaps.agreePower AND sum(against-voter) == proposalMaps.againstPower, per proposal, delta=0 for all 9",
+  "voteType_distribution": {
+   "agree(1)": 543,
+   "against(2)": 154
+  },
+  "revote_pairs_via_both_selectors": 0,
+  "investor_tier_holders": [
+   {
+    "addr": "0xdfafffd586c07f755b5caad0e9f32874f90b5034",
+    "investor_max": 3366
+   },
+   {
+    "addr": "0xb5942b0a87aa1e87beb5878d07f37dfdf36c6a3b",
+    "investor_max": 1844
+   },
+   {
+    "addr": "0x387857776dddf54d26af33633747098d0eb41315",
+    "investor_max": 1510
+   },
+   {
+    "addr": "0x3c3c8af4388374b84a1af56d469be1a4e8261f59",
+    "investor_max": 1482
+   },
+   {
+    "addr": "0x5bdf16759e1535ddad84cd43d9afcf2343795bcc",
+    "investor_max": 1149
+   },
+   {
+    "addr": "0x61257c071ed39f3cdadf775d4b4bd6cddbc4f59f",
+    "investor_max": 1138
+   },
+   {
+    "addr": "0x579b486ac055039a99bd60c8fbbbcf39114f8d55",
+    "investor_max": 670
+   },
+   {
+    "addr": "0xde06f1df26786f6837f1644dc698bfcc3b7afca8",
+    "investor_max": 398
+   }
+  ],
+  "superHexStaking_votetime_total": 0,
+  "superHexStaking_note": "Zero SuperHex-staked veNFT weight used for governance across all 9 GIPs at vote-time. SuperHex is a current-state veNFT source (UX API) but did not contribute governance vote weight in this corpus.",
+  "gip13_concentration": "23 voters; top 2 hold 68.2% (35.5% + 32.7%); top 3 hold 83.8% of 9490 weight.",
+  "aggregate_vs_perproposal_note": "Aggregated per-signer max-weight HHI (0.0729) is LOWER than every per-proposal HHI because the union signer pool (321) is larger than any single GIP voter pool (23-142). Per-proposal series (median 0.171) is the sensitivity bracket, analog to HNT 0.0261-0.0394."
+ },
+ "governance_design_class": "Multi-axis veNFT (Location NFT + Locked GEOD + SuperHex-staked GEOD + Investor-tier) with equalized 33 percent source caps per public docs; investor-tier is a 4th source undocumented in public veNFT docs and is the dominant vote-weight source in practice (total max-weight 11557 across 8 addresses).",
+ "cohort_cluster_placement": {
+  "JUP": 0.00546,
+  "HNT_bracket": [
+   0.0261,
+   0.0394
+  ],
+  "JTO": 0.0326,
+  "DRIFT": 0.0833,
+  "GEOD": 0.07286912794240413
+ }
+}

@@ -1,0 +1,100 @@
+{
+  "label": "DRIFT full on-chain community corpus (all-records; CSV-equivalent methodology)",
+  "program": "dgov7NC8iaumWw3k8TkmLDybvZBCmd1qwxgLAGAsWxf",
+  "governance": "EJ5kEb9XkQC4rbc7uM45xoLM8TiagGCLad5YpGtMyz4",
+  "mint": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+  "n_proposals_total": 14,
+  "n_proposals_voted": 13,
+  "n_unique_voters": 816,
+  "aggregated_hhi_max_weight": 0.05508850323098564,
+  "aggregated_hhi_sum_weight": 0.07700346793237478,
+  "per_proposal_hhi_median": 0.3557694369597355,
+  "per_proposal_hhi_mean": 0.45446637217289715,
+  "per_proposal_hhi_min": 0.08890215658376988,
+  "per_proposal_hhi_max": 1.0,
+  "per_proposal": [
+    {
+      "proposal": "9s2FsXuKwbcBTZFNhy1jBiLKFYDCz52vBixw9oZfeyaC",
+      "n_voters": 315,
+      "hhi": 0.12066764011566475,
+      "sum_weight": 3287120383821
+    },
+    {
+      "proposal": "6WKLJ7R5NPkbTYbkktn2qf6CSmZK7yjQHZHW9szRZqH3",
+      "n_voters": 223,
+      "hhi": 0.2126303692173786,
+      "sum_weight": 3122894423367
+    },
+    {
+      "proposal": "Fb654NkA5jPXfHYnQmKSwkwRHujrrJxR5D1qhZap1Ww4",
+      "n_voters": 196,
+      "hhi": 0.08890215658376988,
+      "sum_weight": 4195209895745
+    },
+    {
+      "proposal": "6WRFHbKbKy72ExYs1NFoQBuBG7zPp1AxXcXYrorYJPzM",
+      "n_voters": 166,
+      "hhi": 0.2560872986110079,
+      "sum_weight": 3728451354649
+    },
+    {
+      "proposal": "9kzcRrCPot7hKEBmLa8VSdeCvsFQZoeXFgPHuvSHP9zi",
+      "n_voters": 106,
+      "hhi": 0.48557987468956026,
+      "sum_weight": 3575714851079
+    },
+    {
+      "proposal": "DgK4HAUWbPMD6jnC6aFjgwyeufb6F4RG3NYQzFAwT7AB",
+      "n_voters": 100,
+      "hhi": 0.5215889316729603,
+      "sum_weight": 3448068173221
+    },
+    {
+      "proposal": "GCowCHyxyfbMYReuRczRwbhxwGxPmoPq1ygB2Myf2FTS",
+      "n_voters": 64,
+      "hhi": 0.19921455955476017,
+      "sum_weight": 5264500960618
+    },
+    {
+      "proposal": "A3zaeQvMXvwLVhqYfia3iHvWZ4HMqxpcASv2gJ4nXis8",
+      "n_voters": 49,
+      "hhi": 0.27573489850568905,
+      "sum_weight": 586866509687
+    },
+    {
+      "proposal": "76vNRCpBRLCKMUn8NNfMDYKKW76oq9U9M9QJdgK8Kmds",
+      "n_voters": 35,
+      "hhi": 0.39188767233713667,
+      "sum_weight": 3237324673654
+    },
+    {
+      "proposal": "3rd8ME35mjZMQj5pJvKXxghBppDTW2fNWJUYh9cU7rV8",
+      "n_voters": 24,
+      "hhi": 0.3557694369597355,
+      "sum_weight": 3479715741652
+    },
+    {
+      "proposal": "YcWfncacJSByjWsgZ29fmMGi5NihPv4YX4DHmsGPHLU",
+      "n_voters": 1,
+      "hhi": 1.0,
+      "sum_weight": 3161500000
+    },
+    {
+      "proposal": "BZMVWJcquqVioRytxa3HB1HgTwYk6fea7QswP14CAi3o",
+      "n_voters": 1,
+      "hhi": 1.0,
+      "sum_weight": 20000000000
+    },
+    {
+      "proposal": "HB7dRLsBmbZhspUJxvH6WoZ8SmRMwdzZSTrBAArVDqKn",
+      "n_voters": 1,
+      "hhi": 1.0,
+      "sum_weight": 20000000000
+    },
+    {
+      "proposal": "APTRekyWejXr7GEkZZQVreTFjnUDNibb737ro8uVfQhd",
+      "n_voters": 0,
+      "hhi": null
+    }
+  ]
+}
