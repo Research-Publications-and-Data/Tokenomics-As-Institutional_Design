@@ -1,6 +1,6 @@
 # Governance Concentration Beyond Token Allocation: Replication Materials
 
-**Paper:** "Governance Concentration Beyond Token Allocation: An Institutional Design Analysis of DePIN and DeFi"
+**Paper:** "Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols"
 
 **Author:** Zach Zukowski, Tokenization Systems
 
@@ -184,8 +184,8 @@ See `CODEBOOK.md` for variable definitions.
 
 ```bibtex
 @article{zukowski2026governance,
-  title={Governance Concentration Beyond Token Allocation: An Institutional
-         Design Analysis of DePIN and DeFi},
+  title={Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected
+         Cross-Sectional Audit of 52 DePIN and DeFi Protocols},
   author={Zukowski, Zach},
   year={2026},
   institution={Tokenization Systems},

@@ -16,8 +16,9 @@ no live-API calls), the paper's HEADLINE numbers:
   - the insider-retention de-tautology (original sample), reporting BOTH the Spearman rho
     and the OLS p, both confirming the paper's original rho ~ 0.48
   - the control null-sweep (revenue-intensity / maturity / retention all n.s.)
-  - the sector HHI distribution and the DePIN-vs-DeFi contrast (the published balanced-30
-    Mann-Whitney is documented for cross-check)
+  - the sector HHI distribution and the of-record DePIN-vs-DeFi contrast (DEC-209): the
+    voter-inclusive staking pass-through headline (Cohen's d = 0.65, Mann-Whitney p = 0.028),
+    the uniform-exclusion robustness check (d = 0.75), and the inflated complete-CEX d = 1.05
 
 Outputs a results file (reproduce_results_2026-05-29.json) and prints a reconciliation
 table against the VERIFIED_NUMBERS document
@@ -226,16 +227,52 @@ def stage_distribution(frame):
     for s, vals in bysec.items():
         dist[s] = {"n": len(vals), "mean": round(float(np.mean(vals)), 4), "median": round(float(np.median(vals)), 4)}
         print(f"  {s:6} N={len(vals):2}  mean={np.mean(vals):.4f}  median={np.median(vals):.4f}")
+    results["distribution"] = dist
+
+    # OF-RECORD sector contrast (DEC-209): balanced 15-DePIN / 15-DeFi governance-token
+    # sample under three staking treatments, reproduced from the committed per-protocol
+    # HHI vectors. The HEADLINE is the voter-inclusive staking pass-through (d=0.65); the
+    # uniform-exclusion d=0.75 is the robustness check; the complete-CEX d=1.05 is reframed
+    # as inflated by inconsistent cross-sector staking treatment, NOT the headline.
+    # (LOO 30/30 + permutation + bootstrap for the full triple: companion script
+    # b2_sector_contrast_reproduce_2026-06-02.py.)
+    vec_csv = os.path.join(ADIR, "sector_contrast_hhi_vectors_2026-06-02.csv")
+    rows = {"DePIN": {}, "DeFi": {}}
+    for r in csv.DictReader(open(vec_csv)):
+        rows[r["sector"]][r["token"]] = r
+    treatments = [
+        ("hhi_passthrough", "HEADLINE  voter-inclusive staking pass-through"),
+        ("hhi_uniform_exclusion", "ROBUSTNESS uniform staking-aggregation exclusion"),
+        ("hhi_inflated_completecex", "INFLATED  complete-CEX (reframed, NOT the headline)"),
+    ]
+    print(f"\n  DePIN-vs-DeFi sector contrast of record (balanced {len(rows['DePIN'])} DePIN / {len(rows['DeFi'])} DeFi; DEC-209):")
+    contrast = {}
+    for col, label in treatments:
+        AA = [float(x[col]) for x in rows["DePIN"].values()]
+        BB = [float(x[col]) for x in rows["DeFi"].values()]
+        mw = ss.mannwhitneyu(AA, BB, alternative="two-sided")
+        psd = math.sqrt(((len(AA) - 1) * np.var(AA, ddof=1) + (len(BB) - 1) * np.var(BB, ddof=1)) / (len(AA) + len(BB) - 2))
+        d = (np.mean(AA) - np.mean(BB)) / psd
+        print(f"    {label:50}  Mann-Whitney p={mw.pvalue:.4f}  Cohen's d={d:+.3f}")
+        contrast[col] = {"mann_whitney_p": round(float(mw.pvalue), 4), "cohens_d": round(float(d), 3)}
+    results["sector_contrast_of_record"] = contrast
+    results["headline_sector_contrast"] = {
+        "treatment": "voter_inclusive_staking_pass_through",
+        "cohens_d": contrast["hhi_passthrough"]["cohens_d"],
+        "mann_whitney_p": contrast["hhi_passthrough"]["mann_whitney_p"],
+        "robustness_uniform_exclusion_cohens_d": contrast["hhi_uniform_exclusion"]["cohens_d"],
+        "inflated_completecex_cohens_d": contrast["hhi_inflated_completecex"]["cohens_d"],
+    }
+
+    # raw-frame contrast retained as a distribution DIAGNOSTIC only (NOT the of-record;
+    # this is the complete-CEX inflated treatment over the full unbalanced frame).
     dep, defi = bysec["DePIN"], bysec["DeFi"]
     mw = ss.mannwhitneyu(dep, defi, alternative="two-sided")
     psd = math.sqrt(((len(dep) - 1) * np.var(dep, ddof=1) + (len(defi) - 1) * np.var(defi, ddof=1)) / (len(dep) + len(defi) - 2))
     d = (np.mean(dep) - np.mean(defi)) / psd
-    print(f"\n  DePIN vs DeFi (full frame, N={len(dep)}/{len(defi)}):  Mann-Whitney p={mw.pvalue:.4f}  Cohen's d={d:+.3f}")
-    print(f"  (published balanced-30 binary of record: Mann-Whitney p=0.0114, d=1.048, N=15/15, updated 2026-05-31 post CEX-exclusion audit)")
-    results["distribution"] = dist
-    results["depin_defi_contrast_fullframe"] = {"p": round(float(mw.pvalue), 4), "cohens_d": round(float(d), 3),
-                                                "n_depin": len(dep), "n_defi": len(defi)}
-    results["balanced30_of_record"] = {"mann_whitney_p": 0.0114, "cohens_d": 1.048, "N": "15/15"}
+    print(f"\n  [diagnostic only] full-frame raw-HHI contrast (N={len(dep)}/{len(defi)}, complete-CEX staking): Mann-Whitney p={mw.pvalue:.4f}  Cohen's d={d:+.3f}")
+    results["depin_defi_contrast_fullframe_diagnostic"] = {"p": round(float(mw.pvalue), 4), "cohens_d": round(float(d), 3),
+                                                           "n_depin": len(dep), "n_defi": len(defi)}
 
 
 # ============================================================== reconciliation vs VERIFIED_NUMBERS
@@ -257,9 +294,11 @@ def reconcile():
     print(f"  {'quantity':32}{'reproduced':>14}{'VERIFIED_NUMBERS':>20}   note")
     for q, rep, vn, note in rows:
         print(f"  {q:32}{rep:>14}{vn:>20}   {note}")
-    print("\n  HEADLINE NOTE (final version, post A1/A3/A6): the retention-spec DePIN p reproduces at "
+    print("\n  HEADLINE NOTE (final version, post A1/A3/A6 + DEC-209): the retention-spec DePIN p reproduces at "
           f"{rs['depin_p']:.4f} under the v4_traced classification of record (post-CEX-audit 2026-05-31; below the pre-audit 0.014-0.016 lock);")
-    print("  the maturity-spec anchor is 0.0107 and the full-frame Mann-Whitney is 0.0172 (Cohen d 1.052).")
+    print("  the maturity-spec anchor is 0.0107; the of-record sector-contrast headline is the voter-inclusive staking")
+    print("  pass-through Cohen's d=0.65 (Mann-Whitney p=0.028), with uniform-exclusion d=0.75 (p=0.018) as the robustness")
+    print("  check and the complete-CEX d=1.05 reframed as inflated (see STAGE 9 and DEC-209).")
     print("  Finding holds in BOTH specs and across all six insider vectors (all < 0.02); insider-retention n.s. = channel-shift.")
 
 
