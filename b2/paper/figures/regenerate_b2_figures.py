@@ -42,6 +42,10 @@ _RR = _os_anchor.path.dirname(_os_anchor.path.abspath(__file__))
 while _RR != _os_anchor.path.dirname(_RR) and not _os_anchor.path.exists(_os_anchor.path.join(_RR, "reproduce.py")):
     _RR = _os_anchor.path.dirname(_RR)
 REG_CSV = (_RR + "/data/processed/regression_data_april2026.csv")
+# Committed per-protocol balanced-30 HHI vectors under the three staking treatments
+# (pass-through d=0.65 headline / uniform-exclusion d=0.75 robustness / complete-CEX d=1.05).
+# Figure 2 prints the pass-through headline test; Figure 5 LOO uses the uniform exclusion.
+VEC_CSV = (_RR + "/b2/paper/analysis_n52_2026-05-29/sector_contrast_hhi_vectors_2026-06-02.csv")
 OUT_DIR = Path(__file__).resolve().parent
 
 plt.rcParams.update({
@@ -175,7 +179,19 @@ _psd = np.sqrt(((_pn1 - 1) * depin.var(ddof=1) + (_pn2 - 1) * defi.var(ddof=1)) 
 d_cohen = (depin.mean() - defi.mean()) / _psd
 print(f"  DeFi:  mean={defi.mean():.4f}, N={len(defi)}")
 print(f"  DePIN: mean={depin.mean():.4f}, N={len(depin)}")
-print(f"  MW p={p_mw:.4f}, Cohen d={d_cohen:.3f}")
+print(f"  MW p={p_mw:.4f}, Cohen d={d_cohen:.3f} (displayed of-record distribution)")
+# The Figure 2 caption distinguishes the DISPLAYED distribution (of-record post-exclusion
+# HHI, above) from the HEADLINE TEST (voter-inclusive staking pass-through). Print the
+# pass-through headline values in the figure, computed from the committed HHI vector,
+# so the figure matches the caption and never leads with the inflated complete-CEX d.
+_v4 = pd.read_csv(VEC_CSV)
+_pt_dep = _v4[_v4["sector"] == "DePIN"]["hhi_passthrough"].values
+_pt_def = _v4[_v4["sector"] == "DeFi"]["hhi_passthrough"].values
+_, p_pt4 = stats.mannwhitneyu(_pt_dep, _pt_def, alternative="two-sided")
+_n1pt, _n2pt = len(_pt_dep), len(_pt_def)
+_psd4 = np.sqrt(((_n1pt - 1) * _pt_dep.var(ddof=1) + (_n2pt - 1) * _pt_def.var(ddof=1)) / (_n1pt + _n2pt - 2))
+d_pt4 = (_pt_dep.mean() - _pt_def.mean()) / _psd4
+print(f"  Pass-through headline test: MW p={p_pt4:.4f}, Cohen d={d_pt4:.3f}")
 
 fig, ax = plt.subplots(figsize=(7, 8))
 bp = ax.boxplot(
@@ -198,8 +214,8 @@ ax.text(2.35, depin.mean(), f"Mean: {depin.mean():.3f}", va="center", fontsize=1
 
 y_top = max(depin.max(), defi.max()) + 0.015
 ax.plot([1, 1, 2, 2], [y_top, y_top + 0.005, y_top + 0.005, y_top], "k-", linewidth=1)
-ax.text(1.5, y_top - 0.006, f"Mann-Whitney p = {p_mw:.3f} (balanced 30)", ha="center", fontsize=10, style="italic")
-ax.text(1.5, y_top - 0.012, f"Cohen's d = {d_cohen:.2f}", ha="center", fontsize=10, style="italic")
+ax.text(1.5, y_top - 0.006, f"Pass-through sector test: Mann-Whitney p = {p_pt4:.3f}", ha="center", fontsize=10, style="italic")
+ax.text(1.5, y_top - 0.012, f"Cohen's d = {d_pt4:.2f} (balanced 30)", ha="center", fontsize=10, style="italic")
 
 ax.set_xticks([1, 2])
 ax.set_xticklabels([f"DeFi (N={len(defi)})", f"DePIN (N={len(depin)})"], fontsize=11)
@@ -605,17 +621,18 @@ save(fig, "fig8_participation")
 # =============================================================================
 print("-- Fig 9: LOO forest + bootstrap CI")
 
-# OF-RECORD BALANCED-30 LOO (15 DePIN + 15 DeFi-governance_token); reproduces d=0.94,
-# 30/30 LOO significant ONLY against the pre-N52 snapshot (live REG_CSV drifted + grew
-# DeFi-gt to 18). Fail loud rather than silently produce an N=39 forest.
-import os as _os9
-_PRE_N52_9 = REG_CSV + ".pre_n52_merge_2026-05-29"
-_src9 = pd.read_csv(_PRE_N52_9) if _os9.path.exists(_PRE_N52_9) else reg
-sect = _src9[(_src9["category"] == "DePIN") |
-             ((_src9["category"] == "DeFi") & (_src9["measurement_type"] == "governance_token"))].copy()
+# OF-RECORD: the LOO forest is computed under the UNIFORM staking-aggregation exclusion
+# (Figure 5 caption: the robustness-check treatment, Cohen's d = 0.75, per-iteration d
+# 0.68 to 0.92, p 0.006 to 0.031). Read the committed per-protocol uniform-exclusion HHI
+# vector (no live-frame drift; never the complete-CEX d=1.05 source).
+_v9 = pd.read_csv(VEC_CSV)
+_namemap9 = dict(zip(reg.get("token", pd.Series(dtype=str)).astype(str),
+                     reg.get("protocol", pd.Series(dtype=str)).astype(str)))
+sect = _v9.rename(columns={"sector": "category", "hhi_uniform_exclusion": "hhi"}).copy()
+sect["protocol"] = sect["token"].map(lambda t: _namemap9.get(str(t), str(t)))
+sect = sect[["protocol", "category", "hhi"]]
 assert len(sect) == 30 and (sect["category"] == "DePIN").sum() == 15, (
-    f"fig9 of-record balanced-30 LOO needs N=30 (15 DePIN + 15 DeFi-gt); got {len(sect)}. "
-    f"Re-cut requires the pre-N52 snapshot ({_PRE_N52_9}).")
+    f"fig9 of-record balanced-30 LOO needs N=30 (15 DePIN + 15 DeFi); got {len(sect)}.")
 defi9 = sect[sect["category"] == "DeFi"]["hhi"].values
 depin9 = sect[sect["category"] == "DePIN"]["hhi"].values
 
@@ -671,8 +688,8 @@ axL.set_xlabel("Cohen's d (DePIN vs DeFi)")
 axL.set_title("Leave-one-out sensitivity: drop each protocol and recompute",
               fontsize=12, fontweight="bold")
 
-x_min = max(0.80, loo["d"].min() - 0.06)
-x_max = max(1.32, loo["d"].max() + 0.05)
+x_min = min(0.55, loo["d"].min() - 0.06)
+x_max = max(1.00, loo["d"].max() + 0.08)
 axL.set_xlim(x_min, x_max)
 
 axL.axvline(x=d_headline, color="black", linestyle="--", linewidth=1.0,
