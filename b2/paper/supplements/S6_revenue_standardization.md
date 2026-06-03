@@ -11,13 +11,13 @@
 |--------|-------------|------------|
 | **Protocol revenue** | `revenue` (Token Terminal) | Fees retained by the protocol after paying LPs, lenders, or other service providers |
 | **Token incentives** | `token_incentives` (Token Terminal) | Dollar value of tokens distributed to participants (liquidity mining, staking rewards) |
-| **Subsidy ratio** | Derived | `token_incentives / revenue` (DEC-023 convention) |
+| **Subsidy ratio** | Derived | `token_incentives / revenue` (incentives-over-revenue convention) |
 
 ---
 
 ## DeFi Protocol Subsidy Ratios (B2 Baseline)
 
-Subsidy ratio correlates with concentration in the primary on-chain specification (r = 0.58, p = 0.007, N = 20), though this result is driven by Livepeer (see §5.7 and Supplementary File S8). These DeFi values establish the baseline against which DePIN protocols are compared.
+Subsidy ratio is associated with concentration only when Livepeer is included (Pearson r = 0.62, p = 0.002, N = 23); excluding the single 88.5x Livepeer outlier the association collapses to a null (r = 0.07, p = 0.76, N = 22), so it is a demonstrated-fragile, single-outlier-driven result rather than a robust correlation (see Section 4.6 and Supplementary File S8). These DeFi values establish the baseline against which DePIN protocols are compared.
 
 | Protocol | Revenue (35mo) | Token Incentives (35mo) | Subsidy Ratio | Holding HHI |
 |----------|---------------|------------------------|---------------|-------------|
@@ -27,7 +27,7 @@ Subsidy ratio correlates with concentration in the primary on-chain specificatio
 | Curve | $92.7M | $277.7M | **3.00x** | 0.171 |
 | Uniswap | ~$3.0M | $36.5M | **N/A** | 0.032 |
 
-**Formula:** All values use `incentives / revenue` (DEC-023 convention), allowing values > 1.0x
+**Formula:** All values use `incentives / revenue` (incentives-over-revenue convention), allowing values > 1.0x
 for subsidy-dominant protocols (e.g., Livepeer 88.5x). Aave values sourced from regression_data_april2026.csv
 (Token Terminal live pull, April 2026: revenue=$135.4M, incentives=$50.2M → ratio=0.37x). An earlier
 35-month TT aggregate ($254.1M / $149.1M) was used in v13 and produced 0.59x; v14 reverts to the
@@ -77,7 +77,7 @@ import pandas as pd
 
 df = pd.read_csv("data/regression_data_april2026.csv")
 
-# Subsidy ratio: incentives / revenue (DEC-023 convention)
+# Subsidy ratio: incentives / revenue (incentives-over-revenue convention)
 # Protocols with revenue ≈ 0 (Uniswap) are excluded
 df["subsidy_ratio"] = df["incentives_annual_usd"] / df["revenue_annual_usd"]
 
@@ -139,11 +139,10 @@ under N = 22 without Livepeer) is unchanged by this convention restoration.
 
 ## DeFi sector batch raw-OC population (2026-05-19 follow-on cycle)
 
-Per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` (Task #13 from
-DEC-167 multi-cycle workstream), the DeFi sector batch (10 protocols) has been
-populated this cycle. Provenance class for the batch: TT-equivalent-documented
-(see workflow clone `research_content/papers/B2_governance_concentration/supplements/raw_oc/INDEX.md`
-for the full provenance class taxonomy).
+The DeFi sector batch (10 protocols) has been populated in this cycle of the
+multi-cycle raw on-chain refresh workstream. Provenance class for the batch:
+TT-equivalent-documented (the full provenance-class taxonomy is documented in the
+raw on-chain provenance index included in the replication package).
 
 The DeFi-batch protocols had `subsidy_ratio_onchain` populated pre-cycle with
 TT-aggregator values but `revenue_onchain_usd` and `emissions_onchain_usd`
@@ -151,7 +150,7 @@ empty. This cycle populates rev_OC and emit_OC with the TT-aggregated values
 cross-walked to TT's underlying on-chain methodology (Token Terminal indexes
 the same on-chain fee accrual + emissions events; the "TT-sourced" label
 reflects TT as the aggregator surface, not a different data layer). Per-protocol
-methodology documentation: see workflow clone `supplements/raw_oc/<protocol>_methodology.md`.
+methodology documentation is provided in the replication package.
 
 | Protocol | rev_OC (this cycle) | emit_OC (this cycle) | sub_OC | Provenance sub-class |
 |---|---:|---:|---:|---|
@@ -171,12 +170,12 @@ sub_TT for all 23 protocols by default; sub_OC sensitivity (per
 `subsidy_multivariate_oc_sensitivity_2026-05-19.py`) gives Spec 4 subsidy
 p = 0.96 (essentially identical to TT-preferred p = 0.88). The DeFi-batch
 population brings rev_OC + emit_OC field replicability (so the field name is
-no longer hazardous per DEC-167) without changing the regression result.
+no longer hazardous) without changing the regression result.
 
 **Remaining workstream (deferred to follow-on cycles).** The L1/L2/Infra batch
 (GRT, OP, POL, POKT, FIL) and DePIN batch (DIMO, HNT/HONEY-on-Solana,
 GEOD, RENDER, MOR) are deferred to subsequent per-sector cycles per the
-multi-cycle workstream pattern in DEC-167. These 8 protocols (HNT/HONEY already
+multi-cycle workstream pattern. These 8 protocols (HNT/HONEY already
 documented in `hivemapper_holder_data_2026-05-19.md` for the related HONEY
 concentration analysis) retain empty rev_OC + emit_OC fields pending follow-on
 extraction; their sub_OC values remain populated with pre-cycle TT-equivalent
@@ -191,7 +190,7 @@ protocol's TT-vs-OC cross-walk for cross-cycle continuity.
 
 ## L1/L2/Infra + DePIN sector batches raw-OC population (2026-05-19 follow-on cycle)
 
-Per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` Task #13 multi-cycle workstream continuation, the L1/L2/Infra batch (5 protocols) and DePIN batch (5 protocols) have been populated this cycle. Combined with the DeFi sector batch (cycle 1), the full 19-protocol target set plus HYPE is now scaffolded with per-protocol methodology MDs at workflow clone `research_content/papers/B2_governance_concentration/supplements/raw_oc/`.
+The L1/L2/Infra batch (5 protocols) and DePIN batch (5 protocols) have been populated in this continuation of the multi-cycle raw on-chain refresh workstream. Combined with the DeFi sector batch (cycle 1), the full 19-protocol target set plus HYPE is now scaffolded with per-protocol methodology documentation in the replication package.
 
 ### L1/L2/Infra batch results
 
@@ -217,7 +216,7 @@ Per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` Task #13 multi
 
 - **Test 1** (rev_OC + emit_OC non-null for all 23 subsidy sample): **21 of 23 pass**. DIMO + RENDER documented as provenance-gap (sub_OC values canonical but rev_OC + emit_OC require per-protocol reconstruction).
 - **Test 2** (sub_OC equals emit_OC / rev_OC within 0.01 tolerance): **20 of 23 pass**. IOTX + LPT are pre-existing rounding-precision (4-decimal stored vs computed; not introduced this cycle). FIL is intentional Category D Messari divergence (sub_OC = 21.6 vs TT-derived 19.18); documented per FIL_methodology.md.
-- **Test 4** (PAPER.md §3.7 Spec 4 headline preserved): **PASS**. TT Spec 4 subsidy p=0.88; OC Spec 4 subsidy p=0.96; both convergence on "sector absorbs subsidy after Livepeer exclusion" canonical headline. HALT-B not triggered.
+- **Test 4** (PAPER.md §3.7 Spec 4 headline preserved): **PASS**. TT Spec 4 subsidy p=0.88; OC Spec 4 subsidy p=0.96; both converge on the "sector absorbs subsidy after Livepeer exclusion" headline; no headline-altering change.
 
 ### Substantive impact on regression: none
 
@@ -233,23 +232,23 @@ The 19-of-19 target methodology scaffolding is complete this cycle arc (DeFi + L
 - **HNT + MOR + GEOD on-chain re-derivation** (currently TT-cross-walked or back-computed; full Dune extraction defers to follow-on per-protocol cycles).
 - **9 DeFi-batch protocols full-Dune extraction** (per cycle 1 deferred list; COMP + LDO have POC SQL templates as starting points).
 
-## Per-protocol full-Dune-extraction cycle 3 results (2026-05-19)
+## Per-protocol full-Dune-extraction results (2026-05-19)
 
-Priority 5 per-protocol extraction executed this cycle per `handoff/dispatch/b2_raw_oc_refresh_workstream_2026-05-19.md` Task #13 multi-cycle workstream. 5 Dune queries executed (~144 credits) + Render Foundation dashboard mined via Claude browser extension + Filfox + POKTscan API attempts.
+Priority 5 per-protocol extraction was executed in this cycle of the multi-cycle raw on-chain refresh workstream. Five Dune queries were executed, supplemented by Render Foundation dashboard extraction, Filfox, and POKTscan API attempts.
 
-### Cycle 3 results table
+### Extraction results table
 
-| Protocol | rev_OC (cycle 3) | emit_OC (cycle 3) | sub_OC (cycle 3) | sub_OC pre-cycle | Cycle 3 source |
+| Protocol | rev_OC | emit_OC | sub_OC | sub_OC (prior value) | Source |
 |---|---:|---:|---:|---:|---|
 | DIMO | $7,667,598 | $2,570,643 | 0.335 | 0.33 (canonical) | Dune query 7541442 (TTM Q1 2026; full reconstruction) |
 | MOR | $8,815,669 | $14,361,440 | 1.63 | 1.54 (pre-cycle) | Dune query 7541457 (TTM Q1 2026; validates canonical) |
 | RENDER | $3,000,000 | $29,500,000 | 9.83 | 7.63 (canonical) | Foundation dashboard mined 2026-05-19 (BME emissions excluding bridge mints) |
 | HNT | $14,638,522 | $31,525,538 | 2.15 | 1.05 (34-month average) | Dune query 7541454 (TTM Q1 2026; MATERIAL CHANGE; different time window vs pre-cycle 34-month average) |
 | GEOD | $3,128,869 | $14,803,332 (back-computed) | 1.61 (canonical preserved) | 1.61 (canonical) | Dune query 7541498 v2 (TTM Q1 2026 burns; mint detection failed - Mining Machine reward distributor required) |
-| POKT | (unchanged TT values) | (unchanged TT values) | 7.64 (TT-UNRELIABLE retained) | 7.64 | POKTscan HALT-C confirmed: data sync issues prevent extraction |
+| POKT | (unchanged TT values) | (unchanged TT values) | 7.64 (TT-UNRELIABLE retained) | 7.64 | POKTscan extraction halted: data sync issues prevent extraction |
 | FIL | (unchanged TT values) | (unchanged TT values) | 21.6 (Messari Cat D retained) | 21.6 | Filfox 24h cross-check shows 23M FIL/yr emissions (sub ~3.3 estimate); preserves Category D pending convergence cycle |
 
-### Critical methodology insights from cycle 3
+### Critical methodology insights
 
 1. **RENDER Foundation-canonical vs naive-Dune divergence (4x).** Initial Dune query on `tokens_solana.transfers` with `action='mint'` returned emit_OC = $126.7M because Solana mint flow INCLUDES RNDR-to-RENDER bridge mints (11/10/2025 single bridge mint of 20M RENDER ~= $100M USD). Per Foundation BME methodology, bridge mints are 1:1 conversions of pre-existing supply, NOT new emissions. True BME emissions extracted from Foundation dashboard: 5.9M RENDER/year ~= $29.5M. The 4x naive-Dune-vs-Foundation discrepancy is a generalizable lesson: token-spell `action='mint'` filters cannot distinguish protocol-new-emissions from cross-chain bridge conversions.
 
@@ -261,28 +260,19 @@ Priority 5 per-protocol extraction executed this cycle per `handoff/dispatch/b2_
 
 5. **MOR price-weighted asymmetry between burn and mint flow.** Total MOR burned (5.45M tokens) exceeds total MOR minted (4.73M tokens), but USD-valued emit_OC ($14.36M) exceeds USD-valued rev_OC ($8.82M) because mint flow concentrated in higher-price periods. Average burn price $1.62/MOR; average mint price $3.03/MOR. Price-weighting matters for cross-protocol comparability.
 
-### Cycle 3 multivariate HALT-B verification
+### Multivariate headline-preservation verification
 
 Post-cycle-3 regression results:
 - **TT Spec 4** (no Livepeer): subsidy p = 0.9159 (was 0.8832 pre-cycle); DePIN dummy p = 0.0043; Adj R² = 0.260
 - **OC Spec 4** (no Livepeer): subsidy p = 0.9300 (was 0.9591 pre-cycle); DePIN dummy p = 0.0064; Adj R² = 0.260
 
-HALT-B not triggered. Headline finding ("sector absorbs subsidy after Livepeer exclusion") preserved under all cycle 3 updates including HNT material change (1.05 to 2.15) and RENDER substantive shift (7.63 to 9.83). Sector absorption mechanism is robust to within-DePIN-sector sub_OC heterogeneity.
+No headline-altering change. The headline finding ("sector absorbs subsidy after Livepeer exclusion") is preserved under all updates including the HNT material change (1.05 to 2.15) and RENDER substantive shift (7.63 to 9.83). Sector absorption mechanism is robust to within-DePIN-sector sub_OC heterogeneity.
 
-### Cycle 3 KU candidates (4 surfaced)
+### Measurement caveats and open methodology questions
 
-- **KU-2026-05-19-B2-Bridge-Mint-Detection-Class** (Significant). Solana token `action='mint'` filter cannot distinguish bridge mints from protocol emissions. Generalizable methodology gap for all DePIN protocols with cross-chain bridging.
-- **KU-2026-05-19-B2-Time-Window-Methodology-Convention** (Significant). HNT canonical 1.05 (34-month average) vs TTM Q1 2026 cycle 3 (2.15) reflects time-window difference. Canonical methodology decision: do panel values use TTM Q1 2026 (cycle 3 default) or multi-year-rolling-average?
-- **KU-2026-05-19-B2-Custom-Reward-Distributor-Detection-Class** (Significant). GEODNET Mining Machine reward distributor (geod_polygon.miningmachine_*) requires per-protocol decoded-contract emit detection. Generalizable to other DePIN/L1 protocols.
-- **KU-2026-05-19-B2-DefiLlama-Proxy-vs-On-Chain-Burn-Divergence** (Significant). GEOD pre-cycle DefiLlama-fees-proxy rev = $9.19M; cycle 3 on-chain-burn rev = $3.13M (3x divergence). DefiLlama may include subscription + service fees not captured by pure burn-to-dead. Generalizable methodology decision: which "revenue" definition is canonical for B2's burn-active-subset framing?
+- Solana token `action='mint'` filter cannot distinguish bridge mints from protocol emissions. Generalizable methodology gap for all DePIN protocols with cross-chain bridging.
+- HNT canonical 1.05 (34-month average) vs TTM Q1 2026 cycle 3 (2.15) reflects a time-window difference. Open methodology question: do panel values use TTM Q1 2026 (cycle 3 default) or a multi-year rolling average?
+- GEODNET Mining Machine reward distributor (geod_polygon.miningmachine_*) requires per-protocol decoded-contract emit detection. Generalizable to other DePIN/L1 protocols.
+- GEOD pre-cycle DefiLlama-fees-proxy rev = $9.19M; cycle 3 on-chain-burn rev = $3.13M (3x divergence). DefiLlama may include subscription + service fees not captured by pure burn-to-dead. Open methodology question: which "revenue" definition is canonical for the burn-active-subset framing?
 
-### Cycle 3 Dune credit cost: 144 credits actual (vs 31-81 estimated)
-
-- DIMO query 7541442: 12.2 credits (small tier)
-- HNT query 7541454: 52.9 credits (medium tier; small tier timed out)
-- RENDER query 7541449: 55.5 credits (medium tier; small tier timed out)
-- MOR query 7541457: 11.9 credits (small tier)
-- GEOD query 7541498 v2: 12.3 credits (small tier)
-- Total Dune credits: ~144.8 (within 4x of low-end estimate; medium-tier promotion for Solana queries drove overrun)
-
-Remaining Dune quota post-cycle-3: ~358 credits (4000 quota - 3497 prior usage - 145 cycle 3 = ~358; ~7 days left in billing cycle ending 2026-05-27).
+The per-protocol extraction queries are listed in the extraction results table above and are reproducible from the replication package.

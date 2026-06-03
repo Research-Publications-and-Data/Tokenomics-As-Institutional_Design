@@ -1,7 +1,7 @@
 # Supplementary File S8: Token Terminal Expansion, Subsidy-Concentration Analysis
 
 **Date:** 2026-04-02
-**Status:** Robustness check (additive; primary specification is on-chain N=20 in §5.7)
+**Status:** Robustness check (additive; primary specification is the on-chain subsidy correlation, N = 23 in Section 4.6)
 
 ---
 
@@ -57,7 +57,7 @@ Spearman rho (full cross-sector) = 0.115, p = 0.610.
 
 ## Notes
 
-**Measurement regime**: DeFi and Infrastructure protocols use TT accounting metrics (protocol revenue, token incentives). DePIN protocols use on-chain burn/mint ratios. This mixed-regime design is the reason this analysis is a robustness check rather than a replacement for the primary on-chain specification (r = 0.58, p = 0.007, N = 20 in §5.7), which uses consistent on-chain methodology for all 20 protocols.
+**Measurement regime**: DeFi and Infrastructure protocols use TT accounting metrics (protocol revenue, token incentives). DePIN protocols use on-chain burn/mint ratios. This mixed-regime design is the reason this analysis is a robustness check rather than a replacement for the primary on-chain specification (Pearson r = 0.62 including Livepeer, p = 0.002, N = 23; r = 0.07 excluding the single Livepeer outlier, p = 0.76, N = 22; Section 4.6), which uses consistent on-chain methodology across the N = 23 subsidy cross-section.
 
 **Aethir revenue**: Body text updated to $156M (Token Terminal, April 2026) in v14.
 

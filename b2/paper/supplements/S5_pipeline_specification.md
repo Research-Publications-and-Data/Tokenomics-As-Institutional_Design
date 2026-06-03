@@ -279,7 +279,7 @@ Two ancillary visualizations supporting Section 3.7 robustness discussion are pr
 
 `fig_S5a_hhi_vs_voter_participation.png`
 
-Governance concentration (HHI) vs. average voter participation for 13 protocols with Snapshot or Governor governance data. Pearson r = -0.10, N = 13. The slope is approximately flat, indicating that voter participation does not predict concentration in this 13-protocol sample; participation and concentration are largely independent dimensions of governance health (Olson 1965 collective-action prediction; rational abstention and diffusion of responsibility rather than ownership structure drive participation decisions).
+Governance concentration (HHI) vs. average unique voters per proposal (an absolute participation count, log-transformed for the correlation, not a turnout rate) for 13 protocols with Snapshot or Governor governance data. Pearson r = -0.10, N = 13. The slope is approximately flat, indicating that voter participation does not predict concentration in this 13-protocol sample; participation and concentration are largely independent dimensions of governance health (Olson 1965 collective-action prediction; rational abstention and diffusion of responsibility rather than ownership structure drive participation decisions).
 
 Five protocols (GMX, ENS, Rocket Pool, Gitcoin, Balancer) enter the sample via Snapshot API queries; four Tier 1 spaces (CRV, GRT, IOTX, OP) had zero proposals in the trailing 12 months and are excluded. Per-protocol participation data (proposal counts, unique voter counts, average participation rates) available in the canonical regression dataset and the Snapshot data collection scripts described in this S5 pipeline specification.
 
@@ -287,8 +287,8 @@ Five protocols (GMX, ENS, Rocket Pool, Gitcoin, Balancer) enter the sample via S
 
 `fig_S5b_loo_forest_sector_contrast.png`
 
-Left panel: Cohen's d recomputed after dropping each protocol from the joint DePIN+DeFi sample (30 iterations); p-value annotated to the right of each bar; reference lines at the main-result d = 0.94 and the conventional Cohen large-effect threshold d = 0.80. DeFi-drop iterations and DePIN-drop iterations both lie above the large-effect threshold; the d range across all 30 iterations is 0.84 to 1.10.
+Left panel: Cohen's d recomputed after dropping each protocol from the joint DePIN+DeFi sample (30 iterations, under the uniform staking-aggregation exclusion robustness treatment); p-value annotated to the right of each bar; reference lines at the main-result d = 0.75 and the conventional Cohen large-effect threshold d = 0.80. Every leave-one-out iteration remains statistically significant (per-iteration p 0.006 to 0.031); the d range across all 30 iterations is 0.68 to 0.92, a stable medium effect that does not depend on any single protocol.
 
-Right panel: bootstrap 95% percentile interval on the headline Cohen's d (10,000 resamples; [0.32, 1.68]). The bootstrap interval excludes the medium-effect (d = 0.5) lower-bound benchmark and extends well above the large-effect (d = 0.8) threshold, confirming the sector contrast is robust to sample composition, single-protocol exclusion, and resampling.
+Right panel: bootstrap 95% percentile interval on the headline Cohen's d (10,000 resamples; [0.40, 1.52]). The bootstrap interval strictly excludes zero, confirming the sector contrast is robust to sample composition, single-protocol exclusion, and resampling.
 
 Per-iteration LOO Cohen's d values and bootstrap resampling outputs available in the canonical regression dataset (sector-contrast LOO subset).

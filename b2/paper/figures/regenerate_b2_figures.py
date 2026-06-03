@@ -399,20 +399,24 @@ save(fig, "fig5_allocation_scatter")
 # Tally subset: Compound, Aave, Uniswap, Optimism, Arbitrum
 # =============================================================================
 print("-- Fig 6: Delegation grouped (R2 values)")
+# Of-record Table 6 cells (holding HHI, voting HHI). Voting HHI uses the per-protocol
+# measure Table 6 reports: Snapshot for Compound and Arbitrum, Tally for Aave, Uniswap,
+# and Optimism. The ratio is the Table 6 printed amplification, hardcoded so the figure's
+# labels match the paper exactly (the displayed 3-decimal cells round-derive to within
+# 0.1x of these printed ratios, as in Table 6 itself).
 deleg_data = [
-    {"protocol": "Compound", "raw_hhi": 0.009223, "delegated_hhi": 0.053,
+    {"protocol": "Compound", "raw_hhi": 0.009, "delegated_hhi": 0.089, "ratio": 9.9,
      "category": "DeFi",       "source": "Snapshot"},
-    {"protocol": "Aave",     "raw_hhi": 0.012790, "delegated_hhi": 0.076,
+    {"protocol": "Aave",     "raw_hhi": 0.013, "delegated_hhi": 0.058, "ratio": 4.4,
      "category": "DeFi",       "source": "Tally"},
-    {"protocol": "Uniswap",  "raw_hhi": 0.009784, "delegated_hhi": 0.027,
+    {"protocol": "Uniswap",  "raw_hhi": 0.010, "delegated_hhi": 0.027, "ratio": 2.7,
      "category": "DeFi",       "source": "Tally"},
-    {"protocol": "Arbitrum", "raw_hhi": 0.011914, "delegated_hhi": 0.052,
+    {"protocol": "Arbitrum", "raw_hhi": 0.012, "delegated_hhi": 0.038, "ratio": 3.1,
      "category": "L1_L2_Infra", "source": "Snapshot"},
-    {"protocol": "Optimism", "raw_hhi": 0.009281, "delegated_hhi": 0.033,
+    {"protocol": "Optimism", "raw_hhi": 0.009, "delegated_hhi": 0.033, "ratio": 3.6,
      "category": "L1_L2_Infra", "source": "Tally"},
 ]
 deleg = pd.DataFrame(deleg_data)
-deleg["ratio"] = deleg["delegated_hhi"] / deleg["raw_hhi"]
 deleg = deleg.sort_values("ratio", ascending=True).reset_index(drop=True)
 print(deleg[["protocol", "raw_hhi", "delegated_hhi", "ratio"]].to_string(float_format="%.4f"))
 

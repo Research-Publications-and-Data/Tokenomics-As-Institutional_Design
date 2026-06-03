@@ -110,7 +110,7 @@ The eleven de-counted independent Safes are the difference between a keyword-onl
 
 ## Part 3: Staking-attribution audit
 
-The holder-concentration measure is computed over current token holders. For protocols with a large liquid-staking wrapper, insider tokens can sit inside the staking contract and become invisible to a holder snapshot, which holds the wrapper, not the underlying insiders. This part documents two attribution exercises and one orchestrator-level governance recomputation. None of the three changes the frame holding-HHI used in the regressions in a way that exceeds display precision; all three are methodology and visibility findings reported as such.
+The holder-concentration measure is computed over current token holders. For protocols with a large liquid-staking wrapper, insider tokens can sit inside the staking contract and become invisible to a holder snapshot, which holds the wrapper, not the underlying insiders. This part documents two attribution exercises and one orchestrator-level governance recomputation. The first two (token-level insider attribution) do not change the frame holding-HHI beyond display precision; the third (staking-pool pass-through, Section 3.4) is load-bearing for the sector-contrast magnitude and is the basis for the consistent-treatment headline in Section 4.6.2.
 
 ### 3.1 AAVE and ENA: insider tokens inside the staking wrapper
 
@@ -123,6 +123,24 @@ For ENA, the equivalent attribution moves a much smaller share: 0.43 percent of 
 Livepeer governance operates a delegated bloc-voting model: delegators bond LPT to orchestrators, who then vote the aggregate bonded stake through the bonding manager. The governance-relevant concentration is therefore the distribution of bonded stake across orchestrators, not the raw token-holder distribution. Computed over the 100 active orchestrators (as of the Arbitrum block recorded in the replication artifact), the orchestrator-level bloc-voting HHI is 0.0535, against a raw post-exclusion token-holder HHI of 0.198868 for the same protocol. The orchestrator-level concentration is roughly 3.7 times lower than the holding concentration (a ratio of about 0.27). Including the inactive-but-bonded orchestrators moves the figure only from 0.0535 to 0.0524, so the result is not an artifact of the active-set cutoff.
 
 This makes Livepeer the most pronounced DePIN governance disperser, at a 0.27 ratio, joining the delegation-disperses exceptions documented for ENS, GMX, Helium, and Jupiter. Helium is the other DePIN-sector disperser, so Livepeer is the most pronounced rather than the only DePIN dispersion exception. The frame holding-HHI for Livepeer is unchanged at 0.198868; the orchestrator-level figure is reported as an additional voting-versus-holding data point in Section 4.5, not as a substitute for the holding measure.
+
+### 3.4 Per-pool staking decomposition (staking-aggregation contracts as distributed voter pools)
+
+Staking-aggregation contracts pool the stake of many independent governance-eligible holders; treating each as a single holder (which retaining it would do) or excluding it outright both distort the holding-concentration measure. The voter-inclusive treatment in Section 4.6.2 distributes each material staking pool across its measured underlying stakers. The internal staker concentration (HHI among a pool's stakers, as shares of the pool) was measured per pool; the breakpoint at which the headline contrast loses significance is an internal HHI of approximately 0.10.
+
+| Pool | sector | pool share of supply | internal staker-HHI | dominant staker | stakers |
+|---|---|---|---|---|---|
+| GMX staked tracker | DeFi | 64% | 0.008 | 4.5% | 68,127 |
+| Rocket Pool RPL | DeFi | 49% | 0.023 | 9.1% | 1,655 |
+| Curve veCRV | DeFi | 40% | 0.278 | 49.5% (Convex) | 8,617 |
+| Synthetix V3 SNX | DeFi | 38% | 0.142 | 28.2% | 3,268 |
+| stkAAVE | DeFi | 22% | 0.029 | 10.7% (20.5% team excluded) | distributed |
+| ether.fi ETHFI | DeFi | 11% | 0.041 | 10.8% | 7,108 |
+| IoTeX staking | DePIN | 20% | 0.018 | 5.0% | 1,095 |
+| ANyONe staking | DePIN | 13% | 0.025 | 8.6% | 451 |
+| Livepeer bonding | DePIN | 1.8% | 0.047 | 17.1% | 3,067 |
+
+The big DeFi staking pools are highly distributed (GMX 68,127 stakers; Rocket Pool 1,655 node operators), with vote-escrowed CRV (49.5 percent Convex-controlled) and Synthetix V3 (top 28 percent) the concentrated exceptions. Distributing the pools to their stakers (excluding only the team/foundation slice, e.g. stkAAVE 20.5 percent) yields the voter-inclusive sector contrast reported in Section 4.6.2 (Cohen's d = 0.65, Mann-Whitney p = 0.028, mean-based permutation borderline at approximately 0.08). The earlier inconsistent-treatment exclusion dropped the DeFi-side pools outright while retaining one DePIN-side pool (Livepeer), the asymmetry that inflated the legacy large effect (Cohen's d = 1.05, reported as superseded, not the headline).
 
 ### 3.3 What the staking audit does not change
 
