@@ -10,14 +10,18 @@ authors:
     affiliation: "Tokenization Systems"
 abstract: >-
   A 52-protocol cross-section documents that initial token allocation design
-  does not predict post-distribution governance concentration (insider
-  allocation Pearson r = 0.07, p = 0.68, N = 37). Protocols with generous
+  is not associated with post-distribution governance concentration (insider
+  allocation Pearson r = 0.10, p = 0.49, N = 50; statistically equivalent to
+  zero within the powered envelope, TOST p = 0.02). Protocols with generous
   community distributions exhibit concentration patterns similar to those
-  with heavy insider allocations. Sector membership predicts concentration
-  (DePIN more concentrated than DeFi, Mann-Whitney p = 0.011, Cohen&apos;s
-  d = 1.05; robust across all 30 leave-one-out iterations; permutation
-  p = 0.004) after adjusting for protocol age, log fully diluted valuation,
-  and insider allocation. Delegation amplifies governance concentration
+  with heavy insider allocations. Architectural sector is the robust
+  correlate (DePIN more concentrated than DeFi): under the headline
+  voter-inclusive staking pass-through treatment the contrast is a medium
+  effect (Cohen&apos;s d = 0.65, Mann-Whitney p = 0.028, all 30
+  leave-one-out folds significant), with a uniform staking-aggregation
+  exclusion as a robustness check (Cohen&apos;s d = 0.75) and a powered
+  multivariate model retaining a significant DePIN coefficient.
+  Delegation amplifies governance concentration
   across thirteen of eighteen protocols in the voting-layer subsample
   (range 2.5x to 25.6x; mean approximately 6.8x, median 4.4x), with five
   structural exceptions showing dispersion (ENS 0.48x, GMX 0.87x, HNT
@@ -44,5 +48,5 @@ license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 repository-code: "https://github.com/Research-Publications-and-Data/Tokenomics-As-Institutional_Design"
 url: "https://tokenization.systems"
-date-released: "2026-05-24"
-version: "1.4.0-frontiers-r3-prep-cycle-5-multi-protocol"
+date-released: "2026-06-02"
+version: "1.5.0-frontiers-r2-revision"

@@ -1,13 +1,21 @@
 # Codebook: B2 Governance Concentration Dataset
 
-**Version:** April 2026 (40-protocol universe)
-**Paper:** "Tokenomics as Institutional Design: A Normative Framework and Governance Concentration Analysis"
+**Version:** April 2026 snapshot (52-protocol universe; R2 revision 2026-06-02)
+**Paper:** "Governance Concentration Beyond Token Allocation: A Protocol-Address-Corrected Cross-Sectional Audit of 52 DePIN and DeFi Protocols"
+
+### Reproduction scripts (R2 revision)
+
+- `reproduce.py` (repository root): post-exclusion holder HHIs from raw, the powered Model 4 specifications, and the insider-retention de-tautology.
+- `b2/paper/analysis_n52_2026-05-29/b2_sector_contrast_reproduce_2026-06-02.py`: the sector-contrast staking-treatment triple (pass-through Cohen's d = 0.65; uniform-exclusion d = 0.75; complete-CEX d = 1.05) reproduced from the committed per-protocol holding-HHI vectors `sector_contrast_hhi_vectors_2026-06-02.csv`.
+- `b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py`: the allocation null (r = 0.10, N = 50), TOST equivalence, the launch-design omnibus, the temporal-endpoint null, Model 4 influence diagnostics, and the insider-retention triple.
+
+All three run from in-repo data with no `/tmp` and no external dependency.
 
 ---
 
 ## regression_data_april2026.csv
 **Location:** `data/processed/regression_data_april2026.csv`
-**Rows:** 40 (one per protocol)
+**Rows:** 52 (one per protocol)
 **Unit of observation:** Protocol × token × April 2026 snapshot
 
 | Column | Type | Description | Source |

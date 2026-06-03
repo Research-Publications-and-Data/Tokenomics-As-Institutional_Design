@@ -2,6 +2,22 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.5.0-frontiers-r2-revision] (2026-06-02)
+
+### R2 final: pass-through-headline reconciliation plus a Phase 1-4 robustness layer
+
+The sector contrast is finalized to the voter-inclusive staking pass-through headline, a zero-new-data robustness layer is added, and all package surfaces (README, cover letter, reviewer response, CITATION, CODEBOOK) are reconciled to this of-record.
+
+**Sector contrast finalized to an honest effect-size triple (Section 4.6.2).** The headline is the voter-inclusive staking pass-through treatment (Cohen's d = 0.65, Mann-Whitney p = 0.028, all 30 leave-one-out folds significant; the mean-based permutation is marginal at approximately 0.08, a heavy-tail signature of one concentrated DeFi-side vote-escrow bloc). The uniform staking-aggregation exclusion is reported as a robustness check significant on every test (Cohen's d = 0.75, p = 0.018, permutation 0.009). The earlier complete-CEX effect (Cohen's d = 1.05) is reported as inflated by an inconsistent staking treatment rather than as the headline. Supersedes the prior d = 0.96 / d = 1.05 headline framing.
+
+**Allocation null finalized and bounded.** Insider allocation Pearson r = 0.10, p = 0.49, N = 50 (Spearman rho = 0.16, p = 0.27), statistically equivalent to zero within |r| = 0.38 (TOST p = 0.02), with the launch-design block jointly uninformative (omnibus F(3,41) = 0.66, p = 0.58). Supersedes r = 0.07, N = 37.
+
+**Phase 1-4 robustness layer added.** Two-one-sided-tests equivalence on the allocation null; the launch-design omnibus; a descriptive 24-month temporal-endpoint null (launch insider allocation uncorrelated with the governance-HHI endpoint, Pearson r = -0.11, N = 13); Model 4 influence diagnostics (all 50 leave-one-out refits keep the DePIN coefficient significant); and the insider-retention de-tautology triple (Spearman rho = 0.54, N = 34; bootstrap interval [0.21, 0.80]; permutation p = 0.001; sector-partial r = 0.47, p = 0.005).
+
+**Other reconciliations.** HHI-Gini correlation Pearson r = 0.52, N = 48 (supersedes r = 0.58, N = 40 / 44); subsidy with-Livepeer r = 0.62, N = 23 (excluding Livepeer r = 0.07, N = 22; Spearman rho = 0.26). The retain-exchange-wallet robustness is reported as a reproducible medium effect (Cohen's d approximately 0.62, Mann-Whitney p approximately 0.03 to 0.05), replacing an earlier non-reproducible not-significant claim.
+
+**Reproducibility additions.** `b2/paper/analysis_n52_2026-05-29/b2_sector_contrast_reproduce_2026-06-02.py` reproduces the sector-contrast d-triple from the committed per-protocol holding-HHI vectors (`sector_contrast_hhi_vectors_2026-06-02.csv`); `b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py` reproduces the allocation null, TOST equivalence, omnibus, temporal-endpoint null, Model 4 influence, and the insider-retention triple. Both run from in-repo data with no `/tmp` and no external dependency.
+
 ## [1.4.0-frontiers-r3-prep-cycle-5-multi-protocol] — 2026-05-24
 
 ### Cycle 5 cumulative multi-protocol Path B cascade (DEC-195 + DEC-196; HNT + LPT preserved)
