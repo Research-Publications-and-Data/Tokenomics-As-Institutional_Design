@@ -5,7 +5,7 @@ ROB-4 (retention triple + sector-partial), ROB-5 (influence diagnostics), NE-1 (
 All against committed in-repo inputs. No /tmp data dependency, no cross-clone path.
 
 Run from anywhere:  python b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py
-Reproduces (Section 4.4 / 4.6): allocation null r = 0.10, N = 50 (Spearman rho = 0.16);
+Reproduces (Section 4.4 / 4.6): allocation null r = 0.09, N = 50 (Spearman rho = 0.19);
 TOST equivalence p = 0.02 within |r| = 0.38; launch-design omnibus F(3,41) = 0.66, p = 0.58
 (R-squared 4.6 percent); insider-retention de-tautology rho = 0.54, N = 34 (bootstrap CI
 [0.21, 0.80], permutation p = 0.001, LOO 34/34, sector-partial r = 0.47, p = 0.005);
@@ -31,7 +31,7 @@ def fnum(x):
 rows = list(csv.DictReader(open(FRAME)))
 def col(r, c): return fnum(r.get(c))
 
-print("="*78); print("ANCHOR: core null (insider_pct vs hhi), reproduce r=0.099/N=50"); print("="*78)
+print("="*78); print("ANCHOR: core null (insider_pct vs hhi), reproduce r=0.086/N=50"); print("="*78)
 # governance + holder protocols in the 3 sectors with both fields present
 def alloc_sample(include_social=False):
     out=[]

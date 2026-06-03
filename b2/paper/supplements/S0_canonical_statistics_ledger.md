@@ -1,6 +1,6 @@
 # S0: Canonical Statistics Ledger
 
-Single source of truth for all statistics cited in the B2 main text. Update this file first when replication outputs change; then sync PAPER.md. This ledger reflects the final-version cross-section (post-exclusion N=52; covariate-complete powered model N=50; balanced sector contrast N=15/15) and the evidence-traced insider classification of record (Section 3.4). Reconciled 2026-06-03 to the DEC-209 of-record (PAPER.md): the allocation battery moved to the N=50 fuller sample, the sector headline is the voter-inclusive pass-through treatment (Cohen's d = 0.65, not the prior d = 1.05), HHI-Gini is r = 0.52 (N = 48), and insider retention is rho = 0.44 (N = 39). A follow-up 2026-06-03 pass corrected the S10 five-specification PCA-robustness row to the 2026-06-01 post-CEX-audit recompute (Spec A p = 0.011, d = 1.05 as the superseded inconsistent-staking spec; Spec B at the margin), which the initial reconciliation had left at the stale pre-audit Spec A p = 0.029 / Spec B p = 0.039 values. Prior values are superseded, not historical-of-record.
+Single source of truth for all statistics cited in the B2 main text. Update this file first when replication outputs change; then sync PAPER.md. This ledger reflects the final-version cross-section (post-exclusion N=52; covariate-complete powered model N=50; balanced sector contrast N=15/15) and the evidence-traced insider classification of record (Section 3.4). Reconciled 2026-06-03 to the DEC-209 of-record (PAPER.md): the allocation battery moved to the N=50 fuller sample, the sector headline is the voter-inclusive pass-through treatment (Cohen's d = 0.65, not the prior d = 1.05), HHI-Gini is r = 0.52 (N = 48), and insider retention is rho = 0.44 (N = 39). A follow-up 2026-06-03 pass corrected the S10 five-specification PCA-robustness row to the 2026-06-01 post-CEX-audit recompute (Spec A p = 0.011, d = 1.05 as the superseded inconsistent-staking spec; Spec B at the margin), which the initial reconciliation had left at the stale pre-audit Spec A p = 0.029 / Spec B p = 0.039 values. A further 2026-06-03 pass applied the insider-allocation re-code under the documented token-generation-event (TGE) convention (Anyone 0 to 10, Gnosis 0 to 95.82, Aave 0 to 18.75; Helium footnoted at zero TGE allocation, its roughly 34 percent cumulative HNT emission share to HST holders reported as an ongoing emission share rather than re-coded): the allocation null is unchanged in status (Pearson r = 0.09, p = 0.55; Spearman rho = 0.19, p = 0.18; TOST p = 0.02), team allocation is r = -0.03, the joint launch-design block is F(3, 41) = 0.60, p = 0.62 (4.2 percent), and the temporal-endpoint corroboration is r = -0.14 (N = 13). Prior r = 0.10 / -0.02 / -0.11 and the 4.6 percent block values are superseded. Prior values are superseded, not historical-of-record.
 
 **Snapshot date:** March 2026 (holder lists); Table 6 voting data per protocol notes in Section 3.5.
 
@@ -11,7 +11,7 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 | Analysis | N | Notes |
 |---|---:|---|
 | Full cross-section (Table 3) | 52 | All protocols with post-exclusion holding HHI |
-| Bivariate allocation battery | 50 | Protocols with initial insider allocation data (of-record N=50; r=0.10) |
+| Bivariate allocation battery | 50 | Protocols with initial insider allocation data (of-record N=50; r=0.09) |
 | Covariate-complete powered model (Table 5, Model 4) | 50 | Sector + revenue intensity + maturity; 12.5 observations per predictor |
 | Retention specification (alternative Model 4) | 50 | HONEY carries a classification-of-record retention value (A7) |
 | DePIN vs DeFi Mann-Whitney (balanced sector contrast, of record) | 15 / 15 | 30 protocols total |
@@ -31,14 +31,14 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 
 ### 1. Allocation null (covariate sweep)
 
-- **Insider allocation (primary):** Pearson r = 0.10, p = 0.49, N = 50 (Spearman rho = 0.16, p = 0.27; TOST equivalent to zero within the powered |r| = 0.38 envelope, p = 0.02)
-- Team allocation: r = -0.02, p = 0.88, N = 45
+- **Insider allocation (primary):** Pearson r = 0.09, p = 0.55, N = 50 (Spearman rho = 0.19, p = 0.18; TOST equivalent to zero within the powered |r| = 0.38 envelope, p = 0.02)
+- Team allocation: r = -0.03, p = 0.87, N = 45
 - Investor allocation: r = 0.19, p = 0.21, N = 45
 - Protocol maturity: r = 0.10, p = 0.49, N = 50
 - Circulating-to-total supply ratio: r = 0.03, p = 0.86, N = 31
 - MCap-to-FDV ratio: r = 0.21, p = 0.25, N = 33
 - Exclusion-adjusted float specification: r = -0.003, p = 0.99, N = 30
-- Joint launch-design block (team + investor + maturity): F(3, 41) = 0.66, p = 0.58, explains 4.6 percent of HHI variance
+- Joint launch-design block (team + investor + maturity): F(3, 41) = 0.60, p = 0.62, explains 4.2 percent of HHI variance
 - **Do not cite:** r = 0.18, p = 0.28 (incorrect legacy value; removed from literature section)
 
 ### 2. Insider wallet retention (primary)
@@ -91,6 +91,14 @@ Single source of truth for all statistics cited in the B2 main text. Update this
 
 - HHI-Theil Pearson r = 0.77; HHI-Gini Pearson r = 0.52, p < 0.001, N = 48
 - Gini range: 0.52 to 0.99; HHI range: 0.005 to 0.199
+
+### 9. Per-period voting-HHI trajectories (Section 4.5.4.2; Table 7; Figure 5)
+
+- **ALGO** (15 governance periods, commitment-weight HHI): min 0.0096, median 0.0129, max 0.0357. The GP15 value (0.0357) is a post-rewards regime artifact (post-GP14 commitment-volume drop), not concentration drift.
+- **GEOD** (9 GIPs, veNFT vote-weight HHI): min 0.0853, median 0.1708, max 0.3216. The 0.3216 peak is GIP-1 (37 voters); no monotonic trend.
+- **HNT** (46 substantive proposals, per-proposal HHI, voters >= 5): pre-HIP-141 (n=38) min 0.0367, median 0.0877, max 0.3332; post-HIP-141 (n=8) min 0.4329, median 0.6997, max 0.8655; combined-46 median 0.1014. The post-141 rise is a turnout-collapse artifact (participation fell from the 200-to-1,024-voter range to 5-to-10 voters; Spearman rho between voter count and HHI = -0.73, p < 1e-8), not concentration drift.
+- **DRIFT**: no dated per-period series (on-chain corpus keyed by proposal address without timestamps); 10 substantive proposals show a cross-sectional per-proposal HHI median of 0.266 (range 0.089 to 0.522). Reported cross-sectionally, not as a trajectory.
+- Source series (sibling clone `/Users/zach/b2-governance-data/data/processed/`): `ALGO_voting_hhi_series.json`, `GEOD_voting_hhi_series.json`, `HNT_per_proposal_turnout.csv`. Generator: `exhibits/figures/fig_voting_trajectory.py`. Plotted in Figure 5; summarized in Table 7.
 
 ---
 
