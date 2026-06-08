@@ -2,6 +2,56 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.0-b3-burn-construct-correction] (2026-06-08)
+
+### B3 GEODNET burn-construct correction (companion paper "Who Burns the Tokens?")
+
+A reconciliation against the Blockworks GEODNET dashboard established that the
+GEODNET burn series previously used for the B3 S2R numerator (Dune query 6917159,
+Solana SPL burn instructions) predominantly measures Wormhole NTT bridge outflow
+(cross-chain transfers), not the Foundation buy-and-burn. The construct-correct
+burn flow is the Polygon buy-and-burn to the dead address (Dune query 7541498 v2,
+the same flow this package already uses for the companion B2 on-chain GEOD
+revenue), which reproduces the issuer-reported (Messari) burn totals to within
+0.2%. Two corrections follow.
+
+Changed:
+- `data/raw/geodnet_monthly_burns.csv`: replaced the Solana SPL burn series with
+  the Polygon Foundation buy-and-burn series (monthly GEOD to 0x...dEaD,
+  Sep 2024 to May 2026). Feb 2026 = 1,305,000 GEOD.
+- `data/dune_queries/06_geodnet_burns.sql`: re-pointed from the Solana SPL burn
+  query (6917159) to the Polygon buy-and-burn query (7541498 v2).
+- GEODNET S2R (Feb 2026): 0.225 to 0.219 (1,305,000 Polygon buy-and-burn /
+  5,948,674 net miner issuance). The prior 0.225 used the Solana-bridge numerator
+  and coincided within tolerance.
+- `b3/figures/`: Figure 3 regenerated on the corrected series (single-peaked: a
+  post-halving ramp to a 52.5% October 2025 absorption peak, easing to 21.9% by
+  February 2026, replacing the prior collapse-and-recovery shape). Figure 4
+  regenerated (Helium plotted on the burn-signer demand axis; GEODNET, DIMO, and
+  Hivemapper moved to an off-axis off-chain-demand lane).
+- `b3/paper/`: added `B3_GeoDePIN_Final_v12.{docx,pdf}`.
+- `README.md`: B3 demand-concentration summary corrected.
+
+Retired (construct-invalid):
+- `data/dune_queries/08_geodnet_burn_concentration.sql`: deprecated. On-chain
+  burn-signer concentration is a valid demand proxy only for direct-burn
+  protocols. GEODNET runs a Foundation buy-and-burn, so its burn signers are the
+  treasury, not customers. The GEODNET burn-signer HHI 0.055 is retired.
+- The cross-model "subscription/license models produce four to five times less
+  demand concentration" claim is retired. A contract-level audit found DIMO
+  (0.063) is a protocol-mediated pooled burn (developers pool DIMO via
+  `issueInDimo`; the treasury burns later per DIP-3) and Livepeer (0.31) is an
+  ETH fee-payer HHI with no token burn. Only Helium (0.27, direct Data Credit
+  burns) is a construct-valid burn-signer HHI; it is preserved. The finding is
+  recast: the "Who Burns?" diagnostic measures demand concentration only for
+  direct-burn protocols, and buy-and-burn / pooled-burn architectures relocate
+  demand off-chain.
+
+Unaffected:
+- The companion B2 governance study and its on-chain GEOD revenue measurement
+  already use the construct-correct Polygon buy-and-burn (Dune 7541498 v2) and
+  require no change.
+
 ## [1.5.0-frontiers-r2-revision] (2026-06-02)
 
 ### R2 final: pass-through-headline reconciliation plus a Phase 1-4 robustness layer

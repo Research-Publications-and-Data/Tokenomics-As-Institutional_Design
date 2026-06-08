@@ -1,4 +1,17 @@
--- Dune Query 6917162: GEODNET Burn Signer Concentration (Solana)
+-- DEPRECATED (2026-06; CHANGELOG 1.6.0): this query does NOT measure GEODNET
+-- customer/demand concentration and must not be used as a demand-concentration HHI.
+-- It groups Solana SPL burn instructions by signer, but those burns are
+-- predominantly Wormhole NTT bridge outflow signed by individual bridge users,
+-- not customers. More fundamentally, GEODNET runs a Foundation buy-and-burn
+-- (subscription revenue collected off-chain in fiat; the Foundation buys GEOD on
+-- the open market and burns it), so the on-chain burn signer is the Foundation
+-- treasury, not a customer. On-chain burn-signer concentration is a valid demand
+-- proxy ONLY for direct-burn protocols (e.g. Helium, where each Data Credit
+-- purchaser signs their own burn). The GEODNET burn-signer HHI 0.055 reported in
+-- earlier paper versions is retired; GEODNET demand concentration is off-chain
+-- and not measurable from burn data. Query retained for provenance only.
+--
+-- Dune Query 6917162: GEODNET Burn Signer Concentration (Solana) [INVALID CONSTRUCT]
 -- https://dune.com/queries/6917162
 -- GEOD Token Mint: 7JA5eZdCzztSfQbJvS8aVVxMFfd81Rs9VvwnocV1mKHu
 

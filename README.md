@@ -28,9 +28,9 @@ A 52-protocol cross-section documents that initial token allocation design does 
 
 ## Companion paper: Who Burns the Tokens? (B3)
 
-**Demand concentration is an independent failure mode.** A 34-month longitudinal analysis of Helium documents the first empirical observation of burn-to-mint equilibrium threshold crossing (S2R = 1.84). Subscription-based burn models (GEODNET HHI = 0.055, DIMO HHI = 0.063) produce four to five times less demand concentration than carrier-contract models (Helium HHI = 0.27, Livepeer HHI = 0.31).
+**Demand concentration is an independent failure mode, observable only for direct-burn protocols.** A 34-month longitudinal analysis of Helium documents the first empirical observation of burn-to-mint equilibrium threshold crossing (S2R = 1.84), and there demand is highly concentrated: roughly five purchasers account for about 90% of burns (burn-signer HHI 0.27). On-chain burn-signer concentration is a valid demand-concentration measure only where token holders burn directly (Helium); buy-and-burn (GEODNET, S2R 0.219) and protocol-mediated pooled-burn (DIMO) architectures execute burns through a foundation or treasury, relocating the demand base to off-chain subscriptions and licenses, so their customer concentration is not observable on-chain. (Prior revisions reported GEODNET HHI 0.055 and a four-to-five-times cross-model comparison; both are retired as construct-invalid. See CHANGELOG 1.6.0.)
 
-- Manuscript: `b3/paper/B3_GeoDePIN_Final_v8.docx`
+- Manuscript: `b3/paper/B3_GeoDePIN_Final_v12.docx`
 - SSRN: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6483619](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6483619)
 
 ## Repository Structure
