@@ -55,7 +55,7 @@ ax.text(9.32, 6.0, "Annual halving", color="#c87f2a", fontsize=7.5, style="itali
 
 peak_idx = rate.index(max(rate))  # Oct 2025
 ax.annotate(
-    f"Peak: {rate[peak_idx]:.0f}%\n(Oct 2025)",
+    f"Peak: {rate[peak_idx]:.1f}%\n(Oct 2025)",
     xy=(peak_idx, rate[peak_idx]), xytext=(peak_idx - 1.7, rate[peak_idx] + 4),
     fontsize=8, color="#1a5276", fontweight="bold", ha="center",
     arrowprops=dict(arrowstyle="-", color="#1a5276", linewidth=0.7),

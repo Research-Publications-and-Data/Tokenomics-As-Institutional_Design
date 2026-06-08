@@ -19,9 +19,9 @@ DuneSQL dialect (Trino/PrestoSQL).
 | `03_dimo_s2r.sql` | — | B2 §5.B | DIMO developer license burn S2R (Polygon, Jan 2024–Feb 2026) |
 | `04_helium_who_burns.sql` | — | B2 §5.A | Helium DC burn concentration — "who burns?" |
 | `05_defi_benchmarks.sql` | — | B2 Table 2 | DeFi governance HHI benchmarks (6 Ethereum protocols, Feb 2026) |
-| `06_geodnet_burns.sql` | 6917159 | B2 §5.C | GEODNET monthly burn transactions + GEOD burned (Solana) |
-| `07_geodnet_emissions.sql` | 6923474 | B2 §5.C | GEODNET monthly emissions (Solana) |
-| `08_geodnet_burn_concentration.sql` | 6917162 | B2 §5.C | GEODNET burn signer HHI — concentration of burn activity |
+| `06_geodnet_burns.sql` | 7541498 v2 | B2 §5.C; B3 S2R numerator | GEODNET Foundation buy-and-burn to the Polygon dead address (construct-correct; re-pointed from Solana 6917159 in v1.6.0; see CHANGELOG) |
+| `07_geodnet_emissions.sql` | 6923474 | B2 §5.C | GEODNET Solana SPL gross mint; NOT the B3 S2R denominator (the S2R denominator is net miner issuance, Console net-flow Dune 7542071, tracked as data/raw/geodnet_net_issuance.csv) |
+| `08_geodnet_burn_concentration.sql` | 6917162 | DEPRECATED v1.6.0 | GEODNET burn-signer HHI: construct-invalid (Foundation buy-and-burn; signers are the treasury, not customers); retired |
 
 Note: Queries 02–05 are templates without saved Dune IDs (run ad hoc during data collection).
 Queries 06–08 have saved IDs in the Dune workspace.

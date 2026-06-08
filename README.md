@@ -42,7 +42,7 @@ A 52-protocol cross-section documents that initial token allocation design does 
 │       └── supplements/                    # Supplementary Files S1-S8
 ├── b3/                             # B3 manuscript + data
 │   └── paper/
-│       └── B3_GeoDePIN_Final_v8.docx
+│       └── B3_GeoDePIN_Final_v12.docx
 ├── data/
 │   ├── processed/                  # Master datasets
 │   │   ├── regression_data_april2026.csv    # 52 protocols, 39 variables

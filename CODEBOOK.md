@@ -278,13 +278,21 @@ Time series data for DePIN protocol economic analyses.
 | spike_flag | True if > 2× trailing median (spike detection) |
 | s2r_median_5m | 5-month rolling median |
 
-### geodnet_monthly_burns.csv (19 rows, monthly, Sep 2024–present)
+### geodnet_monthly_burns.csv (21 rows, monthly, Sep 2024 to May 2026)
+Construct-correct GEODNET Foundation buy-and-burn (Polygon dead address; Dune 7541498 v2). Re-sourced in v1.6.0 from the prior Solana SPL burn series (which measured Wormhole NTT bridge outflow, not the buy-and-burn); the old burn_tx_count and unique_signers columns are retired.
 | Column | Description |
 |--------|-------------|
-| month | Month start date |
-| burn_tx_count | Number of burn transactions |
-| geod_burned | GEOD tokens burned |
-| unique_signers | Unique addresses initiating burns |
+| month | Month start date (YYYY-MM-DD) |
+| geod_burned | GEOD tokens burned via the Foundation buy-and-burn to the Polygon dead address |
+| burn_flow | Provenance tag (polygon_buy_and_burn_to_dead_0xdEaD) |
+
+### geodnet_net_issuance.csv (18 rows, monthly, Sep 2024 to Feb 2026)
+The B3 S2R denominator: net miner issuance (Console net-flow methodology, Dune 7542071). S2R = geodnet_monthly_burns.geod_burned / geodnet_net_issuance.geod_net_issuance. Feb 2026: 1,305,000 / 5,948,674 = 0.219. Note: this is NOT geodnet_monthly_emissions.geod_emitted (that is the Solana SPL gross mint).
+| Column | Description |
+|--------|-------------|
+| month | Month (YYYY-MM) |
+| geod_net_issuance | Net GEOD issued to miners (gross outbound minus inbound cross-wallet funding) |
+| methodology | Provenance tag (console_net_flow_dune_7542071) |
 
 ### geodnet_monthly_emissions.csv (19 rows, monthly, Sep 2024–present)
 | Column | Description |

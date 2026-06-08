@@ -2,6 +2,17 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.1-b3-burn-construct-correction] (2026-06-08)
+
+### Completeness fixes surfaced by a post-correction audit of v1.6.0
+
+- b3/paper: synced the corrected B3 v12 docx + pdf (Table 7 now lists only Helium with a measured Demand HHI; Livepeer 0.31, a fee-payer HHI with no token burn, was the third invalid value and is now the not-measured marker, matching GEODNET and DIMO).
+- b3/figures: Figure 3 peak label precision (52% to 52.5%) and a few prose/precision touch-ups synced.
+- data/raw/geodnet_net_issuance.csv: ADDED. The B3 S2R denominator (net miner issuance, Console net-flow, Dune 7542071) was previously present only as a hardcoded array in the figure script, so a replicator could not regenerate the headline 0.219 from tracked files. The 18-month series is now tracked; S2R = geodnet_monthly_burns / geodnet_net_issuance (Feb 2026 = 1,305,000 / 5,948,674 = 0.219).
+- data/dune_queries/README.md: query registry corrected to match the re-pointed SQL (06 -> Polygon 7541498 v2; 08 marked DEPRECATED; 07 clarified as Solana gross mint, not the S2R denominator).
+- CODEBOOK.md: geodnet_monthly_burns.csv schema updated (21 rows; columns month/geod_burned/burn_flow; old burn_tx_count + unique_signers retired); geodnet_net_issuance.csv documented.
+- README.md: repository-structure tree manuscript pointer corrected (v8 to v12), matching the prose.
+
 ## [1.6.0-b3-burn-construct-correction] (2026-06-08)
 
 ### B3 GEODNET burn-construct correction (companion paper "Who Burns the Tokens?")

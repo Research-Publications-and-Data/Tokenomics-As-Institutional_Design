@@ -48,5 +48,5 @@ license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 repository-code: "https://github.com/Research-Publications-and-Data/Tokenomics-As-Institutional_Design"
 url: "https://tokenization.systems"
-date-released: "2026-06-02"
-version: "1.6.0-b3-burn-construct-correction"
+date-released: "2026-06-08"
+version: "1.6.1-b3-burn-construct-correction"
