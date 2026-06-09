@@ -2,6 +2,16 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.2-b3-correctness-pass] (2026-06-08)
+
+### B3 whole-paper correctness pass (preprint)
+
+A whole-paper audit found the GEODNET burn-flow error generalized to other claims; the manuscript headlines were corrected to match the on-chain evidence and the replication data was reconciled.
+
+- data/raw/helium_s2r_cleaned.csv: corrected the Feb-2026 row from the retired stale values (777,042 burned / 377,260 issued -> S2R 2.06) to the canonical of-record values (1,144,240 / 621,370 -> S2R 1.84) so the package reproduces the manuscript Table 3. On a trailing-twelve-month basis the network is net inflationary (S2R approximately 0.49), which the manuscript now states.
+- b3/paper: synced the corrected B3 v12 docx + pdf (Helium lead finding now stated as the first net-deflationary monthly readings rather than full steady-state offset; DIMO 4.24 presented as a single elevated month, not a confirmed fiscal-parity case; governance comparison reframed to the companion post-exclusion test).
+
+
 ## [1.6.1-b3-burn-construct-correction] (2026-06-08)
 
 ### Completeness fixes surfaced by a post-correction audit of v1.6.0
