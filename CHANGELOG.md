@@ -2,6 +2,16 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.5-b3-v15-citation-add] (2026-06-09)
+
+### B3 Final_v15: De Filippi (2024) polycentric-governance citation
+
+An author-approved cited-research addition. One sentence in Section 2.6.1 extends the paper's Ostrom-based polycentric-governance discussion to the blockchain-specific application (token-holder voting as one decision-making center among several), with reference [64] added. No data, figure, table, or finding change from v14.
+
+- b3/paper: added B3_GeoDePIN_Final_v15.docx + .pdf (53 pages).
+- No data or figure changes this version.
+
+
 ## [1.6.4-b3-v14-prose-framing-polish] (2026-06-09)
 
 ### B3 Final_v14 adversarial prose-framing polish
