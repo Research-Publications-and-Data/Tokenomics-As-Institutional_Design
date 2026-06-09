@@ -2,6 +2,14 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.3-b3-v13-journal-build] (2026-06-08)
+
+### B3 Final_v13 journal-strengthened build
+
+- b3/paper: added B3_GeoDePIN_Final_v13.docx + .pdf (53 pages). Demand concentration recovered to N=2 (Helium burn-signer 0.27 + Livepeer fee-payer 0.31, both high; measurability framing); new Table 3a trailing-window Helium S2R (6m 1.24, TTM 0.51); governance reframed to the post-exclusion test (p=0.028, d=0.65); DIMO resolved (per-user account-abstraction wallets, off-axis because DCX-credit purchases are one step removed from end-customers, not a foundation treasury); Hivemapper single-relayer; citations [26]->[30], [62]/[63] added.
+- b3/figures: Figure 4 v13 (Helium + Livepeer on the demand axis; DIMO label corrected to "DCX-credit purchase burns").
+
+
 ## [1.6.2-b3-correctness-pass] (2026-06-08)
 
 ### B3 whole-paper correctness pass (preprint)
