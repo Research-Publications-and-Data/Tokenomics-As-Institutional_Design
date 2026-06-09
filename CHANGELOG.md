@@ -2,6 +2,16 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.6-b3-v16-citation-add] (2026-06-09)
+
+### B3 Final_v16: Weidener (2025) delegated-voting citation
+
+A second author-approved cited-research addition. One clause at the Section 3 governance-method sentence supports the delegated-voting-power-distribution measure (delegation can concentrate rather than diffuse effective voting power), with reference [65] added (Weidener et al., Delegated voting in DAOs, Frontiers in Blockchain, 2025). No data, figure, table, or finding change from v15.
+
+- b3/paper: added B3_GeoDePIN_Final_v16.docx + .pdf (53 pages).
+- No data or figure changes this version.
+
+
 ## [1.6.5-b3-v15-citation-add] (2026-06-09)
 
 ### B3 Final_v15: De Filippi (2024) polycentric-governance citation
