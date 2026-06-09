@@ -2,6 +2,16 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.6.4-b3-v14-prose-framing-polish] (2026-06-09)
+
+### B3 Final_v14 adversarial prose-framing polish
+
+An adversarial 6-lens prose-framing audit (workflow wf_99417aff) returned zero correctness errors and six framing-consistency fixes, all applied. No numeric, finding, table, or figure-data change from v13.
+
+- b3/paper: added B3_GeoDePIN_Final_v14.docx + .pdf (53 pages). The summary-level architecture vocabulary now matches the body taxonomy (the off-chain-demand architectures are named consistently as buy-and-burn, single-relayer, and credit-intermediated, replacing an undefined "pooled-burn" category in the abstract and conclusion); an internal cross-reference was corrected (a citation to nonexistent "Hypotheses 3.3/3.5" re-pointed to Principle 2.1 and Section 2.6.1); the Helium fiscal-regime descriptions were aligned with the trailing-window table (the late-2025 net-deflationary run is described as four of five months, with November 2025 below parity at monthly S2R 0.88, while the trailing-twelve-month ratio remains net inflationary); "structurally deflationary" softened to "net-deflationary on a monthly basis"; and the section-numbering style normalized.
+- No data or figure changes this version (v13 figures and data series carry forward unchanged).
+
+
 ## [1.6.3-b3-v13-journal-build] (2026-06-08)
 
 ### B3 Final_v13 journal-strengthened build
