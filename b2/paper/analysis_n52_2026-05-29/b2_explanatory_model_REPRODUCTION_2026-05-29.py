@@ -90,7 +90,7 @@ print("\n=== RETENTION de-tautology (original sample; insider_analysis_results_v
 v3=list(csv.DictReader(open("data/processed/insider_analysis_results_v3.csv")))
 ret=[]
 for r in v3:
-    frac=f(r.get('insider_count_frac')); nih=f(r.get('non_insider_hhi_top10')) or f(r.get('non_insider_hhi_approx'))
+    frac=f(r.get('insider_count_frac')); nih=f(r.get('non_insider_hhi_approx'))
     full=f(r.get('full_hhi'))
     if frac is not None and full is not None:
         ret.append({'tok':r['token'],'frac':frac,'nih':nih,'full':full})
