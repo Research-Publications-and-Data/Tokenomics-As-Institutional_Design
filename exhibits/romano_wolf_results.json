@@ -1,0 +1,66 @@
+{
+ "meta": {
+  "B": 20000,
+  "seed": 2026,
+  "m_family": 4,
+  "permutation": "coordinated protocol-key u, shared across members",
+  "step_down": "Westfall-Young minP (each member calibrated vs own permutation null)"
+ },
+ "members": {
+  "allocation": {
+   "stat": 0.0873,
+   "p_asymptotic": 0.5426,
+   "n": 51,
+   "p_perm_calibrated": 0.5404,
+   "p_bonferroni": 1.0,
+   "p_holm": 0.5404,
+   "p_romano_wolf_minP": 0.5404,
+   "survives_fwer_0.05": false
+  },
+  "retention": {
+   "stat": 0.4414,
+   "p_asymptotic": 0.0049,
+   "n": 39,
+   "p_perm_calibrated": 0.005,
+   "p_bonferroni": 0.0202,
+   "p_holm": 0.0182,
+   "p_romano_wolf_minP": 0.0178,
+   "survives_fwer_0.05": true
+  },
+  "subsidy": {
+   "stat": 0.6203,
+   "p_asymptotic": 0.0016,
+   "n": 23,
+   "p_perm_calibrated": 0.0171,
+   "p_bonferroni": 0.0686,
+   "p_holm": 0.0343,
+   "p_romano_wolf_minP": 0.0339,
+   "survives_fwer_0.05": true
+  },
+  "sector": {
+   "stat": 10.0933,
+   "p_asymptotic": 0.0064,
+   "n": 50,
+   "p_perm_calibrated": 0.0045,
+   "p_bonferroni": 0.0182,
+   "p_holm": 0.0182,
+   "p_romano_wolf_minP": 0.0178,
+   "survives_fwer_0.05": true
+  }
+ },
+ "acceptance_gate": {
+  "retention_rho_0.44_N39": true,
+  "sector_H_10.09_N50": true,
+  "subsidy_r_0.62_N23": true,
+  "allocation_r_0.09": true,
+  "sandwich_perm_le_rw": true,
+  "rw_le_holm": true,
+  "rw_le_bonferroni": true,
+  "rw_monotone": true,
+  "ALL_PASS": true
+ },
+ "halt2": {
+  "discoveries_that_flip_to_nonsig_under_RW": [],
+  "triggered": false
+ }
+}

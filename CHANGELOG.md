@@ -2,6 +2,19 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.0.2] (2026-06-15)
+
+### B2 replication package v1.0.2: Romano-Wolf family-wise-correction robustness exhibit
+
+Adds a supplementary robustness exhibit that applies a step-down Romano-Wolf (Westfall-Young minP) family-wise correction across the four-test bivariate battery the paper reports (allocation, insider retention, subsidy, sector contrast), under a single coordinated protocol-permutation null (B = 20,000) that preserves cross-test dependence. The discoveries survive a joint family-wise correction at FWER 0.05: insider retention Romano-Wolf p = 0.018, sector contrast p = 0.018, subsidy (Livepeer-inclusive) p = 0.034, allocation null unaffected at p = 0.54. The correction is only marginally tighter than Holm (weak cross-test dependence), so the value is the assumption-light joint family-wise statement rather than a power gain; no discovery flips across its significance threshold under the correction.
+
+- `exhibits/romano_wolf_stepdown.py`: the step-down script (run from `exhibits/`; writes `romano_wolf_results.json` with raw, Bonferroni, Holm, and Romano-Wolf p side by side, plus an anchor-reproduction acceptance gate).
+- `exhibits/romano_wolf_results.json`: the output of record (acceptance gate ALL_PASS; byte-identical on re-run).
+- `exhibits/romano_wolf_frames/insider_analysis_results_v3.csv`: the of-record insider-retention frame (the N = 39 retention cohort; the retention test correlates `insider_count_frac` against this frame's `full_hhi`).
+- `exhibits/price_performance_audit/b2_price_performance_dataset.csv`: the 52-protocol frame supplying the allocation, the N = 23 Livepeer-inclusive subsidy subsample, and the sector members.
+
+No data, figure, table, or finding change to the accepted manuscript; this is a supplementary robustness layer over v1.0.1 (a497f35).
+
 ## [1.6.6-b3-v16-citation-add] (2026-06-09)
 
 ### B3 Final_v16: Weidener (2025) delegated-voting citation

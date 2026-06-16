@@ -11,6 +11,8 @@
 
 All three run from in-repo data with no `/tmp` and no external dependency.
 
+**Romano-Wolf family-wise-correction robustness exhibit (v1.0.2, 2026-06-15).** `exhibits/romano_wolf_stepdown.py` applies a step-down Romano-Wolf (Westfall-Young minP) family-wise correction across the four-test bivariate battery (allocation, insider retention, subsidy, sector) under a single coordinated protocol-permutation null (B = 20,000); run from `exhibits/`. It reads `exhibits/romano_wolf_frames/insider_analysis_results_v3.csv` (the N = 39 insider-retention cohort; the retention member correlates `insider_count_frac` against this frame's `full_hhi`) and `exhibits/price_performance_audit/b2_price_performance_dataset.csv` (the 52-protocol frame supplying the allocation, the N = 23 Livepeer-inclusive subsidy subsample, and the sector members), and writes `exhibits/romano_wolf_results.json` (acceptance gate ALL_PASS; byte-identical on re-run). The discoveries survive at FWER 0.05 (retention and sector Romano-Wolf p = 0.018; subsidy p = 0.034; allocation null unaffected at p = 0.54); no discovery flips across its threshold under the correction.
+
 ---
 
 ## regression_data_april2026.csv
