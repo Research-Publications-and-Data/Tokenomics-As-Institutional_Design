@@ -1,0 +1,74 @@
+{
+ "meta": {
+  "B": 20000,
+  "seed": 2026,
+  "m_family": 4,
+  "variant": "B (sector = balanced DePIN-vs-DeFi Mann-Whitney on pass-through HHI, N=15/15)",
+  "permutation": "coordinated protocol-key u, shared across members",
+  "step_down": "Westfall-Young minP (each member calibrated vs own permutation null)"
+ },
+ "members": {
+  "allocation": {
+   "stat": 0.0873,
+   "p_asymptotic": 0.5426,
+   "n": 51,
+   "p_perm_calibrated": 0.5404,
+   "p_bonferroni": 1.0,
+   "p_holm": 0.5404,
+   "p_romano_wolf_minP": 0.5404,
+   "survives_fwer_0.05": false
+  },
+  "retention": {
+   "stat": 0.4414,
+   "p_asymptotic": 0.0049,
+   "n": 39,
+   "p_perm_calibrated": 0.005,
+   "p_bonferroni": 0.0202,
+   "p_holm": 0.0202,
+   "p_romano_wolf_minP": 0.0193,
+   "survives_fwer_0.05": true
+  },
+  "subsidy": {
+   "stat": 0.6203,
+   "p_asymptotic": 0.0016,
+   "n": 23,
+   "p_perm_calibrated": 0.0171,
+   "p_bonferroni": 0.0686,
+   "p_holm": 0.0514,
+   "p_romano_wolf_minP": 0.0485,
+   "survives_fwer_0.05": true
+  },
+  "sector": {
+   "stat": 166.0,
+   "p_asymptotic": 0.0279,
+   "n": 30,
+   "cohens_d": 0.6541,
+   "n1_depin": 15,
+   "n2_defi": 15,
+   "statistic": "mann_whitney_U_passthrough",
+   "p_perm_calibrated": 0.026,
+   "p_bonferroni": 0.104,
+   "p_holm": 0.052,
+   "p_romano_wolf_minP": 0.051,
+   "survives_fwer_0.05": false
+  }
+ },
+ "acceptance_gate": {
+  "retention_rho_0.44_N39": true,
+  "sector_d_0.65_N30": true,
+  "sector_mw_p_0.028": true,
+  "subsidy_r_0.62_N23": true,
+  "allocation_r_0.09": true,
+  "sandwich_perm_le_rw": true,
+  "rw_le_holm": true,
+  "rw_le_bonferroni": true,
+  "rw_monotone": true,
+  "ALL_PASS": true
+ },
+ "halt2": {
+  "discoveries_that_flip_to_nonsig_under_RW": [
+   "sector"
+  ],
+  "triggered": true
+ }
+}
