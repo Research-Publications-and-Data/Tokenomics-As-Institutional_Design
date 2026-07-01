@@ -10,7 +10,8 @@ Adds a second sector-member specification to the family-wise-correction exhibit 
 
 - `exhibits/romano_wolf_stepdown_sector_mw.py`: variant B (sector member is the balanced Mann-Whitney on pass-through HHI); imports the variant-A core so the two cannot drift. Run from `exhibits/`.
 - `exhibits/romano_wolf_results_sector_mw.json`: variant B output of record (acceptance gate ALL_PASS; HALT-2 flags the sector contrast as crossing 0.05 under correction, by design).
-- Integrated into B2 Section 4.6.5 plus the S26 supplement entry (workflow clone).
+- `b2/paper/supplements/S26_family_wise_error_control.md`: the reviewer-facing S26 supplement, reporting both variants' full p-value ladder (raw, permutation-calibrated, Bonferroni, Holm, Romano-Wolf), the acceptance-gate monotonicity check, and reproduction entry points; every value reproduces from the two drivers above (reconfirmed byte-identical 2026-06-30).
+- Integrated into B2 Section 4.6.5; the S26 supplement now ships in this package.
 
 CITATION.cff version field and the git tag are left for the release step.
 
