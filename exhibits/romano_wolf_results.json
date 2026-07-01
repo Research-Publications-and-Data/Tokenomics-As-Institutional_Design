@@ -8,13 +8,13 @@
  },
  "members": {
   "allocation": {
-   "stat": 0.0873,
-   "p_asymptotic": 0.5426,
-   "n": 51,
-   "p_perm_calibrated": 0.5404,
+   "stat": 0.0862,
+   "p_asymptotic": 0.5517,
+   "n": 50,
+   "p_perm_calibrated": 0.5431,
    "p_bonferroni": 1.0,
-   "p_holm": 0.5404,
-   "p_romano_wolf_minP": 0.5404,
+   "p_holm": 0.5431,
+   "p_romano_wolf_minP": 0.5431,
    "survives_fwer_0.05": false
   },
   "retention": {
@@ -24,7 +24,7 @@
    "p_perm_calibrated": 0.005,
    "p_bonferroni": 0.0202,
    "p_holm": 0.0182,
-   "p_romano_wolf_minP": 0.0178,
+   "p_romano_wolf_minP": 0.018,
    "survives_fwer_0.05": true
   },
   "subsidy": {
@@ -34,7 +34,7 @@
    "p_perm_calibrated": 0.0171,
    "p_bonferroni": 0.0686,
    "p_holm": 0.0343,
-   "p_romano_wolf_minP": 0.0339,
+   "p_romano_wolf_minP": 0.034,
    "survives_fwer_0.05": true
   },
   "sector": {
@@ -44,7 +44,7 @@
    "p_perm_calibrated": 0.0045,
    "p_bonferroni": 0.0182,
    "p_holm": 0.0182,
-   "p_romano_wolf_minP": 0.0178,
+   "p_romano_wolf_minP": 0.018,
    "survives_fwer_0.05": true
   }
  },
@@ -52,7 +52,7 @@
   "retention_rho_0.44_N39": true,
   "sector_H_10.09_N50": true,
   "subsidy_r_0.62_N23": true,
-  "allocation_r_0.09": true,
+  "allocation_r_0.09_N50": true,
   "sandwich_perm_le_rw": true,
   "rw_le_holm": true,
   "rw_le_bonferroni": true,

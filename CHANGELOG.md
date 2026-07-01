@@ -2,18 +2,27 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
-## [1.0.3] (pending release)
+## [1.0.3] (2026-07-01)
 
 ### B2 replication package: sector-member variant B for the Romano-Wolf battery
 
-Adds a second sector-member specification to the family-wise-correction exhibit and qualifies the framing of the v1.0.2 result. The v1.0.2 exhibit (variant A) used the omnibus three-class Kruskal-Wallis sector test (H = 10.09, N = 50), under which all three positive findings survive a joint correction at FWER 0.05. Variant B swaps the sector member for the paper's headline balanced DePIN-versus-DeFi Mann-Whitney (Cohen's d = 0.65, p = 0.028, N = 15 and 15). Under variant B the sector contrast sits just above the family-wise threshold (Romano-Wolf p approximately 0.05), insider retention still carries the correction cleanly (p = 0.019), and the Livepeer-inclusive subsidy is at the boundary (p = 0.049). The honest statement across both variants: insider retention survives a joint four-test family-wise correction regardless of sector specification; the sector contrast is corroborated as a marginal, specification-dependent medium effect that does not clear the correction under its weaker headline statistic, consistent with the paper's Section 4.6.2 characterization. The v1.0.2 "the discoveries survive" framing is specific to variant A and is qualified here.
+Adds a second sector-member specification to the family-wise-correction exhibit and qualifies the framing of the v1.0.2 result. The v1.0.2 exhibit (variant A) used the omnibus three-class Kruskal-Wallis sector test (H = 10.09, N = 50), under which all three positive findings survive a joint correction at FWER 0.05. Variant B swaps the sector member for the paper's headline balanced DePIN-versus-DeFi Mann-Whitney (Cohen's d = 0.65, p = 0.028, N = 15 and 15). Under variant B the sector contrast sits just above the family-wise threshold (Romano-Wolf p approximately 0.05), insider retention still carries the correction cleanly (p = 0.020), and the Livepeer-inclusive subsidy is at the boundary (p = 0.049). The honest statement across both variants: insider retention survives a joint four-test family-wise correction regardless of sector specification; the sector contrast is corroborated as a marginal, specification-dependent medium effect that does not clear the correction under its weaker headline statistic, consistent with the paper's Section 4.6.2 characterization. The v1.0.2 "the discoveries survive" framing is specific to variant A and is qualified here.
 
 - `exhibits/romano_wolf_stepdown_sector_mw.py`: variant B (sector member is the balanced Mann-Whitney on pass-through HHI); imports the variant-A core so the two cannot drift. Run from `exhibits/`.
 - `exhibits/romano_wolf_results_sector_mw.json`: variant B output of record (acceptance gate ALL_PASS; HALT-2 flags the sector contrast as crossing 0.05 under correction, by design).
 - `b2/paper/supplements/S26_family_wise_error_control.md`: the reviewer-facing S26 supplement, reporting both variants' full p-value ladder (raw, permutation-calibrated, Bonferroni, Holm, Romano-Wolf), the acceptance-gate monotonicity check, and reproduction entry points; every value reproduces from the two drivers above (reconfirmed byte-identical 2026-06-30).
 - Integrated into B2 Section 4.6.5; the S26 supplement now ships in this package.
 
-CITATION.cff version field and the git tag are left for the release step.
+### B2 replication package: allocation-battery reconciliation to the manuscript N = 50
+
+Reconciles the Romano-Wolf allocation member to the manuscript of-record allocation null. The member previously selected on holding HHI and insider allocation both present, without the social-token exclusion the manuscript (and the sector member) apply, so the dead social token GTC (Gitcoin) leaked in, giving N = 51, r = 0.087. Restricting the allocation member to the DePIN, DeFi, and infrastructure cross-section yields N = 50, r = 0.086 (rounds to the manuscript 0.09), p = 0.55, matching Section 4.4 and Figure 3. The acceptance gate now asserts allocation N = 50. The correction leaves the significant members unchanged at the manuscript precision; the coordinated-permutation recalibration nudges variant-B insider retention from 0.019 to 0.020 (still cleanly inside FWER 0.05).
+
+- `exhibits/romano_wolf_stepdown.py` and `romano_wolf_stepdown_sector_mw.py`: allocation member restricted to the sector cross-section; the gate asserts N = 50.
+- `exhibits/romano_wolf_results.json` and `romano_wolf_results_sector_mw.json`: re-run outputs of record (both ALL_PASS; byte-identical on re-run 2026-07-01).
+- `b2/paper/supplements/S26_family_wise_error_control.md`: both variant tables and prose updated to the reconciled N = 50 values.
+- Supplement staleness fixes flagged by the package stat audit: `hivemapper_holder_data_2026-05-19.md` retention (rho = 0.48, N = 37 to the of-record rho = 0.44, N = 39); `S5_pipeline_specification.md` sample counts (40 to 52 protocols; regression-ready 31/40 to 42/52); `S10_pca_classification_robustness.md` Spec A d = 1.05 reframed as the superseded inconsistent-staking estimate with the d = 0.65 pass-through headline named. The B2 package stat audit now returns CLEAN.
+
+Released as git tag v1.0.3; CITATION.cff version set to 1.0.3 and date-released 2026-07-01.
 
 ## [1.0.2] (2026-06-15)
 

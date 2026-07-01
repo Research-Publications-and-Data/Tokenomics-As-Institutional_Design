@@ -142,6 +142,13 @@ MEMBERS = [
 def subsample(master, conc, cov, kind):
     if kind == 'kw':
         s = master[master[conc].notna() & master[cov].isin(SECTORS) & (master[conc] > 0)]
+    elif cov == 'insider_pct':
+        # Allocation battery: the DePIN/DeFi/infrastructure cross-section with insider
+        # allocation data (social tokens excluded), matching the manuscript of-record
+        # allocation null (N = 50, Pearson r = 0.09) and the sector member's own SECTORS
+        # restriction. Without this filter the dead social token GTC (Gitcoin) leaks in,
+        # giving N = 51 and r = 0.087, a reviewer-facing drift from the manuscript.
+        s = master[master[conc].notna() & master[cov].notna() & master['category'].isin(SECTORS)]
     else:
         s = master[master[conc].notna() & master[cov].notna()]
     return s.reset_index(drop=True)
@@ -213,7 +220,7 @@ def main():
         'retention_rho_0.44_N39': abs(obs['retention']['stat'] - 0.4414) < 0.01 and obs['retention']['n'] == 39,
         'sector_H_10.09_N50': abs(obs['sector']['stat'] - 10.09) < 0.1 and obs['sector']['n'] == 50,
         'subsidy_r_0.62_N23': abs(obs['subsidy']['stat'] - 0.62) < 0.01 and obs['subsidy']['n'] == 23,
-        'allocation_r_0.09': abs(obs['allocation']['stat'] - 0.09) < 0.02,
+        'allocation_r_0.09_N50': abs(obs['allocation']['stat'] - 0.09) < 0.02 and obs['allocation']['n'] == 50,
     }
     # ---- minP sandwich: p_obs <= RW <= Holm(p_obs) <= Bonferroni(p_obs); RW monotone ----
     g['sandwich_perm_le_rw'] = bool(np.all(p_obs <= rw + 1e-9))

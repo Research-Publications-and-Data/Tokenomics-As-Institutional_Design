@@ -31,6 +31,7 @@ PRICE = HERE / "price_performance_audit" / "b2_price_performance_dataset.csv"
 V3 = HERE / "romano_wolf_frames" / "insider_analysis_results_v3.csv"
 VEC = HERE.parent / "b2" / "paper" / "analysis_n52_2026-05-29" / "sector_contrast_hhi_vectors_2026-06-02.csv"
 SECTOR_BIN = {"DePIN", "DeFi"}
+SECTORS = {"DeFi", "DePIN", "L1_L2_Infra"}  # 3-class governance cross-section for the allocation battery (social excluded)
 
 
 def cohens_d(a, b):
@@ -84,6 +85,12 @@ MEMBERS = [
 def subsample(master, conc, cov, kind):
     if kind == 'mw':
         s = master[master[conc].notna() & master[cov].isin(SECTOR_BIN)]
+    elif cov == 'insider_pct':
+        # Allocation battery: the DePIN/DeFi/infrastructure cross-section with insider
+        # allocation data (social tokens excluded), matching the manuscript of-record
+        # allocation null (N = 50, Pearson r = 0.09). Without this filter the dead social
+        # token GTC (Gitcoin) leaks in, giving N = 51 and r = 0.087.
+        s = master[master[conc].notna() & master[cov].notna() & master['category'].isin(SECTORS)]
     else:
         s = master[master[conc].notna() & master[cov].notna()]
     return s.reset_index(drop=True)
@@ -175,7 +182,7 @@ def main():
         'sector_d_0.65_N30': abs(obs['sector']['cohens_d'] - 0.65) < 0.02 and obs['sector']['n'] == 30,
         'sector_mw_p_0.028': abs(obs['sector']['p_asymptotic'] - 0.028) < 0.003,
         'subsidy_r_0.62_N23': abs(obs['subsidy']['stat'] - 0.62) < 0.01 and obs['subsidy']['n'] == 23,
-        'allocation_r_0.09': abs(obs['allocation']['stat'] - 0.09) < 0.02,
+        'allocation_r_0.09_N50': abs(obs['allocation']['stat'] - 0.09) < 0.02 and obs['allocation']['n'] == 50,
     }
     g['sandwich_perm_le_rw'] = bool(np.all(p_obs <= rw + 1e-9))
     g['rw_le_holm'] = bool(np.all(rw <= hlm + 1e-9))

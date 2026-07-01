@@ -59,6 +59,6 @@ Add HONEY row to `data/processed/insider_analysis_results_v4.csv` after classifi
 - This supplement (gap documentation; transparent reporting of data-layer-complete-but-classification-deferred state)
 - No PAPER.md update for Section 3.6 N=40 (insider retention remains N=37 per current canonical state)
 
-The 39→40 closure is partially advanced (data acquisition completed) but not fully closed (classification deferred). The headline insider-retention statistic (Spearman rho = 0.48, p = 0.003, N = 37) is unaffected by this cycle.
+The 39→40 closure is partially advanced (data acquisition completed) but not fully closed (classification deferred). The headline insider-retention statistic (Spearman rho = 0.44, p = 0.005, N = 39) is unaffected by this cycle.
 
 End of supplement.
