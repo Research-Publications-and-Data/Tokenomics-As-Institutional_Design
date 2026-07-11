@@ -241,14 +241,14 @@ python scripts/generate_figure3.py
 
 After running the pipeline, verify:
 
-1. `governance_concentration_april2026.csv` has 40 rows
+1. `governance_concentration_april2026.csv` has 40 rows (April 2026 pipeline snapshot; the final of-record cross-section is N = 52 with the covariate-complete regression sample at N = 50, note added 2026-07-10)
 2. All HHI values are between 0 and 1
 3. No protocol has N < 50 holders (minimum for inclusion)
 4. Exclusions applied: check that excluded addresses do not appear in top-10 for affected tokens
 5. Multi-chain merge: RENDER total holders > max(ETH holders, SOL holders)
 6. Helius correction: META, DRIFT, GRASS, W have >1000 holders
-7. Regression dataset: `regression_ready` column is True for 42/52 protocols
-8. Insider correlation: `pearsonr(insider_pct, hhi)` returns r near +0.08, p near 0.64
+7. Regression dataset: `regression_ready` column is True for 42/52 protocols at this snapshot (the published covariate-complete powered model runs at N = 50; note added 2026-07-10)
+8. Insider correlation: `pearsonr(insider_pct, hhi)` returns the of-record allocation null r = 0.09, p = 0.55 on the N = 50 covariate-complete sample (expected-value corrected 2026-07-10; the +0.08 / 0.64 pair was a pre-of-record vintage)
 
 ## Refresh Cadence
 
@@ -287,8 +287,8 @@ Five protocols (GMX, ENS, Rocket Pool, Gitcoin, Balancer) enter the sample via S
 
 `fig_S5b_loo_forest_sector_contrast.png`
 
-Left panel: Cohen's d recomputed after dropping each protocol from the joint DePIN+DeFi sample (30 iterations, under the uniform staking-aggregation exclusion robustness treatment); p-value annotated to the right of each bar; reference lines at the main-result d = 0.75 and the conventional Cohen large-effect threshold d = 0.80. Every leave-one-out iteration remains statistically significant (per-iteration p 0.006 to 0.031); the d range across all 30 iterations is 0.68 to 0.92, a stable medium effect that does not depend on any single protocol.
+Left panel: Cohen's d recomputed after dropping each protocol from the joint DePIN+DeFi sample (30 iterations, under the uniform staking-aggregation exclusion robustness treatment); p-value annotated to the right of each bar; reference lines at the uniform-exclusion robustness d = 0.75 (the main-text headline is the voter-inclusive pass-through frame, d = 0.65, MW p = 0.028; label corrected 2026-07-10) and the conventional Cohen large-effect threshold d = 0.80. Every leave-one-out iteration remains statistically significant (per-iteration p 0.006 to 0.031); the d range across all 30 iterations is 0.68 to 0.92, a stable medium effect that does not depend on any single protocol.
 
-Right panel: bootstrap 95% percentile interval on the headline Cohen's d (10,000 resamples; [0.40, 1.52]). The bootstrap interval strictly excludes zero, confirming the sector contrast is robust to sample composition, single-protocol exclusion, and resampling.
+Right panel: bootstrap 95% percentile interval on the uniform-exclusion robustness Cohen's d (10,000 resamples; [0.40, 1.52]; label corrected 2026-07-10, the headline frame is d = 0.65 / MW p = 0.028). The bootstrap interval strictly excludes zero, confirming the sector contrast is robust to sample composition, single-protocol exclusion, and resampling.
 
 Per-iteration LOO Cohen's d values and bootstrap resampling outputs available in the canonical regression dataset (sector-contrast LOO subset).

@@ -124,6 +124,12 @@ Livepeer governance operates a delegated bloc-voting model: delegators bond LPT 
 
 This makes Livepeer the most pronounced DePIN governance disperser, at a 0.27 ratio, joining the delegation-disperses exceptions documented for ENS, GMX, Helium, and Jupiter. Helium is the other DePIN-sector disperser, so Livepeer is the most pronounced rather than the only DePIN dispersion exception. The frame holding-HHI for Livepeer is unchanged at 0.198868; the orchestrator-level figure is reported as an additional voting-versus-holding data point in Section 4.5, not as a substitute for the holding measure.
 
+### 3.3 What the staking audit does not change
+
+All three exercises leave the frame holding-HHIs used in the regressions unchanged within display precision. The DePIN-versus-DeFi sector contrast, the multivariate specifications, and the six-classification robustness sweep are all computed on the holder-concentration frame and are unaffected. The staking audit documents that the holder snapshot understates insider visibility for staked protocols (AAVE and ENA) and that delegated bloc-voting can disperse rather than concentrate governance (Livepeer), both of which strengthen, rather than revise, the main-text reading.
+
+---
+
 ### 3.4 Per-pool staking decomposition (staking-aggregation contracts as distributed voter pools)
 
 Staking-aggregation contracts pool the stake of many independent governance-eligible holders; treating each as a single holder (which retaining it would do) or excluding it outright both distort the holding-concentration measure. The voter-inclusive treatment in Section 4.6.2 distributes each material staking pool across its measured underlying stakers. The internal staker concentration (HHI among a pool's stakers, as shares of the pool) was measured per pool; the breakpoint at which the headline contrast loses significance is an internal HHI of approximately 0.10.
@@ -142,12 +148,6 @@ Staking-aggregation contracts pool the stake of many independent governance-elig
 
 The big DeFi staking pools are highly distributed (GMX 68,127 stakers; Rocket Pool 1,655 node operators), with vote-escrowed CRV (49.5 percent Convex-controlled) and Synthetix V3 (top 28 percent) the concentrated exceptions. Distributing the pools to their stakers (excluding only the team/foundation slice, e.g. stkAAVE 20.5 percent) yields the voter-inclusive sector contrast reported in Section 4.6.2 (Cohen's d = 0.65, Mann-Whitney p = 0.028, mean-based permutation borderline at approximately 0.08). The earlier inconsistent-treatment exclusion dropped the DeFi-side pools outright while retaining one DePIN-side pool (Livepeer), the asymmetry that inflated the legacy large effect (Cohen's d = 1.05, reported as superseded, not the headline).
 
-### 3.3 What the staking audit does not change
-
-All three exercises leave the frame holding-HHIs used in the regressions unchanged within display precision. The DePIN-versus-DeFi sector contrast, the multivariate specifications, and the six-classification robustness sweep are all computed on the holder-concentration frame and are unaffected. The staking audit documents that the holder snapshot understates insider visibility for staked protocols (AAVE and ENA) and that delegated bloc-voting can disperse rather than concentrate governance (Livepeer), both of which strengthen, rather than revise, the main-text reading.
-
----
-
 ## Part 4: Reproduction and replication-package pointers
 
 All numbers in this file reproduce from the persisted inputs in the replication repository linked in Section 5.9 (github.com/Research-Publications-and-Data/Tokenomics-As-Institutional_Design). Reproduction is deterministic, with no scratch-directory dependency and no live-API calls at reproduction time.
@@ -162,7 +162,7 @@ It reconciles, and this file has reproduced, the following load-bearing numbers:
 
 - maturity-specification DePIN coefficient, log-HHI, p = 0.0107 (exact); same-signed and significant on the untransformed-HHI measure (coefficient +0.036, p = 0.019), so the sector result holds under both the log and the raw concentration measures;
 - retention-specification DePIN coefficient under the evidence-traced classification of record, p = 0.0050 (exact);
-- full-frame Mann-Whitney DePIN against DeFi, p = 0.0172, Cohen's d = 1.052 (distinct from, and reported alongside, the balanced-30 binary of record at p = 0.0114, d = 1.048, which is preserved unchanged);
+- full-frame Mann-Whitney DePIN against DeFi reproduces directionally (the manuscript publishes no full-frame point p or d; significance on that frame is sensitive to the staking-aggregation treatment); the balanced-30 recompute at p = 0.0114, d = 1.048 is the superseded S10 Spec A specification (inconsistent staking-aggregation treatment), NOT the of-record headline. Relabel note (2026-07-10): the current headline is the voter-inclusive pass-through frame (MW p = 0.028, Cohen's d = 0.65), with the uniform staking-aggregation exclusion as robustness (p = 0.018, d = 0.75) per Section 4.6.2;
 - insider-retention de-tautology on the established-protocol cohort, Spearman rho = 0.544 (the regressor remains not significant at the full sample, the channel-shift).
 
 **Six-classification re-estimation harness.** The harness that re-estimates the retention specification under all six insider-classification schemes, producing the per-scheme DePIN p-values tabulated in Part 1.3, is persisted in the insider-reclassification subdirectory of the replication package, together with the six insider-retention vectors it reads.

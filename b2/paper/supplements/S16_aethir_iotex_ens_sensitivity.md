@@ -44,7 +44,7 @@ The Aethir holding HHI was revised in the R2 cascade via a supplementary verific
 - If 0xaf8d... is reclassified: Aethir HHI shifts downward to 0.028 (indeterminate is a downward-leverage exclusion).
 - All sensitivity scenarios preserve Aethir's rank ordering within the DePIN sector and the DePIN-vs-DeFi sector contrast direction.
 
-The 8-PCA value of 0.095 is the canonical value pending inter-rater reliability cycle review of the three remaining candidates.
+The 8-PCA value of 0.095 was the canonical value at this cycle, pending inter-rater reliability review of the three remaining candidates. Vintage note (2026-07-10): after the Supplementary File S13 exchange-custody completion audit, the of-record Table 3 Aethir value is 0.1001 (0.100 in the Figure 1 caption); 0.095 is retained here as the cycle-13 point-in-time 8-PCA value.
 
 ## IoTeX Genesis-burn precompile slot completeness audit
 
@@ -54,7 +54,7 @@ The same 2026-05-19 universal verification cycle identified two additional misse
 
 - IoTeX HHI: 0.189 → 0.081 (substantial shift; the missed exclusions accounted for ~17.5% of supply at the protocol level)
 - DePIN sector mean: 0.078 → 0.071 at this cycle; of-record 0.067 after the subsequent 2026-05-31 exchange-custody completion cascade (Section 4.3; Supplementary File S0)
-- DePIN-vs-DeFi Mann-Whitney significance: p = 0.020 (preserved) at this cycle; of-record p = 0.011 after the same cascade (Section 4.3; Supplementary File S0)
+- DePIN-vs-DeFi Mann-Whitney significance: p = 0.020 (preserved) at this cycle. Of-record now (2026-07-10 repoint): the headline is the voter-inclusive pass-through frame, MW p = 0.028 / Cohen's d = 0.65, with the uniform staking-aggregation exclusion as robustness (p = 0.018 / d = 0.75); the p = 0.011 / d = 1.05 previously cited here is the superseded S10 Spec A inconsistent-staking estimate (Section 4.3, Section 4.6.2; Supplementary Files S0 and S10)
 - LOO 30 of 30 significant-iteration robustness: preserved
 
 The cascade strengthens the universal-audit consistency of the PCA-exclusion methodology by closing a log omission surfaced during the user-flagged 2026-05-19 audit cycle.
