@@ -1,0 +1,263 @@
+{
+  "query_id": 0,
+  "state": "QUERY_STATE_COMPLETED",
+  "submitted_at": "2026-08-27T08:09:06.54639Z",
+  "expires_at": "2026-11-25T08:19:46.658871Z",
+  "execution_started_at": "2026-08-27T08:11:20.844594Z",
+  "execution_ended_at": "2026-08-27T08:19:46.65886Z",
+  "result": {
+    "metadata": {
+      "column_names": [
+        "month",
+        "dimo_burned",
+        "dimo_issued",
+        "s2r",
+        "fiscal_regime",
+        "cumulative_burned",
+        "cumulative_issued"
+      ],
+      "result_set_bytes": 3789,
+      "row_count": 26,
+      "total_result_set_bytes": 1670,
+      "total_row_count": 26,
+      "datapoint_count": 182
+    },
+    "rows": [
+      {
+        "cumulative_burned": 5548931.956695922,
+        "cumulative_issued": 2681565.4313211394,
+        "dimo_burned": 5548931.956695922,
+        "dimo_issued": 2681565.4313211394,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-01-01 00:00:00.000 UTC",
+        "s2r": 2.0692882940253683
+      },
+      {
+        "cumulative_burned": 44490498.812321156,
+        "cumulative_issued": 3647823.535797798,
+        "dimo_burned": 38941566.855625235,
+        "dimo_issued": 966258.1044766587,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-02-01 00:00:00.000 UTC",
+        "s2r": 40.30141291980845
+      },
+      {
+        "cumulative_burned": 50475406.10471805,
+        "cumulative_issued": 5179913.628540146,
+        "dimo_burned": 5984907.292396895,
+        "dimo_issued": 1532090.092742348,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-03-01 00:00:00.000 UTC",
+        "s2r": 3.9063677265116143
+      },
+      {
+        "cumulative_burned": 58338268.22894223,
+        "cumulative_issued": 7111308.269724852,
+        "dimo_burned": 7862862.124224178,
+        "dimo_issued": 1931394.6411847062,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-04-01 00:00:00.000 UTC",
+        "s2r": 4.071080014699193
+      },
+      {
+        "cumulative_burned": 59771053.5195358,
+        "cumulative_issued": 8122969.009467211,
+        "dimo_burned": 1432785.2905935685,
+        "dimo_issued": 1011660.7397423587,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-05-01 00:00:00.000 UTC",
+        "s2r": 1.416270528555312
+      },
+      {
+        "cumulative_burned": 60564748.22175324,
+        "cumulative_issued": 9306434.517647205,
+        "dimo_burned": 793694.7022174378,
+        "dimo_issued": 1183465.508179995,
+        "fiscal_regime": "approaching_parity",
+        "month": "2024-06-01 00:00:00.000 UTC",
+        "s2r": 0.6706530074019897
+      },
+      {
+        "cumulative_burned": 63566292.46230428,
+        "cumulative_issued": 10176883.771625636,
+        "dimo_burned": 3001544.2405510363,
+        "dimo_issued": 870449.2539784304,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-07-01 00:00:00.000 UTC",
+        "s2r": 3.4482702200413557
+      },
+      {
+        "cumulative_burned": 66094892.96050661,
+        "cumulative_issued": 11195795.238816723,
+        "dimo_burned": 2528600.4982023346,
+        "dimo_issued": 1018911.4671910879,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-08-01 00:00:00.000 UTC",
+        "s2r": 2.4816685056780483
+      },
+      {
+        "cumulative_burned": 66836885.138924696,
+        "cumulative_issued": 11651579.906810388,
+        "dimo_burned": 741992.1784180882,
+        "dimo_issued": 455784.66799366515,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-09-01 00:00:00.000 UTC",
+        "s2r": 1.6279445767324516
+      },
+      {
+        "cumulative_burned": 73932606.21507919,
+        "cumulative_issued": 11848484.345613312,
+        "dimo_burned": 7095721.076154488,
+        "dimo_issued": 196904.43880292488,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-10-01 00:00:00.000 UTC",
+        "s2r": 36.036369313422945
+      },
+      {
+        "cumulative_burned": 77619806.468604,
+        "cumulative_issued": 12909032.919963017,
+        "dimo_burned": 3687200.2535248073,
+        "dimo_issued": 1060548.5743497047,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-11-01 00:00:00.000 UTC",
+        "s2r": 3.4766915374768983
+      },
+      {
+        "cumulative_burned": 80820551.73999538,
+        "cumulative_issued": 13291332.919963017,
+        "dimo_burned": 3200745.2713913703,
+        "dimo_issued": 382300,
+        "fiscal_regime": "net_deflationary",
+        "month": "2024-12-01 00:00:00.000 UTC",
+        "s2r": 8.372339187526473
+      },
+      {
+        "cumulative_burned": 141080334.81221,
+        "cumulative_issued": 13545023.882729378,
+        "dimo_burned": 60259783.07221461,
+        "dimo_issued": 253690.96276636,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-01-01 00:00:00.000 UTC",
+        "s2r": 237.53224164989922
+      },
+      {
+        "cumulative_burned": 144456640.74923468,
+        "cumulative_issued": 14018733.344527926,
+        "dimo_burned": 3376305.9370246725,
+        "dimo_issued": 473709.46179854946,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-02-01 00:00:00.000 UTC",
+        "s2r": 7.127377030228049
+      },
+      {
+        "cumulative_burned": 148514656.27857468,
+        "cumulative_issued": 16307234.194897324,
+        "dimo_burned": 4058015.5293400134,
+        "dimo_issued": 2288500.850369397,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-03-01 00:00:00.000 UTC",
+        "s2r": 1.773220022481089
+      },
+      {
+        "cumulative_burned": 151012214.72163367,
+        "cumulative_issued": 17948220.32077603,
+        "dimo_burned": 2497558.443058999,
+        "dimo_issued": 1640986.1258787066,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-04-01 00:00:00.000 UTC",
+        "s2r": 1.5219863249737224
+      },
+      {
+        "cumulative_burned": 153248560.53004995,
+        "cumulative_issued": 19109683.947074577,
+        "dimo_burned": 2236345.808416291,
+        "dimo_issued": 1161463.626298548,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-05-01 00:00:00.000 UTC",
+        "s2r": 1.9254548810480359
+      },
+      {
+        "cumulative_burned": 185269191.71256757,
+        "cumulative_issued": 19948975.876787134,
+        "dimo_burned": 32020631.182517614,
+        "dimo_issued": 839291.929712555,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-06-01 00:00:00.000 UTC",
+        "s2r": 38.151958870239824
+      },
+      {
+        "cumulative_burned": 218889023.90119058,
+        "cumulative_issued": 21726008.754671507,
+        "dimo_burned": 33619832.18862302,
+        "dimo_issued": 1777032.8778843747,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-07-01 00:00:00.000 UTC",
+        "s2r": 18.919082818911438
+      },
+      {
+        "cumulative_burned": 242112465.5128479,
+        "cumulative_issued": 53679666.57600704,
+        "dimo_burned": 23223441.61165732,
+        "dimo_issued": 31953657.821335528,
+        "fiscal_regime": "approaching_parity",
+        "month": "2025-08-01 00:00:00.000 UTC",
+        "s2r": 0.7267850754836267
+      },
+      {
+        "cumulative_burned": 266220118.01294774,
+        "cumulative_issued": 55133087.09018954,
+        "dimo_burned": 24107652.500099845,
+        "dimo_issued": 1453420.5141825036,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-09-01 00:00:00.000 UTC",
+        "s2r": 16.5868392972694
+      },
+      {
+        "cumulative_burned": 269386377.80121434,
+        "cumulative_issued": 55633589.264653765,
+        "dimo_burned": 3166259.7882666206,
+        "dimo_issued": 500502.174464224,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-10-01 00:00:00.000 UTC",
+        "s2r": 6.326165898591806
+      },
+      {
+        "cumulative_burned": 277681688.8031846,
+        "cumulative_issued": 63741068.69220543,
+        "dimo_burned": 8295311.001970292,
+        "dimo_issued": 8107479.427551667,
+        "fiscal_regime": "net_deflationary",
+        "month": "2025-11-01 00:00:00.000 UTC",
+        "s2r": 1.0231676905377418
+      },
+      {
+        "cumulative_burned": 278826953.07639277,
+        "cumulative_issued": 64946617.1553822,
+        "dimo_burned": 1145264.2732081423,
+        "dimo_issued": 1205548.4631767708,
+        "fiscal_regime": "approaching_parity",
+        "month": "2025-12-01 00:00:00.000 UTC",
+        "s2r": 0.9499943869450324
+      },
+      {
+        "cumulative_burned": 280708456.416693,
+        "cumulative_issued": 65856216.21624173,
+        "dimo_burned": 1881503.3403002308,
+        "dimo_issued": 909599.0608595291,
+        "fiscal_regime": "net_deflationary",
+        "month": "2026-01-01 00:00:00.000 UTC",
+        "s2r": 2.0684974526274216
+      },
+      {
+        "cumulative_burned": 282031578.74146664,
+        "cumulative_issued": 66301196.6769836,
+        "dimo_burned": 1323122.324773661,
+        "dimo_issued": 444980.46074186696,
+        "fiscal_regime": "net_deflationary",
+        "month": "2026-02-01 00:00:00.000 UTC",
+        "s2r": 2.9734391540872713
+      }
+    ]
+  },
+  "is_execution_finished": true
+}
