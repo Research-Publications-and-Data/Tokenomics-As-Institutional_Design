@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Identify top funders via Subscan account-detail."""
 import json, urllib.request, time
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 
 clusters = json.load(open("/tmp/b2_phase4/dot_funding_clusters.json"))

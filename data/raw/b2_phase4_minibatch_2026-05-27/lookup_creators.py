@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Lookup contract creator + first-tx data for ambiguous proxies."""
 import json, urllib.request, urllib.parse, time
+import os
 
-API_KEY = "WQ6J3NQR7G3VAT3UTK61NKYFR9RQD19NTB"
+API_KEY = os.environ["ETHERSCAN_API_KEY"]
 BASE = "https://api.etherscan.io/v2/api"
 
 # Ambiguous proxies needing creator-context verification

@@ -2,8 +2,9 @@
 """Nominator-overlap clustering with correct endpoint."""
 import json, urllib.request, time
 from collections import defaultdict
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 URL = "https://polkadot.api.subscan.io/api/scan/staking/nominators"
 

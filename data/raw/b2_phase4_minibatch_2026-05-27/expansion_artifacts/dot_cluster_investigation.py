@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Investigate the 186-validator cluster (~1.469M DOT each). Check funding source/controller patterns."""
 import json, urllib.request, time
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 
 d = json.load(open("/tmp/b2_phase4/dot_validators_classified.json"))

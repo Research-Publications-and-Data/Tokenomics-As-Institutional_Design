@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Check Polkadot governance/council/OpenGov for top validators' presence."""
 import json, urllib.request, time
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 BASE = "https://polkadot.api.subscan.io"
 

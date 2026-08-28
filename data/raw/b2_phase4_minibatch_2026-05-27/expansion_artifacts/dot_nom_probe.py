@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Find correct nominators-of-validator endpoint."""
 import json, urllib.request
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 
 test = "114SUbKCXjmb9czpWTtS3JANSmNRwVa4mmsMrWYpRG1kDH5"  # BINANCE_STAKE_9

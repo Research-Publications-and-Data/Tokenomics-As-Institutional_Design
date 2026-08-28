@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Pull DOT top holders via Subscan API with API key."""
 import json, urllib.request, time
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15"
 URL = "https://polkadot.api.subscan.io/api/v2/scan/accounts"
 

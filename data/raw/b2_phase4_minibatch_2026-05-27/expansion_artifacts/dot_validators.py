@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Pull DOT validators (staking aggregation concentration; sister to veCRV in EVM)."""
 import json, urllib.request, time
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 URL = "https://polkadot.api.subscan.io/api/scan/staking/validators"
 

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Lookup contract source code names via Etherscan API for PCA classification."""
 import json, urllib.request, urllib.parse, time, sys
+import os
 
-API_KEY = "WQ6J3NQR7G3VAT3UTK61NKYFR9RQD19NTB"
+API_KEY = os.environ["ETHERSCAN_API_KEY"]
 BASE = "https://api.etherscan.io/v2/api"
 
 def lookup(addr, chainid=1):

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Query Nansen Address Labels API with browser-like User-Agent (Cloudflare WAF requires it)."""
 import json, urllib.request, time
+import os
 
-KEY = "nsn_bf15ba2de8948495a783a91c95b3f2d3"
+KEY = os.environ["NANSEN_API_KEY"]
 URL = "https://api.nansen.ai/api/v1/profiler/address/labels"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
 

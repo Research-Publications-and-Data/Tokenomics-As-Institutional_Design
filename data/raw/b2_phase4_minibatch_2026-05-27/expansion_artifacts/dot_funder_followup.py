@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Lookup the 2 still-unidentified top funders via transfers (who funded them?)."""
 import json, urllib.request, time
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 
 # Top unattributed funders

@@ -3,8 +3,9 @@
 Group validators by common source-address to identify operator-co-controlled validators."""
 import json, urllib.request, time
 from collections import defaultdict
+import os
 
-API_KEY = "c8625edf41b845a393ff24fe5d3bb132"
+API_KEY = os.environ["SUBSCAN_API_KEY"]
 UA = "Mozilla/5.0"
 URL = "https://polkadot.api.subscan.io/api/v2/scan/transfers"
 
