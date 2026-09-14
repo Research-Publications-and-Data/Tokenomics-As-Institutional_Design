@@ -2,6 +2,22 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [1.0.5] (2026-09-14)
+
+### B2 replication package: two N = 48 reproducibility statements corrected in the S0 ledger
+
+The Section 8 provenance footnote of the canonical statistics ledger carried two statements that do not reproduce from the package's own per-token metrics (`exhibits/price_performance_audit/b2_price_performance_dataset.csv`, unchanged since v1.0.4). Both were re-derived over every two-token cut of that file with two independent Pearson implementations. No headline value, table or conclusion moves: every cut is a positive, moderate HHI-Gini correlation, and the published article prints only r = 0.52 (N = 48), which is unchanged. Tag v1.0.4, which the published article links, stays as it was.
+
+- `b2/paper/supplements/S0_canonical_statistics_ledger.md` line 95: "about 0.52 at the governance-token-measured N = 48 cut" is corrected to r = 0.517 over the 44 governance-token-measured rows, since no governance-token-measured N = 48 cut exists.
+- Same line: "0.49 to 0.52 across all 1,225 possible N = 48 two-token cuts" is corrected to 0.464 to 0.635; 987 of the 1,225 cuts fall within 0.49 to 0.52 and 238 fall outside it.
+
+Also carried since v1.0.4 (2026-07-10, the of-record reconciliation sweep, which has no section of its own here; see its tag annotation):
+
+- `b2/paper/supplements/S0_canonical_statistics_ledger.md` (61b2780, 2026-08-24): Gini range corrected from 0.52 to 0.99, the superseded April 40-protocol frame, to 0.65 to 0.98 over both of-record frames (N = 50); the Section 9 source-series citation now points at the in-repo series.
+- `data/raw/b2_phase4_minibatch_2026-05-27/` collection scripts read their API credentials from the environment (3bbac4a, 2026-08-28).
+
+Released as git tag v1.0.5; CITATION.cff version set to 1.0.5 and date-released 2026-09-14.
+
 ## [1.0.3] (2026-07-01)
 
 ### B2 replication package: sector-member variant B for the Romano-Wolf battery
