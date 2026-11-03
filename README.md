@@ -22,7 +22,7 @@ A 52-protocol cross-section documents that initial token allocation design does 
 - **Insider retention.** Protocols with more insider wallets in their top-holder sets exhibit higher concentration among non-insider holders (Spearman rho = 0.54, p = 0.001, N = 34), indicating insider-heavy protocols develop concentrated governance ecosystems, not merely concentrated insider positions.
 - **Subsidy disconnect.** On-chain subsidy correlates with concentration in levels (r = 0.62, p = 0.002, N = 23) but entirely through Livepeer (88.5x subsidy); excluding Livepeer, the correlation collapses to a null (r = 0.07, p = 0.76, N = 22).
 - **Delegation amplification.** Voting-power HHI exceeds holding HHI by factors of 2.5x to 25.6x across thirteen of eighteen protocols sampled (mean approximately 6.8x, median 4.4x), with five structural exceptions showing dispersion (ENS 0.48x, GMX 0.87x, HNT 0.26x to 0.39x, JUP 0.12x, and LPT 0.27x), reflecting mature delegate programs where holders systematically delegate to broad community-delegate sets. Three vote-escrowed protocols (Curve, Balancer, Frax) form a distinct class showing extreme amplification (15x, 21x, and 11.4x respectively) under ve-token lock-duration weighting.
-- **Inequality versus concentration.** Token inequality is severe in every protocol (Gini 0.52 to 0.99) while governance concentration varies across two orders of magnitude (HHI 0.005 to 0.199); the moderate correlation between them (Pearson r = 0.52, N = 48) indicates inequality metrics cannot substitute for direct concentration measurement.
+- **Inequality versus concentration.** Token inequality is severe in every protocol (Gini 0.65 to 0.98) while governance concentration varies across two orders of magnitude (HHI 0.005 to 0.199); the moderate correlation between them (Pearson r = 0.52, N = 48) indicates inequality metrics cannot substitute for direct concentration measurement.
 
 **Methodology contribution.** The exclusion methodology applies 133 address exclusions across 38 protocols (125 unique addresses; five recur across multiple protocols, including Binance 8 hot wallet across four tokens) controlled by protocols themselves (staking contracts, exchange custodians, vesting locks, and treasuries) that appear on holder lists but cannot vote. Correcting for these changes affected protocols' HHI by up to 18x (RENDER at 17.9x, where Wormhole Token Bridge custody dominated naive top-1000 holdings; median 2.3x across 32 protocols with complete pre-exclusion and post-exclusion HHI logged; see `b2/paper/supplements/hhi_inflation_factors_2026-05-19.md`). Prior studies computing token HHI without this correction measured protocol architecture, not governance concentration.
 
@@ -82,11 +82,11 @@ A 52-protocol cross-section documents that initial token allocation design does 
 
 | Finding | Statistic | Sample |
 |---|---|---|
-| Allocation null (insider allocation Pearson) | r = 0.10, p = 0.49 (Spearman rho = 0.16, p = 0.27); TOST-equivalent to zero within \|r\| = 0.38 (p = 0.02) | N = 50 |
+| Allocation null (insider allocation Pearson) | r = 0.09, p = 0.55 (Spearman rho = 0.19, p = 0.18); TOST-equivalent to zero within \|r\| = 0.38 (p = 0.02) | N = 50 |
 | DePIN-DeFi sector gap (d-triple) | Pass-through headline Cohen's d = 0.65, Mann-Whitney p = 0.028, 30/30 LOO, permutation approximately 0.08; uniform-exclusion robustness d = 0.75, p = 0.018, permutation 0.009; complete-CEX d = 1.05 (inflated, not the headline) | DePIN = 15, DeFi = 15 |
 | Insider retention (non-insider HHI correlation) | Spearman rho = 0.54, p = 0.001 | N = 34 |
 | Subsidy correlation (Livepeer-driven) | r = 0.62, p = 0.002 (full) / r = 0.07, p = 0.76 (ex-Livepeer; null) | N = 23 / N = 22 |
-| Gini inequality range | 0.52 to 0.99 | N = 52 |
+| Gini inequality range | 0.65 to 0.98 | N = 50 |
 | HHI concentration range | 0.005 to 0.199 | N = 52 |
 | Delegation amplification (universal, non-ve-token) | 2.5x to 25.6x; mean approximately 6.8x, median 4.4x | N = 18 (13 amplify; 5 dispersers: ENS 0.48x, GMX 0.87x, HNT 0.26x-0.39x, JUP 0.12x, LPT 0.27x) |
 | Helium S2R (companion B3) | 1.84 (Feb 2026) | 34-month trajectory |
