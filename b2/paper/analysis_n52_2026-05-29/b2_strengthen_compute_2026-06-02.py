@@ -6,11 +6,11 @@ All against committed in-repo inputs. No /tmp data dependency, no cross-clone pa
 
 Run from anywhere:  python b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py
 Reproduces (Section 4.4 / 4.6): allocation null r = 0.09, N = 50 (Spearman rho = 0.19);
-TOST equivalence p = 0.02 within |r| = 0.38; launch-design omnibus F(3,41) = 0.66, p = 0.58
-(R-squared 4.6 percent); insider-retention de-tautology rho = 0.54, N = 34 (bootstrap CI
+TOST equivalence p = 0.02 within |r| = 0.38; launch-design omnibus F(3,41) = 0.60, p = 0.62
+(R-squared 4.2 percent); insider-retention de-tautology rho = 0.54, N = 34 (bootstrap CI
 [0.21, 0.80], permutation p = 0.001, LOO 34/34, sector-partial r = 0.47, p = 0.005);
 Model 4 influence (all 50 LOO refits keep DePIN significant); NE-1 temporal endpoint null
-(launch insider_pct vs 24-month governance-HHI, r = -0.11, N = 13)."""
+(launch insider_pct vs 24-month governance-HHI, r = -0.14, N = 13)."""
 import csv, math, os, sys
 import numpy as np
 from scipy import stats as ss
@@ -172,7 +172,7 @@ for r in panel:
     # MKR dedup (shipped: N=13): MakerDAO appears as two panel vintages (MCD + TGE) at one
     # frame insider_pct; keep the TGE row (24mo-post-token-generation, apples-to-apples) and drop
     # MCD so the protocol is counted once. The null is INVARIANT across all four collapse choices
-    # (both / keep-TGE / keep-MCD / drop-both: Q8 Pearson r in [-0.11, -0.06], all n.s.); see PAPER.md 4.4.
+    # (both / keep-TGE / keep-MCD / drop-both: Q8 Pearson r in [-0.14, -0.08], all n.s.); see PAPER.md 4.4.
     if prot=="MKR (MCD)": continue
     h8=fnum(r['gov_hhi']); h1=q1.get(prot)
     if ipv is None or h8 is None: continue

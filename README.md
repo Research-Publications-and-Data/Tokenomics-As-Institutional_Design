@@ -14,7 +14,7 @@
 
 ## Summary
 
-A 52-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (insider allocation Pearson r = 0.10, p = 0.49, N = 50). Protocols with generous community distributions exhibit concentration patterns similar to those with heavy insider allocations.
+A 52-protocol cross-section documents that initial token allocation design does not predict post-distribution governance concentration (insider allocation Pearson r = 0.09, p = 0.55, N = 50). Protocols with generous community distributions exhibit concentration patterns similar to those with heavy insider allocations.
 
 **Supporting findings:**
 
@@ -126,8 +126,8 @@ python b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py
 ```
 
 - **Sector-contrast d-triple** (`b2_sector_contrast_reproduce_2026-06-02.py`, reading `sector_contrast_hhi_vectors_2026-06-02.csv`): the headline voter-inclusive pass-through (Cohen's d = 0.65, Mann-Whitney p = 0.028, 30/30 leave-one-out, mean-based permutation approximately 0.08), the uniform staking-aggregation exclusion robustness check (d = 0.75, p = 0.018, permutation 0.009, bootstrap d interval [0.40, 1.52]), and the inflated complete-CEX treatment (d = 1.05, p = 0.011) all reproduce from the committed per-protocol holding-HHI vectors.
-- **Bounded allocation null** (`b2_strengthen_compute_2026-06-02.py`): the allocation null is statistically equivalent to zero within the powered envelope (TOST p = 0.02 within \|r\| = 0.38), and the launch-design block (team, investor, maturity) is jointly uninformative (omnibus F(3,41) = 0.66, p = 0.58, R-squared 4.6 percent).
-- **Temporal corroboration (NE-1):** launch insider allocation is uncorrelated with the 24-month governance-HHI endpoint on the quarterly panel (Pearson r = -0.11, N = 13; descriptive, construct-distinct, reported under the no-trajectory-claims scope).
+- **Bounded allocation null** (`b2_strengthen_compute_2026-06-02.py`): the allocation null is statistically equivalent to zero within the powered envelope (TOST p = 0.02 within \|r\| = 0.38), and the launch-design block (team, investor, maturity) is jointly uninformative (omnibus F(3,41) = 0.60, p = 0.62, R-squared 4.2 percent).
+- **Temporal corroboration (NE-1):** launch insider allocation is uncorrelated with the 24-month governance-HHI endpoint on the quarterly panel (Pearson r = -0.14, N = 13; descriptive, construct-distinct, reported under the no-trajectory-claims scope).
 - **Insider-retention triple:** the de-tautology Spearman rho = 0.54, N = 34 carries a bootstrap 95 percent interval [0.21, 0.80], a permutation p = 0.001, all 34 leave-one-out folds positive, and a sector-partial rank correlation of 0.47 (p = 0.005).
 - **Model 4 influence:** all 50 leave-one-out refits of the powered specification keep the DePIN coefficient significant (worst-case p = 0.022 in the maturity spec, p = 0.013 in the retention spec), so the sector contrast does not hinge on any single protocol.
 - **Retain-CEX robustness:** retaining exchange-deposit wallets in the holding distribution attenuates the contrast toward the margin of conventional significance (Cohen's d approximately 0.62, Mann-Whitney p approximately 0.03 to 0.05), still a medium effect.

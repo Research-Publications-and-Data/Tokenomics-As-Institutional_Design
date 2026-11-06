@@ -11,6 +11,8 @@
 
 ---
 
+**Note added 2026-11-06:** this supplement was written against the April 2026 40-protocol frame, so its references to the main paper's sample and result (Pearson r = 0.19, p = 0.25, N = 37) are to that frame. The of-record allocation null is Pearson r = 0.09, p = 0.55, N = 50 (Supplementary File S0, Section 1).
+
 ## 1. Purpose
 
 The cross-sectional analysis reported in the main paper documents that initial allocation design does not predict governance concentration (Pearson r = 0.19, p = 0.25, N = 37). This supplementary file extends the cross-section to a quarterly panel for 14 governance tokens with at least eight quarters of post-token-generation event (TGE) holder data, providing longitudinal context for the cross-sectional null.

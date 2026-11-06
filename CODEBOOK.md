@@ -7,7 +7,7 @@
 
 - `reproduce.py` (repository root): post-exclusion holder HHIs from raw, the powered Model 4 specifications, and the insider-retention de-tautology.
 - `b2/paper/analysis_n52_2026-05-29/b2_sector_contrast_reproduce_2026-06-02.py`: the sector-contrast staking-treatment triple (pass-through Cohen's d = 0.65; uniform-exclusion d = 0.75; complete-CEX d = 1.05) reproduced from the committed per-protocol holding-HHI vectors `sector_contrast_hhi_vectors_2026-06-02.csv`.
-- `b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py`: the allocation null (r = 0.10, N = 50), TOST equivalence, the launch-design omnibus, the temporal-endpoint null, Model 4 influence diagnostics, and the insider-retention triple.
+- `b2/paper/analysis_n52_2026-05-29/b2_strengthen_compute_2026-06-02.py`: the allocation null (r = 0.09, N = 50), TOST equivalence, the launch-design omnibus, the temporal-endpoint null, Model 4 influence diagnostics, and the insider-retention triple.
 
 All three run from in-repo data with no `/tmp` and no external dependency.
 
@@ -185,7 +185,7 @@ and Nansen. See `data/processed/exclusion_crossvalidation.csv` for validation de
 ## outputs/regression_results.json
 **Location:** `outputs/regression_results.json`
 
-JSON object with all regression statistics cited in the paper. Key fields:
+JSON object with the regression statistics of the April 2026 40-protocol frame, a dated record superseded by S0. Key fields:
 
 | Field | Value | Description |
 |-------|-------|-------------|

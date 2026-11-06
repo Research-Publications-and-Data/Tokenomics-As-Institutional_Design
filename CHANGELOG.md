@@ -2,6 +2,23 @@
 
 All notable changes to this replication package. Versions match `CITATION.cff` version field.
 
+## [Unreleased] (2026-11-06)
+
+### Statistics the 2026-06-03 insider re-code left behind
+
+The re-code (596ef28: Anyone 0 to 10, Gnosis 0 to 95.82, Aave 0 to 18.75) updated the S0 ledger and the manuscript. The lines below kept their earlier values and are now corrected. No data file changes, and no headline finding moves.
+
+- `README.md` opening summary and `CITATION.cff` abstract: the allocation null is Pearson r = 0.09, p = 0.55, N = 50, not r = 0.10, p = 0.49. `CODEBOOK.md` carries the r only, now r = 0.09.
+- `README.md` bounded-null bullet and the docstring of `b2_strengthen_compute_2026-06-02.py`: the launch-design omnibus is F(3,41) = 0.60, p = 0.62, R-squared 4.2 percent, not 0.66, 0.58 and 4.6 percent.
+- `README.md` temporal bullet and that docstring: the 24-month endpoint is r = -0.14, N = 13, not r = -0.11. The range across the four MakerDAO collapse choices in that script's comment is [-0.14, -0.08], not [-0.11, -0.06].
+- `b2/paper/figures/regenerate_b2_figures.py`: a comment carried the old allocation pair. The title of the figure it writes, `b2/paper/figures/fig5_allocation_scatter`, is computed and was already right. `exhibits/updated/` keeps the earlier 40-protocol figures.
+- `S7_hhi_panel.md`: a dated note now says it was written against the April 2026 40-protocol frame, which is where its r = 0.19, p = 0.25, N = 37 comes from, and gives the of-record null, r = 0.09, p = 0.55, N = 50. Its text is otherwise unchanged.
+- `CODEBOOK.md`: the `outputs/regression_results.json` section now says that file records the April 2026 40-protocol frame, not the statistics cited in the paper.
+
+Correction to the message of commit 8d230c8. It says r = 0.10, p = 0.49 in the README table was the protocol-maturity correlation under the wrong label. It was the insider allocation result before the re-code (r = 0.0993, p = 0.4928; Spearman rho = 0.159, p = 0.270). Maturity rounds to the same pair (r = 0.1003, p = 0.4881) by coincidence. The values that commit wrote are right.
+
+The [1.5.0-frontiers-r2-revision] entry below is left as written: its allocation-null, omnibus and endpoint values were correct for the data of that date. Tags v1.0.4 and v1.0.5 keep the earlier wording, and the data files at both already give the corrected values. `B2_Replication_Package.zip` predates the re-code and is left as a dated bundle.
+
 ## [1.0.5] (2026-09-14)
 
 ### B2 replication package: two N = 48 reproducibility statements corrected in the S0 ledger
