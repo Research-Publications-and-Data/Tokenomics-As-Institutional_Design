@@ -19,6 +19,20 @@ Correction to the message of commit 8d230c8. It says r = 0.10, p = 0.49 in the R
 
 The [1.5.0-frontiers-r2-revision] entry below is left as written: its allocation-null, omnibus and endpoint values were correct for the data of that date. Tags v1.0.4 and v1.0.5 keep the earlier wording, and the data files at both already give the corrected values. `B2_Replication_Package.zip` predates the re-code and is left as a dated bundle.
 
+## [1.8.0-b3-v18-dimo-erratum] (2026-10-26)
+
+### B3 Final_v18: the DIMO S2R of 4.24 withdrawn, with the transfer-level classification that refutes it
+
+B3 v17 and earlier reported a DIMO monthly S2R of 4.24 from `data/dune_queries/03_dimo_s2r.sql`, which counts every DIMO transfer to the null address on Polygon as a burn. A transaction-by-transaction classification of all 3,568 of those transfers (2024-01 to 2026-02) finds that 99.987 percent of the volume is tokens leaving Polygon over a bridge, not demand-side burns: 3,405 transfers (99.600 percent) are Polygon PoS bridge withdrawals, 108 (0.387 percent) pass through DIMO's Wormhole NTT managers, and 55 (0.013 percent, 36,184.79 DIMO, June to December 2024 only) are DIMO Credit purchases. 4.24 matches no month of the series; it is within 0.33 percent of the cumulative ratio of exits to entries at the series' last row (4.2538), the leading explanation, stated as an inference. v18 therefore reports no DIMO S2R, removes the credit-intermediated architecture class (DIMO was its only member) and no longer plots DIMO in Figure 4.
+
+- b3/paper: added B3_GeoDePIN_Final_v18.docx + .pdf (50 pages). v18 also carries the Table 5 domain count, two reference-list corrections and the Figure 1 and 2 fixes, which no earlier tagged build carries, and the October 2026 enrichment pass (fifteen reference corrections among them).
+- b3/figures: Figure 4 v18 (DIMO removed; Hivemapper drawn at its reported S2R 0.183).
+- b3/dimo_burn_classification/: the transfer-level query, its archived result set, the call-path decode with its cache, the classifier and its two outputs. Every script runs offline from the committed files; the README there gives the commands.
+
+Also carried since b3-v1.7.0-v17-errata (2026-08-24), which has no section of its own here (see its tag annotation): the DIMO monthly result set behind `data/dune_queries/03_dimo_s2r.sql` (`data/processed/dimo_s2r_monthly.csv` and its raw API envelope, 425524c).
+
+Released as git tag b3-v1.8.0-v18-dimo-erratum.
+
 ## [1.0.5] (2026-09-14)
 
 ### B2 replication package: two N = 48 reproducibility statements corrected in the S0 ledger

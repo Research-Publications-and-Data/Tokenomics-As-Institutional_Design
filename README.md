@@ -28,9 +28,9 @@ A 52-protocol cross-section documents that initial token allocation design does 
 
 ## Companion paper: Who Burns the Tokens? (B3)
 
-**Demand concentration is an independent failure mode, observable only for direct-burn protocols.** A 34-month longitudinal analysis of Helium documents the first empirical observation of burn-to-mint equilibrium threshold crossing (S2R = 1.84), and there demand is highly concentrated: roughly five purchasers account for about 90% of burns (burn-signer HHI 0.27). On-chain burn-signer concentration is a valid demand-concentration measure only where token holders burn directly (Helium); buy-and-burn (GEODNET, S2R 0.219) and protocol-mediated pooled-burn (DIMO) architectures execute burns through a foundation or treasury, relocating the demand base to off-chain subscriptions and licenses, so their customer concentration is not observable on-chain. (Prior revisions reported GEODNET HHI 0.055 and a four-to-five-times cross-model comparison; both are retired as construct-invalid. See CHANGELOG 1.6.0.)
+**Demand concentration is an independent failure mode, observable on-chain only for direct-payment protocols.** A 34-month longitudinal analysis of Helium documents the first net-deflationary monthly readings observed among GeoDePIN protocols (peak monthly S2R 1.84, February 2026; on a trailing-twelve-month basis the network remained net inflationary, S2R approximately 0.51), and there demand is highly concentrated: roughly five purchasers account for about 90% of burns (burn-signer HHI 0.27). Direct-payer concentration is a valid demand-concentration measure only where customers pay the protocol directly on-chain: Helium's Data Credit burns and Livepeer's transcoding fees (fee-payer HHI 0.31) qualify, and both are highly concentrated. Buy-and-burn (GEODNET, S2R 0.219) and single-relayer (Hivemapper) architectures route payment through a foundation or a relayer, relocating the demand base off-chain, so their customer concentration is not observable on-chain. DIMO's on-chain burn series is almost entirely bridge transfers (99.987 percent of volume), so B3 v18 reports no DIMO S2R; the classification is in `b3/dimo_burn_classification/`. (Prior revisions reported GEODNET HHI 0.055, a four-to-five-times cross-model comparison and a DIMO S2R of 4.24; all three are retired. See CHANGELOG 1.6.0 and 1.8.0.)
 
-- Manuscript: `b3/paper/B3_GeoDePIN_Final_v12.docx`
+- Manuscript: `b3/paper/B3_GeoDePIN_Final_v18.pdf` (and `.docx`), frozen at tag `b3-v1.8.0-v18-dimo-erratum`
 - SSRN: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6483619](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6483619)
 
 ## Repository Structure
@@ -41,8 +41,10 @@ A 52-protocol cross-section documents that initial token allocation design does 
 │       ├── B2_Governance_Concentration_Frontiers_Submission.docx
 │       └── supplements/                    # Supplementary Files S1-S8
 ├── b3/                             # B3 manuscript + data
+│   ├── dimo_burn_classification/   # DIMO null-address transfers, classified (v18)
+│   ├── figures/                    # Figures 3 and 4 with their producers
 │   └── paper/
-│       └── B3_GeoDePIN_Final_v12.docx
+│       └── B3_GeoDePIN_Final_v18.pdf  # and .docx; v10 and v12 to v17 retained
 ├── data/
 │   ├── processed/                  # Master datasets
 │   │   ├── regression_data_april2026.csv    # 52 protocols, 39 variables
